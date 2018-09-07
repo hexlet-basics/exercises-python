@@ -1,0 +1,11 @@
+---
+
+version: '3'
+
+services:
+  exercises:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/exercises-python

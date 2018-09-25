@@ -5,6 +5,6 @@ from io import StringIO
 with patch('sys.stdout', new=StringIO()) as fake_output:
     import index
     actual = fake_output.getvalue().strip()
-    assert_equal(actual, 'Hello, World!')
+    assert_equal(actual, 'What Is Dead May Never Die')
 
 print(actual)

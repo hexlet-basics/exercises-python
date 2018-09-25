@@ -9,3 +9,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/exercises-python
+    command: make lint test

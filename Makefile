@@ -1,3 +1,9 @@
+compose: compose-build
+	docker-compose up
+
+gcloud-builds-submit:
+	gcloud builds submit --config cloudbuild.yaml .
+
 compose-test:
 	docker-compose run exercises make test
 
@@ -9,14 +15,6 @@ compose-bash:
 
 compose-build:
 	docker-compose build
-
-docker-release: docker-build docker-push
-
-docker-build:
-	docker build -t hexlet/hexlet-basics-exercises-python .
-
-docker-push:
-	docker push hexlet/hexlet-basics-exercises-python
 
 SUBDIRS := $(wildcard modules/**/*/.)
 

@@ -1,0 +1,8 @@
+---
+
+extends: default
+
+rules:
+  line-length: disable
+  empty-lines: disable
+  trailing-spaces: disable

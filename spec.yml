@@ -1,7 +1,7 @@
 ---
 
 language:
-  docker_image: "hexlet/hexlet-basics-exercises-python"
+  docker_image: "gcr.io/hexlet-basics/exercises-python"
   extension: python
   exercise_filename: index.py
   exercise_test_filename: test.py

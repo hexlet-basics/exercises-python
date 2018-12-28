@@ -8,14 +8,12 @@ theory: |
   Комментарий может занимать всю строчку:
 
   ```python
-
   # For Winterfell!
   ```
 
   или может находиться на строчке после какого-нибудь кода:
 
   ```python
-
   print('I am the King') # For Lannisters!
   ```
 

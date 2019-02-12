@@ -10,8 +10,6 @@ RUN pip3 install asserts
 
 WORKDIR /exercises-python
 
-# COPY package.json package.json
-# COPY package-lock.json package-lock.json
-# RUN npm install
+ENV PYTHONPATH=/exercises-python/src
 
 COPY . /exercises-python

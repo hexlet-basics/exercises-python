@@ -1,2 +1,2 @@
 test:
-	python test.py 2>&1
+	python -m hexlet.test 2>&1

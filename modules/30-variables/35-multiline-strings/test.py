@@ -1,4 +1,4 @@
-from hexlet.test import *
+from hexlet.test import expect_output
 
 expect_output('''Lannister, Targaryen, Baratheon, Stark, Tyrell...
 they're all just spokes on a wheel.

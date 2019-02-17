@@ -1,4 +1,4 @@
-from hexlet.test import *
+from hexlet.test import expect_output
 
 expect_output('''Hello, Joffrey!
 Here is important information about your account security.

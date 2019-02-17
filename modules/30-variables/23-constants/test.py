@@ -1,5 +1,5 @@
-from hexlet.test import *
+from hexlet.test import TestEnv
 
-with Module() as module:
-    module.expect_defined('DRAGONS_BORN_COUNT')
-    module.expect_eq('DRAGONS_BORN_COUNT', 3)
+with TestEnv() as env:
+    env.expect_defined('DRAGONS_BORN_COUNT')
+    env.expect_equal('DRAGONS_BORN_COUNT', 3)

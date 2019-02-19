@@ -1,0 +1,87 @@
+---
+
+name: Тернарный оператор
+theory: |
+
+  #### Вкратце
+
+  ```python
+  <expression on true> if <predicate> else <expression on false>
+
+  # например
+  number if number >= 0 else -number
+  ```
+
+  ---
+
+  Посмотрите на определение функции, которая возвращает модуль переданного числа:
+
+  ```python
+  def abs(number):
+      if number >= 0:
+          return number
+      return -number
+  ```
+
+  Можно ли записать более лаконично? Что-то вроде `return ОТВЕТ В ЗАВИСИМОСТИ ОТ УСЛОВИЯ`? Для этого справа от `return` должно быть выражение, но `if` — это инструкция, а не выражение.
+
+  В Python существует конструкция, которая по своему действию аналогична конструкции *if-else*, но при этом является выражением. Она называется **тернарный оператор**.
+
+  Тернарный оператор — единственный в своем роде оператор, требующий три операнда:
+
+  ```python
+  def abs(number):
+      return number if number >= 0 else -number
+  ```
+
+  Общий паттерн выглядит так: `<expression on true> if <predicate> else <expression on false>`.
+
+  Давайте перепишем начальный вариант `get_type_of_sentence` аналогично:
+
+  Было:
+
+  ```python
+  def get_type_of_sentence(sentence):
+      last_char = sentence[-1]
+      if last_char == '?':
+          return 'question'
+      return 'normal'
+
+  print(get_type_of_sentence('Hodor'))   # => normal
+  print(get_type_of_sentence('Hodor?'))  # => question
+  ```
+
+  Стало:
+
+  ```python
+  def get_type_of_sentence(sentence):
+      last_char = sentence[-1]
+      return 'question' if last_char == '?' else 'normal'
+
+  print(get_type_of_sentence('Hodor'))   # => normal
+  print(get_type_of_sentence('Hodor?'))  # => question
+  ```
+
+  ---
+
+  Если вы помните, в чём сила выражений, то вероятно уже догадались, что тернарный оператор можно вкладывать в тернарный оператор. **Не делайте этого :)** Такой код тяжело и читать и отлаживать, это очень плохая практика.
+
+instructions: |
+
+  Реализуйте функцию `flip_flop`, которая принимает на вход строку и, если эта строка равна `'flip'`, возвращает строку `'flop'`. В противном случае функция должна вернуть `'flip'`.
+
+  Примеры вызова:
+
+  ```php
+  print(flip_flop('flip'))  # => 'flop'
+  print(flip_flop('flop'))  # => 'flip'
+  ```
+
+  Попробуйте написать два варианта функции: с обычным if-else, и с тернарным оператором.
+
+tips: []
+
+definitions:
+  - name: "Тернарный оператор"
+    description: |
+      Способ превратить простую условную инструкцию в выражение, например, `number if number >= 0 else -number`

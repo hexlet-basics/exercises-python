@@ -63,7 +63,7 @@ theory: |
 
   ```python
   def show_date(text):
-      print("Today is: {text}")
+      print("Today is: " + text)
 
   show_date('January 29')
   ```

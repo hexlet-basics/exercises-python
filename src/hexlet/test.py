@@ -11,7 +11,7 @@ import asserts
 
 __all__ = (
     'assert_equal',
-    'expect_output',
+    'test_output',
     'TestEnv',
 )
 
@@ -38,7 +38,7 @@ def _check_output(expected: str) -> object:
     print(actual)
 
 
-def expect_output(expected: str) -> None:
+def test_output(expected: str) -> None:
     '''
     Imports an "index" module and checks its output
     '''
@@ -57,7 +57,7 @@ class TestEnv(object):
         return self
 
     def __exit__(self, *args):
-        return True
+        pass
 
     def expect_defined(self, name: str) -> None:
         '''
@@ -72,6 +72,12 @@ class TestEnv(object):
         '''
         assert_equal(self.expect_defined(name), value)
 
+    @staticmethod
+    def expect_output(expected: str):
+        '''
+        Provides a context, that captures and checks  all the output
+        '''
+        return _check_output(expected)
 
 if __name__ == '__main__':
     importlib.import_module('test')

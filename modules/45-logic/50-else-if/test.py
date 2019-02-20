@@ -1,9 +1,10 @@
 from hexlet.test import TestEnv, assert_equal
 
 with TestEnv() as env:
-    in_neutral_soldier = env.expect_defined('in_neutral_soldier')
-    assert_equal(in_neutral_soldier('Tully'), 'friend')
-    assert_equal(in_neutral_soldier('Karstark'), 'friend')
-    assert_equal(in_neutral_soldier('Lannister'), 'enemy')
-    assert_equal(in_neutral_soldier('Martell'), 'neutral')
-    assert_equal(in_neutral_soldier('undefined'), 'neutral')
+    who_is_this_house_to_starks = env.expect_defined(
+        'who_is_this_house_to_starks')
+    assert_equal(who_is_this_house_to_starks('Tully'), 'friend')
+    assert_equal(who_is_this_house_to_starks('Karstark'), 'friend')
+    assert_equal(who_is_this_house_to_starks('Lannister'), 'enemy')
+    assert_equal(who_is_this_house_to_starks('Martell'), 'neutral')
+    assert_equal(who_is_this_house_to_starks('undefined'), 'neutral')

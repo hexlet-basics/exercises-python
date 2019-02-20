@@ -1,3 +1,3 @@
-from hexlet.test import expect_output
+from hexlet.test import test_output
 
-expect_output('What Is Dead May Never Die!')
+test_output('What Is Dead May Never Die!')

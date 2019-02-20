@@ -1,3 +1,3 @@
-from hexlet.test import expect_output
+from hexlet.test import test_output
 
-expect_output("\"Khal Drogo's favorite word is \"athjahakar\"\"")
+test_output("\"Khal Drogo's favorite word is \"athjahakar\"\"")

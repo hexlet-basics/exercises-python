@@ -1,3 +1,3 @@
-from hexlet.test import expect_output
+from hexlet.test import test_output
 
-expect_output('125.0\n7500.0')
+test_output('125.0\n7500.0')

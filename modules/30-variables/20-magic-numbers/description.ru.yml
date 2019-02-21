@@ -7,8 +7,8 @@ theory: |
 
   ```python
   euros = 1000
-  dollars = euros * 1.25  # => 1250.0
-  rubles = dollars * 60  # => 75000.0
+  dollars = euros * 1.25  # 1250.0
+  rubles = dollars * 60   # 75000.0
 
   print(rubles)
   ```
@@ -24,8 +24,8 @@ theory: |
   roubles_in_dollar = 60
 
   euros = 1000
-  dollars = euros * dollars_in_euro  # => 1250.0
-  rubles = dollars * roubles_in_dollar  # => 75000.0
+  dollars = euros * dollars_in_euro    # 1250.0
+  rubles = dollars * roubles_in_dollar # 75000.0
 
   print(rubles)
   ```

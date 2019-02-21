@@ -16,8 +16,8 @@ theory: |
 
       return "Sentence is " + sentenceType
 
-  print(get_type_of_sentence('Hodor'))   # Sentence is normal
-  print(get_type_of_sentence('Hodor?'))  # Sentence is question
+  print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
+  print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
   ```
 
   Мы добавили `else` и новый блок. Этот блок выполнится только если условие в `if` — ложь.
@@ -33,8 +33,8 @@ instructions: |
   Примеры вызова:
 
   ```python
-  print(normalize_url('google.com'))   # 'https://google.com'
-  print(normalize_url('http://ai.fi')) # 'https://ai.fi'
+  print(normalize_url('google.com'))   # => 'https://google.com'
+  print(normalize_url('http://ai.fi')) # => 'https://ai.fi'
   ```
 
   Есть два пути решения:
@@ -52,14 +52,14 @@ instructions: |
 
   ```python
   # Берём 6 символов от начала
-  print('Winterfell'[:6])  # => Winter
+  print('Winterfell'[:6])  # => 'Winter'
   ```
 
   Так вот, можно *отбросить* те же самые 6 символов. Делается это так:
   
   ```python
   # Отбрасываем первые 6 символов
-  print('Winterfell'[6:])  # => fell
+  print('Winterfell'[6:])  # => 'fell'
   ```
 
 tips: []

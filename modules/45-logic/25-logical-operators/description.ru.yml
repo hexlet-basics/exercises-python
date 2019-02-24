@@ -87,7 +87,7 @@ instructions: |
 
   ---
 
-  ![](https:#i.imgur.com/x08CIAC.jpg)
+  ![](https://i.imgur.com/x08CIAC.jpg)
 
   Напишите функцию `is_lannister_soldier`, которая принимает на вход два аргумента:
 
@@ -98,11 +98,11 @@ instructions: |
 
 tips:
   - |
-    [Булева алгебра](https:#ru.wikipedia.org/wiki/Булева_алгебра)
+    [Булева алгебра](https://ru.wikipedia.org/wiki/Булева_алгебра)
   - |
-    [Конъюнкция](https:#ru.wikipedia.org/wiki/Конъюнкция)
+    [Конъюнкция](https://ru.wikipedia.org/wiki/Конъюнкция)
   - |
-    [Дизъюнкция](https:#ru.wikipedia.org/wiki/Дизъюнкция)
+    [Дизъюнкция](https://ru.wikipedia.org/wiki/Дизъюнкция)
 
 definitions:
   - name: "Логические операторы"

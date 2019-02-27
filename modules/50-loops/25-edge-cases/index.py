@@ -1,4 +1,3 @@
-# BEGIN
 def is_arguments_for_substr_correct(string, index, length):
     if index < 0:
         return False
@@ -9,4 +8,3 @@ def is_arguments_for_substr_correct(string, index, length):
     elif index + length > len(string):
         return False
     return True
-# END

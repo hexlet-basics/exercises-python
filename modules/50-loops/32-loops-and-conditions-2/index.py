@@ -1,4 +1,3 @@
-# BEGIN
 def get_even_numbers_up_to(number):
     counter = 1
     result = ''
@@ -7,4 +6,3 @@ def get_even_numbers_up_to(number):
             result = result + str(counter) + ','
         counter += 1
     return result
-# END

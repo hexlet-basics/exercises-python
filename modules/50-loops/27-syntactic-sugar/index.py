@@ -1,4 +1,3 @@
-# BEGIN
 def count_chars(string, char):
     index = len(string) - 1
     result = 0
@@ -7,4 +6,3 @@ def count_chars(string, char):
             result += 1
         index -= 1
     return result
-# END

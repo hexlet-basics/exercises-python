@@ -1,4 +1,3 @@
-# BEGIN
 def does_contain(string, char):
     index = 0
     while index < len(string):
@@ -6,4 +5,3 @@ def does_contain(string, char):
             return True
         index += 1
     return False
-# END

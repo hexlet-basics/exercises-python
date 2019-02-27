@@ -12,8 +12,8 @@ theory: |
   ```python
   def test_emptiness(string):
       if string:
-          return 'empty'
-      return 'non-empty'
+          return 'non-empty'
+      return 'empty'
       
   print(test_emptiness('foo'))  # => 'non-empty'
   print(test_emptiness(''))     # => 'empty'

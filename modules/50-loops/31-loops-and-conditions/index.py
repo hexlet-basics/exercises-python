@@ -1,4 +1,3 @@
-# BEGIN
 def shouter(string):
     length = len(string)
     result = ''
@@ -17,4 +16,3 @@ def shouter(string):
             result += string
             counter += 1
     return result
-# END

@@ -56,7 +56,7 @@ theory: |
 
       if last_char == '?':
           sentence_type = 'question'
-      elif: last_char == '!':
+      elif last_char == '!':
           sentence_type = 'exclamation'
       else:
           sentence_type = 'normal'

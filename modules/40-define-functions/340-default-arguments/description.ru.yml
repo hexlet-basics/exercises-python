@@ -27,7 +27,7 @@ theory: |
 
   Аргументов по умолчанию может быть любое количество, но все они должны быть в конце списка аргументов. То есть такие строчки кода синтаксически некорректны:
 
-  - `def parent_for(childName='Jon', who):`
+  - `def parent_for(child_name='Jon', who):`
   - `def calculate(a, b=90, c):`
   - `def get_prices(code=4161, quantity, place):`
 

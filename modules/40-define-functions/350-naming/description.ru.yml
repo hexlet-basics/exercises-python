@@ -32,7 +32,7 @@ instructions: |
 
   ```python
   result = 'Today is %s %d' % ('February', 8)
-  print_r(result)
+  print(result)
   ```
 
   <pre class='hexlet-basics-output'>Today is February 8</pre>
@@ -45,7 +45,7 @@ instructions: |
 
   ```python
   result = 'Today is %s %02d' % ('February', 8)
-  print_r(result)
+  print(result)
   ```
 
   <pre class='hexlet-basics-output'>Today is February 08</pre>
@@ -54,7 +54,7 @@ instructions: |
 
   ```python
   result = 'Today is %s %04d' % ('February', 8)
-  print_r(result)
+  print(result)
   ```
 
   <pre class='hexlet-basics-output'>Today is February 0008</pre>

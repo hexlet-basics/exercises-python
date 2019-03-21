@@ -1,6 +1,9 @@
 def normalize_url(url):
-    if 'http://' == url[:7]:
-        domain = url[7:]
+    https = 'https://'
+    if url[:8] == https:
+        return url
     else:
-        domain = url
-    return 'https://' + domain
+        if url[:7] == 'http://':
+            return https + url[7:]
+        else:
+            return https + url

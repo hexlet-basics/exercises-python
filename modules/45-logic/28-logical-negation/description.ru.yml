@@ -23,7 +23,7 @@ theory: |
 
   А что если написать так `not not is_even(10)`? Удивительно, но код сработает. В логике двойное отрицание подобно отсутствию отрицания вообще.
 
-  ```php
+  ```python
   print(is_even(10))         # => True
   print(not is_even(10))     # => False
   print(not not is_even(10)) # => True

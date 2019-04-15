@@ -90,7 +90,7 @@ instructions: |
 
   Примеры вызова:
 
-  ```php
+  ```python
   print(who_is_this_house_to_starks('Karstark'))  # => 'friend'
   print(who_is_this_house_to_starks('Frey'))      # => 'enemy'
   print(who_is_this_house_to_starks('Joar'))      # => 'neutral'

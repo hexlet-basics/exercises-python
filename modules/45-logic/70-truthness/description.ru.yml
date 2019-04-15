@@ -48,4 +48,4 @@ instructions: |
 
 tips:
   - |
-    [Booleans](http://php.net/manual/ru/language.types.boolean.php)
+    [Логический (булев) тип данных.](https://pythonz.net/references/named/bool)

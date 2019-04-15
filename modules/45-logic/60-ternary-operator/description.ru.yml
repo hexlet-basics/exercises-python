@@ -72,7 +72,7 @@ instructions: |
 
   Примеры вызова:
 
-  ```php
+  ```python
   print(flip_flop('flip'))  # => 'flop'
   print(flip_flop('flop'))  # => 'flip'
   ```

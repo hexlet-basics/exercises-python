@@ -14,7 +14,7 @@ theory: |
       else:
           sentence_type = 'normal'
 
-      return "Sentence is " + sentenceType
+      return "Sentence is " + sentence_type
 
   print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
   print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
@@ -33,8 +33,9 @@ instructions: |
   Примеры вызова:
 
   ```python
-  print(normalize_url('google.com'))   # => 'https://google.com'
-  print(normalize_url('http://ai.fi')) # => 'https://ai.fi'
+  print(normalize_url('https://ya.ru'))  # => 'https://ya.ru'
+  print(normalize_url('google.com'))     # => 'https://google.com'
+  print(normalize_url('http://ai.fi'))   # => 'https://ai.fi'
   ```
 
   Есть два пути решения:

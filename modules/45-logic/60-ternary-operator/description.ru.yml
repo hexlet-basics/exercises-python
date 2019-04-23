@@ -84,4 +84,4 @@ tips: []
 definitions:
   - name: "Тернарный оператор"
     description: |
-      Способ превратить простую условную инструкцию в выражение, например, `number if number >= 0 else -number`
+      способ превратить простую условную инструкцию в выражение, например, `number if number >= 0 else -number`

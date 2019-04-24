@@ -1,5 +1,5 @@
 # BEGIN
-def mysubstr(string, length):
+def my_substr(string, length):
     result_string = ''
     index = 0
     while index < length:

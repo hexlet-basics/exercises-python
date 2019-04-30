@@ -7,13 +7,13 @@ theory: |
 
   ```python
   if условие 1:
-      # код, который будет выполнен
+      # код, который будет выполнен,
       # если условие 1 истинно
   elif условие 2:
-      # код, который будет выполнен
+      # код, который будет выполнен,
       # если условие 1 ложно, но условие 2 истинно
   elif условие 3:
-      # код, который будет выполнен
+      # код, который будет выполнен,
       # если условия 1 и 2 ложны, но условие 3 истинно
   else:
       # код, который будет выполнен
@@ -38,9 +38,9 @@ theory: |
 
       return 'Sentence is ' + sentence_type
 
-  print(get_type_of_sentence('Who?')) # => 'Sentence is question'
-  print(get_type_of_sentence('No'))   # => 'Sentence is normal'
-  print(get_type_of_sentence('No!'))  # => 'Sentence is exclamation'
+  print(get_type_of_sentence('Who?'))  # => 'Sentence is question'
+  print(get_type_of_sentence('No'))    # => 'Sentence is normal'
+  print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
   ```
 
   Мы добавили еще одну проверку ("exclamation" переводится «восклицание»). Технически функция работает, но с точки зрения семантики есть проблемы.
@@ -60,12 +60,12 @@ theory: |
           sentence_type = 'exclamation'
       else:
           sentence_type = 'normal'
-    
+
       return 'Sentence is ' + sentence_type
 
-  print(get_type_of_sentence('Who?')) # => 'Sentence is question'
-  print(get_type_of_sentence('No'))   # => 'Sentence is normal'
-  print(get_type_of_sentence('No!'))  # => 'Sentence is exclamation'
+  print(get_type_of_sentence('Who?'))  # => 'Sentence is question'
+  print(get_type_of_sentence('No'))    # => 'Sentence is normal'
+  print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
   ```
 
   Теперь все условия выстроены в единую конструкцию. `elif` — это «если не выполнено предыдущее условие, но выполнено текущее». Получается такая схема:
@@ -78,15 +78,15 @@ theory: |
 
 instructions: |
 
-  На электронной карте Вестероса, которую реализовал Сэм, союзники Старков отображены зеленым кружком, враги — красным, а нейтральные семьи — серым.
+  На электронной карте Вестероса, которую реализовал Сэм, союзники Старков отображены зелёным кружком, враги — красным, а нейтральные семьи — серым.
 
-  Напишите для Сэма функцию `who_is_this_house_to_starks`, которая принимает на вход фамилию семьи и возвращает одно из трех значений: `'friend'`, `'enemy'`, '`neutral'`.
+  Напишите для Сэма функцию `who_is_this_house_to_starks`, которая принимает на вход фамилию семьи и возвращает одно из трёх значений: `'friend'`, `'enemy'`, '`neutral'`.
 
   Правила определения:
 
     * Друзья (`'friend'`): 'Karstark', 'Tully'
     * Враги (`'enemy'`): 'Lannister', 'Frey'
-    * Любые другие семьи считаются нейтральными
+    * Любые другие семьи считаются нейтральными (`'neutral'`)
 
   Примеры вызова:
 

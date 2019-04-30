@@ -14,7 +14,7 @@ theory: |
   или может находиться на строчке после какого-нибудь кода:
 
   ```python
-  print('I am the King') # For Lannisters!
+  print('I am the King')  # For Lannisters!
   ```
 
 instructions: |

@@ -5,12 +5,12 @@ def shouter(string):
         counter = 1
     elif length == 5:
         counter = 10
-    else
+    else:
         counter = 100
 
     result = ''
     while counter > 0:
         result += string
-        counter_limit -= 1
+        counter -= 1
 
     return result

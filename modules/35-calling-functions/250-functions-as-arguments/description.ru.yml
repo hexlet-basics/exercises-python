@@ -55,8 +55,8 @@ instructions: |
   Пример использования функции `parent_for`:
 
   ```python
-  mother = parentFor('Joffrey Baratheon')
-  print(mother); # Cersei Lannister
+  mother = parent_for('Joffrey Baratheon')
+  print(mother) # => Cersei Lannister
   ```
 
 tips: []

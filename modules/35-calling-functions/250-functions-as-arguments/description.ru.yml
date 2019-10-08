@@ -52,4 +52,11 @@ instructions: |
 
   Напишите программу, которая выводит на экран имя **деда** Джоффри по материнской линии. Полное имя Джоффри на английском: `'Joffrey Baratheon'`.
 
+  Пример использования функции `parent_for`:
+
+  ```python
+  mother = parentFor('Joffrey Baratheon')
+  print(mother); # Cersei Lannister
+  ```
+
 tips: []

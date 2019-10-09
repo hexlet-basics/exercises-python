@@ -96,6 +96,13 @@ instructions: |
 
   Функция возвращает `True`, если распознан Ланнистер, и `False`, если не распознан.
 
+  Примеры вызова:
+
+  ```python
+  is_lannister_soldier('red', 'man')   # False
+  is_lannister_soldier('blue', 'lion') # True
+  ```
+
 tips:
   - |
     [Булева алгебра](https://ru.wikipedia.org/wiki/Булева_алгебра)

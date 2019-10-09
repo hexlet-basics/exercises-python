@@ -52,6 +52,13 @@ instructions: |
 
   Вам доступна уже готовая к использованию функция `is_lannister_soldier`. Можете воспользоваться ей, чтобы не писать все логические условия заново.
 
+  Примеры вызова:
+
+  ```python
+  is_not_lannister_soldier('red', 'man')   # True
+  is_not_lannister_soldier('blue', 'lion') # False
+  ```
+
 tips:
   - |
     [Законы Де Моргана](https://ru.wikipedia.org/wiki/Законы_де_Моргана)

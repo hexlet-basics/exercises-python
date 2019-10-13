@@ -1,8 +1,8 @@
-euros = 100
+euros_count = 100
 
 # BEGIN
-dollars = euros * 1.25
-print(dollars)
-rubles = dollars * 60
-print(rubles)
+dollars_count = euros_count * 1.25
+print(dollars_count)
+rubles_count = dollars_count * 60
+print(rubles_count)
 # END

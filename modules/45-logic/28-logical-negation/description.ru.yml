@@ -29,8 +29,7 @@ theory: |
   А что если написать так `not not is_even(10)`? Удивительно, но код сработает:
 
   ```python
-  print(is_even(10))      # => True
-  print(not is_even(10))  # => False
+  print(not not is_even(10))  # => True
   ```
 
   В логике двойное отрицание подобно отсутствию отрицания вообще:
@@ -55,8 +54,8 @@ instructions: |
   Примеры вызова:
 
   ```python
-  is_not_lannister_soldier('red', 'man')   # True
-  is_not_lannister_soldier('blue', 'lion') # False
+  is_not_lannister_soldier('red', 'man')    # True
+  is_not_lannister_soldier('blue', 'lion')  # False
   ```
 
 tips:

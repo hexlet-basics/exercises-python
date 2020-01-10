@@ -5,4 +5,5 @@ with TestEnv() as env:
     assert_equal(has_targaryen_reference(''), False)
     assert_equal(has_targaryen_reference('Targari'), False)
     assert_equal(has_targaryen_reference('targaryen'), False)
+    assert_equal(has_targaryen_reference('Targaryenish'), False)
     assert_equal(has_targaryen_reference('Targaryen'), True)

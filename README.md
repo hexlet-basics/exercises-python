@@ -1,3 +1,5 @@
+[![Github Actions Status](https://github.com/hexlet-basics/exercises-python/workflows/Docker/badge.svg)](https://github.com/hexlet-basics/exercises-python/actions)
+
 ## Develop
 
 ```sh

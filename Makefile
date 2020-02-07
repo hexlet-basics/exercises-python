@@ -1,18 +1,16 @@
 compose-setup: compose-build
+
 compose:
 	docker-compose up
 
-gcloud-builds-submit:
-	gcloud builds submit --config cloudbuild.yaml .
+compose-sut:
+	docker-compose -f docker-compose.test.yml run sut
 
-compose-lint:
-	docker-compose run exercises make lint
+compose-description-lint:
+	docker-compose run exercises make description-lint
 
-compose-test:
-	docker-compose run exercises make test
-
-compose-install:
-	docker-compose run exercises npm install
+compose-schema-validate:
+	docker-compose run exercises make schema-validate
 
 compose-bash:
 	docker-compose run exercises bash
@@ -20,15 +18,23 @@ compose-bash:
 compose-build:
 	docker-compose build
 
-SUBDIRS := $(wildcard modules/**/*/.)
-
-lint:
+description-lint:
 	yamllint modules
 
-test: $(SUBDIRS)
-$(SUBDIRS):
-	@echo
-	make test -s -C $@
-	@echo
+compose-test:
+	docker-compose run exercises make test
 
-.PHONY: all $(SUBDIRS)
+test:
+	@(for i in $$(find modules/** -type f -name Makefile); do make test -C $$(dirname $$i) || exit 1; done)
+
+check: description-lint schema-validate test
+
+SUBDIRS := $(wildcard modules/**/*/.)
+
+schema-validate: $(SUBDIRS)
+
+$(SUBDIRS):
+	yq . $@/description.ru.yml > /tmp/current-description.json && ajv -s /exercises-python/schema.json -d /tmp/current-description.json
+	yq . $@/description.en.yml > /tmp/current-description.json && ajv -s /exercises-python/schema.json -d /tmp/current-description.json || true
+
+.PHONY: all test $(SUBDIRS)

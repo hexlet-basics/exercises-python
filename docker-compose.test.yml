@@ -1,4 +1,4 @@
 ---
 sut:
   build: .
-  command: make lint test
+  command: make check

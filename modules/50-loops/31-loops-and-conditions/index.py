@@ -1,7 +1,9 @@
 def shouter(string):
     length = len(string)
 
-    if 0 < length < 5:
+    if length == 0:
+        counter = 0
+    elif 0 < length < 5:
         counter = 1
     elif length == 5:
         counter = 10

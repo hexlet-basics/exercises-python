@@ -1,4 +1,4 @@
-from asserts import assert_true, assert_equal
+from asserts import assert_equal
 from unittest.mock import patch
 from io import StringIO
 

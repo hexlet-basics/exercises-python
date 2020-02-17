@@ -12,6 +12,8 @@ RUN apt-get install -yqq jq
 RUN pip3 install yq
 RUN npm install -g ajv-cli
 
+RUN pip3 install flake8
+
 WORKDIR /exercises-python
 
 ENV PYTHONPATH=/exercises-python/src

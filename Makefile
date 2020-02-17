@@ -6,6 +6,9 @@ compose:
 compose-sut:
 	docker-compose -f docker-compose.test.yml run sut
 
+compose-code-lint:
+	docker-compose run exercises make code-lint
+
 compose-description-lint:
 	docker-compose run exercises make description-lint
 
@@ -21,13 +24,16 @@ compose-build:
 description-lint:
 	yamllint modules
 
+code-lint:
+	flake8 modules
+
 compose-test:
 	docker-compose run exercises make test
 
 test:
 	@(for i in $$(find modules/** -type f -name Makefile); do make test -C $$(dirname $$i) || exit 1; done)
 
-check: description-lint schema-validate test
+check: description-lint code-lint schema-validate test
 
 SUBDIRS := $(wildcard modules/**/*/.)
 

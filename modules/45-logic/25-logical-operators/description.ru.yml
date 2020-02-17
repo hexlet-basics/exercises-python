@@ -56,20 +56,20 @@ theory: |
 
   | A     | B     | A and B  |
   | ----- | ----- | -------  |
-  | TRUE  | TRUE  | **TRUE** |
-  | TRUE  | FALSE | FALSE    |
-  | FALSE | TRUE  | FALSE    |
-  | FALSE | FALSE | FALSE    |
+  | True  | True  | **True** |
+  | True  | False | False    |
+  | False | True  | False    |
+  | False | False | False    |
 
 
   #### ИЛИ `or`
 
   | A     | B     | A or B   |
   | ----- | ----- | -------- |
-  | TRUE  | TRUE  | **TRUE** |
-  | TRUE  | FALSE | **TRUE** |
-  | FALSE | TRUE  | **TRUE** |
-  | FALSE | FALSE | FALSE    |
+  | True  | True  | **True** |
+  | True  | False | **True** |
+  | False | True  | **True** |
+  | False | False | False    |
 
 instructions: |
 
@@ -102,6 +102,8 @@ instructions: |
   is_lannister_soldier('red', 'man')   # False
   is_lannister_soldier('blue', 'lion') # True
   ```
+
+  Когда будете проверять на равенство `None`, делайте так, как принято в настоящем коде на Python: `shield is None` — код будет выглядеть профессионально! Дело в том. что `is` работает быстрее в случае некоторых специальных значений вроде `None`, `True` и `False`.
 
 tips:
   - |

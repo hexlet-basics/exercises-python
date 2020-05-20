@@ -48,9 +48,9 @@ theory: |
   Чем больше пробелов, тем шире отступы:
 
   ```python
-  print("King's " + ' Landing')    # => Kings  Landing
+  print("King's " + ' Landing')    # => King's  Landing
 
-  print("King's  " + '  Landing')  # => Kings    Landing
+  print("King's  " + '  Landing')  # => King's    Landing
   ```
 
 instructions: |

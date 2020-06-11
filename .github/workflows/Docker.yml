@@ -2,40 +2,55 @@ name: Docker
 
 on:
   push:
-    branches:
-      - master
+    branches: [ master ]
   pull_request:
+    branches: [ master ]
 
 env:
-  # TODO: Change variable to your image's name.
-  IMAGE_NAME: hexletbasics/exercises-python
+  SLACK_COLOR_SUCCESS: '#0c0'
+  SLACK_COLOR_FAIL: '#c00'
+  SLACK_MESSAGE_SUCCESS: 'Jobs succeed'
+  SLACK_MESSAGE_FAIL: 'Jobs failed'
 
 jobs:
-  # Run tests.
-  # See also https://docs.docker.com/docker-hub/builds/automated-testing/
-  test:
+  test-deploy-notify:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-
       - name: Run tests
         run: |
-            docker-compose --file docker-compose.test.yml build
-            docker-compose --file docker-compose.test.yml run sut
-  # Push image to GitHub Package Registry.
-  # See also https://docs.docker.com/docker-hub/builds/
-  push:
-    # Ensure test job passes before pushing image.
-    needs: test
+          docker-compose --file docker-compose.test.yml build
+          docker-compose --file docker-compose.test.yml run sut
 
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push'
-
-    steps:
-      - uses: actions/checkout@master
-      - uses: elgohr/Publish-Docker-Github-Action@master
+      - name: Build and push into docker hub
+        uses: docker/build-push-action@v1.1.0
         with:
-          name: ${{ env.IMAGE_NAME }}
+          repository: ${{ env.GITHUB_REPOSITORY }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          tags: latest
+
+      - name: Set base env vars for Slack
+        if: ${{ always() }}
+        uses: allenevans/set-env@v1.1.0
+        with:
+          SLACK_USERNAME: Github Actions
+          SLACK_CHANNEL: basics-code-auto
+          SLACK_TITLE: ${{ github.repository }} status
+          SLACK_ICON: https://ru.code-basics.com/images/logo-601a4d1dc269ba3616ad4663e0c0bbef.png
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      - name: Set success env vars for Slack
+        if: ${{ success() }}
+        uses: allenevans/set-env@v1.1.0
+        with:
+          SLACK_COLOR: ${{ env.SLACK_COLOR_SUCCESS }}
+          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_SUCCESS }}
+      - name: Set failure env vars for Slack
+        if: ${{ failure() }}
+        uses: allenevans/set-env@v1.1.0
+        with:
+          SLACK_COLOR: ${{ env.SLACK_COLOR_FAIL }}
+          SLACK_MESSAGE: ${{ env.SLACK_MESSAGE_FAIL }}
+      - name: Send job result into Slack
+        if: ${{ always() }}
+        uses: rtCamp/action-slack-notify@v2.0.0

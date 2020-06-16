@@ -1,6 +1,7 @@
 FROM melodyn/base-image:latest
 
 RUN pip3 install flake8
+RUN pip3 install asserts
 
 WORKDIR /exercises-python
 

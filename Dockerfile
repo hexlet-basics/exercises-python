@@ -1,11 +1,11 @@
-FROM melodyn/base-image:latest
+FROM hexletbasics/base-image:latest
 
 RUN pip3 install flake8
 RUN pip3 install asserts
 
 WORKDIR /exercises-python
 
-COPY --from=melodyn/base-image:latest /tmp/basics/common/* ./
+COPY --from=hexletbasics/base-image:latest /tmp/basics/common/* ./
 COPY . .
 
 ENV PYTHONPATH=/exercises-python/src

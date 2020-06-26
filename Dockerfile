@@ -1,7 +1,7 @@
 FROM hexletbasics/base-image:latest
 
-RUN pip3 install flake8
-RUN pip3 install asserts
+RUN pip3 install flake8 asserts
+RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py
 
 WORKDIR /exercises-python
 

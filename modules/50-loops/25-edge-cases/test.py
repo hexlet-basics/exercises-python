@@ -8,6 +8,6 @@ with TestEnv() as env:
     assert_equal(is_arguments_for_substr_correct(string, -1, 0), False)
     assert_equal(is_arguments_for_substr_correct(string, 0, -1), False)
     assert_equal(is_arguments_for_substr_correct(string, end + 1, 0), False)
-    assert_equal(is_arguments_for_substr_correct(string, end + 5, -5), False)
+    assert_equal(is_arguments_for_substr_correct(string, end, 5), False) 
     assert_equal(is_arguments_for_substr_correct(string, end, 1), True)
     assert_equal(is_arguments_for_substr_correct(string, 3, 3), True)

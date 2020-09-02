@@ -3,7 +3,7 @@
 name: Вызов функции — выражение
 theory: |
 
-  Посмотрите на код из одного из предыдущих уроков:
+  Посмотрите на код одного из предыдущих уроков:
 
   ```python
   distance = calculate_distance('Lannisport', 'Bayasabhad')

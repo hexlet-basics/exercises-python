@@ -4,4 +4,4 @@ language:
   docker_image: "hexletbasics/exercises-python"
   extension: python
   exercise_filename: index.py
-  exercise_test_filename: test.py
+  exercise_test_filename: test_code.py

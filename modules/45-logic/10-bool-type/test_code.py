@@ -1,8 +1,7 @@
-from hexlet.test import TestEnv, assert_equal
+import index
 
-with TestEnv() as env:
-    is_pensioner = env.expect_defined('is_pensioner')
-    assert_equal(is_pensioner(23), False)
-    assert_equal(is_pensioner(70), True)
-    assert_equal(is_pensioner(60), True)
-    assert_equal(is_pensioner(59), False)
+def test1():
+    assert index.is_pensioner(23) == False
+    assert index.is_pensioner(70) == True
+    assert index.is_pensioner(60) == True
+    assert index.is_pensioner(59) == False

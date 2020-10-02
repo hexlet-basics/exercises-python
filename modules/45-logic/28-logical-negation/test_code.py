@@ -1,9 +1,8 @@
-from hexlet.test import TestEnv, assert_equal
+import index
 
-with TestEnv() as env:
-    is_not_lannister_soldier = env.expect_defined('is_not_lannister_soldier')
-    assert_equal(is_not_lannister_soldier('blue', None), True)
-    assert_equal(is_not_lannister_soldier('red', 'man'), True)
-    assert_equal(is_not_lannister_soldier('red', 'lion'), False)
-    assert_equal(is_not_lannister_soldier('blue', 'lion'), False)
-    assert_equal(is_not_lannister_soldier('red', None), False)
+def test1():
+    assert index.is_not_lannister_soldier('blue', None) == True
+    assert index.is_not_lannister_soldier('red', 'man') == True
+    assert index.is_not_lannister_soldier('red', 'lion') == False
+    assert index.is_not_lannister_soldier('blue', 'lion') == False
+    assert index.is_not_lannister_soldier('red', None) == False

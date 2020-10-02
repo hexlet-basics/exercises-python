@@ -1,8 +1,7 @@
-from hexlet.test import TestEnv, assert_equal
+import index
 
-with TestEnv() as env:
-    is_falsy = env.expect_defined('is_falsy')
-    assert_equal(is_falsy(''), True)
-    assert_equal(is_falsy('a'), False)
-    assert_equal(is_falsy(0), True)
-    assert_equal(is_falsy(10), False)
+def test1():
+    assert index.is_falsy('') == True
+    assert index.is_falsy('a') == False
+    assert index.is_falsy(0) == True
+    assert index.is_falsy(10) == False

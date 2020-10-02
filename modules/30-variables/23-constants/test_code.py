@@ -1,7 +1,4 @@
-# FIXME
+import index
 
-from hexlet.test import TestEnv
-
-with TestEnv() as env:
-    env.expect_defined('DRAGONS_BORN_COUNT')
-    env.expect_equal('DRAGONS_BORN_COUNT', 3)
+def test1():
+    assert index.DRAGONS_BORN_COUNT == 3

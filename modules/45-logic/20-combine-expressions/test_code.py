@@ -1,9 +1,8 @@
-from hexlet.test import TestEnv, assert_equal
+import index
 
-with TestEnv() as env:
-    has_targaryen_reference = env.expect_defined('has_targaryen_reference')
-    assert_equal(has_targaryen_reference(''), False)
-    assert_equal(has_targaryen_reference('Targari'), False)
-    assert_equal(has_targaryen_reference('targaryen'), False)
-    assert_equal(has_targaryen_reference('Targaryens'), True)
-    assert_equal(has_targaryen_reference('Targaryen'), True)
+def test1():
+    assert index.has_targaryen_reference('') == False
+    assert index.has_targaryen_reference('Targari') == False
+    assert index.has_targaryen_reference('targaryen') == False
+    assert index.has_targaryen_reference('Targaryens') == True
+    assert index.has_targaryen_reference('Targaryen') == True

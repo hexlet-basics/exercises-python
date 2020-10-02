@@ -5,4 +5,4 @@ def test1():
     assert actual1 == 'Tywin Lannister'
 
     actual2 = index.custom_parent_for('Daenerys Targaryen', 'mother')
-    assert actual1 == 'Rhaella Targaryen'
+    assert actual2 == 'Rhaella Targaryen'

@@ -1,5 +1,6 @@
 import index
 
+
 def test1():
     actual1 = index.get_age_difference(2001, 2018)
     assert actual1 == 'The age difference is 17'

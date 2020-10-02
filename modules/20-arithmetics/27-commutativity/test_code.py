@@ -1,4 +1,3 @@
-import importlib
 from hexlet.test import expect_output
 
 

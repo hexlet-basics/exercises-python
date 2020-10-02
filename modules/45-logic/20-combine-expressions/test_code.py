@@ -1,8 +1,9 @@
 import index
 
+
 def test1():
-    assert index.has_targaryen_reference('') == False
-    assert index.has_targaryen_reference('Targari') == False
-    assert index.has_targaryen_reference('targaryen') == False
-    assert index.has_targaryen_reference('Targaryens') == True
-    assert index.has_targaryen_reference('Targaryen') == True
+    assert not index.has_targaryen_reference('')
+    assert not index.has_targaryen_reference('Targari')
+    assert not index.has_targaryen_reference('targaryen')
+    assert index.has_targaryen_reference('Targaryens')
+    assert index.has_targaryen_reference('Targaryen')

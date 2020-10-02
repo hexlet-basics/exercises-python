@@ -1,7 +1,8 @@
 import index
 
+
 def test1():
-    assert index.is_falsy('') == True
-    assert index.is_falsy('a') == False
-    assert index.is_falsy(0) == True
-    assert index.is_falsy(10) == False
+    assert index.is_falsy('')
+    assert not index.is_falsy('a')
+    assert index.is_falsy(0)
+    assert not index.is_falsy(10)

@@ -1,15 +1,15 @@
-'''
-Exercise tesing utils
-'''
 import importlib
 
 __all__ = (
     'expect_output',
 )
 
-def expect_output(capsys, output):
+def expect_output(capsys, expected):
     importlib.import_module('index')
     out, _err = capsys.readouterr()
-    assert out.strip() == output
+    actual = out.strip()
+
+    assert actual == expected
+
     print("\n")
     print(out)

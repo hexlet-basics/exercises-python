@@ -1,4 +1,3 @@
-first_number = 20
-second_number = -100
+my_brothers_count = 2
 
-print(first_number * second_number)
+print(my_brothers_count)

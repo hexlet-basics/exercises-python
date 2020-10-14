@@ -6,11 +6,11 @@ theory: |
   Вспомним один из прошлых уроков:
 
   ```python
-  euros = 1000
-  dollars = euros * 1.25  # 1250.0
-  rubles = dollars * 60   # 75000.0
+  euros_count = 1000
+  dollars_count = euros_count * 1.25  # 1250.0
+  rubles_count = dollars_count * 60   # 75000.0
 
-  print(rubles)
+  print(rubles_count)
   ```
 
   С точки зрения профессиональной разработки, такой код «пахнет». Так описывают код, который не соответствует так называемым лучшим практикам (best practices). И причина здесь вот в чем: уже сейчас, глядя на числа `60` и `1.25`, вы скорее всего задаетесь вопросом: «что это за числа?». А представьте, что будет через месяц! А как его поймет новый программист, не видевший код ранее? В нашем примере контекст восстанавливается благодаря грамотному именованию, но в реальной жизни код значительно сложнее, и поэтому догадаться до смысла чисел зачастую невозможно.
@@ -20,14 +20,14 @@ theory: |
   Выход из ситуации прост: достаточно создать переменные с правильными именами, как все встанет на свои места.
 
   ```python
-  dollars_in_euro = 1.25
-  roubles_in_dollar = 60
+  dollars_per_euro = 1.25
+  roubles_per_dollar = 60
 
-  euros = 1000
-  dollars = euros * dollars_in_euro    # 1250.0
-  rubles = dollars * roubles_in_dollar # 75000.0
+  euros_count = 1000
+  dollars_count = euros_count * dollars_per_euro     # 1250.0
+  rubles_count = dollars_count * roubles_per_dollar  # 75000.0
 
-  print(rubles)
+  print(rubles_count)
   ```
 
   Обратите внимание на следующие детали:

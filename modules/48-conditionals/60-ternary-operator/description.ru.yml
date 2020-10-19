@@ -36,7 +36,7 @@ theory: |
 
   Общий паттерн выглядит так: `<expression on true> if <predicate> else <expression on false>`.
 
-  Давайте перепишем начальный вариант `get_type_of_sentence` аналогично:
+  Давайте перепишем начальный вариант `get_type_of_sentence()` аналогично:
 
   Было:
 
@@ -46,9 +46,6 @@ theory: |
       if last_char == '?':
           return 'question'
       return 'normal'
-
-  print(get_type_of_sentence('Hodor'))   # => normal
-  print(get_type_of_sentence('Hodor?'))  # => question
   ```
 
   Стало:
@@ -68,7 +65,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `flip_flop`, которая принимает на вход строку и, если эта строка равна `'flip'`, возвращает строку `'flop'`. В противном случае функция должна вернуть `'flip'`.
+  Реализуйте функцию `flip_flop()`, которая принимает на вход строку и, если эта строка равна `'flip'`, возвращает строку `'flop'`. В противном случае функция должна вернуть `'flip'`.
 
   Примеры вызова:
 
@@ -82,6 +79,6 @@ instructions: |
 tips: []
 
 definitions:
-  - name: "Тернарный оператор"
+  - name: Тернарный оператор
     description: |
-      способ превратить простую условную инструкцию в выражение, например, `number if number >= 0 else -number`
+      способ превратить простую условную инструкцию в выражение, например, `number if number >= 0 else -number`.

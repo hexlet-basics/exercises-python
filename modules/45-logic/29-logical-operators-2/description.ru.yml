@@ -25,10 +25,9 @@ theory: |
       - `and` **И**
       - `year % 100 != 0`: остаток от деления на 100 не равен 0, значит, число не кратно 100
 
-
 instructions: |
 
-  Напишите функцию `is_neutral_soldier`, которая принимает на вход два аргумента:
+  Напишите функцию `is_neutral_soldier()`, которая принимает на вход два аргумента:
 
   1. Цвет доспехов (строка). Возможные варианты: `red`, `yellow`, `black`.
   2. Цвет щита (строка). Возможные варианты: `red`, `yellow`, `black`.
@@ -42,4 +41,3 @@ instructions: |
   print(is_neutral_soldier('red', 'black'))     # => False
   print(is_neutral_soldier('red', 'red'))       # => False
   ```
-

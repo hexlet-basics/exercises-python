@@ -60,7 +60,6 @@ theory: |
   result = round(8 + 2.25)         # 10
   result = hex(200 + 55)           # '0xff'
   print('D' + 'ragon');            # => 'Dragon'
-  ```
 
   # выражения с переменными в аргументах
   number = 1.25

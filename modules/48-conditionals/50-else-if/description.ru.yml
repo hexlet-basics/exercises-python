@@ -84,8 +84,8 @@ instructions: |
 
   Правила определения:
 
-    * Друзья (`'friend'`): 'Karstark', 'Tully'
-    * Враги (`'enemy'`): 'Lannister', 'Frey'
+    * Друзья (`'friend'`): `'Karstark'`, `'Tully'`
+    * Враги (`'enemy'`): `'Lannister'`, `'Frey'`
     * Любые другие семьи считаются нейтральными (`'neutral'`)
 
   Примеры вызова:

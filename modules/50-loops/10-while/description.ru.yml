@@ -106,7 +106,7 @@ theory: |
       i = 1
       # Этот цикл никогда не остановится
       # и будет печатать всегда одно значение
-      while i <= last_number):
+      while i <= last_number:
           print(i)
       print('finished!')
   ```

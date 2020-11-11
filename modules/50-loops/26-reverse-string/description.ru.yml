@@ -23,7 +23,7 @@ theory: |
 
       return reversed_string
 
-  reverse_string('Game Of Thrones'))  # 'senorhT fO emaG'
+  reverse_string('Game Of Thrones')  # 'senorhT fO emaG'
   # Проверка нейтрального элемента
   reverse_string('')  # ''
   ```

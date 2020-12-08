@@ -23,9 +23,9 @@ instructions: |
   Пример вызова:
 
   ```python
-  str = 'If I look back I am lost'
-  filter_string(str, 'I')  # 'f  look back  am lost'
-  filter_string(str, 'o')  # 'If I lk back I am lst'
+  text = 'If I look back I am lost'
+  filter_string(text, 'I')  # 'f  look back  am lost'
+  filter_string(text, 'o')  # 'If I lk back I am lst'
   ```
 
 tips: []

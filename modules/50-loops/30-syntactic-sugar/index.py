@@ -1,8 +1,8 @@
-def filter_string(string, char):
+def filter_string(text, char):
     index = 0
     result = ''
-    while index < len(string):
-        current_char = string[index]
+    while index < len(text):
+        current_char = text[index]
         if current_char != char:
             result += current_char
         index += 1

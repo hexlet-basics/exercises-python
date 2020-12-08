@@ -1,5 +1,6 @@
 from hexlet.code_basics import to_upper_case
 
+
 # BEGIN
 def count_chars(string, char):
     index = 0

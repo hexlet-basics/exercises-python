@@ -2,8 +2,7 @@ import index
 
 
 def test1():
-    string = 'If I look back I am lost'
-    assert index.count_chars(string, 'I') == 3
-    assert index.count_chars(string, 'z') == 0
-    assert index.count_chars(string, 'o') == 3
-    assert index.count_chars(string, 't') == 1
+    text = 'If I look back I am lost'
+    assert index.filter_string(text, 'w') == 'If I look back I am lost'
+    assert index.filter_string(text, 'I') == 'f  look back  am lost'
+    assert index.filter_string('zz zorro', 'z') == ' orro'

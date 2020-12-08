@@ -1,8 +1,9 @@
-def count_chars(string, char):
-    index = len(string) - 1
-    result = 0
-    while index >= 0:
-        if string[index] == char:
-            result += 1
-        index -= 1
+def filter_string(text, char):
+    index = 0
+    result = ''
+    while index < len(text):
+        current_char = text[index]
+        if current_char != char:
+            result += current_char
+        index += 1
     return result

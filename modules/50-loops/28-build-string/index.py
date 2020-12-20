@@ -7,3 +7,4 @@ def my_substr(string, length):
         index = index + 1
 
     return result_string
+#END

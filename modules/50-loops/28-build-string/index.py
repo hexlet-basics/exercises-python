@@ -1,4 +1,3 @@
-# BEGIN
 def my_substr(string, length):
     result_string = ''
     index = 0
@@ -7,4 +6,3 @@ def my_substr(string, length):
         index = index + 1
 
     return result_string
-#END

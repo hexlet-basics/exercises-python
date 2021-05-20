@@ -14,3 +14,6 @@ def test1():
     assert index.normalize_url(
         'httpbin.org/redirect-to?url=https://google.com'
     ) == 'https://httpbin.org/redirect-to?url=https://google.com'
+    assert index.normalize_url(
+        'httpbin.org/redirect-to?url=http://google.com'
+    ) == 'https://httpbin.org/redirect-to?url=http://google.com'

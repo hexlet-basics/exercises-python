@@ -67,7 +67,7 @@ instructions: |
   print_jaimes_line("Farewell, my friend...")
   ```
 
-  <pre class='hexlet-basics-output'>JAIME:  Farewell, my friend...</pre>
+  <pre class='hexlet-basics-output'>JAIME: Farewell, my friend...</pre>
 
   Повторяю, не торопитесь выводить это сообщение самостоятельно, иначе ваша программа не пройдёт тесты! Только **объявите** функцию!
 

@@ -8,7 +8,7 @@ theory: |
   ```python
   # Оператор такой же, как и при сложении чисел
   # но здесь он имеет другой смысл (семантику)
-  print('Dragon' + 'stone');
+  print('Dragon' + 'stone')
   # => 'Dragonstone'
   ```
 

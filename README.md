@@ -4,7 +4,7 @@
 
 ### Участие
 
-* Обсуждение в канале #hexlet-volunteers слака http://slack-ru.hexlet.io
+* Обсуждение в канале #hexlet-volunteers ссылка http://slack-ru.hexlet.io
 
 ## Develop
 

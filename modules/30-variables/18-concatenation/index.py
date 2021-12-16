@@ -1,4 +1,4 @@
-info = "We couldn't verify you mother's maiden name."
+info = "We couldn't verify your mother's maiden name."
 intro = "Here is important information about your account security."
 
 first_name = 'Joffrey'

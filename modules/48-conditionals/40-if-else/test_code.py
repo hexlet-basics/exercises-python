@@ -1,7 +1,7 @@
 import index
 
 
-def test1():
+def test():
     assert index.normalize_url('yandex.ru') == 'https://yandex.ru'
     assert index.normalize_url('http://yandex.ru') == 'https://yandex.ru'
     assert index.normalize_url('https://yandex.ru') == 'https://yandex.ru'

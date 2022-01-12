@@ -94,4 +94,4 @@ def to_upper_case(text: str) -> str:
 
 def get_current_date():
     current_date = date.today()
-    return "{}".format(current_date)
+    return f"{current_date}"

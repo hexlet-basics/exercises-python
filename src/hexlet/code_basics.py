@@ -1,3 +1,6 @@
+from datetime import date
+
+
 '''
 Functions those an engine uses during testing
 '''
@@ -6,7 +9,8 @@ __all__ = (
     'calculate_distance_between_towns',
     'is_lannister_soldier',
     'parent_for',
-    'to_upper_case'
+    'to_upper_case',
+    'get_current_date',
 )
 
 
@@ -86,3 +90,8 @@ def to_upper_case(text: str) -> str:
     Converts all lowercase characters in a string into uppercase
     '''
     return text.upper()
+
+
+def get_current_date():
+    current_date = date.today()
+    return "{}".format(current_date)

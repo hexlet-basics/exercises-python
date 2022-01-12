@@ -1,7 +1,6 @@
-import index
+from datetime import date
+from index import get_current_year
 
 
-def test1():
-    actual = index.get_parent_names_total_length('Daenerys Targaryen')
-    expected = 35
-    assert actual == expected
+def test():
+    assert date.today().year == get_current_year()

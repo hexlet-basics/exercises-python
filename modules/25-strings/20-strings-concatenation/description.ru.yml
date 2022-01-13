@@ -20,7 +20,7 @@ theory: |
   print('Kings' + 'wood')      # => Kingswood
 
   # Обратный порядок слов
-  print('Kings' + 'road')      # => Kingsroad
+  print('road' + 'Kings')      # => roadKings
 
   # Конкатенировать можно абсолютно любые строки
   print("King's" + 'Landing')  # => King'sLanding

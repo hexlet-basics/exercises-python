@@ -1,9 +1,9 @@
 import index
 
 
-def test1():
-    actual1 = index.custom_parent_for('Cersei Lannister')
-    assert actual1 == 'Tywin Lannister'
+def test():
+    actual1 = index.get_hidden_card('1234123412341234')
+    assert actual1 == '****1234'
 
-    actual2 = index.custom_parent_for('Daenerys Targaryen', 'mother')
-    assert actual2 == 'Rhaella Targaryen'
+    actual2 = index.get_hidden_card('1234123412344321', 6)
+    assert actual2 == '******4321'

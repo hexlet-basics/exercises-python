@@ -1,7 +1,5 @@
-from hexlet.code_basics import parent_for
-
-
 # BEGIN
-def custom_parent_for(child_name, parent_name='father'):
-    return parent_for(child_name, parent_name)
+def get_hidden_card(card_number, stars_count=4):
+    visible_digits = card_number[-4:]
+    return visible_digits.rjust(stars_count + 4, '*')
 # END

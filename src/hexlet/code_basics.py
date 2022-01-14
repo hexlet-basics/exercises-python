@@ -5,9 +5,7 @@ __all__ = (
     'calculate_distance',
     'calculate_distance_between_towns',
     'is_lannister_soldier',
-    'parent_for',
-    'to_upper_case',
-    'get_current_date',
+    'parent_for'
 )
 
 
@@ -80,10 +78,3 @@ def is_lannister_soldier(color: str, shield: str = None) -> bool:
     Checks that soldier is from Lannister's army
     '''
     return (color == 'red' and shield is None) or shield == 'lion'
-
-
-def to_upper_case(text: str) -> str:
-    '''
-    Converts all lowercase characters in a string into uppercase
-    '''
-    return text.upper()

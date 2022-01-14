@@ -1,9 +1,9 @@
-from hexlet.code_basics import parent_for
+from datetime import date
 
 
 # BEGIN
-def get_parent_names_total_length(child):
-    mother = parent_for(child, 'mother')
-    father = parent_for(child, 'father')
-    return len(mother) + len(father)
+def get_current_year():
+    current_date = f"{date.today()}"
+    current_year = current_date[0:4]
+    return int(current_year)
 # END

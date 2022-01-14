@@ -1,7 +1,7 @@
-from hexlet.code_basics import to_upper_case
+from random import random
 
-TEXT = 'knock!'
 
+#  def print_random():
 # BEGIN
-print(to_upper_case(TEXT))
+print(int(random() * 10) + 1)
 # END

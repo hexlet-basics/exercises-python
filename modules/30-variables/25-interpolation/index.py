@@ -1,5 +1,5 @@
 stark = 'Arya'
 
 # BEGIN
-print("Do you want to eat, {}?".format(stark))
+print(f'Do you want to eat, {stark}?')
 # END

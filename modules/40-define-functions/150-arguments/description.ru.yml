@@ -9,7 +9,7 @@ theory: |
 
   ```python
   def show_date(month, day):
-      print('Today is: {} {}'.format(month, day))
+      print(f'Today is: {month} {day}')
 
   show_date('January', '29')
   ```

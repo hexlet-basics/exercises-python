@@ -18,7 +18,7 @@ theory: |
           current_char = string[index]
           reversed_string = reversed_string + current_char
           # То же самое через интерполяцию
-          # reversed_string = "{}{}".format(reversed_string, current_char)
+          # reversed_string = f"{reversed_string}{current_char}"
           index = index - 1
 
       return reversed_string

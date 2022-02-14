@@ -56,7 +56,9 @@ instructions: |
 
   (Конечно, можно «обмануть» тесты и просто сделать `print('~')` и т.д., но так будет совсем неинтересно :)
 
-tips: []
+tips:
+  - |
+    [Что такое кодировки?](https://guides.hexlet.io/encoding/)
 
 definitions:
   - name: Кодировка

@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = '80'
+    expected = 'First: N\nLast: t';
     expect_output(capsys, expected)

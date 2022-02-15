@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = 'Rhaella Targaryen'
+    expected = '-3';
     expect_output(capsys, expected)

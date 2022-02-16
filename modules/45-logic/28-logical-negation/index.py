@@ -1,7 +1,8 @@
-from hexlet.code_basics import is_lannister_soldier
-
-
 # BEGIN
-def is_not_lannister_soldier(color, shield):
-    return not is_lannister_soldier(color, shield)
+def is_palindrome(word):
+    lowerWord = word.lower()
+    return lowerWord == lowerWord[::-1];
+
+def is_not_palindrome(word):
+    return not is_palindrome(word);
 # END

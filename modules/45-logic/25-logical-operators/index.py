@@ -1,2 +1,2 @@
-def is_lannister_soldier(color, shield):
-    return (color == 'red' and shield is None) or shield == 'lion'
+def is_leap_year(year):
+    return year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)

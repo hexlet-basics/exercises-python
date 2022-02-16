@@ -3,17 +3,6 @@
 name: Тернарный оператор
 theory: |
 
-  #### Вкратце
-
-  ```python
-  <expression on true> if <predicate> else <expression on false>
-
-  # например
-  number if number >= 0 else -number
-  ```
-
-  ---
-
   Посмотрите на определение функции, которая возвращает модуль переданного числа:
 
   ```python

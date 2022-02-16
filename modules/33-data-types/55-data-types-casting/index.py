@@ -1,1 +1,1 @@
-print(str(2) + ' times')
+print(str(2.9) + ' times')

@@ -25,7 +25,7 @@ theory: |
     * `is_empty()` — «пустой ли?»
     * `has_errors()` — «есть ли ошибки?»
 
-  Функция может считаться предикатом, **только** если она возвращает `bool`.
+  Функция может считаться предикатом, **только** если она возвращает булевы значения `True` или `False`.
 
   ---
 
@@ -46,8 +46,8 @@ instructions: |
   Напишите функцию `is_mister()`, которая принимает строку и проверяет, является ли она словом `'Mister'`.
 
   ```python
-  is_mister('Mister')  # True
-  is_mister('Missis')  # False
+  is_mister('Mister') # True
+  is_mister('Missis') # False
   ```
 
 tips:

@@ -48,7 +48,6 @@ instructions: |
 
   Создайте переменную с именем `motto` и содержимым `What Is Dead May Never Die!`. Распечатайте содержимое переменной.
 
-
 tips:
   - |
     [Именование в программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)

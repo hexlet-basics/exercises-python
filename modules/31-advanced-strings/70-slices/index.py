@@ -1,5 +1,5 @@
-name = 'Na\nharis';
+value = 'Hexlet';
 
 # BEGIN
-print(name[7])
+print(value[2:5])
 # END

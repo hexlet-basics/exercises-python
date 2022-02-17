@@ -1,9 +1,9 @@
 def normalize_url(url):
-    https = 'https://'
-    if url[:8] == https:
+    prefix = 'https://'
+    if url[:8] == prefix:
         return url
     else:
         if url[:7] == 'http://':
-            return https + url[7:]
+            return prefix + url[7:]
         else:
-            return https + url
+            return prefix + url

@@ -1,20 +1,11 @@
-import importlib
+from hexlet.test import expect_output
 
+def check(output):
+    value = int(output)
 
-def expect_output(capsys, expected):
-    importlib.import_module('index')
-    out, _err = capsys.readouterr()
-    actual = out.strip()
-
-    assert actual in expected
-
-    print("\n")
-    print(out)
+    assert value >= 1
+    assert value <= 10
 
 
 def test(capsys):
-    i = 0
-    expected = ('1', '2', '3', '4', '5', '6', '7', '8', '9', '10')
-    while i < 10:
-        expect_output(capsys, expected)
-        i += 1
+    expect_output(capsys, check)

@@ -5,6 +5,6 @@ version: '3'
 services:
   exercises:
     build: .
-    volumes:
-      - .:/exercises-python
+    image: hexletbasics/exercises-python:cached
     command: make check
+

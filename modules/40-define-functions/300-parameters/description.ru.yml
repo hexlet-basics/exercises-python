@@ -37,7 +37,7 @@ theory: |
   ```python
   # Округление. Первый параметр - число, второй - точность
   round(10.32, 1) # 10.3
-  # Такой вызов завершиться с ошибкой
+  # Такой вызов завершится с ошибкой
   round(1, 10.32) # TypeError: 'float' object cannot be interpreted as an integer
   ```
 

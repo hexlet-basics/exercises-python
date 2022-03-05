@@ -4,7 +4,7 @@ from hexlet.test import expect_output
 def check(output):
     value = int(output)
 
-    assert value >= 1
+    assert value >= 0
     assert value <= 10
 
 

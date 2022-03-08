@@ -1,1 +1,1 @@
-pytest -p setup --capture=no --color=yes -x --tb=short
+pytest -p setup --capture=no --color=yes -x --tb=short -q

@@ -44,13 +44,11 @@ instructions: |
   * Строка
   * Буква для поиска
 
-  Пример вызова:
-
   ```python
-  print(does_contain('Renly', 'R'))  # => True
-  print(does_contain('Renly', 'r'))  # => False
-  print(does_contain('Tommy', 'm'))  # => True
-  print(does_contain('Tommy', 'd'))  # => False
+  print(does_contain('Hexlet', 'H'))  # => True
+  print(does_contain('Hexlet', 'h'))  # => False
+  print(does_contain('Awesomeness', 'm'))  # => True
+  print(does_contain('Awesomeness', 'd'))  # => False
   ```
 
 tips:

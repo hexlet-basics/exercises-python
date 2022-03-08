@@ -1,4 +1,4 @@
-def multiply_number_from_range(start, finish):
+def multiply_numbers_from_range(start, finish):
     i = start
     result = 1
     while i <= finish:

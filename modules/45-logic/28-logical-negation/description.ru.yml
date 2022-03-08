@@ -56,13 +56,15 @@ instructions: |
   is_palindrome('Ага') # true
   ```
 
-  2. На базе функции `is_palindrome()` реализуйте функцию `is_not_palindrome()`, которая проверяет что слово НЕ является палиндромом. Используйте для этого отрицание:
+  2. Реализуйте функцию `is_not_palindrome()`, которая проверяет что слово НЕ является палиндромом:
 
   ```javascript
   is_not_palindrome('шалаш') # false
   is_not_palindrome('ага') # false
   is_not_palindrome('хекслет') # true
   ```
+
+  Для этого, вызовите функцию `is_palindrome()` внутри `is_not_palindrome()` и примените отрицание.
 
 tips:
   - |

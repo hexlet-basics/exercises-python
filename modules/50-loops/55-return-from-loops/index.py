@@ -1,4 +1,4 @@
-def does_contain(string, char):
+def is_contains_char(string, char):
     index = 0
     while index < len(string):
         if string[index] == char:

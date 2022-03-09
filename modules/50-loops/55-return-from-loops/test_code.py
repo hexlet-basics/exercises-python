@@ -2,8 +2,8 @@ import index
 
 
 def test1(capsys):
-    assert index.does_contain('Hexlet', 'H')
-    assert not index.does_contain('Hexlet', 'h')
-    assert index.does_contain('Awesomeness', 'm')
-    assert not index.does_contain('Awesomeness', 'd')
-    assert index.does_contain('Awesomeness', 'o')
+    assert index.is_contains_char('Hexlet', 'H')
+    assert not index.is_contains_char('Hexlet', 'h')
+    assert index.is_contains_char('Awesomeness', 'm')
+    assert not index.is_contains_char('Awesomeness', 'd')
+    assert index.is_contains_char('Awesomeness', 'o')

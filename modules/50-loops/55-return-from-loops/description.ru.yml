@@ -39,16 +39,16 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `does_contain()`, которая проверяет с учётом регистра, содержит ли строка указанную букву (в этот раз не пользуйтесь оператором `in`!). Функция принимает два параметра:
+  Реализуйте функцию `is_contains_char()`, которая проверяет с учётом регистра, содержит ли строка указанную букву (в этот раз не пользуйтесь оператором `in`!). Функция принимает два параметра:
 
   * Строка
   * Буква для поиска
 
   ```python
-  print(does_contain('Hexlet', 'H'))  # => True
-  print(does_contain('Hexlet', 'h'))  # => False
-  print(does_contain('Awesomeness', 'm'))  # => True
-  print(does_contain('Awesomeness', 'd'))  # => False
+  print(is_contains_char('Hexlet', 'H'))  # => True
+  print(is_contains_char('Hexlet', 'h'))  # => False
+  print(is_contains_char('Awesomeness', 'm'))  # => True
+  print(is_contains_char('Awesomeness', 'd'))  # => False
   ```
 
 tips:

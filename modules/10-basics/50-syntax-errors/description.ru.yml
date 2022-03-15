@@ -8,7 +8,7 @@ theory: |
   Вот пример кода с синтаксической ошибкой:
 
   ```python
-  print('Hodor)
+  print('Linus Benedict Torvalds)
   ```
 
   Если запустить код выше, то мы увидим следующее сообщение:
@@ -16,8 +16,8 @@ theory: |
   ```sh
   $ python index.py
   File "index.py", line 1
-    print('Hodor)
-                ^
+    print('Linus Benedict Torvalds)
+                                  ^
   SyntaxError: EOL while scanning string literal
   ```
 
@@ -29,7 +29,7 @@ instructions: |
 
   Выведите на экран:
 
-  <pre class='hexlet-basics-output'>What Is Dead May Never Die</pre>
+  <pre class='hexlet-basics-output'>The best error message is the one that never shows up.</pre>
 
 tips: []
 

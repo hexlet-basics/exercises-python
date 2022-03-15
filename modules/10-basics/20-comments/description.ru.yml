@@ -13,19 +13,18 @@ theory: |
   Комментарии в Python начинаются со знака `#` и могут появляться в любом месте программы. Комментарий может занимать всю строчку. Если одной строчки мало, то создаются несколько комментариев:
 
   ```python
-  # For Winterfell!
-  # For Lanisters!
+  # This line needs to be refactored
+  # And this line is not, it is already cool
   ```
 
   Комментарий может находиться на строчке после какого-нибудь кода:
 
   ```python
-  print('I am the King')  # For Lannisters!
+  print('Talk is cheap. Show me the code.')  # What's going on here?
   ```
 
 instructions: |
-
-  Создайте однострочный комментарий с текстом: `You know nothing, Jon Snow!`.
+  Создайте однострочный комментарий с текстом: *Knowledge is power!*
 
 tips: []
 

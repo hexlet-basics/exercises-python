@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = "\"Khal Drogo's favorite word is \"athjahakar\"\""
+    expected = "\"Toto's favorite word is \"Hexlet\"\""
     expect_output(capsys, expected)

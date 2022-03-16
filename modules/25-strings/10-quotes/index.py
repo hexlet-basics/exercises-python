@@ -1,1 +1,1 @@
-print("\"Khal Drogo's favorite word is \"athjahakar\"\"")
+print('"Toto\'s favorite word is "Hexlet""')

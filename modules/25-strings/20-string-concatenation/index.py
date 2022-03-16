@@ -1,1 +1,1 @@
-print('Winter ' + 'came ' + 'for ' + 'the ' + 'House ' + 'of ' + 'Frey.')
+print('Coding ' + 'has ' + 'over ' + '700 ' + 'languages.')

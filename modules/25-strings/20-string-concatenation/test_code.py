@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = 'Winter came for the House of Frey.'
+    expected = 'Coding has over 700 languages.'
     expect_output(capsys, expected)

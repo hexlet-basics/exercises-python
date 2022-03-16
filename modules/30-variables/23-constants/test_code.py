@@ -2,4 +2,4 @@ import index
 
 
 def test1():
-    assert index.DRAGONS_BORN_COUNT == 3
+    assert index.PLANETS_COUNT == 8

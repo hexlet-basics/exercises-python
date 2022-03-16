@@ -6,27 +6,27 @@ theory: |
   Для закрепления предыдущей темы попробуем использовать переменные с конкатенацией. Синтаксически ничего не меняется: мы умеем конкатенировать (склеивать) две строки:
 
   ```python
-  what = "Kings" + "road"
-  print(what)  # => "Kingsroad"
+  what = "Holly" + "wood"
+  print(what)  # => "Hollywood"
   ```
 
   … а значит сумеем конкатенировать строку и одну переменную, в которой записана строка:
 
   ```python
-  first = "Kings"
+  first = "Holly"
   what = first + "road"
 
-  print(what)  # => "Kingsroad"
+  print(what)  # => "Hollywood"
   ```
 
   … и даже конкатенировать две переменные, в которых записаны строки:
 
   ```python
-  first = "Kings"
-  last = 'road'
+  first = "Holly"
+  last = 'wood'
 
   what = first + last
-  print(what)  # => "Kingsroad"
+  print(what)  # => "Hollywood"
   ```
 
 instructions: |
@@ -42,7 +42,7 @@ instructions: |
   Результат на экране будет выглядеть так:
 
   <pre class='hexlet-basics-output'>
-  Hello, Joffrey!
+  Hello, Toto!
   Here is important information about your account security.
   We couldn't verify your mother's maiden name.
   </pre>

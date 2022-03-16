@@ -1,2 +1,2 @@
-motto = 'What Is Dead May Never Die!'
+motto = 'Everything is interesting if you go into it deeply enough'
 print(motto)

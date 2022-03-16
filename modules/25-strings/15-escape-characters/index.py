@@ -1,1 +1,1 @@
-print("- Did Joffrey agree?\n- He did. He also said \"I love using \\n\".")
+print("- Did Toto agree?\n- He did. He also said \"I love using \\n\".")

@@ -33,7 +33,7 @@ theory: |
   Основываясь на сказанном выше, подумайте, сработает ли такой код?
 
   ```python
-  who = "dragon's " + 'mother'
+  who = "Mr. " + 'Smith'
   print(who)
   ```
 

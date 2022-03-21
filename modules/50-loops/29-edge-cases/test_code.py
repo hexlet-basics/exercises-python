@@ -10,3 +10,6 @@ def test1():
     assert not index.is_arguments_for_substr_correct(string, end, 5)
     assert index.is_arguments_for_substr_correct(string, end, 1)
     assert index.is_arguments_for_substr_correct(string, 3, 3)
+    assert index.is_arguments_for_substr_correct(string, 0, 3)
+    assert index.is_arguments_for_substr_correct(string, 0, 1)
+    assert index.is_arguments_for_substr_correct(string, 0, 0)

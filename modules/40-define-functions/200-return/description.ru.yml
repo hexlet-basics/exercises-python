@@ -89,7 +89,7 @@ instructions: |
   Функция [round()](https://docs.python.org/3/library/functions.html#round), которая округляет переданное ей значение
 
   ```python
-  round(0.2320000789855705) # 2
+  round(2.320000789855705) # 2
   ```
 
 # tips: []

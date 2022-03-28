@@ -17,7 +17,7 @@ theory: |
   value = '0'
   # Внутри скобок можно указывать переменную
   converted_value = int(value)
-  print(convertedValue) # => 0
+  print(converted_value) # => 0
 
   # Или конкретное значение
   converted_value2 = int('10')

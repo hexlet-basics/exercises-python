@@ -24,7 +24,7 @@ theory: |
   print(converted_value2) # => 10
 
   converted_value3 = int(False)
-  print(converted_value2) # => 0
+  print(converted_value3) # => 0
 
   converted_value4 = int(True)
   print(converted_value4) # => 1

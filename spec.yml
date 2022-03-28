@@ -5,3 +5,6 @@ language:
   extension: python
   exercise_filename: index.py
   exercise_test_filename: test_code.py
+  learn_as: first_language
+  progress: completed
+  name: Python

@@ -10,7 +10,7 @@ theory: |
   ```python
   name = 'Shaya'
   "hi, " + name.upper() + "!"  # hi, SHAYA!
-  f"hi, {name.toUpperCase()}!"; // hi, SHAYA!
+  f"hi, {name.upper()}!"; // hi, SHAYA!
   ```
 
   Использование в параметрах функций:

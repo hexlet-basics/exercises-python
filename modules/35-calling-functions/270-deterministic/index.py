@@ -1,3 +1,4 @@
+# imports are studied on Hexlet
 from random import random
 
 # BEGIN

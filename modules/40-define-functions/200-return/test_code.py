@@ -1,6 +1,7 @@
 import index
+from datetime import date
 
 
 def test():
-    assert index.get_random_number() >= 0
-    assert index.get_random_number() <= 10
+    expected = date.today().year
+    assert index.get_current_year() == expected

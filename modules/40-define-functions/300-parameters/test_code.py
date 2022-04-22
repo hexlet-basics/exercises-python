@@ -2,5 +2,5 @@ import index
 
 
 def test():
-    assert index.truncate('текст', 3) == 'тек...'
-    assert index.truncate('и пошла вода', 5) == 'и пош...'
+    assert index.truncate('hexlet', 2) == 'he...'
+    assert index.truncate('it works!', 4) == 'it w...'

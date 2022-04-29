@@ -3,5 +3,5 @@ from datetime import date
 
 
 def test():
-    expected = date.today().year
-    assert index.get_current_year() == expected
+    expected = 27
+    assert index.get_cube_of_three() == expected

@@ -107,7 +107,7 @@ instructions: |
   Реализуйте функцию `get_cube_of_three()`, которая возвращает куб числа 3 (3 в степени 3).
 
   ```python
-  cube_of_three = get_cube_of_three();
+  cube_of_three = get_cube_of_three()
   print(cube_of_three)  # => 27
   ```
 # tips: []

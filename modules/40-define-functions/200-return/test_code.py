@@ -1,5 +1,4 @@
 import index
-from datetime import date
 
 
 def test():

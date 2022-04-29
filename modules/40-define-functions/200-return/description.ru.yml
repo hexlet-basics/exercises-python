@@ -108,6 +108,6 @@ instructions: |
 
   ```python
   cube_of_three = get_cube_of_three();
-  print(cube_of_three); # 27
+  print(cube_of_three); # => 27
   ```
 # tips: []

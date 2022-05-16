@@ -104,10 +104,10 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `get_cube_of_three()`, которая возвращает куб числа 3 (3 в степени 3).
+  Реализуйте функцию `say_hurray_three_times()`, которая возвращает строку 'hurray! hurray! hurray!'.
 
   ```python
-  cube_of_three = get_cube_of_three()
-  print(cube_of_three)  # => 27
+  hurray = say_hurray_three_times()
+  print(hurray)  # => 'hurray! hurray! hurray!'
   ```
 # tips: []

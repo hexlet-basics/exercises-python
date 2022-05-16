@@ -2,5 +2,5 @@ import index
 
 
 def test():
-    expected = 27
-    assert index.get_cube_of_three() == expected
+    expected = 'hurray! hurray! hurray!'
+    assert index.say_hurray_three_times() == expected

@@ -1,4 +1,5 @@
 # BEGIN
-def get_cube_of_three():
-    return 3 * 3 * 3
+def say_hurray_three_times():
+    word = 'hurray!'
+    return f'{word} {word} {word}'
 # END

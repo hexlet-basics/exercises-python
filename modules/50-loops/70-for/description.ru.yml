@@ -12,7 +12,6 @@ theory: |
   for symbol in text:
       print(symbol)
 
-  print_symbols('code')
   # c
   # o
   # d

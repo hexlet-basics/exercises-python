@@ -67,9 +67,9 @@ instructions: |
   Пример вызова:
 
   ```python
-  text = 'If I look forward I am win'
-  filter_string(text, 'i')  # 'f  look forward  am wn'
-  filter_string(text, 'O')  # 'If I lk frward I am win'
+  text = 'If I look forward I win'
+  filter_string(text, 'i')  # 'f  look forward  wn'
+  filter_string(text, 'O')  # 'If I lk frward I win'
   ```
 
 tips: []

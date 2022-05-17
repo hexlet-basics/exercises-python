@@ -23,9 +23,9 @@ theory: |
 
       return reversed_string
 
-  reverse_string('Game Of Thrones')  # 'senorhT fO emaG'
+  reverse_string('Game Of Thrones') # 'senorhT fO emaG'
   # Проверка нейтрального элемента
-  reverse_string('')  # ''
+  reverse_string('') # ''
   ```
 
   Разберём функцию построчно:
@@ -52,8 +52,8 @@ instructions: |
 
   ```python
   string = 'If I look back I am lost'
-  print(my_substr(string, 1))  # => 'I'
-  print(my_substr(string, 7))  # => 'If I lo'
+  print(my_substr(string, 1)) # => 'I'
+  print(my_substr(string, 7)) # => 'If I lo'
   ```
 
   Используйте тот же подход, что в функции для переворота строки из урока: собирайте строку-результат в цикле, перебирая начальную строку до определённого момента.

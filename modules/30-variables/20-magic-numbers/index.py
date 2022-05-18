@@ -1,7 +1,8 @@
-king = 'King Balon the 6th'
+king = "Rooms in King Balon's Castle:"
 
 # BEGIN
 number_of_castles = 6
 rooms_per_castle = 17
-print(king + ' has ' + str(number_of_castles * rooms_per_castle) + ' rooms.')
+print(king)
+print(number_of_castles * rooms_per_castle)
 # END

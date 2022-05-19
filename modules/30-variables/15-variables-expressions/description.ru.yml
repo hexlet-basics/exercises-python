@@ -56,6 +56,8 @@ theory: |
   dollars_count = 50 * 1.25  # 62.5
   rubles_count = dollars_count * rubles_per_dollar  # 3750.0
 
+  # Функция str() превращает число в строку.
+  # О таких превращениях будет отдельный урок.
   print('The price is ' + str(rubles_count) + ' rubles')
   ```
 

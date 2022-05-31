@@ -20,7 +20,26 @@ theory: |
   print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
   ```
 
-  Мы добавили `else` и новый блок. Этот блок выполнится, только если условие в `if` — ложь. Также в блок `else` можно вкладывать другие условия `if`.
+  Мы добавили `else` и новый блок. Этот блок выполнится, только если условие в `if` — ложь. Также в блок `else` можно вкладывать другие условия `if`. В примере ниже, внутри блока `else другое условие, которое проверяет восклицание.
+
+  ```python
+  def get_type_of_sentence(sentence):
+      last_char = sentence[-1]
+
+      if last_char == '?':
+          sentence_type = 'question'
+      else:
+          if last_char == '!':
+              sentence_type = 'exclamation'
+          else:
+              sentence_type = 'normal'
+
+      return "Sentence is " + sentence_type
+
+  print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
+  print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
+  print(get_type_of_sentence('Hodor!'))  # => 'Sentence is exclamation'
+  ```
 
   "Else" переводится «иначе», «в ином случае».
 

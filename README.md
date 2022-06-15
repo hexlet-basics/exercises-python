@@ -2,9 +2,9 @@
 
 [![Github Actions Status](../../workflows/Docker/badge.svg)](../../actions)
 
-### Участие
+### How to contribute
 
-* Обсуждение в канале #hexlet-volunteers слака http://slack-ru.hexlet.io
+* Discussions at #hexlet-volunteers Slack channel http://slack.hexlet.io
 
 ## Develop
 

@@ -32,4 +32,4 @@ make ci-check # run CI checks witn docker-compose
 This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet](https://hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=exercises-python).
 ##
 
-See most active contributers on [hexlet-friends](https://friends.hexlet.io/).
+See most active contributors on [hexlet-friends](https://friends.hexlet.io/).

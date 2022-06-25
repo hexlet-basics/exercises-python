@@ -46,7 +46,7 @@ instructions: |
 
   1. Реализуйте функцию `is_palindrome()`, которая определяет, является ли слово палиндромом или нет. Палиндром - это слово, которое читается одинаково в обоих направлениях. Слова в функцию могут быть переданы в любом регистре, поэтому сначала нужно привести слово к нижнему регистру: `word.lower()`.
 
-      ```javascript
+      ```python
       is_palindrome('шалаш') # true
       is_palindrome('хекслет') # false
       is_palindrome('Довод') # true
@@ -55,7 +55,7 @@ instructions: |
 
   2. Реализуйте функцию `is_not_palindrome()`, которая проверяет что слово НЕ является палиндромом:
 
-      ```javascript
+      ```python
       is_not_palindrome('шалаш') # false
       is_not_palindrome('Ага') # false
       is_not_palindrome('хекслет') # true

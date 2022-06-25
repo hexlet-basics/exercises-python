@@ -22,7 +22,7 @@ theory: |
   ```python
   def save_email():
       # В реальности email приходит из формы
-      email = "  SuppORT@hexlet.IO"
+      email = '  SuppORT@hexlet.IO'
       # обрезаем пробельные символы
       trimmed_email = email.strip()
       prepared_email = trimmed_email.lower()
@@ -49,15 +49,15 @@ theory: |
   ```python
   # Теперь мы можем использовать результат работы функции
   message = greeting()
-  print(message) # => 'Hello, Hexlet!'
+  print(message) # => Hello, Hexlet!
   # И даже выполнить какие-то действия над результатом
-  print(message.upper()) # => 'HELLO, HEXLET!'
+  print(message.upper()) # => HELLO, HEXLET!
   ```
 
   Любой код после `return` не выполняется:
 
   ```python
-  def greeting():
+  def greeting_with_code_after_return():
       return 'Hello, Hexlet!'
       print('Я никогда не выполнюсь')
   ```
@@ -65,12 +65,12 @@ theory: |
   Даже если функция возвращает данные, это не ограничивает её в том, что она печатает. Кроме возврата данных мы можем и печатать:
 
   ```python
-  def greeting():
+  def greeting_with_return_and_printing():
       print('Я появлюсь в консоли')
       return 'Hello, Hexlet!'
 
   # И напечатает текст на экран и вернет значение
-  message = greeting()
+  message = greeting_with_return_and_printing()
   ```
 
   Возвращать можно не только конкретное значение. Так как `return` работает с выражениями, то справа от него может появиться почти все что угодно. Здесь нужно руководствоваться принципами читаемости кода:
@@ -90,7 +90,7 @@ theory: |
       return result
   ```
 
-  Вопрос на самопроверку. Что выведет этот код?
+  Вопрос на самопроверку. Что вернет вызов, определенной ниже, функции `run()`?
 
   ```python
   # Определение
@@ -98,8 +98,8 @@ theory: |
       return 5
       return 10
 
-  # Использование
-  run() # => ?
+  # Что будет выведено на экран?
+  print(run())
   ```
 
 instructions: |
@@ -108,6 +108,6 @@ instructions: |
 
   ```python
   hurray = say_hurray_three_times()
-  print(hurray)  # => 'hurray! hurray! hurray!'
+  print(hurray) # => hurray! hurray! hurray!
   ```
 # tips: []

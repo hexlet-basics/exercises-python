@@ -9,7 +9,7 @@ theory: |
 
   ```python
   first_name = 'Alexander'
-  // Ошибка: TypeError: 'str' object does not support item assignment
+  # Ошибка: TypeError: 'str' object does not support item assignment
   first_name[0] = 'B'
   ```
 

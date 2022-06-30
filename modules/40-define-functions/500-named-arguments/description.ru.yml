@@ -45,9 +45,10 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `capitalize()`, которая принимает непустую строку и приводит первую букву первого слова к верхнему регистру:
-
+  Реализуйте функцию `trim_and_repeat()`, которая принимает три параметра: строку, `offset` — число символов, на которое нужно обрезать строку слева и `repetitions` — количество раз, сколько ее нужно повторить, и возращает получившуюся строку.
+  Число символов для среза по умолчанию равно 0, а повторений — 1.
   ```python
-  name = 'arya'
-  print(capitalize(name)) # => Arya
-  ```
+  text = 'python'
+  print(trim_and_repeat(text, offset=3, repetitions=2)) # => honhon
+  print(trim_and_repeat(text, repetitions=3)) # => pythonpythonpython
+  print(trim_and_repeat(text)) # => python

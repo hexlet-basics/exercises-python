@@ -50,7 +50,7 @@ instructions: |
 
   ```python
   text = 'python'
-  print(trim_and_repeat(text, offset=3, repetitions=2)) # => 'honhon'
-  print(trim_and_repeat(text, repetitions=3)) # => 'pythonpythonpython'
-  print(trim_and_repeat(text)) # => 'python'
+  print(trim_and_repeat(text, offset=3, repetitions=2)) # => honhon
+  print(trim_and_repeat(text, repetitions=3)) # => pythonpythonpython
+  print(trim_and_repeat(text)) # => python
   ```

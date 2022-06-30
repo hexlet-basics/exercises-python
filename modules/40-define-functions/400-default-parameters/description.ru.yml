@@ -23,8 +23,8 @@ theory: |
   def my_print(text='nothing'):
     print(text)
 
-  my_print() # => 'nothing'
-  my_print('Hexlet') # => 'Hexlet'
+  my_print() # => nothing
+  my_print('Hexlet') # => Hexlet
   ```
 
   Параметром, со значениями по умолчанию, может быть сколько угодно:

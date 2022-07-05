@@ -2,8 +2,8 @@ company1 = 'Apple'
 company2 = 'Samsung'
 
 # BEGIN
-company1Length = len(company1)
-company2Length = len(company2)
+company1_len = len(company1)
+company2_len = len(company2)
 
-print(company1Length + company2Length)
+print(company1_len + company2_len)
 # END

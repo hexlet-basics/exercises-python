@@ -1,6 +1,6 @@
 def is_palindrome(word):
-    lowerWord = word.lower()
-    return lowerWord == lowerWord[::-1]
+    lower_word = word.lower()
+    return lower_word == lower_word[::-1]
 
 
 def is_not_palindrome(word):

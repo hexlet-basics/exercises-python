@@ -7,7 +7,7 @@ theory: |
 
   ```python
   what = "Kings" + "road"
-  print(what)  # => "Kingsroad"
+  print(what)  # => Kingsroad
   ```
 
   … а значит сумеем конкатенировать строку и одну переменную, в которой записана строка:
@@ -16,7 +16,7 @@ theory: |
   first = "Kings"
   what = first + "road"
 
-  print(what)  # => "Kingsroad"
+  print(what)  # => Kingsroad
   ```
 
   … и даже конкатенировать две переменные, в которых записаны строки:
@@ -26,7 +26,7 @@ theory: |
   last = 'road'
 
   what = first + last
-  print(what)  # => "Kingsroad"
+  print(what)  # => Kingsroad
   ```
 
 instructions: |

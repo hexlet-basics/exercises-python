@@ -9,8 +9,8 @@ theory: |
 
   ```python
   name = 'Shaya'
-  "hi, " + name.upper() + "!"  # hi, SHAYA!
-  f"hi, {name.upper()}!"  # hi, SHAYA!
+  'hi, ' + name.upper() + '!'  # hi, SHAYA!
+  f'hi, {name.upper()}!'  # hi, SHAYA!
   ```
 
   Использование в параметрах функций:
@@ -18,7 +18,7 @@ theory: |
   ```python
   name = 'robb'
   print(name.lower()) # => robb
-  print(name.lower() + name.upper()) # => 'robbROBB'
+  print(name.lower() + name.upper()) # => robbROBB
   ```
 
 instructions: |

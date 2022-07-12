@@ -57,7 +57,7 @@ theory: |
       for current_char in text:
           # приводим все к нижнему регистру,
           # чтобы не зависеть от текущего регистра
-          if current_char.lower() == char.lower()
+          if current_char.lower() == char.lower():
               result += 1
       return result
 

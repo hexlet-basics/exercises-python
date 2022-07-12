@@ -8,12 +8,12 @@ theory: |
   ```python
   # greeting - переводится как приветствие
   greeting = 'Father!'
-  print(greeting)
-  print(greeting)
+  print(greeting) # => Father!
+  print(greeting) # => Father!
 
   greeting = 'Mother!'
-  print(greeting)
-  print(greeting)
+  print(greeting) # => Mother!
+  print(greeting) # => Mother!
   ```
 
   Имя осталось тем же, но внутри другие данные. Следует заметить, что переменные в Python не требуют специального объявления. Вместо этого переменная объявляется при первом её использовании в программе.

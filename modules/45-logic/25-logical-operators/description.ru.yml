@@ -106,6 +106,10 @@ instructions: |
 tips:
   - |
     [Булева алгебра](https://ru.wikipedia.org/wiki/Булева_алгебра)
+  - |
+    [Логическое «И»](https://ru.wikipedia.org/wiki/Конъюнкция)
+  - |
+    [Логическое «ИЛИ»](https://ru.wikipedia.org/wiki/Дизъюнкция)
 
 definitions:
   - name: "Логические операторы"

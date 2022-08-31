@@ -3,61 +3,40 @@
 name: else
 theory: |
 
-  Попробуем изменить функцию из предыдущего примера так, чтобы она возвращала не просто тип предложения, а целую строку `Sentence is normal` или `Sentence is question`.
+    Теперь изменим функцию из предыдущего урока так, чтобы она возвращала не просто тип предложения, а целую строку `Sentence is normal` или `Sentence is question`:
 
-  ```python
-  def get_type_of_sentence(sentence):
-      last_char = sentence[-1]
+    ```python
+    def get_type_of_sentence(sentence):
+        last_char = sentence[-1]
 
-      if last_char == '?':
-          sentence_type = 'question'
-      else:
-          sentence_type = 'normal'
+        if last_char == '?':
+            sentence_type = 'question'
+        else:
+            sentence_type = 'normal'
 
-      return "Sentence is " + sentence_type
+        return "Sentence is " + sentence_type
 
-  print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
-  print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
-  ```
+    print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
+    print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
+    ```
 
-  Мы добавили `else` и новый блок. Этот блок выполнится, только если условие в `if` — ложь. Также в блок `else` можно вкладывать другие условия `if`. В примере ниже, внутри блока `else` другое условие, которое проверяет восклицание.
+    Мы добавили `else` и новый блок. Он выполнится, если условие в `if` — ложь. Еще в блок `else` можно вкладывать другие условия `if`. Else переводится «иначе», «в ином случае».
 
-  ```python
-  def get_type_of_sentence(sentence):
-      last_char = sentence[-1]
+    Оформить конструкцию `if-else` можно двумя способами. С помощью отрицания можно изменить порядок блоков:
 
-      if last_char == '?':
-          sentence_type = 'question'
-      else:
-          if last_char == '!':
-              sentence_type = 'exclamation'
-          else:
-              sentence_type = 'normal'
+    ```python
+    def get_type_of_sentence(sentence):
+        last_char = sentence[-1]
 
-      return "Sentence is " + sentence_type
+        if last_char != '?':
+            sentence_type = 'normal'
+        else:
+            sentence_type = 'question'
 
-  print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
-  print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
-  print(get_type_of_sentence('Hodor!'))  # => 'Sentence is exclamation'
-  ```
+        return "Sentence is " + sentence_type
+    ```
 
-  "Else" переводится «иначе», «в ином случае».
-
-  Существует два способа оформления конструкции *if-else*. С помощью отрицания можно изменить порядок блоков:
-
-  ```python
-  def get_type_of_sentence(sentence):
-      last_char = sentence[-1]
-
-      if last_char != '?':
-          sentence_type = 'normal'
-      else:
-          sentence_type = 'question'
-
-      return "Sentence is " + sentence_type
-  ```
-
-  Какой способ предпочтительнее? Человеческому мозгу проще мыслить прямолинейно, а не через отрицание. Старайтесь выбирать проверку, которая не содержит отрицаний, и подстраивайте содержимое блоков под неё.
+    Чтобы конструкцию было легче оформлять, старайтесь выбирать проверку без отрицаний и подстраивайте содержимое блоков под нее.
 
 instructions: |
 

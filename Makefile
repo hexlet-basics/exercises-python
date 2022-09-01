@@ -8,12 +8,6 @@ compose:
 compose-build:
 	docker compose build
 
-code-lint:
-	flake8 modules
-
-code-lint-fix:
-	# ?
-
 compose-bash:
 	docker compose run exercises bash
 
@@ -29,3 +23,9 @@ compose-schema-validate:
 ci-check:
 	docker compose --file docker-compose.yml build
 	docker compose --file docker-compose.yml up --abort-on-container-exit
+
+compose-code-lint:
+	docker compose run exercises make code-lint 
+
+code-lint:
+	flake8 modules

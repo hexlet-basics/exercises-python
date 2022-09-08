@@ -172,7 +172,7 @@ instructions: |
   string_or_not(False) # 'no'
   ```
 
-  Проверить что значение это строка можно с помощью функции [isinstance()](https://docs.python.org/3/library/functions.html#isinstance):
+  Проверить то, что значит эта строка, можно при помощи функции [isinstance()](https://docs.python.org/3/library/functions.html#isinstance):
 
   ```python
   isinstance(3, str) # False

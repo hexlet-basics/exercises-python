@@ -1,40 +1,40 @@
 ---
 
-name: Приоритет
+name: Priority
 theory: |
-  Представим, что нужно вычислить такое выражение: `2 + 2 * 2`. Именно так и запишем:
+  Let us imagine that we need to calculate such an expression: `2 + 2 * 2`. That's exactly what we'll write down:
 
   ```python
   print(2 + 2 * 2)  # => 6
   ```
 
-  В школьной математике есть понятие «приоритет операции». Приоритет определяет, в какой последовательности должны выполняться операции. Умножение и деление имеют больший приоритет, чем сложение и вычитание, а приоритет возведения в степень выше всех остальных арифметических операций. Например: `2 ** 3 * 2` вычислится в `16`.
+  In school mathematics there is a concept of "operation priority". The priority determines in what order the operations should be performed. Multiplication and division have a higher priority than addition and subtraction, and the priority of exponentiation is higher than all other arithmetic operations. For example: `2 ** 3 * 2` will be calculated in `16`.
 
-  Но нередко вычисления должны происходить в порядке, отличном от стандартного приоритета. Тогда приоритет нужно задавать круглыми скобками. Так было и в школе, например: `(2 + 2) * 2`. Скобки можно ставить вокруг любой операции. Они могут вкладываться друг в друга сколько угодно раз. Вот примеры:
+  But often the calculations must take place in an order different from the standard priority. Then the priority must be set with parentheses. This was also the case at school, for example: `(2 + 2) * 2`. Brackets can be placed around any operation. They can fit into each other as many times as you like. Here are examples:
 
   ```python
   print(3 ** (4 - 2))  # => 9
   print(7 * 3 + (4 / 2) - (8 + (2 - 1)))  # => 14
   ```
 
-  Главное при этом соблюдать парность — закрывать скобки в правильном порядке. Это часто становится причиной ошибок не только у новичков, но и у опытных программистов. Для удобства ставьте сразу открывающую и закрывающую скобку, а потом пишите внутреннюю часть. Редактор на нашем сайте (и большинство других редакторов кода) делают это автоматически: вы пишете `(`, а редактор сразу добавляет `)`. Это касается и других парных символов, например, кавычек. О них поговорим в будущих уроках.
+  The main thing is to observe pairing - to close brackets in the correct order. This is often the cause of errors not only for beginners, but for experienced programmers as well. For convenience, put the opening and closing parentheses at once, and then write the inner part. The editor on our site (and most other code editors) do this automatically: you write `(`, and the editor immediately adds `)`. This also applies to other paired characters, such as quotation marks. We'll talk about them in future lessons.
 
-  Иногда выражение сложно воспринимать визуально. Тогда можно расставить скобки, не повлияв на приоритет:
+  Sometimes an expression is hard to perceive visually. Then you can place brackets without affecting the priority:
 
   ```python
-  # Было
+  # Was
   print(8 / 2 + 5 - -3 / 2)  # => 10.5
 
-  # Стало
+  # Became
   print(((8 / 2) + 5) - (-3 / 2))  # => 10.5
   ```
 
-  Важно запомнить: код пишется для людей. Код будут читать люди, а машины будут только исполнять его. Для машин код — корректный или некорректный. Для них нет «более» понятного или «менее» понятного кода.
+  The important thing to remember is that code is written for people. People will read the code and machines will only execute it. For machines the code is correct or incorrect. There is no "more" understandable or "less" understandable code for them.
 
 instructions: |
 
-  Дано вычисление `70 * 3 + 4 / 8 + 2`.
+  The calculation is given `70 * 3 + 4 / 8 + 2`.
 
-  Расставьте скобки так, чтобы оба сложения (`3 + 4`) и (`8 + 2`) высчитывались в первую очередь. Выведите на экран результат.
+  Place parentheses so that both additions (`3 + 4`) и (`8 + 2`) were calculated in the first place. Print the result on the screen.
 
 tips: []

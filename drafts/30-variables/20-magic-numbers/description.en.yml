@@ -1,9 +1,9 @@
 ---
 
-name: Магические числа
+name: Magic numbers
 theory: |
 
-  Возьмем пример программы, которая считает курс валют:
+  Let's look at our example of the program that calculates exchange rates:
 
   ```python
   euros_count = 1000
@@ -13,15 +13,15 @@ theory: |
   print(rubles_count)
   ```
 
-  С точки зрения профессиональной разработки, такой код не соответствует «лучшим практикам» — best practices.
+  From professional development's perspective, such code doesn't correspond with the best practices.
 
-  В этом примере сложно понять, что значат числа `60` и `1.25`. Представьте, что вам придется разбираться в этом коде через месяц или через год — это будет сложно. Также сложно будет программисту, который не видел код ранее.
+  In this example, it's difficult to understand what the numbers `60` and `1.25` mean. Imagine having to deal with that code a month or a year from now – it's going to be difficult. It'll also be difficult for a programmer who hasn't seen the code before.
 
-  В нашем примере контекст легко восстановить, потому что переменные названы грамотно. Но в реальных проектах код значительно сложнее, поэтому догадаться до смысла чисел зачастую невозможно.
+  In our example, the context is easy to put together because the variables are named correctly. But in real projects, code is much more complicated, so it's often impossible to guess the meaning of the numbers.
 
-  Проблема кроется в «магических числах» — magic numbers. Это числа, происхождение которых невозможно понять с первого взгляда — приходится глубоко вникать в то, что происходит в коде.
+  The problem lies in magic numbers. These are numbers whose origin is impossible to understand at a glance – you have to dig deep into what's going on in the code.
 
-  Чтобы предотвратить проблему, нужно создавать переменные с правильными именами. Так все встанет на свои места:
+  To prevent this problem, you need to create variables with the right names. That way, everything will fall into place:
 
   ```python
   dollars_per_euro = 1.25
@@ -34,19 +34,19 @@ theory: |
   print(rubles_count)
   ```
 
-  В этой программе:
+  In this program:
 
-  * Используется именование snake_case
-  * Две новые переменные отделяются от последующих вычислений пустой строчкой. Эти переменные имеют смысл и без вычислений, поэтому такое отделение уместно, потому что повышает читаемость
-  * Получился хорошо именованный и структурированный код, но он длиннее прошлой версии. Так часто бывает — это нормально, ведь код должен быть читабельным
+  * Snake_case naming is used
+  * The two new variables are separated from the subsequent calculations by a blank line. These variables make sense without calculations, so this separation is appropriate because it increases readability
+  * The resulting code is well named and structured, but it's longer than the previous version. This is often the case, but this is fine because the code must be readable
 
-  Магические числа и непонятные именования переменных не ломают код, но делают его менее читабельным.
+  Magic numbers and obscure variable names don't break the code, but make it less readable.
 
-  Нужно понимать, что компьютер в любом случае выполнит заданное вычисление. Однако другой программист будет читать код и ничего не поймет — это усложнит работу. Правильное именование переменных — половина успеха анализа кода.
+  It's important to understand that in any case, the computer will carry out the calculation you give it. However, another programmer reading the code won't understand, thus complicating your work. Naming the variables properly is half the battle when it comes to code analysis.
 
 instructions: |
 
-  Вы столкнулись с таким кодом, который выводит на экран общее количество комнат во владении нынешнего короля:
+  You've come across this code, which prints the total number of rooms owned by the present king:
 
   ```python
   king = "Rooms in King Balon's Castle:"
@@ -54,21 +54,21 @@ instructions: |
   print(6 * 17)
   ```
 
-  Как видите, это магические числа: непонятно, что такое 6 и что такое 17. Можно догадаться, если знать историю королевской семьи: каждый новый король получает в наследство все замки от предков и строит новый замок — точную копию родительского.
+  As you can see, there are some magic numbers here: it's unclear what 6 is and what 17 is. If you know the history of the royal family, you can guess: each new king inherits all his ancestors 'castles and builds a new one, an exact copy of his parents'.
 
-  Эта странная династия просто плодит одинаковые замки…
+  This strange dynasty simply breeds identical castles...
 
-  Избавьтесь от магических чисел, создав новые переменные, а затем выведите текст на экран.
+  Get rid of the magic numbers by creating new variables and then displaying the text on the screen.
 
-  Получится так:
+  You'll get this:
 
   <pre class='hexlet-basics-output'>
   Rooms in King Balon's Castle:
   102
   </pre>
 
-  Названия переменных должны передавать смысл чисел, но должны при этом оставаться достаточно короткими и ёмкими для комфортного чтения.
+  The variable names should give the meaning of the numbers, but should also be short and succinct enough to be readable.
 
-  Помните: код будет работать с любыми названиями, а наша система всегда проверяет только результат на экране, поэтому выполнение этого задания — под вашу ответственность.
+  Note: The code will work with any name, and we only check the printed result, so the task is up to you.
 
 tips: []

@@ -1,24 +1,24 @@
 ---
 
-name: Ошибки при работе с переменными
+name: Errors when working with variables
 theory: |
 
-  Порядок инструкций в коде с переменными имеет огромное значение. Поэтому переменную нужно определить до первого использования. Ниже пример ошибки, которую часто допускают новички:
+  The order of instructions in code with variables is of great importance. That's why the variable must be defined before you use it for the first time. Below is an example of a mistake often made by beginners:
 
   ```python
   print(greeting)
   greeting = 'Father!'
   ```
 
-  Запуск программы выше завершается с ошибкой `NameError: name 'greeting' is not defined` — это ошибка обращения. Это значит, что в коде используется имя (идентификатор), которое пока не определено. Это говорится в самом тексте ошибки: `'greeting' is not defined`. Кроме неправильного порядка действий, в Python встречаются банальные опечатки в имени переменной. Это происходит и когда переменная используется, и когда ее объявляют.
+  Running the program above ends with the error `NameError: name 'greeting' is not defined` - this is a reference error. This means that the code uses a name (identifier) that hasn't yet been defined. This is stated in the text of the error itself: `'greeting' is not defined`. In addition to incorrect ordering, when working with Python, you can also come across simple typos in the name of the variable. This happens both when the variable is used and when it's declared.
 
-  Количество подобных ошибок можно уменьшить, если использовать правильно настроенный редактор. Он предупреждает о возможных проблемах и подсвечивает переменные, которые используются без объявления.
+  You can reduce the number of such errors if you use a properly configured editor. It warns of possible problems and highlights variables that are used without being declared.
 
 instructions: |
 
-  Найдите в программе необъявленную переменную и объявите ее, присвоив ей значение 'Dragon'.
+  Find an undeclared variable in the program and declare it by assigning the value 'Dragon' to it.
 
-  После выполнения программы результат на экране должен выглядеть так:
+  After running the program, the result on the screen should look like this:
 
   <pre class='hexlet-basics-output'>
   Targaryen
@@ -29,5 +29,5 @@ instructions: |
 tips: []
 
 definitions:
-  - name: Переменная
-    description: способ сохранить информацию и дать ей имя для последующего использования в коде.
+  - name: Variable
+    description: a way to save information and name it for later use in code.

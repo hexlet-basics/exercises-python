@@ -1,25 +1,25 @@
 ---
 
-name: Комментарии
+name: Comments
 theory: |
 
-  Практически все языки программирования позволяют оставлять в коде комментарии. Они никак не используются интерпретатором. Они нужны исключительно для людей, чтобы программист оставлял пометки для себя и для других программистов.
+  Almost all programming languages allow you to leave comments in your code. The interpreter ignores them. They're only for people; they let the programmer leave notes for themselves and other programmers.
 
-  С их помощью добавляют пояснения, как работает код, какие ошибки нужно поправить или не забыть что-то добавить позже:
+  They allow you to add explanations of how the code works, what errors need to be corrected, or what you need to remember to add later:
 
   ```python
-  # Удалить строку ниже после реализации задачи по регистрации
+  # Delete the line below after the registration task is done
   print(10)
   ```
 
-  Комментарии в Python начинаются со знака `#` и могут появляться в любом месте программы. Они могут занимать всю строку. Если одной строки мало, то создается несколько комментариев:
+  Comments in Python begin with the `#` sign and can appear anywhere in the program. They can take up an entire line. If one line is not enough, you can create several comments:
 
   ```python
   # For Winterfell!
   # For Lanisters!
   ```
 
-  Комментарий может находиться на строке после кода:
+  The comment can be on the line after the code:
 
   ```python
   print('I am the King') # For Lannisters!
@@ -27,11 +27,11 @@ theory: |
 
 instructions: |
 
-  Создайте однострочный комментарий с текстом: `You know nothing, Jon Snow!`
+  Create a one-line comment with the text: `You know nothing, Jon Snow!`
 
 tips: []
 
 definitions:
-  - name: Комментарий
+  - name: Comments
     description: |
-      текст в коде программы, который не влияет на функциональность и добавляется программистами для себя и своих коллег.
+      text in the program code that does not affect the functionality and is added by programmers for themselves and their colleagues.

@@ -19,6 +19,6 @@ instructions: |
 
   Note: if you write `heLLo, woRld!` instead of `Hello, World!`, it will be considered different text, because upper and lower case letters are different characters and different _registers_. In programming, the register almost always matters, so get used to always paying attention to it!
 
-tips:
+# tips:
   - |
 #     [A little bit about 'Hello, World!](https://ru.hexlet.io/blog/posts/moy-chelovek-menya-ponimaet-istoriya-frazy-hello-world-i-ee-analogov)

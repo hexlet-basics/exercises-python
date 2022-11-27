@@ -1,38 +1,38 @@
 ---
 
-name: Стандартная библиотека
+name: Standard Library
 theory: |
 
-  Python поставляется с набором полезных функций, которые составляют **стандартную библиотеку**. Обычно в нее входят тысячи функций, которые невозможно запомнить. Поэтому программист должен знать, где найти документацию по этим функциям, а также представлять результат, который хочет получить. По этим причинам программировать без интернета сложно.
+  Python comes with a set of useful functions that make up the **standard library**. It usually includes thousands of functions that are impossible to remember. So the programmer needs to know where to find documentation on these functions, as well as have an idea of the result he or she wants to get. For these reasons, it is difficult to program without the Internet.
 
-  Новички часто не понимают, как и где узнавать про функции, которые нужно использовать. При этом нет способа, который поможет решить эту проблему. По мере работы разработчики становятся опытнее, пополняют свой багаж знаний и практик. Постепенно они знакомятся с более интересными функциями, которые решают их задачи по-другому.
+  Beginners often do not understand how and where to find out about the functions to be used. There is no way to solve this problem. As they work, developers become more experienced and add to their knowledge and practice. Gradually they become familiar with more interesting features that solve their problems differently.
 
-  Вот советы, которые помогут повысить уровень профессионализма:
+  Here are tips to help increase professionalism:
 
-  * Всегда отслеживайте, с каким типом данных вы работаете. Так вы найдете необходимую функцию в соответствующем разделе документации. Например, для работы со строками нужно изучать строковые функции
+  * Always keep track of which data type you are working with. That way, you will find the function you need in the appropriate section of the documentation. For example, to work with strings, you have to learn string functions
 
-  * Периодически открывайте раздел со стандартными функциями по вашей тематике, изучайте сигнатуры и способы использования.
+  * Periodically open a section with standard features on your topic, learn the signatures and how to use them
 
-  * Чаще читайте чужой код на GitHub. Особенное внимание обращайте на код библиотек, которые используете
+  * Read other people's code on GitHub more often. Pay special attention to the code of the libraries you use
 
-  Если следовать этим советам и внимательно относиться к деталям, то уже скоро вы заметите, как развиваетесь и растете как профессионал.
+  If you follow these tips and pay close attention to detail, you will soon notice how you develop and grow as a professional.
 
 instructions: |
 
-  Функция `type()` позволяет определить тип передаваемого аргумента. Название типа возвращается в виде строки. Например, вызов `type(10)` вернёт строку `<class 'int'>` (int, это сокращение от integer — целое число).
+  The `type()` function allows you to define the type of the passed argument. The type name is returned as a string. For example, calling `type(10)` will return the string `<class 'int'>` (int, short for integer).
 
   ```python
   print(type('wow')) # <class 'str'>
   ```
 
-  Выведите на экран тип значения переменной `motto`.
+  Display the type of the variable `motto` value.
 
-tips:
-  - |
-    [Справочник функций Python](https://docs-python.ru/standart-library/)
-  - |
-    [Как искать техническую информацию](https://guides.hexlet.io/ru/how-to-search/)
+# tips:
+#   - |
+#     [Справочник функций Python](https://docs-python.ru/standart-library/)
+#   - |
+#     [Как искать техническую информацию](https://guides.hexlet.io/ru/how-to-search/)
 
 definitions:
-  - name: Стандартная библиотека
-    description: набор полезных функций, входящий в комплект поставки языка программирования.
+  - name: Standard Library
+    description: a set of useful features included with the programming language.

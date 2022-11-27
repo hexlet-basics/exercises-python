@@ -1,72 +1,72 @@
 ---
 
-name: Вызов функции — выражение
+name: Function call - expressions
 theory: |
 
-  Продолжаем разбираться с функцией и ее составляющими. Сегодня на очереди выражение. Рассмотрим, что это такое и можно ли вызов функции принять за выражение.
+  Let's continue to look at functions and their components. Today, it's time to look at expressions. Let's consider what it is and whether a function call can be mistaken for an expression.
 
-  Выражение в программировании возвращает результат, который можно использовать. Скорее всего, вы уже знаете многое о выражениях и принципах, по которым они строятся. Например, такие математические операции, как сложение и вычитание, строковые операции, как конкатенация — все это выражения:
+  An expression in programming returns a result that can be used. You probably already know a lot about expressions and the principles by which they're constructed. For example, mathematical operations like addition and subtraction, string operations like concatenation are all expressions:
 
   ```python
   1 + 5 * 3
   'He' + 'Let'
-  # Переменные могут быть частью выражения
+  # Variables can be part of an expression
   rate * 5
   ```
 
-  Особенность выражений в том, что они возвращают результат, который можно использовать дальше: например, присвоить переменной или вывести на экран. Так это выглядит в коде:
+  The peculiarity of expressions is that they return a result that can be used again: for example, they can be assigned to a variable or printed. This is what it looks like in the code:
 
   ```python
-  # Тут выражение это 1 + 5
+  # Here the expression is 1 + 5
   sum = 1 + 5
   print(1 + 5)
   ```
 
-  Но не все в программировании выражение. Определение переменной — это инструкция, а значит она не может быть частью выражения. То есть такой код выдаст ошибку:
+  But not everything in programming is an expression. The definition of a variable is an instruction, which means it cannot be part of an expression. In other words, this code will lead to an error:
 
   ```python
-  # Бессмысленный код, который не сработает
+  # Meaningless code that won't work
   10 + sum = 1 + 5
   ```
 
-  Теперь разберемся, принимается ли за выражение вызов функции.
+  Now let's see if a function call can be taken as an expression.
 
-  Мы знаем, что функции возвращают результат — значит, они выражения. Из этого автоматически следует много интересного. Например, мы можем использовать вызов функции прямо в математических операциях. Вот как можно получить индекс последнего символа в слове:
+  We know that functions return results, therefore they're expressions. This leads to a lot of interesting possibilities. For example, we can use a function call directly in mathematical operations. This is how we can get the last character index in a word:
 
   ```python
   name = 'python'
-  # Индексы начинаются с нуля
-  # Вызов функции и вычитание вместе!
+  # Indexes start with zero
+  # Function call and subtraction together!
   last_index = len(name) - 1
   print(last_index)  # => 5
   ```
 
-  В этом коде нет нового синтаксиса. Мы всего лишь соединили уже известные части, опираясь на их природу. Можно пойти еще дальше:
+  This code has no new syntax. We have merely connected parts we already know, we're relying on their nature. We could go even further:
 
   ```python
   print(len(name) - 1)  # => 5
   ```
 
-  Все это справедливо для любых функций, например строковых:
+  All of this applies for any function, e.g., string functions:
 
   ```python
   name = 'python'
-  # Используется интерполяция
-  print(f'Последний символ: {name[len(name) - 1]}')
-  # 'Последний символ: n'
+  # Interpolation is used
+  print(f'Last character: {name[len(name) - 1]}')
+  # 'Last character: n'
   ```
 
-  Как вы увидите дальше, выражения можно комбинировать, получая все более сложное поведение в разных местах и любым образом. Чем глубже вы будете изучать Python и практиковаться в нем, тем лучше вы будете понимать работу с выражениями. Со временем вы поймете, как соединять части кода, чтобы получить нужный результат.
+  As you will see next, expressions can be combined to produce increasingly complex behavior in different places and in any way. The more you learn and practice Python, the better you will understand expressions. Over time, you'll learn how to connect the pieces of code to get the results you want.
 
 instructions: |
 
-  Выведите на экран первую и последнюю буквы предложения, записанного в переменную `text`, в следующем формате:
+  Display the first and last letters of the sentence written in the `text` variable in the following format:
 
   <pre class='hexlet-basics-output'>
   First: N
   Last: t
   </pre>
 
-  Постарайтесь создать только одну переменную, в которую сразу запишется нужный текст перед печатью на экран. В этом уроке мы отрабатываем умение собирать составное выражение.
+  Try to create only one variable to be assigned to the text to before you print it. In this lesson, we're practicing building a compound expression.
 
 # tips: []

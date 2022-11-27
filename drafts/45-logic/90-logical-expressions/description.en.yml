@@ -1,13 +1,13 @@
 ---
 
-name: Результат логических выражений
+name: The result of logical expressions
 theory: |
 
-  В этом уроке познакомимся с правилами преобразования аргумента и узнаем, как работать с составными выражениями и двойным отрицанием.
+  In this lesson we will learn the rules for transforming an argument and how to work with compound expressions and double negation.
 
-  ## Правила преобразования
+  ## Rules of Conversion
 
-  Посмотрите на пример:
+  Look at the example:
 
   ```python
   print(0 or 1)
@@ -17,9 +17,9 @@ theory: |
   1
   ```
 
-  Оператор **ИЛИ** работает так, что его выполнение слева направо прерывается и возвращается результат первого аргумента, который можно преобразовать в `True`. Если такого аргумента нет, возвращается последний — правый.
+  The way the **ORI** operator works is that its execution from left to right is interrupted and the result of the first argument that can be converted to `True` is returned. If there is no such argument, the last one, the right one, is returned.
 
-  Пример с оператором **И**:
+  Example with operator **AND**:
 
   ```python
   print(0 and 1)
@@ -29,99 +29,99 @@ theory: |
   0
   ```
 
-  Оператор **И** работает так, что его выполнение слева направо прерывается и возвращается результат первого аргумента, который можно преобразовать в `False`. Если такого аргумента нет, возвращается последний — правый.
+  The way the **AND** operator works is that its execution from left to right is interrupted and the result of the first argument, which can be converted to `False`, is returned. If there is no such argument, the last one - the right one - is returned.
 
-  В Python есть два правила преобразования:
+  There are two conversion rules in Python:
 
-  * `0`, `0.0`, `''` и `None` приводятся к `False`. Эти значения называют **falsy**. Сюда входят еще другие типы данных, которые мы  будем изучать на Хекслете
-  * Все остальное приводится к `True`
+  * `0`, `0.0`, ``'` and `None` are cast to `False`. These values are called **falsy**. This includes other data types that we will study in Hexslet
+  * Everything else is reduced to `True`.
 
-  Этими правилами пользуются в разработке, например, чтобы определить значение по умолчанию:
+  These rules are used in development, for example, to define a default value:
 
   ```python
   value = name or ''
-  # Примеры
+  # Examples
   234 or '' # 234
   'hexlet' or '' # 'hexlet'
   None or '' # ''
   ```
 
-  Если `name` примет одно из falsy-значений, переменной `value` будет присвоена пустая строка. В этом случае в последующем коде мы сможем работать с `value` как со строкой.
+  If `name` takes one of the falsy values, the variable `value` will be assigned an empty string. In this case, in the following code we will be able to handle `value` as a string.
 
-  Но здесь есть потенциальный баг. Если `name` содержит falsy значение, а переменной `value` можно присвоить значения типа `0`, `False`, `None`, то код выше заработает неверно:
+  But there is a potential bug here. If `name` contains a falsy value, and the variable `value` can be assigned values like `0`, `False`, `None`, the code above will not work correctly:
 
   ```python
-  # Значение на самом деле есть,
-  # но оно Falsy, поэтому не выбирается на условии OR
+  # The significance is actually there,
+  # but it is Falsy, so it is not selected on the OR condition
   False or '' # ''
   0 or '' # ''
   None or '' # ''
   ```
 
-  ## Составные выражения
+  ## Compound expressions
 
-  Если соединить логические выражения между собой, можно получать довольно интересные способы решения задач с кодом.
+  If you combine logical expressions with each other, you can get some pretty interesting ways of solving problems with code.
 
-  Допустим, нам нужно реализовать код, в котором в переменную записывается:
+  Suppose we need to implement code in which a variable is written:
 
-  * Строка `yes`, если число четное
-  * Строка `no`, если нечетное
+  * String `yes` if the number is even
+  * String `no` if odd
 
-  Это можно сделать, если использовать знания, полученные выше:
+  This can be done by using the knowledge gained above:
 
   ```python
-  # число четное
+  # even number
   result = 10 % 2 == 0 and 'yes' or 'no' # 'yes'
-  # или сразу печатаем на экран
+  # or print directly to the screen
   print(10 % 2 == 0 and 'yes' or 'no') # => 'yes'
-  # число нечетное
+  # odd number
   print(11 % 2 == 0 and 'yes' or 'no') # => 'no'
   ```
 
-  Эти выражения работают согласно порядку и приоритетам. Приоритет присваивания самый низкий, поэтому оно происходит в конце. Приоритет сравнения `==` выше, чем приоритет логических операторов `and` и `or`, поэтому сравнение происходит раньше. Дальше код выполняется слева направо, так как приоритет `and` выше, чем приоритет `or`. Рассмотрим по шагам:
+  These expressions work according to order and priority. The priority of assignment is the lowest, so it happens at the end. The priority of comparison `==` is higher than the priority of the logical operators `and` and `or`, so the comparison occurs earlier. Further the code is executed from left to right, because the priority of `and` is higher than the priority of `or`. Let's look at it step by step:
 
   ```python
-  # Для четного
-  # 1 шаг
+  # For an even
+  # 1 step
   10 % 2 == 0 # True
-  # 2 шаг
-  True and 'yes' # Результат — истина
-  # Проверка на or выполняется, но правая часть не исполняется, так как сразу возвращается 'yes'
+  # 2 step
+  True and 'yes' # The result is true
+  # The or check is done, but the right part is not executed, because it immediately returns 'yes'.
 
-  # Для нечетного
-  # 1 шаг
+  # For an odd
+  # 1 step
   11 % 2 == 0 # False
-  # 2 шаг
-  False and 'yes' # Результат — ложь, проверяем дальше
-  # 3 шаг
-  False or 'no' # Выбирается и возвращается 'no'
+  # 2 step
+  False and 'yes' # The result is false.
+  # 3 step
+  False or 'no' # Selects and returns 'no'
   ```
 
-  Такую же схему можно использовать с любым выражением в начале:
+  The same scheme can be used with any expression at the beginning:
 
   ```python
   print(somefunc() and 'yes' or 'no')
   ```
 
-  Можете проверить себя и поэкспериментировать с кодом в [Replit](https://replit.com/@hexlet/python-basics-logical-expressions).
+  You can check yourself and experiment with the code in [Replit](https://replit.com/@hexlet/python-basics-logical-expressions).
 
-  ## Двойное отрицание
+  ## Double Negation
 
-  Напомним, как выглядит операция отрицания:
+  Recall what the operation of negation looks like:
 
   ```python
   answer = True
   print(not answer)  # => False
   ```
 
-  При двойном отрицании итоговое значение равно начальному:
+  With double negation, the final value is equal to the initial value:
 
   ```python
   answer = True
   print(not not answer)  # => True
   ```
 
-  Оператор `not` всегда возвращает булевое значение, независимо от типа переданного аргумента, а не заменяет значение на противоположное. Поэтому двойное отрицание тоже вернет булевое True/False.
+  The `not` operator always returns a Boolean value, regardless of the type of the passed argument, rather than replacing the value with the opposite. Therefore, a double negation will also return a boolean True/False.
 
   ```python
   answer = 'python'
@@ -129,15 +129,15 @@ theory: |
   print(not not answer) # => True
   ```
 
-  ## Ошибка выбора
+  ## Selection error
 
-  Представьте, что нам нужно проверить — значение равно одному или другому. Например, переменная `value` должна содержать одно из двух значений: `first` или `second`. Начинающие разработчики иногда записывают это выражение так:
+  Imagine that we need to check whether a value is equal to one or the other. For example, the variable `value` must contain one of two values: `first` or ``second`. Beginner developers sometimes write this expression this way:
 
   ```python
   value == ('first' or 'second')
   ```
 
-  Однако такой код приведет к неверному результату. Необходимо вспомнить приоритет выполнения операций. Первым делом вычисляется все, что указано в скобках — `'first' or 'second'`. Если выполнить этот код в Replit, то вывод будет таким:
+  However, such a code will lead to the wrong result. It is necessary to remember the priority of operations. The first thing is to calculate everything specified in brackets - `'first' or ` second'`. If you execute this code in Replit, the output will be as follows:
 
   ```bash
   python
@@ -147,23 +147,23 @@ theory: |
   >>>
   ```
 
-  Теперь заменим исходное выражение на частично вычисленное:
+  Now replace the original expression with a partially calculated one:
 
   ```python
   value == 'first'
   ```
 
-  Совсем не то, что мы ожидали. А теперь вернемся к началу и напишем проверку правильно:
+  Not at all what we expected. Now let's go back to the beginning and write the test correctly:
 
   ```python
-  # Скобки ставить не обязательно,
-  # потому что приоритет == выше чем приоритет or
+  # It is not necessary to put parentheses,
+  # because the priority == is higher than the priority of or
   value == 'first' or value == 'second'
   ```
 
 instructions: |
 
-  Реализуйте функцию `string_or_not()`, которая проверяет является ли переданный параметр строкой. Если да, то возвращается `'yes'` иначе `'no'`
+  Implement a function `string_or_not()` that checks if the passed parameter is a string. If yes, it returns `'yes'` otherwise `'no'`.
 
   ```python
   string_or_not('Hexlet') # 'yes'
@@ -172,15 +172,15 @@ instructions: |
   string_or_not(False) # 'no'
   ```
 
-  Проверить то, является ли переданный параметр строкой, можно при помощи функции [isinstance()](https://docs.python.org/3/library/functions.html#isinstance):
+  You can check if the passed parameter is a string with the function [isinstance()](https://docs.python.org/3/library/functions.html#isinstance):
 
   ```python
   isinstance(3, str) # False
   isinstance('Hexlet', str) # True
   ```
   
-  Поэкспериментируйте с кодом в интерактивном репле https://replit.com/@hexlet/python-basics-logical-expressions
+  Experiment with the code in the interactive replay https://replit.com/@hexlet/python-basics-logical-expressions
 
 # tips:
 #   - |
-#     [Boolean](https://ru.wikipedia.org/wiki/Логический_тип)
+#     [Boolean](https://en.wikipedia.org/wiki/Boolean_data_type)

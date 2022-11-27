@@ -1,139 +1,139 @@
 ---
 
-name: Параметры функций
+name: Function Parameters
 theory: |
 
-  Функции могут не только возвращать значения, но и принимать параметры. В этом уроке мы научимся создавать такие функции.
+  Functions can also also accept parameters as well as return parameters. In this lesson, we'll learn how to create these functions.
 
-  Напомним, что с параметрами функций мы уже сталкивались:
+  Remember we've already encountered function parameters:
 
   ```python
-  # Принимает на вход один параметр любого типа
+  # Accepts one parameter of any type as input
   print('я параметр')
-  # Принимает на вход два строковых параметра
-  # первый — что ищем, второй — на что меняем
+  # Takes two string parameters as input
+  # one - what we're looking for, two - what we're replacing it with
   'google'.replace('go', 'mo')  # moogle
-  # Принимает на вход два числовых параметра
-  # первый — округляемое число, второй — число знаков после запятой, которые нужно оставить
+  # Takes two numeric parameters as input
+  # the first is the number to be rounded, the second is the number of decimal places that should be left over
   round(10.23456, 3)  # 10.235
   ```
 
-  А теперь представим, что нам нужно реализовать функцию `get_last_char()`, которая возвращает последний символ в строке, переданной ему на вход как параметр.
+  Now imagine that we need to implement a function called `get_last_char()`, which returns the last character in the string that's passed to it as a parameter.
 
-  Вот как будет выглядеть использование этой функции:
+  Here's what using this function would look like:
 
   ```python
-  # Передача параметров напрямую без переменных
+  # Passing parameters directly without variables
   get_last_char("Hexlet")  # t
-  # Передача параметров через переменные
+  # Passing parameters through variables
   name1 = 'Hexlet'
   get_last_char(name1)  # t
   name2 = 'Goo'
   get_last_char(name2)  # o
   ```
 
-  Из этого примера можно сделать следующие выводы:
+  The following conclusions can be drawn from this example:
 
-  * Нам нужно определить функцию `get_last_char()`
-  * Функция должна принимать на вход один параметр строкового типа
-  * Функция должна возвращать значение строкового типа
+  * We need to define the function `get_last_char()`
+  * The function must accept a single string parameter
+  * The function must return a string
 
-  Определяем функцию:
+  Defining the function:
 
   ```python
   def get_last_char(text):
     return text[-1]
   ```
 
-  В скобках указывается имя переменной `text`, которая служит параметром. Имя параметра может быть любым. Главное, чтобы оно отражало смысл значения, которое содержится внутри. Например:
+  The name of the `text` variable that serves as a parameter is given in parentheses. The parameter name can be anything. The main thing is that it reflects the meaning of the value it contains. For example:
 
   ```python
   def get_last_char(string):
     return string[-1]
   ```
 
-  Значение параметра будет зависеть от вызова этой функции:
+  The value of the parameter will depend on how the function is called:
 
   ```python
-  # Внутри функции string будет равна 'hexlet'
+  # Inside this function, the string will be 'hexlet'
   get_last_char('hexlet')  # t
 
-  # Внутри функции string будет равна 'code'
+  # Inside this function, the string will be 'code'
   get_last_char('code')  # e
 
-  # Внутри функции string будет равна 'Winter is coming'
-  # Имя переменной снаружи не связанно с именем переменной в определении функции
+  # Inside this function, the string will be 'Winter is coming'
+  # The variable name outside the function is not related to the variable name in the function definition
   text = 'Winter is coming'
   get_last_char(text)  # g
   ```
 
-  Параметр нужно обязательно указывать. Если вызвать функцию без него, то интерпретатор выдаст ошибку:
+  The parameter must be specified. If you call a function without it, the interpreter will give an error:
 
   ```python
-  get_last_char()  # У такого кода нет смысла
+  get_last_char()  # This code doesn't make sense
 
   TypeError: get_last_char() missing 1 required positional argument: 'string'
   ```
 
-  Многие функции работают одновременно с несколькими параметрами. Например, чтобы округлить числа, нужно указать не только само число, но и количество знаков после запятой:
+  Many functions work simultaneously with several parameters. For example, to round numbers, you must specify not only the number itself, but also the number of decimal places:
 
   ```python
   round(10.23456, 3)  # 10.235
   ```
 
-  То же самое относится и к методам. Они могут требовать на вход любое количество параметров, которое им нужно для работы:
+  The same is true with methods. They can require any number of parameters to work:
 
   ```python
-  # Первый параметр — что ищем
-  # Второй параметр — на что меняем
+  # The first parameter is what we are looking for
+  # The second is what we're changing it to
   'google'.replace('go', 'mo')  # moogle
   ````
 
-  Чтобы создать такие функции и методы, в определении нужно указать необходимое количество параметров через запятую. Еще им нужно дать понятные имена.
+  To create such  functions and methods, you need to specify the required number of parameters, separated by commas, in the definition. They also need to be given clear names.
 
-  Ниже пример определения функции `replace()`, которая заменяет в слове одну часть строки на другую:
+  Below is an example of the definition of a function called `replace()`, which replaces one part of a string with another:
 
   ```python
   def replace(text, from, to):
-    # Здесь тело функции, но мы его
-    # опускаем, чтобы не отвлекаться
+    # Here is the body of the function, but we've
+    # omitted it so you don't get distracted
 
   replace('google', 'go', 'mo')  # moogle
   ```
 
-  Когда параметров два и более, то практически для всех функций важен порядок передачи этих параметров. Если его поменять, то функция отработает по-другому:
+  When there are two or more parameters, the order in which the parameters are passed is important for almost all functions. If you change it, the function will work differently:
 
   ```python
-  # Ничего не заменилось,
-  # так как внутри google нет mo
+  # Nothing has been replaced,
+  # since there is no mo inside google
   replace('google', 'mo', 'go')  # google
   ```
 
-  Теперь вы знаете, как создавать функции, которые могут принимать на вход параметры.
+  You now know how to create functions that can take parameters as input.
 
 instructions: |
 
-  Допишите функцию `truncate()`, которая обрезает переданную строку до указанного количества символов, добавляет в конце троеточие и возвращает получившуюся строку. Подобная логика часто используется на сайтах, чтобы отобразить длинный текст в сокращенном виде.
+  Create a function called `truncate()` that truncates a string passed to it to a specified number of characters, adds an ellipsis at the end, and returns the resulting string. This kind of logic is often used on websites to display long text in shortened form.
 
-  Функция принимает два параметра:
+  The function takes two parameters:
 
-  1. Строка, которую нужно обрезать
-  2. Число символов, которые нужно оставить
+  1. The string to be trimmed
+  2. Number of characters to leave
 
-  Пример того, как должна работать написанная вами функция:
+  An example of how the function you wrote should work:
 
   ```python
-  # Передаём текст напрямую
-  # Обрезаем текст, оставляя 2 символа
+  # Pass text directly
+  # Truncate the text, leaving two characters
   truncate('hexlet', 2)  # 'he...'
 
-  # Через переменную
+  # Via a variable
   text = 'it works!'
-  # Обрезаем текст, оставляя 4 символа
+  # Truncate the text, leaving 4 characters
   truncate(text, 4)  # 'it w...'
   ```
 
-  Выполнить задание можно различными способами, подскажем лишь один из них. Для решения этим способом вам понадобится взять подстроку из строки, переданной первым параметром в функцию. Используйте для этого срезы строк. Подумайте, исходя из задания, с какого индекса и по какой вам надо извлечь подстроку?
+  There are lots of ways you can do this task, we'll tell you just one of them. To solve it this way, you need to take a substring from the string passed as the first parameter to the function. Use string slices to do this. Think, based on the assignment, from which index and by which one do you need to extract the substring?
 
   ```python
   word = 'welcome!'

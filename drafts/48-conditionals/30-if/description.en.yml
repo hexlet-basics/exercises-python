@@ -1,11 +1,11 @@
 ---
 
-name: Условная конструкция (if)
+name: Conditional Constructions (if)
 theory: |
 
-  В этом уроке вы узнаете, что с помощью условных конструкций можно изменить поведение программы, что будет зависеть от проверяемых условий. Благодаря этому вы сможете писать сложные программы, которые ведут себя в зависимости от ситуации.
+  In this lesson, we'll look at how you can use conditional constructs to change the behavior of a program, which can be made to act based on the result of a condition it checks. This allows you to write complex programs that behave depending on the situation.
 
-  Для примера рассмотрим функцию, которая определяет тип переданного предложения. Для начала она будет отличать обычные предложения от вопросительных:
+  As an example, consider a function that determines the type of sentence passed to it. First, it'll distinguish between normal sentences and questions:
 
   ```python
   def get_type_of_sentence(sentence):
@@ -18,15 +18,15 @@ theory: |
   print(get_type_of_sentence('Hodor?'))  # => question
   ```
 
-  `if` — конструкция языка, которая управляет порядком выполнения инструкций. После слова `if` ей передается выражение-предикат, и в конце ставится двоеточие. После этого описывается блок кода. Он выполнится, если предикат — истина.
+  `if` is a language construct that controls the procedure of how instructions are executed. After the word `if` it passes a predicate expression, followed by a colon at the end. Next, we pass a block of code. It will execute if the predicate is true.
 
-  Если предикат — ложь, то блок кода пропускается, и функция продолжает свое выполнение дальше. В нашем случае следующая строчка кода — `return 'normal'` — заставит функцию вернуть строку и завершиться.
+  If the predicate is false, the code block is skipped and the function continues to be executed. In our case, the next line of code, `return 'normal'`, will make the function return a string and terminate.
 
-  `return` может находиться в любом месте функции — даже внутри блока кода с условием.
+  `return` can be anywhere in a function, even inside a code block with a condition.
 
 instructions: |
 
-  Реализуйте функцию `guess_number()`, которая принимает число и проверяет, равно ли число заданному (пусть это будет 42). Если равно, то функция должна вернуть строку `'You win!'`, в противном случае нужно вернуть строку `'Try again!'`.
+  Implement a function called `guess_number()` that takes a number and checks if the number is equal to a given number (let's say 42). If it's equal, the function should return the string `'You win!'`, otherwise it should return the string `'Try again!'`.
 
   ```python
   guess_number(42) # You win!
@@ -36,5 +36,5 @@ instructions: |
 tips: []
 
 definitions:
-  - name: "Условная конструкция"
-    description: "способ задать условие для выполнения кода. Например, `if x > 10: ... `"
+  - name: "Conditional Design."
+    description: "the way to set a condition for code execution. For example, `if x > 10: . `"

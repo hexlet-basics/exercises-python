@@ -1,24 +1,24 @@
 ---
 
-name: Цепочка вызовов
+name: The call chain
 theory: |
 
-  В этом уроке мы рассмотрим, как комбинировать различные подходы, когда пишем код, а также разберем типичные ошибки новичков.
+  In this lesson, we'll look at how to combine different approaches when writing code, and we'll also look at common beginner mistakes.
 
-  У нас есть следующий код:
+  We have the following code:
 
   ```python
   name = 'Tirion'
   print(name.upper().lower())  # => `tirion`
   ```
 
-  Он напечатал на экране `tirion`.
+  He typed `tirion' on the screen.
 
-  Синтаксис нескольких подряд идущих точек мы видим впервые, но все операции, которые здесь встречаются, нам знакомы. В этом коде объединились известные возможности языка.
+  This is the first time we have seen the syntax of several consecutive dots, but all the operations we encounter here are familiar. This code combines known features of the language.
 
-  Такое в программировании происходит часто. Если вы не знаете синтаксис, то можно все равно пробовать комбинировать различные подходы, и есть вероятность, что они заработают.
+  This happens a lot in programming. If you don't know the syntax, you can still try combining different approaches, and chances are they will work.
 
-  Чтобы понять, как работает этот код, нужно разбить цепочку на отдельные операции:
+  To understand how this code works, you need to break down the chain into separate operations:
 
   ```python
   name = 'Tirion'
@@ -26,34 +26,34 @@ theory: |
   print(upper_name.lower())  # 'tirion'
   ```
 
-  Первый и второй примеры эквивалентны. Мы можем выполнять операции последовательно с промежуточным созданием переменных, а можем строить непрерывную цепочку из атрибутов и методов. В цепочках вычисления всегда идут слева направо.
+  The first and second examples are equivalent. We can perform operations sequentially with intermediate creation of variables, or we can build a continuous chain of attributes and methods. In chains, calculations always go from left to right.
 
-  Еще один пример для закрепления:
+  One more example to reinforce:
 
   ```python
   name = 'Tirion'
   print(name.replace('Ti', 'Ki').lower())  # => ?
   ```
 
-  Над этим кодом нужно хорошо подумать. `.lower()` применяется к результату вызова метода, который находится левее. А метод `replace()` возвращает строку. Новички часто делают ошибки в цепочках с методами и забывают ставить вызов:
+  This code needs a lot of thought. `.lower()` applies to the result of the method call, which is on the left. And the `replace()` method returns a string. Newbies often make mistakes in method chains and forget to place a call:
 
   ```python
   name = 'Tirion'
-  # Этот код отработает неверно!
+  # This code will not work correctly!
   print(name.upper.lower())
   ```
 
-  Также возможно строить бесконечно длинные и бесполезные цепочки, которые включают в себя срезы:
+  It is also possible to build infinitely long and useless chains that include slices:
 
   ```python
-  # Чему равен результат такого вызова?
+  # What is the result of such a call?
   print(name[1:5].upper().find('I'))
   ```
 
-  С функциями это не сработает, так как обычно они вкладываются друг в друга — `f(f(f()))`. Это значительно ухудшает анализ. Но это не значит, что нельзя сделать красиво. В других языках это реализуется через композицию функций или пайплайн-оператор.
+  This will not work with functions, since they are usually nested inside each other - `f(f(f())))`. This makes the analysis much worse. But that doesn't mean it can't be done nicely. In other languages, this is implemented through a composition of functions or a pipelining operator.
 
 instructions: |
 
-  С помощью среза строк получите часть предложения, записанного в переменную `text`, c `5` по `15` символы включительно. Полученную подстроку обработайте методом `.strip()` и выведите на экран длину итоговой подстроки. Выполните эти операции подряд в цепочке без создания промежуточных переменных.
+  Use the string cutter to get part of the sentence written in the `text` variable, from `5` to `15` characters inclusive. Process the resulting substring using the `.strip()` method and display the length of the resulting substring. Perform these operations in a chain without creating intermediate variables.
 
 tips: []

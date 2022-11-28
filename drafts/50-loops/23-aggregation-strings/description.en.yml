@@ -1,36 +1,36 @@
 ---
 
-name: Агрегация данных (Строки)
+name: Data Aggregation (Strings)
 theory: |
 
-  Агрегация строк — это такие задачи, в которых заранее неизвестно, что содержат строки и какой у них размер.
+  Like with number aggregation, string aggregation involves not knowing what the strings contain and how big they are.
 
-  Представьте функцию, которая умеет умножать строку — повторяет ее указанное количество раз:
+  Imagine a function that knows how to multiply a string; it repeats it a specified number of times:
 
   ```python
   repeat('hexlet', 3)  # 'hexlethexlethexlet'
   ```
 
-  Принцип работы этой функции — в цикле происходит «наращивание» строки указанное количество раз:
+  The principle of how this function works is that in the loop, the string is “incremented” a specified number of times:
 
   ```python
   def repeat(text, times):
-      # Нейтральный элемент для строк — пустая строка
+      # The neutral element for strings is an empty string
       result = ''
       i = 1
 
       while i <= times:
-          # Каждый раз добавляем строку к результату
+          # Each time we add the string to the result
           result = result + text
           i = i + 1
 
       return result
   ```
 
-  Распишем выполнение этого кода по шагам:
+  Let's break down the code's execution into steps:
 
   ```python
-  # Для вызова repeat('hexlet', 3)
+  # To call repeat('hexlet', 3)
   result = ''
   result = result + 'hexlet'  # hexlet
   result = result + 'hexlet'  # hexlethexlet
@@ -39,7 +39,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `join_numbers_from_range()`, которая объединяет все числа из диапазона в строку:
+  Implement a function called `join_numbers_from_range()` that combines all the numbers from a range into a string:
 
   ```python
   join_numbers_from_range(1, 1)   # '1'

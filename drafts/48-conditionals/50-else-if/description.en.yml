@@ -1,9 +1,9 @@
 ---
 
-name: Конструкция else + if = elif
+name: The construct else + if = elif
 theory: |
 
-  Функция `get_type_of_sentence()` различает только вопросительные и обычные предложения. Добавим в нее поддержку восклицательных предложений:
+  The function `get_type_of_sentence()` only distinguishes between question and normal sentences. Let's add support for exclamatory sentences to it:
 
   ```python
   def get_type_of_sentence(sentence):
@@ -24,12 +24,12 @@ theory: |
   print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
   ```
 
-  Мы добавили проверку восклицательных предложений — exclamation. Технически эта функция работает, но вопросительные предложения трактует неверно. Еще в ней есть проблемы с точки зрения семантики:
+  We have added an exclamation checker for exclamation sentences. Technically this feature works, but it treats question sentences incorrectly. There are also problems with it in terms of semantics:
 
-  * Наличие восклицательного знака проверяется в любом случае, даже если уже обнаружился вопросительный знак
-  * Ветка `else` описана для второго условия, но не для первого. Поэтому вопросительное предложение становится `"normal"`
+  * The exclamation point is checked in any case, even if there is already a question mark
+  * The `else` branch is described for the second condition, but not for the first. Therefore the question sentence becomes `normal'`.
 
-  Чтобы исправить ситуацию, воспользуемся еще одной возможностью условной конструкции:
+  To remedy the situation, let's take another possibility of conditional construction:
 
   ```python
   def get_type_of_sentence(sentence):
@@ -49,27 +49,27 @@ theory: |
   print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
   ```
 
-  Теперь все условия выстроились в единую конструкцию. `elif` означает — «если не выполнено предыдущее условие, но выполнено текущее». Получается такая схема:
+  Now all the conditions are lined up in a single construction. The `elif` means "if the previous condition is not satisfied, but the current condition is satisfied". This is the scheme:
 
-  * если последняя буква `?`, то `'question'`
-  * если последняя буква `!`, то `'exclamation'`
-  * остальные варианты — `'normal'`
+  * If the last letter is `? then `'question'`
+  * if the last letter is `!`, then `'exclamation'`
+  * other options are `` normal'``.
 
-  Выполнится только один из блоков кода, который относится ко всей конструкции `if`.
+  Only one of the code blocks that refers to the whole `if` construct will be executed.
 
 instructions: |
 
-  На электронной карте Вестероса, которую реализовал Сэм, союзники Старков отображены зелёным кружком, враги — красным, а нейтральные семьи — серым.
+  The electronic map of Westeros that Sam implemented shows Stark allies in green circles, enemies in red, and neutral families in gray.
 
-  Напишите для Сэма функцию `who_is_this_house_to_starks()`, которая принимает на вход фамилию семьи и возвращает одно из трёх значений: `'friend'`, `'enemy'`, `'neutral'`.
+  Write a function `who_is_this_house_to_starks()` for Sam that takes the family name as input and returns one of three values: `'friend'`, `'enemy'`, `'neutral'`.
 
-  Правила определения:
+  Rules of Determination:
 
-    * Друзья (`'friend'`): `'Karstark'`, `'Tully'`
-    * Враги (`'enemy'`): `'Lannister'`, `'Frey'`
-    * Любые другие семьи считаются нейтральными (`'neutral'`)
+    * Friends (`'friend'`): `'Karstark'`, `'Tully'`
+    * Enemies (`'enemy'`): `'Lannister'`, `'Frey'`
+    * Any other families are considered `neutral'`.
 
-  Примеры вызова:
+  Examples of calls:
 
   ```python
   print(who_is_this_house_to_starks('Karstark'))  # => 'friend'
@@ -82,4 +82,4 @@ tips: []
 
 definitions:
   - name: "else + if = elif"
-    description: "способ задать несколько альтернативных условий."
+    description: "a way of setting several alternative conditions."

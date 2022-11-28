@@ -42,20 +42,20 @@ instructions: |
 
   1. the string
   2. the index from where the extraction will begin
-  3. длину извлекаемой подстроки.
+  3. the length of the substring to be extracted
 
-  Функция возвращает `False`, если хотя бы одно из условий истинно:
+  The function returns `False` if at least one of the conditions is true:
 
-  * Отрицательная длина извлекаемой подстроки.
-  * Отрицательный заданный индекс.
-  * Заданный индекс выходит за границу всей строки.
-  * Длина подстроки в сумме с заданным индексом выходит за границу всей строки.
+  * The extracted substring has a negative length
+  * The index given is negative
+  * The index given exceeds the boundary of the entire string
+  * The substring length together with the given index exceeds the boundary of the whole string
 
-  В ином случае функция возвращает `True`.
+  Otherwise, the function returns `True`.
 
-  Не забывайте, что индексы начинаются с `0`, поэтому индекс последнего элемента — это «длина строки минус 1».
+  Don't forget that indices start with `0`, so the index of the last element is “string length minus 1”.
 
-  Пример вызова:
+  Call example:
 
   ```python
   string = 'Sansa Stark'

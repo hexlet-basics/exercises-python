@@ -1,16 +1,16 @@
 ---
 
-name: Возврат из циклов
+name: Return from cycles
 theory: |
 
-  Работа с циклами обычно сводится к двум сценариям:
+  Working with loops usually comes down to two scenarios:
 
-  1. Агрегация. Накопление результата во время итераций и работа с ним после цикла. Переворот строки относится к такому варианту
-  2. Выполнение цикла до достижения необходимого результата и выход. Например, задача поиска простых чисел — которые делятся без остатка только на себя и на единицу
+  1. Aggregation. Accumulation of result during iterations and working with it after the cycle. Line reversal refers to this variant.
+  2. Executing the loop until the desired result is achieved and exiting. For example, the problem of searching for prime numbers - which are divided without remainder by themselves and by one
 
-  Рассмотрим алгоритм проверки простоты числа. Будем делить искомое число `x` на все числа из диапазона от двух до `x - 1` и смотреть остаток. Если в этом диапазоне не найден делитель, который делит число `x` без остатка, значит, перед нами простое число.
+  Consider the algorithm for checking the simplicity of a number. We will divide the sought number `x` by all numbers in the range from two to `x - 1` and see the remainder. If no divisor is found in this range, which divides the number `x` without a remainder, then we have a prime number.
 
-  В этом случае достаточно проверять числа не до `x - 1`, а до половины числа. Например, 11 не делится на 2, 3, 4, 5. Но и дальше не будет делиться на числа больше своей половины. Значит, можно оптимизировать алгоритм и проверять деление только до `x / 2`:
+  In this case it is enough to check the numbers not up to `x - 1`, but up to half a number. For example, 11 is not divisible by 2, 3, 4, 5. But further will not divide by numbers greater than its half. So, we can optimize the algorithm and check the division only up to `x / 2`:
 
   ```python
   def is_prime(number):
@@ -33,16 +33,16 @@ theory: |
   print(is_prime(4))  # => False
   ```
 
-  Представим, что по алгоритму последовательного деления на числа до `x / 2` нашлось одно, которое делит без остатка. Значит, переданный аргумент — не простое число, и дальнейшие вычисления не имеют смысла. В этом месте стоит возврат `False`.
+  Imagine that the algorithm of consecutive division by numbers up to `x / 2` has found one that divides without a remainder. So the argument passed is not a prime number, and further calculations do not make sense. At this point it returns `False`.
 
-  Если цикл отработал целиком, и не нашлось число, которое делит без остатка, значит, число — простое.
+  If the whole cycle worked and no number was found that divides without a remainder, it means that the number is prime.
 
 instructions: |
 
-  Реализуйте функцию `is_contains_char()`, которая проверяет с учётом регистра, содержит ли строка указанную букву. Функция принимает два параметра:
+  Implement a function `is_contains_char()` that checks case-sensitively if a string contains a specified letter. The function takes two parameters:
 
-  * Строка
-  * Буква для поиска
+  * The line
+  * Search letter
 
   ```python
   print(is_contains_char('Hexlet', 'H'))  # => True
@@ -52,4 +52,4 @@ instructions: |
   ```
 
 tips:
-  - "[Список простых чисел](https://ru.wikipedia.org/wiki/Список_простых_чисел)"
+  - "[List of prime numbers](https://en.wikipedia.org/wiki/List_of_prime_numbers)"

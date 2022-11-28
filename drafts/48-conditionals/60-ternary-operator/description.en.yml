@@ -1,9 +1,9 @@
 ---
 
-name: Тернарный оператор
+name: Ternary operator
 theory: |
 
-  Посмотрите на определение функции, которая возвращает модуль переданного числа:
+  Look at the definition of the function that returns the modulus of the number passed:
 
   ```python
   def abs(number):
@@ -12,18 +12,18 @@ theory: |
       return -number
   ```
 
-  Но можно записать более лаконично. Для этого справа от `return` должно быть выражение, но `if` — это инструкция, а не выражение. В Python есть конструкция, которая работает как `if-else`, но считается выражением. Она называется **тернарный оператор** — единственный оператор в Python, который требует три операнда:
+  But you can write it more succinctly. To do this, there must be an expression to the right of `return`, but `if` is an instruction, not an expression. In Python there is a construction that works like `if-else` but is considered an expression. It is called the **tern operator** - the only operator in Python that requires three operands:
 
   ```python
   def abs(number):
       return number if number >= 0 else -number
   ```
 
-  Общий паттерн выглядит так: `<expression on true> if <predicate> else <expression on false>`.
+  The general pattern looks like this: `<expression on true> if <predicate> else <expression on false>'.
 
-  Давайте перепишем начальный вариант `get_type_of_sentence()` аналогично.
+  Let's rewrite the initial version of `get_type_of_sentence()` in the same way.
 
-  Было:
+  It was :
 
   ```python
   def get_type_of_sentence(sentence):
@@ -33,7 +33,7 @@ theory: |
       return 'normal'
   ```
 
-  Стало:
+  Became:
 
   ```python
   def get_type_of_sentence(sentence):
@@ -44,24 +44,24 @@ theory: |
   print(get_type_of_sentence('Hodor?'))  # => question
   ```
 
-  Тернарный оператор можно вкладывать в тернарный оператор. Но не нужно так делать, так как такой код тяжело читать и отлаживать.
+  You can put a ternary operator into a ternary operator. But you shouldn't do it that way because such code is hard to read and debug.
 
 instructions: |
 
-  Реализуйте функцию `flip_flop()`, которая принимает на вход строку и, если эта строка равна `'flip'`, возвращает строку `'flop'`. В противном случае функция должна вернуть `'flip'`.
+  Implement a function `flip_flop()` that takes a string as input and, if that string is `'flip'`, returns the string `'flop'`. Otherwise, the function should return `'flip'`.
 
-  Примеры вызова:
+  Examples of calls:
 
   ```python
   print(flip_flop('flip'))  # => 'flop'
   print(flip_flop('flop'))  # => 'flip'
   ```
 
-  Попробуйте написать два варианта функции: с обычным if-else, и с тернарным оператором.
+  Try writing two versions of the function: with the usual if-else, and with the ternary operator.
 
 tips: []
 
 definitions:
-  - name: Тернарный оператор
+  - name: Ternary operator
     description: |
-      способ превратить простую условную инструкцию в выражение, например, `number if number >= 0 else -number`.
+      a way to turn a simple conditional instruction into an expression, such as `number if number >= 0 else -number`.

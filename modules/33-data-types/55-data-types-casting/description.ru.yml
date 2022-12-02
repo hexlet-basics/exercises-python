@@ -35,6 +35,8 @@ theory: |
   print(converted_value5)  # => 3
   ```
 
+  https://replit.com/@hexlet/python-basics-data-types-casting
+
   Точно так же можно преобразовать данные в строки `str()` и число с плавающей точкой `float()`:
 
   ```python
@@ -66,4 +68,6 @@ instructions: |
 
 # definitions: []
 
-# tips: []
+tips: 
+  - |
+    [Типизация](https://ru.wikipedia.org/wiki/Сильная_и_слабая_типизация)

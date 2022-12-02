@@ -1,15 +1,15 @@
 ---
 
-name: Синтаксический сахар
+name: Syntactic Sugar
 theory: |
 
-  Подобные конструкции `index = index + 1` часто используются в Python, поэтому создатели языка добавили ее сокращенный вариант: `index += 1`.
+  Constructions like `index = index + 1` are often found in Python, so the creators of the language added an abbreviated version: `index += 1`.
 
-  Они отличаются только способом записи. Интерпретатор превратит сокращенную конструкцию в развернутую.
+  The only difference is how they're written. The interpreter will turn an abbreviated construction into its expanded form.
 
-  Такие сокращения называют **синтаксическим сахаром**, потому что они делают процесс написания кода немного проще и приятнее.
+  These abbreviations are called **syntactic sugar** because they make the process of writing code a little easier and more pleasant.
 
-  Существуют сокращенные формы для всех арифметических операций и для конкатенации строк:
+ There are abbreviated forms for all arithmetic operations and for string concatenation:
 
   * `a = a + 1` → `a += 1`
   * `a = a - 1` → `a -= 1`
@@ -18,7 +18,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `filter_string()`, принимающую на вход строку и символ, и возвращающую новую строку, в которой удален переданный символ во всех его позициях.
+  Implement a function called `filter_string()` that takes a string and a character as input, and returns a new string with the character removed from every point in the string.
 
   ```python
   text = 'If I look back I am lost'

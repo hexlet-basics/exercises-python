@@ -1,40 +1,40 @@
 ---
 
-name: Аргументы по умолчанию
+name: Default Arguments
 theory: |
 
-  Рассмотрим функцию `round()`, которая округляет переданное ей число:
+  Let's look at the `round()` function, which rounds the number passed to it:
 
   ```python
   result = round(10.25, 0)  # 10.0
   ```
 
-  Мы передали в нее два параметра:
+  We passed two parameters to it:
 
-  * Число, которое нужно округлить
-  * Точность округления
+  * Number to be rounded
+  * Rounding accuracy
 
-  `0` означает, что округление будет до целого значения. Чаще всего нужно округлять именно до целого числа, а не до десятых. Поэтому создатели функции `round` сделали второй параметр **необязательным** и задали ему внутри функции **значение по умолчанию `0`**. Значит, можно не указывать второй параметр, а результат будет тем же:
+  `0` means that the rounding will be to an integer value. More often than not, you need to round to a whole number, not to two, three, four etc. decimal places. So the creators of the `round` function made the second parameter **unnecessary** and gave it a **default value of `0`** inside the function. So, you can choose to not specify the second parameter and the result will be the same:
 
   ```python
   result = round(10.25)  # 10.0
   ```
 
-  А если нужна другая точность, то можно передать параметр:
+  And if you need a different precision, you can pass a parameter:
 
   ```python
-  # округление до одного знака после запятой
+  # rounding to one decimal place
   result = round(10.25, 1)  # 10.2
   ```
 
-  Если функция в Python принимает необязательные аргументы, то они всегда стоят после обязательных. Их количество может быть любым. Это зависит от самой функции, но они всегда идут рядом и в конце списка аргументов.
+  If a function in Python accepts optional arguments, they always come after the mandatory ones. There can be any number of them. It depends on the function itself, but they always go next to and at the end of the list of arguments.
 
 instructions: |
 
-  Округлите число, записанное в переменную `number`, до двух знаков после запятой и выведите результат на экран.
+  Round up the number written in the `number` variable to two decimal places and print the result on the screen.
 
 tips: []
 
 definitions:
-  - name: Параметр по умолчанию
-    description: необязательный параметр функции
+  - name: Default setting
+    description: optional function parameter

@@ -1,82 +1,82 @@
 ---
 
-name: Multi-line строки
+name: Multi-line strings
 theory: |
 
-  Представьте, что нам нужно определить строку, которая состоит из нескольких строчек — то есть внутри есть переводы строки `\n`. Например, она будет выглядеть так:
+  Imagine that we need to define a string that consists of several lines - that is, there are string translations `\n` inside. For example, it would look like this:
 
   ```python
-  text = 'Пример текста,\nсостоящего из\nнескольких строк'
+  text = 'Example of a text,\nconsisting of\nfew lines'
   ```
 
-  На печати строка примет совсем другой вид:
+  The line will look very different in print:
 
   ```bash
-  Пример текста,
-  состоящего из
-  нескольких строк
+  Example text,
+  consisting of
+  several lines
   ```
 
-  Для таких ситуаций в Python есть еще один способ создания строк, который называется **multi-line строки**. Чтобы описать такую «многострочную строку», нужно заключить ее в тройные кавычки — `"""` или `'''`. Внутри multi-line строки можно переносить текст и не использовать перевод строки `\n`:
+  For such situations Python has another way of creating strings called **multi-line strings**. To describe such a «multi-line string», you need to put it in triple quotes — `"""` or `'''`. Inside the multi-line you can transfer the text and not use a line break `\n`:
 
   ```python
-  text = '''Пример текста,
-  состоящего из
-  нескольких строк
+  text = '''  Example text,
+  consisting of
+  several lines
   '''
   ```
 
   ```bash
-  Пример текста,
-  состоящего из
-  нескольких строк
+  Example text,
+  consisting of
+  several lines
 
   ```
 
-  Обратите внимание, что в конце текста есть пустая строка. Она появилась в тексте потому, что мы поставили закрывающие кавычки `'''` на новой строке. Если не переносить закрывающие кавычки на новую строку, то пустая строка в тексте не появится:
+  Notice that there is a blank line at the end of the text. It appears in the text because we put closing quotes `'''` on a new line. If you don't move the closing quotation marks to a new line, there will be no empty line in the text:
 
   ```python
-  text = '''Пример текста,
-  состоящего из
-  нескольких строк'''
+  text = '''  Example text,
+  consisting of
+  several lines'''
   ```
 
   ```bash
-  Пример текста,
-  состоящего из
-  нескольких строк
+  Example text,
+  consisting of
+  several lines
   ```
 
-  Из-за тройных кавычек multi-line строки позволяют не экранировать кавычки внутри строки:
+  Because of the triple quotes, multi-line strings allow you not to escape quotes within a string:
 
   ```bash
-  Здесь не нужно экранировать 'одинарные' и "двойные" кавычки
+  There is no need to escape the 'single' and 'double' quotes
   ```
 
-  Еще multi-line строки могут становиться f-строками для интерполяции:
+  Even multi-line strings can become f-string for interpolation:
 
   ```python
   a = 'A'
   b = 'B'
 
-  # Слева добавился f
+  # On the left was added f
   text = f'''{a} и {b}
-  сидели на трубе
+  sitting on a pipe
   '''
   ```
 
   ```bash
-  А и B
-  сидели на трубе
+  А and B
+  sitting on a pipe
 
   ```
 
-  Для компьютера неважно, какие способы соединения и переноса строк вы будете использовать. Он все равно произведет вычисления и выдаст нужный результат. Интерполяция и multi-line строки используются для удобства разработчиков, чтобы им было проще читать код.
+  The computer doesn't care what kind of linking and line feeds you use. It will still do the calculations and give you the result you want. Interpolation and multi-line strings are used to make it easier for developers to read code.
 
 
 instructions: |
 
-  Запишите в переменную `text` текст, который приведен ниже. Используйте тройные кавычки.
+  Write the text below into the `text` variable. Use triple quotes.
 
   ```
   Lannister, Targaryen, Baratheon, Stark, Tyrell...

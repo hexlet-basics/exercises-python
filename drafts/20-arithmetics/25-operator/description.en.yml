@@ -1,41 +1,42 @@
 ---
 
-name: Операторы
+name: Operators
 theory: |
 
-  Знак операции, такой как `+`, называют **оператором**. Операторы выполняют операции над определенными значениями, которые называются **операндами**. Сами операторы — это обычно один или несколько символов. Реже — слово. Подавляющее большинство операторов соответствуют математическим операциям.
+  An operation character, such as `+`, is called an **operator**. Operators perform operations on certain values, which are called **operands**. The operators themselves are usually one or more characters. On occasion it can also be a word. Most of the operators are identical to those you'll have seen in math class.
 
   ```python
   print(8 + 2)
   ```
 
-  В этом примере `+` — это оператор, а числа `8` и `2` — это **операнды**.
+  In this example `+` — s the operator, and the numbers `8` and `2` — are **operands**.
 
-  Когда мы складываем, у нас есть два операнда: один слева, другой справа от знака `+`. Операции, которые требуют наличия двух операндов, называются **бинарными**. Если пропустить хотя бы один операнд, например, `3 +`, то программа завершится с синтаксической ошибкой.
+  When we add up, we have two operands: one to the left of the `+` sign, and one to the right. Operations that require two operands are called **binary**. operations. If at least one operand is omitted, e.g., `3 +`, the program will end with a syntax error.
 
-  Операции бывают не только бинарными, но и унарными — с одним операндом, и тернарными — с тремя операндами. Причем операторы могут выглядеть одинаково, но обозначать разные операции.  Символы `+` и `-` используются не только как операторы. Когда речь идет про отрицательные числа, то знак минуса становится частью числа:
+  Operations can be more than just binary, they can also be unary (one operand), and ternary (three operands). Moreover, operators may look the same but denote different operations.  The symbols `+` and `-` are not only used as operators. When it comes to negative numbers, the minus sign becomes part of the number:
 
   ```python
   print(-3)  # => -3
   ```
 
-  Выше пример применения унарной операции к числу `3`. Оператор минус перед тройкой говорит интерпретатору взять число `3` и найти противоположное, то есть `-3`. Это может сбить с толку, потому что `-3` — это одновременно и число само по себе, и оператор с операндом. Но у языков программирования такая структура.
+  Above is an example of applying a unary operation to the number `3`. The minus operator before the three tells the interpreter to take the number `3` and find the opposite, i.e., `-3`. This can be confusing because `-3` is both a number in itself and an operator with an operand. But this is the structure programming languages have.
 
 instructions: |
 
-  Напишите программу, которая посчитает разность между числами `6` и `-81` и выведет ответ на экран.
+  Write a program that calculates the difference between the numbers `6` and `-81` and displays the answer on the screen.
 
 tips:
-  - Всегда отбивайте арифметические операторы пробелами от своих операндов – это хороший стиль программирования.
+  - Always space out arithmetic operators from your operands - this is good programming style.
 
 definitions:
-  - name: "Арифметическая операция"
-    description: "сложение, вычитание, умножение и деление."
-  - name: "Оператор"
-    description: "специальный символ, создающий операцию. Например, `+` создает операцию сложения."
-  - name: "Операнд"
-    description: "объект, который участвует в операции. `3 * 6`: здесь 3 и 6 — операнды."
-  - name: "Унарная операция"
-    description: "операция с одним операндом. Например, `-3` — унарная операция для получения числа, противоположного числу три."
-  - name: "Бинарная операция"
-    description: "операция с двумя операндами. Например, `3 + 9`."
+  - name: "Arithmetic operation"
+    description: “addition, subtraction, multiplication, and division.”
+  - name: "Operator"
+    description: “a special symbol that creates an operation. For example, `+` is for addition.”
+  - name: "Operand"
+    description: “an object that participates in an operation. E.g., in `3 * 6`, 3 and 6 are operands.”
+  - name: "Unary Operation"
+    description: “a single operand operation. For example, `-3' is a unary operation to get the opposite of three.”
+  - name: "Binary Operation"
+    description: “an operation with two operands. For example, `3 + 9'.”
+

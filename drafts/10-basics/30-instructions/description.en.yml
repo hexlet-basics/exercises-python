@@ -1,16 +1,16 @@
 ---
 
-name: Инструкции (Statements)
+name: Statements
 theory: |
-  Когда мы готовим блюдо, то четко следуем рецепту. Иначе еда окажется не такой, как ожидали. Это же правило действует и в программировании.
+  When we're making a dish, we follow the recipe carefully. Otherwise, the food won't turn out as expected. The same rule applies to programming.
 
-  Чтобы увидеть на экране ожидаемый результат, нужно дать компьютеру четкие и пошаговые указания. Это можно сделать с помощью инструкций. Инструкция — это команда для компьютера, единица выполнения. Код на Python в этом случае — это набор инструкций. Его можно представить в виде пошагового рецепта.
+  If you want to see the expected result onscreen, the computer needs to have clear, step-by-step directions. This can be done using instructions. An instruction is a command to the computer, a unit of execution. Python code in this case is a set of instructions. It can be presented as a step-by-step recipe.
 
-  Код на Python запускает **интерпретатор** — программу, которая выполняет инструкции строго по очереди. Как и шаги в рецепте, набор инструкций для интерпретатора пишутся по порядку и отделяются друг от друга переходом на следующую строку.
+  Python code is run by an **interpreter**, a program that executes instructions strictly, line by line. Like the steps in a recipe, the instructions for the interpreter are written in order and are separated from each other by skipping to the next line.
 
-  Разработчики должны понимать порядок действий в коде и уметь мысленно разделять программу на независимые части, удобные для анализа.
+  Developers must understand the order of operations in the code, and be able to mentally divide the program into independent parts that are convenient for analysis.
 
-  Посмотрим на пример кода с двумя инструкциями. При его запуске на экран последовательно выводятся два предложения:
+    Let's look at an example of some code with two instructions. When it's started, two sentences are displayed sequentially on the screen:
 
   ```python
   print('Mother of Dragons.')
@@ -19,17 +19,17 @@ theory: |
   # => Dracarys!
   ```
 
-  Выше мы говорили, что инструкции отделяются друг от друга переходом на новую строку. Но есть и другой способ: их можно разделить точкой с запятой — `;`:
+  We said above that instructions are separated from each other by a line break. But there is another way; they can be separated by a semicolon — `;`:
 
   ```python
   print('Mother of Dragons.'); print('Drakarys!')
   ```
 
-  Технической разницы между первым и вторым вариантом нет — интерпретатор поймет инструкции одинаково. Разница только в том, что человеку будет неудобно читать второй вариант.
+    There is no technical difference between the first and second version; the interpreter will understand the instructions the same way. The only difference is that it's inconvenient, physically, to read the second version.
 
-  Лучше инструкции располагать друг под другом. Так коллегам будет удобнее читать ваш код, обслуживать его и вносить изменения.
+  It's better to place the instructions under each other. This makes it easier for colleagues to read your code, maintain it, and make changes.
 instructions: |
-  Выведите на экран друг за другом три имени: _Robert_, _Stannis_, _Renly_. В результате на экране должно отобразиться:
+  Display three names, one after another: _Robert_, _Stannis_, _Renly_. The result should be that the following is shown on the screen:
 
   <pre class='hexlet-basics-output'>
   Robert
@@ -37,15 +37,16 @@ instructions: |
   Renly
   </pre>
 
-  Для каждого имени используйте свой собственный вызов `print()`.
+  For each name, use Python's own `print()` call.
 
 tips:
   - |
-    [Немного об интерпретаторах](https://ru.wikipedia.org/wiki/Интерпретатор)
+    [A little bit about interpreters](https://en.wikipedia.org/wiki/Interpreter_(computing))
 
 definitions:
-  - name: Интерпретатор
+  - name: Interpreter
     description: |
-      программа, выполняющая код на Python.
-  - name: Инструкция (statement)
-    description: команда для компьютера, написанная на языке программирования. Код на Python — это набор инструкций, разделенных (чаще всего) переводом строки.
+      a program that runs code in Python.
+  - name: Statement
+    description: a command for the computer written in a programming language. Python code is a set of instructions, most often separated by a line break.
+

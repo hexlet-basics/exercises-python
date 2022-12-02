@@ -1,16 +1,16 @@
 ---
 
-name: Отрицание
+name: Negation
 theory: |
 
-  Наряду с логическими операторами **И** и **ИЛИ**, часто используется операция «**отрицание**». Она меняет логическое значение на противоположное. В программировании отрицанию соответствует унарный оператор `not`:
+  Along with the logical operators **AND** and **OR**, there is also an operation called “**negation**” It changes the logical meaning to the opposite. In programming, negation corresponds to the unary operator `not`:
 
   ```python
   not True   # False
   not False  # True
   ```
 
-  Например, если есть функция, которая проверяет четность числа, то с помощью отрицания можно выполнить проверку нечетности:
+  For example, if there's a function that checks if a number is even, then you can use negation to check if a number is odd:
 
   ```python
   def is_even(number):
@@ -20,17 +20,17 @@ theory: |
   print(not is_even(10))  # => False
   ```
 
-  В примере выше мы добавили `not` слева от вызова функции и получили обратное действие.
+  In the example above, we added `not` to the left of the function call and got the opposite action.
 
-  Отрицание — инструмент, с которым можно выражать задуманные правила в коде и не писать новые функции.
+  Negation is a tool with which you can express intended rules in code without writing new functions.
 
-  Если написать `not not is_even(10)`, то код сработает даже в таком случае:
+  If you write `not is_even(10)`, the code will still work:
 
   ```python
   print(not not is_even(10))  # => True
   ```
 
-  В логике двойное отрицание — это отсутствие отрицания:
+  In logic, double negation means positive:
 
   ```python
   not not True   # True
@@ -40,20 +40,20 @@ theory: |
   print(not not is_even(11))  # => False
   ```
 
-  Теперь вы знаете, что означают операторы **И**, **ИЛИ** и `not`. С их помощью вы сможете задавать составные условия из двух и более логических выражений.
+  Now you know what the operators **AND**, **OR** and `not` mean. They allow you to specify compound conditions with two or more logical expressions.
 
 instructions: |
 
-  1. Реализуйте функцию `is_palindrome()`, которая определяет, является ли слово палиндромом или нет. Палиндром - это слово, которое читается одинаково в обоих направлениях. Слова в функцию могут быть переданы в любом регистре, поэтому сначала нужно привести слово к нижнему регистру: `word.lower()`.
+  1. Implement a function called `is_palindrome()` that determines whether a word is a palindrome or not. A palindrome is a word that reads the same way in both directions. Words may be passed to the function in any case, so you must first convert the word to lowercase: `word.lower()`.
 
       ```python
-      is_palindrome('шалаш') # true
-      is_palindrome('хекслет') # false
-      is_palindrome('Довод') # true
-      is_palindrome('Функция') # false
+      is_palindrome('hut') # true
+      is_palindrome('hexlet') # false
+      is_palindrome('Argument') # true
+      is_palindrome('Function') # false
       ```
 
-  2. Реализуйте функцию `is_not_palindrome()`, которая проверяет что слово НЕ является палиндромом:
+  2. Implement a function called `is_not_palindrome()` which checks if a word is NOT a palindrome:
 
       ```python
       is_not_palindrome('шалаш') # false
@@ -61,8 +61,8 @@ instructions: |
       is_not_palindrome('хекслет') # true
       ```
 
-      Для этого, вызовите функцию `is_palindrome()` внутри `is_not_palindrome()` и примените отрицание.
+      To do this, call `is_palindrome()` inside `is_not_palindrome()` and apply negation.
 
 tips:
   - |
-    [Законы Де Моргана](https://ru.wikipedia.org/wiki/Законы_де_Моргана)
+    [De Morgan's laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)

@@ -1,19 +1,19 @@
 ---
 
-name: Обход строк
+name: Traversing Strings
 theory: |
 
-  С помощью циклов не только обрабатывают числа, но работают и со строками. Например, можно получить конкретный символ по его индексу, а также формировать строки в циклах.
+  Loops are used to work with strings as well as numbers. For example, you can get a specific character by its index, and also form strings in loops.
 
-  Ниже пример кода, который печатает буквы каждого слова на отдельной строке:
+  Below is some sample code that prints the letters of each word on a separate line:
 
   ```python
   def print_name_by_symbol(name):
       i = 0
-      # Такая проверка будет выполняться до конца строки,
-      # включая последний символ. Его индекс `length - 1`.
+      # This check will run until the end of the string,
+      # including the last character. Its index is `length - 1`.
       while i < len(name):
-          # Обращаемся к символу по индексу
+          # Accessing the symbol by its index
           print(name[i])
           i += 1
 
@@ -25,11 +25,11 @@ theory: |
   # => 'a'
   ```
 
-  Главное в этом коде — поставить правильное условие в `while`. Это можно сделать двумя способами: `i < len(name)` или `i <= len(name) - 1` — они приведут к одному результату.
+  The main thing in this code is to put the proper condition in `while`. This can be done in two ways: `i < len(name)` or `i <= len(name) - 1` - they'll both give the same result.
 
 instructions: |
 
-  Реализуйте функцию `print_reversed_word_by_symbol()`, которая печатает переданное слово посимвольно, как в примере из теории, но делает это в обратном порядке.
+  Implement a function called `print_reversed_word_by_symbol()` that prints a word passed to it character by character, as in the example from the theory, but in reverse order.
 
   ```python
   word = 'Hexlet'

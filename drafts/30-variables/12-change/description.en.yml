@@ -1,14 +1,14 @@
 ---
 
-name: Изменение переменной
+name: Changing variables
 theory: |
 
-  Само слово «переменная» подсказывает, что ее можно менять. И действительно, со временем внутри программы значения переменных могут изменяться.
+  The word “variable” itself suggests that it can be changed. And indeed, the values of variables can change over time within the program.
 
-  Например:
+  For example:
 
   ```python
-  # greeting - переводится как приветствие
+  # greeting 
   greeting = 'Father!'
   print(greeting)  # => Father!
 
@@ -16,18 +16,18 @@ theory: |
   print(greeting)  # => Mother!
   ```
 
-  Имя осталось тем же, но внутри появились другие данные. Отметим, что переменные в Python не требуют специального объявления. Вместо этого переменная объявляется, когда ее впервые используют в программе.
+  The name remained the same, but there were different data inside. Note that variables in Python require no special declaration. Instead, a variable is declared when it is first used in a program.
 
-  Переменные — мощная и в то же время рисковая вещь. Нельзя сразу с уверенностью сказать, что внутри нее записано — сначала надо проанализировать код, который находится перед переменной. Именно этим занимаются разработчики во время отладки, когда пытаются разобраться, почему программа работает не так, как задумано.
+  Variables are a powerful yet risky thing. You can't be sure right away what'll be inside it - first you have to analyze the code that comes before the variable. This is what developers do during debugging, when they try to figure out why the program doesn't work as intended.
 
 instructions: |
 
-  В упражнении определена переменная, внутри которой содержится строка. Переопределите значение этой переменной и присвойте ей строку, в которой расположите символы первоначальной строки в обратном порядке.
+  In the exercise, a variable is defined with a string inside it. Override the value of this variable and assign it a string in which the characters of the original string are arranged in reverse order.
 
-  Обратите внимание: в данном задании вам предстоит писать код между строчками с комментариями `# BEGIN` и `# END` (об этом говорилось ранее, но это первый раз, когда вы встречаетесь с таким форматом).
+  Note: in this assignment, you'll have to write code between lines with comments `# BEGIN` and `# END` (we mentioned it before, but this is the first time you've come across this format).
 
 tips: []
 
 definitions:
-  - name: Переменная
-    description: способ сохранить информацию и дать ей имя для последующего использования в коде.
+  - name: Variable
+    description: a way to save information and name it for later use in code.

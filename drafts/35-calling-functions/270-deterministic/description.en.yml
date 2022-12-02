@@ -1,11 +1,11 @@
 ---
 
-name: Детерминированность
+name: Determinacy
 theory: |
 
-  У функций внутри каждого языка программирования есть фундаментальные свойства. Эти свойства помогают прогнозировать поведение функций, способы их тестирования и место использования. К таким свойствам относится детерминированность.
+  Functions in every programming language have fundamental properties. These properties help predict the behavior of functions, how to test them, and where to use them. These properties include determinacy.
 
-  Детерминированная функция возвращает один и тот же результат для одинаковых входных параметров. Например, детерминированной можно назвать функцию, которая считает количество символов:
+  A deterministic function returns the same result every time if the input parameters are the same. For example, a function that counts the number of characters can be called deterministic:
 
   ```python
   len('hexlet')  # 6
@@ -15,38 +15,38 @@ theory: |
   len('wow')  # 3
   ```
 
-  Можно бесконечно вызывать эту функцию и передавать туда значение `'hexlet'` — она всегда вернет `6`.
+  You can call this function and pass the value `'hexlet'` as many times as you want, and it will always return `6`.
 
-  Посмотрим и обратный случай — недетерминированные функции. Например, к этой категории относится функция, которая возвращает случайное число: у одного и того же входа мы получим всегда разный результат. Если хотя бы один из миллиона вызовов функция вернет другой результат, она считается недетерминированной. Это работает и в том случае, если параметры не принимаются:
+  Let's also look at the reverse case: nondeterministic functions. For example, a function that returns a random number belongs to this category: we will always get different results even if we use the same input. If at least one in a million calls to a function returns a different result, it is considered nondeterministic. This applies even if it doesn't take parameters:
 
   ```python
-  # Синтаксис импортов будет изучаться позже на Хекслете
+  # Import syntax will be studied later in Hexlet
   from random import random
 
-  # Функция, которая возвращает случайное число
+  # A function that returns a random number
   random()  # 0.09856613113197676
   random()  # 0.8839904367241888
   ```
 
-  Детерминированность — это важное свойство функции, так как она влияет на многие аспекты. Например, детерминированные функции удобны в работе — их легко оптимизировать и тестировать. Если возможно, то лучше сделать функцию детерминированной.
+  Determinism is an important property of a function, as it affects many aspects. For example, deterministic functions are convenient to work with, as they're easy to optimize and test. If possible, it's better to make the function deterministic.
 
 instructions: |
 
-  Функция `random()` возвращает случайное число от 0 до 1 с большим количеством знаков после запятой. Реализуйте код, который выводит на экран случайное целое число в диапазоне от 0 до 10. Для этой задачи вам понадобится функция `random()` и функция [round()](https://docs.python.org/3/library/functions.html#round), которая округляет переданное ей значение
+   The `random()` function returns a random number from 0 to 1 with many decimal places. Implement code that displays a random integer between 0 and 10. For this task, you need the `random()` function and the [round()](https://docs.python.org/3/library/functions.html#round), function, which rounds the value passed to it
 
   ```python
   round(2.320000789855705) # 2
   ```
 
-  Попробуйте решить это задание в одну строчку
+  Try to solve this task using only 1 line
 
-  ## Алгоритм
-  Так как функция `random()` возвращает числа в диапазоне от 0 до 1, то чтобы получить числа от 0 до 10, нам нужно выполнить умножение на 10. Затем получившиеся число округляется и так мы получаем то, что нужно.
+  ## Algorithm
+  Since `random()` returns numbers between 0 and 1, we need to multiply by 10 to get numbers between 0 and 10. Then we round the result to get what we need.
 
 tips:
   - |
-    [Детерминированные функции](https://ru.wikipedia.org/wiki/Чистота_функции#Детерминированность_функции)
+    [Pure function](https://en.wikipedia.org/wiki/Pure_function)
 
 # definitions:
-#   - name: Побочный эффект
-#     description: "действие, которое изменяет внешнее окружение (среду выполнения). Например, вывод на экран или отправка письма."
+#   - name: Side effect
+#     description: "an action that changes the external environment (runtime environment). For example, displaying a screen or sending an email."

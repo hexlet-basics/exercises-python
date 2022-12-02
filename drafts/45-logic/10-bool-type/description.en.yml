@@ -1,26 +1,26 @@
 ---
 
-name: Логический тип
+name: Logic type
 theory: |
 
-  Кроме арифметических операций в математике есть операции сравнения, например, `5 > 4` или `3 < 1`. Они есть и в программировании. Допустим, когда мы заходим на сайт, введенные логин и пароль сравниваются с теми, какие есть в базе. Если они есть, нас пускают внутрь — аутентифицируют. В этом уроке разберем операции сравнения.
+  In addition to arithmetic operations, there are also comparison operations in mathematics, such as `5 > 4` or `3 < 1`. They also exist in programming. For example, when we go to a website, the username and password are compared with those in the database. If they are, they let us in; they authenticate us. In this lesson, we'll get to know more about comparison operations.
 
-  Языки программирования адаптировали все математические операции сравнения в неизменном виде, кроме операторов равенства и неравенства. В математике для этого используется обычное равно `=`, но в программировании такое встречается редко.
+  Programming languages have adapted all mathematical comparison operations unchanged, except for the equality and inequality operators. In mathematics, we use the `=` sign, but in programming, this is quite rare.
 
-  Во многих языках символ `=` используется, чтобы присвоить переменным значения. Поэтому в Python сравнивают с помощью `==`.
+  In many languages, the symbol `=` is used to assign values to variables. That's why in Python, we use `==` for comparison.
 
-  Список операций сравнения:
+  List of comparison operations:
 
-  * `<`  — меньше
-  * `<=` — меньше или равно
-  * `>`  — больше
-  * `>=` — больше или равно
-  * `==` — равно
-  * `!=` — не равно
+  * `<`  — less than
+  * `<=` — less than or equal to
+  * `>`  — more than
+  * `>=` — greater than or equal to
+  * `==` — equal to
+  * `!=` — not equal to
 
-  Эти операции применяются не только к числам. Например, с помощью оператора равенства можно сравнить строки: `password == text` — это сравнение идентичности строк, которые записаны в разных переменных.
+  These operations apply not only to numbers. For example, you can use the equality operator to compare strings: `password == text` is a comparison of the value of strings that are written in different variables.
 
-  Логическая операция типа `5 > 4` или `password == text` — это выражение. Его результат — специальное значение `True` («истина») или `False` («ложь»). Это новый для нас тип данных — `bool`.
+  A logical operation like `5 > 4` or `password == text` is an expression. Its result is the special value `True` or `False`. This is a new data type for us - `bool`.
 
   ```python
   result = 5 > 4
@@ -28,9 +28,9 @@ theory: |
   print('one' != 'one')  # => False
   ```
 
-  Наряду со строками (`str`) и целыми и рациональными числами, **тип `bool` (булев)** — это один из примитивных типов данных в Python.
+  Along with strings (`str`) and integers and rational numbers, the **`bool` type** is one of Python's primitive data types.
 
-  Попробуем написать простую функцию, которая принимает на вход возраст ребенка и определяет, младенец ли он. Младенцами считаются дети до года:
+  Let's try to write a simple function that takes the age of a child as input and determines whether the child is a baby or not. Babies are defined as children under one year old:
 
   ```python
   def is_infant(age):
@@ -39,21 +39,21 @@ theory: |
   print(is_infant(3))  # => False
   ```
 
-  Любая операция — это выражение, поэтому единственной строчкой функции пишем «вернуть то значение, которое получится в результате сравнения `age < 1`». В зависимости от того, какой аргумент пришел, сравнение будет истинным (`True`) или ложным (`False`), а `return` вернет этот результат.
+  Any operation is an expression, so the only line of the function we write is “return the value that results from the comparison `age < 1`”. Depending on the argument passed, the comparison will be `True` or `False`, and `return` will return that result.
 
-  А теперь проверим ребенка, которому полгода:
+  Now, perform the check on a child who's six months old:
 
   ```python
   print(is_infant(0.5))  # => True
   ```
 
-  Результат операции `True`. Значит, ребенок действительно младенец.
+  The result of the `True` operation. So the child is definitely a baby.
 
 instructions: |
 
-  Напишите функцию `is_pensioner()`, которая принимает возраст в качестве единственного аргумента и проверяет, является ли этот возраст пенсионным. Пенсионным считается возраст 60 лет и больше.
+  Write a function `is_pensioner()` that takes someone's age as a single argument and checks whether that person is at retirement age. For the purposes of this exercise, retirement age is considered to be 60 years or over.
 
-  Примеры вызова:
+  Call examples:
 
   ```python
   is_pensioner(75) # True
@@ -61,5 +61,5 @@ instructions: |
   ```
 
 definitions:
-  - name: "Логический тип (bool)"
-    description: "тип данных с двумя возможными значениями: `True` (истина) и `False` (ложь)."
+  - name: “Logic type (bool)”
+    description: "a data type with two possible values: `True` or `False`"

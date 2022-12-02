@@ -1,24 +1,24 @@
 ---
 
-name: Привет, Мир!
+name: Hello, world!
 theory: |
-  Изучение нового языка программирования традиционно начинается с 'Hello, World!'. Это простая программа, которая выводит приветствие на экран и заодно знакомит с новым языком — его синтаксисом и структурой программы.
+  Learning a new programming language traditionally begins with 'Hello, world!'. It is a simple program that both displays a greeting on the screen, and introduces the new language, showing its syntax and its program structure.
 
   <pre class='hexlet-basics-output'>
     Hello, World!
   </pre>
 
-  Этой традиции уже больше сорока лет, поэтому и мы не будем нарушать ее. В первом уроке мы напишем программу `Hello, World!`. Чтобы сделать это, нужно дать компьютеру специальную команду. В языке Python это — `print()`.
+  This tradition is over forty years old, so we're not thinking of breaking it any time soon. In the first lesson, we'll write a program called `Hello, world!`. To do this, you have to give the computer a special command. In Python, it's: `print()`.
 
 instructions: |
-  Наберите в редакторе код из задания символ в символ и нажмите «Проверить».
+   Copy the exact code from the instructions into the editor and run it by clicking “Run”.
 
   ```python
   print('Hello, World!')
   ```
 
-  Внимание: если вы напишете `heLLo, woRld!` вместо `Hello, World!`, то это будет считаться другим текстом, потому что заглавные и строчные буквы — это разные символы, отличающиеся _регистром_. В программировании регистр практически всегда имеет значение, поэтому привыкайте всегда обращать на него внимание!
+  Note: if you write `heLLo, woRld!` instead of `Hello, World!`, it will be considered different text, because upper and lower case letters are different characters and different _registers_. In programming, the register almost always matters, so get used to always paying attention to it!
 
-tips:
+# tips:
   - |
-    [Немного о 'Hello, World!'](https://ru.hexlet.io/blog/posts/moy-chelovek-menya-ponimaet-istoriya-frazy-hello-world-i-ee-analogov)
+#     [A little bit about 'Hello, World!](https://ru.hexlet.io/blog/posts/moy-chelovek-menya-ponimaet-istoriya-frazy-hello-world-i-ee-analogov)

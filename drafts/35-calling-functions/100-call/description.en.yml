@@ -1,49 +1,49 @@
 ---
 
-name: Функции и их вызов
+name: Functions
 theory: |
 
-  Сложение, конкатенация, нахождение остатка от деления и остальные рассмотренные операции — это базовые возможности языков программирования. Математика не ограничена арифметикой, кроме нее есть и другие разделы со своими операциями ⎯ например, геометрия. То же самое касается и строк: их можно переворачивать, менять регистр букв, удалять лишние символы — и это только самое простое.
+  Addition, concatenation, finding the remainder of a division, and the other operations discussed are basic features of programming languages. Mathematics is not limited to arithmetic, there are other sections with their own operations ⎯ e.g., geometry. The same goes for strings: you can flip them, change a letter's case, delete extra characters – and that's just the tip of the iceberg.
 
-  Еще на более высоком уровне есть прикладная логика конкретного приложения. Программы списывают деньги, считают налоги, формируют отчеты. Количество подобных операций бесконечно и индивидуально для каждой программы. И их нужно уметь выражать в коде.
+  And at higher levels, there's application-specific logic. Programs withdraw money, calculate taxes, and generate reports. The number of these operations is endless and different for each program. And you have to be able to express them in code.
 
-  Чтобы выразить любую произвольную операцию, в программировании существует понятие **функция**. Функции бывают встроенные и добавленные программистом. С одной встроенной функцией мы уже знакомы ⎯ это `print()`.
+  For expressing other operations, we have a feature in programming called **functions**. Functions can be built-in or added by the programmer. We're already familiar with one built-in function ⎯  `print()`.
 
-  Функции — одна из ключевых конструкций в программировании. Без них невозможно сделать практически ничего. Знакомство с ними нужно начинать как можно раньше, так как весь дальнейший материал оперирует функциями по максимуму. Сначала мы научимся пользоваться уже созданными функциями, а потом научимся создавать собственные.
+  Functions are one of the key constructs in programming. Without them, it's impossible to do almost anything. It's important to get to know them as early as possible, since everything after this is going to be very function-heavy. First we'll learn how to use the functions we've already created, and then we'll learn how to create our own.
 
-  Начнем с простых функций для работы над строками.
+  We'll start with basic functions that handle strings.
 
-  Функция `len()` считает количество символов в строке. Ниже пример ее вызова:
+  The `len()` function counts the number of characters in a string. Below is an example of it being called:
 
   ```python
-  # Вызов функции len с параметром 'Hello!'
+  # Calling the function len with the parameter 'Hello!
   result = len('Hello!')
   print(result)  # => 6
   ```
 
-  **Параметры или аргументы** — это информация, которую функция получает при вызове. На основе этой информации функция обычно вычисляет и выдает результат.
+  **Parameters or arguments** are the information the function receives when it is called. Based on this information, the function usually calculates and outputs a result.
 
-  Мы создали переменную `result` и указали интерпретатору конкретное действие: надо записать в нее результат, который возвращается функцией `len()` при ее вызове. В этом смысле функции подобны операциям — они всегда возвращают результат своей работы. Запись `len('Hello!')` означает, что вызывается функция с именем *len*, в которую передали параметр `'Hello!'`. Функция `len()` считает длину той строки, которую ей передали.
+  We created a variable called `result` and gave the interpreter a specific action: we have to write into it the result returned by the `len()` function when it's called. In this sense, functions are like operations - they always return the result of their work. The entry `len('Hello!')` means that a function named *len* is called, to which the parameter `'Hello!'` is passed. The `len()` function counts the length of the string that was passed to it.
 
-  Вызов функции всегда обозначается скобками `()`, которые идут сразу за именем функции. В скобках может быть любое количество параметров, а иногда ни одного. Количество зависит от используемой функции.
+  A function call is always indicated by parentheses `()`, which come immediately after the function name. There can be any number of parameters in brackets, and sometimes none at all. The number of parameters depends on the function used.
 
-  Возьмем для примера функцию `pow()`, которая возводит указанное число в нужную степень. Она принимает на вход два параметра: берет первый параметр и возводит его в степень, переданную вторым параметром:
+  Take for example the `pow()` function, which increments a given number to the correct power. It takes two parameters as input: the first parameter is expanded by the degree set in the second parameter:
 
   ```python
   result = pow(2, 3)  # 2 * 2 * 2
   print(result)  # => 8
   ```
 
-  Мы разобрались, как пользоваться простыми встроенными функциями. Но это не весь их перечень. Больше о функциях вы узнаете в следующих уроках
+  We've figured out how to use the simple built-in functions. But that's not all of them. You'll learn more about functions in future lessons
 
 instructions: |
 
-  В коде программы определены две переменные, содержащие имена компаний. Посчитайте их общую длину в символах и выведите ее на экран.
+  There are two variables defined in the program code that contain the names of companies. Calculate their total character length and print it.
 
 tips: []
 
 # definitions:
-#   - name: Функция
-#     description: "операция, способная принимать данные и возвращать результат; функция вызывается так: `foo()`."
-#   - name: Аргумент
-#     description: "информация, которую функция получает при вызове. Например, `foo(42)` — передача аргумента `42` функции `foo()`"
+#   - name: Function
+#     description: "an operation capable of receiving data and returning a result; the function is called as: `foo()`."
+#   - name: Argument
+#     description: "the information the function receives when it is called. For example, `foo(42)` - passing the argument `42` to `foo()`."

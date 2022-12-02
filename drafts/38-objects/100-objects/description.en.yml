@@ -1,91 +1,91 @@
 ---
 
-name: Объекты
+name: Objects
 theory: |
 
-  У данных, которыми мы оперируем в программах, есть важные атрибуты. В Python они встроены прямо в язык. Еще у данных есть методы — функции внутри свойств. Свойства и методы — такие же выражения, как переменные или вызовы функции. Все это можно по-разному комбинировать. В этом уроке изучим их основы.
+  The data we work with in programs have important attributes. In Python, they're built right into the language. Data also have methods - functions within properties. Properties and methods are expressions, just like variables or function calls. All of these can be combined in different ways. We'll look at the basics of them in this lesson.
 
-  В программировании мы оперируем данными, создаем числа и строки, выполняем над ними различные операции и используем полученный результат. Чтобы выполнить операцию, мы применяем либо операторы, либо функции:
+  In programming, we operate with data, create numbers and strings, perform various operations on them and use their results. To perform an operation, we apply either operators or functions:
 
   ```python
-  # Сложение с помощью оператора +
+  # Adding with the + operator
   1 + 3 # 4
 
-  # Подсчет длины с помощью функции len()
+  # Counting the length with the len() function
   name = 'Hexlet'
   len(name)  # 6
   ```
 
-  В примере выше есть четкое разделение: данные отдельно, функции отдельно. Но это не единственный способ организации кода. В Python наравне с таким разделением, используется и другой подход — **объектно-ориентированный (ОО)**.
+  In the example above, there is a clear division: the data and functions are separated from each other. But this is not the only way to organize code. In Python, there's another approached used alongside this separation, the **Object Oriented (OO)** approach.
 
-  Объектно-ориентированный код строится на объединении данных и функций в одну сущность — **объект**. Данные в таком случае называются атрибутами, а функции — методами.
+  Object-oriented code is based on combining data and functions into one entity, an  **object**. Data in this case are called attributes, and functions are called methods.
 
-  Так это выглядит:
+  This is what it looks like:
 
   ```python
   name = 'Hexlet'
-  # Метод upper()
+  # upper() method
   upper_name = name.upper()
   print(upper_name)  # => 'HEXLET'
   ```
 
-  Строки в Python — это объекты. В примере выше мы вызываем метод, то есть функцию, которая связана со строкой. Вызов происходит через точку, которая идет сразу за именем переменной. В остальном методы работают как обычные функции.
+  Strings in Python are objects. In the example above, we call a method, which is, a function associated with a string. The call is made using a period that comes right after the variable name. Otherwise, the methods work like normal functions.
 
-  Также вызов можно делать и напрямую:
+  The call can also be made directly:
 
   ```python
   'Hexlet'.upper()  # 'HEXLET'
   ```
 
-  В строки встроено много методов, которые постоянно нужны разработчику. Посмотреть их список можно в [документации](https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods). Вот несколько полезных примеров:
+  There are many methods built into strings which developers need all the time. You can see a list of them in the [documentation](https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods). Here are some useful examples:
 
   ```python
   name = 'Python'
 
-  # Возвращает индекс первого вхождения буквы в строку
+  # Returns the index of the first occurrence of a letter in a string
   name.find('t')  # 2
 
-  # Переводит в нижний регистр
+  # Changes to lower case
   name.lower()  # 'python'
 
-  # Заменяет одну подстроку другой
+  # Replaces one substring with another
   name.replace('on', 'off')  # 'Pythoff'
   ```
 
-  То же самое касается чисел и остальных типов данных, которые мы пока не изучали. Можно сказать, что в Python почти все — объекты:
+  The same goes for numbers and other data types that we've not looked at. You could say that in Python almost everything is an object:
 
   ```python
   x = -5
-  # Возвращает модуль числа
-  # Имя выглядит странно, но это действительно имя метода
+  # Returns the modulus of a number
+  # The name looks strange, but it really is the name of the method
   x.__abs__()
   ```
 
-  В примере выше есть имя метода с двумя подчеркиваниями в начале и в конце. В Python так называют методы, которые не предназначены для прямого вызова. Для них создали функции, которые внутри себя уже сами вызывают методы:
+  In the example above, there is a method name with two underscores at the beginning and at the end. In Python, this is the name given to methods that aren't intended to be called directly. Functions have been created for them that call methods themselves:
 
   ```python
   x = -5
-  abs(x)  # вызывает x.__abs__()
-  # -5 в 3 степени
-  pow(x, 3)  # вызывает x.__pow__(3)
+  abs(x)  # calls x.__abs__()
+  # -5 to the power of 3
+  pow(x, 3)  # calls x.__pow__(3)
   ```
 
-  Создатель Python [решил](https://stackoverflow.com/questions/83983/why-isnt-the-len-function-inherited-by-dictionaries-and-lists-in-python), что будет нагляднее, если математические или похожие на математические операции выразить функциями. Он хотел, чтобы такие функции воспринимались как операции, типа сложения или вычитания. Так привычнее для тех, кто изучал математику.
+  The creator of Python [decided](https://stackoverflow.com/questions/83983/why-isnt-the-len-function-inherited-by-dictionaries-and-lists-in-python) that it would be clearer if mathematical operations and operations similar to mathematic ones were expressed in functions. He wanted such functions to be thought of as operations like addition or subtraction. This is more familiar to those who have studied mathematics.
 
-  Так же работает и функция `len()`:
+  This is also how the `len()` function works:
 
   ```python
-  len('Hexlet')  # Вызывает 'Hexlet'.__len__()
+  len('Hexlet')  # Calls 'Hexlet'.__len__()
   ```
 
-  Кроме методов у объектов есть атрибуты, но у встроенных в Python объектов их мало. Например, атрибут `__doc__`, который возвращает документацию функции. Поэтому функции тоже считаются объектами:
+  In addition to methods, objects have attributes, but Python's built-in objects don't have many of them. For example, the attribute `__doc__`, which returns the documentation of the function. Therefore, functions are also considered objects:
 
   ```python
   len.__doc__ # 'Return the number of items in a container.'
   ```
 
-  Атрибуты работают и выглядят как переменные, только указываются через точку после объекта.
+  Attributes work and look like variables, only they need to be entered like this: `[object].[attribute]`.
 
 instructions: |
 
-  Приведите строку `text` к нижнему регистру и напечатайте её на экран. Пример метода, выполняющего эту задачу приведен в теории.
+  Make the string `text` lowercase and print it on the screen. An example of a method that performs this task is given in the theory.

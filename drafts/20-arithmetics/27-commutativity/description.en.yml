@@ -1,18 +1,19 @@
 ---
 
-name: Коммутативная операция
+name: Commutative operation
 theory: |
-  «От перемены мест слагаемых сумма не меняется» — это один из базовых законов арифметики, который также называется **коммутативным законом**. Бинарная операция считается коммутативной, если вы получаете тот же самый результат, поменяв местами операнды. В этом случае сложение — это коммутативная операция: `3 + 2 = 2 + 3`.
+  "An operation will not change if the operands are moved” is one of the basic laws of arithmetic, also called **the commutative law**. A binary operation is considered commutative if you get the same result even if you swap the operands. In this case, addition is a commutative operation: `3 + 2 = 2 + 3'.
 
-  Но вычитание — это не коммутативная операция: `2 - 3 ≠ 3 - 2`. В программировании этот закон работает точно так же, как в арифметике. Более того, большинство операций, с которыми мы сталкиваемся в реальной жизни, не являются коммутативными. Отсюда вывод: всегда обращайте внимание на порядок того, с чем работаете.
+  But subtraction is not a commutative operation: `2 - 3 ≠ 3 - 2'. In programming, this law applies just like it does in arithmetic. Moreover, most of the operations we encounter in real life are not commutative. Here's the takeaway: always pay attention to the order of things you work with.
 
 instructions: |
 
-  Напишите программу, которая считает и выводит на экран последовательно (по одному значению в каждой строчке) значения следующих математических выражений: «3 в степени 5» и «-8 разделить на -4».
+  Write a program that calculates and displays sequentially (one value per line) the values of the following mathematical expressions: "3 to the power of 5" and "-8 divided by -4".
 
 tips: []
 
 definitions:
-  - name: Коммутативность
+  - name: Commutativity
     description: |
-      свойство операции, когда изменение порядка операндов не влияет на результат. Например, сложение — коммутативная операция: от перемены мест слагаемых сумма не меняется.
+      the property of an operation where changing the order of operands does not affect the result. For example, addition is a commutative operation: changing the order of the numbers we are adding doesn't change the result.
+

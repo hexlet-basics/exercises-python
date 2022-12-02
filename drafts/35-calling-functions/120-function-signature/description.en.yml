@@ -1,36 +1,36 @@
 ---
 
-name: Сигнатура функции
+name: Function Signature
 theory: |
 
-  Функция `pow()` возводит число в степень. Она принимает два параметра: **какое число возводить** и **в какую степень возводить**. Если вызывать `pow()` без параметров, то Python выдаст следующее: `"TypeError: pow expected at least 2 arguments, got 0"`. Интерпретатор сообщает, что функция ожидает два параметра, а вы вызвали ее без них.
+  The `pow()` function calculates a number to a given power. It takes two parameters: **the number** and **the power**. If you call `pow()` without parameters, Python outputs the following: `"TypeError: pow expected at least 2 arguments, got 0. The interpreter tells you that the function expects two parameters and you called it without them.
 
-  Функция `pow()` всегда имеет два обязательных параметра, поэтому ее невозможно вызвать с другим количеством параметров.
+  The `pow()` function always has two mandatory parameters, so it cannot be called with any other number of parameters.
 
-  Более того, параметрами `pow()` могут быть только числа. Например, если передать в нее пару строк, это приведет к следующей ошибке: `"TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'"`. Результат вызова функции — тоже всегда число.
+  Moreover, the parameters of `pow()` can only be numbers. For example, if you pass a couple of lines into it, it will result in the following error: `"TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'"`. The result of a function call is also always a number.
 
-  Другая функция может иметь другое число параметров и другие типы параметров. Например, может существовать функция, которая принимает три параметра: число, строку и еще одно число.
+  Other functions can have different amounts and types of parameters. For example, there may be a function that takes three parameters: a number, a string, and another number.
 
-  Чтобы знать такие подробности о конкретной функции, нужно изучать ее **сигнатуру**. Она определяет входные параметры и их типы, а также выходной параметр и его тип. Про функцию `pow()` можно почитать в [официальной документации Python](https://docs.python.org/3/library/functions.html?highlight=pow#pow) или в [неофициальной документации на русском языке](https://pyprog.pro/python/st_lib/math.html#math_pow). Обычно документация для функции выглядит так:
+  To know these details about a particular function, you have to look at its **signature**. It defines the input parameters and their types, as well as the output parameter and its type. You can read about the `pow()` function in the [official Python documentation](https://docs.python.org/3/library/functions.html?highlight=pow#pow). Usually the documentation for a function looks like this:
 
   ```
   pow(x, y[, z])
 
-  Возвращает x в степени y; если z присутствует, возвращает x в степени y, по модулю z
+  Returns x to the power of y; if z is present, returns x to the power of y, modulus z
   ```
 
-  Первая строка здесь — это сигнатура функции. У функции два обязательных параметра — `x` и `y`. Необязательный параметр `z` указан в квадратных скобках. Следом поясняется, для чего функция нужна. Документация дает понять, сколько аргументов у функции и какого они типа. Также она описывает, что возвращает функция и какого типа будет возвращаемое значение.
+  The first line here is the function signature. The function has two mandatory parameters, `x` and `y`. The optional parameter `z` is given in square brackets. Next, the purpose of the function is explained. The documentation lets you know how many arguments the function has and what type they are. It also describes what the function returns and what type the return value will be.
 
 instructions: |
 
-  Теперь ваша очередь посмотреть на сигнатуру функции в документации и разобраться, как её использовать.
+  Now it's your turn, look at the signature of a function in the documentation and work out how to use it.
 
-  В Python есть функция `hex()`. Изучите её сигнатуру на [странице документации](https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/funktsija-hex/).
+  Python has a function called `hex()`. Study its signature [here](https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/funktsija-hex/).
 
-  Напишите программу, которая использует функцию `hex()` с переменной `number` и выводит результат на экран.
+  Write a program that uses the `hex()` function with the variable `number` and displays the result on the screen.
 
 tips: []
 
 definitions:
-  - name: Сигнатура функции
-    description: формальное описание типов аргументов и типа возвращаемого значения функции.
+  - name: Function Signature
+    description: a formal description of the types of arguments and the type of the function's return value.

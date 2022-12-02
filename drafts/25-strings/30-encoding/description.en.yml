@@ -1,11 +1,11 @@
 ---
 
-name: Кодировка
+name: Encoding
 theory: |
 
-  На самом глубоком уровне компьютер оперирует исключительно цифрами `0` и `1`. Это так называемый [двоичный код](https://ru.wikipedia.org/wiki/Двоичный_код), а единички и нули называются битами, от "binary digit" — «двоичная цифра».
+  At the deepest level, computers operate exclusively using the numbers `0` and `1`. This is what's known as [binary code](https://en.wikipedia.org/wiki/Binary_code), and the ones and zeros are called bits, from “binary digit”.
 
-  Обычные, привычные нам числа в десятичной системе исчисления, закодированы с помощью двоичных чисел:
+  The numbers from the decimal system that we know and love are encoded using binary numbers:
 
   - 0 ← 0
   - 1 ← 1
@@ -14,9 +14,9 @@ theory: |
   - 4 ← 100
   - 5 ← 101
 
-  Но как быть с текстом? Компьютер на самом деле не знает ничего о буквах, знаках пунктуации и прочих текстовых символах. Все эти символы так же закодированы числами.
+  But does it deal with text? Computers don't know about letters, punctuation, or any other text characters. All these symbols are also encoded with numbers.
 
-  Можно взять английский алфавит и дать каждой букве число, начиная с единицы по порядку:
+  We can take the English alphabet and give each letter a number, starting with one:
 
   - a ← 1
   - b ← 2
@@ -25,41 +25,41 @@ theory: |
   - ...
   - z ← 26
 
-  В этом заключается суть **кодировок**.
+  This is the essence of **encoding**.
 
-  Во время своей работы, программы используют кодировки для преобразования чисел в символы и наоборот. Причём сама программа не имеет представления о смысле этих символов.
+  When they're working, programs use encodings to convert numbers into characters and vice versa. And the program itself has no idea about the meaning of these characters.
 
   - `hello` → `8` `5` `12` `12` `15`
   - `7` `15` `15` `4` → `good`
 
-  Подобные таблицы, в которых сопоставляются буквы и числа, называются кодировками. Кроме букв алфавита, в таблицы кодировок входят знаки препинания и другие полезные символы. Вы наверняка сталкивались с кодировками, например, [ASCII](https://ru.wikipedia.org/wiki/ASCII) или [UTF-8](https://ru.wikipedia.org/wiki/UTF-8).
+  These tables that match letters and numbers are called encodings. Besides letters of the alphabet, encoding tables include punctuation marks and other useful characters. You have probably encountered encodings such as [ASCII](https://en.wikipedia.org/wiki/ASCII) and [UTF-8](https://en.wikipedia.org/wiki/UTF-8).
 
-  Разные кодировки содержат разное количество символов. Изначально небольших таблиц вроде ASCII было достаточно для большинства задач. Но в ней только латинские буквы, несколько простых символов вроде `%` и `?` и специальные управляющие символы типа перевода строки.
+  Different encodings contain different numbers of characters. At first, small tables like ASCII were enough for programmers. But it has only Latin letters, a few simple characters like `%` and `?` and special control characters like line feeds.
 
-  С распространением компьютеров, разным странам понадобились свои, более широкие таблицы. В том числе для кириллических букв, восточных иероглифов, арабской вязи, дополнительных математических и типографских символов, а впоследствии даже для эмодзи-смайликов.
+  As computers spread further and further, countries needed their own comprehensive tables. This included Cyrillic letters, Chinese and Japanese characters, Arabic script, additional mathematical and typographic symbols, and later on emojis.
 
-  Сегодня в большинстве случаев используется один из вариантов [юникода](https://ru.wikipedia.org/wiki/Юникод), включающий в себя знаки почти всех письменных языков мира.
+  Today, it's usually [Unicode] variants  that are used most often [Unicode](https://en.wikipedia.org/wiki/Unicode). It includes characters from almost all the written languages of the world.
 
 instructions: |
 
-  В Python можно «запросить» и вывести на экран любой символ из кодировки ASCII. Для этого используется функция `chr()`. Например:
+  In Python, you can query and display any ASCII character. The function `chr()` is used for this. For example:
 
   ```python
   print(chr(63))
   ```
 
-  На экран выведется символ с номером 63 — вопросительный знак `?`. Таким способом можно выводить любой символ.
+  Symbol no. 63 - the question mark `?`. You can print any character this way.
 
-  Воспользуйтесь [таблицей кодов ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html). В этой таблице нас интересует десятичный код (*dec* или *decimal*), которыми кодируются символы.
+  Use the [ASCII code table](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html).  In this table, want to know about the decimal code (*dec* or *decimal*) with which the characters are encoded.
 
-  Используя пример выше и таблицу, выведите на экран (каждый на своей собственной строке) `~`, `^` и `%`.
+  Using the example above and the table, display the following (each on its own line): `~`, `^` and `%`.
 
-  (Конечно, можно «обмануть» тесты и просто сделать `print('~')` и т.д., но так будет совсем неинтересно :)
+  (Of course, you could be sneaky and cheat the tests by just doing `print('~')` etc., but that would be no fun at all :)
 
 tips:
   - |
-    [Что такое кодировки?](https://guides.hexlet.io/ru/encoding/)
+    [What are encodings?](https://guides.hexlet.io/en/encoding/)
 
 definitions:
-  - name: Кодировка
-    description: набор символов, закодированных с помощью чисел для представления текста в электронном виде.
+  - name: Encoding
+    description: a set of characters encoded with numbers to represent text electronically.

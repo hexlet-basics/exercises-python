@@ -1,15 +1,15 @@
 ---
 
-name: Срезы строк
+name: Line slices
 theory: |
 
-  Когда мы работаем со строками в программировании, из них регулярно приходится извлекать некую часть. Например, нам нужно выяснить, присутствует ли меньшая строка внутри большей. В этом уроке мы разберемся, как это сделать.
+  When we work with strings in programming, we regularly have to extract some part of them. For example, we need to figure out if a smaller string is present inside a larger one. In this lesson, we will figure out how to do that.
 
-  **Подстрока** — это некоторая часть строки, которую нужно найти и извлечь.
+  **Substring** is some part of the string to be found and extracted.
 
-  Представим, что у нас есть дата в таком формате: *12-08-2034*. Нам нужно извлечь из нее подстроку, в которую входит только год.
+  Suppose we have a date in this format: *12-08-2034*. We need to extract from it a substring, which includes only the year.
 
-  Если подумать логически, то нужно посчитать индекс символа, с которого начинается год, и затем извлечь четыре символа. Индексы в строке начинаются с нуля, значит, первый символ года доступен по индексу 6, а последний символ — по индексу 9. Проверим:
+  If you think logically, you need to count the index of the character with which the year begins, and then extract the four characters. The indexes in the string start from zero, so the first character of the year is available by index 6, and the last character by index 9. Check:
 
   ```python
   value = '12-08-2034'
@@ -18,7 +18,7 @@ theory: |
   print(value[9])  # => 4
   ```
 
-  Зная эти индексы, мы можем воспользоваться срезами и получить нужную подстроку:
+  Knowing these indices, we can use slices and get the desired substring:
 
   ```python
   value = '12-08-2034'
@@ -27,21 +27,21 @@ theory: |
   print(year)  # => 2034
   ```
 
-  **Срезы для строк** в Python — это механизм, с помощью которого извлекается подстрока по указанным параметрам. В примере выше мы взяли подстроку с 6 индекса по 10 индекс, не включая, то есть с 6 по 9 включительно. Формула выглядит так:
+  **String Slices** in Python is a mechanism by which you extract a substring by specified parameters. In the example above, we took the substring from index 6 through index 10, not including, that is, 6 through 9 inclusive. The formula looks like this:
 
   ```python
-  str[начальный индекс:конечный индекс]
+  str[start index:end index]
 
-  # Пара примеров
+  # A couple of examples
   value = '01-12-9873'
 
-  # Срез строки это всегда строка,
-  # даже если внутри строки было число.
+  # A line cut is always a line,
+  # even if there was a number inside the string.
   value[1:2]  # '1'
   value[3:5]  # '12'
   ```
 
-  Срезы — механизм с большим количеством вариаций. Например, если не указать вторую границу, то извлечение произойдет до конца строки. То же самое с первой границей — началом строки:
+  Cuts are a mechanism with many variations. For example, if you do not specify the second boundary, the extraction will happen before the end of the string. It is the same with the first boundary - the beginning of the string:
 
   ```python
   value = 'Hexlet'
@@ -49,28 +49,28 @@ theory: |
   value[:3]  # 'Hex'
   ```
 
-  Можно указать даже отрицательные индексы. В таком случае отсчет идет с обратной стороны:
+  You can even specify negative indices. In this case the counting goes from the reverse side:
 
   ```python
   value = 'Hexlet'
-  # Правая граница отрицательная. Считаем -1 от конца строки
+  # The right boundary is negative. Count -1 from the end of the line
   value[3:-1]  # 'le'
-  # Левая граница отрицательная. Считаем -5 от конца строки
+  # The left boundary is negative. We count -5 from the end of the line
   value[-5:3]  # 'ex'
   ```
 
-  У срезов два обязательных параметра, но иногда используется и третий.
+  Slices have two mandatory parameters, but sometimes a third is used.
 
-  У срезов есть третий необязательный параметр — **шаг извлечения**. По умолчанию он равен единице, но мы можем его изменить:
+  Slices have a third optional parameter - **extraction step**. By default it is one, but we can change it:
 
   ```python
   value = 'Hexlet'
   value[1:5:2]  # el
   # 1:5 это 'exle'
-  # шаг 2 это каждый второй, то есть 'e' и 'l'
+  # step 2 is every second, that is, 'e' and 'l'
   ```
 
-  Все это можно комбинировать с открытыми границами, то есть без указания начала или конца:
+  All of these can be combined with open boundaries, that is, without specifying the beginning or end:
 
   ```python
   value = 'Hexlet'
@@ -78,23 +78,23 @@ theory: |
   value[1::2]  # 'elt'
   ```
 
-  Шаг может быть отрицательным, в таком случае он берется с конца. Из этого вытекает самый популярный способ использования шага — **переворот строки**:
+  The step can be negative, in which case it is taken from the end. From this follows the most popular way to use the step - **reverse the string**:
 
   ```python
   value = 'Hexlet'
-  # Пропускаем обе границы
+  # Skipping both borders
   value[::-1]  # 'telxeH'
   ```
 
-  Если используется отрицательный шаг, и элементы среза извлекаются в обратном порядке — тогда и границы среза тоже нужно указывать в обратном порядке. Первой указывается правая граница среза, второй — левая:
+  If a negative step is used, and the slice elements are extracted in reverse order, then the slice boundaries should also be specified in reverse order. The right slice boundary is specified first, and the left one is specified second:
 
   ```python
   value = 'Hexlet'
-  # Символ с индексом 1 не будет включен в подстроку
+  # The character with index 1 will not be included in the substring
   value[4:1:-1]  # 'elx'
   ```
 
-  Срезы можно указывать не только через числа, но и с использованием переменных:
+  The cuts can be specified not only through numbers, but also using variables:
 
   ```python
   value = 'Hexlet'
@@ -103,10 +103,10 @@ theory: |
   value[start:end]  # 'exle'
   ```
 
-  Как видите, срезы способны на многое. Не переживайте, если прямо сейчас не запомните все эти комбинации — это нормально. Со временем вы научитесь их использовать, не подглядывая в документацию.
+  As you can see, slices can do a lot. Don't worry if you don't memorize all these combinations right now-it's okay. Over time, you'll learn how to use them without having to peek at the documentation.
 
 instructions: |
 
-  В переменной `value` лежит значение `Hexlet`. Извлеките из него и выведите на экран срез, который получит подстроку `xle`. Это задание можно сделать разными способами.
+  The variable `value` contains the value `Hexlet`. Extract from it and display the slice that gets the substring `xle`. This task can be done in different ways.
 
 tips: []

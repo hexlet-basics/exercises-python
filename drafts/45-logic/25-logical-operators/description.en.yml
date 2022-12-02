@@ -1,15 +1,15 @@
 ---
 
-name: Логические операторы
+name: Logical operators
 theory: |
 
-  Мы уже умеем писать функции, которые проверяют одиночные условия. А в этом уроке научимся строить составные условия.
+  We already know how to write functions that check single conditions. And in this lesson we will learn how to build compound conditions.
 
-  Предположим, что сайт при регистрации требует, чтобы пароль был длиннее восьми символов и короче двадцати. В математике бы написали `8 < x < 20`, но во многих языках программирования так сделать нельзя. Попробуем написать два отдельных логических выражения и соединим их специальным оператором «И»:
+  Suppose that the registration site requires that the password be longer than eight characters and shorter than twenty. In mathematics we would write `8 < x < 20`, but in many programming languages we cannot do that. Let's try to write two separate logical expressions and connect them with the special operator "AND":
 
-  > Пароль длиннее 8 символов **И** пароль короче 20 символов
+  > Password is longer than 8 characters **And** password is shorter than 20 characters
 
-  Вот функция, которая принимает пароль и говорит, соответствует ли он условиям (`True`) или не соответствует (`False`):
+  Here is a function that takes the password and tells you whether it meets the conditions (`True`) or not (`False`):
 
   ```python
   def is_correct_password(password):
@@ -21,26 +21,26 @@ theory: |
   print(is_correct_password('zxcvbnmasdfghjkqwertyui'))  # => False
   ```
 
-  `and` — означает «И». В математической логике это называют конъюнкцией. Все выражение считается истинным, если истинен каждый **операнд** — каждое из составных выражений. Иными словами, `and` означает «и то, и другое». Приоритет этого оператора ниже, чем приоритет операторов сравнения. Поэтому выражение `length > 8 and length < 20` правильно отрабатывает без скобок.
+  `and' means "AND. In mathematical logic this is called a conjunction. The whole expression is true if every **operand** - each of the compound expressions - is true. In other words, `and' means both. The priority of this operator is lower than that of comparison operators. Therefore, the expression `length > 8 and length < 20` works correctly without brackets.
 
-  Кроме `and` часто используется оператор `or` — «ИЛИ» (дизъюнкция). Он означает «или то, или другое, или оба». Выражение `a or b` считается истинным, если хотя бы один из операндов или одновременно все — истинные. В другом случае выражение ложное.
+  In addition to `and`, the operator "OR" (disjunction) - is often used. It means "either or both". The expression `a or b' is true if at least one of the operands or all of them simultaneously are true. Otherwise, the expression is false.
 
-  Операторы можно комбинировать в любом количестве и любой последовательности. Если в коде одновременно встречаются `and` и `or`, то приоритет задают скобками. Ниже пример расширенной функции, которая определяет корректность пароля:
+  Operators can be combined in any number and in any sequence. If `and` and `or` occur simultaneously in the code, the priority is given by parentheses. Below is an example of an extended function that determines the correctness of a password:
 
   ```python
   def has_special_chars(str):
-      # Проверяет содержание специальных символов в строке
+      # Checks the content of special characters in the string
 
 
   def is_strong_password(password):
       length = len(password)
-      # Скобки задают приоритет. Понятно, что к чему относится.
+      # The brackets set the priority. It is clear what relates to what.
       return (length > 8 and length < 20) and has_special_chars(password)
   ```
 
-  Теперь представим, что мы хотим купить квартиру, которая удовлетворяет таким условиям: площадь от 100 квадратных метров и больше на любой улице **ИЛИ** площадь от 80 квадратных метров и больше, но на центральной улице `Main Street`.
+  Now let's imagine that we want to buy an apartment that meets these conditions: an area of 100 square meters or more on any street **OR** an area of 80 square meters or more, but on Main Street.
 
-  Напишем функцию, которая проверит квартиру. Она принимает два аргумента: площадь — число и название улицы — строку:
+  Let's write a function that will check the apartment. It takes two arguments: the area is a number and the street name is a string:
 
   ```python
   def is_good_apartment(area, street):
@@ -55,9 +55,9 @@ theory: |
   print(is_good_apartment(80, 'Main Street'))     # => True
   ```
 
-  Область математики, в которой изучаются логические операторы, называется булевой алгеброй. Ниже увидите **таблицы истинности** — по ним можно определить, каким будет результат, если применить оператора:
+  The area of mathematics in which logical operators are studied is called Boolean algebra. Below you will see **true tables** - you can use them to determine what the result will be if you apply the operator:
 
-  #### И `and`
+  #### `and`
 
   | A     | B     | A and B  |
   | ----- | ----- | -------  |
@@ -66,7 +66,7 @@ theory: |
   | False | True  | False    |
   | False | False | False    |
 
-  #### ИЛИ `or`
+  #### `or`
 
   | A     | B     | A or B   |
   | ----- | ----- | -------- |
@@ -77,7 +77,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте метод `is_leap_year()`, который определяет является ли год високосным или нет. Год будет високосным, если он кратен (то есть делится без остатка) 400 или он одновременно кратен 4 и не кратен 100. Как видите, в определении уже заложена вся необходимая логика, осталось только переложить её на код:
+  Implement a method `is_leap_year()` that determines whether a year is a leap year or not. A year will be a leap year if it is a multiple of 400 (i.e. divisible without a remainder), or if it is both a multiple of 4 and not a multiple of 100. As you can see, the definition already contains all the necessary logic, all we need to do is to translate it into code:
 
   ```python
   is_leap_year(2018) # false
@@ -85,25 +85,25 @@ instructions: |
   is_leap_year(2016) # true
   ```
 
-  Кратность можно проверять так:
+  The multiplicity can be checked as follows:
 
   ```python
-  # % - возвращает остаток от деления левого операнда на правый
-  # Проверяем что number кратен 10
+  # % - returns the remainder of the left operand divided by the right operand
+  # Check that the number is a multiple of 10
   number % 10 == 0
 
-  # Проверяем что number не кратен 10
+  # Check that the number is not a multiple of 10
   number % 10 != 0
   ```
 
 tips:
   - |
-    [Булева алгебра](https://ru.wikipedia.org/wiki/Булева_алгебра)
+    [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra_(structure))
   - |
-    [Логическое «И»](https://ru.wikipedia.org/wiki/Конъюнкция)
+    [Logical conjunction](https://en.wikipedia.org/wiki/Logical_conjunction)
   - |
-    [Логическое «ИЛИ»](https://ru.wikipedia.org/wiki/Дизъюнкция)
+    [Logical disjunction](https://en.wikipedia.org/wiki/Logical_disjunction)
 
 definitions:
-  - name: "Логические операторы"
-    description: "операторы «И» (`and`), ИЛИ (`or`), позволяющие создавать составные логические условия."
+  - name: "Logical operators."
+    description: "the AND (`and`), OR (`or`) operators, which allow you to create compound logical conditions."

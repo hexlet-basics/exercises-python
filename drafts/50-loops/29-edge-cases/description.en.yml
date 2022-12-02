@@ -1,23 +1,23 @@
 ---
 
-name: Пограничные случаи
+name: Edge cases
 theory: |
 
-  Функция `my_substr()`, которую вы реализовали в прошлом уроке, содержит много ошибок. Она прошла проверку, так как в ней не было **пограничных случаев**. Функция работала с нормальными аргументами. А теперь представим, что ей передали такие варианты длины:
+  The `my_substr()` function you implemented in the last lesson contains quite a few errors. It passed the test because it had no **edge cases**. The function worked with normal arguments. Now let's imagine we passed it these length options:
 
   * `0`
-  * Отрицательное число
-  * Число, которое превышает реальный размер строки
+  * Negative number
+  * A number that exceeds the actual size of the string
 
-  Функция `my_substr()` не рассчитана на такие варианты. Код будет запускаться в разных ситуациях, с разными комбинациями условий и данных. Нельзя быть уверенным, что аргументы всегда будут корректными, поэтому нужно учитывать все случаи.
+  The `my_substr()` function isn't designed for this. The code will run in different situations with different combinations of conditions and data. You can't be sure that the arguments passed to it will always be correct, so you have to consider all cases.
 
-  Ошибки в пограничных случаях — частая причина логических ошибок в программах. Программисты всегда забывают что-нибудь учесть. Такие ошибки часто проявляются не сразу и могут долго не приводить к видимым проблемам.
+  Edge cases are a common cause of logic errors in programs. There's always something that programmers forget to take into account. These errors often don't manifest themselves immediately and may not lead to visible problems for a long time.
 
-  Программа продолжает работать, но в какой-то момент обнаруживается, что в результатах есть ошибки. Часто причина в динамической типизации Python.
+  The program may continue to work, but at some point someone might notice an error in the results. It can some time be a result of Python having dynamic typing.
 
-  Вы научитесь справляться с такими ошибками с опытом.
+  As you gain more experience, you'll learn to deal with these errors.
 
-  Представим расширенную функцию `my_substr()`. Она принимает три аргумента: строку, индекс и длину извлекаемой подстроки. Функция возвращает подстроку указанной длины, начиная с указанного индекса. Примеры вызова:
+  Here's an extended version of the `my_substr()` function. It takes three arguments: a string, an index, and the length of the substring to be extracted. The function returns a substring of the specified length, starting from the index passed. Call examples:
 
   ```python
   string = 'If I look back I am lost'
@@ -25,37 +25,37 @@ theory: |
   print(my_substr(string, 3, 6))  # => 'I look'
   ```
 
-  Какие **пограничные случаи** стоит учитывать:
+  What **edge cases** to consider:
 
-  * Отрицательная длина извлекаемой подстроки
-  * Отрицательный заданный индекс
-  * Заданный индекс выходит за границу всей строки
-  * Длина подстроки в сумме с заданным индексом выходит за границу всей строки
+  * If the extracted substring has a negative length
+  * The index given is negative
+  * The index given exceeds the boundary of the entire string
+  * The substring length together with the given index exceeds the boundary of the whole string
 
-  Когда функция реализуется, каждый пограничный случай будет отдельным куском кода. Скорее всего, он будет реализовываться с помощью `if`.
+  When the function is implemented, each edge case will be a separate piece of code. It'll most likely be implemented with `if`.
 
-  Чтобы написать функцию `my_substr()` и защититься от этих случаев, стоит реализовать отдельную функцию, которая будет проверять аргументы на корректность.
+  If you want to write `my_substr()` in a way that's protected against these cases, it's worth implementing a separate function that the arguments are valid
 
 instructions: |
 
-  Реализуйте функцию-предикат `is_arguments_for_substr_correct()`, которая принимает три аргумента:
+  Implement a predicate function called `is_arguments_for_substr_correct()` that takes three arguments:
 
-  1. строку;
-  2. индекс, с которого начинать извлечение;
-  3. длину извлекаемой подстроки.
+  1. the string
+  2. the index from where the extraction will begin
+  3. the length of the substring to be extracted
 
-  Функция возвращает `False`, если хотя бы одно из условий истинно:
+  The function returns `False` if at least one of the conditions is true:
 
-  * Отрицательная длина извлекаемой подстроки.
-  * Отрицательный заданный индекс.
-  * Заданный индекс выходит за границу всей строки.
-  * Длина подстроки в сумме с заданным индексом выходит за границу всей строки.
+  * The extracted substring has a negative length
+  * The index given is negative
+  * The index given exceeds the boundary of the entire string
+  * The substring length together with the given index exceeds the boundary of the whole string
 
-  В ином случае функция возвращает `True`.
+  Otherwise, the function returns `True`.
 
-  Не забывайте, что индексы начинаются с `0`, поэтому индекс последнего элемента — это «длина строки минус 1».
+  Don't forget that indices start with `0`, so the index of the last element is “string length minus 1”.
 
-  Пример вызова:
+  Call example:
 
   ```python
   string = 'Sansa Stark'

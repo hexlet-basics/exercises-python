@@ -1,15 +1,15 @@
 ---
 
-name: Цикл For
+name: Cycle For
 theory: |
 
-  С помощью цикла `while` решают любую задачу перебора элементов, но его отличает многословность. Для `while` нужно задавать условие остановки и вводить счетчик. Когда циклов немного, то это нормально, но в реальном коде циклы встречаются на каждом шагу. Поэтому управлять условиями вручную утомительно, особенно когда условие остановки очевидно.
+  The `while' loop can be used to solve any item search problem, but it is notable for being verbose. For `while` it is necessary to set a stopping condition and enter a counter. When there are few loops, this is fine, but in real code loops occur at every step. It is therefore tedious to manage the conditions manually, especially when the stopping condition is obvious.
 
-  Например, если мы хотим перебрать символы в строке, то компьютер сам может понять, когда строка заканчивается. Для таких ситуаций в Python ввели цикл `for`. Он сам знает, когда нужно остановиться, так как работает только с коллекциями — наборами элементов, которые нужно перебрать.
+  For example, if we want to go through the characters in a string, the computer can figure out by itself when the string ends. For such situations, Python introduced the `for` loop. It knows itself when to stop, because it only works with collections - sets of elements that need to be searched.
 
-  Строка — это коллекция, так как состоит из набора символов. Остальные виды коллекций подробно изучаются в другом курсе.
+  A string is a collection because it consists of a set of characters. The other types of collections are studied in detail in another course.
 
-  Пример:
+  Example:
 
   ```python
   text = 'code'
@@ -22,36 +22,36 @@ theory: |
   # => e
   ```
 
-  В коде выше `for` проходит по каждому символу в строке, записывает его в переменную `symbol` и вызывает внутренний блок кода, где эта переменная используется. Имя этой переменной может быть любым. Общая структура цикла `for` выглядит так: `for <переменная> in <коллекция>`.
+  In the code above, `for` goes through each character in the string, writes it in a variable `symbol` and calls the internal code block where that variable is used. The name of this variable can be anything. The general structure of the `for' loop looks like this: `for <variable> in <collection>'.
 
-  Посмотрим, как реализовать функцию переворота строки через цикл `for`:
+  Let's see how to implement the string flip function through the `for` loop:
 
   ```python
   def reverse_string(text):
-      # Начальное значение
+      # Initial value
       result = ''
-      # char - переменная, в которую записывается текущий символ
+      # char - a variable in which the current character is written
       for char in text:
-          # Соединяем в обратном порядке
+          # Connect in reverse order
           result = char + result
-      # Цикл заканчивается, когда пройдена вся строка
+      # The cycle ends when the whole line is passed
       return result
 
 
   reverse_string('go!')  # => '!og'
   ```
 
-  Теперь посчитаем количество упоминаний символа в строке без учета регистра:
+  Now let's calculate the number of mentions of a character in the string, not case-sensitive:
 
   ```python
-  # text - произвольный текст
-  # char - символ, который нужно учитывать
+  # text - any text
+  # char - a symbol to consider
   def chars_count(text, char):
-      # Так как ищем сумму, то начальное значение 0
+      # Since we are looking for the sum, the initial value is 0
       result = 0
       for current_char in text:
-          # приводим все к нижнему регистру,
-          # чтобы не зависеть от текущего регистра
+          # We convert everything to lower case,
+          # so as not to depend on the current register
           if current_char.lower() == char.lower():
               result += 1
       return result
@@ -64,13 +64,13 @@ theory: |
   chars_count('hexlet!', 'a')  # 0
   ```
 
-  Советуем поэкспериментировать с примерами выше в интерактивном [Replit](https://replit.com/@hexlet/python-basics-for-loop#main.py).
+#  We suggest experimenting with the examples above in the interactive [Replit](https://replit.com/@hexlet/python-basics-for-loop#main.py).
 
 instructions: |
 
-  В одном из предыдущих уроков мы уже написали функцию `filter_string()`. Напомним, она принимает на вход строку и символ и возвращает новую строку, в которой удалён переданный символ во всех его позициях. На этот раз реализуйте эту функцию с помощью цикла `for`. Дополнительное условие: регистр исключаемого символа не имеет значения.
+  In a previous lesson, we already wrote the `filter_string()` function. Recall that it takes a string and a character as input and returns a new string in which the passed character at all its positions is removed. This time, implement this function using the `for` loop. An additional condition: the case of the character to be eliminated does not matter.
 
-  Пример вызова:
+  An example of a call:
 
   ```python
   text = 'If I look forward I win'

@@ -1,20 +1,20 @@
 ---
 
-name: Неизменяемость
+name: Immutability
 theory: |
 
-  Допустим, у нас есть такой вызов:
+  Imagine we have this call:
 
   ```python
   name = 'Tirion'
   print(name.upper())  # => TIRION
-  # Что напечатает на экран этот вызов?
+  # What will this call print on the screen?
   print(name)  # => ?
   ```
 
-  Вызов метода `.upper()` возвращает новое значение, в котором все буквы преобразованы в верхний регистр, но он не меняет исходную строку. Поэтому внутри переменной окажется старое значение: `'Tirion'`. Эта логика справедлива для методов всех примитивных типов.
+  Calling the `.upper()` method returns a new value with all letters converted to upper case, but it does not change the original string. So inside the variable will be the old value: `'Tyrion'`. This logic holds true for methods of all primitive types.
 
-  Вместо того чтобы изменять значения, можно **заменить** значение. Для этого понадобятся переменные:
+  Instead of changing the value, you can **replace** it. This requires variables:
 
   ```python
   name = 'Tirion'
@@ -24,8 +24,8 @@ theory: |
 
 instructions: |
 
-  Данные, вводимые пользователями, часто содержат лишние пробельные символы в конце или начале строки. Обычно их вырезают с помощью метода [.strip()](https://docs.python.org/3/library/stdtypes.html), например, было: `'   hello\n '`, стало: `'hello'`.
+  User input data often contains extra spaces at the end or beginning of a string. They're usually cut out using a method [.strip()](https://docs.python.org/3/library/stdtypes.html), for example, it was ``hello\n'`` and now it's ``hello'``.
 
-  Обновите переменную `first_name`, записав в неё то же самое значение, но обработанное методом `.strip()`. Распечатайте то, что получилось, на экран.
+  Update the `first_name` variable by writing the same value to it, but this time processed by the `.strip()` method. Print the result.
 
 tips: []

@@ -1,24 +1,24 @@
 ---
 
-name: Выражения в определениях
+name: Expressions in definitions
 theory: |
 
-  Мы уже разобрались, как работать с переменными, чтобы хранить и переиспользовать информацию. Но еще они помогают упрощать сложные вычисления. Например, конвертация валюты или составление нового слова. Рассмотрим, как это делать на практике.
+  We've already figured out how to work with variables to store and reuse information. But they also help simplify complex calculations. For example, currency conversion or making up a new word. Let's look at how to do it in practice.
 
-  Представим, что нам нужно перевести евро в рубли через доллары. Подобные конвертации через промежуточную валюту часто делают банки при покупках за рубежом.
+  Let us imagine that we need to convert euros into rubles via dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
 
-  Для начала переведем 50 евро в доллары. Допустим, что один евро — 1.25 долларов:
+  First, convert 50 euros into dollars. Suppose that one euro is $1.25:
 
   ```python
   dollars_count = 50 * 1.25
   print(dollars_count)  # => 62.5
   ```
 
-  Здесь в переменную `dollars_count = 50 * 1.25` справа от знака «равно» мы записываем **выражение**. Интерпретатор вычислит результат (`62.5`) и запишет его в переменную.  Интерпретатору не важно, в каком виде записаны данные: `62.5` или `50 * 1.25`. Для него оба варианта — выражения, которые надо вычислить. Он проводит вычисления и приходит к одному и тому же значению — `62.5`.
+  Here we write **expression** into the variable `dollars_count = 50 * 1.25` to the right of the equals sign. The interpreter will calculate the result (`62.5`) and write it to a variable.  The interpreter doesn't care what form the data is written in: `62.5` or `50 * 1.25`. From its perspective, both are expressions to be calculated. It does the calculations and comes up with the same value, `62.5`.
 
-  Любая строка — выражение. Конкатенация строк (склеивание значений переменных) — это тоже выражение. Когда интерпретатор видит выражение, он обрабатывает его и генерирует результат — **значение выражения**.
+  Any string is an expression. String concatenation (concatenation of variable values) is also an expression. When the interpreter sees an expression, it processes it and generates a result, the **value of the expression**.
 
-  Вот несколько примеров выражения. В комментариях справа от каждого выражения записаны итоговые значения:
+  Here are some examples of an expression. We've written the total values in the comments to the right of each expression:
 
   ```python
   62.5             # 62.5
@@ -30,18 +30,18 @@ theory: |
   'Good' + 'will'  # Goodwill
   ```
 
-  В тех местах, где ожидается выражение, можно поставить любое вычисление. Оно может быть не только математическим, но и строковым — как конкатенация. Программа все равно останется работоспособной.
+  In the places where an expression is expected, you can put any calculation. It can be not only mathematical, but also string-like concatenation. The program will remain functional.
 
-  Программы состоят из множества комбинаций выражений. Основываясь на сказанном выше, подумайте, сработает ли такой код:
+  Programs consist of many combinations of expressions. Based on the above, consider whether this code would work:
 
   ```python
   who = "dragon's " + 'mother'
   print(who)
   ```
 
-  Такой код выведет на экран строку `dragon's mother`. Если хотите проверить самостоятельно, запустите код на [repl.it](https://repl.it/languages/python3) и поэкспериментируйте.
+  This code will display the string `dragon's mother`. If you want to check it yourself, run the code on [repl.it](https://repl.it/languages/python3) and experiment with it.
 
-  С помощью переменных можно записывать еще более сложные вычисления. Вернемся к нашей валютной программе. Запишем стоимость доллара в рублях, как отдельную переменную. Вычислим цену 50 евро в долларах, умножив их на `1.25`. Допустим, что 1 доллар — 60 рублей:
+  Variables can be used to write even more complex calculations. Now, back to our currency program. Let's write the dollar value in rubles as a separate variable. Let's calculate the value of 50 euros in dollars by multiplying it by `1.25`. Suppose that 1 dollar is 60 rubles:
 
   ```python
   rubles_per_dollar = 60
@@ -51,36 +51,36 @@ theory: |
   print(rubles_count)
   ```
 
-  Теперь добавим к выводу текст с помощью конкатенации:
+  Now let's add text to the output using concatenation:
 
   ```python
   rubles_per_dollar = 60
   dollars_count = 50 * 1.25  # 62.5
   rubles_count = dollars_count * rubles_per_dollar  # 3750.0
 
-  # Функция str() превращает число в строку.
-  # О таких превращениях будет отдельный урок.
+  # The str() function turns a number into a string.
+  # There will be a separate lesson about these transformations.
   print('The price is ' + str(rubles_count) + ' rubles')
   # => The price is 3750.0 rubles
   ```
 
-  Любая переменная может быть частью любого выражения. В момент вычисления вместо имени переменной подставляется ее значение.
+  Any variable can be part of any expression. At the moment of calculation, the name of the variable will be replaced by its value.
 
-  Интерпретатор вычисляет значение `dollars_count` до того, как эта переменная начнет использоваться в других выражениях. Когда подходит момент использования переменной, Python уже знает значение, потому что вычислил его.
+  The interpreter calculates the value of `dollars_count` before this variable is used in other expressions. When it comes time to use a variable, Python already knows the value because it's calculated it.
 
-  С помощью переменных можно проводить сложные вычисления, а также делать подробный вывод с получившимся значением. Но еще можно получать новые выражения посредством склеивания двух и более значений переменных. За это отвечает конкатенация.
+  Variables can be used to perform complex calculations and to provide a detailed output with the resulting value. But you can also get new expressions by combining two or more variable values. Concatenation is responsible for this.
 
 instructions: |
 
-  Напишите программу, которая берет исходное количество евро, записанное в переменную `euros_count`, переводит евро в доллары и выводит на экран. Затем полученное значение переводит в рубли и выводит на новой строчке.
+  Write a program that takes the original number of euros written in the variable `euros_count`, converts euros to dollars, and prints it to the screen. Then, it should convert the result to rubles and print it on a new line.
 
-  Пример вывода для 100 евро:
+  Example output for 100 euros:
 
   ```
   125.0
   7500.0
   ```
 
-  Считаем, что:
-  - 1 евро = 1.25 долларов
-  - 1 доллар = 60 рублей
+  For the purposes of the exercise, we'll say that:
+  - 1 euro = $1.25 долларов
+  - 1 dollar = 4,50 zl

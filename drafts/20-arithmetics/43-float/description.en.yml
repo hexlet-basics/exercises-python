@@ -1,25 +1,25 @@
 ---
 
-name: Числа с плавающей точкой
+name: Floating point numbers
 
 theory: |
 
-  В математике существуют разные виды чисел, например, натуральные - это целые числа от одного и больше, или рациональные - это числа с точкой, например 0.5. С точки зрения устройства компьютеров, между этими видами чисел пропасть. Попробуйте ответить на простой вопрос, сколько будет *0.2 + 0.1*? А теперь посмотрим, что на это скажет Python:
+  In mathematics there are different kinds of numbers, for example, natural numbers are integers from one and up, or rational numbers are numbers with a point, such as 0.5. From the point of view of computers, there is a chasm between these types of numbers. Try answering the simple question of how much would *0.2 + 0.1*? Now let's see what Python has to say about it:
 
   ```python
   0.2 + 0.1 # 0.30000000000000004
   ```
 
-  Операция сложения двух рациональных чисел внезапно привела к неточному вычислению результата. Тот же самый результат выдадут и другие языки программирования. Такое поведение обуславливается ограничениями вычислительных мощностей. Объём памяти, в отличие от чисел, конечен (бесконечное количество чисел требует бесконечного количества памяти для своего хранения).
+  The operation of adding two rational numbers suddenly results in an inaccurate calculation. The same result will be given by other programming languages. Such behavior is due to limitations of computing power. The memory capacity, unlike numbers, is finite (an infinite number of numbers requires an infinite amount of memory to store them).
 
-  Рациональные числа не выстроены в непрерывную цепочку, между *0.1* и *0.2* бесконечное множество чисел. Соответственно возникает серьезная проблема, а как хранить рациональные числа? Это интересный вопрос сам по себе. В интернете множество статей, посвященных организации памяти в таких случаях. Более того, существует стандарт, в котором описано, как это делать правильно, и подавляющее число языков на него опирается.
+  Rational numbers are not lined up in a continuous chain, between *0.1* и *0.2* an infinite set of numbers. Accordingly, a serious problem arises, but how to store rational numbers? This is an interesting question in itself. There are many articles on the Internet devoted to organizing memory in such cases. Moreover, there is a standard which describes how to do this correctly, and an overwhelming number of languages rely on it.
 
-  Для нас, как для разработчиков, важно понимать, что операции с плавающими числами неточны (эту точность можно регулировать), а значит при решении задач, связанных с подобными числами, необходимо прибегать к специальным трюкам, которые позволяют добиться необходимой точности.
+  For us, as developers, it is important to understand that operations with floating numbers are inaccurate (this accuracy can be adjusted), which means that when solving problems involving such numbers, it is necessary to resort to special tricks that allow to achieve the necessary accuracy.
 
 instructions: |
 
-  Вычислите и выведите на экран произведение двух чисел: *0.39* и *0.22*
+  Calculate and display the product of two numbers: *0.39* и *0.22*
 
 tips:
   - |
-    [Что нужно знать про арифметику с плавающей запятой](https://habr.com/post/112953/)
+    [What you need to know about floating point arithmetic](https://www.validlab.com/goldberg/paper.pdf)

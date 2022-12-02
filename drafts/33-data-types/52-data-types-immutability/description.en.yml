@@ -1,21 +1,21 @@
 ---
 
 name: |
-  Неизменяемость примитивных типов
+  The immutability of primitive types
 
 theory: |
 
-  Представим, что нам нужно изменить символ в строке. Вот, что из этого выйдет:
+  Imagine that we need to change a character in a string. This is what will come out of it:
 
   ```python
   first_name = 'Alexander'
   first_name[0] = 'B'
-  # Ошибка: TypeError: 'str' object does not support item assignment
+  # Error: TypeError: 'str' object does not support item assignment
   ```
 
-  Такое происходит из-за неизменяемости примитивных типов в Python — язык не дает никакой физической возможности поменять строку. Неизменяемость примитивных типов важна по многим причинам. Ключевая причина — производительность.
+  This happens because of the immutability of primitive types in Python - the language does not give any physical possibility to change the string. The immutability of primitive types is important for many reasons. The key reason is performance.
 
-  Но иногда нам нужно изменить строку. Для этого и существуют переменные:
+  But sometimes we need to change a string. That's what variables are for:
 
   ```python
   first_name = 'Alexander'
@@ -23,18 +23,18 @@ theory: |
   print(first_name)  # => Blexander
   ```
 
-  Есть большая разница между *изменением значения переменной* и *изменением самого значения*. Примитивные типы в Python поменять нельзя, а составные — можно. Также можно без проблем заменить значение переменной.
+  There is a big difference between *changing the value of a variable* and *changing the value itself*. You can't change primitive types in Python, but you can change composite types. You can also change the value of a variable without any problem.
 
 instructions: |
-  Вам даны три переменные с фамилиями разных людей. Составьте и выведите на экран слово из символов в таком порядке:
+  You are given three variables with the names of different people. Make and display a word of characters in this order:
+  
+  1. The third character from the first line
+  2. The second character from the second line
+  3. The fourth character from the third line
+  4. The fifth character of the second line
+  5. The third character from the second line
 
-  1. Третий символ из первой строки
-  2. Второй символ из второй строки
-  3. Четвертый символ из третьей строки
-  4. Пятый символ из второй строки
-  5. Третий символ из второй строки
-
-  Попробуйте использовать интерполяцию: внутри фигурных скобок можно помещать не только целые переменные, но и отдельные символы с помощью квадратных скобок.
+  Try using interpolation: not only whole variables can be placed inside curly brackets, but also individual characters using square brackets.
 
 tips: []
 

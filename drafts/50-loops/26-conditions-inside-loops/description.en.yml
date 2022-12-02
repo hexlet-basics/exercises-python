@@ -1,22 +1,22 @@
 ---
 
-name: Условия внутри тела цикла
+name: Conditions Inside the Body of the Loop
 theory: |
 
-  В теле цикла, как и в теле функции, можно выполнять инструкции. Поэтому внутри цикла можно использовать всё изученное ранее, например — условные конструкции.
+  You can execute instructions in the bodies of loops like you can in functions. This means you can use everything you learned before inside loops, such as conditional constructions.
 
-  Представьте функцию, которая считает, сколько раз входит буква в предложение. Пример ее работы:
+  Imagine a function that counts how many times a letter occurs in a sentence. Example of how it works:
 
   ```python
   count_chars('Fear cuts deeper than swords.', 'e')  # 4
-  # Если вы ничего не нашли, то результат — 0 совпадений
+  # If nothing is found, the result is 0 matches
   count_chars('Sansa', 'y')  # 0
   ```
 
-  Перед тем как посмотреть содержимое функции, подумайте:
+  Before you look at the contents of a function, think about this:
 
-  * Является ли эта операция агрегацией?
-  * Какой будет проверка на вхождение символа?
+  * Is this an aggregation operation?
+  * How will it check if a character occurs in a sentence?
 
   ```python
   def count_chars(string, char):
@@ -24,20 +24,20 @@ theory: |
       count = 0
       while index < len(string):
           if string[index] == char:
-              # Считаем только подходящие символы
+              # We only count the matching characters
               count = count + 1
-          # Счетчик увеличивается в любом случае
+          # The counter is incremented anyway
           index = index + 1
       return count
   ```
 
-  Это агрегирующая задача. Несмотря на то, что она считает не все символы, чтобы подсчитать сумму, приходится анализировать каждый символ. Ключевое отличие этого цикла от рассмотренных — внутри тела есть условие.
+  This is an aggregation task. Although it doesn't count all the characters to calculate the amount, you still have to analyze each character. The key difference between this loop and the ones we looked at before is that there's a condition inside the body.
 
-  Переменная `count` увеличивается только в том случае, когда рассматриваемый символ совпадает с ожидаемым. В остальном — это типичная агрегатная функция, которая возвращает количество нужных символов.
+  The `count` variable is incremented only when the character in question is the same as the expected one. Otherwise, it's a typical aggregate function that returns the number of characters you want.
 
 instructions: |
 
-  Функция из теории учитывает регистр букв. То есть `A` и `a` с её точки зрения разные символы. Реализуйте вариант этой же функции, так чтобы регистр букв был не важен:
+  The function from the theory is case-sensitive. I.e., `A' and `a' are different characters from its point of view. Write a version of this function that isn't case-sensitive:
 
   ```python
   count_chars('HexlEt', 'e')  # 2

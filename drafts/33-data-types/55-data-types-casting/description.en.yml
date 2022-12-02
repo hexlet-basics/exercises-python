@@ -1,25 +1,25 @@
 ---
 
-name: Явное преобразование типов
+name: Explicit type conversion
 theory: |
 
-  В программировании регулярно встречаются задачи, когда один тип данных нужно преобразовать в другой — например, при работе с формами на сайтах. Данные формы всегда приходят в текстовом виде, даже если значение — число. Вот как его можно преобразовать:
+  In programming, there are regularly tasks where one type of data needs to be converted to another - for example, when working with forms on websites. Form data always comes in text form, even if the value is a number. Here's how it can be converted:
 
   ```python
-  # str станет int
+  # str becomes int
   number = int('345')
   print(number)  # => 345
   ```
 
-  `int()` — это функция, в которую передается значение, чтобы его преобразовать. Функция ведет себя подобно арифметическим операциям, но делает особые действия. Вот еще несколько примеров:
+  `int()` is a function into which a value is passed in order to convert it. The function behaves similarly to arithmetic operations, but does special actions. Here are a few more examples:
 
   ```python
   value = '0'
-  # Внутри скобок можно указывать переменную
+  # Inside the brackets you can specify a variable
   converted_value = int(value)
   print(converted_value)  # => 0
 
-  # Или конкретное значение
+  # Or a specific value
   converted_value2 = int('10')
   print(converted_value2)  # => 10
 
@@ -29,13 +29,13 @@ theory: |
   converted_value4 = int(True)
   print(converted_value4)  # => 1
 
-  # Если преобразуется число с плавающей точкой
-  # то отбрасывается вся дробная часть
+  # If a floating point number is converted
+  # then all the fractional part is discarded
   converted_value5 = int(3.5)
   print(converted_value5)  # => 3
   ```
 
-  Точно так же можно преобразовать данные в строки `str()` и число с плавающей точкой `float()`:
+  Similarly, you can convert data into strings `str()` and floating point numbers `float()`:
 
   ```python
   value = str(10)
@@ -48,17 +48,17 @@ theory: |
   print(value3)  # 5.0
   ```
 
-  Некоторые преобразования Python выполняет автоматически. Например, в операциях, где встречается одновременно целое число и число с плавающей точкой. Python автоматически все приводит к **float** — числу с плавающей точкой:
+  Python performs some conversions automatically. For example, in operations where an integer and a floating-point number occur at the same time. Python automatically converts everything to **float**, a floating-point number:
 
   ```python
-  # Неявно выполняется код float(3) + 1.2
+  # Implicitly the code float(3) + 1.2 is executed
   value = 3 + 1.2
   print(value)  # => 4.2
   ```
 
 instructions: |
 
-  Выведите на экран строку `2 times`, полученную из числа 2.9 (хранится в переменной `value`) и строки `times`, используя преобразования типов и конкатенацию. Для этого нужно выполнить два преобразования: сначала в целое число, а затем в строку
+  Output the string `2 times` obtained from the number 2.9 (stored in the variable `value`) and the string `times` using type conversions and concatenation. To do this, perform two conversions: first to an integer and then to a string
 
   <pre class='hexlet-basics-output'>
   2 times

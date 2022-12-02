@@ -1,69 +1,69 @@
 ---
 
-name: Агрегация данных (Числа)
+name: Data Aggregation (Numbers)
 theory: |
 
-  Отдельный класс задач, который не обходится без циклов, называется **агрегированием данных**. К таким задачам относятся: поиск максимального или минимального значения, суммы, среднего арифметического. В их случае результат зависит от всего набора данных.
+  Another type of task that needs loops is ones that involve **aggregating data**. These tasks include: finding the maximum or minimum value, finding the sum of something, or finding the mean. With these tasks, the result depends on the whole data set.
 
-  Чтобы рассчитать сумму, нужно сложить все числа, а чтобы вычислить максимальное, нужно их сравнить. С такими задачами хорошо знакомы бухгалтеры или маркетологи. Они работают в таблицах Microsoft Excel или Google Tables.
+  To calculate the sum, you have to add up all the numbers, and to calculate the maximum, you have to compare them. Accountants and marketers will be familiar with such tasks. They work in Microsoft Excel or Google Tables.
 
-  В этом уроке разберем, как агрегация применяется к числам и строкам.
+  In this lesson, we'll look at how aggregation applies to numbers and strings.
 
-  Допустим, нам нужно найти суммы набора чисел. Реализуем функцию, которая складывает числа в указанном диапазоне, включая границы. **Диапазон** — ряд чисел от конкретного начала до определенного конца. Например, диапазон [1, 10] включает целые числа от одного до десяти.
+  Suppose we need to find the sum of a set of numbers. Let's implement a function that adds numbers in a specified range, including boundaries. A **range** is a set of numbers with an upper and lower limit. For example, the range [1, 10] includes the integers from one to ten.
 
-  Пример:
+  Example:
 
   ```python
   sum_numbers_from_range(5, 7)  # 5 + 6 + 7 = 18
   sum_numbers_from_range(1, 2)  # 1 + 2 = 3
 
-  # [1, 1] диапазон с одинаковым началом и концом — тоже диапазон
-  # Он включает одно число — саму границу диапазона
+  # [1, 1] - a range with the same beginning and end is also a range
+  # It includes one number, which is the range boundary itself
   sum_numbers_from_range(1, 1)      # 1
   sum_numbers_from_range(100, 100)  # 100
   ```
 
-  Чтобы реализовать такой код, понадобится цикл, так как сложение чисел — это итеративный процесс, то есть повторяется для каждого числа. Количество итераций зависит от размера диапазона.
+  To implement this code, you need a loop, because adding numbers is an iterative process, i.e., it's repeated for every number. The number of iterations depends on the size of the range.
 
-  Посмотрите код ниже:
+  Check out the code below:
 
   ```python
   def sum_numbers_from_range(start, finish):
-      # Технически можно менять start
-      # Но входные аргументы нужно оставлять в исходном значении
-      # Это сделает код проще для анализа
+      # It is technically possible to change the start
+      # But the input arguments must be left at their original value
+      # This will make the code easier to analyze
       i = start
-      sum = 0  # Инициализация суммы
-      while i <= finish:  # Двигаемся до конца диапазона
-          sum = sum + i   # Считаем сумму для каждого числа
-          i = i + 1       # Переходим к следующему числу в диапазоне
-      # Возвращаем получившийся результат
+      sum = 0  # Initializing the amount
+      while i <= finish:  # Moving to the end of the range
+          sum = sum + i   # Calculate the sum for each number
+          i = i + 1       # Move to the next number in the range
+      # Return the result
       return sum
   ```
 
-  Структура цикла здесь стандартная: есть счетчик, который инициализируется начальным значением диапазона, цикл с условием остановки при достижении конца диапазона и изменение счетчика в конце тела цикла. Количество итераций в таком цикле равно `finish - start + 1`. Для диапазона [5, 7] — это 7 - 5 + 1, то есть три итерации.
+  The structure of the loop here is standard: there's a counter, which is initialized with the initial value of the range, a loop which has a condition requiring you to stop at the end of the range, and the counter changes at the end of the loop body. The number of iterations in such a loop is equal to `finish - start + 1`. For the range [5, 7], it's 7 - 5 + 1, which is three iterations.
 
-  Главные отличия от обычной обработки — логика вычислений результата. В задачах на агрегацию всегда есть переменная, которая хранит внутри себя результат работы цикла. В коде выше это `sum`. Она изменяется на каждой итерации цикла — прибавляется следующее число в диапазоне: `sum = sum + i`.
+  The main difference from the usual way of processing is the logic of calculating the result. In aggregation tasks, there's always a variable that stores the result of the loop. In the code above, it's `sum`. It changes at each iteration of the loop: the next number in the range is added: `sum = sum + i`.
 
-  Этот процесс выглядит так:
+  The process looks like this:
 
   ```python
-  # Для вызова sum_numbers_from_range(2, 5)
+  # To call sum_numbers_from_range(2, 5)
   sum = 0
   sum = sum + 2  # 2
   sum = sum + 3  # 5
   sum = sum + 4  # 9
   sum = sum + 5  # 14
-  # 14 – результат сложения чисел в диапазоне [2, 5]
+  # 14 is the result of adding numbers in the range [2, 5]
   ```
 
-  У переменной `sum` есть начальное значение — с него начинается любая повторяющаяся операция. В примере выше — это `0`.
+  The `sum` variable has an initial value, any repeating operation will begin with it. In the example above, it's `0`.
 
-  В математике есть понятие **нейтральный элемент**, и у каждой операции он свой. Операция с этим элементом не изменяет то значение, над которым работает. Например, в сложении любое число плюс ноль дает само число. При вычитании — то же самое. У конкатенации тоже есть нейтральный элемент — это пустая строка: `'' + 'one'` будет 'one'.
+  In math, we have the concept of a **neutral element**, and each operation has a different one. An operation with this element doesn't change the value it's working on. For example, in addition, any number plus zero gives the number itself. It's the same for subtraction. Concatenation also has a neutral element, which is an empty string: `''` + `'one'` will be `'one'`.
 
 instructions: |
 
-  Реализуйте функцию `multiply_numbers_from_range()`, которая перемножает числа в указанном диапазоне включая границы диапазона. Пример вызова:
+  Implement a function called `multiply_numbers_from_range()` that multiplies numbers in a specified range, including range boundaries. Call example:
 
   ```python
   multiply_numbers_from_range(1, 5)  # 1 * 2 * 3 * 4 * 5 = 120

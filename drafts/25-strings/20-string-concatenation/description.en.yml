@@ -1,19 +1,19 @@
 ---
 
-name: Конкатенация
+name: Concatenation
 theory: |
 
-  В веб-разработке программы постоянно оперируют строками. Все, что мы видим на сайтах, так или иначе представлено в виде текста. Этот текст чаще всего динамический — то есть он получается из разных частей, которые соединяются вместе.
+  In web development, programs use strings all the time. Everything we see on websites, in one way or another, is presented as text. This text is most often dynamic, i.e., it comes from different parts that are joined together.
 
-  Чтобы соединить строки, нужно выполнить **конкатенацию**:
+  To combine strings, you have to perform **concatenation**:
 
   ```python
-  # Оператор такой же, как и при сложении чисел,
-  # но здесь он имеет другой смысл (семантику)
+  # The operator is the same as for adding numbers,
+  # but here it has a different meaning (semantics)
   print('Dragon' + 'stone')  # => Dragonstone
   ```
 
-  Склеивание строк всегда происходит в том же порядке, в котором записаны операнды. Левый операнд становится левой частью строки, а правый — правой. Вот еще несколько примеров:
+  Strings are always concatenated in the order in which the operands are written. The left operand becomes the left part of the string, and the right one becomes the right part. Here are a few more examples:
 
   ```python
   print('Kings' + 'wood')      # => Kingswood
@@ -21,29 +21,29 @@ theory: |
   print("King's" + 'Landing')  # => King'sLanding
   ```
 
-  Как видите, строки можно склеивать, даже если их записали с разными кавычками.
+  As you can see, strings can be concatenated even if they're written with different quotes.
 
-  Пробел — такой же символ, как и другие, поэтому сколько пробелов поставите в строке, столько и получится в итоговой строке:
+  Spaces are a character like any other, so how many spaces you put in a string is how many you get in the final string:
 
   ```python
-  # Ставим пробел в левой части
+  # Put a space in the left part
   print("King's " + 'Landing')  # => King's Landing
 
-  # Ставим пробел в правой части
+  # Put a space in the right part
   print("King's" + ' Landing')  # => King's Landing
   ```
 
 instructions: |
 
-  Выведите на экран
+  Display
 
   ```
   Winter came for the House of Frey.
   ```
 
-  используя конкатенацию слов.
+  using concatenation.
 
 definitions:
-  - name: Конкатенация
+  - name: Concatenation
     description: |
-      операция соединения двух строк. Например, `print("King's " + ' Landing')`
+      the operation of joining two strings. For example, `print("King's " + ' Landing')`

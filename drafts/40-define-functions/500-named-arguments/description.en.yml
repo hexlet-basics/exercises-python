@@ -1,63 +1,63 @@
 ---
 
-name: Именованные аргументы
+name: Named arguments
 theory: |
 
-  В этом уроке разберем, какие параметры существуют, чем они отличаются и в каких случаях их применять.
+  In this lesson, we'll look at what parameters exist, how they differ, and when to apply them.
 
-  **Аргументы** — это данные, которые передаются в вызов функции. Они бывают двух типов:
+  **Arguments** are data that are passed to a function call. They come in two types:
 
-  Первый тип — **позиционные аргументы**. Они передаются в том же порядке, в котором определены параметры функции:
+  The first type is **positional arguments**. They are passed in the same order as the function parameters are defined:
 
   ```python
   # (text, length)
   truncate('My Text', 3)
   ```
 
-  Второй тип — **именованные аргументы**. Они передаются не просто как значения, а как пара «имя=значение». Поэтому их можно передавать в любом порядке:
+  The second type is **named arguments**. They are passed not just as values, but as a pair "name=value". So you can pass them in any order:
 
   ```python
-  # Аргументы переданы в другом порядке
+  # Arguments are passed in a different order
   truncate(length=3, text='My Text')
   ```
 
-  Если внимательно посмотреть на два примера выше, то можно понять, что это две одинаковые функции.
+  If you look carefully at the two examples above, you can see that they are two identical functions.
 
-  Теперь разберемся, в каких случаях нужно применять эти типы аргументов.
+  Now let's see when to apply these types of arguments.
 
-  Выбор типа параметра зависит от того, кто вызывает функцию.
+  The type of parameter you choose depends on who is calling the function.
 
-  Есть две причины использовать именованные аргументы:
+  There are two reasons to use named arguments:
 
-  * Они повышают читаемость, так как сразу видно имена
+  * They increase readability because you can see the names at a glance
 
-  * Можно не указывать все промежуточные параметры, которые нам сейчас не нужны
+  * You can leave out all the intermediate parameters that we don't need right now
 
-  Последнее полезно, если у функции много необязательных параметров. Посмотрим на примере:
+  The latter is useful if the function has many optional parameters. Let's look at an example:
 
   ```python
   def f(a=1, b=2, c=None, d=4):
       print(a, b, c, d)
 
-  # Нужно передать только d, но приходится передавать все
+  # You only need to pass d, but you have to pass all
   f(1, 2, 3, 8)
 
-  # Именованные аргументы позволяют передавать только d
-  # Для остальных аргументов используются значения по умолчанию
+  # Named arguments allow you to pass only d
+  # Default values are used for the other arguments
   f(d=8)
   ```
 
-  Именованные аргументы можно передавать одновременно с позиционными. Тогда позиционные должны идти в самом начале:
+  Named arguments can be passed at the same time as positional arguments. Then positional arguments must go at the beginning:
 
   ```python
-  # Передаем только a (позиционно) и d (как именованный)
+  # Transmit only a (positional) and d (as named)
   f(3, d=3)
   ```
 
 instructions: |
 
-  Реализуйте функцию `trim_and_repeat()`, которая принимает три параметра: строку, `offset` — число символов, на которое нужно обрезать строку слева и `repetitions` — количество раз, сколько ее нужно повторить, и возвращает получившуюся строку.
-  Число символов для среза по умолчанию равно 0, а повторений — 1.
+  Implement a function `trim_and_repeat()` that takes three parameters: the string, `offset` - the number of characters by which to trim the string to the left and `repetitions` - the number of times it needs to be repeated, and returns the resulting string.
+  The default number of characters to cut is 0, and the number of repetitions is 1.
 
   ```python
   text = 'python'

@@ -1,0 +1,69 @@
+---
+
+name: Explicit type conversion
+theory: |
+
+  In programming, there are regularly tasks where one type of data needs to be converted to another - for example, when working with forms on websites. Form data always comes in text form, even if the value is a number. Here's how it can be converted:
+
+  ```python
+  # str becomes int
+  number = int('345')
+  print(number)  # => 345
+  ```
+
+  `int()` is a function into which a value is passed in order to convert it. The function behaves similarly to arithmetic operations, but does special actions. Here are a few more examples:
+
+  ```python
+  value = '0'
+  # Inside the brackets you can specify a variable
+  converted_value = int(value)
+  print(converted_value)  # => 0
+
+  # Or a specific value
+  converted_value2 = int('10')
+  print(converted_value2)  # => 10
+
+  converted_value3 = int(False)
+  print(converted_value3)  # => 0
+
+  converted_value4 = int(True)
+  print(converted_value4)  # => 1
+
+  # If a floating point number is converted
+  # then all the fractional part is discarded
+  converted_value5 = int(3.5)
+  print(converted_value5)  # => 3
+  ```
+
+  Similarly, you can convert data into strings `str()` and floating point numbers `float()`:
+
+  ```python
+  value = str(10)
+  print(value)  # '10'
+
+  value2 = str(True)
+  print(value2)  # 'True'
+
+  value3 = float(5)
+  print(value3)  # 5.0
+  ```
+
+  Python performs some conversions automatically. For example, in operations where an integer and a floating-point number occur at the same time. Python automatically converts everything to **float**, a floating-point number:
+
+  ```python
+  # Implicitly the code float(3) + 1.2 is executed
+  value = 3 + 1.2
+  print(value)  # => 4.2
+  ```
+
+instructions: |
+
+  Output the string `2 times` obtained from the number 2.9 (stored in the variable `value`) and the string `times` using type conversions and concatenation. To do this, perform two conversions: first to an integer and then to a string
+
+  <pre class='hexlet-basics-output'>
+  2 times
+  </pre>
+
+# definitions: []
+
+# tips: []

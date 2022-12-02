@@ -1,0 +1,42 @@
+---
+
+name: Syntax errors
+theory: |
+
+  If a Python program is written syntactically incorrectly, the interpreter displays a message. It also points to the file and line where the error occurred.
+
+  **A syntactic error occurs when code is written in violation of grammatical rules. In natural languages, grammar is important, but text with errors can usually be understood and read. In programming everything is strict. The slightest violation and the program will not even run. An example would be the forgotten `;`, incorrectly placed brackets and other details.
+
+  Here is a sample code with a syntax error:
+
+  ```python
+  print('Hodor)
+  ```
+
+  If we run the code above, we see the following message:
+
+  ```bash
+  $ python index.py
+  File "index.py", line 1
+    print('Hodor)
+                ^
+  SyntaxError: EOL while scanning string literal
+  ```
+
+  On the one hand, syntax errors are the easiest, because they are related to the grammatical rules of writing code, not to the meaning of the code. They are easy to fix: you just need to find a violation in the writing. On the other hand, the interpreter is not always able to clearly indicate this violation. Therefore it happens that a forgotten parenthesis must be placed in the wrong place, where the error message indicates.
+
+instructions: |
+
+  This assignment is not directly related to the lesson. But it will be useful to practice with the output on the screen.
+
+  Display:
+
+  <pre class='hexlet-basics-output'>What Is Dead May Never Die</pre>
+
+tips: []
+
+definitions:
+  - name: "Syntax errors"
+    description: "violation of the grammatical rules of the programming language."
+  - name: "SyntaxError (parsing error)"
+    description: "the type of errors in Python that occur when there are syntax errors in the code."

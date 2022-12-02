@@ -1,0 +1,68 @@
+---
+
+name: Negation
+theory: |
+
+  Along with the logical operators **AND** and **OR**, there is also an operation called “**negation**” It changes the logical meaning to the opposite. In programming, negation corresponds to the unary operator `not`:
+
+  ```python
+  not True   # False
+  not False  # True
+  ```
+
+  For example, if there's a function that checks if a number is even, then you can use negation to check if a number is odd:
+
+  ```python
+  def is_even(number):
+      return number % 2 == 0
+
+  print(is_even(10))      # => True
+  print(not is_even(10))  # => False
+  ```
+
+  In the example above, we added `not` to the left of the function call and got the opposite action.
+
+  Negation is a tool with which you can express intended rules in code without writing new functions.
+
+  If you write `not is_even(10)`, the code will still work:
+
+  ```python
+  print(not not is_even(10))  # => True
+  ```
+
+  In logic, double negation means positive:
+
+  ```python
+  not not True   # True
+  not not False  # False
+
+  print(not not is_even(10))  # => True
+  print(not not is_even(11))  # => False
+  ```
+
+  Now you know what the operators **AND**, **OR** and `not` mean. They allow you to specify compound conditions with two or more logical expressions.
+
+instructions: |
+
+  1. Implement a function called `is_palindrome()` that determines whether a word is a palindrome or not. A palindrome is a word that reads the same way in both directions. Words may be passed to the function in any case, so you must first convert the word to lowercase: `word.lower()`.
+
+      ```python
+      is_palindrome('hut') # true
+      is_palindrome('hexlet') # false
+      is_palindrome('Argument') # true
+      is_palindrome('Function') # false
+      ```
+
+  2. Implement a function called `is_not_palindrome()` which checks if a word is NOT a palindrome:
+
+      ```python
+      is_not_palindrome('шалаш') # false
+      is_not_palindrome('Ага') # false
+      is_not_palindrome('хекслет') # true
+      ```
+
+      To do this, call `is_palindrome()` inside `is_not_palindrome()` and apply negation.
+
+tips:
+  - |
+    [De Morgan's laws](https://en.wikipedia.org/wiki/De_Morgan%27s_laws)

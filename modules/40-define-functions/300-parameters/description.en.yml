@@ -1,0 +1,142 @@
+---
+
+name: Function Parameters
+theory: |
+
+  Functions can also also accept parameters as well as return parameters. In this lesson, we'll learn how to create these functions.
+
+  Remember we've already encountered function parameters:
+
+  ```python
+  # Accepts one parameter of any type as input
+  print('я параметр')
+  # Takes two string parameters as input
+  # one - what we're looking for, two - what we're replacing it with
+  'google'.replace('go', 'mo')  # moogle
+  # Takes two numeric parameters as input
+  # the first is the number to be rounded, the second is the number of decimal places that should be left over
+  round(10.23456, 3)  # 10.235
+  ```
+
+  Now imagine that we need to implement a function called `get_last_char()`, which returns the last character in the string that's passed to it as a parameter.
+
+  Here's what using this function would look like:
+
+  ```python
+  # Passing parameters directly without variables
+  get_last_char("Hexlet")  # t
+  # Passing parameters through variables
+  name1 = 'Hexlet'
+  get_last_char(name1)  # t
+  name2 = 'Goo'
+  get_last_char(name2)  # o
+  ```
+
+  The following conclusions can be drawn from this example:
+
+  * We need to define the function `get_last_char()`
+  * The function must accept a single string parameter
+  * The function must return a string
+
+  Defining the function:
+
+  ```python
+  def get_last_char(text):
+    return text[-1]
+  ```
+
+  The name of the `text` variable that serves as a parameter is given in parentheses. The parameter name can be anything. The main thing is that it reflects the meaning of the value it contains. For example:
+
+  ```python
+  def get_last_char(string):
+    return string[-1]
+  ```
+
+  The value of the parameter will depend on how the function is called:
+
+  ```python
+  # Inside this function, the string will be 'hexlet'
+  get_last_char('hexlet')  # t
+
+  # Inside this function, the string will be 'code'
+  get_last_char('code')  # e
+
+  # Inside this function, the string will be 'Winter is coming'
+  # The variable name outside the function is not related to the variable name in the function definition
+  text = 'Winter is coming'
+  get_last_char(text)  # g
+  ```
+
+  The parameter must be specified. If you call a function without it, the interpreter will give an error:
+
+  ```python
+  get_last_char()  # This code doesn't make sense
+
+  TypeError: get_last_char() missing 1 required positional argument: 'string'
+  ```
+
+  Many functions work simultaneously with several parameters. For example, to round numbers, you must specify not only the number itself, but also the number of decimal places:
+
+  ```python
+  round(10.23456, 3)  # 10.235
+  ```
+
+  The same is true with methods. They can require any number of parameters to work:
+
+  ```python
+  # The first parameter is what we are looking for
+  # The second is what we're changing it to
+  'google'.replace('go', 'mo')  # moogle
+  ````
+
+  To create such  functions and methods, you need to specify the required number of parameters, separated by commas, in the definition. They also need to be given clear names.
+
+  Below is an example of the definition of a function called `replace()`, which replaces one part of a string with another:
+
+  ```python
+  def replace(text, from, to):
+    # Here is the body of the function, but we've
+    # omitted it so you don't get distracted
+
+  replace('google', 'go', 'mo')  # moogle
+  ```
+
+  When there are two or more parameters, the order in which the parameters are passed is important for almost all functions. If you change it, the function will work differently:
+
+  ```python
+  # Nothing has been replaced,
+  # since there is no mo inside google
+  replace('google', 'mo', 'go')  # google
+  ```
+
+  You now know how to create functions that can take parameters as input.
+
+instructions: |
+
+  Create a function called `truncate()` that truncates a string passed to it to a specified number of characters, adds an ellipsis at the end, and returns the resulting string. This kind of logic is often used on websites to display long text in shortened form.
+
+  The function takes two parameters:
+
+  1. The string to be trimmed
+  2. Number of characters to leave
+
+  An example of how the function you wrote should work:
+
+  ```python
+  # Pass text directly
+  # Truncate the text, leaving two characters
+  truncate('hexlet', 2)  # 'he...'
+
+  # Via a variable
+  text = 'it works!'
+  # Truncate the text, leaving 4 characters
+  truncate(text, 4)  # 'it w...'
+  ```
+
+  There are lots of ways you can do this task, we'll tell you just one of them. To solve it this way, you need to take a substring from the string passed as the first parameter to the function. Use string slices to do this. Think, based on the assignment, from which index and by which one do you need to extract the substring?
+
+  ```python
+  word = 'welcome!'
+  index = 3
+  word[:index] # wel
+  ```

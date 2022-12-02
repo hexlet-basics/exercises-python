@@ -33,9 +33,9 @@ theory: |
   # Определение не вызывает и не выполняет функцию
   # Мы лишь говорим, что теперь такая функция существует
   def show_greeting():
-    # Внутри тела отступ четыре пробела
-    text = 'Hello, Hexlet!'
-    print(text)
+      # Внутри тела отступ четыре пробела
+      text = 'Hello, Hexlet!'
+      print(text)
 
   # Вызов функции
   show_greeting()  # => 'Hello, Hexlet!'
@@ -52,7 +52,7 @@ theory: |
   ```python
   # Минимальное определение функции
   def noop():
-    pass
+      pass
 
   noop()
   ```

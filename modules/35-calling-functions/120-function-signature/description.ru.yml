@@ -29,7 +29,9 @@ instructions: |
 
   Напишите программу, которая использует функцию `hex()` с переменной `number` и выводит результат на экран.
 
-tips: []
+tips: 
+  - |
+    [Функция pow()](https://docs.python.org/3/library/functions.html?highlight=pow#pow)
 
 definitions:
   - name: Сигнатура функции

@@ -27,7 +27,7 @@ theory: |
 
   ```python
   def my_print(text='nothing'):
-    print(text)
+      print(text)
 
   my_print()  # => "nothing"
   my_print("Hexlet")  # => "Hexlet"

@@ -19,6 +19,8 @@ theory: |
   pow(3, 3)  # 3 * 3 * 3 = 27
   ```
 
+  https://replit.com/@hexlet/python-basics-define-functions-default-parameters
+
   Значение по умолчанию выглядит как обычное присваивание в определении. Оно срабатывает только в том случае, если параметр не передали.
 
   Представьте, что вы не привезли с собой в автосервис запчасти для вашего автомобиля. Тогда автомеханик предложит вам поставить те, которые есть у него — по умолчанию.
@@ -81,3 +83,11 @@ instructions: |
   '+' * 5 # +++++
   'o' * 3 # ooo
   ```
+
+tips:
+  - |
+    [Параметры по умолчанию](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+definitions:
+  - name: Параметр по умолчанию
+    description: необязательный параметр функции

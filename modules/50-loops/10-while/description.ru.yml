@@ -17,10 +17,10 @@ theory: |
 
   ```python
   def print_hello(n):
-    counter = 0
-    while counter < n:
-        print('Hello!')
-        counter = counter + 1
+      counter = 0
+      while counter < n:
+          print('Hello!')
+          counter = counter + 1
 
   print_hello(2)
   # => Hello!
@@ -40,14 +40,14 @@ theory: |
 
   ```python
   def print_numbers(last_number):
-    # i сокращение от index (порядковый номер)
-    # используется по общему соглашению во множестве языков
-    # как счетчик цикла
-    i = 1
-    while i <= last_number:
-        print(i)
-        i = i + 1
-    print('finished!')
+      # i сокращение от index (порядковый номер)
+      # используется по общему соглашению во множестве языков
+      # как счетчик цикла
+      i = 1
+      while i <= last_number:
+          print(i)
+          i = i + 1
+      print('finished!')
 
   print_numbers(3)
   # => 1
@@ -105,12 +105,12 @@ theory: |
 
   ```python
   def print_numbers(last_number):
-    i = 1
-    # Этот цикл никогда не остановится
-    # и будет печатать всегда одно значение
-    while i <= last_number:
-        print(i)
-    print('finished!')
+      i = 1
+      # Этот цикл никогда не остановится
+      # и будет печатать всегда одно значение
+      while i <= last_number:
+          print(i)
+      print('finished!')
   ```
 
   В некоторых случаях бесконечные циклы полезны. Мы не будем рассматривать такие ситуации, но покажем, как выглядит этот код:

@@ -29,7 +29,9 @@ instructions: |
 
   Создайте однострочный комментарий с текстом: `You know nothing, Jon Snow!`
 
-tips: []
+tips:
+  - |
+    [Подробнее о комментариях](https://www.w3schools.com/python/python_comments.asp)
 
 definitions:
   - name: Комментарий

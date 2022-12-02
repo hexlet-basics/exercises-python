@@ -56,6 +56,8 @@ theory: |
   # => finished!
   ```
 
+  https://replit.com/@hexlet/python-basics-loops-while
+
   Цикл `while` состоит из трех элементов:
 
   * Ключевое слово `while`
@@ -134,7 +136,9 @@ instructions: |
 
   <pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>finished!</pre>
 
-tips: []
+tips:
+  - |
+    [Цикл while](https://www.w3schools.com/python/python_while_loops.asp)
 
 definitions:
   - name: Цикл While

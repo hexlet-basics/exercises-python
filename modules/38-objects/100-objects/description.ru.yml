@@ -89,3 +89,7 @@ theory: |
 instructions: |
 
   Приведите строку `text` к нижнему регистру и напечатайте её на экран. Пример метода, выполняющего эту задачу приведен в теории.
+
+tips:
+  - |
+    [Методы строк](https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods)

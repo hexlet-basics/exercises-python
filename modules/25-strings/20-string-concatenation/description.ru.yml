@@ -33,6 +33,8 @@ theory: |
   print("King's" + ' Landing')  # => King's Landing
   ```
 
+  https://replit.com/@hexlet/python-basics-string-concatenation
+
 instructions: |
 
   Выведите на экран
@@ -42,6 +44,10 @@ instructions: |
   ```
 
   используя конкатенацию слов.
+
+tips:
+  - |
+    Если в редакторе есть запись `# BEGIN` и `# END`, то код нужно писать между этими строчками.
 
 definitions:
   - name: Конкатенация

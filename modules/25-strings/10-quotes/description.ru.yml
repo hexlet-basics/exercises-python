@@ -88,4 +88,6 @@ instructions: |
   "Khal Drogo's favorite word is "athjahakar""
   </pre>
 
-tips: []
+tips: 
+  - |
+    [f-строки](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)

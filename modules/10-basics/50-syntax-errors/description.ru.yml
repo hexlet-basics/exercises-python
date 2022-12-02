@@ -13,6 +13,8 @@ theory: |
   print('Hodor)
   ```
 
+  https://replit.com/@hexlet/python-basics-syntax-errors
+
   Если запустить код выше, то мы увидим следующее сообщение:
 
   ```bash
@@ -33,7 +35,9 @@ instructions: |
 
   <pre class='hexlet-basics-output'>What Is Dead May Never Die</pre>
 
-tips: []
+tips: 
+  - |
+    [Виды ошибок в Python](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 
 definitions:
   - name: "Синтаксическая ошибка"

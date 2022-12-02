@@ -39,6 +39,8 @@ theory: |
   print(is_infant(3))  # => False
   ```
 
+  https://replit.com/@hexlet/python-basics-logic-bool-type
+
   Любая операция — это выражение, поэтому единственной строчкой функции пишем «вернуть то значение, которое получится в результате сравнения `age < 1`». В зависимости от того, какой аргумент пришел, сравнение будет истинным (`True`) или ложным (`False`), а `return` вернет этот результат.
 
   А теперь проверим ребенка, которому полгода:
@@ -59,6 +61,10 @@ instructions: |
   is_pensioner(75) # True
   is_pensioner(18) # False
   ```
+
+tips:
+  - |
+    [Boolean в Python](https://docs.python.org/3/library/stdtypes.html#boolean-values)
 
 definitions:
   - name: "Логический тип (bool)"

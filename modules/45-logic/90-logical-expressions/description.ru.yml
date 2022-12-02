@@ -181,6 +181,6 @@ instructions: |
   
   Поэкспериментируйте с кодом в интерактивном репле https://replit.com/@hexlet/python-basics-logical-expressions
 
-# tips:
-#   - |
-#     [Boolean](https://ru.wikipedia.org/wiki/Логический_тип)
+tips:
+  - |
+    [Boolean](https://ru.wikipedia.org/wiki/Логический_тип)

@@ -1,0 +1,5 @@
+---
+
+name: Strings
+description:
+  Text in programming is called "strings," and this topic is not as simple as it may seem. How do you output a phrase that has both single and double quotes? What is an escape sequence? The module focuses on different aspects of writing text - we'll experiment with the output of different strings and talk about encoding.

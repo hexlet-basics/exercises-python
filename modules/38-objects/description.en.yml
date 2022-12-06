@@ -1,0 +1,5 @@
+---
+
+name: Properties and methods
+description: |
+  The data we use in our programs can have important attributes. In Python, attributes are built right into the language. In addition to static properties, data also have methods - functions inside of properties. Properties and methods are just like expressions, like variables or function calls, which means they can be combined in all sorts of ways. These topics are covered in greater depth in separate courses about the object-oriented features of Python. In this module, we will cover the basics.

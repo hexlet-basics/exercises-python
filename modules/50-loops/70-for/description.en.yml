@@ -1,0 +1,81 @@
+---
+
+name: Cycle For
+theory: |
+
+  The `while' loop can be used to solve any item search problem, but it is notable for being verbose. For `while` it is necessary to set a stopping condition and enter a counter. When there are few loops, this is fine, but in real code loops occur at every step. It is therefore tedious to manage the conditions manually, especially when the stopping condition is obvious.
+
+  For example, if we want to go through the characters in a string, the computer can figure out by itself when the string ends. For such situations, Python introduced the `for` loop. It knows itself when to stop, because it only works with collections - sets of elements that need to be searched.
+
+  A string is a collection because it consists of a set of characters. The other types of collections are studied in detail in another course.
+
+  Example:
+
+  ```python
+  text = 'code'
+  for symbol in text:
+      print(symbol)
+
+  # => c
+  # => o
+  # => d
+  # => e
+  ```
+
+  In the code above, `for` goes through each character in the string, writes it in a variable `symbol` and calls the internal code block where that variable is used. The name of this variable can be anything. The general structure of the `for' loop looks like this: `for <variable> in <collection>'.
+
+  Let's see how to implement the string flip function through the `for` loop:
+
+  ```python
+  def reverse_string(text):
+      # Initial value
+      result = ''
+      # char - a variable in which the current character is written
+      for char in text:
+          # Connect in reverse order
+          result = char + result
+      # The cycle ends when the whole line is passed
+      return result
+
+
+  reverse_string('go!')  # => '!og'
+  ```
+
+  Now let's calculate the number of mentions of a character in the string, not case-sensitive:
+
+  ```python
+  # text - any text
+  # char - a symbol to consider
+  def chars_count(text, char):
+      # Since we are looking for the sum, the initial value is 0
+      result = 0
+      for current_char in text:
+          # We convert everything to lower case,
+          # so as not to depend on the current register
+          if current_char.lower() == char.lower():
+              result += 1
+      return result
+
+
+  chars_count('hexlet!', 'e')  # 2
+  chars_count('hExlet!', 'e')  # 2
+  chars_count('hExlet!', 'E')  # 2
+
+  chars_count('hexlet!', 'a')  # 0
+  ```
+
+#  We suggest experimenting with the examples above in the interactive [Replit](https://replit.com/@hexlet/python-basics-for-loop#main.py).
+
+instructions: |
+
+  In a previous lesson, we already wrote the `filter_string()` function. Recall that it takes a string and a character as input and returns a new string in which the passed character at all its positions is removed. This time, implement this function using the `for` loop. An additional condition: the case of the character to be eliminated does not matter.
+
+  An example of a call:
+
+  ```python
+  text = 'If I look forward I win'
+  filter_string(text, 'i')  # 'f  look forward  wn'
+  filter_string(text, 'O')  # 'If I lk frward I win'
+  ```
+
+tips: []

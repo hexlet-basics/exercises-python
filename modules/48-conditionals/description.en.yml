@@ -1,0 +1,5 @@
+---
+
+name: Conditionals
+description: |
+  The job of predicate functions is to get the answer to a question. However, this usually isn't enough; you often need to perform a certain action depending on the answer. If and if-else are Python constructions that allow programmers to choose the desired behavior of the program depending on different conditions, often skipping some instructions and executing others. We'll analyse them in practice in this module.

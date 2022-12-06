@@ -1,0 +1,33 @@
+---
+
+name: Changing variables
+theory: |
+
+  The word “variable” itself suggests that it can be changed. And indeed, the values of variables can change over time within the program.
+
+  For example:
+
+  ```python
+  # greeting 
+  greeting = 'Father!'
+  print(greeting)  # => Father!
+
+  greeting = 'Mother!'
+  print(greeting)  # => Mother!
+  ```
+
+  The name remained the same, but there were different data inside. Note that variables in Python require no special declaration. Instead, a variable is declared when it is first used in a program.
+
+  Variables are a powerful yet risky thing. You can't be sure right away what'll be inside it - first you have to analyze the code that comes before the variable. This is what developers do during debugging, when they try to figure out why the program doesn't work as intended.
+
+instructions: |
+
+  In the exercise, a variable is defined with a string inside it. Override the value of this variable and assign it a string in which the characters of the original string are arranged in reverse order.
+
+  Note: in this assignment, you'll have to write code between lines with comments `# BEGIN` and `# END` (we mentioned it before, but this is the first time you've come across this format).
+
+tips: []
+
+definitions:
+  - name: Variable
+    description: a way to save information and name it for later use in code.

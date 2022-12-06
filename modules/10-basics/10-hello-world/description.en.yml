@@ -1,0 +1,23 @@
+---
+
+name: Hello, world!
+theory: |
+  Learning a new programming language traditionally begins with 'Hello, world!'. It is a simple program that both displays a greeting on the screen, and introduces the new language, showing its syntax and its program structure.
+
+  <pre class='hexlet-basics-output'>
+    Hello, World!
+  </pre>
+
+  This tradition is over forty years old, so we're not thinking of breaking it any time soon. In the first lesson, we'll write a program called `Hello, world!`. To do this, you have to give the computer a special command. In Python, it's: `print()`.
+
+instructions: |
+  Copy the exact code from the instructions into the editor and run it by clicking “Run”.
+
+  ```python
+  print('Hello, World!')
+  ```
+
+  Note: if you write `heLLo, woRld!` instead of `Hello, World!`, it will be considered different text, because upper and lower case letters are different characters and different _registers_. In programming, the register almost always matters, so get used to always paying attention to it!
+# tips:
+#  - |
+#     [A little bit about 'Hello, World!](https://ru.hexlet.io/blog/posts/moy-chelovek-menya-ponimaet-istoriya-frazy-hello-world-i-ee-analogov)

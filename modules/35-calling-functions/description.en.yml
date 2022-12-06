@@ -1,0 +1,5 @@
+---
+
+name: Calling functions
+description:
+  There is a concept of "function" to express any arbitrary operation in programming. Functions are the building blocks from which programmers build systems. In this module we will learn how to use the functions we have already created. We will look at the function signatures in the documentation and figure out how to use them. We will learn about the standard libraries that hold thousands of functions. It is impossible to learn all the functions, but every programmer should know where to find the documentation about them.

@@ -1,0 +1,31 @@
+---
+
+name: Immutability
+theory: |
+
+  Imagine we have this call:
+
+  ```python
+  name = 'Tirion'
+  print(name.upper())  # => TIRION
+  # What will this call print on the screen?
+  print(name)  # => ?
+  ```
+
+  Calling the `.upper()` method returns a new value with all letters converted to upper case, but it does not change the original string. So inside the variable will be the old value: `'Tyrion'`. This logic holds true for methods of all primitive types.
+
+  Instead of changing the value, you can **replace** it. This requires variables:
+
+  ```python
+  name = 'Tirion'
+  name = name.upper()
+  print(name)  # => TIRION
+  ```
+
+instructions: |
+
+  User input data often contains extra spaces at the end or beginning of a string. They're usually cut out using a method [.strip()](https://docs.python.org/3/library/stdtypes.html), for example, it was ``hello\n'`` and now it's ``hello'``.
+
+  Update the `first_name` variable by writing the same value to it, but this time processed by the `.strip()` method. Print the result.
+
+tips: []

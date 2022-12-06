@@ -1,0 +1,74 @@
+---
+
+name: Magic numbers
+theory: |
+
+  Let's look at our example of the program that calculates exchange rates:
+
+  ```python
+  euros_count = 1000
+  dollars_count = euros_count * 1.25  # 1250.0
+  rubles_count = dollars_count * 60   # 75000.0
+
+  print(rubles_count)
+  ```
+
+  From professional development's perspective, such code doesn't correspond with the best practices.
+
+  In this example, it's difficult to understand what the numbers `60` and `1.25` mean. Imagine having to deal with that code a month or a year from now – it's going to be difficult. It'll also be difficult for a programmer who hasn't seen the code before.
+
+  In our example, the context is easy to put together because the variables are named correctly. But in real projects, code is much more complicated, so it's often impossible to guess the meaning of the numbers.
+
+  The problem lies in magic numbers. These are numbers whose origin is impossible to understand at a glance – you have to dig deep into what's going on in the code.
+
+  To prevent this problem, you need to create variables with the right names. That way, everything will fall into place:
+
+  ```python
+  dollars_per_euro = 1.25
+  rubles_per_dollar = 60
+
+  euros_count = 1000
+  dollars_count = euros_count * dollars_per_euro     # 1250.0
+  rubles_count = dollars_count * rubles_per_dollar  # 75000.0
+
+  print(rubles_count)
+  ```
+
+  In this program:
+
+  * Snake_case naming is used
+  * The two new variables are separated from the subsequent calculations by a blank line. These variables make sense without calculations, so this separation is appropriate because it increases readability
+  * The resulting code is well named and structured, but it's longer than the previous version. This is often the case, but this is fine because the code must be readable
+
+  Magic numbers and obscure variable names don't break the code, but make it less readable.
+
+  It's important to understand that in any case, the computer will carry out the calculation you give it. However, another programmer reading the code won't understand, thus complicating your work. Naming the variables properly is half the battle when it comes to code analysis.
+
+instructions: |
+
+  You've come across this code, which prints the total number of rooms owned by the present king:
+
+  ```python
+  king = "Rooms in King Balon's Castle:"
+  print(king)
+  print(6 * 17)
+  ```
+
+  As you can see, there are some magic numbers here: it's unclear what 6 is and what 17 is. If you know the history of the royal family, you can guess: each new king inherits all his ancestors 'castles and builds a new one, an exact copy of his parents'.
+
+  This strange dynasty simply breeds identical castles...
+
+  Get rid of the magic numbers by creating new variables and then displaying the text on the screen.
+
+  You'll get this:
+
+  <pre class='hexlet-basics-output'>
+  Rooms in King Balon's Castle:
+  102
+  </pre>
+
+  The variable names should give the meaning of the numbers, but should also be short and succinct enough to be readable.
+
+  Note: The code will work with any name, and we only check the printed result, so the task is up to you.
+
+tips: []

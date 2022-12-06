@@ -1,0 +1,5 @@
+---
+
+name: Variables
+description:
+  Information can be put into special "repositories" and then used as many times as you like. These storages are called variables, and they help simplify code and reduce unnecessary repetition.

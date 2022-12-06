@@ -1,0 +1,5 @@
+---
+
+name: Data types
+description:
+  Python is a language with strong typing and immutable primitive data types. What happens when we try to multiply a number by a string? How does Python know what type of data is in front of it? What is type conversion? You will find the answers to these questions in the current module.

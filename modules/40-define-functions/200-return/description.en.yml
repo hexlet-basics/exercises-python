@@ -1,0 +1,119 @@
+---
+
+name: Return values
+theory: |
+
+    In this lesson, we'll take a closer look at how to work with functions we've created to make them useful.
+
+    When we define a function, it prints data on the screen:
+
+    ```python
+    def greeting():
+        print('Hello, Hexlet!')
+    ```
+
+    These functions are of little use, because the result can't be used within the program. Let's look at an example.
+
+    Let's say we're processing an email address. When a user registers on the site, they can enter their email address in any way they wants:
+
+    * Add random spaces at the beginning or at the end: `_support@hexlet.io__`
+    * Use letters in different cases: `SUPPORT@hexlet.io`
+
+    If we save it that way in the database, the user won't be able to log in. To avoid this, the email must be prepared to be written to the database, we need to convert it to lower case and trim the spaces around the edges of the string. This problem can be solved in a couple of lines:
+
+    ```python
+    def save_email():
+        # Email comes from the form
+        email = '  SuppORT@hexlet.IO'
+        # Trim whitespace characters
+        trimmed_email = email.strip()
+        prepared_email = trimmed_email.lower()
+        print(prepared_email)
+        # Here will be the entry in the database
+    ```
+
+    This code was made possible because the value was returned. The `strip()` and `lower()` methods do not print anything on the screen, they **return** the result of their work. This means we can write it to variables. If they were printed to the screen, we wouldn't be able to assign the result to a variable. For example, we can't do that with the `greeting()` function:
+
+    ```python
+    message = greeting()
+    # in actual fact, print() returns None
+    # None is a special object used to represent no value
+    print(message) # => None
+    ```
+
+    Now change the `greeting()` function so that it returns data. To do this, let's perform a return instead of printing to the screen:
+
+    ```python
+    def greeting():
+        return 'Hello, Hexlet!'
+    ```
+
+    `return' is an instruction. It takes the expression written to the right and gives it to the code that called the method. This is where the function ends.
+
+    ```python
+    # Now we can use the result of the function
+    message = greeting()
+    print(message) # => Hello, Hexlet!
+    # And even perform some actions on the result
+    print(message.upper()) # => HELLO, HEXLET!
+    ```
+
+    Any code after `return` is not executed:
+
+    ```python
+    def greeting_with_code_after_return():
+        return 'Hello, Hexlet!'
+        print('I will never be executed')
+    ```
+
+    Even if the function returns data, this doesn't limit what it prints. In addition to returning data, we can also print:
+
+    ```python
+    def greeting_with_return_and_printing():
+        print('I will appear in the console')
+        return 'Hello, Hexlet!'
+
+
+    # And it'll print the text on the screen and return the value
+    message = greeting_with_return_and_printing()
+    ```
+
+    You can print more than just a specific value. Since `return` works with expressions, it can have anything to the right of it. Here we should keep to the principles of code readability:
+
+    ```python
+    def greeting():
+        message = 'Hello, Hexlet!'
+        return message
+    ```
+
+    Here we don't return a variable. The value in this variable is always returned. Below is an example with calculations:
+
+    ```python
+    def double_five():
+        # или return 5 + 5
+        result = 5 + 5
+        return result
+    ```
+
+    It's not enough to just define a function. It's also important for it to be useful, and that the result is used. Now think about what the call to the `run()` function defined below will return?
+
+    ```python
+    # Definition
+    def run():
+        return 5
+        return 10
+
+
+    # What will be displayed?
+    print(run())
+    ```
+
+instructions: |
+
+  Implement the `say_hurray_three_times()` function, which returns the string 'hurray! hurray! hurray!'.
+
+  ```python
+  hurray = say_hurray_three_times()
+  print(hurray) # => hurray! hurray! hurray!
+  ```
+# tips: []

@@ -1,0 +1,5 @@
+---
+
+name: Loops
+description:
+  Any code can be repeated dozens, thousands, millions of times. When we combine loops with the other tools we know, variables and conditions, it opens up many possibilities for building programs and complex systems. Here's a simple example. You need to find a specific phrase in a 500-page textbook. You remember the phrase, but not the page number. The easiest (and longest) way is to browse through the pages one by one until you find the right one. Loops are needed to perform these repetitive actions.

@@ -1,0 +1,75 @@
+---
+
+name: else
+theory: |
+
+    Now let's modify the function from the previous lesson so that it returns the whole string `Normal sentence` or `Question` instead of just the sentence type:
+
+    ```python
+    def get_type_of_sentence(sentence):
+        last_char = sentence[-1]
+
+        if last_char == '?':
+            sentence_type = 'question'
+        else:
+            sentence_type = 'normal'
+
+        return "Sentence is " + sentence_type
+
+    print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
+    print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
+    ```
+
+    We added `else` and a new block. It'll execute if the condition in `if` is false. You can also put other `if` conditions in the `else` block. 
+
+    `if-else' constructions can be arranged in two ways. Negation allows you to change the order of the blocks:
+
+    ```python
+    def get_type_of_sentence(sentence):
+        last_char = sentence[-1]
+
+        if last_char != '?':
+            sentence_type = 'normal'
+        else:
+            sentence_type = 'question'
+
+        return "Sentence is " + sentence_type
+    ```
+
+    To make it easier, try choosing non-negative checks and adjust the contents of the blocks to suit it.
+
+instructions: |
+
+  Implement a function called `normalize_url()` function, which normalizes data. It takes a site address and returns it with `https://` at the beginning.
+
+  The function accepts addresses as `ADDRESS` or `http://ADDRESS`, but always returns the address as `https://ADDRESS`. You can also pass fully normalized data, e.g., `https://ADDRESS`, in which case you don't need to change anything.
+
+  Call examples:
+
+  ```python
+  print(normalize_url('https://yahoo.com/'))  # => 'https://yahoo.com/'
+  print(normalize_url('google.com'))     # => 'https://google.com'
+  print(normalize_url('http://ai.fi'))   # => 'https://ai.fi'
+  ```
+
+  There are several ways to do this task. One of them is to compare the first 7 characters of the argument string with the string `http://` and then decide whether to `http://` or not based on that.
+
+  You'll also most likely need to discard the unnecessary part at the beginning of the string. Remember when we looked at the way to get part of a string using string slices? If not, here's a quick reminder
+
+  ```python
+  # Take 6 characters from the beginning
+  print('Winterfell'[:6])  # => 'Winter'
+  ```
+
+  So, with slicing, you can also discard a certain number of characters:
+
+  ```python
+  # Discard the first 6 characters
+  print('Winterfell'[6:])  # => 'fell'
+  ```
+
+tips: []
+
+definitions:
+  - name: "else"
+    description: "a way to specify the block of code that'll be executed if an `if` condition is not satisfied."

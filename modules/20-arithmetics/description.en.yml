@@ -1,0 +1,5 @@
+---
+
+name: Arithmetic in Python
+description:
+  Today's programs are created to serve businesses, help with daily life, and entertain. But they are still based on computation. The simplest and most basic subject in programming is arithmetic. In this module we will translate arithmetic operations into programming language, master the basic terminology - for example, how an operator differs from an operand. We will talk about the priority of operations. And at the end we will tell you what a linter is and why it can "swear".

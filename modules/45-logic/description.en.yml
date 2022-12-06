@@ -1,5 +1,5 @@
 ---
 
-name: Логика
+name: Logic
 description: |
-  Логические выражения позволяют отвечать на вопросы, которые возникают во время работы программы. Пользователь аутентифицирован? Подписка оплачена? Год високосный? В этом модуле изучаем функции-предикаты – те, которые задают вопрос и отвечают на него – правда это или ложь. Попрактикуемся в написании таких функций и перейдем к более сложным логическим выражениям.
+  Logical expressions allow you to answer questions that arise while the program is running. Is the user authenticated? Is the subscription paid for? Is it a leap year? In this module, we will study functions-predicates - those that ask a question and answer it - true or false. We will practice writing such functions and move on to more complex logical expressions.

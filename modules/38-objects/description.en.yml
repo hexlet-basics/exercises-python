@@ -1,5 +1,5 @@
 ---
 
-name: Свойства и методы
+name: Properties and methods
 description: |
-  Данные, которыми мы оперируем в своих программах, могут обладать важными атрибутами. В Python атрибуты встроены прямо в язык. Кроме статических свойств у данных существуют методы — функции, находящиеся внутри свойств. Свойства и методы — такие же выражения, как переменные или вызовы функции, а значит, их можно всячески комбинировать. Глубже эти темы разбираются на отдельных курсах, посвященных объектно-ориентированным возможностям Python. Мы же в этом модуле изучим основы.
+  The data we use in our programs can have important attributes. In Python, attributes are built right into the language. In addition to static properties, data also have methods - functions inside of properties. Properties and methods are just like expressions, like variables or function calls, which means they can be combined in all sorts of ways. These topics are covered in greater depth in separate courses about the object-oriented features of Python. In this module, we will cover the basics.

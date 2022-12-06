@@ -1,5 +1,5 @@
 ---
 
-name: Циклы
+name: Loops
 description:
-  Любой код может повторяться десятки, тысячи, миллионы раз. В комбинации с другими известными нам инструментами — переменными и условиями — это открывает множество возможностей по построению программ и сложных систем. Приведем простой пример. Вам нужно найти конкретную фразу в учебнике из 500 страниц. Фразу вы помните, а вот номер страницы нет. Самый простой (и долгий) способ — последовательно просматривать страницы до тех пор, пока не найдете нужную. Для выполнения таких повторяющихся действий и нужны циклы.
+  Any code can be repeated dozens, thousands, millions of times. When we combine loops with the other tools we know, variables and conditions, it opens up many possibilities for building programs and complex systems. Here's a simple example. You need to find a specific phrase in a 500-page textbook. You remember the phrase, but not the page number. The easiest (and longest) way is to browse through the pages one by one until you find the right one. Loops are needed to perform these repetitive actions.

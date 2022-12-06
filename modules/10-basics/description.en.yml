@@ -1,5 +1,5 @@
 ---
-name: Основы языка Python
+name: Python Basics
 description: |
-  Python (или, как его еще называют, «питон») – популярный и перспективный язык. Его часто выбирают в качестве первого для знакомства с программированием.
-  Изучать Python мы будем с нуля, с самых азов. Первый модуль – плацдарм  для написания осмысленных программ. В нем мы разберем, как дать команду компьютеру на языке Python. Расскажем, что такое комментарии и зачем они нужны. На примере проверки ваших решений на сайте рассмотрим, что такое тестирование и как читать вывод тестов. Объясним, почему нельзя нарушать грамматические правила языка программирования.
+  Python (or "python" as it is called) is a popular and promising language. It is often chosen as the first language to learn programming.
+  We will learn Python from scratch, from the very basics. The first module is a springboard to writing meaningful programs. In it, we'll figure out how to give a computer a command in Python. We'll tell you what comments are and what they're for. On the example of checking your decisions on the site we'll consider what testing is and how to read test output. We'll explain why you shouldn't break grammar rules of the programming language.

@@ -1,6 +1,5 @@
 ---
 
-name: Глубже про строки
+name: Deeper About Lines
 description:
-  Продолжаем изучать строки и их связь с переменными. Разбираем интерполяцию, извлечение символов, слайсы и другое
-
+  Continuing to study strings and their relationship to variables. We'll take a look at interpolation, character extraction, slice, and more.

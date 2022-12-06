@@ -1,5 +1,5 @@
 ---
 
-name: Вызов функций
+name: Calling functions
 description:
-  Для выражения любой произвольной операции в программировании существует понятие «функция». Функции — кирпичики, из которых программисты строят системы. В этом модуле мы научимся пользоваться уже созданными функциями. Посмотрим на сигнатуру функции в документации и разберемся, как её использовать. Познакомимся со стандартными библиотеками, которые хранят тысячи функций. Все функции невозможно выучить, но каждый программист должен знать, где искать документацию по ним.
+  There is a concept of "function" to express any arbitrary operation in programming. Functions are the building blocks from which programmers build systems. In this module we will learn how to use the functions we have already created. We will look at the function signatures in the documentation and figure out how to use them. We will learn about the standard libraries that hold thousands of functions. It is impossible to learn all the functions, but every programmer should know where to find the documentation about them.

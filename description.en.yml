@@ -1,15 +1,16 @@
 ---
 
-title: 'Бесплатный курс Python (питон), самостоятельное обучение программированию с нуля'
+title: |
+  Free Python Course
 
 header: |
   Python: Perfect for Beginners
-  
+
 description: |
-  Изучение программирования — непростой и длительный процесс. Изучение синтаксиса языка — самая простая и короткая часть в пути, но без неё невозможно начать. Этот курс посвящен азам написания программ на Python. Он готовит плацдарм для написания осмысленных программ
+  Learning to program is a difficult and time-consuming process. Learning language syntax is the easiest and shortest part of the journey, but that doesn't mean that it's unimportant, it's where you've got to start. This course is about the basics of writing programs in Python. It gives you a springboard so that you can start writing meaningful programs
 
 seo_description: |
-  Обучение азам программирования на языке Python для начинающих. Уроки программирования с нуля: основы, синтаксис, арифметика на питоне
+  Learning the basics of Python programming for beginners. Programming lessons from scratch: fundamentals, syntax, arithmetic in Python
 
 keywords:
   - code basics

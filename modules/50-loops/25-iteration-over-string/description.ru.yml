@@ -15,7 +15,7 @@ theory: |
       while i < len(name):
           # Обращаемся к символу по индексу
           print(name[i])
-          i += 1
+          i = i + 1
 
   name = 'Arya'
   print_name_by_symbol(name)

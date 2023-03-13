@@ -4,7 +4,7 @@
 
 ## How to contribute
 
-* Discussions at #hexlet-volunteers Slack channel http://slack.hexlet.io
+* Discussions in [Telegram community](https://t.me/hexletcommunity/12)
 
 ## Develop
 

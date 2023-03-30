@@ -7,4 +7,4 @@ def get_number_explanation(number):
         case 42:
             return 'answer for everything'
         case _:
-            return None
+            return 'just a number'

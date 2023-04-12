@@ -15,9 +15,9 @@ theory: |
   def has_capital_letter(str):
       # Проверяет наличие хотя бы одной заглавной буквы в строке
 
-   def is_correct_password(password):
-      length = len(password)
-      return length > 8 and has_capital_letter(password)
+  def is_correct_password(password):
+     length = len(password)
+     return length > 8 and has_capital_letter(password)
 
   print(is_correct_password('Qwerty'))                   # => False
   print(is_correct_password('Qwerty1234'))               # => True

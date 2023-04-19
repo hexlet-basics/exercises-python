@@ -1,0 +1,51 @@
+---
+
+name: Type Annotations
+theory: |
+
+  **Type annotations** are an ability to specify parameter types and return values for functions in Python. This is not a mandatory requirement of the language, but it can help programmers in further development, improve the readability of the code and increase its reliability.
+
+  Let's look at a simple example of a function without type annotations:
+  
+  ```python
+  def concat(first, second):
+      return first + second
+  ```
+  
+  This function concatenates two strings into one, but it's not immediately obvious from looking at the code what types the arguments are and that the function operates on strings rather than adding, for example, two numbers.
+  
+  If you use this function in your code in the future, you may need to check the types of the arguments before passing them into the function, which increases the size of the code and makes it harder to understand.
+  
+  Now let's add type annotations to the function:
+  
+  ```python
+  def concat(first: str, second: str) -> str:
+      return first + second
+  ```
+  
+  Here we have specified that the arguments `first` and ``second` must be of type string (`str`) and the return value will also be string. Now, when using this function in future code, it will be easier to understand what types of arguments can be passed, and what type the return value is expected to be.
+  
+  Type annotations can also be used to define variable types within a function. For example:
+  
+  ```python
+  def double(n: int) -> int:
+      result: int = n * 2
+      return result
+  ```
+  
+  In this example, we have defined the type of the `result` variable as `int` using type annotation.
+  
+  Type annotations are not strict type-checking in Python, and their use does not guarantee that a function will be called with arguments and return values of the specified types. Python remains a dynamically typed language, and type annotations do not affect the ability to pass arguments of different types or return values of other types. But using them does help simplify code reading and understanding, and helps keep track of errors.
+
+Instructions: |
+
+  Implement a function, `letter_multiply()`, which accepts three parameters: a string, a character, and the number of times the character should be repeated in the word.
+
+  ```python
+  text = 'python'
+  print(letter_multiply(text, 'p', 2)) # => ppython
+  print(letter_multiply(text, 'y' 3)) # => pyyython
+  print(letter_multiply(text, 'n', 4)) # => pythonnnn
+  ```
+
+  Specify type annotations when declaring a function.

@@ -18,7 +18,7 @@ theory: |
   
   Теперь давайте добавим аннотации типов к функции:
   
-  ```pythons
+  ```python
   def concat(first: str, second: str) -> str:
       return first + second
   ```

@@ -5,7 +5,7 @@ theory: |
 
   We've already figured out how to work with variables to store and reuse information. But they also help simplify complex calculations. For example, currency conversion or making up a new word. Let's look at how to do it in practice.
 
-  Let us imagine that we need to convert euros into rubles via dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
+  Let us imagine that we need to convert euros into yuans via dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
 
   First, convert 50 euros into dollars. Suppose that one euro is $1.25:
 
@@ -41,27 +41,27 @@ theory: |
 
   This code will display the string `dragon's mother`. If you want to check it yourself, run the code on [repl.it](https://repl.it/languages/python3) and experiment with it.
 
-  Variables can be used to write even more complex calculations. Now, back to our currency program. Let's write the dollar value in rubles as a separate variable. Let's calculate the value of 50 euros in dollars by multiplying it by `1.25`. Suppose that 1 dollar is 60 rubles:
+  Variables can be used to write even more complex calculations. Now, back to our currency program. Let's write the dollar value in yuans as a separate variable. Let's calculate the value of 50 euros in dollars by multiplying it by `1.25`. Suppose that 1 dollar is 6.91 yuans:
 
   ```python
-  rubles_per_dollar = 60
+  yuans_per_dollar = 6.91
   dollars_count = 50 * 1.25  # 62.5
-  rubles_count = dollars_count * rubles_per_dollar  # 3750.0
+  yuans_count = dollars_count * yuans_per_dollar  # 431.875.0
 
-  print(rubles_count)
+  print(yuans_count)
   ```
 
   Now let's add text to the output using concatenation:
 
   ```python
-  rubles_per_dollar = 60
+  yuans_per_dollar = 6.91
   dollars_count = 50 * 1.25  # 62.5
-  rubles_count = dollars_count * rubles_per_dollar  # 3750.0
+  yuans_count = dollars_count * yuans_per_dollar  # 431.875.0
 
   # The str() function turns a number into a string.
   # There will be a separate lesson about these transformations.
-  print('The price is ' + str(rubles_count) + ' rubles')
-  # => The price is 3750.0 rubles
+  print('The price is ' + str(yuans_count) + ' yuans')
+  # => The price is 431.875.0 yuans
   ```
 
   Any variable can be part of any expression. At the moment of calculation, the name of the variable will be replaced by its value.
@@ -72,7 +72,7 @@ theory: |
 
 instructions: |
 
-  Write a program that takes the original number of euros written in the variable `euros_count`, converts euros to dollars, and prints it to the screen. Then, it should convert the result to rubles and print it on a new line.
+  Write a program that takes the original number of euros written in the variable `euros_count`, converts euros to dollars, and prints it to the screen. Then, it should convert the result to yuans and print it on a new line.
 
   Example output for 100 euros:
 
@@ -82,5 +82,5 @@ instructions: |
   ```
 
   For the purposes of the exercise, we'll say that:
-  - 1 euro = $1.25 долларов
+  - 1 euro = $1.25
   - 1 dollar = 4,50 zl

@@ -39,7 +39,7 @@ theory: |
   print(who)
   ```
 
-  This code will display the string `dragon's mother`. If you want to check it yourself, run the code on [repl.it](https://repl.it/languages/python3) and experiment with it.
+  This code will display the string `dragon's mother`. If you want to check it yourself, run the code on [repl.it](https://replit.com/languages/python3) and experiment with it.
 
   Variables can be used to write even more complex calculations. Now, back to our currency program. Let's write the dollar value in rubles as a separate variable. Let's calculate the value of 50 euros in dollars by multiplying it by `1.25`. Suppose that 1 dollar is 60 rubles:
 

@@ -4,7 +4,7 @@ name: Linter
 theory: |
   We have already learned how to write simple programs, so we can talk a little bit about how to write them correctly.
 
-  The code needs to be written in a certain way so that it is understandable and easy to maintain. There are special sets of rules that describe different aspects of writing code - they are called **coding standards**. The standard in Python is one - [PEP8](https://www.python.org/dev/peps/pep-0008/). It answers practically all the questions about how to design this or that part of the code. This document has all the rules you need to follow. We advise newcomers to get in the habit of looking at the PEP8 standard and writing code according to it.
+  The code needs to be written in a certain way so that it is understandable and easy to maintain. There are special sets of rules that describe different aspects of writing code - they are called **coding standards**. The standard in Python is one - [PEP8](https://peps.python.org/pep-0008/). It answers practically all the questions about how to design this or that part of the code. This document has all the rules you need to follow. We advise newcomers to get in the habit of looking at the PEP8 standard and writing code according to it.
 
   Today you don't need to remember all the rules from the standard because there are special programs that check the code automatically and report violations. Such programs are called **linters**. They check the code for standards compliance. In Python there are quite a few of them, and the most popular one is — [flake8](https://flake8.pycqa.org/en/latest/).
 

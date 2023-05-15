@@ -11,7 +11,7 @@ theory: |
   * **snake\_case** — underscores (`my_super_var`) are used to separate the parts
   * **CamelCase** — each word in the variable is capitalized (`MySuperVar`)
 
-  Variables in Python are generally named in the `snake_case` style; words are written in lowercase letters and separated by an underscore `_`. For more details, you can study the section [«How to name variables»](https://www.python.org/dev/peps/pep-0008/#naming-conventions) in the PEP8 standard.
+  Variables in Python are generally named in the `snake_case` style; words are written in lowercase letters and separated by an underscore `_`. For more details, you can study the section [«How to name variables»](https://peps.python.org/pep-0008/#naming-conventions) in the PEP8 standard.
 
   At [Hexlet](https://hexlet.io/) we start with linters nigh on straight away.
 

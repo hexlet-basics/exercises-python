@@ -1,34 +1,26 @@
+---
+
 name: Class and Init Method
 theory: |
 
-In Python, a class is a code template for creating objects. Objects have member variables and have behavior associated with them. In python, a class is created by the keyword class.
+    In Python, a class is a code template for creating objects. Objects have member variables and have behavior associated with them. In python, a class is created by the keyword class.
 
-The __init__ method in Python is a special method that gets called when a memory is allocated for a new object. This method initializes the new object. The __init__ method is called immediately after an object of a class is instantiated. The method is useful to do any initialization you want to do with your object.
+    The __init__ method in Python is a special method that gets called when a memory is allocated for a new object. This method initializes the new object. The __init__ method is called immediately after an object of a class is instantiated. The method is useful to do any initialization you want to do with your object.
 
-Example:
+    Example:
 
-'class Person:
-    def __init__(self, name):
-        self.name = name
+        'class Person:
+            def __init__(self, name):
+                self.name = name
 
-p = Person("John")
-print(p.name)  # John'
+        p = Person("John")
+        print(p.name)  # John'
 
-In the code above, the Person class has an __init__ method that takes self and name parameters. self is a special parameter that is always passed as the first argument and refers to the instance of the class. In the __init__ method, we assign the name parameter to self.name. After creating an object p of the Person class, we can then access the name attribute and print it.
+        In the code above, the Person class has an __init__ method that takes self and name parameters. self is a special parameter that is always passed as the first argument and refers to the instance of the class. In the __init__ method, we assign the name parameter to self.name. After creating an object p of the Person class, we can then access the name attribute and print it.
 
 instructions: |
 
 Given a class Person with a name attribute and an age attribute. Write an __init__ method that accepts two parameters: 
-a name and an age, and assigns them to the respective attributes of the object. Remember, the self parameter is always passed first in any method of a class.
+    a name and an age, and assigns them to the respective attributes of the object. Remember, the self parameter is always passed first in any method of a class.
 
-Example of usage:
-
-python
-Copy code
-person = Person("John", 25)
-print(person.name)  # "John"
-print(person.age)   # 25
 tips: []
-
-
-

@@ -1,8 +1,10 @@
+---
+
 name: Classes and methods
 description: |
 
-In Python, the data we use in our programs can be organized into classes. Classes form the basis of object-oriented programming in Python.
+  In Python, the data we use in our programs can be organized into classes. Classes form the basis of object-oriented programming in Python.
 
-Classes have attributes and methods. Attributes are variables associated with the class, and methods are functions associated with the class.
+  Classes have attributes and methods. Attributes are variables associated with the class, and methods are functions associated with the class.
 
-A class is declared using the class keyword, followed by the class name and a colon. Inside the class, you can define attributes and methods.
+  A class is declared using the class keyword, followed by the class name and a colon. Inside the class, you can define attributes and methods.

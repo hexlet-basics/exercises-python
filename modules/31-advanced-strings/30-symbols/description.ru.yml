@@ -64,4 +64,4 @@ tips: []
 
 definitions:
   - name: Индекс
-    description: "позицией символа внутри строки."
+    description: "позиция символа внутри строки."

@@ -39,17 +39,15 @@ theory: |
 
 instructions: |
 
-  Implement a function, `letter_multiply()`. It should accept three parameters:
+  Implement a function, `word_multiply()`. It should accept two parameters:
 
-  * String
-  * A character
-  * A number representing how many times to repeat the character in the word
+  * A word
+  * A number representing how many times to repeat the word
 
   ```python
   text = 'python'
-  print(letter_multiply(text, 'p', 2)) # => ppython
-  print(letter_multiply(text, 'y' 3)) # => pyyython
-  print(letter_multiply(text, 'n', 4)) # => pythonnnn
+  print(word_multiply(text, 2)) # => pythonpython
+  print(word_multiply(text, 0)) # => 
   ```
 
   Specify type annotations when declaring a function.

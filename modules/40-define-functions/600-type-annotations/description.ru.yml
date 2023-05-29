@@ -39,17 +39,15 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `letter_multiply()`. Она должна принимать три параметра:
+  Реализуйте функцию `word_multiply()`. Она должна принимать два параметра:
 
   * Строку
-  * Символ
-  * Число, которое обозначает, сколько раз нужно повторить символ в слове
+  * Число, которое обозначает, сколько раз нужно повторить строку
 
   ```python
   text = 'python'
-  print(letter_multiply(text, 'p', 2)) # => ppython
-  print(letter_multiply(text, 'y' 3)) # => pyyython
-  print(letter_multiply(text, 'n', 4)) # => pythonnnn
+  print(word_multiply(text, 2)) # => pythonpython
+  print(word_multiply(text, 0)) # => 
   ```
 
   Укажите аннотации типов при объявлении функции.

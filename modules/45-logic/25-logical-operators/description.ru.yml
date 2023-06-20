@@ -12,7 +12,7 @@ theory: |
   Вот функция, которая принимает пароль и говорит, соответствует ли он условиям (`True`) или не соответствует (`False`):  
 
   ```python
-  def has_capital_letter(str):
+  def has_capital_letter(string):
       # Проверяет наличие хотя бы одной заглавной буквы в строке
 
   def is_correct_password(password):
@@ -31,10 +31,10 @@ theory: |
   Операторы можно комбинировать в любом количестве и любой последовательности. Если в коде одновременно встречаются `and` и `or`, то приоритет задают скобками. Ниже пример расширенной функции, которая определяет корректность пароля:
 
   ```python
-  def has_capital_letter(str):
+  def has_capital_letter(string):
       # Проверяет наличие хотя бы одной заглавной буквы в строке
   
-  def has_special_chars(str):
+  def has_special_chars(string):
       # Проверяет содержание специальных символов в строке
 
   def is_strong_password(password):

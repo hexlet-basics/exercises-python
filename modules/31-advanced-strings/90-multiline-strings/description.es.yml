@@ -1,0 +1,92 @@
+---
+
+name: Multi-line strings
+theory: |
+
+  Imagine that we need to define a string that consists of multiple lines - that is, there are line breaks `\n` inside. For example, it will look like this:
+
+  ```python
+  text = 'Пример текста,\nсостоящего из\nнескольких строк'
+  ```
+
+  When printed, the string will look completely different:
+
+  ```bash
+  Пример текста,
+  состоящего из
+  нескольких строк
+  ```
+
+  For such situations, Python has another way of creating strings called **multi-line strings**. To describe such a "multi-line string", it is necessary to enclose it in triple quotes - `"""` or `'''`. Inside a multi-line string, you can break the text and not use the line break `\n`:
+
+  ```python
+  text = '''Пример текста,
+  состоящего из
+  нескольких строк
+  '''
+  ```
+
+  ```bash
+  Пример текста,
+  состоящего из
+  нескольких строк
+
+  ```
+
+  Note that there is an empty line at the end of the text. It appeared in the text because we put the closing quotes `'''` on a new line. If you do not move the closing quotes to a new line, the empty line will not appear in the text:
+
+  ```python
+  text = '''Пример текста,
+  состоящего из
+  нескольких строк'''
+  ```
+
+  ```bash
+  Пример текста,
+  состоящего из
+  нескольких строк
+  ```
+
+  Because of the triple quotes, multi-line strings do not require escaping quotes inside the string:
+
+  ```bash
+  Здесь не нужно экранировать 'одинарные' и "двойные" кавычки
+  ```
+
+  Furthermore, multi-line strings can become f-strings for interpolation:
+
+  ```python
+  a = 'A'
+  b = 'B'
+
+  # Added f on the left
+  text = f'''{a} и {b}
+  сидели на трубе
+  '''
+  ```
+
+  ```bash
+  А и B
+  сидели на трубе
+
+  ```
+
+  For the computer, it doesn't matter which methods of string concatenation and line breaks you use. It will still perform calculations and produce the desired result. Interpolation and multi-line strings are used for the convenience of developers to make the code easier to read.
+
+
+instructions: |
+
+  Assign the text below to the variable `text`. Use triple quotes.
+
+  ```
+  Lannister, Targaryen, Baratheon, Stark, Tyrell...
+  they're all just spokes on a wheel.
+  This one's on top, then that one's on top, and on and on it spins,
+  crushing those on the ground.
+  ```
+
+definitions: []
+
+tips:
+  - |
+    [Multi-line strings](https://www.w3schools.com/python/gloss_python_multi_line_strings.asp)

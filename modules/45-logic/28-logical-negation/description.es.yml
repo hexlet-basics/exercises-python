@@ -1,0 +1,77 @@
+---
+
+name: Negación
+theory: |
+
+  Junto con los operadores lógicos **Y** y **O**, a menudo se utiliza la operación de "**negación**". Esta operación cambia el valor lógico al opuesto. En programación, la negación se representa con el operador unario `not`:
+
+  ```python
+  not True   # False
+  not False  # True
+  ```
+
+  Por ejemplo, si tenemos una función que verifica si un número es par, podemos utilizar la negación para verificar si es impar:
+
+  ```python
+  def es_par(numero):
+      return numero % 2 == 0
+
+  print(es_par(10))      # => True
+  print(not es_par(10))  # => False
+  ```
+
+  En el ejemplo anterior, agregamos `not` antes de llamar a la función y obtuvimos el resultado opuesto.
+
+  La negación es una herramienta que nos permite expresar reglas deseadas en el código sin tener que escribir nuevas funciones.
+
+  Incluso si escribimos `not not es_par(10)`, el código funcionará de la siguiente manera:
+
+  ```python
+  print(not not es_par(10))  # => True
+  ```
+
+  https://replit.com/@hexlet/python-basics-logic-logical-negation
+
+  En lógica, la doble negación es equivalente a la ausencia de negación:
+
+  ```python
+  not not True   # True
+  not not False  # False
+
+  print(not not es_par(10))  # => True
+  print(not not es_par(11))  # => False
+  ```
+
+  Ahora sabes lo que significan los operadores **Y**, **O** y `not`. Con ellos, podrás crear condiciones compuestas a partir de dos o más expresiones lógicas.
+
+instructions: |
+
+  En esta lección, deberás implementar dos funciones: `es_palindromo()` y `no_es_palindromo()`
+
+  1. Implementa la función `es_palindromo()`, que determina si una palabra es un palíndromo o no. Un palíndromo es una palabra que se lee igual en ambos sentidos. Las palabras pueden estar en cualquier caso, por lo que primero debes convertir la palabra a minúsculas: `palabra.lower()`.
+
+      ```python
+      es_palindromo('шалаш') # verdadero
+      es_palindromo('хекслет') # falso
+      es_palindromo('Довод') # verdadero
+      es_palindromo('Функция') # falso
+      ```
+
+  2. Implementa la función `no_es_palindromo()`, que verifica que una palabra NO sea un palíndromo:
+
+      ```python
+      no_es_palindromo('шалаш') # falso
+      no_es_palindromo('Ага') # falso
+      no_es_palindromo('хекслет') # verdadero
+      ```
+
+      Para hacer esto, llama a la función `es_palindromo()` dentro de `no_es_palindromo()` y aplica la negación.
+
+tips:
+  - |
+    [Leyes de De Morgan](https://es.wikipedia.org/wiki/Leyes_de_De_Morgan)
+
+definitions:
+  - name: Negación
+    description: |
+      operación lógica que cambia el valor lógico al opuesto.

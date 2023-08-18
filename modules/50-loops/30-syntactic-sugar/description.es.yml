@@ -1,0 +1,36 @@
+---
+
+name: Azúcar sintáctico
+theory: |
+
+  Construcciones como `index = index + 1` se utilizan frecuentemente en Python, por lo que los creadores del lenguaje agregaron una forma abreviada: `index += 1`.
+
+  Solo difieren en la forma de escribirlos. El intérprete convertirá la construcción abreviada en la expandida.
+
+  Estas abreviaturas se llaman **azúcar sintáctico**, porque hacen que el proceso de escribir código sea un poco más fácil y agradable.
+
+  Existen formas abreviadas para todas las operaciones aritméticas y para la concatenación de cadenas:
+
+  * `a = a + 1` → `a += 1`
+  * `a = a - 1` → `a -= 1`
+  * `a = a * 2` → `a *= 2`
+  * `a = a / 1` → `a /= 1`
+
+instructions: |
+
+  Implementa la función `filter_string()`, que recibe una cadena y un carácter, y devuelve una nueva cadena en la que se elimina el carácter pasado en todas sus posiciones. Intenta no utilizar métodos incorporados para trabajar con cadenas en tu solución.
+
+  ```python
+  text = 'If I look back I am lost'
+  filter_string(text, 'I')  # 'f  look back  am lost'
+  filter_string(text, 'o')  # 'If I lk back I am lst'
+  ```
+
+tips:
+  - |
+    [Azúcar sintáctico](https://es.wikipedia.org/wiki/Azúcar_sintáctico)
+
+definitions:
+  - name: Azúcar sintáctico
+    description: |
+      son características sintácticas que no afectan el comportamiento del programa, pero hacen que el uso del lenguaje sea más conveniente para los humanos.

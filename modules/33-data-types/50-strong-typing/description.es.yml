@@ -1,0 +1,34 @@
+---
+
+name: Tipado fuerte (o estricto)
+theory: |
+
+  Python es uno de los lenguajes que se adhiere estrictamente a los tipos de datos. Por lo tanto, cualquier incompatibilidad de tipos será respondida con un error. Todo esto se debe al tipado fuerte.
+
+  Conocemos dos tipos de datos diferentes: números y cadenas de texto. Por ejemplo, podemos sumar números porque la operación de suma es una operación para el tipo "número". Pero, ¿qué sucede si aplicamos esta operación a un número y una cadena de texto?
+
+  ```python
+  print(1 + '7')  # TypeError: unsupported operand type(s)...
+  ```
+
+  Python no permitirá sumar el número `1` y la cadena de texto `'7'`, ya que son valores de tipos diferentes. Primero debemos convertir la cadena de texto en un número o el número en una cadena de texto. Hablaremos sobre cómo hacer esto más adelante.
+
+  Este enfoque meticuloso hacia la compatibilidad de tipos se llama **tipado estricto** o **tipado fuerte**. Python es un lenguaje con tipado fuerte.
+
+  No todos los lenguajes funcionan de esta manera. Por ejemplo, PHP es un lenguaje con **tipado débil**. Conoce la existencia de diferentes tipos, pero no se adhiere a su uso de manera estricta. PHP intenta convertir la información cuando parece razonable. Lo mismo ocurre con JavaScript:
+
+  ```javascript
+  // ¿Qué te parece, Elon Musk?
+  // Número 1 + Cadena de texto 7 = Cadena de texto 17
+  1 + '7'; // '17'
+  ```
+
+  Por un lado, la conversión automática e implícita de tipos puede parecer conveniente. Pero en la práctica, esta característica del lenguaje crea muchos errores y problemas difíciles de encontrar. El código puede funcionar a veces y otras veces no, dependiendo de si la conversión automática tuvo "suerte". El programador no se dará cuenta de esto de inmediato y perderá mucho tiempo depurando.
+
+instructions: |
+
+  Muestre en pantalla el resultado de la expresión: `7 - (-8 - -2)`. Intente hacer que el número 7 sea una cadena de texto en lugar de un número. ¿Funcionará este código? Experimente también con otros números.
+
+tips: 
+  - |
+    [Tipado](https://es.wikipedia.org/wiki/Tipado_fuerte_y_tipado_d%C3%A9bil)

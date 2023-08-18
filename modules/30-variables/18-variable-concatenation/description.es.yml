@@ -1,0 +1,65 @@
+---
+
+name: Variables and Concatenation
+theory: |
+
+  Let's try using variables with concatenation, while syntactically nothing will change. We can concatenate two strings:
+
+  ```python
+  what = "Kings" + "road"
+  print(what)  # => Kingsroad
+  ```
+
+  This means that we can concatenate a string and a variable that contains a string:
+
+  ```python
+  first = "Kings"
+  what = first + "road"
+
+  print(what)  # => Kingsroad
+  ```
+
+  And we can also concatenate two variables that contain strings:
+
+  ```python
+  first = "Kings"
+  last = 'road'
+
+  what = first + last
+  print(what)  # => Kingsroad
+  ```
+
+  https://replit.com/@hexlet/python-basics-variables-concatenation
+
+  Variables are an important tool in programming. They simplify complex calculations and thus facilitate development. But to work successfully with variables, you need not only to use them correctly, but also to name them correctly. We will talk about this in the next lesson.
+
+instructions: |
+
+  Websites constantly send emails to their users. A typical task is to automatically send a personalized email with the user's name in the subject line. If the user's name is stored somewhere in the website's database as a string, the task of generating the subject line comes down to concatenation: for example, you need to concatenate the string `Hello` with the string that contains the name.
+
+  Write a program that will generate the subject line and the body of the email, using the provided variables, and display the resulting strings on the screen.
+
+  For the subject line, use the variables `first_name` and `greeting`, separated by a comma and an exclamation mark. Display this on the screen in the correct order.
+
+  For the body of the email, use the variables `info` and `intro`, with the second sentence on a new line.
+
+  The result on the screen should look like this:
+
+  <pre class='hexlet-basics-output'>
+  Hello, Joffrey!
+  Here is important information about your account security.
+  We couldn't verify your mother's maiden name.
+  </pre>
+
+  Complete the task using only two `print()` statements.
+
+tips:
+  - |
+    Think about which string and in what order you need to concatenate the variables to get such a two-line output for the body of the email.
+  - |
+    Remember that you can create a string that contains only the escape sequence `\n`. You can concatenate this string with variables for proper text formatting.
+
+definitions:
+  - name: Concatenation
+    description: |
+      the operation of joining two strings. For example, `console.log("King's " + ' Landing');`

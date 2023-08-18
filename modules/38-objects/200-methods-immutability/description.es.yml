@@ -1,0 +1,36 @@
+---
+
+name: Inmutabilidad
+theory: |
+
+  Supongamos que tenemos la siguiente llamada:
+
+  ```python
+  name = 'Tirion'
+  print(name.upper())  # => TIRION
+  # ¿Qué imprimirá esta llamada?
+  print(name)  # => ?
+  ```
+
+  La llamada al método `.upper()` devuelve un nuevo valor en el que todas las letras están convertidas a mayúsculas, pero no modifica la cadena original. Por lo tanto, el valor dentro de la variable seguirá siendo el antiguo: `'Tirion'`. Esta lógica se aplica a los métodos de todos los tipos primitivos.
+
+  En lugar de modificar los valores, se pueden **reemplazar** los valores. Para ello, se necesitan variables:
+
+  ```python
+  name = 'Tirion'
+  name = name.upper()
+  print(name)  # => TIRION
+  ```
+
+  https://replit.com/@hexlet/python-basics-objects-methods-immutability
+
+instructions: |
+
+  Los datos ingresados por los usuarios a menudo contienen espacios en blanco adicionales al principio o al final de la cadena. Por lo general, se eliminan utilizando el método [.strip()](https://docs.python.org/3/library/stdtypes.html). Por ejemplo, si teníamos: `'   hello\n '`, ahora tenemos: `'hello'`.
+
+  Actualiza la variable `first_name`, asignándole el mismo valor pero procesado con el método `.strip()`. Imprime en pantalla el resultado obtenido.
+
+definitions:
+  - name: Método
+    description: |
+      es una función o procedimiento que pertenece a una clase u objeto.

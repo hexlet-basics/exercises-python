@@ -1,0 +1,30 @@
+---
+
+name: Números de punto flotante
+
+theory: |
+
+  En matemáticas existen diferentes tipos de números, por ejemplo, los números naturales son enteros mayores o iguales a uno, o los números racionales son números con decimales, como 0.5. Desde el punto de vista de los dispositivos informáticos, hay una brecha entre estos tipos de números. Intenta responder a la siguiente pregunta, ¿cuánto es *0.2 + 0.1*? Y ahora veamos qué dice Python al respecto:
+
+  ```python
+  0.2 + 0.1 # 0.30000000000000004
+  ```
+
+  La operación de suma de dos números racionales resultó en un cálculo inexacto del resultado. Otros lenguajes de programación también darán el mismo resultado. Este comportamiento se debe a las limitaciones de la capacidad de cálculo. A diferencia de los números, la cantidad de memoria es finita (un número infinito de números requiere una cantidad infinita de memoria para almacenarlos).
+
+  Los números racionales no están dispuestos en una secuencia continua, entre *0.1* y *0.2* hay un conjunto infinito de números. Por lo tanto, surge un problema importante, ¿cómo almacenar números racionales? Esta es una pregunta interesante en sí misma. En Internet hay muchos artículos dedicados a la organización de la memoria en estos casos. Además, existe un estándar que describe cómo hacerlo correctamente, y la mayoría de los lenguajes se basan en él.
+
+  Para nosotros, como desarrolladores, es importante entender que las operaciones con números de punto flotante no son precisas (se puede ajustar esta precisión), por lo que al resolver problemas relacionados con este tipo de números, es necesario recurrir a trucos especiales que permitan lograr la precisión necesaria.
+
+instructions: |
+
+  Calcula y muestra en pantalla el producto de dos números: *0.39* y *0.22*
+
+tips:
+  - |
+    [Qué debes saber sobre la aritmética de punto flotante](https://habr.com/ru/articles/112953/)
+
+definitions:
+  - name: Número racional
+    description: |
+      número que se puede representar como una fracción común.

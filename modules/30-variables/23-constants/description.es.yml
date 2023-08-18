@@ -1,0 +1,23 @@
+---
+
+name: Constantes
+theory: |
+
+  Algunos datos nunca cambian, como las constantes matemáticas. Tomemos como ejemplo el número π. Siempre es igual a 3.14 y no puede cambiar. Para acceder a este tipo de datos, en Python se utilizan constantes:
+
+  ```python
+  PI = 3.14
+  print(PI)  # => 3.14
+  ```
+
+  Una constante se crea de la misma manera que una variable. La única diferencia es que las constantes se suelen nombrar con letras mayúsculas y usar `_` como separador entre palabras. Una constante, al igual que una variable, se puede utilizar en cualquier expresión.
+
+instructions: |
+
+  Crea la constante `DRAGONS_BORN_COUNT` y asígnale el valor de 3, que es la cantidad de dragones nacidos de Daenerys.
+
+tips: []
+
+definitions:
+  - name: Constante
+    description: una forma de almacenar información y darle un nombre para su uso posterior en el código; las constantes no se pueden modificar, a diferencia de las variables.

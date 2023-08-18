@@ -1,0 +1,58 @@
+---
+
+name: ¿Qué es una variable?
+theory: |
+
+  Imagina que necesitamos imprimir en pantalla la frase *¡Padre!* dos veces. Podemos resolver esta tarea de la siguiente manera:
+
+  ```python
+  print('¡Padre!')
+  print('¡Padre!')
+  ```
+
+  En el caso más simple, esto funciona bien. Pero si la frase *¡Padre!* se utiliza más de dos veces, y además en diferentes partes del programa, tendríamos que repetirla en todos los lugares, lo cual es incómodo. Los problemas con este enfoque comienzan cuando necesitamos cambiar la frase, lo cual ocurre con bastante frecuencia. Tendríamos que encontrar todos los lugares con esta frase y realizar el reemplazo necesario.
+
+  Pero hay otra forma de hacerlo. Para evitar copiar la expresión, simplemente creamos una variable con ella:
+
+  ```python
+  # greeting - se traduce como saludo
+  saludo = '¡Padre!'
+  print(saludo)
+  print(saludo)
+  # => ¡Padre!
+  # => ¡Padre!
+  ```
+
+  En la línea `saludo = '¡Padre!'` tomamos una variable con el nombre `saludo` y le asignamos el valor `'¡Padre!'`. La variable apunta a los datos que hemos almacenado en ella. Gracias a esto, los datos se pueden utilizar múltiples veces sin duplicarlos constantemente.
+
+  Una vez que se ha creado la variable, se puede utilizar. Se inserta en los lugares donde solía estar nuestra frase. Cuando se ejecuta el código, el intérprete llega a la línea `print(saludo)` y reemplaza el contenido de la variable, y luego ejecuta el código.
+
+  Para el nombre de la variable se puede utilizar cualquier conjunto de caracteres válidos, que incluyen letras del alfabeto inglés, números y el guión bajo `_`. Sin embargo, no se puede colocar un número al principio. Los nombres de las variables son sensibles a mayúsculas y minúsculas, es decir, `hola` y `HOLA` son dos nombres diferentes para dos variables diferentes. En Python, el caso es importante, nunca lo olvides.
+
+  El número de variables que se pueden crear es ilimitado. Los programas grandes contienen decenas y cientos de miles de nombres de variables. Así es como se ven dos variables dentro de un mismo programa:
+
+  ```python
+  saludo1 = '¡Padre!'
+  print(saludo1)
+  print(saludo1)
+
+  saludo2 = '¡Madre!'
+  print(saludo2)
+  print(saludo2)
+  ```
+
+  https://replit.com/@hexlet/python-basics-variables-definition
+
+  Para que el programa sea fácil de leer, los programadores suelen crear variables lo más cerca posible del lugar donde se utilizan. Ahora necesitamos entender cómo modificarlas.
+
+instructions: |
+
+  Crea una variable llamada `motto` con el contenido `¡Lo que está muerto no puede morir!`. Imprime el contenido de la variable.
+
+tips:
+  - |
+    [Nomenclatura en programación](https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+definitions:
+  - name: Variable
+    description: una forma de almacenar información y darle un nombre para su uso posterior en el código.

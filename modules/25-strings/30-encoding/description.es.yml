@@ -1,0 +1,67 @@
+---
+
+name: Codificación
+theory: |
+
+  En el nivel más profundo, una computadora opera exclusivamente con los dígitos `0` y `1`. Esto se conoce como [código binario](https://es.wikipedia.org/wiki/C%C3%B3digo_binario), y los unos y ceros se llaman bits, abreviatura de "binary digit" (dígito binario).
+
+  Los números que estamos acostumbrados a utilizar en el sistema decimal se codifican utilizando números binarios:
+
+  - 0 ← 0
+  - 1 ← 1
+  - 2 ← 10
+  - 3 ← 11
+  - 4 ← 100
+  - 5 ← 101
+
+  Pero, ¿qué pasa con el texto? En realidad, la computadora no sabe nada acerca de las letras, signos de puntuación y otros caracteres de texto. Todos estos caracteres también se codifican con números.
+
+  Podemos tomar el alfabeto inglés y asignar un número a cada letra, comenzando desde uno en orden:
+
+  - a ← 1
+  - b ← 2
+  - c ← 3
+  - d ← 4
+  - ...
+  - z ← 26
+
+  Esto es lo que se conoce como **codificación**.
+
+  Durante su funcionamiento, los programas utilizan codificaciones para convertir números en caracteres y viceversa. Sin embargo, el programa en sí no tiene conocimiento del significado de estos caracteres.
+
+  - `hello` → `8` `5` `12` `12` `15`
+  - `7` `15` `15` `4` → `good`
+
+  Estas tablas que relacionan letras y números se llaman tablas de codificación. Además de las letras del alfabeto, las tablas de codificación incluyen signos de puntuación y otros caracteres útiles. Seguramente has encontrado tablas de codificación como [ASCII](https://es.wikipedia.org/wiki/ASCII) o [UTF-8](https://es.wikipedia.org/wiki/UTF-8).
+
+  Las diferentes codificaciones contienen diferentes conjuntos de caracteres. Inicialmente, tablas pequeñas como ASCII eran suficientes para la mayoría de las tareas. Sin embargo, solo incluían letras latinas, algunos caracteres simples como `%` y `?`, y caracteres de control especiales como el salto de línea.
+
+  Con la proliferación de las computadoras, diferentes países necesitaron sus propias tablas más amplias. Esto incluía letras cirílicas, caracteres chinos, árabe, matemáticos y tipográficos adicionales, y más tarde incluso emojis.
+
+  Hoy en día, en la mayoría de los casos se utiliza una de las variantes de [Unicode](https://es.wikipedia.org/wiki/Unicode), que incluye caracteres de casi todos los idiomas escritos del mundo.
+
+instructions: |
+
+  En Python, puedes "solicitar" y mostrar en pantalla cualquier carácter de la codificación ASCII. Para hacer esto, se utiliza la función `chr()`. Por ejemplo:
+
+  ```python
+  print(chr(63))
+  ```
+
+  https://replit.com/@hexlet/python-basics-string-encoding
+
+  Se mostrará en pantalla el carácter con el número 63, que es el signo de interrogación `?`. De esta manera, puedes mostrar cualquier carácter.
+
+  Utiliza la [tabla de códigos ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html). En esta tabla, nos interesa el código decimal (*dec* o *decimal*) con el que se codifican los caracteres.
+
+  Utilizando el ejemplo anterior y la tabla, muestra en pantalla (cada uno en su propia línea) `~`, `^` y `%`.
+
+  (Por supuesto, podrías "engañar" a las pruebas y simplemente hacer `print('~')`, etc., pero eso sería muy aburrido :)
+
+tips:
+  - |
+    [¿Qué son las codificaciones?](https://guides.hexlet.io/es/encoding/)
+
+definitions:
+  - name: Codificación
+    description: conjunto de caracteres codificados con números para representar texto en formato electrónico.

@@ -1,0 +1,53 @@
+---
+
+name: Anotaciones de tipos
+theory: |
+
+  **Anotaciones de tipos** son una forma de especificar los tipos de los parámetros y el valor de retorno de una función en Python. No es un requisito obligatorio del lenguaje, pero puede ayudar a los programadores en el desarrollo posterior, mejorar la legibilidad del código y aumentar su confiabilidad.
+
+  Veamos un ejemplo simple de una función sin anotaciones de tipos:
+
+  ```python
+  def concat(first, second):
+      return first + second
+  ```
+
+  Esta función concatena dos cadenas en una sola. A simple vista, es difícil entender qué está sucediendo en el código: qué tipos tienen los argumentos, por qué la función trabaja con cadenas en lugar de sumar, por ejemplo, dos números.
+
+  Si más adelante utilizamos esta función en el código, puede ser necesario verificar los tipos de los argumentos antes de pasarlos a la función, lo que aumenta la cantidad de código y dificulta su comprensión.
+
+  Ahora agreguemos anotaciones de tipos a la función:
+
+  ```python
+  def concat(first: str, second: str) -> str:
+      return first + second
+  ```
+
+  Aquí hemos especificado que los argumentos `first` y `second` deben ser de tipo cadena (`str`). El valor de retorno también será una cadena. Cuando usemos esta función en el código, será más fácil entender qué tipos de argumentos se pueden pasar y qué tipo de valor de retorno se espera.
+
+  Las anotaciones de tipos también se pueden utilizar para definir los tipos de las variables dentro de una función. Por ejemplo:
+
+  ```python
+  def double(n: int) -> int:
+      result: int = n * 2
+      return result
+  ```
+
+  En este ejemplo, hemos definido el tipo de la variable `result` como `int`, utilizando una anotación de tipo.
+
+  Las anotaciones de tipos no son una verificación estricta de tipos en Python. Su uso no garantiza que la función se llame con argumentos y un valor de retorno de los tipos especificados. Después de todo, Python sigue siendo un lenguaje de tipado dinámico. Las anotaciones de tipos no afectan la capacidad de pasar argumentos de diferentes tipos o devolver valores de otros tipos. Sin embargo, su uso facilita la lectura y comprensión del código, y ayuda a detectar errores.
+
+instructions: |
+
+  Implementa la función `word_multiply()`. Debe aceptar dos parámetros:
+
+  * Una cadena de texto
+  * Un número que indica cuántas veces se debe repetir la cadena
+
+  ```python
+  text = 'python'
+  print(word_multiply(text, 2)) # => pythonpython
+  print(word_multiply(text, 0)) # => 
+  ```
+
+  Especifica las anotaciones de tipos al declarar la función.

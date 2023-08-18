@@ -1,0 +1,69 @@
+---
+
+name: Operador ternario
+theory: |
+
+  Eche un vistazo a la definición de una función que devuelve el módulo de un número dado:
+
+  ```python
+  def abs(numero):
+      if numero >= 0:
+          return numero
+      return -numero
+  ```
+
+  Pero se puede escribir de manera más concisa. Para ello, a la derecha de `return` debe haber una expresión, pero `if` es una instrucción y no una expresión. En Python existe una construcción que funciona como un `if-else`, pero se considera una expresión. Se llama **operador ternario** y es el único operador en Python que requiere tres operandos:
+
+  ```python
+  def abs(numero):
+      return numero if numero >= 0 else -numero
+  ```
+
+  El patrón general se ve así: `<expresión si verdadero> if <predicado> else <expresión si falso>`.
+
+  Vamos a reescribir la versión inicial de `get_type_of_sentence()` de manera similar.
+
+  Antes:
+
+  ```python
+  def get_type_of_sentence(oracion):
+      ultimo_caracter = oracion[-1]
+      if ultimo_caracter == '?':
+          return 'pregunta'
+      return 'normal'
+  ```
+
+  Después:
+
+  ```python
+  def get_type_of_sentence(oracion):
+      ultimo_caracter = oracion[-1]
+      return 'pregunta' if ultimo_caracter == '?' else 'normal'
+
+  print(get_type_of_sentence('Hodor'))   # => normal
+  print(get_type_of_sentence('Hodor?'))  # => pregunta
+  ```
+
+  https://replit.com/@hexlet/python-basics-conditionals-ternary-operator
+
+  Se puede anidar un operador ternario dentro de otro operador ternario. Pero no se recomienda hacerlo, ya que ese código es difícil de leer y depurar.
+
+instructions: |
+
+  Implemente la función `flip_flop()`, que recibe una cadena como entrada y, si esa cadena es igual a `'flip'`, devuelve la cadena `'flop'`. De lo contrario, la función debe devolver `'flip'`.
+
+  Ejemplos de llamadas:
+
+  ```python
+  print(flip_flop('flip'))  # => 'flop'
+  print(flip_flop('flop'))  # => 'flip'
+  ```
+
+  Intente escribir dos versiones de la función: una con un if-else normal y otra con un operador ternario.
+
+tips: []
+
+definitions:
+  - name: Operador ternario
+    description: |
+      una forma de convertir una instrucción condicional simple en una expresión, por ejemplo, `numero if numero >= 0 else -numero`.

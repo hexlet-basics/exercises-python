@@ -1,0 +1,44 @@
+---
+
+name: |
+  Inmutabilidad de los tipos primitivos
+
+theory: |
+
+  Supongamos que queremos cambiar un carácter en una cadena de texto. Esto es lo que sucede:
+
+  ```python
+  first_name = 'Alexander'
+  first_name[0] = 'B'
+  # Error: TypeError: 'str' object does not support item assignment
+  ```
+
+  Esto ocurre debido a la inmutabilidad de los tipos primitivos en Python: el lenguaje no permite cambiar una cadena de texto físicamente. La inmutabilidad de los tipos primitivos es importante por varias razones. La razón principal es el rendimiento.
+
+  Pero a veces necesitamos cambiar una cadena de texto. Para eso existen las variables:
+
+  ```python
+  first_name = 'Alexander'
+  first_name = 'Blexander'
+  print(first_name)  # => Blexander
+  ```
+
+  Hay una gran diferencia entre *cambiar el valor de una variable* y *cambiar el valor en sí*. No se puede cambiar un tipo primitivo en Python, pero se puede cambiar un tipo compuesto. También se puede reemplazar el valor de una variable sin problemas.
+
+instructions: |
+  Se te han dado tres variables con los apellidos de diferentes personas. Crea y muestra en pantalla una palabra con los caracteres en el siguiente orden:
+
+  1. El tercer carácter de la primera cadena de texto
+  2. El segundo carácter de la segunda cadena de texto
+  3. El cuarto carácter de la tercera cadena de texto
+  4. El quinto carácter de la segunda cadena de texto
+  5. El tercer carácter de la segunda cadena de texto
+
+  Intenta usar interpolación: dentro de las llaves puedes colocar no solo variables enteras, sino también caracteres individuales usando corchetes.
+
+tips: []
+
+definitions:
+  - name: Inmutabilidad
+    description: |
+      estado en el que un objeto o variable no puede ser cambiado después de su creación

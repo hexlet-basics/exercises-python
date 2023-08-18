@@ -1,0 +1,52 @@
+---
+
+name: Instrucciones
+theory: |
+  Cuando preparamos una comida, seguimos la receta al pie de la letra. De lo contrario, la comida no saldrá como esperábamos. Esta regla también se aplica a la programación.
+
+  Para ver el resultado esperado en la pantalla, es necesario darle al ordenador instrucciones claras y paso a paso. Esto se puede hacer mediante instrucciones. Una instrucción es un comando para el ordenador, una unidad de ejecución. En este caso, el código en Python es un conjunto de instrucciones. Se puede representar como una receta paso a paso.
+
+  El código en Python es ejecutado por un **intérprete** - un programa que ejecuta las instrucciones en orden. Al igual que los pasos en una receta, el conjunto de instrucciones para el intérprete se escriben en orden y se separan por saltos de línea.
+
+  Los desarrolladores deben entender el orden de las acciones en el código y ser capaces de dividir mentalmente el programa en partes independientes, fáciles de analizar.
+
+  Veamos un ejemplo de código con dos instrucciones. Al ejecutarlo, se mostrarán en la pantalla dos frases en secuencia:
+
+  ```python
+  print('Madre de Dragones.')
+  print('¡Dracarys!')
+  # => Madre de Dragones.
+  # => ¡Dracarys!
+  ```
+
+  https://replit.com/@hexlet/python-basics-instructions
+
+  Anteriormente mencionamos que las instrucciones se separan por saltos de línea. Pero también hay otra forma: se pueden separar por punto y coma (`;`):
+
+  ```python
+  print('Madre de Dragones.'); print('¡Dracarys!')
+  ```
+
+  No hay diferencia técnica entre la primera y la segunda opción: el intérprete entenderá las instrucciones de la misma manera. La única diferencia es que la segunda opción es incómoda de leer para los humanos.
+
+  Es mejor colocar las instrucciones una debajo de la otra. De esta manera, será más fácil para tus colegas leer tu código, mantenerlo y realizar cambios en él.
+instructions: |
+  Imprime en la pantalla uno tras otro tres nombres: *Robert*, *Stannis*, *Renly*. Como resultado, se debe mostrar en la pantalla:
+
+  <pre class='hexlet-basics-output'>
+  Robert
+  Stannis
+  Renly
+  </pre>
+
+  Utiliza una llamada `print()` para cada nombre.
+
+tips:
+  - |
+    [Un poco sobre los intérpretes](https://es.wikipedia.org/wiki/Int%C3%A9rprete)
+definitions:
+  - name: Intérprete
+    description: |
+      un programa que ejecuta código en Python.
+  - name: Instrucción
+    description: un comando para el ordenador escrito en un lenguaje de programación. El código en Python es un conjunto de instrucciones separadas (generalmente) por saltos de línea.

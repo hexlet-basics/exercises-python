@@ -1,0 +1,5 @@
+---
+
+name: Variables
+description:
+  You can store information in special "containers" and then use it as many times as you need. These containers are called variables, and they help simplify the code and reduce unnecessary repetitions.

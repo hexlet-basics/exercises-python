@@ -1,0 +1,91 @@
+---
+
+name: Estructura condicional else
+theory: |
+
+    Ahora vamos a modificar la función del tema anterior para que no solo devuelva el tipo de oración, sino toda la cadena "La oración es normal" o "La oración es una pregunta":
+
+    ```python
+    def obtener_tipo_de_oracion(oracion):
+        ultimo_caracter = oracion[-1]
+
+        if ultimo_caracter == '?':
+            tipo_de_oracion = 'pregunta'
+        else:
+            tipo_de_oracion = 'normal'
+
+        return "La oración es " + tipo_de_oracion
+
+    print(obtener_tipo_de_oracion('Hola'))   # => 'La oración es normal'
+    print(obtener_tipo_de_oracion('Hola?'))  # => 'La oración es pregunta'
+    ```
+
+    https://replit.com/@hexlet/python-basics-conditionals-if-else
+
+    Hemos añadido un `else` y un nuevo bloque. Se ejecutará si la condición en el `if` es falsa. También se pueden anidar otras condiciones `if` dentro del bloque `else`. "Else" se traduce como "en otro caso" o "de lo contrario".
+
+    Ejemplo de bloques anidados:
+
+    ```python
+    numero = 10
+
+    if numero > 10:
+        print("El número es mayor que 10")
+    else:
+        if numero == 10:
+            print("El número es exactamente 10")
+        else:
+            print("El número es menor que 10")
+    ```
+
+    Se pueden estructurar las construcciones `if-else` de dos formas. Usando la negación se puede cambiar el orden de los bloques:
+
+    ```python
+    def obtener_tipo_de_oracion(oracion):
+        ultimo_caracter = oracion[-1]
+
+        if ultimo_caracter != '?':
+            tipo_de_oracion = 'normal'
+        else:
+            tipo_de_oracion = 'pregunta'
+
+        return "La oración es " + tipo_de_oracion
+    ```
+
+    Para facilitar la estructura de la construcción, intenta elegir una comprobación sin negación y ajusta el contenido de los bloques en consecuencia.
+
+instructions: |
+
+  Implementa la función `normalizar_url()`, que realiza la normalización de los datos. Recibe una dirección web y devuelve la misma con `https://` al principio.
+
+  La función acepta direcciones en forma de `DIRECCIÓN` o `http://DIRECCIÓN`, pero siempre devuelve la dirección en forma de `https://DIRECCIÓN`. También puede recibir una dirección ya normalizada `https://DIRECCIÓN`, en cuyo caso no se debe hacer ningún cambio.
+
+  Ejemplos de uso:
+
+  ```python
+  print(normalizar_url('https://ya.ru'))  # => 'https://ya.ru'
+  print(normalizar_url('google.com'))     # => 'https://google.com'
+  print(normalizar_url('http://ai.fi'))   # => 'https://ai.fi'
+  ```
+
+  Hay varias formas de resolver este problema. Una de ellas es comparar los primeros 7 caracteres de la cadena de argumento con la cadena `http://` y luego agregar o no agregar `https://` en base a eso.
+
+  También es probable que necesites descartar la parte innecesaria al principio de la cadena. Recuerda que vimos cómo obtener una parte de una cadena usando el slicing. Si no lo recuerdas, aquí tienes un recordatorio:
+
+  ```python
+  # Tomamos los primeros 6 caracteres
+  print('Invernalia'[:6])  # => 'Inver'
+  ```
+
+  Así es, con el slicing también puedes descartar un número determinado de caracteres:
+
+  ```python
+  # Descartamos los primeros 6 caracteres
+  print('Invernalia'[6:])  # => 'nalia'
+  ```
+
+tips: []
+
+definitions:
+  - name: "else"
+    description: "forma de especificar un bloque de código que se ejecutará si la condición del `if` no se cumple."

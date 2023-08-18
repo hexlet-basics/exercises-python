@@ -1,0 +1,94 @@
+---
+
+name: Expressions in Definitions
+theory: |
+
+  We have already learned how to work with variables to store and reuse information. But they also help simplify complex calculations. For example, currency conversion or creating a new word. Let's see how to do this in practice.
+
+  Let's imagine that we need to convert euros to yuan through dollars. Banks often make such conversions through an intermediate currency when making purchases abroad.
+
+  First, let's convert 50 euros to dollars. Let's assume that one euro is equal to 1.25 dollars:
+
+  ```python
+  dollars_count = 50 * 1.25
+  print(dollars_count)  # => 62.5
+  ```
+
+  Here, on the right side of the equals sign in the variable `dollars_count = 50 * 1.25`, we write an **expression**. The interpreter will calculate the result (`62.5`) and assign it to the variable. The interpreter doesn't care how the data is represented: `62.5` or `50 * 1.25`. Both options are expressions that need to be evaluated. It performs the calculations and arrives at the same value - `62.5`.
+
+  Any string is an expression. String concatenation (joining variable values) is also an expression. When the interpreter encounters an expression, it processes it and generates a result - the **value of the expression**.
+
+  Here are some examples of expressions. The final values are written in comments to the right of each expression:
+
+  ```python
+  62.5             # 62.5
+  50 * 1.25        # 62.5
+  120 / 10 * 2     # 24.0
+  int('100')       # 100
+
+  'hello'          # hello
+  'Good' + 'will'  # Goodwill
+  ```
+
+  In places where an expression is expected, you can put any calculation. It can be not only mathematical but also string concatenation. The program will still work.
+
+  Programs consist of many combinations of expressions. Based on what has been said above, think about whether the following code will work:
+
+  ```python
+  who = "dragon's " + 'mother'
+  print(who)
+  ```
+
+  This code will output the string `dragon's mother`. If you want to check it yourself, run the code on [repl.it](https://replit.com/languages/python3) and experiment.
+
+  Variables can be used to store even more complex calculations. Let's go back to our currency program. Let's assign the cost of a dollar in yuan as a separate variable. We will calculate the price of 50 euros in dollars by multiplying them by `1.25`. Let's assume that 1 dollar is equal to 6.91 yuan:
+
+  ```python
+  yuans_per_dollar = 6.91
+  dollars_count = 50 * 1.25  # 62.5
+  yuans_count = dollars_count * yuans_per_dollar  # 431.875
+
+  print(yuans_count)
+  ```
+
+  Now let's add text to the output using concatenation:
+
+  ```python
+  yuans_per_dollar = 6.91
+  dollars_count = 50 * 1.25  # 62.5
+  yuans_count = dollars_count * yuans_per_dollar  # 431.875
+
+  # The str() function converts a number to a string.
+  # There will be a separate lesson on such conversions.
+  print('The price is ' + str(yuans_count) + ' yuans')
+  # => The price is 431.875 yuans
+  ```
+
+  Any variable can be part of any expression. At the time of evaluation, the value of the variable is substituted for its name.
+
+  The interpreter calculates the value of `dollars_count` before this variable starts to be used in other expressions. When it comes time to use the variable, Python already knows its value because it has calculated it.
+
+  Variables can be used for complex calculations as well as for detailed output with the resulting value. But you can also obtain new expressions by concatenating two or more variable values. This is done through concatenation.
+
+instructions: |
+
+  Write a program that takes the initial amount of euros stored in the variable `euros_count`, converts euros to dollars, and prints it on the screen. Then convert the obtained value to yuan and print it on a new line.
+
+  Example output for 100 euros:
+
+  ```
+  125.0
+  863.75
+  ```
+
+  Assume that:
+  - 1 euro = 1.25 dollars
+  - 1 dollar = 6.91 yuan
+
+tips:
+  - |
+    [Expression](https://en.wikipedia.org/wiki/Expression_(computer_science))
+
+definitions:
+  - name: Variable
+    description: a way to store information and give it a name for later use in the code.

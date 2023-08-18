@@ -1,0 +1,63 @@
+---
+
+name: Cadena de llamadas
+theory: |
+
+  En esta lección veremos cómo combinar diferentes enfoques al escribir código, así como también analizaremos los errores típicos de los principiantes.
+
+  Tenemos el siguiente código:
+
+  ```python
+  name = 'Tirion'
+  print(name.upper().lower())  # => `tirion`
+  ```
+
+  Imprime en la pantalla `tirion`.
+
+  Es la primera vez que vemos la sintaxis de varios puntos seguidos, pero todas las operaciones que aparecen aquí nos son familiares. En este código se combinan las capacidades conocidas del lenguaje.
+
+  Esto ocurre a menudo en la programación. Si no conoces la sintaxis, aún puedes intentar combinar diferentes enfoques y existe la posibilidad de que funcionen.
+
+  Para entender cómo funciona este código, debemos descomponer la cadena de llamadas en operaciones individuales:
+
+  ```python
+  name = 'Tirion'
+  upper_name = name.upper()  # 'TIRION'
+  print(upper_name.lower())  # 'tirion'
+  ```
+
+  Los primeros dos ejemplos son equivalentes. Podemos realizar operaciones secuencialmente con la creación intermedia de variables, o podemos construir una cadena continua de atributos y métodos. En las cadenas de llamadas, los cálculos siempre se realizan de izquierda a derecha.
+
+  Otro ejemplo para reforzar el concepto:
+
+  ```python
+  name = 'Tirion'
+  print(name.replace('Ti', 'Ki').lower())  # => ?
+  ```
+
+  Necesitamos pensar bien en este código. `.lower()` se aplica al resultado de la llamada al método que está a la izquierda. Y el método `replace()` devuelve una cadena. Los principiantes a menudo cometen errores en las cadenas de llamadas y olvidan hacer la llamada:
+
+  ```python
+  name = 'Tirion'
+  # ¡Este código no funcionará correctamente!
+  print(name.upper.lower())
+  ```
+
+  También es posible construir cadenas infinitamente largas e inútiles que incluyen rebanadas:
+
+  ```python
+  name = 'Tirion'
+  # ¿Cuál es el resultado de esta llamada?
+  print(name[1:5].upper().find('I'))
+  ```
+
+  Esto no funciona con las funciones, ya que generalmente se anidan unas dentro de otras: `f(f(f()))`. Esto dificulta mucho el análisis. Pero esto no significa que no se pueda hacer de manera elegante. En otros lenguajes, esto se logra a través de la composición de funciones o el operador de canalización.
+
+instructions: |
+
+  Usando el corte de cadenas, obtén una parte de la oración almacenada en la variable `text`, desde el carácter `5` hasta el carácter `15`, inclusive. Luego, procesa la subcadena obtenida con el método `.strip()` y muestra en pantalla la longitud de la subcadena resultante. Realiza estas operaciones en cadena sin crear variables intermedias.
+
+definitions:
+  - name: Método
+    description: |
+      es una función o procedimiento que pertenece a una clase u objeto.

@@ -1,0 +1,73 @@
+---
+
+name: Conversión explícita de tipos
+theory: |
+
+  En programación, a menudo nos encontramos con situaciones en las que es necesario convertir un tipo de dato en otro, por ejemplo, al trabajar con formularios en sitios web. Los datos de los formularios siempre llegan en formato de texto, incluso si el valor es un número. Así es como se puede realizar la conversión:
+
+  ```python
+  # str se convierte en int
+  number = int('345')
+  print(number)  # => 345
+  ```
+
+  `int()` es una función a la que se le pasa un valor para convertirlo. La función se comporta de manera similar a las operaciones aritméticas, pero realiza acciones especiales. Aquí hay algunos ejemplos más:
+
+  ```python
+  value = '0'
+  # Dentro de los paréntesis se puede especificar una variable
+  converted_value = int(value)
+  print(converted_value)  # => 0
+
+  # O un valor específico
+  converted_value2 = int('10')
+  print(converted_value2)  # => 10
+
+  converted_value3 = int(False)
+  print(converted_value3)  # => 0
+
+  converted_value4 = int(True)
+  print(converted_value4)  # => 1
+
+  # Si se convierte un número de punto flotante
+  # se descarta la parte decimal
+  converted_value5 = int(3.5)
+  print(converted_value5)  # => 3
+  ```
+
+  https://replit.com/@hexlet/python-basics-data-types-casting
+
+  De la misma manera, se pueden convertir datos a cadenas de texto con `str()` y a números de punto flotante con `float()`:
+
+  ```python
+  value = str(10)
+  print(value)  # '10'
+
+  value2 = str(True)
+  print(value2)  # 'True'
+
+  value3 = float(5)
+  print(value3)  # 5.0
+  ```
+
+  Python realiza algunas conversiones automáticamente. Por ejemplo, en operaciones donde se encuentran simultáneamente un número entero y un número de punto flotante, Python los convierte automáticamente a **float**:
+
+  ```python
+  # El código float(3) + 1.2 se ejecuta implícitamente
+  value = 3 + 1.2
+  print(value)  # => 4.2
+  ```
+
+instructions: |
+
+  Imprime en la pantalla la cadena de texto `2 times`, obtenida a partir del número 2.9 (almacenado en la variable `value`) y la cadena de texto `times`, utilizando conversiones de tipos y concatenación. Para ello, debes realizar dos conversiones: primero a un número entero y luego a una cadena de texto.
+
+  <pre class='hexlet-basics-output'>
+  2 times
+  </pre>
+
+# definitions: []
+
+tips: 
+  - |
+    [Tipado](https://es.wikipedia.org/wiki/Tipado)

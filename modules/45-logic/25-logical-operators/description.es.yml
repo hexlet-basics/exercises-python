@@ -1,0 +1,116 @@
+---
+
+name: Operadores lógicos
+theory: |
+
+  Ya sabemos cómo escribir funciones que verifican condiciones individuales. En esta lección aprenderemos a construir condiciones compuestas.
+
+  Supongamos que un sitio web requiere que la contraseña tenga más de ocho caracteres y al menos una letra mayúscula al registrarse. Intentemos escribir dos expresiones lógicas separadas y combinarlas con el operador especial "Y":
+
+  > La contraseña tiene más de 8 caracteres **Y** la contraseña contiene al menos una letra mayúscula
+
+  Aquí hay una función que toma una contraseña y devuelve si cumple con las condiciones (`True`) o no (`False`):
+
+  ```python
+  def tiene_letra_mayuscula(cadena):
+      # Verifica si hay al menos una letra mayúscula en la cadena
+
+  def es_contraseña_correcta(contraseña):
+     longitud = len(contraseña)
+     return longitud > 8 and tiene_letra_mayuscula(contraseña)
+
+  print(es_contraseña_correcta('Qwerty'))                   # => False
+  print(es_contraseña_correcta('Qwerty1234'))               # => True
+  print(es_contraseña_correcta('qwerty1234'))               # => False
+  ```
+
+  `and` significa "Y". En lógica matemática, esto se llama conjunción. La expresión completa se considera verdadera si cada **operando** es verdadero, es decir, cada una de las expresiones compuestas. En otras palabras, `and` significa "y esto, y aquello". La prioridad de este operador es menor que la de los operadores de comparación. Por lo tanto, la expresión `tiene_letra_mayuscula(contraseña) and longitud > 8` también funciona correctamente sin paréntesis.
+
+  Además de `and`, se utiliza frecuentemente el operador `or` - "O" (disyunción). Significa "o esto, o aquello, o ambos". La expresión `a or b` se considera verdadera si al menos uno de los operandos o todos ellos son verdaderos. En caso contrario, la expresión es falsa.
+
+  Los operadores se pueden combinar en cualquier cantidad y en cualquier secuencia. Si en el código se encuentran `and` y `or` al mismo tiempo, se establece la prioridad mediante paréntesis. A continuación se muestra un ejemplo de una función extendida que determina la corrección de una contraseña:
+
+  ```python
+  def tiene_letra_mayuscula(cadena):
+      # Verifica si hay al menos una letra mayúscula en la cadena
+  
+  def tiene_caracteres_especiales(cadena):
+      # Verifica si hay caracteres especiales en la cadena
+
+  def es_contraseña_segura(contraseña):
+      longitud = len(contraseña)
+      # Los paréntesis establecen la prioridad. Es claro a qué se refiere cada uno.
+      return (longitud > 8 and tiene_letra_mayuscula(contraseña)) and tiene_caracteres_especiales(contraseña)
+  ```
+
+  Ahora, imaginemos que queremos comprar un apartamento que cumpla con las siguientes condiciones: un área de al menos 100 metros cuadrados en cualquier calle **O** un área de al menos 80 metros cuadrados, pero en la calle principal `Main Street`.
+
+  Escribamos una función que verifique el apartamento. Toma dos argumentos: el área - un número y el nombre de la calle - una cadena:
+
+  ```python
+  def es_buen_apartamento(area, calle):
+      return area >= 100 or (area >= 80 and calle == 'Main Street')
+
+  print(es_buen_apartamento(91, 'Queens Street'))  # => False
+  print(es_buen_apartamento(78, 'Queens Street'))  # => False
+  print(es_buen_apartamento(70, 'Main Street'))    # => False
+
+  print(es_buen_apartamento(120, 'Queens Street'))  # => True
+  print(es_buen_apartamento(120, 'Main Street'))    # => True
+  print(es_buen_apartamento(80, 'Main Street'))     # => True
+  ```
+
+  https://replit.com/@hexlet/python-basics-logic-logical-operators
+
+  El área de las matemáticas que estudia los operadores lógicos se llama álgebra booleana. A continuación, verás las **tablas de verdad** - con ellas puedes determinar el resultado al aplicar los operadores:
+
+  #### Y `and`
+
+  | A     | B     | A and B  |
+  | ----- | ----- | -------  |
+  | True  | True  | **True** |
+  | True  | False | False    |
+  | False | True  | False    |
+  | False | False | False    |
+
+  #### O `or`
+
+  | A     | B     | A or B   |
+  | ----- | ----- | -------- |
+  | True  | True  | **True** |
+  | True  | False | **True** |
+  | False | True  | **True** |
+  | False | False | False    |
+
+instructions: |
+
+  Implementa el método `es_año_bisiesto()`, que determina si un año es bisiesto o no. Un año es bisiesto si es divisible (es decir, no tiene residuo) por 400 o si es divisible por 4 y no es divisible por 100 al mismo tiempo. Como puedes ver, toda la lógica necesaria ya está incluida en la definición, solo falta trasladarla al código:
+
+  ```python
+  es_año_bisiesto(2018) # falso
+  es_año_bisiesto(2017) # falso
+  es_año_bisiesto(2016) # verdadero
+  ```
+
+  Puedes verificar la divisibilidad de la siguiente manera:
+
+  ```python
+  # % - devuelve el residuo de la división del operando izquierdo por el operando derecho
+  # Verifica si number es divisible por 10
+  number % 10 == 0
+
+  # Verifica si number no es divisible por 10
+  number % 10 != 0
+  ```
+
+tips:
+  - |
+    [Álgebra booleana](https://es.wikipedia.org/wiki/%C3%81lgebra_booleana)
+  - |
+    [Conjunción lógica](https://es.wikipedia.org/wiki/Conjunci%C3%B3n_l%C3%B3gica)
+  - |
+    [Disyunción lógica](https://es.wikipedia.org/wiki/Disyunci%C3%B3n_l%C3%B3gica)
+
+definitions:
+  - name: "Operadores lógicos"
+    description: "operadores 'Y' (`and`), 'O' (`or`), que permiten crear condiciones lógicas compuestas."

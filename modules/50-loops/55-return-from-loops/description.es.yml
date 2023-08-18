@@ -1,0 +1,63 @@
+---
+
+name: Return from Loops
+theory: |
+
+  Working with loops usually comes down to two scenarios:
+
+  1. Aggregation. Accumulating a result during iterations and working with it after the loop. Reversing a string is an example of this scenario.
+  2. Looping until a desired result is achieved and then exiting. For example, the task of finding prime numbers - numbers that are divisible only by themselves and one without a remainder.
+
+  Let's consider the algorithm for checking the primality of a number. We will divide the number `x` by all numbers in the range from two to `x - 1` and check the remainder. If no divisor is found in this range that divides the number `x` without a remainder, then the number is prime.
+
+  In this case, it is sufficient to check numbers up to `x / 2`, instead of `x - 1`. For example, 11 is not divisible by 2, 3, 4, 5. But it will not be divisible by numbers greater than its half. Therefore, the algorithm can be optimized by checking the division only up to `x / 2`:
+
+  ```python
+  def is_prime(number):
+      if number < 2:
+          return False
+
+      divider = 2
+
+      while divider <= number / 2:
+          if number % divider == 0:
+              return False
+
+          divider += 1
+
+      return True
+
+  print(is_prime(1))  # => False
+  print(is_prime(2))  # => True
+  print(is_prime(3))  # => True
+  print(is_prime(4))  # => False
+  ```
+
+  https://replit.com/@hexlet/python-basics-loops-return-from-loops
+
+  *To be completely honest, to solve the problem, it is enough to check numbers up to the square root of `number`. But in our case, it is important to focus on understanding the conditions inside the loop.*
+
+  Let's imagine that according to the algorithm of sequential division by numbers up to `x / 2`, one number was found that divides without a remainder. This means that the argument passed is not a prime number, and further calculations are meaningless. At this point, it is worth returning `False`.
+
+  If the loop has completed without finding a number that divides without a remainder, then the number is prime.
+
+instructions: |
+
+  Implement the function `is_contains_char()`, which checks whether a string contains the specified letter, taking into account the case. The function takes two parameters:
+
+  * String
+  * Letter to search for
+
+  ```python
+  print(is_contains_char('Hexlet', 'H'))  # => True
+  print(is_contains_char('Hexlet', 'h'))  # => False
+  print(is_contains_char('Awesomeness', 'm'))  # => True
+  print(is_contains_char('Awesomeness', 'd'))  # => False
+  ```
+
+tips:
+  - "[List of prime numbers](https://en.wikipedia.org/wiki/List_of_prime_numbers)"
+
+definitions:
+  - name: Aggregation
+    description: "Accumulating a result during iterations and working with it after the loop."

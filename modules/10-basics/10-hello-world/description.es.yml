@@ -17,7 +17,7 @@ instructions: |
   print('¡Hello, World!')
   ```
 
-  Atención: si escribes `Hola, mundo!` en lugar de `Hello, World!`, el sistema lo considerará un texto diferente, ya que las mayúsculas y minúsculas son caracteres diferentes que difieren en _mayúsculas y minúsculas_. En programación, la capitalización casi siempre importa, así que acostúmbrate a prestarle siempre atención a esos pequeños detalles.
+  Atención: si escribes `Hello, wOrLd!` en lugar de `Hello, World!`, el sistema lo considerará un texto diferente, ya que las mayúsculas y minúsculas son caracteres diferentes que difieren en _mayúsculas y minúsculas_. En programación, la capitalización casi siempre importa, así que acostúmbrate a prestarle siempre atención a esos pequeños detalles.
 
 tips:
   - |

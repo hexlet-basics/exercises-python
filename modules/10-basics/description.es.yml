@@ -1,5 +1,5 @@
 ---
 name: Fundamentos de Python
 description: |
-  Python (o también conocido como "pitón") es un lenguaje popular y prometedor. A menudo se elige como el primer lenguaje para familiarizarse con la programación.
-  Aprenderemos Python desde cero, desde los conceptos básicos. El primer módulo es una plataforma para escribir programas significativos. En él, aprenderemos cómo darle instrucciones al ordenador en lenguaje Python. Explicaremos qué son los comentarios y para qué sirven. Usando como ejemplo la verificación de sus soluciones en el sitio web, veremos qué es la prueba y cómo leer la salida de las pruebas. Explicaremos por qué no se deben violar las reglas gramaticales del lenguaje de programación.
+  Python (o también conocido como "pitón") es un lenguaje popular y prometedor por su gran potencial. A menudo, es escogido como el primer lenguaje de estudio para familiarizarse con la programación.
+  Aprenderemos sobre Python desde cero, a partir de los conceptos básicos. El primer módulo sirve de una plataforma para escribir programas de significativo nivel. En él, aprenderemos cómo darle instrucciones al ordenador con base en el lenguaje Python. Explicaremos qué son los comentarios y para qué sirven. Usaremos como ejemplo la verificación de sus soluciones en el sitio web, veremos qué es una prueba y cómo leer la salida de una de ellas. Además, explicaremos por qué no se deben violar las reglas gramaticales del lenguaje de programación y la importancia de estas.

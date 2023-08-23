@@ -5,7 +5,7 @@ theory: |
 
   Construcciones como `index = index + 1` se utilizan frecuentemente en Python, por lo que los creadores del lenguaje agregaron una forma abreviada: `index += 1`.
 
-  Solo difieren en la forma de escribirlos. El intérprete convertirá la construcción abreviada en la expandida.
+  Solamente difieren en la forma de escribirlos. El intérprete convertirá la construcción abreviada en la expandida.
 
   Estas abreviaturas se llaman **azúcar sintáctico**, porque hacen que el proceso de escribir código sea un poco más fácil y agradable.
 
@@ -33,4 +33,4 @@ tips:
 definitions:
   - name: Azúcar sintáctico
     description: |
-      son características sintácticas que no afectan el comportamiento del programa, pero hacen que el uso del lenguaje sea más conveniente para los humanos.
+      son características sintácticas que no afectan el comportamiento en sí del programa, pero hacen que el uso del lenguaje sea más conveniente para los humanos.

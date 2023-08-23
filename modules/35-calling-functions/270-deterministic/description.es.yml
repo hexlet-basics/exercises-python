@@ -15,7 +15,7 @@ theory: |
   len('wow')  # 3
   ```
 
-  Se puede llamar a esta función infinitamente y pasarle el valor `'hexlet'` - siempre devolverá `6`.
+  Se puede ejecutar esta función infinitamente y pasarle el valor `'hexlet'` - siempre devolverá `6`.
 
   Veamos ahora el caso contrario: las funciones no deterministas. Por ejemplo, una función que devuelve un número aleatorio pertenece a esta categoría: para una misma entrada, siempre obtendremos un resultado diferente. Si al menos una de cada millón de llamadas a la función devuelve un resultado diferente, se considera no determinista. Esto también se aplica cuando no se toman parámetros:
 

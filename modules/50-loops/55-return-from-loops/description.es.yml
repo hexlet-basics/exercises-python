@@ -1,16 +1,16 @@
 ---
 
-name: Return from Loops
+name: Vuelta desde bucles
 theory: |
 
-  Working with loops usually comes down to two scenarios:
+  Trabajar con bucles generalmente se reduce a dos escenarios:
 
-  1. Aggregation. Accumulating a result during iterations and working with it after the loop. Reversing a string is an example of this scenario.
-  2. Looping until a desired result is achieved and then exiting. For example, the task of finding prime numbers - numbers that are divisible only by themselves and one without a remainder.
+  1. Agregación. Acumular resultados durante las iteraciones y trabajar con ellos después del bucle. Voltear una cadena es un ejemplo de este caso.
+  2. Ejecutar el bucle hasta que se alcance un resultado deseado y luego obtener la salida. Por ejemplo, la tarea de encontrar números primos, que solo son divisibles exactamente por sí mismos y por uno.
 
-  Let's consider the algorithm for checking the primality of a number. We will divide the number `x` by all numbers in the range from two to `x - 1` and check the remainder. If no divisor is found in this range that divides the number `x` without a remainder, then the number is prime.
+  Veamos el algoritmo para comprobar si un número es primo. Dividiremos el número buscado `x` entre todos los números en el rango desde dos hasta `x - 1` y observaremos el residuo. Si no encontramos ningún divisor en este rango que divida al número `x` sin residuo, entonces estamos ante un número primo.
 
-  In this case, it is sufficient to check numbers up to `x / 2`, instead of `x - 1`. For example, 11 is not divisible by 2, 3, 4, 5. But it will not be divisible by numbers greater than its half. Therefore, the algorithm can be optimized by checking the division only up to `x / 2`:
+  En este caso, solo es necesario verificar los números hasta `x / 2`, en lugar de hasta `x - 1`. Por ejemplo, 11 no es divisible por 2, 3, 4, 5. Pero tampoco será divisible por números mayores que la mitad de sí mismo. Por lo tanto, podemos optimizar el algoritmo y verificar la división solo hasta `x / 2`:
 
   ```python
   def is_prime(number):
@@ -35,18 +35,18 @@ theory: |
 
   https://replit.com/@hexlet/python-basics-loops-return-from-loops
 
-  *To be completely honest, to solve the problem, it is enough to check numbers up to the square root of `number`. But in our case, it is important to focus on understanding the conditions inside the loop.*
+  *Siendo completamente honestos, para resolver el problema es suficiente con verificar los números hasta la raíz cuadrada de `number`, pero en nuestro caso es importante también que nos concentremos en comprender las condiciones dentro del bucle.*
 
-  Let's imagine that according to the algorithm of sequential division by numbers up to `x / 2`, one number was found that divides without a remainder. This means that the argument passed is not a prime number, and further calculations are meaningless. At this point, it is worth returning `False`.
+  Imaginemos que en el algoritmo de división secuencial de números hasta `x / 2` encontramos uno que divide sin residuo. Entonces, el argumento proporcionado no es un número primo y no tiene sentido continuar con los cálculos. En este punto, debería devolverse `False`.
 
-  If the loop has completed without finding a number that divides without a remainder, then the number is prime.
+  Si el bucle se ejecuta por completo y no encontramos ningún número que divida sin residuo, entonces el número es primo.
 
 instructions: |
 
-  Implement the function `is_contains_char()`, which checks whether a string contains the specified letter, taking into account the case. The function takes two parameters:
+  Implementa la función `is_contains_char()`, la cual verifica si una cadena contiene una letra específica, considerando mayúsculas y minúsculas. La función recibe dos parámetros:
 
-  * String
-  * Letter to search for
+  * La cadena en cuestión
+  * La letra a buscar
 
   ```python
   print(is_contains_char('Hexlet', 'H'))  # => True
@@ -56,8 +56,8 @@ instructions: |
   ```
 
 tips:
-  - "[List of prime numbers](https://en.wikipedia.org/wiki/List_of_prime_numbers)"
+  - "[Lista de números primos](https://es.wikipedia.org/wiki/Anexo:Números_primos)"
 
 definitions:
-  - name: Aggregation
-    description: "Accumulating a result during iterations and working with it after the loop."
+  - name: Agregación
+    description: "Acumular resultados durante las iteraciones y trabajar con ellos después del bucle."

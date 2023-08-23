@@ -2,4 +2,4 @@
 
 name: Variables
 description:
-  Tú puedes guardar información en "repositorios" especiales y usarla tantas veces como necesites. Estos contenedores se denominan variables y ayudan a simplificar el código y reducir las repeticiones innecesarias.
+  La información se puede guardar información en "repositorios" especiales y ser usada tantas veces como sea necesario. Estos contenedores o almacenes se denominan variables y ayudan a simplificar el código y reducir repeticiones innecesarias.

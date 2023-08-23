@@ -10,7 +10,7 @@ theory: |
   print(PI)  # => 3.14
   ```
 
-  Una constante se crea de la misma manera que una variable. La única diferencia es que las constantes se suelen nombrar con letras mayúsculas y usar `_` como separador entre palabras. Una constante, al igual que una variable, se puede utilizar en cualquier expresión.
+  Una constante se crea de la misma manera que una variable. La única diferencia es que las constantes se suelen nombrar con letras mayúsculas y se usa `_` como separador entre palabras. Una constante, al igual que una variable, se puede utilizar en cualquier expresión.
 
 instructions: |
 

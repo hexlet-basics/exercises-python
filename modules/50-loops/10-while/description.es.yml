@@ -3,7 +3,7 @@
 name: Ciclo While
 theory: |
 
-  Los programas que escribimos en el curso se vuelven más complejos y extensos. Aunque todavía están lejos de ser programas reales, ya nos hacen esforzarnos.
+  Los programas que escribimos en el curso se vuelven más complejos y extensos. Aunque todavía están lejos de ser programas reales, ya nos hacen esforzarnos un poco más.
 
   En esta lección, nos adentraremos en uno de los temas básicos más difíciles de la programación: los **ciclos**.
 
@@ -13,24 +13,24 @@ theory: |
 
   Un algoritmo implica comprobaciones lógicas y recorrer las páginas. No se sabe de antemano cuántas páginas habrá que revisar, pero el proceso de revisión se repite de la misma manera. Para realizar acciones repetitivas, se necesitan ciclos. Cada repetición se llama **iteración**.
 
-  Escribamos una función con un ciclo simple que imprima la cadena `'¡Hola!'` `n` veces en la pantalla:
+  Escribamos una función con un ciclo simple que imprima la cadena `'Hello!'` `n` veces en la pantalla:
 
   ```python
-  def imprimir_hola(n):
-      contador = 0
-      while contador < n:
-          print('¡Hola!')
-          contador = contador + 1
+  def print_hello(n):
+      counter = 0
+      while counter < n:
+          print('Hello!')
+          counter = counter + 1
 
-  imprimir_hola(2)
-  # => ¡Hola!
-  # => ¡Hola!
+  print_hello(2)
+  # => Hello!
+  # => Hello!
   ```
 
   Ahora analicemos un ejemplo de una función con un ciclo que imprime los números del 1 al número pasado como argumento:
 
   ```python
-  imprimir_numeros(3)
+  print_numbers(3)
   # => 1
   # => 2
   # => 3
@@ -39,21 +39,21 @@ theory: |
   No se puede implementar esta función con los medios que ya hemos aprendido, ya que no se conoce de antemano la cantidad de impresiones en pantalla. Pero con los ciclos no hay problemas:
 
   ```python
-  def imprimir_numeros(ultimo_numero):
+  def print_numbers(last_number):
       # i es una abreviatura de índice
       # se utiliza por convención en muchos lenguajes
       # como contador del ciclo
       i = 1
-      while i <= ultimo_numero:
+      while i <= last_number:
           print(i)
           i = i + 1
-      print('¡Terminado!')
+      print('finished!')
 
-  imprimir_numeros(3)
+  print_numbers(3)
   # => 1
   # => 2
   # => 3
-  # => ¡Terminado!
+  # => finished!
   ```
 
   https://replit.com/@hexlet/python-basics-loops-while
@@ -64,9 +64,9 @@ theory: |
   * El predicado: una condición que se especifica después de `while` y se evalúa en cada iteración
   * El bloque de código: el cuerpo del ciclo
 
-  Cada ejecución del cuerpo se llama **iteración**. En el ejemplo anterior, `imprimir_numeros(3)` provocó tres iteraciones, en cada una de las cuales se imprimió la variable `i` en la pantalla. La construcción se lee así: "haz lo que se especifica en el cuerpo del ciclo mientras la condición `i <= ultimo_numero` sea verdadera".
+  Cada ejecución del cuerpo se llama **iteración**. En el ejemplo anterior, `print_numbers(3)` provocó tres iteraciones, en cada una de las cuales se imprimió la variable `i` en la pantalla. La construcción se lee así: "haz lo que se especifica en el cuerpo del ciclo mientras la condición `i <= last_number` sea verdadera".
 
-  Analicemos cómo funciona este código para la llamada `imprimir_numeros(3)`:
+  Analicemos cómo funciona este código para la llamada `print_numbers(3)`:
 
   ```python
   # Se inicializa i
@@ -90,7 +90,7 @@ theory: |
   # El predicado es falso, por lo que la ejecución pasa después del ciclo
   while 4 <= 3
 
-  # print('¡Terminado!');
+  # print('¡finished!');
   # En este punto, i es igual a 4, pero ya no lo necesitamos
   # La función finaliza
   ```
@@ -106,13 +106,13 @@ theory: |
   En este punto, los principiantes cometen muchos errores. Por ejemplo, se puede olvidar de incrementar el contador o verificarlo incorrectamente en el predicado. Esto conducirá a un bucle infinito, donde el ciclo se ejecutará indefinidamente y el programa nunca se detendrá. En ese caso, es necesario terminarlo forzosamente.
 
   ```python
-  def imprimir_numeros(ultimo_numero):
+  def print_numbers(last_number):
       i = 1
       # Este ciclo nunca se detendrá
       # y siempre imprimirá el mismo valor
-      while i <= ultimo_numero:
+      while i <= last_number:
           print(i)
-      print('¡Terminado!')
+      print('finished!')
   ```
 
   En algunos casos, los bucles infinitos son útiles. No vamos a considerar tales situaciones, pero mostraremos cómo se ve este código:
@@ -126,15 +126,15 @@ theory: |
 
 instructions: |
 
-  Modifica la función `imprimir_numeros()` para que imprima los números en orden inverso. Para ello, debes ir desde el límite superior hasta el límite inferior. Es decir, el contador debe inicializarse con el valor máximo y, en el cuerpo del ciclo, debe disminuir hasta el límite inferior.
+  Modifica la función `print_numbers()` para que imprima los números en orden inverso. Para ello, debes ir desde el límite superior hasta el límite inferior. Es decir, el contador debe inicializarse con el valor máximo y, en el cuerpo del ciclo, debe disminuir hasta el límite inferior.
 
   Ejemplo de llamada y salida:
 
   ```python
-  imprimir_numeros(4)
+  print_numbers(4)
   ```
 
-  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>¡Terminado!</pre>
+  <pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>¡finished!</pre>
 
 tips:
   - |

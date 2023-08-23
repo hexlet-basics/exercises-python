@@ -3,12 +3,12 @@
 name: Inmutabilidad
 theory: |
 
-  Supongamos que tenemos la siguiente llamada:
+  Supongamos que tenemos la siguiente ejecución:
 
   ```python
   name = 'Tirion'
   print(name.upper())  # => TIRION
-  # ¿Qué imprimirá esta llamada?
+  # ¿Qué imprimirá esta ejecución?
   print(name)  # => ?
   ```
 

@@ -1,82 +1,82 @@
 ---
 
-name: Multi-line strings
+name: Cadenas de varias líneas
 theory: |
 
-  Imagine that we need to define a string that consists of multiple lines - that is, there are line breaks `\n` inside. For example, it will look like this:
+  Imagina que necesitamos definir una cadena que consta de varias líneas, es decir, que contenga saltos de línea `\n`. Por ejemplo, se vería así:
 
   ```python
-  text = 'Пример текста,\nсостоящего из\nнескольких строк'
+  text = 'Ejemplo de texto,\ncompuesto por\nvarias líneas'
   ```
 
-  When printed, the string will look completely different:
+  Al imprimir la cadena, se mostrará de la siguiente manera:
 
   ```bash
-  Пример текста,
-  состоящего из
-  нескольких строк
+  Ejemplo de un texto,
+  compuesto por
+  varias líneas
   ```
 
-  For such situations, Python has another way of creating strings called **multi-line strings**. To describe such a "multi-line string", it is necessary to enclose it in triple quotes - `"""` or `'''`. Inside a multi-line string, you can break the text and not use the line break `\n`:
+  Para este tipo de situaciones, en Python existe otra forma de crear cadenas llamada **cadenas de varias líneas**. Para definir una cadena de varias líneas, debemos encerrarla entre triples comillas `"""` o `'''`. Dentro de una cadena de varias líneas, podemos agregar texto sin necesidad de utilizar saltos de línea `\n`:
 
   ```python
-  text = '''Пример текста,
-  состоящего из
-  нескольких строк
+  text = '''Ejemplo de un texto,
+  compuesto por
+  varias líneas
   '''
   ```
 
   ```bash
-  Пример текста,
-  состоящего из
-  нескольких строк
+  Ejemplo de un texto,
+  compuesto por
+  varias líneas
 
   ```
 
-  Note that there is an empty line at the end of the text. It appeared in the text because we put the closing quotes `'''` on a new line. If you do not move the closing quotes to a new line, the empty line will not appear in the text:
+  Observa que al final del texto hay una línea vacía. Esto se debe a que colocamos las comillas de cierre `'''` en una nueva línea. Si no colocamos las comillas de cierre en una nueva línea, la cadena no tendrá una línea vacía:
 
   ```python
-  text = '''Пример текста,
-  состоящего из
-  нескольких строк'''
+  text = '''Ejemplo de texto,
+  compuesto por
+  varias líneas'''
   ```
 
   ```bash
-  Пример текста,
-  состоящего из
-  нескольких строк
+  Ejemplo de texto,
+  compuesto por
+  varias líneas
   ```
 
-  Because of the triple quotes, multi-line strings do not require escaping quotes inside the string:
+  Gracias a las triples comillas, no es necesario escapar las comillas dentro de la cadena:
 
   ```bash
-  Здесь не нужно экранировать 'одинарные' и "двойные" кавычки
+  Aquí no es necesario escapar las comillas 'simples' o "dobles"
   ```
 
-  Furthermore, multi-line strings can become f-strings for interpolation:
+  Además, las cadenas de varias líneas pueden ser utilizadas como f-strings para interpolación:
 
   ```python
   a = 'A'
   b = 'B'
 
-  # Added f on the left
-  text = f'''{a} и {b}
-  сидели на трубе
+  # Se agregó una f al inicio
+  text = f'''{a} y {b}
+  se sentaron en un tubo
   '''
   ```
 
   ```bash
-  А и B
-  сидели на трубе
+  A y B
+  se sentaron en un tubo
 
   ```
 
-  For the computer, it doesn't matter which methods of string concatenation and line breaks you use. It will still perform calculations and produce the desired result. Interpolation and multi-line strings are used for the convenience of developers to make the code easier to read.
+  Para la computadora no importa qué método de concatenación y saltos de línea utilices. De todas formas, realizará los cálculos y mostrará el resultado correcto. La interpolación y las cadenas de varias líneas se utilizan para facilitar la lectura del código por parte de los desarrolladores.
 
 
 instructions: |
 
-  Assign the text below to the variable `text`. Use triple quotes.
+  Asigna el siguiente texto a la variable `text` utilizando triples comillas.
 
   ```
   Lannister, Targaryen, Baratheon, Stark, Tyrell...
@@ -89,4 +89,4 @@ definitions: []
 
 tips:
   - |
-    [Multi-line strings](https://www.w3schools.com/python/gloss_python_multi_line_strings.asp)
+    [Cadenas de varias líneas](https://www.w3schools.com/python/gloss_python_multi_line_strings.asp)

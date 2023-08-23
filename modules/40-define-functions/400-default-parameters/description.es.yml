@@ -1,31 +1,31 @@
 ---
 
-name: Optional Function Parameters
+name: Parámetros opcionales de las funciones
 theory: |
 
-  In programming, many functions and methods have parameters that rarely change. In such cases, these parameters are assigned default values that can be changed if necessary. This reduces the amount of duplicate code. Let's see how this works in practice.
+  En programación, muchas funciones y métodos tienen parámetros que rara vez cambian. En estos casos, se les asignan valores predeterminados que se pueden cambiar según sea necesario. Esto reduce la cantidad de código repetitivo. Veamos cómo se ve esto en la práctica.
 
-  Let's consider an example:
+  Veamos un ejemplo:
 
   ```python
-  # Exponentiation function
-  # The second parameter has a default value of two
+  # Función de potencia
+  # El segundo parámetro tiene un valor predeterminado de dos
   def pow(x, base=2):
       return x ** base
 
-  # Three to the second power (two is the default value)
+  # Tres al cuadrado (dos es el valor predeterminado)
   pow(3)  # 3 * 3 = 9
-  # Three to the third power
+  # Tres al cubo
   pow(3, 3)  # 3 * 3 * 3 = 27
   ```
 
   https://replit.com/@hexlet/python-basics-define-functions-default-parameters
 
-  The default value looks like a regular assignment in the function definition. It only takes effect if the parameter is not passed.
+  El valor predeterminado se ve como una asignación normal en la definición. Solamente se activa si no se pasa el parámetro.
 
-  Imagine that you didn't bring spare parts for your car to the auto repair shop. In that case, the mechanic will suggest using the ones he has - by default.
+  Imagina que no llevaste las piezas de repuesto para tu automóvil al taller. Entonces el mecánico te ofrecerá poner las que él tiene, por defecto.
 
-  The default value can even be used when there is only one parameter:
+  Incluso puede haber un valor predeterminado cuando sólo hay un parámetro:
 
   ```python
   def my_print(text='nothing'):
@@ -35,49 +35,49 @@ theory: |
   my_print("Hexlet")  # => "Hexlet"
   ```
 
-  There can be any number of parameters with default values:
+  Puede haber cualquier cantidad de parámetros con valores predeterminados:
 
   ```python
   def f(a=5, b=10, c=100):
   ```
 
-  Default values have one limitation. They must come at the end of the parameter list. From a syntax point of view, it is impossible to create a function where a required parameter comes after an optional one:
+  Los valores predeterminados tienen una restricción. Deben ir al final de la lista de parámetros. Desde el punto de vista de la sintaxis, no es posible crear una función en la que haya un parámetro opcional seguido de uno obligatorio:
 
   ```python
-  # This code will result in an error
+  # Este código dará un error
   def f(a=5, b=10, c=100, x):
-  # And this one too
+  # Y este también
   def f(a=5, b=10, x, c=100):
 
-  # This code will work
+  # Este código funcionará
   def f(x, a=5, b=10, c=100):
 
-  # This one will work too
+  # Este también funcionará
   def f(x, y, a=5, b=10, c=100):
   ```
 
-  Now you know how to work with default parameter values. They can be used for multiple parameters or just one. And remember, default values must come at the end of the parameter list. This knowledge will help reduce the amount of duplicate code.
+  Ahora sabes cómo trabajar con los valores predeterminados de los parámetros. Pueden estar presentes en varios parámetros o en uno solo. Y recuerda que los valores predeterminados deben estar al final de la lista de parámetros. Este conocimiento te ayudará a reducir la cantidad de código repetitivo.
 
 instructions: |
 
-  Implement the `get_hidden_card()` function, which takes a credit card number (consisting of 16 digits) as a string and returns its hidden version, which can be used on a website for display. If the original card had the number *2034399002125581*, then the hidden version looks like *\*\*\*\*5581*. In other words, the function replaces the first 12 characters with asterisks. The number of asterisks is controlled by the second optional parameter. The default value is 4.
+  Implementa la función `get_hidden_card()`, que recibe como entrada el número de una tarjeta de crédito (compuesto por 16 dígitos) como una cadena y devuelve su versión oculta, que se puede utilizar en el sitio web para su visualización. Si la tarjeta original tenía el número *2034399002125581*, entonces la versión oculta se verá así *\*\*\*\*5581*. En otras palabras, la función reemplaza los primeros 12 caracteres por asteriscos. El número de asteriscos se controla mediante el segundo parámetro, que es opcional. El valor predeterminado es 4.
 
   ```python
-  # The credit card is passed as a string
-  # The second parameter is not passed, so there will be 4 asterisks
+  # La tarjeta de crédito pasa como una cadena
+  # El segundo parámetro no se pasa, por lo que habrá 4 asteriscos
   get_hidden_card('1234567812345678') # ****5678
 
   get_hidden_card('1234567812345678', 2) # **5678
   get_hidden_card('1234567812345678', 3) # ***5678
 
-  # Or using variables
+  # O usando variables
 
   card_number = '2034399002121100'
   get_hidden_card(card_number) # ****1100
   get_hidden_card(card_number, 1) # *1100
   ```
 
-  To complete the task, you will need the string repetition mechanism, which repeats a string a specified number of times. To do this, simply multiply the string by the number of repetitions:
+  Para completar la tarea, necesitarás el mecanismo de repetición de cadenas, el cual repite una cadena un número determinado de veces. Para hacer esto, simplemente multiplica la cadena por el número de repeticiones:
 
   ```python
   '+' * 5 # +++++
@@ -86,8 +86,8 @@ instructions: |
 
 tips:
   - |
-    [Default Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+    [Parámetros por defecto](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Default_parameters)
 
 definitions:
-  - name: Default Parameter
-    description: an optional function parameter
+  - name: Parámetro por defecto
+    description: parámetro opcional de una función

@@ -1,17 +1,17 @@
 ---
 
-name: Expresiones en las definiciones
+name: Expresiones en definiciones
 theory: |
 
-  Ya hemos aprendido cómo trabajar con variables para almacenar y reutilizar información. Pero también ellas nos ayudan a simplificar cálculos complejos. Por ejemplo, convertir monedas o formar nuevas palabras. Veamos cómo hacerlo en la práctica.
+  Ya hemos aprendido cómo trabajar con variables para almacenar y reutilizar información. Pero también nos ayudan a simplificar cálculos complejos. Por ejemplo, convertir monedas o formar nuevas palabras. Veamos cómo hacerlo en la práctica.
 
   Supongamos que necesitamos convertir euros a yuanes a través de dólares. Estas conversiones a través de una moneda intermedia son comunes en los bancos al realizar compras en el extranjero.
 
   Primero, convirtamos 50 euros a dólares. Supongamos que un euro equivale a 1.25 dólares:
 
   ```python
-  dollars_count = 50 * 1.25
-  print(dollars_count)  # => 62.5
+  cantidad_dolares = 50 * 1.25
+  print(cantidad_dolares)  # => 62.5
   ```
 
   Aquí, en la variable `cantidad_dolares = 50 * 1.25`, a la derecha del signo igual, escribimos una **expresión**. El intérprete calculará el resultado (`62.5`) y lo asignará a la variable. Al intérprete no le importa cómo se escriben los datos: `62.5` o `50 * 1.25`. Ambas son expresiones que deben calcularse. Realiza los cálculos y llega al mismo valor: `62.5`.
@@ -30,51 +30,52 @@ theory: |
   'Good' + 'will'  # Goodwill
   ```
 
-  En los lugares donde se espera una expresión, puedes colocar cualquier cálculo. No necesariamente tiene ser matemático, también puede ser una cadena de texto, como la concatenación. El programa seguirá funcionando correctamente.
+  En los lugares donde se espera una expresión, puedes colocar cualquier cálculo. No solo puede ser matemático, también puede ser una cadena de texto, como la concatenación. El programa seguirá funcionando correctamente.
 
   Los programas están compuestos por muchas combinaciones de expresiones. Basándonos en lo que se ha dicho anteriormente, piensa si este código funcionará:
 
   ```python
-  who = "dragon's " + 'mother'
-  print(who)
+  quien = "madre " + 'del dragón'
+  print(quien)
   ```
 
-  Este código mostrará en pantalla la cadena de texto `dragon's mother`. Si quieres comprobarlo por ti mismo, ejecuta el código en [repl.it](https://replit.com/languages/python3) y experimenta.
+  Este código mostrará en pantalla la cadena de texto `madre del dragón`. Si quieres comprobarlo por ti mismo, ejecuta el código en [repl.it](https://replit.com/languages/python3) y experimenta.
 
   Con variables, puedes realizar cálculos más complejos. Volvamos a nuestro programa de conversión de moneda. Guardemos el valor del dólar en yuanes como una variable separada. Calculemos el precio de 50 euros en dólares multiplicándolos por `1.25`. Supongamos que 1 dólar equivale a 6.91 yuanes:
 
   ```python
-  yuans_per_dollar = 6.91
-  dollars_count = 50 * 1.25  # 62.5
-  yuans_count = dollars_count * yuans_per_dollar  # 431.875
+  yuanes_por_dolar = 6.91
+  cantidad_dolares = 50 * 1.25  # 62.5
+  cantidad_yuanes = cantidad_dolares * yuanes_por_dolar  # 431.875
 
-  print(yuans_count)
+  print(cantidad_yuanes)
   ```
 
-  Ahora agreguemos texto a la impresión utilizando la concatenación:
+  Ahora agreguemos texto a la salida utilizando la concatenación:
 
   ```python
-  yuans_per_dollar = 6.91
-  dollars_count = 50 * 1.25  # 62.5
-  yuans_count = dollars_count * yuans_per_dollar  # 431.875
+  yuanes_por_dolar = 6.91
+  cantidad_dolares = 50 * 1.25  # 62.5
+  cantidad_yuanes = cantidad_dolares * yuanes_por_dolar  # 431.875
 
   # La función str() convierte un número en una cadena de texto.
   # Habrá una lección separada sobre estas conversiones.
-  print('The price is ' + str(yuans_count) + ' yuans')
+  print('El precio es ' + str(cantidad_yuanes) + ' yuanes')
   # => El precio es 431.875 yuanes
   ```
 
   Cualquier variable puede formar parte de cualquier expresión. En el momento de la evaluación, el valor de la variable se sustituye en lugar de su nombre.
 
-  El intérprete calcula el valor de `yuans_count` antes de que se utilice en otras expresiones. Cuando llega el momento de usar la variable, Python ya conoce su valor porque lo ha calculado.
+  El intérprete calcula el valor de `cantidad_dolares` antes de que se utilice en otras expresiones. Cuando llega el momento de usar la variable, Python ya conoce su valor porque lo ha calculado.
 
-  Con variables, puedes realizar cálculos complejos y también generar una salida o impresión detallada con el valor resultante. Pero también puedes obtener nuevas expresiones al combinar dos o más valores de variables. Esto se logra mediante la concatenación.
+  Con variables, puedes realizar cálculos complejos y también generar una salida detallada con el valor resultante. Pero también puedes obtener nuevas expresiones al combinar dos o más valores de variables. Esto se logra mediante la concatenación.
 
 instructions: |
 
-  Escriba un programa que tome una cantidad inicial de euros, almacenada en la variable `euros_count`, que convierta los euros a dólares y luego muestre en pantalla. Luego, convierta el valor obtenido a yuanes y muéstrelo en una nueva línea.
+  Escribe un programa que tome una cantidad inicial de euros, almacenada en la variable `cantidad_euros`, convierta los euros a dólares y los muestre en pantalla. Luego, convierte el valor obtenido a yuanes y lo muestra en una nueva línea.
 
-  Ejemplo de una impresión o salida para 100 euros:
+  Ejemplo de salida para 100 euros:
+
 
   ```
   125.0
@@ -91,4 +92,5 @@ tips:
 
 definitions:
   - name: Variable
+
     description: una forma de almacenar información y darle un nombre para su posterior uso en el código.

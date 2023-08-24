@@ -21,11 +21,11 @@ theory: |
 
   https://replit.com/@hexlet/python-basics-define-functions-default-parameters
 
-  El valor predeterminado se ve como una asignación normal en la definición. Solamente se activa si no se pasa el parámetro.
+  El valor predeterminado se ve como una asignación normal en la definición. Solo se activa si no se pasa el parámetro.
 
   Imagina que no llevaste las piezas de repuesto para tu automóvil al taller. Entonces el mecánico te ofrecerá poner las que él tiene, por defecto.
 
-  Incluso puede haber un valor predeterminado cuando sólo hay un parámetro:
+  Incluso puede haber un valor predeterminado cuando solo hay un parámetro:
 
   ```python
   def my_print(text='nothing'):
@@ -56,14 +56,14 @@ theory: |
   def f(x, y, a=5, b=10, c=100):
   ```
 
-  Ahora sabes cómo trabajar con los valores predeterminados de los parámetros. Pueden estar presentes en varios parámetros o en uno solo. Y recuerda que los valores predeterminados deben estar al final de la lista de parámetros. Este conocimiento te ayudará a reducir la cantidad de código repetitivo.
+  Ahora sabes cómo trabajar con valores predeterminados de los parámetros. Pueden estar presentes en varios parámetros o en uno solo. Y recuerda que los valores predeterminados deben estar al final de la lista de parámetros. Este conocimiento te ayudará a reducir la cantidad de código repetitivo.
 
 instructions: |
 
   Implementa la función `get_hidden_card()`, que recibe como entrada el número de una tarjeta de crédito (compuesto por 16 dígitos) como una cadena y devuelve su versión oculta, que se puede utilizar en el sitio web para su visualización. Si la tarjeta original tenía el número *2034399002125581*, entonces la versión oculta se verá así *\*\*\*\*5581*. En otras palabras, la función reemplaza los primeros 12 caracteres por asteriscos. El número de asteriscos se controla mediante el segundo parámetro, que es opcional. El valor predeterminado es 4.
 
   ```python
-  # La tarjeta de crédito pasa como una cadena
+  # La tarjeta de crédito se pasa como una cadena
   # El segundo parámetro no se pasa, por lo que habrá 4 asteriscos
   get_hidden_card('1234567812345678') # ****5678
 
@@ -77,7 +77,7 @@ instructions: |
   get_hidden_card(card_number, 1) # *1100
   ```
 
-  Para completar la tarea, necesitarás el mecanismo de repetición de cadenas, el cual repite una cadena un número determinado de veces. Para hacer esto, simplemente multiplica la cadena por el número de repeticiones:
+  Para completar la tarea, necesitarás el mecanismo de repetición de cadenas, que repite una cadena un número determinado de veces. Para hacer esto, simplemente multiplica la cadena por el número de repeticiones:
 
   ```python
   '+' * 5 # +++++

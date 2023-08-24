@@ -1,9 +1,9 @@
 ---
 
-name: Variables y concatenaciones
+name: Variables y concatenación
 theory: |
 
-  Intentemos usar variables con concatenaciones, es decir, sin cambiar la sintaxis. Sabemos cómo concatenar dos cadenas:
+  Intentemos usar variables con concatenación, sin cambiar la sintaxis. Sabemos cómo concatenar dos cadenas:
 
   ```python
   what = "Kings" + "road"
@@ -19,7 +19,7 @@ theory: |
   print(what)  # => Kingsroad
   ```
 
-  También podemos concatenar dos variables que contengan cadenas:
+  También podemos concatenar dos variables que contienen cadenas:
 
   ```python
   first = "Kings"
@@ -31,7 +31,7 @@ theory: |
 
   https://replit.com/@hexlet/python-basics-variables-concatenation
 
-  Las variables son una herramienta importante en la programación. Simplifican cálculos complejos y, por lo tanto, facilitan el desarrollo. Pero para trabajar con variables de manera efectiva, no sólo es necesario usarlas correctamente, sino también nombrarlas correctamente. Hablaremos de esto en la próxima lección.
+  Las variables son una herramienta importante en la programación. Simplifican cálculos complejos y, por lo tanto, facilitan el desarrollo. Pero para trabajar con variables de manera efectiva, no solo es necesario usarlas correctamente, sino también nombrarlas correctamente. Hablaremos de esto en la próxima lección.
 
 instructions: |
 
@@ -46,12 +46,12 @@ instructions: |
   El resultado en la pantalla se verá así:
 
   <pre class='hexlet-basics-output'>
-  Hello, Joffrey!
-  Here is important information about your account security.
-  We couldn't verify your mother's maiden name.
+  ¡Hola, Joffrey!
+  Aquí hay información importante sobre la seguridad de su cuenta.
+  No pudimos verificar el nombre de soltera de su madre.
   </pre>
 
-  Complete la tarea utilizando solamente dos `print()`.
+  Complete la tarea utilizando solo dos `print()`.
 
 tips:
   - |
@@ -63,3 +63,4 @@ definitions:
   - name: Concatenación
     description: |
       la operación de unir dos cadenas. Por ejemplo, `console.log("King's " + ' Landing');`
+

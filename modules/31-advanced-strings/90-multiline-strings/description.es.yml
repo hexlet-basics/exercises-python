@@ -3,7 +3,7 @@
 name: Cadenas de varias líneas
 theory: |
 
-  Imagina que necesitamos definir una cadena que consta de varias líneas, es decir, que contenga saltos de línea `\n`. Por ejemplo, se vería así:
+  Imagina que necesitamos definir una cadena que consta de varias líneas, es decir, que contiene saltos de línea `\n`. Por ejemplo, se vería así:
 
   ```python
   text = 'Ejemplo de texto,\ncompuesto por\nvarias líneas'
@@ -12,7 +12,7 @@ theory: |
   Al imprimir la cadena, se mostrará de la siguiente manera:
 
   ```bash
-  Ejemplo de un texto,
+  Ejemplo de texto,
   compuesto por
   varias líneas
   ```
@@ -20,14 +20,14 @@ theory: |
   Para este tipo de situaciones, en Python existe otra forma de crear cadenas llamada **cadenas de varias líneas**. Para definir una cadena de varias líneas, debemos encerrarla entre triples comillas `"""` o `'''`. Dentro de una cadena de varias líneas, podemos agregar texto sin necesidad de utilizar saltos de línea `\n`:
 
   ```python
-  text = '''Ejemplo de un texto,
+  text = '''Ejemplo de texto,
   compuesto por
   varias líneas
   '''
   ```
 
   ```bash
-  Ejemplo de un texto,
+  Ejemplo de texto,
   compuesto por
   varias líneas
 
@@ -80,9 +80,9 @@ instructions: |
 
   ```
   Lannister, Targaryen, Baratheon, Stark, Tyrell...
-  they're all just spokes on a wheel.
-  This one's on top, then that one's on top, and on and on it spins,
-  crushing those on the ground.
+  todos son solo radios de una rueda.
+  Uno está arriba, luego otro está arriba, y así sucesivamente,
+  aplastando a los que están en el suelo.
   ```
 
 definitions: []

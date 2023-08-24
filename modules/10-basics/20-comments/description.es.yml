@@ -3,9 +3,9 @@
 name: Comentarios
 theory: |
 
-  Casi todos los lenguajes de programación permiten dejar comentarios en el código. Estos comentarios no son utilizados por el intérprete. Son útiles únicamente para las personas, para que los programadores puedan dejar notas para sí mismos y para otros programadores.
+  Casi todos los lenguajes de programación permiten dejar comentarios en el código. Estos comentarios no son utilizados por el sistema intérprete. Son útiles únicamente para las personas que usan estas herramientas; para que los programadores puedan dejar notas para ellos mismos y también para otros programadores.
 
-  Con ellos se agregan explicaciones sobre cómo funciona el código, qué errores corregir o qué agregar más adelante:
+  A través de estos comentarios, se agregan explicaciones sobre cómo funciona el código, qué errores corregir o qué agregar más adelante.
 
   ```python
   # Eliminar la línea de abajo después de implementar la tarea de registro
@@ -15,19 +15,19 @@ theory: |
   Los comentarios en Python comienzan con el signo `#` y pueden aparecer en cualquier lugar del programa. Pueden ocupar toda una línea. Si una línea no es suficiente, se pueden crear varios comentarios:
 
   ```python
-  # ¡Por Winterfell!
-  # ¡Por Lannisters!
+  # ¡For Winterfell!
+  # ¡For Lannisters!
   ```
 
   Un comentario puede estar en la línea después del código:
 
   ```python
-  print('Soy el Rey') # ¡Por Lannisters!
+  print('I am the King') # ¡For Lannisters!
   ```
 
 instructions: |
 
-  Crea un comentario de una línea con el texto: `No sabes nada, Jon Snow!`
+  Crea un comentario de una línea con el texto: `You know nothing, Jon Snow!`
 
 tips:
   - |
@@ -36,4 +36,4 @@ tips:
 definitions:
   - name: Comentario
     description: |
-      texto en el código de un programa que no afecta la funcionalidad y se agrega por los programadores para ellos mismos y sus colegas.
+      se trata de un texto en el código de un programa que no afecta su funcionalidad y lo agregan los programadores para su propio uso y/o el de sus colegas.

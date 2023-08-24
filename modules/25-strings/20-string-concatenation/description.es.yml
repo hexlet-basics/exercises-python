@@ -13,7 +13,7 @@ theory: |
   print('Dragon' + 'stone')  # => Dragonstone
   ```
 
-  La concatenación de cadenas siempre se realiza en el mismo orden en el que se escriben los operandos. El operando izquierdo se convierte en la parte izquierda de la cadena, y el operando derecho en la parte derecha. Aquí hay algunos ejemplos más:
+  La concatenación de cadenas siempre se realiza en el mismo orden en el que se escriben los operandos. El operando izquierdo se convierte en la parte izquierda de la cadena, y el operando derecho en la parte derecha. Aquí hay algunos ejemplos adicionales:
 
   ```python
   print('Kings' + 'wood')      # => Kingswood

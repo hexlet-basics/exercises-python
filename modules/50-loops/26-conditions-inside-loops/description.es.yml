@@ -5,7 +5,7 @@ theory: |
 
   Dentro de un bucle, al igual que dentro de una función, se pueden ejecutar instrucciones. Por lo tanto, dentro de un bucle se puede utilizar todo lo aprendido anteriormente, como por ejemplo, estructuras condicionales.
 
-  Imagina una función que cuenta cuántas veces aparece una letra en una oración. Aquí tienes un ejemplo de cómo funciona:
+  Imagina una función que cuenta cuántas veces aparece una letra en una oración. Aquí tienes un ejemplo de cómo funcion un bucle de esta forma:
 
   ```python
   count_chars('El miedo corta más profundo que las espadas.', 'e')  # 4
@@ -24,7 +24,7 @@ theory: |
       count = 0
       while index < len(string):
           if string[index] == char:
-              # Solo contamos los caracteres que coinciden
+              # Solamente contamos los caracteres que coinciden
               count = count + 1
           # El contador se incrementa en cualquier caso
           index = index + 1

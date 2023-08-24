@@ -3,7 +3,7 @@
 name: Operadores
 theory: |
 
-  Un **operador** es un símbolo de operación, como `+`. Los operadores realizan operaciones en valores específicos, llamados **operandos**. Los operadores en sí suelen ser uno o varios caracteres, aunque en ocasiones pueden ser una palabra. La gran mayoría de los operadores corresponden a operaciones matemáticas.
+  Un **operador** es un símbolo de operación, como `+`. Los operadores realizan operaciones en función de valores específicos, llamados **operandos**. Los operadores en sí suelen ser uno o varios caracteres, aunque en ocasiones pueden ser también una palabra. La gran mayoría de los operadores corresponden a operaciones matemáticas.
 
   ```python
   print(8 + 2)
@@ -13,7 +13,7 @@ theory: |
 
   Cuando sumamos, tenemos dos operandos: uno a la izquierda y otro a la derecha del signo `+`. Las operaciones que requieren dos operandos se llaman **binarias**. Si falta al menos un operando, por ejemplo, `3 +`, el programa dará un error de sintaxis.
 
-  Las operaciones no solo pueden ser binarias, también pueden ser unarias, con un solo operando, o ternarias, con tres operandos. Además, los operadores pueden tener la misma apariencia pero representar operaciones diferentes. Los símbolos `+` y `-` no solo se utilizan como operadores. Cuando se trata de números negativos, el signo menos forma parte del número:
+  Las operaciones no sólo pueden ser binarias; también pueden ser unarias, con un solo operando, o ternarias, con tres operandos. Además, los operadores pueden tener la misma apariencia pero representar operaciones diferentes. Los símbolos `+` y `-` no solo se utilizan como operadores. Cuando se trata de números negativos, el signo menos forma parte del número:
 
   ```python
   print(-3)  # => -3

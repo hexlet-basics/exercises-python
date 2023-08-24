@@ -23,7 +23,7 @@ theory: |
   max(1, -3, 2, 3, 2)  # 3
   ```
 
-  Si la función encuentra varios parámetros con el valor máximo, devolverá el primero de ellos.
+  Si la función encuentra varios parámetros con el valor máximo, devolverá el primero de estos.
 
 instructions: |
 

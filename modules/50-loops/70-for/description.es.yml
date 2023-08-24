@@ -3,7 +3,7 @@
 name: Ciclo For
 theory: |
 
-  El ciclo `while` se utiliza para resolver cualquier problema de iteración, pero es bastante verboso. Con `while`, es necesario establecer una condición de finalización y un contador. Cuando hay pocos ciclos, esto no es un problema, pero en el código real, los ciclos están presentes en cada paso. Por lo tanto, controlar las condiciones manualmente puede resultar tedioso, especialmente cuando la condición de finalización es obvia.
+  El ciclo `while` se utiliza para resolver cualquier problema de iteración, pero es bastante extenso y verboso. Con `while`, es necesario establecer una condición de finalización y un contador. Cuando hay pocos ciclos, esto no es un problema, pero en el código real, los ciclos están presentes en cada paso. Por lo tanto, controlar las condiciones manualmente puede resultar tedioso, especialmente cuando la condición de finalización es obvia.
 
   Por ejemplo, si queremos iterar sobre los caracteres de una cadena, la computadora puede entender automáticamente cuándo la cadena termina. Para este tipo de situaciones, en Python se introdujo el ciclo `for`. Este ciclo sabe automáticamente cuándo detenerse, ya que solo trabaja con colecciones, es decir, conjuntos de elementos que deben ser iterados.
 
@@ -12,9 +12,9 @@ theory: |
   Ejemplo:
 
   ```python
-  texto = 'código'
-  for símbolo in texto:
-      print(símbolo)
+  text = 'code'
+  for symbol in text:
+      print(symbol)
 
   # => c
   # => ó
@@ -24,70 +24,70 @@ theory: |
   # => o
   ```
 
-  En el código anterior, el ciclo `for` recorre cada carácter de la cadena, lo guarda en la variable `símbolo` y ejecuta el bloque de código interno donde se utiliza esta variable. El nombre de esta variable puede ser cualquier cosa. La estructura general del ciclo `for` es: `for <variable> in <colección>`.
+  En el código anterior, el ciclo `for` recorre cada carácter de la cadena, lo guarda en la variable `símbolo` y ejecuta el bloque de código interno donde se utiliza esta variable. El nombre de esta variable puede ser cualquier cosa. La estructura general del ciclo `for` es: `for <variable> in <colection>`.
 
   Veamos cómo implementar una función para invertir una cadena utilizando el ciclo `for`:
 
   ```python
-  def invertir_cadena(texto):
+  def reverse_string(text):
       # Valor inicial
-      resultado = ''
+      result = ''
       # char - variable donde se guarda el carácter actual
       for char in texto:
           # Concatenamos en orden inverso
           resultado = char + resultado
       # El ciclo termina cuando se ha recorrido toda la cadena
-      return resultado
+      return result
 
 
-  invertir_cadena('¡vamos!')  # => '!somav'
+  reverse_string('go!')  # => '!og'
   ```
 
   Analicemos detalladamente cómo funciona el ciclo en el ejemplo anterior en cada iteración:
 
-  1. En la primera iteración, en el ciclo `resultado` es una cadena vacía y `char` es igual al primer carácter '¡'. Por lo tanto, en `resultado` se asigna el carácter '¡' más la cadena vacía, lo que resulta en '¡'.
-  2. En la segunda iteración, `resultado` ya contiene el carácter '¡' y `char` es igual al siguiente carácter 'v'. En `resultado` se guarda `char + resultado`, es decir, `'v' + '¡'`.
-  3. En la última iteración, `resultado` contiene la cadena '¡v' y `char` es igual al último carácter '!'. En `resultado` se guarda `'¡v' + '!'`.
+  1. En la primera iteración, en el ciclo `result` hay una cadena vacía y `char` es igual al primer carácter '¡'. Por lo tanto, en `resultado` se asigna el carácter '¡' más la cadena vacía, lo que resulta en '¡'.
+  2. En la segunda iteración, `result` ya contiene el carácter '¡' y `char` es igual al siguiente carácter 'v'. En `result` se guarda `char + result`, es decir, `'v' + '¡'`.
+  3. En la última iteración, `result` contiene la cadena '¡v' y `char` es igual al último carácter '!'. En `result` se guarda `'¡v' + '!'`.
 
   Ahora contemos la cantidad de veces que aparece un carácter en una cadena sin tener en cuenta el caso:
 
   ```python
-  # texto - texto arbitrario
+  # text - texto arbitrario
   # char - carácter que se debe contar
-  def contar_caracteres(texto, char):
+  def chars_count(text, char):
       # Como estamos buscando la suma, el valor inicial es 0
-      resultado = 0
-      for carácter_actual in texto:
+      result = 0
+      for current_char in text:
           # convertimos todo a minúsculas
           # para no depender del caso actual
-          if carácter_actual.lower() == char.lower():
-              resultado += 1
-      return resultado
+          if current_char.lower() == char.lower():
+              result += 1
+      return result
 
 
-  contar_caracteres('¡hola!', 'o')  # 1
-  contar_caracteres('¡HOLA!', 'o')  # 1
-  contar_caracteres('¡HOLA!', 'O')  # 1
+  chars_count('hexlet!', 'e')  # 2
+  chars_count('hExlet!', 'e')  # 2
+  chars_count('hExlet!', 'E')  # 2
 
-  contar_caracteres('¡hola!', 'a')  # 0
+  chars_count('hexlet!', 'a')  # 0
   ```
 
   Te recomendamos experimentar con los ejemplos anteriores en el [Replit](https://replit.com/@hexlet/python-basics-for-loop#main.py) interactivo.
 
 instructions: |
 
-  En una de las lecciones anteriores, ya escribimos la función `filtrar_cadena()`. Recordemos que esta función recibe una cadena y un carácter, y devuelve una nueva cadena en la que se ha eliminado el carácter en todas sus posiciones. Esta vez, implementa esta función utilizando el ciclo `for`. Un requisito adicional es que el carácter a excluir no distingue entre mayúsculas y minúsculas.
+  En una de las lecciones anteriores, ya escribimos la función `filter_string()`. Recordemos que esta función recibe una cadena y un carácter, y devuelve una nueva cadena en la que se ha eliminado el carácter en todas sus posiciones. Esta vez, implementa esta función utilizando el ciclo `for`. Un requisito adicional es que el carácter a excluir no distingue entre mayúsculas y minúsculas.
 
   Ejemplo de llamada:
 
   ```python
-  texto = 'Si miro hacia adelante, gano'
-  filtrar_cadena(texto, 'i')  # 'S mro hacia adelante, gano'
-  filtrar_cadena(texto, 'O')  # 'Si miro hacia adelante, gano'
+  text = 'If I look forward I win'
+  filter_string(text, 'i')  # 'f  look forward  wn'
+  filter_string(text, 'O')  # 'If I lk frward I win'
   ```
 
 tips: []
 
 definitions:
   - name: Agregación
-    description: "Acumulación de resultados durante las iteraciones y manipulación de ellos después del ciclo."
+    description: "Acumulación de resultados durante las iteraciones y manejo de estos después del ciclo."

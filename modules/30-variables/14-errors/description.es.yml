@@ -3,11 +3,11 @@
 name: Errores al trabajar con variables
 theory: |
 
-  El orden de las instrucciones en el código con variables es de gran importancia. Por lo tanto, la variable debe ser definida antes de su primer uso. A continuación se muestra un ejemplo de error que cometen con frecuencia los principiantes:
+  El orden de las instrucciones en el código con variables es de gran importancia. Por lo tanto, la variable debe ser definida antes de su primer uso. A continuación, se muestra un ejemplo de error que cometen con frecuencia los principiantes:
 
   ```python
   print(greeting)
-  greeting = '¡Padre!'
+  greeting = 'Father!'
   ```
 
   La ejecución del programa anterior termina con el error `NameError: name 'greeting' is not defined` — este es un error de referencia. Esto significa que en el código se está utilizando un nombre (identificador) que aún no ha sido definido. Esto se indica en el propio texto del error: `'greeting' is not defined`. Además del orden incorrecto de las acciones, en Python también se encuentran errores tipográficos en el nombre de la variable. Esto ocurre tanto cuando se utiliza la variable como cuando se la declara.
@@ -16,14 +16,14 @@ theory: |
 
 instructions: |
 
-  Encuentra la variable no declarada en el programa y declárala asignándole el valor 'Dragón'.
+  Encuentra la variable no declarada en el programa y declárala asignándole el valor 'Dragon'.
 
   Después de ejecutar el programa, el resultado en la pantalla debería verse así:
 
   <pre class='hexlet-basics-output'>
   Targaryen
-   y
-  Dragón
+   and
+  Dragon
   </pre>
 
 tips: 

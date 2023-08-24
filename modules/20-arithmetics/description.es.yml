@@ -2,4 +2,4 @@
 
 name: Aritmética en Python
 description:
-  Los programas modernos se crean para servir a los negocios, ayudar en la vida diaria y entretener. Pero en el corazón de su funcionamiento siguen estando los cálculos. El tema más simple y básico en la programación es la aritmética. En este módulo traduciremos las operaciones aritméticas a lenguaje de programación, aprenderemos la terminología básica, como la diferencia entre operador y operando. Hablaremos sobre la prioridad de las operaciones. Y al final, explicaremos qué es un linter y por qué puede "quejarse".
+  Los programas modernos se crean para servir a los negocios, ayudar en las actividades cotidianas de vida diaria y entretener al público. Pero en la base de su funcionamiento siguen estando los cálculos. El tema más básico en la programación es la aritmética. En este módulo traduciremos las operaciones aritméticas a lenguaje de programación y aprenderemos la terminología básica, como la diferencia entre operador y operando. Hablaremos sobre la prioridad de las operaciones. Y al final, explicaremos qué es un linter y por qué puede "quejarse".

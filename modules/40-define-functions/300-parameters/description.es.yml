@@ -95,7 +95,7 @@ theory: |
 
   A continuación se muestra un ejemplo de definición de la función `replace()`, que reemplaza una parte de una cadena por otra:
 
- ```python
+  ```python
   def replace(text, from, to):
       # Aquí va el cuerpo de la función
       # pero lo omitimos para no distraernos

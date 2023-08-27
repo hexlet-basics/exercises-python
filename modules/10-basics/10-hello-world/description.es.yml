@@ -2,7 +2,7 @@
 
 name: ¡Hola, Mundo!
 theory: |
-  Por lo general, el aprendizaje de un nuevo lenguaje de programación comienza con 'Hello, World!'. Esto hace referencia a un simple programa que muestra un saludo en la pantalla, y al mismo tiempo, familiariza al usuario con el nuevo lenguaje, así como con su sintaxis y la estructura del programa.
+  Por lo general, el aprendizaje de un nuevo lenguaje de programación comienza con 'Hello, World!'. Este es un programa simple que muestra un saludo en la pantalla, y al mismo tiempo, familiariza al usuario con el nuevo lenguaje, así como con su sintaxis y la estructura del programa.
 
   <pre class='hexlet-basics-output'>
     ¡Hello, World!
@@ -17,7 +17,7 @@ instructions: |
   print('¡Hello, World!')
   ```
 
-  Atención: si escribes `Hello, wOrLd!` en lugar de `Hello, World!`, el sistema lo considerará un texto diferente, ya que las mayúsculas y minúsculas son caracteres diferentes que difieren en _mayúsculas y minúsculas_. En programación, la capitalización casi siempre importa, así que acostúmbrate a prestarle siempre atención a esos pequeños detalles.
+  Atención: si escribes `heLLo, woRld!` en lugar de `Hello, World!`, el sistema lo considerará un texto diferente, ya que las mayúsculas y minúsculas son caracteres diferentes que difieren en _mayúsculas y minúsculas_. En programación, la capitalización casi siempre importa, así que acostúmbrate a prestarle siempre atención a esos pequeños detalles.
 
 tips:
   - |

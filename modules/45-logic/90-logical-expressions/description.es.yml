@@ -62,7 +62,7 @@ theory: |
   Estas reglas se utilizan en el desarrollo, por ejemplo, para definir un valor por defecto:
 
   ```python
-  value = nname or ''
+  value = name or ''
   # Ejemplos
   234 or '' # 234
   'hexlet' or '' # 'hexlet'
@@ -75,7 +75,7 @@ theory: |
 
   ```python
   # El valor realmente existe,
-  # pero es falsy, por lo que no se selecciona en la condición OR
+  # pero es Falsy, por lo que no se selecciona en la condición OR
   False or '' # ''
   0 or '' # ''
   None or '' # ''

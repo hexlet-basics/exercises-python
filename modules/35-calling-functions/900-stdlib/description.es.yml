@@ -19,7 +19,7 @@ theory: |
 
 instructions: |
 
-  La función `type()` permite determinar el tipo del argumento pasado como parámetro. El nombre del tipo se devuelve como una cadena de texto. Por ejemplo, ejecutar `type(10)` devolverá la cadena de texto `<class 'int'>` (int es la abreviatura de integer, que significa número entero).
+  La función `type()` permite determinar el tipo del argumento pasado. El nombre del tipo se devuelve como una cadena de texto. Por ejemplo, ejecutar `type(10)` devolverá la cadena de texto `<class 'int'>` (int es la abreviatura de integer, que significa número entero).
 
   ```python
   print(type('wow')) # <class 'str'>

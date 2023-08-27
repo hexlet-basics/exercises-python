@@ -22,7 +22,7 @@ theory: |
   print(1 + 5)
   ```
 
-  Pero no todo en programación es una expresión. La expresión de una variable es una instrucción y, por lo tanto, no puede ser parte de una expresión. Es decir, este código dará un error:
+  Pero no todo en programación es una expresión. La declaración de una variable es una instrucción y, por lo tanto, no puede ser parte de una expresión. Es decir, este código dará un error:
 
   ```python
   # Código sin sentido que no funcionará

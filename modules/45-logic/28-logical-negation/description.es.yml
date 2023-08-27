@@ -51,9 +51,9 @@ instructions: |
   1. Implementa la función `is_palindrome()`, que determina si una palabra es un palíndromo o no. Un palíndromo es una palabra que se lee igual en ambos sentidos. Las palabras pueden estar en cualquier caso, por lo que primero debes convertir la palabra a minúsculas: `word.lower()`.
 
       ```python
-      is_palindrome('cabaña') # true
+      is_palindrome('area') # true
       is_palindrome('hexlet') # false
-      is_palindrome('argumento') # true
+      is_palindrome('argumento') # false
       is_palindrome('función') # false
       ```
 
@@ -62,7 +62,7 @@ instructions: |
       ```python
       is_not_palindrome('cabaña') # false
       is_not_palindrome('si') # false
-      is_not_palindrome('hexlet') # true
+      is_not_palindrome('hexlet') # false
       ```
 
       Para hacer esto, llama a la función `is_palindrome()` dentro de `is_not_palindrome()` y aplica la negación.

@@ -12,7 +12,7 @@ theory: |
 
   Ya hemos trabajado previamente con un programa similar, pero ahora hemos cambiado el nombre de la variable a `x`.
 
-  Al ordenador no le importa cómo llamemos a una variable u otra. Los nombres solamente son importantes para las personas. Por lo general, los programadores leen el código de otros con mucha más frecuencia que el suyo propio. Para que tus colegas puedan leer y analizar tu código fácilmente, es importante dar nombres claros a las variables.
+  Al ordenador no le importa cómo llamemos a una variable u otra. Los nombres solamente son importantes para las personas. Por lo general, los programadores leen el código de otros con mucha más frecuencia que las veces que escriben el suyo propio. Para que tus colegas puedan leer y analizar tu código fácilmente, es importante dar nombres claros a las variables.
 
   Es importante pensar en un nombre comprensible que refleje el significado de la variable. Al mismo tiempo, es importante dar nombres que se puedan entender sin contexto; sin tener que estudiar el código circundante.
 

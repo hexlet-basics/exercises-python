@@ -4,7 +4,7 @@ name: Instrucciones
 theory: |
   Cuando preparamos una comida, seguimos la receta al pie de la letra. De lo contrario, la comida no saldrá como esperábamos. Esta regla también se aplica a la programación.
 
-  Para ver el resultado esperado en la pantalla, es necesario darle al ordenador instrucciones claras, paso a paso. Esto se puede hacer mediante instrucciones, el cual es un término específico en programación. Una instrucción es un comando para el ordenador; una unidad de ejecución. En este caso, el código en Python es un conjunto de instrucciones. Se puede representar como una receta de cocina paso a paso.
+  Para ver el resultado esperado en la pantalla, es necesario darle al ordenador instrucciones claras, paso a paso. Esto se puede hacer mediante instrucciones. Una instrucción es un comando para el ordenador; una unidad de ejecución. En este caso, el código en Python es un conjunto de instrucciones. Se puede representar como una receta de cocina paso a paso.
 
   El código en Python es ejecutado por un **intérprete** - es decir, un programa que ejecuta las instrucciones recibidas en orden. Al igual que los pasos en una receta, el conjunto de instrucciones para el intérprete se escriben en orden y se separan por saltos de línea.
 

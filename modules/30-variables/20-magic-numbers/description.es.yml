@@ -13,7 +13,7 @@ theory: |
   print(rubles_count)
   ```
 
-  Desde el punto de vista del desarrollo profesional, este código no cumple con las "mejores prácticas de uso".
+  Desde el punto de vista del desarrollo profesional, este código no cumple con las "mejores prácticas".
 
   En este ejemplo, es difícil entender qué significan los números `60` y `1.25`. Imagina que tienes que trabajar con este código después de un mes o un año, será complicado. También será difícil para otros programadores que no hayan visto el código antes.
 

@@ -6,11 +6,11 @@ theory: |
   Tomemos como ejemplo un programa que calcula el tipo de cambio de divisas:
 
   ```python
-  cantidad_euros = 1000
-  cantidad_dolares = cantidad_euros * 1.25  # 1250.0
-  cantidad_rublos = cantidad_dolares * 60   # 75000.0
+  euros_count = 1000
+  dollars_count = euros_count * 1.25  # 1250.0
+  rubles_count = dollars_count * 60   # 75000.0
 
-  print(cantidad_rublos)
+  print(rubles_count)
   ```
 
   Desde el punto de vista del desarrollo profesional, este código no cumple con las "mejores prácticas".
@@ -23,22 +23,22 @@ theory: |
 
   Para evitar este problema, es necesario crear variables con nombres adecuados. Así todo encajará en su lugar:
 
-  ```python
-  dolares_por_euro = 1.25
-  rublos_por_dolar = 60
+   ```python
+  dollars_per_euro = 1.25
+  rubles_per_dollar = 60
 
-  cantidad_euros = 1000
-  cantidad_dolares = cantidad_euros * dolares_por_euro     # 1250.0
-  cantidad_rublos = cantidad_dolares * rublos_por_dolar  # 75000.0
+  euros_count = 1000
+  dollars_count = euros_count * dollars_per_euro     # 1250.0
+  rubles_count = dollars_count * rubles_per_dollar  # 75000.0
 
-  print(cantidad_rublos)
+  print(rubles_count)
   ```
 
   En este programa:
 
   * Se utiliza la convención de nombres snake_case
   * Las dos nuevas variables se separan de los cálculos posteriores con una línea en blanco. Estas variables tienen sentido incluso sin los cálculos, por lo que esta separación es apropiada ya que mejora la legibilidad.
-  * El código resultante es bien nombrado y estructurado, pero es más largo que la versión anterior. Esto ocurre a menudo y es normal, ya que el código debe ser legible.
+  * El código resultante está bien nombrado y estructurado, pero es más largo que la versión anterior. Esto ocurre a menudo y es normal, ya que el código debe ser legible.
 
   Los números mágicos y los nombres de variables confusos no rompen el código, pero lo hacen menos legible.
 
@@ -49,12 +49,12 @@ instructions: |
   Te has encontrado con este código que muestra en pantalla la cantidad total de habitaciones en posesión del actual rey:
 
   ```python
-  rey = "Habitaciones en el castillo del rey Balon:"
-  print(rey)
+  king = "Rooms in King Balon's Castle:"
+  print(king)
   print(6 * 17)
   ```
 
-  Como puedes ver, estos son números mágicos: no está claro qué significa el 6 y qué significa el 17. Se puede adivinar si se conoce la historia de la familia real: cada nuevo rey hereda todos los castillos de sus antepasados y construye un nuevo castillo, una copia exacta del castillo de sus padres.
+  Como puedes ver, estos son números mágicos: no está claro qué significa el 6 y qué significa el 17. Se puede adivinar si se conoce la historia de la familia real: cada nuevo rey hereda todos los castillos de sus antepasados y construye un nuevo castillo, que es una copia exacta del castillo de sus padres.
 
   Esta extraña dinastía simplemente reproduce castillos idénticos...
 
@@ -63,13 +63,13 @@ instructions: |
   El resultado debería ser:
 
   <pre class='hexlet-basics-output'>
-  Habitaciones en el castillo del rey Balon:
+  Rooms in King Balon's Castle:
   102
   </pre>
 
   Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser lo suficientemente cortos y concisos para una lectura cómoda.
 
-  Recuerda: el código funcionará con cualquier nombre, y nuestro sistema siempre verifica solo el resultado en pantalla, por lo que completar esta tarea es tu responsabilidad.
+  Recuerda: el código funcionará con cualquier nombre, y nuestro sistema siempre verifica solamente el resultado en pantalla, por lo que completar esta tarea es tu responsabilidad.
 
 tips: 
   - |

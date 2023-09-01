@@ -3,7 +3,7 @@
 name: Codificación
 theory: |
 
-  En el nivel más profundo, una computadora opera exclusivamente con los dígitos `0` y `1`. Esto se conoce como [código binario](https://es.wikipedia.org/wiki/C%C3%B3digo_binario), y los unos y ceros se llaman bits, abreviatura de "binary digit" (dígito binario).
+  En su nivel más profundo, una computadora opera exclusivamente con los dígitos `0` y `1`. Esto se conoce como [código binario](https://es.wikipedia.org/wiki/C%C3%B3digo_binario), y los unos y ceros se llaman bits, abreviatura de "binary digit" (dígito binario).
 
   Los números que estamos acostumbrados a utilizar en el sistema decimal se codifican utilizando números binarios:
 
@@ -27,16 +27,16 @@ theory: |
 
   Esto es lo que se conoce como **codificación**.
 
-  Durante su funcionamiento, los programas utilizan codificaciones para convertir números en caracteres y viceversa. Sin embargo, el programa en sí no tiene conocimiento del significado de estos caracteres.
+  Durante el proceso de funcionamiento, los programas utilizan codificaciones para convertir números en caracteres y viceversa. Sin embargo, el programa en sí no tiene conocimiento del significado de estos caracteres.
 
   - `hello` → `8` `5` `12` `12` `15`
   - `7` `15` `15` `4` → `good`
 
   Estas tablas que relacionan letras y números se llaman tablas de codificación. Además de las letras del alfabeto, las tablas de codificación incluyen signos de puntuación y otros caracteres útiles. Seguramente has encontrado tablas de codificación como [ASCII](https://es.wikipedia.org/wiki/ASCII) o [UTF-8](https://es.wikipedia.org/wiki/UTF-8).
 
-  Las diferentes codificaciones contienen diferentes conjuntos de caracteres. Inicialmente, tablas pequeñas como ASCII eran suficientes para la mayoría de las tareas. Sin embargo, solo incluían letras latinas, algunos caracteres simples como `%` y `?`, y caracteres de control especiales como el salto de línea.
+  Las distintas codificaciones contienen diferentes conjuntos de caracteres. Inicialmente, tablas pequeñas como ASCII eran suficientes para la realización de la mayoría de las tareas. Sin embargo, sólo incluían letras latinas, algunos caracteres simples como `%` y `?`, y caracteres de control especiales como el salto de línea.
 
-  Con la proliferación de las computadoras, diferentes países necesitaron sus propias tablas más amplias. Esto incluía letras cirílicas, caracteres chinos, árabe, matemáticos y tipográficos adicionales, y más tarde incluso emojis.
+  Con la proliferación de las computadoras, diferentes países necesitaron elaborar propias tablas más amplias. Esto incluía letras cirílicas, caracteres chinos, árabe, matemáticos y tipográficos adicionales, y más tarde incluso emojis.
 
   Hoy en día, en la mayoría de los casos se utiliza una de las variantes de [Unicode](https://es.wikipedia.org/wiki/Unicode), que incluye caracteres de casi todos los idiomas escritos del mundo.
 

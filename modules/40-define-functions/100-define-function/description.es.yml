@@ -16,16 +16,16 @@ theory: |
   title = 'Ayuda'
   body = 'Escribí una historia de éxito, ¿cómo puedo obtener un descuento?'
 
-  # Una pequeña llamada - mucha lógica interna
+  # Una pequeña ejecución - mucha lógica interna
   send(email, title, body)
   ```
 
-  Esta llamada realiza mucha lógica interna: se conecta al servidor de correo, forma una solicitud correcta basada en el título y el cuerpo del mensaje, y luego lo envía todo, sin olvidar cerrar la conexión.
+  Esta ejecución realiza acciones de gran lógica interna: se conecta al servidor de correo, forma una solicitud correcta basada en el título y el cuerpo del mensaje, y luego lo envía todo, sin olvidar cerrar la conexión.
 
   Creemos nuestra primera función. Su tarea es mostrar un saludo en la pantalla:
 
   ```bash
-  ¡Hola, Hexlet!
+  Hello, Hexlet!
   ```
 
   ```python
@@ -34,7 +34,7 @@ theory: |
   # Solo decimos que ahora existe esta función
   def show_greeting():
       # Dentro del cuerpo, hay una sangría de cuatro espacios
-      text = '¡Hola, Hexlet!'
+      text = 'Hello, Hexlet!'
       print(text)
 
   # Llamada a la función

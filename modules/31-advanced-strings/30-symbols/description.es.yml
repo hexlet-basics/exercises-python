@@ -32,7 +32,7 @@ theory: |
   print(magic[1])  # => ?
   ```
 
-  También hay situaciones no estándar. Por ejemplo, es posible que necesitemos mostrar un elemento desde el final, y además, desde una expresión con un gran número de caracteres. En este caso, podemos usar un índice negativo, que facilitará el trabajo del programador.
+  También hay situaciones que no son estándares o comunes. Por ejemplo, es posible que necesitemos mostrar un elemento desde el final, y además, desde una expresión con un gran número de caracteres. En este caso, podemos usar un índice negativo, que facilitará el trabajo del programador.
 
   Se pueden usar índices negativos. En este caso, se accede a los caracteres desde el final de la cadena. `-1` es el índice del último carácter, `-2` es el penúltimo, y así sucesivamente. A diferencia de la indexación directa, el recuento inverso comienza desde `-1`:
 
@@ -53,7 +53,7 @@ theory: |
 
   https://replit.com/@hexlet/python-basics-advanced-strings-symbols
 
-  Para mostrar solo algunos caracteres de una expresión, no es necesario escribir una gran cantidad de líneas de código, simplemente extraiga el elemento utilizando un índice. También puede usar un índice negativo para facilitar la extracción de caracteres desde el final de la expresión. A continuación, veremos cómo usar estos conocimientos para extraer subcadenas de una cadena.
+  Para mostrar solamente algunos caracteres de una expresión, no es necesario escribir una gran cantidad de líneas de código, simplemente extraiga el elemento utilizando un índice. También puede usar un índice negativo para facilitar la extracción de caracteres desde el final de la expresión. A continuación, veremos cómo usar estos conocimientos para extraer subcadenas de una cadena.
 
 instructions: |
 

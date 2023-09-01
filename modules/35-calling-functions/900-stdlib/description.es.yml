@@ -5,7 +5,7 @@ theory: |
 
   Python viene con un conjunto de funciones útiles que conforman la **biblioteca estándar**. Por lo general, incluye miles de funciones que son imposibles de recordar. Por lo tanto, el programador debe saber dónde encontrar la documentación de estas funciones, así como tener una idea del resultado que desea obtener. Por estas razones, programar sin conexión a Internet es difícil.
 
-  Los principiantes a menudo no entienden cómo y dónde obtener información sobre las funciones que deben utilizar. No hay una forma única de resolver este problema. A medida que los desarrolladores adquieren experiencia, van acumulando conocimientos y prácticas. Gradualmente, se familiarizan con funciones más interesantes que resuelven sus problemas de manera diferente.
+  Los principiantes a menudo no entienden cómo y dónde obtener información sobre las funciones que deben utilizar. No hay una forma única de resolver este problema. A medida que los desarrolladores adquieren experiencia, van acumulando conocimientos y prácticas. Poco a poco, se familiarizan con funciones más interesantes que resuelven sus problemas de manera diferente.
 
   Aquí hay algunos consejos que te ayudarán a mejorar tu nivel de profesionalismo:
 
@@ -19,7 +19,7 @@ theory: |
 
 instructions: |
 
-  La función `type()` permite determinar el tipo del argumento pasado. El nombre del tipo se devuelve como una cadena de texto. Por ejemplo, llamar a `type(10)` devolverá la cadena de texto `<class 'int'>` (int es la abreviatura de integer, que significa número entero).
+  La función `type()` permite determinar el tipo del argumento pasado. El nombre del tipo se devuelve como una cadena de texto. Por ejemplo, ejecutar `type(10)` devolverá la cadena de texto `<class 'int'>` (int es la abreviatura de integer, que significa número entero).
 
   ```python
   print(type('wow')) # <class 'str'>

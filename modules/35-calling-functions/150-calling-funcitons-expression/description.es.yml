@@ -9,16 +9,16 @@ theory: |
 
   ```python
   1 + 5 * 3
-  'Hola' + 'Mundo'
+  'He' + 'Let'
   # Las variables pueden ser parte de una expresión
-  tasa * 5
+  rate * 5
   ```
 
   La característica de las expresiones es que devuelven un resultado que se puede utilizar posteriormente, como asignarlo a una variable o imprimirlo en pantalla. Así es como se ve en el código:
 
   ```python
   # Aquí la expresión es 1 + 5
-  suma = 1 + 5
+  sum = 1 + 5
   print(1 + 5)
   ```
 
@@ -26,33 +26,33 @@ theory: |
 
   ```python
   # Código sin sentido que no funcionará
-  10 + suma = 1 + 5
+  10 + sum = 1 + 5
   ```
 
-  Ahora veamos si una llamada a una función se considera una expresión.
+  Ahora veamos si una ejecución de una función se considera una expresión.
 
   Sabemos que las funciones devuelven un resultado, lo que significa que son expresiones. De esto se deduce automáticamente muchas cosas interesantes. Por ejemplo, podemos usar una llamada a una función directamente en operaciones matemáticas. Así es como podemos obtener el índice del último carácter en una palabra:
 
   ```python
   nombre = 'python'
   # Los índices comienzan en cero
-  # ¡Llamada a una función y resta juntas!
-  ultimo_indice = len(nombre) - 1
-  print(ultimo_indice)  # => 5
+  # ¡Ejecución de una función y resta juntas!
+  last_index = len(name) - 1
+  print(last_index)  # => 5
   ```
 
   En este código no hay una nueva sintaxis. Simplemente hemos combinado partes conocidas basándonos en su naturaleza. Podemos ir aún más lejos:
 
   ```python
-  print(len(nombre) - 1)  # => 5
+  print(len(name) - 1)  # => 5
   ```
 
   Todo esto es válido para cualquier función, por ejemplo, las funciones de cadenas:
 
   ```python
-  nombre = 'python'
+  name = 'python'
   # Se utiliza interpolación
-  print(f'Último carácter: {nombre[len(nombre) - 1]}')
+  print(f'Último carácter: {name[len(name) - 1]}')
   # 'Último carácter: n'
   ```
 
@@ -63,8 +63,8 @@ instructions: |
   Imprime en pantalla la primera y la última letra de la oración almacenada en la variable `texto`, en el siguiente formato:
 
   <pre class='hexlet-basics-output'>
-  Primera: N
-  Última: t
+  First: N
+  Last: t
   </pre>
 
   Intenta crear solo una variable en la que se almacene el texto necesario antes de imprimirlo en pantalla. En esta lección, estamos practicando cómo construir una expresión compuesta.

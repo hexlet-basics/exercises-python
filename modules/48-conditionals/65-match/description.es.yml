@@ -32,7 +32,7 @@ theory: |
           # Hacer algo más
   ```
 
-  En términos de cantidad de elementos, `match` es una construcción compleja. Está compuesto por los siguientes elementos:
+  En términos de cantidad de elementos, `match` es una construcción compleja. Está compuesta por los siguientes elementos:
 
   * Una descripción externa que incluye la palabra clave `match`. Esta es la variable cuyos valores determinarán el comportamiento del `match`.
   * Las construcciones `case`, dentro de las cuales se describe el comportamiento para diferentes valores de la variable considerada. Cada `case` corresponde a un `if` en el ejemplo anterior. Además, `case _` es una situación especial que corresponde a la rama `else` en las estructuras condicionales. Al igual que `else`, no es obligatorio especificar `case _`.
@@ -58,12 +58,12 @@ theory: |
       # Declarar una variable
       result = ''
 
-      # Asignar un valor
+      # Llenar el espacio
       match count:
           case 1:
-              result = 'uno'
+              result = 'one'
           case 2:
-              result = 'dos'
+              result = 'two'
           case _:
               result = None
 
@@ -77,9 +77,9 @@ theory: |
   def count_items(count):
       match count:
           case 1:
-              return 'uno'
+              return 'one'
           case 2:
-              return 'dos'
+              return 'two'
           case _:
               return None
   ```
@@ -88,19 +88,19 @@ theory: |
 
 instructions: |
 
-  Implementa la función `get_number_explanation()`, que recibe un número como entrada y devuelve una explicación para ese número. Si no hay una explicación para el número, se devuelve `just a number`. Las explicaciones solo existen para los siguientes números:
+  Implementa la función `get_number_explanation()`, que recibe un número como entrada y devuelve una explicación para ese número. Si no hay una explicación para el número, se devuelve `just a number`. Las explicaciones solamente existen para los siguientes números:
 
-    * 666 - número del diablo
-    * 42 - respuesta para todo
-    * 7 - número primo
+    * 666 - devil number
+    * 42 - answer for everything
+    * 7 - prime number
 
   Ejemplos de llamadas a la función:
 
   ```python
   get_number_explanation(8)  # just a number
-  get_number_explanation(666)  # número del diablo
-  get_number_explanation(42)  # respuesta para todo
-  get_number_explanation(7)  # número primo
+  get_number_explanation(666)  # devil number
+  get_number_explanation(42)  # answer for everything
+  get_number_explanation(7)  # prime number
   ```
 
 tips:

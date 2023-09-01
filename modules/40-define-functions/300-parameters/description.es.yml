@@ -3,7 +3,7 @@
 name: Parámetros de las funciones
 theory: |
 
-  Las funciones no solo pueden devolver valores, sino también recibir parámetros. En esta lección aprenderemos a crear funciones que acepten parámetros.
+  Las funciones no solamente pueden devolver valores, sino también recibir parámetros. En esta lección aprenderemos a crear funciones que acepten parámetros.
 
   Recordemos que ya nos hemos encontrado con funciones que tienen parámetros:
 
@@ -18,23 +18,23 @@ theory: |
   round(10.23456, 3)  # 10.235
   ```
 
-  Ahora imaginemos que necesitamos implementar la función `obtener_ultimo_caracter()`, que devuelve el último carácter de una cadena que se le pasa como parámetro.
+  Ahora imaginemos que necesitamos implementar la función `get_last_char()`, que devuelve el último carácter de una cadena que se le pasa como parámetro.
 
   Así es como se usaría esta función:
 
   ```python
   # Pasando los parámetros directamente sin variables
-  obtener_ultimo_caracter("Hexlet")  # t
+  get_last_char("Hexlet")  # t
   # Pasando los parámetros a través de variables
   nombre1 = 'Hexlet'
-  obtener_ultimo_caracter(nombre1)  # t
+  get_last_char(name1)  # t
   nombre2 = 'Goo'
-  obtener_ultimo_caracter(nombre2)  # o
+  get_last_char(name2)  # o
   ```
 
   De este ejemplo podemos sacar las siguientes conclusiones:
 
-  * Necesitamos definir la función `obtener_ultimo_caracter()`
+  * Necesitamos definir la función `get_last_char()`
   * La función debe recibir un parámetro de tipo cadena
   * La función debe devolver un valor de tipo cadena
 
@@ -48,23 +48,23 @@ theory: |
   Entre paréntesis se especifica el nombre de la variable `texto`, que es el parámetro. El nombre del parámetro puede ser cualquier cosa, lo importante es que refleje el significado del valor que contiene. Por ejemplo:
 
   ```python
-  def obtener_ultimo_caracter(cadena):
-      return cadena[-1]
+  def get_last_char(string):
+      return string[-1]
   ```
 
   El valor del parámetro dependerá de cómo se llame a esta función:
 
   ```python
-  # Dentro de la función, cadena será igual a 'hexlet'
-  obtener_ultimo_caracter('hexlet')  # t
+  # Dentro de la función, string será igual a 'hexlet'
+  get_last_char('hexlet')  # t
 
-  # Dentro de la función, cadena será igual a 'code'
-  obtener_ultimo_caracter('code')  # e
+  # Dentro de la función, string será igual a 'code'
+  get_last_char('code')  # e
 
-  # Dentro de la función, cadena será igual a 'Winter is coming'
+  # Dentro de la función, cadena o string será igual a 'Winter is coming'
   # El nombre de la variable fuera de la función no está relacionado con el nombre de la variable en la definición de la función
-  texto = 'Winter is coming'
-  obtener_ultimo_caracter(texto)  # g
+  text = 'Winter is coming'
+  get_last_char(text)  # g
   ```
 
   https://replit.com/@hexlet/python-basics-define-functions-parameters
@@ -72,9 +72,9 @@ theory: |
   Es obligatorio especificar el parámetro. Si se llama a la función sin él, el intérprete mostrará un error:
 
   ```python
-  obtener_ultimo_caracter()  # Este código no tiene sentido
+  get_last_char()  # Este código no tiene sentido
 
-  TypeError: obtener_ultimo_caracter() missing 1 required positional argument: 'cadena'
+  TypeError: get_last_char() missing 1 required positional argument: 'string'
   ```
 
   Muchas funciones trabajan con varios parámetros al mismo tiempo. Por ejemplo, para redondear números, es necesario especificar tanto el número en sí como la cantidad de decimales:
@@ -93,13 +93,14 @@ theory: |
 
   Para crear funciones y métodos de este tipo, es necesario especificar la cantidad necesaria de parámetros separados por comas. También es importante darles nombres descriptivos.
 
-  A continuación se muestra un ejemplo de definición de la función `reemplazar()`, que reemplaza una parte de una cadena por otra:
+  A continuación se muestra un ejemplo de definición de la función `replace()`, que reemplaza una parte de una cadena por otra:
 
   ```python
-  def reemplazar(texto, desde, hasta):
-      # Aquí va el cuerpo de la función, pero lo omitimos para no distraernos
+  def replace(text, from, to):
+      # Aquí va el cuerpo de la función
+      # pero lo omitimos para no distraernos
 
-  reemplazar('google', 'go', 'mo')  # moogle
+  replace('google', 'go', 'mo')  # moogle
   ```
 
   Cuando hay dos o más parámetros, el orden en que se pasan a la función es casi siempre importante. Si se cambia el orden, la función se comportará de manera diferente:
@@ -107,14 +108,14 @@ theory: |
   ```python
   # No se reemplaza nada,
   # ya que no hay 'mo' en 'google'
-  reemplazar('google', 'mo', 'go')  # google
+  replace('google', 'mo', 'go')  # google
   ```
 
   Ahora sabes cómo crear funciones que pueden recibir parámetros.
 
 instructions: |
 
-  Completa la función `recortar()`, que recorta una cadena pasada como parámetro hasta un número determinado de caracteres, agrega puntos suspensivos al final y devuelve la cadena resultante. Esta lógica se utiliza a menudo en sitios web para mostrar texto largo de forma abreviada.
+  Completa la función `truncate()`, que recorta una cadena pasada como parámetro hasta un número determinado de caracteres, agrega puntos suspensivos al final y devuelve la cadena resultante. Esta lógica se utiliza a menudo en sitios web para mostrar texto largo de forma abreviada.
 
   La función recibe dos parámetros:
 
@@ -129,17 +130,17 @@ instructions: |
   recortar('hexlet', 2)  # 'he...'
 
   # A través de una variable
-  texto = '¡funciona!'
+  text = '¡funciona!'
   # Recortamos el texto dejando 4 caracteres
-  recortar(texto, 4)  # '¡fun...'
+  truncate(texto, 4)  # '¡fun...'
   ```
 
-  Puedes resolver este ejercicio de diferentes maneras, pero te daremos una pista. Para resolverlo de esta manera, tendrás que tomar una subcadena de la cadena que se pasa como primer parámetro a la función. Utiliza rebanadas de cadenas para hacerlo. Piensa, en función del enunciado, desde qué índice y hasta qué índice debes extraer la subcadena.
+  Puedes resolver este ejercicio de diferentes maneras, pero te daremos una pista. Para resolverlo de esta manera, tendrás que tomar una subcadena de la cadena que se pasa como primer parámetro a la función. Utiliza segmentos de cadenas para hacerlo. Piensa, en función del enunciado, desde qué índice y hasta qué índice debes extraer la subcadena.
 
   ```python
-  palabra = '¡bienvenido!'
-  indice = 3
-  palabra[:indice] # ¡bi
+  word = 'welcome!'
+  index = 3
+  word[:index] # wel
   ```
 
 tips:

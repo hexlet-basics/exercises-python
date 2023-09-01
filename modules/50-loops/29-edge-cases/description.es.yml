@@ -20,9 +20,9 @@ theory: |
   Imaginemos una función extendida `my_substr()`. Toma tres argumentos: una cadena, un índice y la longitud de la subcadena a extraer. La función devuelve la subcadena de la longitud especificada, comenzando desde el índice especificado. Ejemplos de llamadas:
 
   ```python
-  string = 'Si miro hacia atrás, estoy perdido'
-  print(my_substr(string, 0, 1))  # => 'S'
-  print(my_substr(string, 3, 6))  # => 'miro h'
+  string = 'If I look back, I am lost'
+  print(my_substr(string, 0, 1))  # => 'I'
+  print(my_substr(string, 3, 6))  # => 'I look'
   ```
 
   Los siguientes **casos límite** deben tenerse en cuenta:

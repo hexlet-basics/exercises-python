@@ -76,6 +76,7 @@ instructions: |
 
   Ejemplo de salida para 100 euros:
 
+
   ```
   125.0
   863.75
@@ -91,4 +92,5 @@ tips:
 
 definitions:
   - name: Variable
+
     description: una forma de almacenar información y darle un nombre para su posterior uso en el código.

@@ -1,0 +1,52 @@
+---
+
+name: Determinismo
+theory: |
+
+  Las funciones en cada lenguaje de programación tienen propiedades fundamentales. Estas propiedades ayudan a predecir el comportamiento de las funciones, las formas de probarlas y dónde utilizarlas. Una de estas propiedades es el determinismo.
+
+  Una función determinista devuelve el mismo resultado para los mismos parámetros de entrada. Por ejemplo, se puede considerar determinista una función que cuenta la cantidad de caracteres:
+
+  ```python
+  len('hexlet')  # 6
+  len('hexlet')  # 6
+
+  len('wow')  # 3
+  len('wow')  # 3
+  ```
+
+  Se puede ejecutar esta función infinitamente y pasarle el valor `'hexlet'` - siempre devolverá `6`.
+
+  Veamos ahora el caso contrario: las funciones no deterministas. Por ejemplo, una función que devuelve un número aleatorio pertenece a esta categoría: para una misma entrada, siempre obtendremos un resultado diferente. Si al menos una de cada millón de llamadas a la función devuelve un resultado diferente, se considera no determinista. Esto también se aplica cuando no se toman parámetros:
+
+  ```python
+  # La sintaxis de las importaciones se estudiará más adelante en Hexlet
+  from random import random
+
+  # Función que devuelve un número aleatorio
+  random()  # 0.09856613113197676
+  random()  # 0.8839904367241888
+  ```
+
+  El determinismo es una propiedad importante de una función, ya que afecta a muchos aspectos. Por ejemplo, las funciones deterministas son convenientes para trabajar, ya que son fáciles de optimizar y probar. Si es posible, es mejor hacer que una función sea determinista.
+
+instructions: |
+
+  La función `random()` devuelve un número aleatorio entre 0 y 1 con varios decimales. Implementa un código que muestre en pantalla un número entero aleatorio en el rango de 0 a 10. Para este ejercicio, necesitarás la función `random()` y la función [round()](https://docs.python.org/3/library/functions.html#round), que redondea el valor que se le pasa.
+
+  ```python
+  round(2.320000789855705) # 2
+  ```
+
+  Intenta resolver este ejercicio en una sola línea.
+
+  ## Algoritmo
+  Dado que la función `random()` devuelve números en el rango de 0 a 1, para obtener números en el rango de 0 a 10, debemos multiplicar por 10. Luego, se redondea el número resultante y así obtenemos lo que necesitamos.
+
+tips:
+  - |
+    [Funciones deterministas](https://ru.wikipedia.org/wiki/Чистота_функции#Детерминированность_функции)
+
+definitions:
+  - name: Efecto secundario
+    description: "una acción que modifica el entorno externo (el entorno de ejecución). Por ejemplo, la impresión en pantalla o el envío de un correo electrónico."

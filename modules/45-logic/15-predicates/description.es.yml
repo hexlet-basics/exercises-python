@@ -1,0 +1,39 @@
+---
+
+name: Predicados
+theory: |
+
+  La función `is_infant()` es una **función booleana** o función de pregunta. Un predicado responde a una pregunta afirmativa "sí" o "no", devolviendo un valor booleano. Los predicados se nombran de manera especial para facilitar el análisis en todos los lenguajes. En Python, los predicados comienzan con el prefijo `is` o `has`:
+
+  * `is_infant()` - "¿es un bebé?"
+  * `has_children()` - "¿tiene hijos?"
+  * `is_empty()` - "¿está vacío?"
+  * `has_errors()` - "¿tiene errores?"
+
+  Una función se considera un predicado si devuelve los valores booleanos `True` o `False`.
+
+  Escribamos otra función booleana. Toma una cadena y verifica si es la palabra `'Castle'`:
+
+  ```python
+  def is_castle(string):
+      return string == 'Castle'
+
+  print(is_castle('Sea')) # False
+  ```
+
+instructions: |
+
+  Escriba la función `is_mister()`, que toma una cadena y verifica si es la palabra `'Mister'`.
+
+  ```python
+  is_mister('Mister') # True
+  is_mister('Missis') # False
+  ```
+
+tips:
+  - |
+    [Naming in Programming](https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+definitions:
+  - name: Predicado
+    description: una expresión que responde a una pregunta afirmativa "sí" o "no" utilizando el tipo bool.

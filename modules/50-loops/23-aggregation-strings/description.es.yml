@@ -1,0 +1,58 @@
+---
+
+name: Agregación de datos (Cadenas)
+theory: |
+
+  La agregación de cadenas es cuando no se sabe de antemano qué contienen las cadenas y cuál es su tamaño.
+
+  Imagina una función que pueda multiplicar una cadena, repitiéndola un número fijo o determinado de veces:
+
+  ```python
+  repeat('hexlet', 3)  # 'hexlethexlethexlet'
+  ```
+
+  El principio de funcionamiento de esta función es que en un bucle se va "acumulando" la cadena un número determinado de veces:
+
+  ```python
+  def repeat(text, times):
+      # El elemento neutro para las cadenas es una cadena vacía
+      result = ''
+      i = 1
+
+      while i <= times:
+          # En cada iteración, se agrega la cadena al resultado
+          result = result + text
+          i = i + 1
+
+      return result
+  ```
+
+  https://replit.com/@hexlet/python-basics-loops-aggregation-strings
+
+  Veamos cómo se ejecuta este código paso a paso:
+
+  ```python
+  # Para llamar a repeat('hexlet', 3)
+  result = ''
+  result = result + 'hexlet'  # hexlet
+  result = result + 'hexlet'  # hexlethexlet
+  result = result + 'hexlet'  # hexlethexlethexlet
+  ```
+
+instructions: |
+
+  Implementa la función `join_numbers_from_range()`, que une todos los números de un rango en una cadena:
+
+  ```python
+  join_numbers_from_range(1, 1)   # '1'
+  join_numbers_from_range(2, 3)   # '23'
+  join_numbers_from_range(5, 10)  # '5678910'
+  ```
+
+tips:
+  - |
+    [Iteración](https://es.wikipedia.org/wiki/Iteraci%C3%B3n_(inform%C3%A1tica))
+
+definitions:
+  - name: Agregación
+    description: "Acumulación de resultados durante las iteraciones y manejo de estos después del bucle."

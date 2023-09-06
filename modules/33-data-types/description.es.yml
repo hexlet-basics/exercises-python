@@ -1,0 +1,5 @@
+---
+
+name: Tipos de datos
+description:
+  Python es un lenguaje con una tipificación sólida y tipos de datos primitivos e inmutables. ¿Qué sucede si intentamos multiplicar un número por una cadena? ¿Cómo Python entiende qué tipo de dato tiene ante sí? ¿Qué es la conversión de tipos? Encontrarás las respuestas a estas preguntas en el módulo actual.

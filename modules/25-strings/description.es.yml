@@ -1,0 +1,5 @@
+---
+
+name: Cadenas
+description:
+  En programación, el texto se llama "cadenas" y este tema no es tan sencillo como puede parecer a simple vista. ¿Cómo mostrar una frase que contiene tanto comillas simples como comillas dobles? ¿Qué es una secuencia de escape? Este módulo se enfoca en los diferentes aspectos de la escritura de texto: experimentaremos con la impresión de diferentes cadenas y hablaremos sobre la codificación.

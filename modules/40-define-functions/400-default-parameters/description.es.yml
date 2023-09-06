@@ -1,0 +1,93 @@
+---
+
+name: Parámetros opcionales de las funciones
+theory: |
+
+  En programación, muchas funciones y métodos tienen parámetros que rara vez cambian. En estos casos, se les asignan valores predeterminados que se pueden cambiar según sea necesario. Esto reduce la cantidad de código repetitivo. Veamos cómo se ve esto en la práctica.
+
+  Veamos un ejemplo:
+
+  ```python
+  # Función de potencia
+  # El segundo parámetro tiene un valor predeterminado de dos
+  def pow(x, base=2):
+      return x ** base
+
+  # Tres al cuadrado (dos es el valor predeterminado)
+  pow(3)  # 3 * 3 = 9
+  # Tres al cubo
+  pow(3, 3)  # 3 * 3 * 3 = 27
+  ```
+
+  https://replit.com/@hexlet/python-basics-define-functions-default-parameters
+
+  El valor predeterminado se ve como una asignación normal en la definición. Solo se activa si no se pasa el parámetro.
+
+  Imagina que no llevaste las piezas de repuesto para tu automóvil al taller. Entonces el mecánico te ofrecerá poner las que él tiene, por defecto.
+
+  Incluso puede haber un valor predeterminado cuando solo hay un parámetro:
+
+  ```python
+  def my_print(text='nothing'):
+      print(text)
+
+  my_print()  # => "nothing"
+  my_print("Hexlet")  # => "Hexlet"
+  ```
+
+  Puede haber cualquier cantidad de parámetros con valores predeterminados:
+
+  ```python
+  def f(a=5, b=10, c=100):
+  ```
+
+  Los valores predeterminados tienen una restricción. Deben ir al final de la lista de parámetros. Desde el punto de vista de la sintaxis, no es posible crear una función en la que haya un parámetro opcional seguido de uno obligatorio:
+
+  ```python
+  # Este código dará un error
+  def f(a=5, b=10, c=100, x):
+  # Y este también
+  def f(a=5, b=10, x, c=100):
+
+  # Este código funcionará
+  def f(x, a=5, b=10, c=100):
+
+  # Este también funcionará
+  def f(x, y, a=5, b=10, c=100):
+  ```
+
+  Ahora sabes cómo trabajar con valores predeterminados de los parámetros. Pueden estar presentes en varios parámetros o en uno solo. Y recuerda que los valores predeterminados deben estar al final de la lista de parámetros. Este conocimiento te ayudará a reducir la cantidad de código repetitivo.
+
+instructions: |
+
+  Implementa la función `get_hidden_card()`, que recibe como entrada el número de una tarjeta de crédito (compuesto por 16 dígitos) como una cadena y devuelve su versión oculta, que se puede utilizar en el sitio web para su visualización. Si la tarjeta original tenía el número *2034399002125581*, entonces la versión oculta se verá así *\*\*\*\*5581*. En otras palabras, la función reemplaza los primeros 12 caracteres por asteriscos. El número de asteriscos se controla mediante el segundo parámetro, que es opcional. El valor predeterminado es 4.
+
+  ```python
+  # La tarjeta de crédito se pasa como una cadena
+  # El segundo parámetro no se pasa, por lo que habrá 4 asteriscos
+  get_hidden_card('1234567812345678') # ****5678
+
+  get_hidden_card('1234567812345678', 2) # **5678
+  get_hidden_card('1234567812345678', 3) # ***5678
+
+  # O usando variables
+
+  card_number = '2034399002121100'
+  get_hidden_card(card_number) # ****1100
+  get_hidden_card(card_number, 1) # *1100
+  ```
+
+  Para completar la tarea, necesitarás el mecanismo de repetición de cadenas, que repite una cadena un número determinado de veces. Para hacer esto, simplemente multiplica la cadena por el número de repeticiones:
+
+  ```python
+  '+' * 5 # +++++
+  'o' * 3 # ooo
+  ```
+
+tips:
+  - |
+    [Parámetros por defecto](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+definitions:
+  - name: Parámetro por defecto
+    description: parámetro opcional de una función

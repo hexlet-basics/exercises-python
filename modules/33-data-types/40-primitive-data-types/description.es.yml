@@ -1,0 +1,46 @@
+---
+
+name: Tipos de datos
+theory: |
+
+  Hay diferentes formas de representar datos en los programas. También hay **cadenas de texto** - conjuntos de caracteres entre comillas como `"Hello, World!"`. Hay **números enteros** - por ejemplo, `7`, `-198`, `0`. Estas son dos categorías diferentes de información, dos **tipos de datos** diferentes. La operación de multiplicación tiene sentido para la categoría de "números enteros", pero no para la categoría de "cadenas de texto": no tiene sentido multiplicar la palabra "mamá" por la palabra "cuaderno".
+
+  El tipo de datos determina qué se puede hacer con los elementos de un conjunto de información específico. En esta lección, aprenderemos sobre los tipos de datos y cómo funciona la tipificación en Python.
+
+  El lenguaje de programación reconoce los tipos de datos, por lo que Python no nos permitirá multiplicar una cadena de texto por otra cadena de texto; no se puede multiplicar texto por texto. Sin embargo, se puede multiplicar un número entero por otro número entero. La presencia de tipos y de tales restricciones en el lenguaje protege a los programas de errores accidentales.
+
+  A diferencia de las cadenas de texto, los números no necesitan estar entre comillas. Para imprimir el número 5, simplemente escriba:
+
+  ```python
+  print(5)  # => 5
+  ```
+
+  El número `5` y la cadena de texto `'5'` son cosas completamente diferentes, aunque la salida de `print()` para estos datos es idéntica. Los números enteros (`1`, `34`, `-19`, etc.) y los números racionales (`1.3`, `1.0`, `-14.324`, etc.) son dos tipos de datos diferentes. Esta división está relacionada con las características de los ordenadores. Hay otros tipos, los conoceremos más adelante.
+
+  Aquí hay otro ejemplo, pero esta vez con un número racional:
+
+  ```python
+  print(10.234)  # => 10.234
+  ```
+
+  Los tipos de datos "cadena de texto", "número entero" y "número racional" son *tipos primitivos*, es decir, están incorporados en el propio lenguaje Python. El lenguaje también tiene algunos tipos compuestos incorporados, pero por ahora sólo trabajaremos con los primitivos. Los programadores también pueden crear sus propios tipos de datos.
+
+  En inglés, las cadenas de texto en programación se llaman strings, y las líneas de texto en archivos se llaman lines. Por ejemplo, en el código anterior hay una línea (line), pero no hay cadenas de texto (strings). En el español, a veces puede haber confusión, por lo tanto, en todas las lecciones usaremos **cadena de texto** para referirnos al tipo de datos "cadena de texto", y **línea** para referirnos a las líneas de código (lines) en los archivos.
+
+instructions: |
+  Imprime en pantalla el número `-0.304`.
+
+tips:
+  - |
+    [Literal](https://es.wikipedia.org/wiki/Literal_(inform%C3%A1tica))
+  - |
+    [Artículo sobre números decimales](https://es.wikipedia.org/wiki/N%C3%BAmero_decimal)
+
+definitions:
+  - name: "Tipo de datos"
+    description: "un conjunto de datos en el código (una variedad de información). El tipo determina qué se puede hacer con los elementos de un conjunto específico. Por ejemplo, los números enteros, los números racionales, las cadenas de texto son diferentes tipos de datos."
+  - name: "Tipos de datos primitivos"
+    description: "tipos de datos simples, incorporados en el propio lenguaje de programación."
+  - name: "Cadena de texto (string)"
+    description: |
+      un tipo de datos que describe un conjunto de caracteres (es decir, texto), por ejemplo, `'texto'` o `"texto"`

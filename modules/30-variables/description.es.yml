@@ -1,0 +1,5 @@
+---
+
+name: Variables
+description:
+  La información se puede colocar en "almacenes" especiales y luego utilizarla tantas veces como sea necesario. Estos almacenes se llaman variables y ayudan a simplificar el código y reducir repeticiones innecesarias.

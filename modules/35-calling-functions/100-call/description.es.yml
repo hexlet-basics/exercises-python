@@ -1,0 +1,49 @@
+---
+
+name: Funciones y su ejecución
+theory: |
+
+  La suma, la concatenación, el cálculo del resto de la división y otras operaciones que hemos visto son capacidades básicas de los lenguajes de programación. Las matemáticas no se limitan a la aritmética; también hay otras ramas con sus propias operaciones, como la geometría. Lo mismo ocurre con las cadenas de texto: se pueden invertir, cambiar la capitulación de las letras, eliminar caracteres innecesarios, y eso es sólo lo más básico.
+
+  Además, a un nivel más alto y profundo, existe la lógica aplicada a una aplicación específica. Los programas pueden realizar transacciones monetarias, calcular impuestos, generar informes. La cantidad de operaciones similares es infinita y depende de cada programa en particular. Y es necesario saber cómo expresarlas en código.
+
+  Para expresar cualquier operación arbitraria, en programación existe el concepto de **función**. Las funciones pueden ser incorporadas o creadas por el programador. Ya estamos familiarizados con una función incorporada: `print()`.
+
+  Las funciones son una de las construcciones clave en programación. Sin ellas, prácticamente no se puede hacer nada. Es importante familiarizarse con ellas lo antes posible, ya que el resto del material se basa en el uso de funciones al máximo. Primero aprenderemos a utilizar las funciones ya creadas y luego aprenderemos a crear nuestras propias funciones.
+
+  Comenzaremos con funciones sencillas para trabajar con cadenas de texto.
+
+  La función `len()` cuenta la cantidad de caracteres en una cadena de texto. A continuación, se muestra un ejemplo de su llamado:
+
+  ```python
+  # Ejecución de la función len con el parámetro 'Hello!'
+  result = len('Hello!')
+  print(result)  # => 6
+  ```
+
+  **Parámetros o argumentos** son la información que una función recibe al ser ejecutada. Con base en esta información, la función generalmente realiza un cálculo y devuelve un resultado.
+
+  Hemos creado la variable `resultado` y le hemos indicado al intérprete la acción específica: guardar en ella el resultado que devuelve la función `len()` al ser llamada. En este sentido, las funciones son similares a las operaciones, ya que siempre devuelven un resultado de su trabajo. La expresión `len('Hello!')` significa que se ejecuta la función con el nombre *len*, y se le pasa el parámetro `'Hello!'`. La función `len()` cuenta la longitud de la cadena de texto que se le ha pasado.
+
+  La ejecución de una función siempre se indica con paréntesis `()`, que van justo después del nombre de la función. Entre los paréntesis puede haber cualquier cantidad de parámetros, o incluso ninguno. La cantidad depende de la función que se esté utilizando.
+
+  Tomemos como ejemplo la función `pow()`, que eleva un número dado a una potencia determinada. Esta función recibe dos parámetros: toma el primer parámetro y lo eleva a la potencia que se pasa como segundo parámetro:
+
+  ```python
+  result = pow(2, 3)  # 2 * 2 * 2
+  print(result)  # => 8
+  ```
+
+  Hemos aprendido cómo utilizar funciones incorporadas sencillas. Pero esta no es una lista exhaustiva de funciones. Aprenderán más sobre funciones en las próximas lecciones.
+
+instructions: |
+
+  En el código del programa se han definido dos variables que contienen nombres de empresas. Calcula la longitud total de los nombres en caracteres y muéstrala en pantalla.
+
+tips: []
+
+definitions:
+  - name: Función
+    description: "operación que puede recibir datos y devolver un resultado; se llama a una función de esta manera: `foo()`."
+  - name: Argumento
+    description: "información que una función recibe al ser ejecutada. Por ejemplo, `foo(42)` es pasar el argumento `42` a la función `foo()`."

@@ -14,8 +14,8 @@ theory: |
           return 'question'
       return 'normal'
 
-  print(get_type_of_sentence('Hola'))   # => normal
-  print(get_type_of_sentence('Hola?'))  # => pregunta
+  print(get_type_of_sentence('Hodor'))   # => normal
+  print(get_type_of_sentence('Hodor?'))  # => pregunta
   ```
 
   https://replit.com/@hexlet/python-basics-conditionals-if

@@ -36,7 +36,7 @@ theory: |
   * `*` — multiplicación
   * `**` — exponente
   * `/` — división
-  * `//` — [división entera](https://es.wikipedia.org/wiki/Divisi%C3%B3n_entera)
+  * `//` — [división entera](https://es.wikipedia.org/wiki/División_(matemática))
   * `%` — [resto de la división](https://es.wikipedia.org/wiki/Divisi%C3%B3n_entera)
 
   Ahora vamos a mostrar en pantalla el resultado de una división y luego el resultado de elevar un número a una potencia:

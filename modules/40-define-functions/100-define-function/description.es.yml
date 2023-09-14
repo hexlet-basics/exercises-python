@@ -30,7 +30,7 @@ theory: |
 
   ```python
   # Definición de la función
-  # La definición no comienza ni ejecuta la función
+  # La definición no llama ni ejecuta la función
   # Solo decimos que ahora existe esta función
   def show_greeting():
       # Dentro del cuerpo, hay una sangría de cuatro espacios
@@ -73,4 +73,4 @@ instructions: |
 
 tips:
   - |
-    [Naming en programación](https://ru.hexlet.io/blog/posts/naming-in-programming)
+    [Naming en programación](https://hexlet.la/blog/naming-in-programming)

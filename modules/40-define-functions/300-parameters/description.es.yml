@@ -95,7 +95,7 @@ theory: |
 
   A continuación se muestra un ejemplo de definición de la función `replace()`, que reemplaza una parte de una cadena por otra:
 
- ```python
+  ```python
   def replace(text, from, to):
       # Aquí va el cuerpo de la función
       # pero lo omitimos para no distraernos
@@ -135,7 +135,7 @@ instructions: |
   truncate(texto, 4)  # '¡fun...'
   ```
 
-  Puedes resolver este ejercicio de diferentes maneras, pero te daremos una pista. Para resolverlo de esta manera, tendrás que tomar una subcadena de la cadena que se pasa como primer parámetro a la función. Utiliza listas de cadenas para hacerlo. Piensa, en función del enunciado, desde qué índice y hasta qué índice debes extraer la subcadena.
+  Puedes resolver este ejercicio de diferentes maneras, pero te daremos una pista. Para resolverlo de esta manera, tendrás que tomar una subcadena de la cadena que se pasa como primer parámetro a la función. Utiliza segmentos de cadenas para hacerlo. Piensa, en función del enunciado, desde qué índice y hasta qué índice debes extraer la subcadena.
 
   ```python
   word = 'welcome!'

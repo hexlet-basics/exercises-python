@@ -12,7 +12,7 @@ theory: |
 
   La aritmética en programación es prácticamente igual a la aritmética escolar.
 
-  La línea de código `3 + 4` hace que el intérprete sume los números y obtenga el resultado. Este programa funcionará, pero no tiene sentido. Básicamente, no le estamos dando una instrucción al intérprete, simplemente le estamos diciendo: "mira, esta esla suma de tres y cuatro". En un trabajo real, no es suficiente informar al intérprete sobre una expresión matemática.
+  La línea de código `3 + 4` hace que el intérprete sume los números y obtenga el resultado. Este programa funcionará, pero no tiene sentido. Básicamente, no le estamos dando una instrucción al intérprete, simplemente le estamos diciendo: "mira, esta es la suma de tres y cuatro". En un trabajo real, no es suficiente informar al intérprete sobre una expresión matemática.
 
   Por ejemplo, si estás creando una tienda en línea, no es suficiente pedirle al intérprete que calcule el costo de los productos en el carrito. Necesitas pedirle que calcule el costo **Y** mostrarle el precio al comprador.
 

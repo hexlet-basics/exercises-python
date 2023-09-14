@@ -3,7 +3,7 @@
 name: Agregación de datos (Números)
 theory: |
 
-  Una clase de errores o problemas que no se puede resolver sin bucles se llama **agregación de datos**. Estos problemas incluyen la búsqueda del valor máximo o mínimo, la suma y el promedio aritmético. En estos casos, el resultado depende de todo el conjunto de datos.
+  Una clase de tareas que no se puede resolver sin bucles se llama **agregación de datos**. Estos problemas incluyen la búsqueda del valor máximo o mínimo, la suma y el promedio aritmético. En estos casos, el resultado depende de todo el conjunto de datos.
 
   Para calcular la suma, es necesario sumar todos los números, y para calcular el máximo, es necesario compararlos. Los contadores o los especialistas en marketing están familiarizados con este tipo de problemas. Trabajan con tablas en Microsoft Excel o Google Sheets.
 
@@ -50,7 +50,7 @@ theory: |
   Este proceso se ve así:
 
   ```python
-  # Для вызова sum_numbers_from_range(2, 5)
+  # para la llamada y ejecución sum_numbers_from_range(2, 5)
   sum = 0
   sum = sum + 2  # 2
   sum = sum + 3  # 5

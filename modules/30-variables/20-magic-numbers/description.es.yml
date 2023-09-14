@@ -13,7 +13,7 @@ theory: |
   print(rubles_count)
   ```
 
-  Desde el punto de vista del desarrollo profesional, este código no cumple con las "mejores prácticas de uso".
+  Desde el punto de vista del desarrollo profesional, este código no cumple con las "mejores prácticas".
 
   En este ejemplo, es difícil entender qué significan los números `60` y `1.25`. Imagina que tienes que trabajar con este código después de un mes o un año, será complicado. También será difícil para otros programadores que no hayan visto el código antes.
 
@@ -40,7 +40,7 @@ theory: |
   * Las dos nuevas variables se separan de los cálculos posteriores con una línea en blanco. Estas variables tienen sentido incluso sin los cálculos, por lo que esta separación es apropiada ya que mejora la legibilidad.
   * El código resultante está bien nombrado y estructurado, pero es más largo que la versión anterior. Esto ocurre a menudo y es normal, ya que el código debe ser legible.
 
-  Los números mágicos y los nombres de variables confusos no rompen el código, pero lo hacen menos legible e inteligible.
+  Los números mágicos y los nombres de variables confusos no rompen el código, pero lo hacen menos legible.
 
   Es importante entender que la computadora ejecutará el cálculo especificado de todas formas. Sin embargo, otro programador que lea el código no entenderá nada, lo que dificultará el trabajo. Nombrar adecuadamente las variables es la mitad del éxito en el análisis del código.
 

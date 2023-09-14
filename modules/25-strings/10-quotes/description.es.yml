@@ -65,7 +65,7 @@ theory: |
   # => Dragon's mother said "No"
   ```
 
-  Observa que en el ejemplo anterior no tuvimos que dejar de escapar la comilla simple (apóstrofe 's), porque la cadena de texto en sí se creó con comillas dobles. Si la cadena de texto se hubiera creado con comillas simples, entonces el carácter de escape sería necesario antes del apóstrofe, pero no antes de las comillas dobles.
+  Observa que en el ejemplo anterior no tuvimos que escapar la comilla simple (apóstrofe 's), porque la cadena de texto en sí se creó con comillas dobles. Si la cadena de texto se hubiera creado con comillas simples, entonces el carácter de escape sería necesario antes del apóstrofe, pero no antes de las comillas dobles.
 
   Si queremos imprimir la barra invertida en sí, se aplica la misma regla. Como cualquier otro carácter especial, debe ser escapado, en el sentido de programación:
 
@@ -84,7 +84,7 @@ instructions: |
 
   El programa debe imprimir exactamente esa frase. Presta atención a las comillas al principio y al final de la frase:
 
- <pre class='hexlet-basics-output'>
+  <pre class='hexlet-basics-output'>
   "Khal Drogo's favorite word is "athjahakar""
   </pre>
 

@@ -55,10 +55,10 @@ theory: |
 
   ```python
   def count_items(count):
-      # Объявляем переменную
+      # Declarar una variable
       result = ''
 
-      # Заполняем
+      # Llenar el espacio
       match count:
           case 1:
               result = 'one'

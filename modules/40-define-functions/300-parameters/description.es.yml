@@ -26,9 +26,9 @@ theory: |
   # Pasando los parámetros directamente sin variables
   get_last_char("Hexlet")  # t
   # Pasando los parámetros a través de variables
-  nombre1 = 'Hexlet'
+  name1 = 'Hexlet'
   get_last_char(name1)  # t
-  nombre2 = 'Goo'
+  name2 = 'Goo'
   get_last_char(name2)  # o
   ```
 
@@ -40,12 +40,12 @@ theory: |
 
   Definimos la función:
 
-  ```python
-  def obtener_ultimo_caracter(texto):
-      return texto[-1]
+ ```python
+  def get_last_char(text):
+      return text[-1]
   ```
 
-  Entre paréntesis se especifica el nombre de la variable `texto`, que es el parámetro. El nombre del parámetro puede ser cualquier cosa, lo importante es que refleje el significado del valor que contiene. Por ejemplo:
+  Entre paréntesis se especifica el nombre de la variable `text`, que es el parámetro. El nombre del parámetro puede ser cualquier cosa, lo importante es que refleje el significado del valor que contiene. Por ejemplo:
 
   ```python
   def get_last_char(string):
@@ -130,9 +130,9 @@ instructions: |
   recortar('hexlet', 2)  # 'he...'
 
   # A través de una variable
-  text = '¡funciona!'
+  text = 'it works!!'
   # Recortamos el texto dejando 4 caracteres
-  truncate(texto, 4)  # '¡fun...'
+  truncate(text, 4)  # '¡it w...'
   ```
 
   Puedes resolver este ejercicio de diferentes maneras, pero te daremos una pista. Para resolverlo de esta manera, tendrás que tomar una subcadena de la cadena que se pasa como primer parámetro a la función. Utiliza segmentos de cadenas para hacerlo. Piensa, en función del enunciado, desde qué índice y hasta qué índice debes extraer la subcadena.
@@ -145,4 +145,4 @@ instructions: |
 
 tips:
   - |
-    [Parámetros de la función](https://es.wikipedia.org/wiki/Par%C3%A1metro_(inform%C3%A1tica))
+    [Parámetros de la función](https://es.wikipedia.org/wiki/Argumento_(informática))

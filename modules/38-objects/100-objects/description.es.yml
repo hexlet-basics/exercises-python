@@ -3,7 +3,7 @@
 name: Objetos
 theory: |
 
-  Los datos con los que operamos en los programas tienen atributos importantes. En Python, estos atributos están incorporados en el lenguaje. Además, los datos tienen métodos, que son funciones dentro de las propiedades. Las propiedades y los métodos son expresiones similares a las variables o llamadas a funciones. Todo esto se puede combinar de diferentes maneras. En esta lección, aprenderemos los fundamentos.
+  Los datos con los que operamos en los programas tienen atributos importantes. En Python, estos atributos están incorporados en el lenguaje. Además, los datos tienen métodos, que son funciones dentro de las propiedades. Las propiedades y los métodos son expresiones similares a las variables o ejecuciones de funciones. Todo esto se puede combinar de diferentes maneras. En esta lección, aprenderemos los fundamentos.
 
   En programación, operamos con datos, creamos números y cadenas, realizamos diversas operaciones sobre ellos y utilizamos el resultado obtenido. Para realizar una operación, aplicamos operadores o funciones:
 
@@ -29,7 +29,7 @@ theory: |
   print(upper_name)  # => 'HEXLET'
   ```
 
-  Las cadenas en Python son objetos. En el ejemplo anterior, llamamos a un método, es decir, a una función que está asociada con la cadena. La llamada se realiza utilizando un punto que va inmediatamente después del nombre de la variable. En todo lo demás, los métodos funcionan como funciones normales.
+  Las cadenas en Python son objetos. En el ejemplo anterior, ejecutamos un método, es decir, a una función que está asociada con la cadena. La llamada se realiza utilizando un punto que va inmediatamente después del nombre de la variable. En todo lo demás, los métodos funcionan como funciones normales.
 
   También se puede hacer la llamada directamente:
 
@@ -61,13 +61,13 @@ theory: |
   x.__abs__()
   ```
 
-  En el ejemplo anterior, hay un nombre de método con dos guiones bajos al principio y al final. En Python, se llaman métodos que no están destinados a ser llamados directamente. Para ellos, se crearon funciones que, dentro de sí mismas, llaman a los métodos:
+  En el ejemplo anterior, hay un nombre de método con dos guiones bajos al principio y al final. En Python, se llaman métodos que no están destinados a ser ejecutados directamente. Para ellos, se crearon funciones que, dentro de sí mismas, ejecutan los métodos:
 
   ```python
   x = -5
-  abs(x)  # llama a x.__abs__()
+  abs(x)  # ejecuta a x.__abs__()
   # -5 elevado a la potencia 3
-  pow(x, 3)  # llama a x.__pow__(3)
+  pow(x, 3)  # ejecuta a x.__pow__(3)
   ```
 
   El creador de Python [decidió](https://stackoverflow.com/questions/83983/why-isnt-the-len-function-inherited-by-dictionaries-and-lists-in-python) que sería más claro expresar las operaciones matemáticas o similares a las matemáticas mediante funciones. Quería que estas funciones se percibieran como operaciones, como la suma o la resta. Esto es más familiar para aquellos que han estudiado matemáticas.

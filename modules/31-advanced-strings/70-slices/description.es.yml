@@ -49,7 +49,7 @@ theory: |
   value[:3]  # 'Hex'
   ```
 
-  Incluso se pueden usar índices negativos. En este caso, el conteo se realiza desde el final:
+  También se pueden usar índices negativos. En este caso, el conteo se realiza desde el final:
 
   ```python
   value = 'Hexlet'
@@ -94,7 +94,7 @@ theory: |
   value[4:1:-1]  # 'elx'
   ```
 
-  Los recortes se pueden especificar no solo con números, sino también con variables:
+  Los recortes se pueden especificar no sólo con números, sino también con variables:
 
   ```python
   value = 'Hexlet'

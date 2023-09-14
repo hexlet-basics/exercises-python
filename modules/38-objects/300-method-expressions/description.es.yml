@@ -9,7 +9,7 @@ theory: |
 
   ```python
   name = 'Shaya'
-  '¡Hola, ' + name.upper() + '!'  # ¡Hola, SHAYA!
+  'hi, ' + name.upper() + '!'  # hi, SHAYA!
   ```
 
   O se pueden utilizar como parámetros de funciones:
@@ -27,11 +27,11 @@ theory: |
 
 instructions: |
 
-  Encuentra los caracteres *N* y *,* (coma) dentro del texto en la variable `text`. Imprime sus índices en la pantalla. Salida esperada de las pruebas:
+  Encuentra los caracteres *N* y *,* (coma) dentro del texto en la variable `text`. Imprime sus índices en la pantalla. Resultado esperado de las pruebas:
 
   <pre class='hexlet-basics-output'>
-  Índice de N: 0
-  Índice de ,: 25
+  Index Of N: 0
+  Index Of ,: 25
   </pre>
 
   Tu tarea es encontrar estos índices en la cadena utilizando el método `.find()` y colocarlos en `print()`, sin utilizar variables intermedias. Este ejercicio se puede resolver tanto con interpolación como con concatenación. Si utilizas concatenación, el resultado obtenido debe convertirse a tipo de cadena. Para dividir la salida en dos líneas, puedes utilizar `\n`.

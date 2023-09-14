@@ -10,15 +10,15 @@ theory: |
   El primer tipo son los **argumentos posicionales**. Se pasan en el mismo orden en el que se definen los parámetros de la función:
 
   ```python
-  # (texto, longitud)
-  truncar('Mi Texto', 3)
+  # (text, length)
+  truncate('My Text', 3)
   ```
 
-  El segundo tipo son los **argumentos nombrados**. Se pasan no solo como valores, sino como pares "nombre=valor". Por lo tanto, se pueden pasar en cualquier orden:
+  El segundo tipo son los **argumentos nombrados**. Se pasan no sólo como valores, sino como pares "nombre=valor". Por lo tanto, se pueden pasar en cualquier orden:
 
   ```python
   # Los argumentos se pasan en un orden diferente
-  truncar(longitud=3, texto='Mi Texto')
+  truncate(length=3, text='My Text')
   ```
 
   Si observamos cuidadosamente los dos ejemplos anteriores, podemos entender que son dos funciones idénticas.
@@ -36,7 +36,7 @@ theory: |
   Esto último es útil cuando una función tiene muchos parámetros opcionales. Veamos un ejemplo:
 
   ```python
-  def imprimir_parametros(a=1, b=2, c=None, d=4):
+  def print_params(a=1, b=2, c=None, d=4):
       print(a, b, c, d)
 
   # Solo necesitamos pasar d, pero tenemos que pasar todos los demás
@@ -56,12 +56,12 @@ theory: |
 
 instructions: |
 
-  Implementa la función `recortar_y_repetir()`, que recibe tres parámetros: una cadena de texto, `offset` - el número de caracteres que se deben recortar de la izquierda y `repetitions` - la cantidad de veces que se debe repetir la cadena recortada. La función recorta la cadena y la repite tantas veces como sea necesario para que el número total de cadenas recortadas sea igual a `repetitions`. La función debe guardar el resultado en una sola cadena y devolverla.
+  Implementa la función `trim_and_repeat()`, que recibe tres parámetros: una cadena de texto, `offset` - el número de caracteres que se deben recortar de la izquierda y `repetitions` - la cantidad de veces que se debe repetir la cadena recortada. La función recorta la cadena y la repite tantas veces como sea necesario para que el número total de cadenas recortadas sea igual a `repetitions`. La función debe guardar el resultado en una sola cadena y devolverla.
   El número de caracteres a recortar por defecto es 0 y el número de repeticiones es 1.
 
   ```python
-  texto = 'python'
-  print(recortar_y_repetir(texto, offset=3, repetitions=2)) # => honhon
-  print(recortar_y_repetir(texto, repetitions=3)) # => pythonpythonpython
-  print(recortar_y_repetir(texto)) # => python
+  text = 'python'
+  print(trim_and_repeat(text, offset=3, repetitions=2)) # => honhon
+  print(trim_and_repeat(text, repetitions=3)) # => pythonpythonpython
+  print(trim_and_repeat(text)) # => python
   ```

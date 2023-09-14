@@ -20,7 +20,7 @@ theory: |
   Veamos un ejemplo más complejo:
   
   ```python
-  print(0 or False or '' or [] or 42 or "Hola")  ## 42
+  print(0 or False or '' or [] or 42 or "Hello")  ## 42
   ```
   
   En este caso:
@@ -30,7 +30,7 @@ theory: |
   - La cadena vacía (`''`) es equivalente a `False`
   - La lista vacía (`[]`) es equivalente a `False`
   - El número `42` es equivalente a `True`
-  - La cadena `"Hola"` también es equivalente a `True`
+  - La cadena `"Hello"` también es equivalente a `True`
   
   El operador **OR** verifica los valores de izquierda a derecha y devuelve el primer argumento que se pueda transformar en `True`. En este ejemplo, ese valor es el número `42`. 
   
@@ -43,12 +43,12 @@ theory: |
   El operador **AND** funciona de tal manera que se interrumpe la ejecución de izquierda a derecha y se devuelve el resultado del primer argumento que se pueda transformar en `False`. Si no hay ningún argumento que cumpla esta condición, se devuelve el último argumento, el de la derecha.
 
   ```python
-  print(42 and "Hola" and [] and 0)  ## []
+  print(42 and "Hello" and [] and 0)  ## []
   ```
   En este caso:
 
   - El número `42` es equivalente a `True`
-  - La cadena `"Hola"` es equivalente a `True`
+  - La cadena `"Hello"` es equivalente a `True`
   - La lista vacía (`[]`) es equivalente a `False`
   - El número `0` es equivalente a `False`
   
@@ -62,7 +62,7 @@ theory: |
   Estas reglas se utilizan en el desarrollo, por ejemplo, para definir un valor por defecto:
 
   ```python
-  valor = nombre or ''
+  value = nname or ''
   # Ejemplos
   234 or '' # 234
   'hexlet' or '' # 'hexlet'
@@ -75,7 +75,7 @@ theory: |
 
   ```python
   # El valor realmente existe,
-  # pero es Falsy, por lo que no se selecciona en la condición OR
+  # pero es falsy, por lo que no se selecciona en la condición OR
   False or '' # ''
   0 or '' # ''
   None or '' # ''
@@ -123,7 +123,7 @@ theory: |
   Se puede utilizar el mismo esquema con cualquier expresión al principio:
 
   ```python
-  print(alguna_funcion() and 'yes' or 'no')
+  print(somefunc() and 'yes' or 'no')
   ```
 
-  Puedes probar y experimentar con el código en [Replit](https://re
+  Puedes probar y experimentar con el código en https://replit.com/@hexlet/python-basics-logical-expressions).

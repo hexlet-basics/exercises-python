@@ -23,9 +23,9 @@ theory: |
   Una operación lógica como `5 > 4` o `password == text` es una expresión. Su resultado es un valor especial, `True` (verdadero) o `False` (falso). Este es un nuevo tipo de dato para nosotros, el tipo `bool`.
 
   ```python
-  resultado = 5 > 4
-  print(resultado)  # => True
-  print('uno' != 'uno')  # => False
+  result = 5 > 4
+  print(result)  # => True
+  print('one' != 'one')  # => False
   ```
 
   Junto con las cadenas de texto (`str`) y los números enteros y racionales, el **tipo `bool` (booleano)** es uno de los tipos de datos primitivos en Python.
@@ -33,15 +33,15 @@ theory: |
   Intentemos escribir una función simple que tome la edad de un niño y determine si es un bebé. Se considera bebé a los niños menores de un año:
 
   ```python
-  def es_bebe(edad):
-      return edad < 1
+  def is_infant(age):
+      return age < 1
 
-  print(es_bebe(3))  # => False
+  print(is_infant(3))  # => False
   ```
 
   https://replit.com/@hexlet/python-basics-logic-bool-type
 
-  Cualquier operación es una expresión, por lo que en una sola línea de la función escribimos "devolver el valor que resulte de la comparación `edad < 1`". Dependiendo del argumento que se pase, la comparación será verdadera (`True`) o falsa (`False`), y `return` devolverá ese resultado.
+  Cualquier operación es una expresión, por lo que en una sola línea de la función escribimos "devolver el valor que resulte de la comparación `age < 1`". Dependiendo del argumento que se pase, la comparación será verdadera (`True`) o falsa (`False`), y `return` devolverá ese resultado.
 
   Ahora probemos con un niño de seis meses:
 
@@ -53,13 +53,13 @@ theory: |
 
 instructions: |
 
-  Escriba una función `es_jubilado()` que tome la edad como único argumento y verifique si esa edad corresponde a la jubilación. Se considera jubilación a partir de los 60 años.
+  Escriba una función `is_pensioner()` que tome la edad como único argumento y verifique si esa edad corresponde a la jubilación. Se considera jubilación a partir de los 60 años.
 
   Ejemplos de llamadas:
 
   ```python
-  es_jubilado(75) # True
-  es_jubilado(18) # False
+  is_pensioner(75) # True
+  is_pensioner(18) # False
   ```
 
 tips:

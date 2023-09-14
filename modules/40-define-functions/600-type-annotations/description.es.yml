@@ -3,7 +3,7 @@
 name: Anotaciones de tipos
 theory: |
 
-  **Anotaciones de tipos** son una forma de especificar los tipos de los parámetros y el valor de retorno de una función en Python. No es un requisito obligatorio del lenguaje, pero puede ayudar a los programadores en el desarrollo posterior, mejorar la legibilidad del código y aumentar su confiabilidad.
+  Las **Anotaciones de tipos** son una forma de especificar los tipos de los parámetros y el valor de retorno de una función en Python. No es un requisito obligatorio del lenguaje, pero puede ayudar a los programadores en el desarrollo posterior, así como mejorar la legibilidad del código y aumentar su confiabilidad.
 
   Veamos un ejemplo simple de una función sin anotaciones de tipos:
 

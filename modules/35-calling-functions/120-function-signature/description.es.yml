@@ -3,11 +3,11 @@
 name: Firma de la función
 theory: |
 
-  La función `pow()` eleva un número a una potencia. Toma dos parámetros: **el número a elevar** y **la potencia a la que se debe elevar**. Si se llama a `pow()` sin parámetros, Python mostrará el siguiente mensaje de error: `"TypeError: pow expected at least 2 arguments, got 0"`. El intérprete indica que la función espera dos parámetros, pero la llamaste sin ninguno.
+  La función `pow()` eleva un número a una potencia. Toma dos parámetros: **el número a elevar** y **la potencia a la que se debe elevar**. Si se llama a `pow()` sin parámetros, Python mostrará el siguiente mensaje de error: `"TypeError: pow expected at least 2 arguments, got 0"`. El intérprete indica que la función espera dos parámetros, pero la ejecutaste sin parámetros.
 
-  La función `pow()` siempre tiene dos parámetros obligatorios, por lo que no se puede llamar con una cantidad diferente de parámetros.
+  La función `pow()` siempre tiene dos parámetros obligatorios, por lo que no se puede ejecutar con una cantidad diferente de parámetros.
 
-  Además, los parámetros de `pow()` solo pueden ser números. Por ejemplo, si se le pasa un par de cadenas, se producirá el siguiente error: `"TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'"`. El resultado de llamar a la función siempre es un número.
+  Además, los parámetros de `pow()` solo pueden ser números. Por ejemplo, si se le pasa un par de cadenas, se producirá el siguiente error: `"TypeError: unsupported operand type(s) for ** or pow(): 'str' and 'str'"`. El resultado de ejecutar la función siempre es un número.
 
   Otra función puede tener una cantidad diferente de parámetros y diferentes tipos de parámetros. Por ejemplo, puede existir una función que tome tres parámetros: un número, una cadena y otro número.
 

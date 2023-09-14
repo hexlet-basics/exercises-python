@@ -14,7 +14,7 @@ theory: |
 
   Imprime en la pantalla `tirion`.
 
-  Es la primera vez que vemos la sintaxis de varios puntos seguidos, pero todas las operaciones que aparecen aquí nos son familiares. En este código se combinan las capacidades conocidas del lenguaje.
+  Es la primera vez que vemos la sintaxis de varios puntos seguidos, pero todas las operaciones que aparecen aquí nos son familiares. En este código se combinan las capacidades conocidas hasta el momento del lenguaje estudiado.
 
   Esto ocurre a menudo en la programación. Si no conoces la sintaxis, aún puedes intentar combinar diferentes enfoques y existe la posibilidad de que funcionen.
 
@@ -35,7 +35,7 @@ theory: |
   print(name.replace('Ti', 'Ki').lower())  # => ?
   ```
 
-  Necesitamos pensar bien en este código. `.lower()` se aplica al resultado de la llamada al método que está a la izquierda. Y el método `replace()` devuelve una cadena. Los principiantes a menudo cometen errores en las cadenas de llamadas y olvidan hacer la llamada:
+  Necesitamos pensar bien en este código. `.lower()` se aplica al resultado de la llamada al método que está a la izquierda. Y el método `replace()` devuelve una cadena. Los principiantes a menudo cometen errores en las cadenas de llamadas y olvidan hacer la ejecución:
 
   ```python
   name = 'Tirion'
@@ -43,11 +43,11 @@ theory: |
   print(name.upper.lower())
   ```
 
-  También es posible construir cadenas infinitamente largas e inútiles que incluyen rebanadas:
+  También es posible construir cadenas infinitamente largas e inútiles que incluyen listas o slices:
 
   ```python
   name = 'Tirion'
-  # ¿Cuál es el resultado de esta llamada?
+  # ¿Cuál es el resultado de esta ejecución?
   print(name[1:5].upper().find('I'))
   ```
 

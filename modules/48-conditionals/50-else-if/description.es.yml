@@ -10,16 +10,16 @@ theory: |
       last_char = sentence[-1]
 
       if last_char == '?':
-          sentence_type = 'pregunta'
+          sentence_type = 'question'
 
       if last_char == '!':
-          sentence_type = 'exclamación'
+          sentence_type = 'exclamation'
       else:
           sentence_type = 'normal'
 
       return 'La oración es ' + sentence_type
 
-  print(get_type_of_sentence('¿Quién?'))  # => 'La oración es normal'
+  print(get_type_of_sentence('¿Quién?'))  # => 'La oración es pregunta'
   print(get_type_of_sentence('No'))    # => 'La oración es normal'
   print(get_type_of_sentence('¡No!'))   # => 'La oración es exclamación'
   ```
@@ -38,9 +38,9 @@ theory: |
       last_char = sentence[-1]
 
       if last_char == '?':
-          sentence_type = 'pregunta'
+          sentence_type = 'question'
       elif last_char == '!':
-          sentence_type = 'exclamación'
+          sentence_type = 'exclamation'
       else:
           sentence_type = 'normal'
 
@@ -63,19 +63,19 @@ instructions: |
 
   En el mapa electrónico de Westeros implementado por Sam, los aliados de los Stark se representan con un círculo verde, los enemigos con un círculo rojo y las familias neutrales con un círculo gris.
 
-  Escribe una función para Sam llamada `who_is_this_house_to_starks()` que reciba el apellido de una familia y devuelva uno de los tres valores: `'amigo'`, `'enemigo'`, `'neutral'`.
+  Escribe una función para Sam llamada `who_is_this_house_to_starks()` que reciba el apellido de una familia y devuelva uno de los tres valores: `'friend'`, `'enemy'`, `'neutral'`.
 
   Reglas de determinación:
 
-    * Amigos (`'amigo'`): `'Karstark'`, `'Tully'`
-    * Enemigos (`'enemigo'`): `'Lannister'`, `'Frey'`
+    * Amigos (`'friend'`): `'Karstark'`, `'Tully'`
+    * Enemigos (`'enemy'`): `'Lannister'`, `'Frey'`
     * Todas las demás familias se consideran neutrales (`'neutral'`)
 
   Ejemplos de llamadas:
 
   ```python
-  print(who_is_this_house_to_starks('Karstark'))  # => 'amigo'
-  print(who_is_this_house_to_starks('Frey'))      # => 'enemigo'
+  print(who_is_this_house_to_starks('Karstark'))  # => 'friend'
+  print(who_is_this_house_to_starks('Frey'))      # => 'enemy'
   print(who_is_this_house_to_starks('Joar'))      # => 'neutral'
   print(who_is_this_house_to_starks('Ivanov'))    # => 'neutral'
   ```
@@ -83,5 +83,5 @@ instructions: |
 tips: []
 
 definitions:
-  - name: "else + if = elif"
-    description: "a way to specify multiple alternative conditions."
+  - name: "Condicionales else + if = elif"
+    description: "Un recurso para especificar condiciones alternativas, según sea el caso"

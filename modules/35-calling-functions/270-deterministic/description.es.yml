@@ -45,7 +45,7 @@ instructions: |
 
 tips:
   - |
-    [Funciones deterministas](https://ru.wikipedia.org/wiki/Чистота_функции#Детерминированность_функции)
+    [Funciones deterministas](https://en.wikipedia.org/wiki/Pure_function)
 
 definitions:
   - name: Efecto secundario

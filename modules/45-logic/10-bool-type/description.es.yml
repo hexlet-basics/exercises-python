@@ -46,7 +46,7 @@ theory: |
   Ahora probemos con un niño de seis meses:
 
   ```python
-  print(es_bebe(0.5))  # => True
+  print(is_infant(0.5))  # => True
   ```
 
   El resultado de la operación es `True`. Por lo tanto, el niño es realmente un bebé.

@@ -13,24 +13,24 @@ theory: |
   En este caso, solo es necesario verificar los números hasta `x / 2`, en lugar de hasta `x - 1`. Por ejemplo, 11 no es divisible por 2, 3, 4, 5. Pero tampoco será divisible por números mayores que la mitad de sí mismo. Por lo tanto, podemos optimizar el algoritmo y verificar la división solo hasta `x / 2`:
 
   ```python
-  def es_primo(numero):
-      if numero < 2:
+  def is_prime(number):
+      if number < 2:
           return False
 
-      divisor = 2
+      divider = 2
 
-      while divisor <= numero / 2:
-          if numero % divisor == 0:
+      while divider <= number / 2:
+          if number % divider == 0:
               return False
 
-          divisor += 1
+          divider += 1
 
       return True
 
-  print(es_primo(1))  # => False
-  print(es_primo(2))  # => True
-  print(es_primo(3))  # => True
-  print(es_primo(4))  # => False
+  print(is_prime(1))  # => False
+  print(is_prime(2))  # => True
+  print(is_prime(3))  # => True
+  print(is_prime(4))  # => False
   ```
 
   https://replit.com/@hexlet/python-basics-loops-return-from-loops
@@ -43,16 +43,16 @@ theory: |
 
 instructions: |
 
-  Implementa la función `contiene_caracter()`, que verifica, considerando mayúsculas y minúsculas, si una cadena contiene una letra específica. La función recibe dos parámetros:
+  Implementa la función `is_contains_char()`, que verifica, considerando mayúsculas y minúsculas, si una cadena contiene una letra específica. La función recibe dos parámetros:
 
   * La cadena
   * La letra a buscar
 
   ```python
-  print(contiene_caracter('Hexlet', 'H'))  # => True
-  print(contiene_caracter('Hexlet', 'h'))  # => False
-  print(contiene_caracter('Awesomeness', 'm'))  # => True
-  print(contiene_caracter('Awesomeness', 'd'))  # => False
+  print(is_contains_char('Hexlet', 'H'))  # => True
+  print(is_contains_char('Hexlet', 'h'))  # => False
+  print(is_contains_char('Awesomeness', 'm'))  # => True
+  print(is_contains_char('Awesomeness', 'd'))  # => False
   ```
 
 tips:

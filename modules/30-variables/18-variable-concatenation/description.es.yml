@@ -46,9 +46,9 @@ instructions: |
   El resultado en la pantalla se verá así:
 
   <pre class='hexlet-basics-output'>
-  ¡Hola, Joffrey!
-  Aquí hay información importante sobre la seguridad de su cuenta.
-  No pudimos verificar el nombre de soltera de su madre.
+  Hello, Joffrey!
+  Here is important information about your account security.
+  We couldn't verify your mother's maiden name.
   </pre>
 
   Complete la tarea utilizando solo dos `print()`.

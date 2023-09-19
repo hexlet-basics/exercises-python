@@ -6,18 +6,18 @@ theory: |
     Ahora vamos a modificar la función del tema anterior para que no solo devuelva el tipo de oración, sino toda la cadena "La oración es normal" o "La oración es una pregunta":
 
     ```python
-    def obtener_tipo_de_oracion(oracion):
-        ultimo_caracter = oracion[-1]
+    def get_type_of_sentence(sentence):
+        last_char = sentence[-1]
 
-        if ultimo_caracter == '?':
-            tipo_de_oracion = 'pregunta'
+        if last_char == '?':
+            sentence_type = 'question'
         else:
-            tipo_de_oracion = 'normal'
+            sentence_type = 'normal'
 
-        return "La oración es " + tipo_de_oracion
+        return "Sentence is " + sentence_type
 
-    print(obtener_tipo_de_oracion('Hola'))   # => 'La oración es normal'
-    print(obtener_tipo_de_oracion('Hola?'))  # => 'La oración es pregunta'
+    print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
+    print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
     ```
 
     https://replit.com/@hexlet/python-basics-conditionals-if-else
@@ -27,45 +27,45 @@ theory: |
     Ejemplo de bloques anidados:
 
     ```python
-    numero = 10
+    number = 10
 
-    if numero > 10:
-        print("El número es mayor que 10")
+    if number > 10:
+        print("Number is greater than 10")
     else:
-        if numero == 10:
-            print("El número es exactamente 10")
+        if number == 10:
+            print("Number is exactly 10")
         else:
-            print("El número es menor que 10")
+            print("Number is less than 10")
     ```
 
     Se pueden estructurar las construcciones `if-else` de dos formas. Usando la negación se puede cambiar el orden de los bloques:
 
     ```python
-    def obtener_tipo_de_oracion(oracion):
-        ultimo_caracter = oracion[-1]
+    def get_type_of_sentence(sentence):
+        last_char = sentence[-1]
 
-        if ultimo_caracter != '?':
-            tipo_de_oracion = 'normal'
+        if last_char != '?':
+            sentence_type = 'normal'
         else:
-            tipo_de_oracion = 'pregunta'
+            sentence_type = 'question'
 
-        return "La oración es " + tipo_de_oracion
+        return "Sentence is " + sentence_type
     ```
 
     Para facilitar la estructura de la construcción, intenta elegir una comprobación sin negación y ajusta el contenido de los bloques en consecuencia.
 
 instructions: |
 
-  Implementa la función `normalizar_url()`, que realiza la normalización de los datos. Recibe una dirección web y devuelve la misma con `https://` al principio.
+  Implementa la función `normalize_url()`, que realiza la normalización de los datos. Recibe una dirección web y devuelve la misma con `https://` al principio.
 
   La función acepta direcciones en forma de `DIRECCIÓN` o `http://DIRECCIÓN`, pero siempre devuelve la dirección en forma de `https://DIRECCIÓN`. También puede recibir una dirección ya normalizada `https://DIRECCIÓN`, en cuyo caso no se debe hacer ningún cambio.
 
   Ejemplos de uso:
 
   ```python
-  print(normalizar_url('https://ya.ru'))  # => 'https://ya.ru'
-  print(normalizar_url('google.com'))     # => 'https://google.com'
-  print(normalizar_url('http://ai.fi'))   # => 'https://ai.fi'
+  print(normalize_url('https://ya.ru'))  # => 'https://ya.ru'
+  print(normalize_url('google.com'))     # => 'https://google.com'
+  print(normalize_url('http://ai.fi'))   # => 'https://ai.fi'
   ```
 
   Hay varias formas de resolver este problema. Una de ellas es comparar los primeros 7 caracteres de la cadena de argumento con la cadena `http://` y luego agregar o no agregar `https://` en base a eso.
@@ -81,7 +81,7 @@ instructions: |
 
   ```python
   # Descartamos los primeros 6 caracteres
-  print('Invernalia'[6:])  # => 'nalia'
+  print('Winterfell'[6:])  # => 'Winter'
   ```
 
 tips: []

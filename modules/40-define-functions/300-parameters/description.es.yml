@@ -40,7 +40,7 @@ theory: |
 
   Definimos la función:
 
- ```python
+  ```python
   def get_last_char(text):
       return text[-1]
   ```

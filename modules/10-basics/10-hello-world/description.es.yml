@@ -8,7 +8,7 @@ theory: |
     Hello, World!
   </pre>
 
-  Esta tradición tiene más de cuarenta años, por lo cual no la romperemos. En la primera lección escribiremos el programa `Hello, World!`. Para hacerlo, debemos darle al ordenador un comando especial. En Python, esto es `print()`.
+  Esta tradición tiene más de cuarenta años, por lo cual no la romperemos. En la primera lección escribiremos el programa `Hello, World!`. Para hacerlo, debemos darle al ordenador un comando especial. En Python, este comando se llama `print()`.
 
 instructions: |
   Escribe en el editor el código del ejercicio, carácter por carácter, y luego haz clic en "Verificar".

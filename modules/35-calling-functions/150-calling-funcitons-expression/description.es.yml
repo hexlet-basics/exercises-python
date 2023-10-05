@@ -34,7 +34,7 @@ theory: |
   Sabemos que las funciones devuelven un resultado, lo que significa que son expresiones. De esto se deduce automáticamente muchas cosas interesantes. Por ejemplo, podemos usar una llamada a una función directamente en operaciones matemáticas. Así es como podemos obtener el índice del último carácter en una palabra:
 
   ```python
-  nombre = 'python'
+  name = 'python'
   # Los índices comienzan en cero
   # ¡Ejecución de una función y resta juntas!
   last_index = len(name) - 1

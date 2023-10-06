@@ -56,8 +56,8 @@ theory: |
 
 instructions: |
 
-  Implementa la función `trim_and_repeat()`, que recibe tres parámetros: una cadena de texto, `offset` - el número de caracteres que se deben recortar de la izquierda y `repetitions` - la cantidad de veces que se debe repetir la cadena recortada. La función recorta la cadena y la repite tantas veces como sea necesario para que el número total de cadenas recortadas sea igual a `repetitions`. La función debe guardar el resultado en una sola cadena y devolverla.
-  El número de caracteres a recortar por defecto es 0 y el número de repeticiones es 1.
+  Crea la función trim_and_repeat() con tres parámetros: una cadena de texto, offset (el número de caracteres a eliminar desde la izquierda) y repetitions (la cantidad de veces que se debe repetir la cadena recortada). Esta función recorta la cadena y repite la parte recortada tantas veces como sea necesario para alcanzar el número total de repeticiones especificado.
+  El valor predeterminado para offset es 0, y el valor predeterminado para repetitions es 1. La función debe combinar todas las repeticiones en una sola cadena y devolverla como resultado.
 
   ```python
   text = 'python'

@@ -1,0 +1,75 @@
+---
+
+name: Llamada a una función - expresión
+theory: |
+
+  Continuamos entendiendo las funciones y sus componentes. Hoy hablaremos sobre las expresiones y si una llamada a una función puede considerarse una expresión.
+
+  En programación, una expresión devuelve un resultado que se puede utilizar. Probablemente ya sepas mucho sobre expresiones y los principios en los que se basan. Por ejemplo, operaciones matemáticas como la suma y la resta, operaciones de cadenas como la concatenación, todas estas son expresiones:
+
+  ```python
+  1 + 5 * 3
+  'He' + 'Let'
+  # Las variables pueden ser parte de una expresión
+  rate * 5
+  ```
+
+  La característica de las expresiones es que devuelven un resultado que se puede utilizar posteriormente, como asignarlo a una variable o imprimirlo en pantalla. Así es como se ve en el código:
+
+  ```python
+  # Aquí la expresión es 1 + 5
+  sum = 1 + 5
+  print(1 + 5)
+  ```
+
+  Pero no todo en programación es una expresión. La declaración de una variable es una instrucción y, por lo tanto, no puede ser parte de una expresión. Es decir, este código dará un error:
+
+  ```python
+  # Código sin sentido que no funcionará
+  10 + sum = 1 + 5
+  ```
+
+  Ahora veamos si una ejecución de una función se considera una expresión.
+
+  Sabemos que las funciones devuelven un resultado, lo que significa que son expresiones. De esto se deduce automáticamente muchas cosas interesantes. Por ejemplo, podemos usar una llamada a una función directamente en operaciones matemáticas. Así es como podemos obtener el índice del último carácter en una palabra:
+
+  ```python
+  nombre = 'python'
+  # Los índices comienzan en cero
+  # ¡Ejecución de una función y resta juntas!
+  last_index = len(name) - 1
+  print(last_index)  # => 5
+  ```
+
+  En este código no hay una nueva sintaxis. Simplemente hemos combinado partes conocidas basándonos en su naturaleza. Podemos ir aún más lejos:
+
+  ```python
+  print(len(name) - 1)  # => 5
+  ```
+
+  Todo esto es válido para cualquier función, por ejemplo, las funciones de cadenas:
+
+  ```python
+  name = 'python'
+  # Se utiliza interpolación
+  print(f'Último carácter: {name[len(name) - 1]}')
+  # 'Último carácter: n'
+  ```
+
+  Como verás más adelante, las expresiones se pueden combinar para obtener comportamientos más complejos en diferentes lugares y de cualquier manera. Cuanto más profundices en el estudio de Python y practiques, mejor entenderás cómo trabajar con expresiones. Con el tiempo, aprenderás cómo combinar partes de código para obtener el resultado deseado.
+
+instructions: |
+
+  Imprime en pantalla la primera y la última letra de la oración almacenada en la variable `texto`, en el siguiente formato:
+
+  <pre class='hexlet-basics-output'>
+  First: N
+  Last: t
+  </pre>
+
+  Intenta crear solo una variable en la que se almacene el texto necesario antes de imprimirlo en pantalla. En esta lección, estamos practicando cómo construir una expresión compuesta.
+
+definitions:
+  - name: Expresión
+    description: |
+      una secuencia de acciones sobre datos que conduce a un resultado que se puede utilizar.

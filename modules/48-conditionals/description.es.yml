@@ -1,0 +1,5 @@
+---
+
+name: Estructuras condicionales
+description: |
+  La tarea de una función booleana es obtener una respuesta a una pregunta, pero generalmente esto no es suficiente y es necesario realizar una acción específica dependiendo de la respuesta. If y if-else son construcciones en Python que permiten al programador elegir el comportamiento necesario del programa según diferentes condiciones: omitir algunas instrucciones y ejecutar otras. Las estudiaremos en la práctica en este módulo.

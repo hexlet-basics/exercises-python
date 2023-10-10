@@ -1,0 +1,66 @@
+---
+
+name: Variables y concatenación
+theory: |
+
+  Intentemos usar variables con concatenación, sin cambiar la sintaxis. Sabemos cómo concatenar dos cadenas:
+
+  ```python
+  what = "Kings" + "road"
+  print(what)  # => Kingsroad
+  ```
+
+  Esto significa que podemos unir una cadena y una variable que contiene una cadena:
+
+  ```python
+  first = "Kings"
+  what = first + "road"
+
+  print(what)  # => Kingsroad
+  ```
+
+  También podemos concatenar dos variables que contienen cadenas:
+
+  ```python
+  first = "Kings"
+  last = 'road'
+
+  what = first + last
+  print(what)  # => Kingsroad
+  ```
+
+  https://replit.com/@hexlet/python-basics-variables-concatenation
+
+  Las variables son una herramienta importante en la programación. Simplifican cálculos complejos y, por lo tanto, facilitan el desarrollo. Pero para trabajar con variables de manera efectiva, no solo es necesario usarlas correctamente, sino también nombrarlas correctamente. Hablaremos de esto en la próxima lección.
+
+instructions: |
+
+  Los sitios web envían constantemente correos electrónicos a sus usuarios. Una tarea típica es enviar automáticamente un correo electrónico personalizado, donde el nombre del usuario estará en el encabezado. Si el nombre de la persona se almacena en algún lugar de la base de datos del sitio como una cadena, la tarea de generar el encabezado se reduce a la concatenación: por ejemplo, es necesario unir la cadena `Hola` con la cadena que contiene el nombre.
+
+  Escriba un programa que genere el encabezado y el cuerpo del correo electrónico, utilizando variables ya definidas, y muestre las cadenas resultantes en la pantalla.
+
+  Para el encabezado, use las variables `first_name` y `greeting`, seguidas de una coma y un signo de exclamación. Muestre esto en la pantalla en el orden correcto.
+
+  Para el cuerpo del correo electrónico, use las variables `info` e `intro`, y asegúrese de que la segunda oración esté en una nueva línea.
+
+  El resultado en la pantalla se verá así:
+
+  <pre class='hexlet-basics-output'>
+  Hello, Joffrey!
+  Here is important information about your account security.
+  We couldn't verify your mother's maiden name.
+  </pre>
+
+  Complete la tarea utilizando solo dos `print()`.
+
+tips:
+  - |
+    Piense en qué cadena y en qué orden debe concatenar las variables para obtener una salida de correo electrónico de dos líneas como la que se muestra.
+  - |
+    Recuerde que puede crear una cadena que contenga solo una secuencia de escape `\n`. Puede concatenar esta cadena con las variables para formatear correctamente el texto.
+
+definitions:
+  - name: Concatenación
+    description: |
+      la operación de unir dos cadenas. Por ejemplo, `console.log("King's " + ' Landing');`
+

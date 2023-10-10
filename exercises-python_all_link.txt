@@ -1,0 +1,368 @@
+File modules\10-basics\10-hello-world\description.es.yml:
+Line 24: https://ru.hexlet.io/blog/posts/moy-chelovek-menya-ponimaet-istoriya-frazy-hello-world-i-ee-analogov)
+
+File modules\10-basics\20-comments\description.es.yml:
+Line 34: https://www.w3schools.com/python/python_comments.asp)
+
+File modules\10-basics\30-instructions\description.es.yml:
+Line 22: https://replit.com/@hexlet/python-basics-instructions
+
+File modules\10-basics\30-instructions\description.es.yml:
+Line 46: https://es.wikipedia.org/wiki/Int%C3%A9rprete)
+
+File modules\10-basics\40-testing\description.es.yml:
+Line 30: https://t.me/hexletcommunity/3),
+
+File modules\10-basics\40-testing\description.es.yml:
+Line 41: https://es.wikipedia.org/wiki/Desarrollo_guiado_por_pruebas)
+
+File modules\10-basics\40-testing\description.es.yml:
+Line 43: https://t.me/hexletcommunity)
+
+File modules\10-basics\50-syntax-errors\description.es.yml:
+Line 16: https://replit.com/@hexlet/python-basics-syntax-errors
+
+File modules\10-basics\50-syntax-errors\description.es.yml:
+Line 40: https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+
+File modules\20-arithmetics\20-basic\description.es.yml:
+Line 39: https://es.wikipedia.org/wiki/Divisi%C3%B3n_entera)
+
+File modules\20-arithmetics\20-basic\description.es.yml:
+Line 40: https://es.wikipedia.org/wiki/Divisi%C3%B3n_entera)
+
+File modules\20-arithmetics\20-basic\description.es.yml:
+Line 49: https://replit.com/@hexlet/python-basics-arithmetics-basics
+
+File modules\20-arithmetics\20-basic\description.es.yml:
+Line 64: https://es.wikipedia.org/wiki/Divisi%C3%B3n_entera)
+
+File modules\20-arithmetics\27-commutativity\description.es.yml:
+Line 15: https://es.wikipedia.org/wiki/Conmutatividad)
+
+File modules\20-arithmetics\30-composition\description.es.yml:
+Line 11: https://replit.com/@hexlet/python-basics-arithmetics-composition
+
+File modules\20-arithmetics\40-priority\description.es.yml:
+Line 32: https://replit.com/@hexlet/python-basics-arithmetics-priority
+
+File modules\20-arithmetics\43-float\description.es.yml:
+Line 25: https://habr.com/ru/articles/112953/)
+
+File modules\20-arithmetics\45-linting\description.es.yml:
+Line 7: https://peps.python.org/pep-0008/).
+
+File modules\20-arithmetics\45-linting\description.es.yml:
+Line 9: https://flake8.pycqa.org/en/latest/).
+
+File modules\20-arithmetics\45-linting\description.es.yml:
+Line 19: https://pep8.readthedocs.io/en/release-1.7.x/intro.html#error-codes),
+Line 19: https://flake8.pycqa.org/en/latest/user/error-codes.html).
+
+File modules\20-arithmetics\45-linting\description.es.yml:
+Line 29: https://peps.python.org/pep-0008/)
+
+File modules\20-arithmetics\45-linting\description.es.yml:
+Line 31: https://flake8.pycqa.org/en/latest/)
+
+File modules\25-strings\10-quotes\description.es.yml:
+Line 93: https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)
+
+File modules\25-strings\15-escape-characters\description.es.yml:
+Line 110: https://replit.com/languages/python3](https://replit.com/languages/python3)
+
+File modules\25-strings\15-escape-characters\description.es.yml:
+Line 111: https://es.wikipedia.org/wiki/Salto_de_l%C3%ADnea#Historia)"
+
+File modules\25-strings\20-string-concatenation\description.es.yml:
+Line 36: https://replit.com/@hexlet/python-basics-string-concatenation
+
+File modules\25-strings\30-encoding\description.es.yml:
+Line 6: https://es.wikipedia.org/wiki/C%C3%B3digo_binario),
+
+File modules\25-strings\30-encoding\description.es.yml:
+Line 35: https://es.wikipedia.org/wiki/ASCII)
+Line 35: https://es.wikipedia.org/wiki/UTF-8).
+
+File modules\25-strings\30-encoding\description.es.yml:
+Line 41: https://es.wikipedia.org/wiki/Unicode),
+
+File modules\25-strings\30-encoding\description.es.yml:
+Line 51: https://replit.com/@hexlet/python-basics-string-encoding
+
+File modules\25-strings\30-encoding\description.es.yml:
+Line 55: https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html).
+
+File modules\25-strings\30-encoding\description.es.yml:
+Line 63: https://guides.hexlet.io/es/encoding/)
+
+File modules\30-variables\10-definition\description.es.yml:
+Line 44: https://replit.com/@hexlet/python-basics-variables-definition
+
+File modules\30-variables\10-definition\description.es.yml:
+Line 54: https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+File modules\30-variables\12-change\description.es.yml:
+Line 19: https://replit.com/@hexlet/python-basics-variables-change
+
+File modules\30-variables\13-variables-naming\description.es.yml:
+Line 35: https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+File modules\30-variables\13-variables-naming\description.es.yml:
+Line 37: https://ru.hexlet.io/blog/posts/naming-errors-1)
+
+File modules\30-variables\14-errors\description.es.yml:
+Line 31: https://docs.python.org/3/library/exceptions.html?highlight=nameerror#NameError)
+
+File modules\30-variables\15-variables-expressions\description.es.yml:
+Line 42: https://replit.com/languages/python3)
+
+File modules\30-variables\15-variables-expressions\description.es.yml:
+Line 91: https://es.wikipedia.org/wiki/Expresión_(informática))
+
+File modules\30-variables\18-variable-concatenation\description.es.yml:
+Line 32: https://replit.com/@hexlet/python-basics-variables-concatenation
+
+File modules\30-variables\19-naming-style\description.es.yml:
+Line 14: https://peps.python.org/pep-0008/#naming-conventions)
+
+File modules\30-variables\19-naming-style\description.es.yml:
+Line 16: https://ru.hexlet.io/),
+
+File modules\30-variables\19-naming-style\description.es.yml:
+Line 28: https://es.wikipedia.org/wiki/Snake_case)
+
+File modules\30-variables\20-magic-numbers\description.es.yml:
+Line 76: https://es.wikipedia.org/wiki/N%C3%BAmero_m%C3%A1gico_(programaci%C3%B3n))
+
+File modules\31-advanced-strings\25-interpolation\description.es.yml:
+Line 39: https://replit.com/@hexlet/python-basics-advanced-strings-interpolation
+
+File modules\31-advanced-strings\25-interpolation\description.es.yml:
+Line 55: https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)
+
+File modules\31-advanced-strings\30-symbols\description.es.yml:
+Line 54: https://replit.com/@hexlet/python-basics-advanced-strings-symbols
+
+File modules\31-advanced-strings\70-slices\description.es.yml:
+Line 106: https://replit.com/@hexlet/python-basics-advanced-strings-slices
+
+File modules\31-advanced-strings\70-slices\description.es.yml:
+Line 130: https://www.w3schools.com/python/python_strings_slicing.asp)
+
+File modules\31-advanced-strings\90-multiline-strings\description.es.yml:
+Line 92: https://www.w3schools.com/python/gloss_python_multi_line_strings.asp)
+
+File modules\33-data-types\40-primitive-data-types\description.es.yml:
+Line 35: https://es.wikipedia.org/wiki/Literal_(inform%C3%A1tica))
+
+File modules\33-data-types\40-primitive-data-types\description.es.yml:
+Line 37: https://es.wikipedia.org/wiki/N%C3%BAmero_decimal)
+
+File modules\33-data-types\50-strong-typing\description.es.yml:
+Line 34: https://es.wikipedia.org/wiki/Tipado_fuerte_y_tipado_d%C3%A9bil)
+
+File modules\33-data-types\55-data-types-casting\description.es.yml:
+Line 38: https://replit.com/@hexlet/python-basics-data-types-casting
+
+File modules\33-data-types\55-data-types-casting\description.es.yml:
+Line 73: https://es.wikipedia.org/wiki/Tipado)
+
+File modules\35-calling-functions\120-function-signature\description.es.yml:
+Line 14: https://docs.python.org/3/library/functions.html?highlight=pow#pow)
+Line 14: https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/funktsija-pow/).
+
+File modules\35-calling-functions\120-function-signature\description.es.yml:
+Line 28: https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/funktsija-hex/).
+
+File modules\35-calling-functions\120-function-signature\description.es.yml:
+Line 34: https://docs.python.org/3/library/functions.html?highlight=pow#pow)
+
+File modules\35-calling-functions\180-variadic-parameters\description.es.yml:
+Line 14: https://docs.python.org/3/library/functions.html?highlight=pow#max)
+
+File modules\35-calling-functions\180-variadic-parameters\description.es.yml:
+Line 35: https://docs.python.org/3/library/functions.html?highlight=pow#max)
+
+File modules\35-calling-functions\270-deterministic\description.es.yml:
+Line 35: https://docs.python.org/3/library/functions.html#round),
+
+File modules\35-calling-functions\270-deterministic\description.es.yml:
+Line 48: https://ru.wikipedia.org/wiki/Чистота_функции#Детерминированность_функции)
+
+File modules\35-calling-functions\900-stdlib\description.es.yml:
+Line 32: https://docs-python.ru/standart-library/)
+
+File modules\35-calling-functions\900-stdlib\description.es.yml:
+Line 34: https://guides.hexlet.io/ru/how-to-search/)
+
+File modules\38-objects\100-objects\description.es.yml:
+Line 40: https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods).
+
+File modules\38-objects\100-objects\description.es.yml:
+Line 73: https://stackoverflow.com/questions/83983/why-isnt-the-len-function-inherited-by-dictionaries-and-lists-in-python)
+
+File modules\38-objects\100-objects\description.es.yml:
+Line 95: https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods)
+
+File modules\38-objects\200-methods-immutability\description.es.yml:
+Line 25: https://replit.com/@hexlet/python-basics-objects-methods-immutability
+
+File modules\38-objects\200-methods-immutability\description.es.yml:
+Line 29: https://docs.python.org/3/library/stdtypes.html).
+
+File modules\38-objects\300-method-expressions\description.es.yml:
+Line 26: https://replit.com/@hexlet/python-basics-objects-method-expression
+
+File modules\40-define-functions\100-define-function\description.es.yml:
+Line 44: https://replit.com/@hexlet/python-basics-define-function
+
+File modules\40-define-functions\100-define-function\description.es.yml:
+Line 76: https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+File modules\40-define-functions\200-return\description.es.yml:
+Line 111: https://replit.com/@hexlet/python-basics-define-functions-return
+
+File modules\40-define-functions\200-return\description.es.yml:
+Line 124: https://www.w3schools.com/python/ref_keyword_return.asp)
+
+File modules\40-define-functions\300-parameters\description.es.yml:
+Line 70: https://replit.com/@hexlet/python-basics-define-functions-parameters
+
+File modules\40-define-functions\300-parameters\description.es.yml:
+Line 148: https://es.wikipedia.org/wiki/Par%C3%A1metro_(inform%C3%A1tica))
+
+File modules\40-define-functions\400-default-parameters\description.es.yml:
+Line 22: https://replit.com/@hexlet/python-basics-define-functions-default-parameters
+
+File modules\40-define-functions\400-default-parameters\description.es.yml:
+Line 89: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+
+File modules\45-logic\10-bool-type\description.es.yml:
+Line 42: https://replit.com/@hexlet/python-basics-logic-bool-type
+
+File modules\45-logic\10-bool-type\description.es.yml:
+Line 67: https://docs.python.org/3/library/stdtypes.html#boolean-values)
+
+File modules\45-logic\15-predicates\description.es.yml:
+Line 35: https://ru.hexlet.io/blog/posts/naming-in-programming)
+
+File modules\45-logic\20-logic-combine-expressions\description.es.yml:
+Line 54: https://replit.com/@hexlet/python-basics-logic-combine-expression
+
+File modules\45-logic\20-logic-combine-expressions\description.es.yml:
+Line 71: https://es.wikipedia.org/wiki/Expresión_(informática))
+
+File modules\45-logic\25-logical-operators\description.es.yml:
+Line 63: https://replit.com/@hexlet/python-basics-logic-logical-operators
+
+File modules\45-logic\25-logical-operators\description.es.yml:
+Line 108: https://es.wikipedia.org/wiki/%C3%81lgebra_booleana)
+
+File modules\45-logic\25-logical-operators\description.es.yml:
+Line 110: https://es.wikipedia.org/wiki/Conjunci%C3%B3n_l%C3%B3gica)
+
+File modules\45-logic\25-logical-operators\description.es.yml:
+Line 112: https://es.wikipedia.org/wiki/Disyunci%C3%B3n_l%C3%B3gica)
+
+File modules\45-logic\28-logical-negation\description.es.yml:
+Line 33: https://replit.com/@hexlet/python-basics-logic-logical-negation
+
+File modules\45-logic\28-logical-negation\description.es.yml:
+Line 72: https://es.wikipedia.org/wiki/Leyes_de_De_Morgan)
+
+File modules\45-logic\90-logical-expressions\description.es.yml:
+Line 129: https://replit.com/@hexlet/python-basics-logical-expressions).
+
+File modules\45-logic\90-logical-expressions\description.es.yml:
+Line 198: https://docs.python.org/3/library/functions.html#isinstance):
+
+File modules\45-logic\90-logical-expressions\description.es.yml:
+Line 205: https://replit.com/@hexlet/python-basics-logical-expressions
+
+File modules\45-logic\90-logical-expressions\description.es.yml:
+Line 209: https://es.wikipedia.org/wiki/Tipo_de_dato_l%C3%B3gico)
+
+File modules\48-conditionals\30-if\description.es.yml:
+Line 21: https://replit.com/@hexlet/python-basics-conditionals-if
+
+File modules\48-conditionals\40-if-else\description.es.yml:
+Line 23: https://replit.com/@hexlet/python-basics-conditionals-if-else
+
+File modules\48-conditionals\40-if-else\description.es.yml:
+Line 59: https://`
+
+File modules\48-conditionals\40-if-else\description.es.yml:
+Line 61: http://DIRECCIÓN`,
+Line 61: https://DIRECCIÓN`.
+Line 61: https://DIRECCIÓN`,
+
+File modules\48-conditionals\40-if-else\description.es.yml:
+Line 66: https://ya.ru'))
+Line 66: https://ya.ru'
+
+File modules\48-conditionals\40-if-else\description.es.yml:
+Line 67: https://google.com'
+
+File modules\48-conditionals\40-if-else\description.es.yml:
+Line 68: http://ai.fi'))
+Line 68: https://ai.fi'
+
+File modules\48-conditionals\40-if-else\description.es.yml:
+Line 71: http://`
+Line 71: https://`
+
+File modules\48-conditionals\50-else-if\description.es.yml:
+Line 27: https://replit.com/@hexlet/python-basics-conditionals-elif
+
+File modules\48-conditionals\60-ternary-operator\description.es.yml:
+Line 47: https://replit.com/@hexlet/python-basics-conditionals-ternary-operator
+
+File modules\48-conditionals\65-match\description.es.yml:
+Line 108: https://docs.python.org/3/reference/compound_stmts.html#the-match-statement)
+
+File modules\50-loops\10-while\description.es.yml:
+Line 59: https://replit.com/@hexlet/python-basics-loops-while
+
+File modules\50-loops\10-while\description.es.yml:
+Line 141: https://www.w3schools.com/python/python_while_loops.asp)
+
+File modules\50-loops\20-aggregation-numbers\description.es.yml:
+Line 44: https://replit.com/@hexlet/python-basics-loops-aggregation-numbers
+
+File modules\50-loops\20-aggregation-numbers\description.es.yml:
+Line 78: https://es.wikipedia.org/wiki/Iteración)
+
+File modules\50-loops\23-aggregation-strings\description.es.yml:
+Line 30: https://replit.com/@hexlet/python-basics-loops-aggregation-strings
+
+File modules\50-loops\23-aggregation-strings\description.es.yml:
+Line 54: https://es.wikipedia.org/wiki/Iteraci%C3%B3n_(inform%C3%A1tica))
+
+File modules\50-loops\25-iteration-over-string\description.es.yml:
+Line 28: https://replit.com/@hexlet/python-basics-loops-iteration-over-string
+
+File modules\50-loops\25-iteration-over-string\description.es.yml:
+Line 50: https://es.wikipedia.org/wiki/Iteración_(informática))
+
+File modules\50-loops\26-conditions-inside-loops\description.es.yml:
+Line 34: https://replit.com/@hexlet/python-basics-loops-conditions-inside-loops
+
+File modules\50-loops\28-build-string\description.es.yml:
+Line 45: https://replit.com/languages/python3](https://replit.com/languages/python3)
+
+File modules\50-loops\28-build-string\description.es.yml:
+Line 69: https://es.wikipedia.org/wiki/Iteraci%C3%B3n_(inform%C3%A1tica))
+
+File modules\50-loops\30-syntactic-sugar\description.es.yml:
+Line 31: https://es.wikipedia.org/wiki/Azúcar_sintáctico)
+
+File modules\50-loops\55-return-from-loops\description.es.yml:
+Line 36: https://replit.com/@hexlet/python-basics-loops-return-from-loops
+
+File modules\50-loops\55-return-from-loops\description.es.yml:
+Line 59: https://es.wikipedia.org/wiki/Anexo:Números_primos)"
+
+File modules\50-loops\70-for\description.es.yml:
+Line 75: https://replit.com/@hexlet/python-basics-for-loop#main.py)
+

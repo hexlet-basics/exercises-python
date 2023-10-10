@@ -1,0 +1,95 @@
+---
+
+name: Objetos
+theory: |
+
+  Los datos con los que operamos en los programas tienen atributos importantes. En Python, estos atributos están incorporados en el lenguaje. Además, los datos tienen métodos, que son funciones dentro de las propiedades. Las propiedades y los métodos son expresiones similares a las variables o ejecuciones de funciones. Todo esto se puede combinar de diferentes maneras. En esta lección, aprenderemos los fundamentos.
+
+  En programación, operamos con datos, creamos números y cadenas, realizamos diversas operaciones sobre ellos y utilizamos el resultado obtenido. Para realizar una operación, aplicamos operadores o funciones:
+
+  ```python
+  # Suma utilizando el operador +
+  1 + 3 # 4
+
+  # Contar la longitud utilizando la función len()
+  name = 'Hexlet'
+  len(name)  # 6
+  ```
+
+  En el ejemplo anterior, hay una clara separación entre los datos y las funciones. Pero esta no es la única forma de organizar el código. En Python, además de esta separación, se utiliza otro enfoque: **orientado a objetos (OO)**.
+
+  El código orientado a objetos se basa en combinar datos y funciones en una sola entidad: un **objeto**. En este caso, los datos se llaman atributos y las funciones se llaman métodos.
+
+  Así es como se ve:
+
+  ```python
+  name = 'Hexlet'
+  # Método upper()
+  upper_name = name.upper()
+  print(upper_name)  # => 'HEXLET'
+  ```
+
+  Las cadenas en Python son objetos. En el ejemplo anterior, ejecutamos un método, es decir, a una función que está asociada con la cadena. La llamada se realiza utilizando un punto que va inmediatamente después del nombre de la variable. En todo lo demás, los métodos funcionan como funciones normales.
+
+  También se puede hacer la llamada directamente:
+
+  ```python
+  'Hexlet'.upper()  # 'HEXLET'
+  ```
+
+  Las cadenas tienen muchos métodos incorporados que son constantemente útiles para los desarrolladores. Puede ver una lista de ellos en la [documentación](https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods). Aquí hay algunos ejemplos útiles:
+
+  ```python
+  name = 'Python'
+
+  # Devuelve el índice de la primera aparición de una letra en una cadena
+  name.find('t')  # 2
+
+  # Convierte a minúsculas
+  name.lower()  # 'python'
+
+  # Reemplaza una subcadena por otra
+  name.replace('on', 'off')  # 'Pythoff'
+  ```
+
+  Lo mismo se aplica a los números y otros tipos de datos que aún no hemos estudiado. Se puede decir que en Python casi todo es un objeto:
+
+  ```python
+  x = -5
+  # Devuelve el valor absoluto del número
+  # El nombre parece extraño, pero es el nombre real del método
+  x.__abs__()
+  ```
+
+  En el ejemplo anterior, hay un nombre de método con dos guiones bajos al principio y al final. En Python, se llaman métodos que no están destinados a ser ejecutados directamente. Para ellos, se crearon funciones que, dentro de sí mismas, ejecutan los métodos:
+
+  ```python
+  x = -5
+  abs(x)  # ejecuta a x.__abs__()
+  # -5 elevado a la potencia 3
+  pow(x, 3)  # ejecuta a x.__pow__(3)
+  ```
+
+  El creador de Python [decidió](https://stackoverflow.com/questions/83983/why-isnt-the-len-function-inherited-by-dictionaries-and-lists-in-python) que sería más claro expresar las operaciones matemáticas o similares a las matemáticas mediante funciones. Quería que estas funciones se percibieran como operaciones, como la suma o la resta. Esto es más familiar para aquellos que han estudiado matemáticas.
+
+  Lo mismo ocurre con la función `len()`:
+
+  ```python
+  len('Hexlet')  # Llama a 'Hexlet'.__len__()
+  ```
+
+  Además de los métodos, los objetos también tienen atributos, pero los objetos incorporados en Python tienen pocos atributos. Por ejemplo, el atributo `__doc__` devuelve la documentación de una función. Por lo tanto, las funciones también se consideran objetos:
+
+  ```python
+  len.__doc__ # 'Return the number of items in a container.'
+  ```
+
+  Los atributos funcionan y se ven como variables, pero se especifican con un punto después del objeto.
+
+instructions: |
+
+  Convierte la cadena `text` a minúsculas e imprímela en la pantalla. En la teoría se muestra un ejemplo de un método que realiza esta tarea.
+
+tips:
+  - |
+    [Métodos de cadenas](https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods)

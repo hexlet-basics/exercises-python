@@ -41,7 +41,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `join_numbers_from_range()`, которая объединяет все числа из диапазона в строку:
+  Реализуйте функцию `join_numbers_from_range()`, которая объединяет все числа из переданного диапазона в строку:
 
   ```python
   join_numbers_from_range(1, 1)   # '1'

@@ -59,7 +59,7 @@ theory: |
   noop()
   ```
 
-  El concepto de "crear una función" tiene muchos sinónimos: "implementar", "definir" e incluso "implementar". Se encuentran con frecuencia en la práctica. Al crear su propia función, facilitará las operaciones complejas y hará que el desarrollo sea más sencillo.
+  El concepto de "crear una función" tiene muchos sinónimos: "implementar", "definir" e incluso "declarar". Se encuentran con frecuencia en la práctica. Al crear su propia función, facilitará las operaciones complejas y hará que el desarrollo sea más sencillo.
 
 instructions: |
 
@@ -73,4 +73,4 @@ instructions: |
 
 tips:
   - |
-    [Naming en programación](https://hexlet.la/blog/naming-in-programming)
+    [Naming en programación](https://codica.la/blog/naming-in-programming)

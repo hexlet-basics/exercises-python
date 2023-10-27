@@ -11,7 +11,7 @@ theory: |
 
   Otra función puede tener una cantidad diferente de parámetros y diferentes tipos de parámetros. Por ejemplo, puede existir una función que tome tres parámetros: un número, una cadena y otro número.
 
-  Para conocer estos detalles específicos de una función, es necesario estudiar su **firma**. Esta define los parámetros de entrada y sus tipos, así como el parámetro de salida y su tipo. Puedes leer sobre la función `pow()` en la [documentación oficial de Python](https://docs.python.org/3/library/functions.html?highlight=pow#pow) o en la [documentación no oficial en ruso](https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/funktsija-pow/). Por lo general, la documentación de una función se ve así:
+  Para conocer estos detalles específicos de una función, es necesario estudiar su **firma**. Esta define los parámetros de entrada y sus tipos, así como el parámetro de salida y su tipo. Puedes leer sobre la función `pow()` en la [documentación oficial de Python](https://docs.python.org/3/library/functions.html?highlight=pow#pow). Por lo general, la documentación de una función se ve así:
 
   ```
   pow(x, y[, z])

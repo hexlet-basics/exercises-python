@@ -17,11 +17,9 @@ theory: |
       print(symbol)
 
   # => c
-  # => ó
-  # => d
-  # => i
-  # => g
   # => o
+  # => d
+  # => e
   ```
 
   En el código anterior, el ciclo `for` recorre cada carácter de la cadena, lo guarda en la variable `símbolo` y ejecuta el bloque de código interno donde se utiliza esta variable. El nombre de esta variable puede ser cualquier cosa. La estructura general del ciclo `for` es: `for <variable> in <colection>`.
@@ -30,14 +28,14 @@ theory: |
 
   ```python
   def reverse_string(text):
-      # Valor inicial
-      result = ''
-      # char - variable donde se guarda el carácter actual
-      for char in texto:
-          # Concatenamos en orden inverso
-          resultado = char + resultado
-      # El ciclo termina cuando se ha recorrido toda la cadena
-      return result
+    # Valor inicial
+    result = ''
+    # char - variable donde se guarda el carácter actual
+    for char in text:
+        # Concatenamos en orden inverso
+        result = char + result
+    # El ciclo termina cuando se ha recorrido toda la cadena
+    print(result)
 
 
   reverse_string('go!')  # => '!og'

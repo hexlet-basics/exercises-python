@@ -181,7 +181,7 @@ theory: |
   ```python
   # No es necesario colocar paréntesis,
   # porque la prioridad de == es mayor que la de or
-  value == 'first' or vue == 'second'
+  value == 'first' or value == 'second'
   ```
 
 instructions: |

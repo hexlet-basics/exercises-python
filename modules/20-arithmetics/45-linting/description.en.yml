@@ -16,7 +16,7 @@ theory: |
 
   Linter will swear for breaking the rule: _E225 missing whitespace around operator_. By standard, the `+` operator must always be separated by spaces from the operands.
 
-  Above we saw the rule [E225](https://lintlyci.github.io/Flake8Rules/rules/E225.html) — is one of a large number of rules. Other rules describe indents, names, brackets, mathematical operations, line lengths, and a host of other aspects. Each individual rule seems unimportant and shallow, but together they form the basis of good code. A list of all the flake8 rules is available [в этой документации](https://lintlyci.github.io/Flake8Rules/).
+  Above we saw the rule [E225](https://www.flake8rules.com/rules/E225.html) — is one of a large number of rules. Other rules describe indents, names, brackets, mathematical operations, line lengths, and a host of other aspects. Each individual rule seems unimportant and shallow, but together they form the basis of good code. A list of all the flake8 rules is available [on a documentation page](https://www.flake8rules.com/).
 
   You are already familiar with the linter because the Hexlet platform uses it to check your code in hands-on assignments. Soon you will start using it outside of Hexlet as well, when you implement training projects. You'll set up the linter, and it will check your code already in real development and tell you about irregularities.
 

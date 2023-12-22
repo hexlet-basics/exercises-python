@@ -69,7 +69,7 @@ theory: |
 
 instructions: |
 
-  Реализуйте функцию `print_table_of_squares()`, которая печатает на экран квадраты чисел. Она первое и последнее числа.
+  Реализуйте функцию `print_table_of_squares(from, to)`, которая печатает на экран квадраты чисел. Она первое `from` и последнее `to` число печатает строку `square of <число> is <результат>`
 
   Примеры вызова:
 
@@ -78,13 +78,6 @@ instructions: |
   # => square of 1 is 1
   # => square of 2 is 4
   # => square of 3 is 9
-  # => square of 4 is 16
-  # => square of 5 is 25
-  # => square of 6 is 36
-  # => square of 7 is 49
-  # => square of 8 is 64
-  # => square of 9 is 81
-  # => square of 10 is 100
   ```
 
 tips: []

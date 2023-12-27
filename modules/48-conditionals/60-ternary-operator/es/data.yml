@@ -1,0 +1,7 @@
+name: Operador ternario
+tips: []
+definitions:
+  - name: Operador ternario
+    description: >
+      una forma de convertir una instrucción condicional simple en una
+      expresión, por ejemplo, `number if number >= 0 else -number`.

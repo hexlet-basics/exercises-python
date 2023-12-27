@@ -1,0 +1,67 @@
+
+We've already figured out how to work with variables to store and reuse information. But they also help simplify complex calculations. For example, currency conversion or making up a new word. Let's look at how to do it in practice.
+
+Let us imagine that we need to convert euros into yuans via dollars. Banks often do this kind of conversion via an intermediate currency when shopping abroad.
+
+First, convert 50 euros into dollars. Suppose that one euro is $1.25:
+
+```python
+dollars_count = 50 * 1.25
+print(dollars_count)  # => 62.5
+```
+
+Here we write **expression** into the variable `dollars_count = 50 * 1.25` to the right of the equals sign. The interpreter will calculate the result (`62.5`) and write it to a variable.  The interpreter doesn't care what form the data is written in: `62.5` or `50 * 1.25`. From its perspective, both are expressions to be calculated. It does the calculations and comes up with the same value, `62.5`.
+
+Any string is an expression. String concatenation (concatenation of variable values) is also an expression. When the interpreter sees an expression, it processes it and generates a result, the **value of the expression**.
+
+Here are some examples of an expression. We've written the total values in the comments to the right of each expression:
+
+```python
+62.5             # 62.5
+50 * 1.25        # 62.5
+120 / 10 * 2     # 24.0
+int('100')       # 100
+
+'hello'          # hello
+'Good' + 'will'  # Goodwill
+```
+
+In the places where an expression is expected, you can put any calculation. It can be not only mathematical, but also string-like concatenation. The program will remain functional.
+
+Programs consist of many combinations of expressions. Based on the above, consider whether this code would work:
+
+```python
+who = "dragon's " + 'mother'
+print(who)
+```
+
+This code will display the string `dragon's mother`. If you want to check it yourself, run the code on [repl.it](https://replit.com/languages/python3) and experiment with it.
+
+Variables can be used to write even more complex calculations. Now, back to our currency program. Let's write the dollar value in yuans as a separate variable. Let's calculate the value of 50 euros in dollars by multiplying it by `1.25`. Suppose that 1 dollar is 6.91 yuans:
+
+```python
+yuans_per_dollar = 6.91
+dollars_count = 50 * 1.25  # 62.5
+yuans_count = dollars_count * yuans_per_dollar  # 431.875.0
+
+print(yuans_count)
+```
+
+Now let's add text to the output using concatenation:
+
+```python
+yuans_per_dollar = 6.91
+dollars_count = 50 * 1.25  # 62.5
+yuans_count = dollars_count * yuans_per_dollar  # 431.875.0
+
+# The str() function turns a number into a string.
+# There will be a separate lesson about these transformations.
+print('The price is ' + str(yuans_count) + ' yuans')
+# => The price is 431.875.0 yuans
+```
+
+Any variable can be part of any expression. At the moment of calculation, the name of the variable will be replaced by its value.
+
+The interpreter calculates the value of `dollars_count` before this variable is used in other expressions. When it comes time to use a variable, Python already knows the value because it's calculated it.
+
+Variables can be used to perform complex calculations and to provide a detailed output with the resulting value. But you can also get new expressions by combining two or more variable values. Concatenation is responsible for this.

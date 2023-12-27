@@ -1,0 +1,5 @@
+name: Оператор Match
+tips:
+  - >
+    [Match](https://docs.python.org/3/reference/compound_stmts.html#the-match-statement)
+definitions: []

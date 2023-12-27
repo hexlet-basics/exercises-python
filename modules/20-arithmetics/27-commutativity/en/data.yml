@@ -1,0 +1,8 @@
+name: Commutative operation
+tips: []
+definitions:
+  - name: Commutativity
+    description: >
+      the property of an operation where changing the order of operands does not
+      affect the result. For example, addition is a commutative operation:
+      changing the order of the numbers we are adding doesn't change the result.

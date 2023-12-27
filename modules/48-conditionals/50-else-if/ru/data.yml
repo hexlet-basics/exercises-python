@@ -1,0 +1,5 @@
+name: Конструкция else + if = elif
+tips: []
+definitions:
+  - name: else + if = elif
+    description: способ задать несколько альтернативных условий.

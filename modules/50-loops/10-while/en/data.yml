@@ -1,0 +1,5 @@
+name: While Loop
+tips: []
+definitions:
+  - name: While Loop
+    description: an instruction to repeat the code as long as a given condition is met

@@ -1,0 +1,39 @@
+
+Ya sabes cómo concatenar cadenas de texto o "unir" varias cadenas para obtener una nueva expresión. Pero en programación, hay alternativas a estas operaciones. Estas mejoran la legibilidad del código y lo hacen más fácil de mantener.
+
+El método básico para unir cadenas es la **concatenación**. Con la concatenación, las cadenas se "suman" entre sí, como se muestra en el siguiente ejemplo:
+
+```python
+first_name = 'Joffrey'
+greeting = 'Hello'
+
+print(greeting + ", " + first_name + "!")
+# => Hello, Joffrey!
+```
+
+La concatenación funciona de manera sencilla, pero no siempre es visualmente clara. Debido a las comillas, es difícil ver cómo será el resultado final. Y cuanto más compleja sea la cadena, más confusa se volverá. La interpolación es una alternativa a la concatenación. Así es como se ve:
+
+```python
+first_name = 'Joffrey'
+greeting = 'Hello'
+
+print(f'{greeting}, {first_name}!')
+# => Hello, Joffrey!
+```
+
+La letra `f` indica que estamos creando una **f-string** (cadena f) - una plantilla en la que los valores de las variables se insertan mediante llaves. El resultado es una cadena normal.
+
+Veamos este ejemplo:
+
+```python
+school = 'Hexlet'
+
+what_is_it = f'{school} - online courses'
+print(what_is_it)  # => Hexlet - online courses
+```
+
+https://replit.com/@hexlet/python-basics-advanced-strings-interpolation
+
+En casi todos los lenguajes de programación, la interpolación es preferible a la concatenación para unir cadenas. La cadena resultante se muestra como una sola unidad, y los espacios y otros caracteres son fácilmente distinguibles dentro de ella.
+
+La interpolación ayuda a que el código sea más comprensible para los desarrolladores. Pero esta no es la única alternativa útil que queríamos mencionar. En el próximo tema, aprenderemos cómo declarar cadenas de varias líneas sin usar `\n`.

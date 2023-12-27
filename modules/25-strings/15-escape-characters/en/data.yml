@@ -1,0 +1,11 @@
+name: Escape sequences
+definitions:
+  - name: Escape sequence
+    description: >-
+      a special combination of characters in text. For example, \n — is a line
+      feed.
+tips:
+  - >-
+    Be sure to experiment with printing different strings on the site
+    [https://replit.com/languages/python3](https://replit.com/languages/python3)
+  - '[Line feed history](https://en.wikipedia.org/wiki/Newline)'

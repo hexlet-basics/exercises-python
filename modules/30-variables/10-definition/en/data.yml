@@ -1,0 +1,8 @@
+name: What is a variable
+tips:
+  - >
+    [Naming in
+    Programming](https://hexlet.io/blog/posts/code-complete-naming-in-programming)
+definitions:
+  - name: Variable
+    description: a way to save information and name it for later use in code.

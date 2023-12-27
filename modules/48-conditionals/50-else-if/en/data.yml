@@ -1,0 +1,5 @@
+name: The construct else + if = elif
+tips: []
+definitions:
+  - name: else + if = elif
+    description: a way of setting several alternative conditions.

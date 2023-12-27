@@ -1,0 +1,8 @@
+name: Predicates
+tips:
+  - >
+    [Naming in
+    Programming](https://hexlet.io/blog/posts/code-complete-naming-in-programming)
+definitions:
+  - name: Predicate
+    description: выражение, отвечающее на вопрос «да» или «нет» с помощью типа bool.

@@ -1,0 +1,11 @@
+name: Comentarios
+tips:
+  - >
+    [Más información sobre
+    comentarios](https://www.w3schools.com/python/python_comments.asp)
+definitions:
+  - name: Comentario
+    description: >
+      se trata de un texto en el código de un programa que no afecta su
+      funcionalidad y lo agregan los programadores para su propio uso y/o el de
+      sus colegas.

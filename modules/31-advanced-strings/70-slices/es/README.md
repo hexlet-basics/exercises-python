@@ -1,0 +1,118 @@
+
+Cuando trabajamos con cadenas en programación, a menudo necesitamos extraer una parte de ellas. Por ejemplo, necesitamos determinar si una subcadena está presente dentro de una cadena más grande. En esta lección aprenderemos cómo hacerlo.
+
+Una **subcadena** es una parte de una cadena que se debe encontrar y extraer.
+
+Supongamos que tenemos una fecha en el siguiente formato: *12-08-2034*. Necesitamos extraer de ella la subcadena que contiene solo el año.
+
+Si pensamos lógicamente, debemos calcular el índice del carácter donde comienza el año y luego extraer cuatro caracteres. Los índices en una cadena comienzan desde cero, lo que significa que el primer carácter del año está disponible en el índice 6, y el último carácter está disponible en el índice 9. Verifiquemos:
+
+```python
+value = '12-08-2034'
+
+print(value[6])  # => 2
+print(value[9])  # => 4
+```
+
+Conociendo estos índices, podemos usar recortes para obtener la subcadena deseada:
+
+```python
+value = '12-08-2034'
+
+year = value[6:10]
+print(year)  # => 2034
+```
+
+Los **recortes de cadenas** en Python son un mecanismo mediante el cual se extrae una subcadena según los parámetros especificados. En el ejemplo anterior, tomamos una subcadena desde el índice 6 hasta el índice 10, sin incluirlo, es decir, desde el 6 hasta el 9 inclusive. La fórmula se ve así:
+
+```python
+str[inicio:fin]
+
+# Algunos ejemplos
+value = '01-12-9873'
+
+# Un recorte de cadena siempre es una cadena,
+# incluso si el contenido original era un número.
+value[1:2]  # '1'
+value[3:5]  # '12'
+```
+
+Los recortes tienen muchas variaciones. Por ejemplo, si no se especifica el límite final, se extraerá hasta el final de la cadena. Lo mismo ocurre con el límite inicial, que es el comienzo de la cadena:
+
+```python
+value = 'Hexlet'
+value[3:]  # 'let'
+value[:3]  # 'Hex'
+```
+
+Incluso se pueden usar índices negativos. En este caso, el conteo se realiza desde el final:
+
+```python
+value = 'Hexlet'
+# El límite derecho es negativo. Restamos 1 desde el final de la cadena
+value[3:-1]  # 'le'
+# El límite izquierdo es negativo. Restamos 5 desde el final de la cadena
+value[-5:3]  # 'ex'
+```
+
+Los recortes tienen dos parámetros obligatorios, pero a veces se usa un tercer parámetro.
+
+Los recortes tienen un tercer parámetro opcional llamado **paso de extracción**. Por defecto, es igual a uno, pero podemos cambiarlo:
+
+```python
+value = 'Hexlet'
+value[1:5:2]  # el
+# 1:5 es 'exle'
+# paso 2 significa cada segundo, es decir, 'e' y 'l'
+```
+
+Todo esto se puede combinar con límites abiertos, es decir, sin especificar el inicio o el final:
+
+```python
+value = 'Hexlet'
+value[:5:2]  # 'Hxe'
+value[1::2]  # 'elt'
+```
+
+El paso puede ser negativo, en cuyo caso se toma desde el final. Esto lleva al uso más común del paso: **invertir una cadena**:
+
+```python
+value = 'Hexlet'
+# Omitimos ambos límites
+value[::-1]  # 'telxeH'
+```
+
+Si se utiliza un paso negativo y los elementos del recorte se extraen en orden inverso, entonces los límites del recorte también deben especificarse en orden inverso. El límite derecho se especifica primero, seguido del límite izquierdo:
+
+```python
+value = 'Hexlet'
+# El carácter con índice 1 no se incluirá en la subcadena
+value[4:1:-1]  # 'elx'
+```
+
+Los recortes se pueden especificar no sólo con números, sino también con variables:
+
+```python
+value = 'Hexlet'
+start = 1
+end = 5
+value[start:end]  # 'exle'
+```
+
+https://replit.com/@hexlet/python-basics-advanced-strings-slices
+
+Resumiendo todo:
+
+```python
+value = 'Hexlet'
+value[::] = 'Hexlet'  # Toda la cadena
+value[:] = 'Hexlet'  # Toda la cadena
+value[::2] = 'Hxe'  # Caracteres en posiciones pares
+value[1::2] = 'elt'  # Caracteres en posiciones impares
+value[::-1] = 'telxeH'  # Toda la cadena en orden inverso
+value[5:] = 't'  # Cadena a partir del sexto carácter
+value[:5] = 'Hexle'  # Cadena hasta el sexto carácter
+value[-2:1:-1] = 'elx'  # Todos los caracteres desde el penúltimo hasta el tercero en orden inverso. En todos los casos, al seleccionar desde un índice mayor a uno menor, se debe especificar el paso
+```
+
+Como puedes ver, los recortes pueden hacer muchas cosas. No te preocupes si no recuerdas todas estas combinaciones en este momento, es normal. Con el tiempo aprenderás a usarlos sin consultar la documentación.

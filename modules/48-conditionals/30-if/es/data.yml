@@ -1,0 +1,7 @@
+name: Estructura condicional (if)
+tips: []
+definitions:
+  - name: Estructura condicional
+    description: >-
+      forma de establecer una condición para ejecutar código. Por ejemplo, `if x
+      > 10: ... `

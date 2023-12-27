@@ -1,0 +1,12 @@
+name: Errores de sintaxis
+tips:
+  - >
+    [Tipos de errores en
+    Python](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+definitions:
+  - name: Error de sintaxis
+    description: violación de las reglas gramaticales del lenguaje de programación.
+  - name: SyntaxError (error de análisis)
+    description: >-
+      tipo de errores en Python que ocurren cuando hay errores de sintaxis en el
+      código.

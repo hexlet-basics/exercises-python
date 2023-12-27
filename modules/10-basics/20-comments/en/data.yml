@@ -1,0 +1,7 @@
+name: Comments
+tips: []
+definitions:
+  - name: Comments
+    description: >
+      text in the program code that does not affect the functionality and is
+      added by programmers for themselves and their colleagues.

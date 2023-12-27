@@ -1,0 +1,7 @@
+name: Arithmetic operations
+tips:
+  - >
+    Always indent arithmetic operators with spaces between the numbers
+    (operands) – it's good form when programming. Therefore, in our examples, we
+    have `print(3 + 4)` rather than `print(3+4)`.
+  - Division by zero generates an error.

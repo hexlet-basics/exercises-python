@@ -1,0 +1,10 @@
+name: Concatenación
+tips:
+  - >
+    Si hay una línea `# BEGIN` y `# END` en el editor, el código debe escribirse
+    entre esas líneas.
+definitions:
+  - name: Concatenación
+    description: >
+      operación que une dos cadenas de texto. Por ejemplo, `print("King's " + '
+      Landing')`

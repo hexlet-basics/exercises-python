@@ -1,0 +1,15 @@
+name: Operadores lógicos
+tips:
+  - |
+    [Álgebra booleana](https://es.wikipedia.org/wiki/%C3%81lgebra_booleana)
+  - >
+    [Conjunción
+    lógica](https://es.wikipedia.org/wiki/Conjunci%C3%B3n_l%C3%B3gica)
+  - >
+    [Disyunción
+    lógica](https://es.wikipedia.org/wiki/Disyunci%C3%B3n_l%C3%B3gica)
+definitions:
+  - name: Operadores lógicos
+    description: >-
+      operadores 'Y' (`and`), 'O' (`or`), que permiten crear condiciones lógicas
+      compuestas.

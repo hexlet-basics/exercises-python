@@ -1,0 +1,7 @@
+name: Цикл While
+tips:
+  - |
+    [Цикл while](https://www.w3schools.com/python/python_while_loops.asp)
+definitions:
+  - name: Цикл While
+    description: инструкция для повторения кода, пока удовлетворяется какое-то условие.

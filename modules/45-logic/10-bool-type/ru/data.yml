@@ -1,0 +1,10 @@
+name: Логический тип
+tips:
+  - >
+    [Boolean в
+    Python](https://docs.python.org/3/library/stdtypes.html#boolean-values)
+definitions:
+  - name: Логический тип (bool)
+    description: >-
+      тип данных с двумя возможными значениями: `True` (истина) и `False`
+      (ложь).

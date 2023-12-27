@@ -1,0 +1,10 @@
+name: Срезы строк
+tips:
+  - >
+    [Подробнее о срезах в
+    Python](https://www.w3schools.com/python/python_strings_slicing.asp)
+definitions:
+  - name: Срезы для строк
+    description: >-
+      механизм, с помощью которого извлекается подстрока по указанным
+      параметрам.

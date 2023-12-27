@@ -1,0 +1,10 @@
+name: Recortes de cadenas
+tips:
+  - >
+    [Más información sobre recortes en
+    Python](https://www.w3schools.com/python/python_strings_slicing.asp)
+definitions:
+  - name: Recortes de cadenas
+    description: >-
+      mecanismo mediante el cual se extrae una subcadena según los parámetros
+      especificados.

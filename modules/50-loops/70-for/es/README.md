@@ -1,0 +1,69 @@
+
+El ciclo `while` se utiliza para resolver cualquier problema de iteración, pero es bastante extenso y verboso. Con `while`, es necesario establecer una condición de finalización y un contador. Cuando hay pocos ciclos, esto no es un problema, pero en el código real, los ciclos están presentes en cada paso. Por lo tanto, controlar las condiciones manualmente puede resultar tedioso, especialmente cuando la condición de finalización es obvia.
+
+Por ejemplo, si queremos iterar sobre los caracteres de una cadena, la computadora puede entender automáticamente cuándo la cadena termina. Para este tipo de situaciones, en Python se introdujo el ciclo `for`. Este ciclo sabe automáticamente cuándo detenerse, ya que solo trabaja con colecciones, es decir, conjuntos de elementos que deben ser iterados.
+
+Una cadena es una colección, ya que está compuesta por un conjunto de caracteres. Otros tipos de colecciones se estudian en otro curso.
+
+Ejemplo:
+
+```python
+text = 'code'
+for symbol in text:
+    print(symbol)
+
+# => c
+# => o
+# => d
+# => e
+```
+
+En el código anterior, el ciclo `for` recorre cada carácter de la cadena, lo guarda en la variable `símbolo` y ejecuta el bloque de código interno donde se utiliza esta variable. El nombre de esta variable puede ser cualquier cosa. La estructura general del ciclo `for` es: `for <variable> in <colection>`.
+
+Veamos cómo implementar una función para invertir una cadena utilizando el ciclo `for`:
+
+```python
+def reverse_string(text):
+  # Valor inicial
+  result = ''
+  # char - variable donde se guarda el carácter actual
+  for char in text:
+      # Concatenamos en orden inverso
+      result = char + result
+  # El ciclo termina cuando se ha recorrido toda la cadena
+  print(result)
+
+
+reverse_string('go!')  # => '!og'
+```
+
+Analicemos detalladamente cómo funciona el ciclo en el ejemplo anterior en cada iteración:
+
+1. En la primera iteración, en el ciclo `result` hay una cadena vacía y `char` es igual al primer carácter '¡'. Por lo tanto, en `resultado` se asigna el carácter '¡' más la cadena vacía, lo que resulta en '¡'.
+2. En la segunda iteración, `result` ya contiene el carácter '¡' y `char` es igual al siguiente carácter 'v'. En `result` se guarda `char + result`, es decir, `'v' + '¡'`.
+3. En la última iteración, `result` contiene la cadena '¡v' y `char` es igual al último carácter '!'. En `result` se guarda `'¡v' + '!'`.
+
+Ahora contemos la cantidad de veces que aparece un carácter en una cadena sin tener en cuenta el caso:
+
+```python
+# text - texto arbitrario
+# char - carácter que se debe contar
+def chars_count(text, char):
+    # Como estamos buscando la suma, el valor inicial es 0
+    result = 0
+    for current_char in text:
+        # convertimos todo a minúsculas
+        # para no depender del caso actual
+        if current_char.lower() == char.lower():
+            result += 1
+    return result
+
+
+chars_count('hexlet!', 'e')  # 2
+chars_count('hExlet!', 'e')  # 2
+chars_count('hExlet!', 'E')  # 2
+
+chars_count('hexlet!', 'a')  # 0
+```
+
+Te recomendamos experimentar con los ejemplos anteriores en el [Replit](https://replit.com/@hexlet/python-basics-for-loop#main.py) interactivo.

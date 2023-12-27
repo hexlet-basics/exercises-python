@@ -1,0 +1,5 @@
+name: Argumentos por defecto
+tips: []
+definitions:
+  - name: Parámetro por defecto
+    description: parámetro opcional de una función

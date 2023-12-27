@@ -1,0 +1,10 @@
+name: Tipo lógico
+tips:
+  - >
+    [Booleanos en
+    Python](https://docs.python.org/3/library/stdtypes.html#boolean-values)
+definitions:
+  - name: Tipo lógico (bool)
+    description: >-
+      un tipo de dato con dos posibles valores: `True` (verdadero) y `False`
+      (falso).

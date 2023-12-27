@@ -1,0 +1,9 @@
+name: Determinismo
+tips:
+  - |
+    [Funciones deterministas](https://en.wikipedia.org/wiki/Pure_function)
+definitions:
+  - name: Efecto secundario
+    description: >-
+      una acción que modifica el entorno externo (el entorno de ejecución). Por
+      ejemplo, la impresión en pantalla o el envío de un correo electrónico.

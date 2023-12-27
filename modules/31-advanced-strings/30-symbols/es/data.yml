@@ -1,0 +1,5 @@
+name: Extracción de caracteres de una cadena
+tips: []
+definitions:
+  - name: Índice
+    description: La posición del carácter dentro de una cadena.

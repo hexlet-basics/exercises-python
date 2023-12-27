@@ -1,0 +1,15 @@
+name: Operaciones aritméticas
+tips:
+  - >
+    Siempre deja espacios entre los operadores aritméticos y los números
+    (operandos). Esto es una buena práctica de programación. Por lo tanto, en
+    nuestros ejemplos es `print(3 + 4)`, no `print(3+4)`.
+  - La división por cero genera un error.
+  - |
+    [División entera](https://es.wikipedia.org/wiki/Divisi%C3%B3n_entera)
+definitions:
+  - name: Instrucción
+    description: >
+      la unidad más pequeña e independiente de un lenguaje de programación; una
+      orden o conjunto de órdenes. Un programa generalmente consiste en una
+      secuencia de instrucciones.

@@ -1,0 +1,5 @@
+name: Default Arguments
+tips: []
+definitions:
+  - name: Default setting
+    description: optional function parameter

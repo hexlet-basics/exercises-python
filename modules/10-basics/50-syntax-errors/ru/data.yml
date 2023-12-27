@@ -1,0 +1,10 @@
+name: Синтаксические ошибки
+tips:
+  - >
+    [Виды ошибок в
+    Python](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
+definitions:
+  - name: Синтаксическая ошибка
+    description: нарушение грамматических правил языка программирования.
+  - name: SyntaxError (ошибка парсинга)
+    description: тип ошибок в Python, возникающих при наличии синтаксических ошибок в коде.

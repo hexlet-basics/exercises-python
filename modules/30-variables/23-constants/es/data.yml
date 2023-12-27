@@ -1,0 +1,8 @@
+name: Constantes
+tips: []
+definitions:
+  - name: Constante
+    description: >-
+      una forma de almacenar información y darle un nombre para su uso posterior
+      en el código; las constantes no se pueden modificar, a diferencia de las
+      variables.

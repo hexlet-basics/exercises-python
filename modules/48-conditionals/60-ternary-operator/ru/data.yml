@@ -1,0 +1,7 @@
+name: Тернарный оператор
+tips: []
+definitions:
+  - name: Тернарный оператор
+    description: >
+      способ превратить простую условную инструкцию в выражение, например,
+      `number if number >= 0 else -number`.

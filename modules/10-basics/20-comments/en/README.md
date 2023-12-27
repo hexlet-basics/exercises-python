@@ -1,0 +1,22 @@
+
+Almost all programming languages allow you to leave comments in your code. The interpreter ignores them. They're only for people; they let the programmer leave notes for themselves and other programmers.
+
+They allow you to add explanations of how the code works, what errors need to be corrected, or what you need to remember to add later:
+
+```python
+# Delete the line below after the registration task is done
+print(10)
+```
+
+Comments in Python begin with the `#` sign and can appear anywhere in the program. They can take up an entire line. If one line is not enough, you can create several comments:
+
+```python
+# For Winterfell!
+# For Lanisters!
+```
+
+The comment can be on the line after the code:
+
+```python
+print('I am the King') # For Lannisters!
+```

@@ -1,0 +1,7 @@
+name: Nomenclatura de variables
+tips:
+  - |
+    [Snake case](https://es.wikipedia.org/wiki/Snake_case)
+definitions:
+  - name: Estándar de codificación
+    description: conjunto de reglas sintácticas y estilísticas para escribir código.

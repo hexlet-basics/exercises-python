@@ -1,0 +1,7 @@
+name: Именование переменных
+tips:
+  - |
+    [Snake case](https://ru.wikipedia.org/wiki/Snake_case)
+definitions:
+  - name: Стандарт кодирования
+    description: набор синтаксических и стилистических правил написания кода.

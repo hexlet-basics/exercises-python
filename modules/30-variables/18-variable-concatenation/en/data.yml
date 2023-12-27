@@ -1,0 +1,9 @@
+name: Variables and concatenation
+tips:
+  - >
+    Consider how you should concatenate the variables to get the two-line output
+    of the email body.
+  - >
+    Remember that you can create a string that contains only the control
+    sequence `\n`. You can concatenate this string with variables to get proper
+    text formatting.

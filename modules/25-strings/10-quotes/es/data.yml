@@ -1,0 +1,4 @@
+name: Comillas
+tips:
+  - >
+    [f-strings](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)

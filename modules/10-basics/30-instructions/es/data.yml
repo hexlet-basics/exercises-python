@@ -1,0 +1,14 @@
+name: Instrucciones
+tips:
+  - >
+    [Más información sobre los
+    intérpretes](https://es.wikipedia.org/wiki/Int%C3%A9rprete)
+definitions:
+  - name: Intérprete
+    description: |
+      un programa que ejecuta código en Python.
+  - name: Instrucción
+    description: >-
+      un comando para el ordenador escrito en un lenguaje de programación. El
+      código en Python es un conjunto de instrucciones separadas (generalmente)
+      por saltos de línea.

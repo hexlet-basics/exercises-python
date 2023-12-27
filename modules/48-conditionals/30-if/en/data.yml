@@ -1,0 +1,7 @@
+name: Conditional Constructions (if)
+tips: []
+definitions:
+  - name: Conditional Design.
+    description: >-
+      the way to set a condition for code execution. For example, `if x > 10: .
+      `

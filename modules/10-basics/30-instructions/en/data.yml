@@ -1,0 +1,13 @@
+name: Statements
+tips:
+  - >
+    [A little bit about
+    interpreters](https://en.wikipedia.org/wiki/Interpreter_(computing))
+definitions:
+  - name: Interpreter
+    description: |
+      a program that runs code in Python.
+  - name: Statement
+    description: >-
+      a command for the computer written in a programming language. Python code
+      is a set of instructions, most often separated by a line break.

@@ -1,0 +1,11 @@
+
+The order of instructions in code with variables is of great importance. That's why the variable must be defined before you use it for the first time. Below is an example of a mistake often made by beginners:
+
+```python
+print(greeting)
+greeting = 'Father!'
+```
+
+Running the program above ends with the error `NameError: name 'greeting' is not defined` - this is a reference error. This means that the code uses a name (identifier) that hasn't yet been defined. This is stated in the text of the error itself: `'greeting' is not defined`. In addition to incorrect ordering, when working with Python, you can also come across simple typos in the name of the variable. This happens both when the variable is used and when it's declared.
+
+You can reduce the number of such errors if you use a properly configured editor. It warns of possible problems and highlights variables that are used without being declared.

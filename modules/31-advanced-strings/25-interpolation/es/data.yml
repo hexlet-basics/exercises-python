@@ -1,0 +1,9 @@
+name: Interpolación
+tips:
+  - >
+    [f-strings](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)
+definitions:
+  - name: Interpolación
+    description: >-
+      una forma de obtener una cadena compleja a partir de varias cadenas
+      simples utilizando plantillas especiales.

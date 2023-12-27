@@ -1,0 +1,8 @@
+name: Funciones con número variable de parámetros
+tips:
+  - >
+    [Ejemplo de función con número variable de
+    parámetros](https://docs.python.org/3/library/functions.html?highlight=pow#max)
+definitions:
+  - name: Argumento por defecto
+    description: argumento opcional de una función.

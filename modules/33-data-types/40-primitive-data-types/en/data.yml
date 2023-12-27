@@ -1,0 +1,16 @@
+name: Data types
+tips:
+  - |
+    [Literal](https://en.wikipedia.org/wiki/Literal_(computer_programming))
+definitions:
+  - name: Data type
+    description: >-
+      a set of data in a code (a kind of information). A type determines what
+      you can do with the elements of a particular set. For example, integers,
+      rational numbers, and strings are different types of data.
+  - name: Primitive data types
+    description: simple types built into the programming language itself.
+  - name: String
+    description: >
+      a data type that describes a character set (in other words, text) such as
+      `'text'` or `"text"`.

@@ -1,0 +1,7 @@
+name: Ciclo While
+tips:
+  - |
+    [Ciclo while](https://www.w3schools.com/python/python_while_loops.asp)
+definitions:
+  - name: Ciclo While
+    description: una instrucción para repetir código mientras se cumpla una condición.

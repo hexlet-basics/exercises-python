@@ -1,0 +1,7 @@
+name: Ciclo For
+tips: []
+definitions:
+  - name: Agregación
+    description: >-
+      Acumulación de resultados durante las iteraciones y manejo de estos
+      después del ciclo.

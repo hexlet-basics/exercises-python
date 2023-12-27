@@ -1,0 +1,10 @@
+name: Сигнатура функции
+tips:
+  - >
+    [Функция
+    pow()](https://docs.python.org/3/library/functions.html?highlight=pow#pow)
+definitions:
+  - name: Сигнатура функции
+    description: >-
+      формальное описание типов аргументов и типа возвращаемого значения
+      функции.

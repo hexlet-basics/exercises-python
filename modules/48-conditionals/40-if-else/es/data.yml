@@ -1,0 +1,7 @@
+name: Estructura condicional else
+tips: []
+definitions:
+  - name: else
+    description: >-
+      forma de especificar un bloque de código que se ejecutará si la condición
+      del `if` no se cumple.

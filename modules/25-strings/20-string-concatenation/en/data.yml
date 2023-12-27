@@ -1,0 +1,6 @@
+name: Concatenation
+definitions:
+  - name: Concatenation
+    description: >
+      the operation of joining two strings. For example, `print("King's " + '
+      Landing')`

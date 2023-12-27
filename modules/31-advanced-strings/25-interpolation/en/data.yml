@@ -1,0 +1,7 @@
+name: Interpolation
+tips: []
+definitions:
+  - name: Interpolation
+    description: >-
+      a method for obtaining a complex string from several simple ones using
+      special templates

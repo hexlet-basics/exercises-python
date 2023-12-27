@@ -1,0 +1,9 @@
+name: Интерполяция
+tips:
+  - >
+    [f-строки](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)
+definitions:
+  - name: Интерполяция
+    description: >-
+      способ получения сложной строки из нескольких простых с использованием
+      специальных шаблонов

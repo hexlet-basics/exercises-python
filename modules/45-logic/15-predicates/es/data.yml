@@ -1,0 +1,9 @@
+name: Predicados
+tips:
+  - |
+    [Naming in Programming](https://codica.la/blog/naming-in-programming)
+definitions:
+  - name: Predicado
+    description: >-
+      una expresión que responde a una pregunta afirmativa "sí" o "no"
+      utilizando el tipo bool.

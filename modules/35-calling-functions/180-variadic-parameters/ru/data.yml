@@ -1,0 +1,8 @@
+name: Функции с переменным числом параметров
+tips:
+  - >
+    [Пример функции с переменным числом
+    параметров](https://docs.python.org/3/library/functions.html?highlight=pow#max)
+definitions:
+  - name: Аргумент по умолчанию
+    description: необязательный аргумент функции.

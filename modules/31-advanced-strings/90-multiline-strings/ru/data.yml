@@ -1,0 +1,6 @@
+name: Multi-line строки
+definitions: []
+tips:
+  - >
+    [Multi-line
+    строки](https://www.w3schools.com/python/gloss_python_multi_line_strings.asp)

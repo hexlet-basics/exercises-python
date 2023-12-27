@@ -1,0 +1,10 @@
+name: Vuelta desde bucles
+tips:
+  - >-
+    [Lista de números
+    primos](https://es.wikipedia.org/wiki/Anexo:Números_primos)
+definitions:
+  - name: Agregación
+    description: >-
+      Acumular resultados durante las iteraciones y trabajar con ellos después
+      del bucle.

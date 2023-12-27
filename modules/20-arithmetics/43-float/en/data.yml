@@ -1,0 +1,5 @@
+name: Floating point numbers
+tips:
+  - >
+    [What you need to know about floating point
+    arithmetic](https://www.validlab.com/goldberg/paper.pdf)

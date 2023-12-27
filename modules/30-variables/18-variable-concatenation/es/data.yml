@@ -1,0 +1,15 @@
+name: Variables y concatenación
+tips:
+  - >
+    Piense en qué cadena y en qué orden debe concatenar las variables para
+    obtener una salida de correo electrónico de dos líneas como la que se
+    muestra.
+  - >
+    Recuerde que puede crear una cadena que contenga solo una secuencia de
+    escape `\n`. Puede concatenar esta cadena con las variables para formatear
+    correctamente el texto.
+definitions:
+  - name: Concatenación
+    description: >
+      la operación de unir dos cadenas. Por ejemplo, `console.log("King's " + '
+      Landing');`

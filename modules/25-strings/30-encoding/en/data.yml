@@ -1,0 +1,7 @@
+name: Encoding
+tips:
+  - |
+    [What are encodings?](https://guides.hexlet.io/en/encoding/)
+definitions:
+  - name: Encoding
+    description: a set of characters encoded with numbers to represent text electronically.

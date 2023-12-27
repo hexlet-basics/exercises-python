@@ -1,0 +1,4 @@
+name: Кавычки
+tips:
+  - >
+    [f-строки](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)

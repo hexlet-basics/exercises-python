@@ -1,0 +1,5 @@
+name: Errors when working with variables
+tips: []
+definitions:
+  - name: Variable
+    description: a way to save information and name it for later use in code.

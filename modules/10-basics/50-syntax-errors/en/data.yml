@@ -1,0 +1,9 @@
+name: Syntax errors
+tips: []
+definitions:
+  - name: Syntax errors
+    description: violation of the grammatical rules of the programming language.
+  - name: SyntaxError (parsing error)
+    description: >-
+      the type of errors in Python that occur when there are syntax errors in
+      the code.

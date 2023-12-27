@@ -1,0 +1,5 @@
+name: Construcción else + if = elif
+tips: []
+definitions:
+  - name: Condicionales else + if = elif
+    description: Un recurso para especificar condiciones alternativas, según sea el caso

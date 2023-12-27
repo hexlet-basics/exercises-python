@@ -1,0 +1,7 @@
+name: Prioridad
+tips: []
+definitions:
+  - name: Expresión
+    description: >
+      una secuencia de acciones sobre datos que conduce a algún resultado que se
+      puede utilizar.

@@ -1,0 +1,5 @@
+name: Cadena de llamadas
+definitions:
+  - name: Método
+    description: |
+      es una función o procedimiento que pertenece a una clase u objeto.

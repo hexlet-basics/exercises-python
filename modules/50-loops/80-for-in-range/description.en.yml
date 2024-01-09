@@ -1,0 +1,84 @@
+---
+
+name: For loop and range function
+theory: |
+  Imagine that we have a series of numbers from 0 to 9. We want to add these numbers together. We could do it like this:
+
+  ```python
+  sum = 0
+  i = 0
+
+  while i < 10:
+      sum += i
+      i += 1
+
+  print(sum) # => 45
+  ```
+
+  First, we set the initial sum to 0. Then we run a loop in which the variable `i` starts taking values starting from 0 and going up to 10. At each step we add the value of `i` to our sum and increase `i` by 1. As soon as `i` becomes equal to 10, the loop ends and the program gives us the sum of all numbers from 0 to 9 equal to 45.
+
+  We can rewrite this code into a `for` loop
+
+  ```python
+  sum = 0
+
+  for i in range(10):
+      sum += i
+
+  print(sum) # => 45
+  ```
+
+  The first example uses `while`, which keeps running until `i < 10`. The second uses `for` and iterates from 0 to 9 using `range()`. Both do the same thing: add the numbers from 0 to 9 to the `sum` variable, but they use different ways to iterate.
+
+  ## The `range()` function
+
+  The range function in Python is a built-in function that creates a sequence of numbers within a specific range. It can be used in a for loop to control the number of iterations.
+
+  `range()` has several uses:
+
+  * `range(stop)` creates a sequence from 0 to `stop - 1`.
+  * `range(start, stop)` creates a sequence from start to `stop - 1`.
+  * `range(start, stop, step)` creates a sequence of numbers from start to `stop - 1`, with step `step`.
+
+  We saw the example with one final value above. Let's consider another one - print the numbers from 1 to 3 to the screen:
+
+  ```python
+
+  for i in range(1, 4):
+      print(i)
+
+  # => 1
+  # => 2
+  # => 3
+  ```
+
+  Now let's try to output the numbers in reverse order
+
+  ```python
+  for i in range(3, 0, -1):
+      print(i)
+
+  # => 3
+  # => 2
+  # => 1
+  ```
+
+  In the examples above, we can see that the iteration completes to a final value
+
+
+instructions: |
+  Implement the `print_table_of_squares(from, to)` function that prints squares of numbers to the screen. It first `from` and last `to` a number prints the string `square of <number> is <result>`
+
+  Call examples:
+
+  ```python
+  print_table_of_squares(1, 3)
+  # => square of 1 is 1
+  # => square of 2 is 4
+  # => square of 3 is 9
+  ```
+
+
+tips: []
+
+definitions: []

@@ -62,4 +62,4 @@ tips:
 definitions:
   - name: Конкатенация
     description: |
-      операция соединения двух строк. Например, `console.log("King's " + ' Landing');`
+      операция соединения двух строк. Например, `print("King's " + ' Landing');`

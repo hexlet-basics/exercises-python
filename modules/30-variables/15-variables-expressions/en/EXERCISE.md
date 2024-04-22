@@ -10,4 +10,4 @@ Example output for 100 euros:
 
 For the purposes of the exercise, we'll say that:
 - 1 euro = $1.25
-- 1 dollar = 4,50 zl
+- 1 dollar = 6.91 yuans

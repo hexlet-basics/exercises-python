@@ -8,32 +8,32 @@ theory: |
   ## Reglas de transformación
 
   El operador **OR** funciona de tal manera que se interrumpe la ejecución de izquierda a derecha y se devuelve el resultado del primer argumento que se pueda transformar en `True`. Si no hay ningún argumento que cumpla esta condición, se devuelve el último argumento, el de la derecha.
-  
+
   Veamos un ejemplo:
 
   ```python
   print(0 or 1)  ## 1
   ```
-  
+
   En este caso, el número `0` es equivalente a `False`, y el número `1` es equivalente a `True`. Por lo tanto, el operador **OR** devuelve `1`, ya que es el primer argumento que se puede transformar en `True`.
 
   Veamos un ejemplo más complejo:
-  
+
   ```python
   print(0 or False or '' or [] or 42 or "Hello")  ## 42
   ```
-  
+
   En este caso:
-  
+
   - El número `0` es equivalente a `False`
   - El valor `False` ya es `False`
   - La cadena vacía (`''`) es equivalente a `False`
   - La lista vacía (`[]`) es equivalente a `False`
   - El número `42` es equivalente a `True`
   - La cadena `"Hello"` también es equivalente a `True`
-  
-  El operador **OR** verifica los valores de izquierda a derecha y devuelve el primer argumento que se pueda transformar en `True`. En este ejemplo, ese valor es el número `42`. 
-  
+
+  El operador **OR** verifica los valores de izquierda a derecha y devuelve el primer argumento que se pueda transformar en `True`. En este ejemplo, ese valor es el número `42`.
+
   Ejemplo con el operador **AND**:
 
   ```python
@@ -51,7 +51,7 @@ theory: |
   - La cadena `"Hello"` es equivalente a `True`
   - La lista vacía (`[]`) es equivalente a `False`
   - El número `0` es equivalente a `False`
-  
+
   El operador **AND** verifica los valores de izquierda a derecha y devuelve el primer argumento que se pueda transformar en `False`. En este ejemplo, ese valor es la lista vacía (`[]`).
 
   En Python hay dos reglas de transformación:
@@ -125,7 +125,7 @@ theory: |
   ```python
   print(somefunc() and 'yes' or 'no')
   ```
-  
+
   Puedes probar y experimentar con el código en https://replit.com/@hexlet/python-basics-logical-expressions).
 
   ## Doble Negación
@@ -201,7 +201,7 @@ instructions: |
   isinstance(3, str) # False
   isinstance('Hexlet', str) # True
   ```
-  
+
   Experimenta con el código en la ventana interactiva REPL https://replit.com/@hexlet/python-basics-logical-expressions
 
 tips:

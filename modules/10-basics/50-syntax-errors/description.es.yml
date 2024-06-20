@@ -35,7 +35,7 @@ instructions: |
 
   <pre class='hexlet-basics-output'>What Is Dead May Never Die</pre>
 
-tips: 
+tips:
   - |
     [Tipos de errores en Python](https://docs.python.org/3/library/exceptions.html#exception-hierarchy)
 

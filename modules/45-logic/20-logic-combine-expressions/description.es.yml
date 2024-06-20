@@ -66,7 +66,7 @@ instructions: |
   is_international_phone('+79602223423') # True
   ```
 
-tips: 
+tips:
   - |
     [Expresión](https://es.wikipedia.org/wiki/Expresión_(informática))
 

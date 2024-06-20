@@ -33,7 +33,7 @@ theory: |
   ```python
   def has_capital_letter(string):
       # Verifica si hay al menos una letra mayúscula en la cadena
-  
+
   def has_special_chars(string):
       # Verifica si hay caracteres especiales en la cadena
 

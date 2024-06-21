@@ -26,7 +26,7 @@ instructions: |
   Dragon
   </pre>
 
-tips: 
+tips:
   - |
     [NameError](https://docs.python.org/3/library/exceptions.html?highlight=nameerror#NameError)
 

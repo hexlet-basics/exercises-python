@@ -63,4 +63,3 @@ definitions:
   - name: Concatenación
     description: |
       la operación de unir dos cadenas. Por ejemplo, `console.log("King's " + ' Landing');`
-

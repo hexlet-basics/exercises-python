@@ -1,3 +1,4 @@
+---
 name: Logic type
 definitions:
   - name: “Logic type (bool)”

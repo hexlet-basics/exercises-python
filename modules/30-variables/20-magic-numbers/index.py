@@ -1,4 +1,4 @@
-king = "Rooms in King Balon's Castle:"
+king = "Rooms in King Balon's Castles:"
 
 # BEGIN
 number_of_castles = 6

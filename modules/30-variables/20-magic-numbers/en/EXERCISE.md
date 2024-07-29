@@ -2,7 +2,7 @@
 You've come across this code, which prints the total number of rooms owned by the present king:
 
 ```python
-king = "Rooms in King Balon's Castle:"
+king = "Rooms in King Balon's Castles:"
 print(king)
 print(6 * 17)
 ```
@@ -16,7 +16,7 @@ Get rid of the magic numbers by creating new variables and then displaying the t
 You'll get this:
 
 <pre class='hexlet-basics-output'>
-Rooms in King Balon's Castle:
+Rooms in King Balon's Castles:
 102
 </pre>
 

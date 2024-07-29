@@ -2,7 +2,7 @@
 Te has encontrado con este código que muestra en pantalla la cantidad total de habitaciones en posesión del actual rey:
 
 ```python
-king = "Rooms in King Balon's Castle:"
+king = "Rooms in King Balon's Castles:"
 print(king)
 print(6 * 17)
 ```
@@ -16,7 +16,7 @@ Elimina los números mágicos creando nuevas variables y luego muestra el texto 
 El resultado debería ser:
 
 <pre class='hexlet-basics-output'>
-Rooms in King Balon's Castle:
+Rooms in King Balon's Castles:
 102
 </pre>
 

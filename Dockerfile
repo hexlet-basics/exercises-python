@@ -1,13 +1,15 @@
 FROM hexletbasics/base-image
 
-RUN pip3 install flake8 pytest
-RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py
+# FIXME: use uv
+RUN apt update && apt install -y python3-venv python3-flake8 python3-pytest
+RUN python3 -m venv /exercises-python/venv
+RUN /exercises-python/venv/bin/python -m ensurepip
+RUN /exercises-python/venv/bin/pip install --upgrade pip
 
 WORKDIR /exercises-python
 
 COPY . .
 
 ENV PYTHONPATH=/exercises-python/src
-# RUN ln -s $(which python3) /usr/bin/python
 
 ENV PATH=/exercises-python/bin:$PATH

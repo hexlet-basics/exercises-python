@@ -36,7 +36,7 @@ theory: |
   The latter is useful if the function has many optional parameters. Let's look at an example:
 
   ```python
-  def print_params(a=1, b=2, c=None, d=4):
+  def print_params(a=1, b=2, c=3, d=4):
       print(a, b, c, d)
 
   # You only need to pass d, but you have to pass all

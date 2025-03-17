@@ -32,7 +32,7 @@ truncate(length=3, text='My Text')
 Последнее полезно, если у функции много необязательных параметров. Посмотрим на примере:
 
 ```python
-def print_params(a=1, b=2, c=None, d=4):
+def print_params(a=1, b=2, c=3, d=4):
     print(a, b, c, d)
 
 # Нужно передать только d, но приходится передавать все

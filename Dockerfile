@@ -1,16 +1,25 @@
 FROM hexletbasics/base-image
 
-RUN apt update && apt install -y python3-venv python3-pytest python3-pip
+# Install pipx using apt to avoid externally-managed Python issues
+RUN apt-get update && apt-get install -y pipx \
+  && pipx ensurepath \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install --break-system-package flake8
+# Update PATH
+ENV PATH="/root/.local/bin:${PATH}"
+ENV PATH="/exercises-python/bin:${PATH}"
 
-RUN python3 -m venv /exercises-python/venv
-RUN /exercises-python/venv/bin/pip install --upgrade pip
+RUN pipx install uv
+
+ENV UV_PROJECT_ENVIRONMENT=/usr
 
 WORKDIR /exercises-python
+
+COPY pyproject.toml uv.lock ./
+
+RUN uv sync --locked
 
 COPY . .
 
 ENV PYTHONPATH=/exercises-python/src
-
-ENV PATH=/exercises-python/bin:$PATH

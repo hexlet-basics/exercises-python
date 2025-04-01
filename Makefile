@@ -28,4 +28,4 @@ compose-code-lint:
 	docker compose run exercises make code-lint 
 
 code-lint:
-	flake8 modules
+	ruff check

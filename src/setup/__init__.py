@@ -1,3 +1,3 @@
 import pytest
 
-pytest.register_assert_rewrite('hexlet')
+pytest.register_assert_rewrite("hexlet")

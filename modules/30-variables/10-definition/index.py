@@ -1,2 +1,2 @@
-motto = 'What Is Dead May Never Die!'
+motto = "What Is Dead May Never Die!"
 print(motto)

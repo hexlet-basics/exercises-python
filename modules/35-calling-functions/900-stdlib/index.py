@@ -1,4 +1,4 @@
-motto = 'Family, Duty, Honor'
+motto = "Family, Duty, Honor"
 
 # BEGIN
 print(type(motto))

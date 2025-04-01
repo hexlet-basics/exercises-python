@@ -1,4 +1,4 @@
-first_name = '  Grigor   \n'
+first_name = "  Grigor   \n"
 
 # BEGIN
 first_name = first_name.strip()

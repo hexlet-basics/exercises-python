@@ -1,5 +1,5 @@
 def my_substr(string, length):
-    result_string = ''
+    result_string = ""
     index = 0
     while index < length:
         result_string = result_string + string[index]

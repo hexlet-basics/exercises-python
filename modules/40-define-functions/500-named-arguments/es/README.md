@@ -32,7 +32,7 @@ Hay dos razones para usar argumentos nombrados:
 Esto último es útil cuando una función tiene muchos parámetros opcionales. Veamos un ejemplo:
 
 ```python
-def print_params(a=1, b=2, c=None, d=4):
+def print_params(a=1, b=2, c=3, d=4):
     print(a, b, c, d)
 
 # Solo necesitamos pasar d, pero tenemos que pasar todos los demás

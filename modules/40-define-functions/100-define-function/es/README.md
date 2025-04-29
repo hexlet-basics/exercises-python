@@ -37,7 +37,6 @@ def show_greeting():
 show_greeting()  # => '¡Hola, Hexlet!'
 ```
 
-https://replit.com/@hexlet/python-basics-define-function
 
 A diferencia de los datos normales, las funciones realizan acciones. Por lo tanto, sus nombres deben indicarse con verbos: "construir algo", "dibujar algo", "abrir algo".
 

@@ -35,8 +35,6 @@ who = "dragon's " + 'mother'
 print(who)
 ```
 
-Este código mostrará en pantalla la cadena de texto `dragon's mother`. Si quieres comprobarlo por ti mismo, ejecuta el código en [repl.it](https://replit.com/languages/python3) y experimenta.
-
 Con variables, puedes realizar cálculos más complejos. Volvamos a nuestro programa de conversión de moneda. Guardemos el valor del dólar en yuanes como una variable separada. Calculemos el precio de 50 euros en dólares multiplicándolos por `1.25`. Supongamos que 1 dólar equivale a 6.91 yuanes:
 
 ```python

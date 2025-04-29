@@ -103,5 +103,3 @@ def run():
 # ¿Qué se imprimirá en la pantalla?
 print(run())
 ```
-
-https://replit.com/@hexlet/python-basics-define-functions-return

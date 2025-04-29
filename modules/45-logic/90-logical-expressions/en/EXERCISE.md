@@ -14,5 +14,3 @@ You can check if the passed parameter is a string with the function [isinstance(
 isinstance(3, str) # False
 isinstance('Hexlet', str) # True
 ```
-
-Experiment with the code in the interactive replay https://replit.com/@hexlet/python-basics-logical-expressions

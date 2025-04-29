@@ -41,7 +41,6 @@ theory: |
       return sum
   ```
 
-  https://replit.com/@hexlet/python-basics-loops-aggregation-numbers
 
   La estructura del bucle es estándar: hay un contador que se inicializa con el valor inicial del rango, un bucle con una condición de finalización cuando se alcanza el final del rango y una modificación del contador al final del cuerpo del bucle. El número de iteraciones en este tipo de bucle es igual a `fin - inicio + 1`. Para el rango [5, 7], esto es 7 - 5 + 1, es decir, tres iteraciones.
 

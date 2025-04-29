@@ -103,8 +103,6 @@ theory: |
   print(somefunc() and 'yes' or 'no')
   ```
 
-  You can check yourself and experiment with the code in [Replit](https://replit.com/@hexlet/python-basics-logical-expressions).
-
   ## Double Negation
 
   Recall what the operation of negation looks like:
@@ -137,7 +135,7 @@ theory: |
   value == ('first' or 'second')
   ```
 
-  However, such a code will lead to the wrong result. It is necessary to remember the priority of operations. The first thing is to calculate everything specified in brackets - `'first' or ` second'`. If you execute this code in Replit, the output will be as follows:
+  However, such a code will lead to the wrong result. It is necessary to remember the priority of operations. The first thing is to calculate everything specified in brackets - `'first' or ` second'`.
 
   ```bash
   python
@@ -178,8 +176,6 @@ instructions: |
   isinstance(3, str) # False
   isinstance('Hexlet', str) # True
   ```
-  
-  Experiment with the code in the interactive replay https://replit.com/@hexlet/python-basics-logical-expressions
 
 # tips:
 #   - |

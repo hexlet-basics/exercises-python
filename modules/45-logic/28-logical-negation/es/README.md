@@ -26,7 +26,6 @@ Incluso si escribimos `not not is_even`, el código funcionará de la siguiente 
 print(not not is_even(10))  # => True
 ```
 
-https://replit.com/@hexlet/python-basics-logic-logical-negation
 
 En lógica, la doble negación es equivalente a la ausencia de negación:
 

@@ -42,8 +42,6 @@ theory: |
   * `index = index - 1` - update the counter
   * `return reversed_string` - when the loop is done, return the result string
 
-  We advise you to copy this function into the REPL [https://replit.com/languages/python3](https://replit.com/languages/python3) and experiment with it a little.
-
   When working with strings, programmers often make the mistake of going past string boundaries. If a wrong initial counter value is chosen or a mistake is made in a loop predicate, the function may access a character that doesn't exist.
 
   It's also extremely often forgotten that the index of the last element is always one less than the size of the string. In strings, the initial index is `0`, so the index of the last element is `len(str) - 1`.

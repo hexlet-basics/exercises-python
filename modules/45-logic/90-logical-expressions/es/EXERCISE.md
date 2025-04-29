@@ -14,5 +14,3 @@ Puedes verificar si el parámetro proporcionado es una cadena utilizando la func
 isinstance(3, str) # False
 isinstance('Hexlet', str) # True
 ```
-
-Experimenta con el código en la ventana interactiva REPL https://replit.com/@hexlet/python-basics-logical-expressions

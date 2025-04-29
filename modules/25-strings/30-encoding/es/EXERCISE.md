@@ -5,7 +5,6 @@ En Python, puedes "solicitar" y mostrar en pantalla cualquier carácter de la co
 print(chr(63))
 ```
 
-https://replit.com/@hexlet/python-basics-string-encoding
 
 Se mostrará en pantalla el carácter con el número 63, que es el signo de interrogación `?`. De esta manera, puedes mostrar cualquier carácter.
 

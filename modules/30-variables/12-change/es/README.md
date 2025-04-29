@@ -12,7 +12,6 @@ greeting = 'Mother!'
 print(greeting)  # => Mother!
 ```
 
-https://replit.com/@hexlet/python-basics-variables-change
 
 El nombre se mantiene igual, pero los datos internos han cambiado. Es importante destacar que en Python no es necesario declarar explícitamente las variables. En su lugar, una variable se declara cuando se utiliza por primera vez en el programa.
 

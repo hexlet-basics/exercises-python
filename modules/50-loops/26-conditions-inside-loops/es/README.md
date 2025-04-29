@@ -27,7 +27,6 @@ def count_chars(string, char):
     return count
 ```
 
-https://replit.com/@hexlet/python-basics-loops-conditions-inside-loops
 
 Esta es una tarea de agregación. Aunque no cuenta todos los caracteres para calcular la suma, es necesario analizar cada carácter. La diferencia clave de este bucle con los que se han visto anteriormente es que contiene una condición en su cuerpo.
 

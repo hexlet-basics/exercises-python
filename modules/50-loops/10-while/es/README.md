@@ -52,7 +52,6 @@ print_numbers(3)
 # => finished!
 ```
 
-https://replit.com/@hexlet/python-basics-loops-while
 
 El ciclo `while` consta de tres elementos:
 

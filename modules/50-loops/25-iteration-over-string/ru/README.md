@@ -21,6 +21,5 @@ print_name_by_symbol(name)
 # => 'a'
 ```
 
-https://replit.com/@hexlet/python-basics-loops-iteration-over-string
 
 Главное в этом коде — поставить правильное условие в `while`. Это можно сделать двумя способами: `i < len(name)` или `i <= len(name) - 1` — они приведут к одному результату.

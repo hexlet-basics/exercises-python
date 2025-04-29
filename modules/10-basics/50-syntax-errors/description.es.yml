@@ -13,7 +13,6 @@ theory: |
   print('Hodor)
   ```
 
-  https://replit.com/@hexlet/python-basics-syntax-errors
 
   Si ejecutamos el código anterior, veremos el siguiente mensaje:
 

@@ -15,7 +15,6 @@ print('Dracarys!')
 # => Dracarys!
 ```
 
-https://replit.com/@hexlet/python-basics-instructions
 
 Anteriormente hemos señalado que las instrucciones se separan por saltos de línea. Pero también hay otra forma: se pueden separar por punto y coma (`;`):
 

@@ -64,8 +64,6 @@ theory: |
   chars_count('hexlet!', 'a')  # 0
   ```
 
-#  We suggest experimenting with the examples above in the interactive [Replit](https://replit.com/@hexlet/python-basics-for-loop#main.py).
-
 instructions: |
 
   In a previous lesson, we already wrote the `filter_string()` function. Recall that it takes a string and a character as input and returns a new string in which the passed character at all its positions is removed. This time, implement this function using the `for` loop. An additional condition: the case of the character to be eliminated does not matter.

@@ -37,6 +37,5 @@ print(greeting2)
 print(greeting2)
 ```
 
-https://replit.com/@hexlet/python-basics-variables-definition
 
 Para que el programa sea fácil de leer, los programadores suelen crear variables lo más cerca posible del lugar donde se utilizan. Ahora necesitamos entender cómo modificarlas.

@@ -63,7 +63,6 @@ text = 'Winter is coming'
 get_last_char(text)  # g
 ```
 
-https://replit.com/@hexlet/python-basics-define-functions-parameters
 
 Параметр нужно обязательно указывать. Если вызвать функцию без него, то интерпретатор выдаст ошибку:
 

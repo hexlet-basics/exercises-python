@@ -99,7 +99,6 @@ end = 5
 value[start:end]  # 'exle'
 ```
 
-https://replit.com/@hexlet/python-basics-advanced-strings-slices
 
 Resumiendo todo:
 

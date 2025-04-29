@@ -18,5 +18,3 @@ num2 = 30
 # bit_length() — вычисляет количество бит, необходимых для представления числа в двоичном виде
 print(num1.bit_length() + num2.bit_length())  # => 8
 ```
-
-https://replit.com/@hexlet/python-basics-objects-method-expression

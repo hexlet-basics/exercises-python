@@ -55,7 +55,6 @@ print(is_good_apartment(120, 'Main Street'))    # => True
 print(is_good_apartment(80, 'Main Street'))     # => True
 ```
 
-https://replit.com/@hexlet/python-basics-logic-logical-operators
 
 Область математики, в которой изучаются логические операторы, называется булевой алгеброй. Ниже увидите **таблицы истинности** — по ним можно определить, каким будет результат, если применить оператора:
 

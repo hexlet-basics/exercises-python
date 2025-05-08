@@ -35,8 +35,8 @@ print('Mother of Dragons.')
 то и на экране они поменяются:
 
 <pre class='hexlet-basics-output'>
-  Mother of Dragons.
   Dracarys!
+  Mother of Dragons.
 </pre>
 
 ## Альтернативная форма записи

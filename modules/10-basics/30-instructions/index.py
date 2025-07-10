@@ -1,3 +1,3 @@
-print('Robert')
-print('Stannis')
-print('Renly')
+print("Robert")
+print("Stannis")
+print("Renly")

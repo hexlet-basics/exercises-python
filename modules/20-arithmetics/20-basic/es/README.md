@@ -42,7 +42,6 @@ print(8 / 2)   # => 4.0 (Al dividir dos números, el tipo de dato resultante es 
 print(3 ** 2)  # => 9
 ```
 
-https://replit.com/@hexlet/python-basics-arithmetics-basics
 
 A veces, para mayor comodidad, mostraremos el resultado de ejecutar líneas de código de esta manera en los comentarios: `=> RESULTADO`. Por ejemplo, `# => 4`.
 

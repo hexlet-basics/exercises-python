@@ -2,7 +2,7 @@ import index
 
 
 def test1():
-    string = 'Sansa Stark'
+    string = "Sansa Stark"
     end = len(string) - 1
     assert not index.is_arguments_for_substr_correct(string, -1, 0)
     assert not index.is_arguments_for_substr_correct(string, 0, -1)

@@ -47,6 +47,5 @@ index = 0
 print(first_name[index])  # => A
 ```
 
-https://replit.com/@hexlet/python-basics-advanced-strings-symbols
 
 Para mostrar solamente algunos caracteres de una expresión, no es necesario escribir una gran cantidad de líneas de código, simplemente extraiga el elemento utilizando un índice. También puede usar un índice negativo para facilitar la extracción de caracteres desde el final de la expresión. A continuación, veremos cómo usar estos conocimientos para extraer subcadenas de una cadena.

@@ -1,9 +1,9 @@
-family = 'Targaryen'
+family = "Targaryen"
 
 # BEGIN
-pet = 'Dragon'
+pet = "Dragon"
 # END
 
 print(family)
-print(' and ')
+print(" and ")
 print(pet)

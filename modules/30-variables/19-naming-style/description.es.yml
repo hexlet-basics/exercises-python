@@ -13,7 +13,7 @@ theory: |
 
   En Python, las variables se nombran en estilo `snake_case`: las palabras se escriben en minúsculas y se separan con el carácter de guión bajo `_`. Para obtener más información, puedes consultar la sección [«Cómo nombrar variables»](https://peps.python.org/pep-0008/#naming-conventions) en el estándar PEP8.
 
-  En [Hexlet](https://ru.hexlet.io/), comenzamos a trabajar con linters casi desde el principio.
+  En [Hexlet](https://ru.hexlet.io/?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson), comenzamos a trabajar con linters casi desde el principio.
 
   A continuación, veremos ejemplos de malas prácticas y analizaremos por qué se deben evitar.
 

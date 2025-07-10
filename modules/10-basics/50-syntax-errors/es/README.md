@@ -9,7 +9,6 @@ Aquí hay un ejemplo de código con un error de sintaxis:
 print('Hodor)
 ```
 
-https://replit.com/@hexlet/python-basics-syntax-errors
 
 Si ejecutamos el código anterior, veremos el siguiente mensaje:
 

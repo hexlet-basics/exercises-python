@@ -1,5 +1,5 @@
-stark = 'Arya'
+stark = "Arya"
 
 # BEGIN
-print(f'Do you want to eat, {stark}?')
+print(f"Do you want to eat, {stark}?")
 # END

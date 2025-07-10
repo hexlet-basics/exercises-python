@@ -14,5 +14,3 @@ string_or_not(False) # 'no'
 isinstance(3, str) # False
 isinstance('Hexlet', str) # True
 ```
-
-Поэкспериментируйте с кодом в интерактивном репле https://replit.com/@hexlet/python-basics-logical-expressions

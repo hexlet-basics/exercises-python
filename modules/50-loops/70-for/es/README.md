@@ -65,5 +65,3 @@ chars_count('hExlet!', 'E')  # 2
 
 chars_count('hexlet!', 'a')  # 0
 ```
-
-Te recomendamos experimentar con los ejemplos anteriores en el [Replit](https://replit.com/@hexlet/python-basics-for-loop#main.py) interactivo.

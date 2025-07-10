@@ -15,7 +15,6 @@ pow(3)  # 3 * 3 = 9
 pow(3, 3)  # 3 * 3 * 3 = 27
 ```
 
-https://replit.com/@hexlet/python-basics-define-functions-default-parameters
 
 El valor predeterminado se ve como una asignación normal en la definición. Solo se activa si no se pasa el parámetro.
 

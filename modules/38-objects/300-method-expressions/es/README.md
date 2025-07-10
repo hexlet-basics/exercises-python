@@ -18,5 +18,3 @@ num2 = 30
 # bit_length() calcula la cantidad de bits necesarios para representar un número en binario
 print(num1.bit_length() + num2.bit_length())  # => 8
 ```
-
-https://replit.com/@hexlet/python-basics-objects-method-expression

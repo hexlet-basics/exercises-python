@@ -36,7 +36,6 @@ theory: |
   print(what_is_it)  # => Hexlet - online courses
   ```
 
-  https://replit.com/@hexlet/python-basics-advanced-strings-interpolation
 
   En casi todos los lenguajes de programación, la interpolación es preferible a la concatenación para unir cadenas. La cadena resultante se muestra como una sola unidad, y los espacios y otros caracteres son fácilmente distinguibles dentro de ella.
 

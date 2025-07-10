@@ -26,7 +26,6 @@ print(not is_even(10))  # => False
 print(not not is_even(10))  # => True
 ```
 
-https://replit.com/@hexlet/python-basics-logic-logical-negation
 
 В логике двойное отрицание — это отсутствие отрицания:
 

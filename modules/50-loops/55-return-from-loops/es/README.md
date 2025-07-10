@@ -29,7 +29,6 @@ print(is_prime(3))  # => True
 print(is_prime(4))  # => False
 ```
 
-https://replit.com/@hexlet/python-basics-loops-return-from-loops
 
 *Siendo completamente honestos, para resolver el problema es suficiente verificar los números hasta la raíz cuadrada de `numero`, pero en nuestro caso es importante concentrarse en comprender las condiciones dentro del bucle.*
 

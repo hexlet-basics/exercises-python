@@ -3,10 +3,10 @@ name: Выбор имени переменной
 tips:
   - >
     [Именование в
-    программировании](https://ru.hexlet.io/blog/posts/naming-in-programming)
+    программировании](https://ru.hexlet.io/blog/posts/naming-in-programming?utm_source=code-basics&utm_medium=referral&utm_campaign=blog&utm_content=lesson)
   - >
     [Ошибки в именовании
-    переменных](https://ru.hexlet.io/blog/posts/naming-errors-1)
+    переменных](https://ru.hexlet.io/blog/posts/naming-errors-1?utm_source=code-basics&utm_medium=referral&utm_campaign=blog&utm_content=lesson)
 definitions:
   - name: Переменная
     description: >-

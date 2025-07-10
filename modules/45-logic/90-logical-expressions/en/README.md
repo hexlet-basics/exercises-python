@@ -99,8 +99,6 @@ The same scheme can be used with any expression at the beginning:
 print(somefunc() and 'yes' or 'no')
 ```
 
-You can check yourself and experiment with the code in [Replit](https://replit.com/@hexlet/python-basics-logical-expressions).
-
 ## Double Negation
 
 Recall what the operation of negation looks like:

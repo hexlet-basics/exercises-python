@@ -17,5 +17,3 @@ name = 'Tirion'
 name = name.upper()
 print(name)  # => TIRION
 ```
-
-https://replit.com/@hexlet/python-basics-objects-methods-immutability

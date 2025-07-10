@@ -1,2 +1,2 @@
 def is_mister(string):
-    return string == 'Mister'
+    return string == "Mister"

@@ -33,7 +33,6 @@ theory: |
   print("King's" + ' Landing')  # => King's Landing
   ```
 
-  https://replit.com/@hexlet/python-basics-string-concatenation
 
 instructions: |
 

@@ -22,7 +22,6 @@ theory: |
   print(name)  # => TIRION
   ```
 
-  https://replit.com/@hexlet/python-basics-objects-methods-immutability
 
 instructions: |
 

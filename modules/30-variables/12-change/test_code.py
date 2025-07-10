@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = 'anneirB'
+    expected = "anneirB"
     expect_output(capsys, expected)

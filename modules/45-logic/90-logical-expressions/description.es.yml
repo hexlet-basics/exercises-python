@@ -126,8 +126,6 @@ theory: |
   print(somefunc() and 'yes' or 'no')
   ```
 
-  Puedes probar y experimentar con el código en https://replit.com/@hexlet/python-basics-logical-expressions).
-
   ## Doble Negación
 
   Recordemos cómo se ve una operación de negación:
@@ -160,7 +158,7 @@ theory: |
   value == ('first' or 'second')
   ```
 
-  Sin embargo, este código dará un resultado incorrecto. Debes recordar la prioridad de las operaciones. Primero, se evalúa todo lo que está dentro de los paréntesis: `'first' or 'second'`. Si ejecutas este código en Replit, la salida será la siguiente:
+  Sin embargo, este código dará un resultado incorrecto. Debes recordar la prioridad de las operaciones. Primero, se evalúa todo lo que está dentro de los paréntesis: `'first' or 'second'`.
 
   ```bash
   python
@@ -201,8 +199,6 @@ instructions: |
   isinstance(3, str) # False
   isinstance('Hexlet', str) # True
   ```
-
-  Experimenta con el código en la ventana interactiva REPL https://replit.com/@hexlet/python-basics-logical-expressions
 
 tips:
   - |

@@ -23,7 +23,6 @@ def repeat(text, times):
     return result
 ```
 
-https://replit.com/@hexlet/python-basics-loops-aggregation-strings
 
 Распишем выполнение этого кода по шагам:
 

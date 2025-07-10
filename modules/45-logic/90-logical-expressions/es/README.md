@@ -28,7 +28,7 @@ En este caso:
 - El número `42` es equivalente a `True`
 - La cadena `"Hello"` también es equivalente a `True`
 
-El operador **OR** verifica los valores de izquierda a derecha y devuelve el primer argumento que se pueda transformar en `True`. En este ejemplo, ese valor es el número `42`. 
+El operador **OR** verifica los valores de izquierda a derecha y devuelve el primer argumento que se pueda transformar en `True`. En este ejemplo, ese valor es el número `42`.
 
 Ejemplo con el operador **AND**:
 
@@ -121,8 +121,6 @@ Se puede utilizar el mismo esquema con cualquier expresión al principio:
 ```python
 print(somefunc() and 'yes' or 'no')
 ```
-
-Puedes probar y experimentar con el código en https://replit.com/@hexlet/python-basics-logical-expressions).
 
 ## Doble Negación
 

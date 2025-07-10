@@ -1,12 +1,11 @@
 import importlib
 import types
 
-__all__ = (
-    'expect_output',
-)
+__all__ = ("expect_output",)
+
 
 def expect_output(capsys, expected):
-    importlib.import_module('index')
+    importlib.import_module("index")
     out, _err = capsys.readouterr()
     actual = out.strip()
 

@@ -38,8 +38,6 @@ Vamos a analizar la función línea por línea:
 * `index = index - 1` — actualizamos el contador.
 * `return reversed_string` — cuando el bucle termina, devolvemos la cadena resultado.
 
-Recomendamos copiar esta función en [https://replit.com/languages/python3](https://replit.com/languages/python3) y experimentar con ella.
-
 Al trabajar con cadenas, los programadores a menudo cometen un error: salirse de los límites de la cadena. Si el valor inicial del contador no se elige correctamente o se comete un error en el predicado del bucle, la función puede acceder a un carácter inexistente.
 
 A menudo se olvida que el índice del último elemento siempre es menor en uno que el tamaño de la cadena. En las cadenas, el índice inicial es `0`, lo que significa que el índice del último elemento es `len(str) - 1`.

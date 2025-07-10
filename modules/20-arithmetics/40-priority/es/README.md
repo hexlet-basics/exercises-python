@@ -25,6 +25,5 @@ print(8 / 2 + 5 - -3 / 2)  # => 10.5
 print(((8 / 2) + 5) - (-3 / 2))  # => 10.5
 ```
 
-https://replit.com/@hexlet/python-basics-arithmetics-priority
 
 Es importante recordar que el código se escribe para ser entendido por personas. Las personas leerán el código y las máquinas solamente lo ejecutarán. Para las máquinas, el código es correcto o incorrecto. No hay código "más" o "menos" comprensible para ellas.

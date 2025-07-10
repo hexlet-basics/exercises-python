@@ -28,5 +28,3 @@ print("King's " + 'Landing')  # => King's Landing
 # Colocamos un espacio en blanco en la parte derecha
 print("King's" + ' Landing')  # => King's Landing
 ```
-
-https://replit.com/@hexlet/python-basics-string-concatenation

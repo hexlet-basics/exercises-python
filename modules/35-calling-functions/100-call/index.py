@@ -1,5 +1,5 @@
-company1 = 'Apple'
-company2 = 'Samsung'
+company1 = "Apple"
+company2 = "Samsung"
 
 # BEGIN
 company1_len = len(company1)

@@ -2,5 +2,4 @@
 services:
   exercises:
     build: .
-    image: hexletbasics/exercises-python:cached
     command: make check

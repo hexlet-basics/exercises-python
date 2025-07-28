@@ -8,7 +8,7 @@
 
 Вот пример кода с двумя инструкциями:
 
-```Python
+```python
 print('Mother of Dragons.') # Первая инструкция
 print('Dracarys!') # Вторая инструкция
 ```
@@ -27,7 +27,7 @@ print('Dracarys!') # Вторая инструкция
 Интерпретатор Python исполняет код в строгом порядке — как вы его написали.
 Если поменять местами строки:
 
-```Python
+```python
 print('Dracarys!')
 print('Mother of Dragons.')
 ```
@@ -43,7 +43,7 @@ print('Mother of Dragons.')
 
 Обычно инструкции пишутся на отдельных строках, но Python допускает объединение нескольких инструкций в одну строку с помощью ;:
 
-```Python
+```python
 print('Mother of Dragons.'); print('Dracarys!')
 ```
 

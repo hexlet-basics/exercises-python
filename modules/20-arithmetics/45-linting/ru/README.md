@@ -28,7 +28,7 @@
 
 Рассмотрим пример:
 
-```Python
+```python
 result = 1+ 3
 ```
 
@@ -40,7 +40,7 @@ E225: missing whitespace around operator
 
 Это значит, что перед и после + не хватает пробелов. Согласно стандарту, должно быть так:
 
-```Python
+```python
 result = 1 + 3
 ```
 

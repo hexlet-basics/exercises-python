@@ -20,7 +20,7 @@
 
 ## Как правильно в Python
 
-```Python
+```python
 user_name = "Daenerys"
 max_length = 280
 total_orders = 17

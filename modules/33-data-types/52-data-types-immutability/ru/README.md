@@ -7,7 +7,7 @@ first_name[0] = 'B'  # ❌
 
 Python сразу выдаст ошибку:
 
-```
+```text
 TypeError: 'str' object does not support item assignment
 ```
 

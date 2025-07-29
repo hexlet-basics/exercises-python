@@ -22,7 +22,7 @@ print("- Are you hungry?\n- Aaaarrrgh!")
 
 Результат:
 
-```python
+```text
 - Are you hungry?
 - Aaaarrrgh!
 ```
@@ -33,7 +33,7 @@ print("- Are you hungry?\n- Aaaarrrgh!")
 
 В текстовых редакторах при нажатии Enter добавляется невидимый символ — LF (Line Feed). Именно его и означает `\n`. Иногда такие символы можно увидеть, если включить отображение спецсимволов:
 
-```
+```text
 - Привет!¶
 - О, привет!¶
 - Как дела?
@@ -57,7 +57,7 @@ print("Gregor Clegane\nDunsen\nPolliver\nChiswyck")
 
 Результат:
 
-```
+```text
 Gregor Clegane
 Dunsen
 Polliver
@@ -74,7 +74,7 @@ print("Second line")
 
 Результат:
 
-```
+```text
 First line
 
 Second line

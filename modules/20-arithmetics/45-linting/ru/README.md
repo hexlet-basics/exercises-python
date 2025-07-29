@@ -34,7 +34,7 @@ result = 1+ 3
 
 Такой код выглядит неаккуратно, и линтер справедливо укажет на ошибку:
 
-```
+```text
 E225: missing whitespace around operator
 ```
 

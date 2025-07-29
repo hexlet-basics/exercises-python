@@ -1,7 +1,7 @@
 
 Here's some dialog we want to show:
 
-```
+```text
 - Are you hungry?
 - Aaaarrrgh!
 ```
@@ -25,7 +25,7 @@ print("- Are you hungry?\n- Aaaarrrgh!")
 
 When you type text in Word, you press Enter at the end of a line. The editor puts a special invisible character at the end of the line called LINE FEED (LF). In some editors, you can actually display the invisible characters. Then the text will look something like this:
 
-```
+```text
 - Hey!¶
 - Oh, hey!¶
 - How's it going?
@@ -46,7 +46,7 @@ print("Gregor Clegane\nDunsen\nPolliver\nChiswyck")
 
 This will appear on the screen:
 
-```
+```text
 Gregor Clegane
 Dunsen
 Polliver
@@ -58,7 +58,6 @@ When working with the line feed symbol, consider the following points:
 1. It doesn't matter what comes before or after `\n`: a character or an empty string. The line feed will be detected and executed in any case
 
 2. A string can contain only `\n` and nothing else:
-
   ```python
   print('Gregor Clegane') # String with text
   print("\n") # String with an invisible line feed character
@@ -67,8 +66,8 @@ When working with the line feed symbol, consider the following points:
 
   The program will display this on the screen:
 
-  ```
-  Gregor Clegane
+  ```text
+  Gregor Ctextlegane
 
 
   Dunsen

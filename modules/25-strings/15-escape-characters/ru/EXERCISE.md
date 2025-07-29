@@ -1,7 +1,9 @@
 
 Напишите программу, которая выводит на экран:
 
-    - Did Joffrey agree?
-    - He did. He also said "I love using \n".
+```text
+- Did Joffrey agree?
+- He did. He also said "I love using \n".
+```
 
 При этом программа использует только один `print()`, но результат на экране должен выглядеть в точности, как показано выше.

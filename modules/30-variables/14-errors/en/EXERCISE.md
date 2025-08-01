@@ -3,8 +3,8 @@ Find an undeclared variable in the program and declare it by assigning the value
 
 After running the program, the result on the screen should look like this:
 
-<pre class='hexlet-basics-output'>
+```text
 Targaryen
  and
 Dragon
-</pre>
+```

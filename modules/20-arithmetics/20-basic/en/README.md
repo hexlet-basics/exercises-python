@@ -22,9 +22,9 @@ print(3 + 4)
 
 After launching, the result will appear on the screen:
 
-<pre class='hexlet-basics-output'>
+```text
 7
-</pre>
+```
 
 In addition to addition, the following operations are available:
 

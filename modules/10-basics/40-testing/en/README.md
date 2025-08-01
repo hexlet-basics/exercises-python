@@ -13,7 +13,9 @@ That's why our site says "Tests passed" when you solve the problem correctly.
 
 Here is a simple example: in a future lesson, you will need to write a function that performs calculations and gives the answer. Suppose you make a small mistake and the function gives you the wrong number. The system will answer something like this:
 
-<pre class='hexlet-basics-output'>AssertionError: '10' != '35'</pre>
+```text
+AssertionError: '10' != '35'
+```
 
 The most important thing begins after the colon: "the value of '10' is not equal to the expected value of '35'". That is, the correct function should have produced 35, but the current solution does not work correctly and produces 10.
 

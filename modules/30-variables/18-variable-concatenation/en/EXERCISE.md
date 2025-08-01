@@ -9,10 +9,10 @@ Use the variables `info` and `intro` for the body of the message, with the secon
 
 The result should look like this:
 
-<pre class='hexlet-basics-output'>
+```text
 Hello, Joffrey!
 Here is important information about your account security.
 We couldn't verify your mother's maiden name.
-</pre>
+```
 
 Perform the task using only two `print()` statements.

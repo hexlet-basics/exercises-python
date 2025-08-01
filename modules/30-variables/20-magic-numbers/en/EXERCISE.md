@@ -15,10 +15,10 @@ Get rid of the magic numbers by creating new variables and then displaying the t
 
 You'll get this:
 
-<pre class='hexlet-basics-output'>
+```text
 Rooms in King Balon's Castles:
 102
-</pre>
+```
 
 The variable names should give the meaning of the numbers, but should also be short and succinct enough to be readable.
 

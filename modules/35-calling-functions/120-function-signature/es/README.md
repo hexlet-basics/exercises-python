@@ -9,7 +9,7 @@ Otra función puede tener una cantidad diferente de parámetros y diferentes tip
 
 Para conocer estos detalles específicos de una función, es necesario estudiar su **firma**. Esta define los parámetros de entrada y sus tipos, así como el parámetro de salida y su tipo. Puedes leer sobre la función `pow()` en la [documentación oficial de Python](https://docs.python.org/3/library/functions.html?highlight=pow#pow). Por lo general, la documentación de una función se ve así:
 
-```
+```python
 pow(x, y[, z])
 
 Devuelve x elevado a la potencia y; si z está presente, devuelve x elevado a la potencia y módulo z

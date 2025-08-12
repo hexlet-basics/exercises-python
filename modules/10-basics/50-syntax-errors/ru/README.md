@@ -19,7 +19,7 @@ print('Hodor)
 В этом коде не закрыта кавычка, и Python не может завершить строку. Попробуем запустить программу:
 
 ```bash
-$ python index.py
+python index.py
 File "index.py", line 1
   print('Hodor)
               ^

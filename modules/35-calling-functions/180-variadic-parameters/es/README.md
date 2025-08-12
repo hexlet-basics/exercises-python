@@ -9,7 +9,7 @@ max(1, 10, 3)  # 10
 
 En el ejemplo anterior, la función `max()` encuentra el valor máximo entre los parámetros proporcionados. Para saber cuántos parámetros se pueden pasar como entrada, debemos consultar la [documentación](https://docs.python.org/3/library/functions.html?highlight=pow#max) de esta función. Allí veremos esta construcción:
 
-```
+```python
 max(arg1, arg2, *args[, key])
 ```
 

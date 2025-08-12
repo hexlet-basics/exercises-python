@@ -40,6 +40,4 @@ print(get_type_of_sentence('Hodor'))   # => normal
 print(get_type_of_sentence('Hodor?'))  # => question
 ```
 
-https://replit.com/@hexlet/python-basics-conditionals-ternary-operator
-
 Тернарный оператор можно вкладывать в тернарный оператор. Но не нужно так делать, так как такой код тяжело читать и отлаживать.

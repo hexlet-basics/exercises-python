@@ -20,7 +20,7 @@ Esta ejecución realiza acciones de gran lógica interna: se conecta al servidor
 
 Creemos nuestra primera función. Su tarea es mostrar un saludo en la pantalla:
 
-```bash
+```text
 Hello, Hexlet!
 ```
 

@@ -47,7 +47,6 @@ print(is_first_letter_an_a('orange'))  # => False
 print(is_first_letter_an_a('apple'))   # => True
 ```
 
-https://replit.com/@hexlet/python-basics-logic-combine-expression
 
 Чтобы было понятно, что тут происходит, попробуйте проговорить происходящее аналогично тому, как мы расшифровывали процесс в примере с `is_even()`.
 

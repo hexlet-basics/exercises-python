@@ -13,7 +13,7 @@ This pedantic attitude towards type compatibility is called **strict typing** or
 
 Not all languages do this. For example, PHP is a language with **weak typing**. It is aware of the existence of different types, but is not very strict about their use. PHP tries to convert information when it makes sense. The same goes for JavaScript:
 
-```javascript
+```php
 // What do you think of that, Elon Musk?
 // Number 1 + Line 7 = Line 17
 1 + '7'; // '17'

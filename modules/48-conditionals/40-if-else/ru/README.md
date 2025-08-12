@@ -16,8 +16,6 @@ print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
 print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
 ```
 
-https://replit.com/@hexlet/python-basics-conditionals-if-else
-
 Мы добавили `else` и новый блок. Он выполнится, если условие в `if` — ложь. Еще в блок `else` можно вкладывать другие условия `if`. Else переводится «иначе», «в ином случае».
 
 Пример вложенных блоков:

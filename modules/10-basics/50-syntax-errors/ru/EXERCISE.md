@@ -2,4 +2,6 @@
 
 Выведите на экран:
 
-<pre class='hexlet-basics-output'>What Is Dead May Never Die</pre>
+```text
+What Is Dead May Never Die
+```

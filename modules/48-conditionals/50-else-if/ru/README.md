@@ -20,8 +20,6 @@ print(get_type_of_sentence('No'))    # => 'Sentence is normal'
 print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
 ```
 
-https://replit.com/@hexlet/python-basics-conditionals-elif
-
 Мы добавили проверку восклицательных предложений — exclamation. Технически эта функция работает, но вопросительные предложения трактует неверно. Еще в ней есть проблемы с точки зрения семантики:
 
 * Наличие восклицательного знака проверяется в любом случае, даже если уже обнаружился вопросительный знак

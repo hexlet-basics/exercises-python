@@ -15,10 +15,10 @@ Elimina los números mágicos creando nuevas variables y luego muestra el texto 
 
 El resultado debería ser:
 
-<pre class='hexlet-basics-output'>
+```text
 Rooms in King Balon's Castles:
 102
-</pre>
+```
 
 Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser lo suficientemente cortos y concisos para una lectura cómoda.
 

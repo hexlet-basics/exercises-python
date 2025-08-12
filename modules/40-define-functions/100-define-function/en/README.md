@@ -20,7 +20,7 @@ Internally, this call does a lot; it connects to the mail server, forms a valid 
 
 Let's create our first function. Its task is to display a greeting:
 
-```bash
+```text
 Hello, Hexlet!
 ```
 

@@ -13,7 +13,9 @@ Es por eso que nuestro sitio web indica "Pruebas aprobadas" cuando resuelves cor
 
 Aquí tienes un ejemplo sencillo: en una de las futuras lecciones, tendrás que escribir una función que realice cálculos y devuelva una respuesta. Supongamos que cometiste un pequeño error y la función devolvió un número incorrecto. El sistema responderá algo así:
 
-<pre class='hexlet-basics-output'>AssertionError: '10' != '35'</pre>
+```text
+AssertionError: '10' != '35'
+```
 
 Lo más importante sigue después de los dos puntos: "el valor '10' no es igual al valor esperado '35'". Es decir, la función correcta debería haber devuelto 35, pero la solución actual no funciona correctamente y devuelve 10.
 

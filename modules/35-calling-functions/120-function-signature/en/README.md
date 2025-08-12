@@ -9,7 +9,7 @@ Other functions can have different amounts and types of parameters. For example,
 
 To know these details about a particular function, you have to look at its **signature**. It defines the input parameters and their types, as well as the output parameter and its type. You can read about the `pow()` function in the [official Python documentation](https://docs.python.org/3/library/functions.html?highlight=pow#pow). Usually the documentation for a function looks like this:
 
-```
+```python
 pow(x, y[, z])
 
 Returns x to the power of y; if z is present, returns x to the power of y, modulus z

@@ -21,7 +21,7 @@ Example with operator **AND**:
 print(0 and 1)
 ```
 
-```bash
+```text
 0
 ```
 
@@ -133,7 +133,7 @@ value == ('first' or 'second')
 
 However, such a code will lead to the wrong result. It is necessary to remember the priority of operations. The first thing is to calculate everything specified in brackets - `'first' or ` second'`. If you execute this code in Replit, the output will be as follows:
 
-```bash
+```text
 python
 Python 3.8.2 (default, Apr 12 2020, 15:53:37)
 >>> 'first' or 'second'

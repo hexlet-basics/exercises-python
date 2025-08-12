@@ -13,7 +13,7 @@ print('Hodor)
 Si ejecutamos el código anterior, veremos el siguiente mensaje:
 
 ```bash
-$ python index.py
+python index.py
 File "index.py", line 1
   print('Hodor)
               ^

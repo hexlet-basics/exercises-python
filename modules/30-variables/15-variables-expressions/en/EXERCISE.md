@@ -3,7 +3,7 @@ Write a program that takes the original number of euros written in the variable 
 
 Example output for 100 euros:
 
-```
+```text
 125.0
 863.75
 ```

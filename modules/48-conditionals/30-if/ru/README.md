@@ -14,7 +14,6 @@ print(get_type_of_sentence('Hodor'))   # => normal
 print(get_type_of_sentence('Hodor?'))  # => question
 ```
 
-https://replit.com/@hexlet/python-basics-conditionals-if
 
 `if` — конструкция языка, которая управляет порядком выполнения инструкций. После слова `if` ей передается выражение-предикат, и в конце ставится двоеточие. После этого описывается блок кода. Он выполнится, если предикат — истина.
 

@@ -1,6 +1,6 @@
 Допустим, мы хотим вывести диалог:
 
-```bash
+```text
 - Are you hungry?
 - Aaaarrrgh!
 ```

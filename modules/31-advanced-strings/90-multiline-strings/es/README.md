@@ -7,7 +7,7 @@ text = 'Ejemplo de texto,\ncompuesto por\nvarias líneas'
 
 Al imprimir la cadena, se mostrará de la siguiente manera:
 
-```bash
+```text
 Ejemplo de texto,
 compuesto por
 varias líneas
@@ -22,7 +22,7 @@ varias líneas
 '''
 ```
 
-```bash
+```text
 Ejemplo de texto,
 compuesto por
 varias líneas
@@ -37,7 +37,7 @@ compuesto por
 varias líneas'''
 ```
 
-```bash
+```text
 Ejemplo de texto,
 compuesto por
 varias líneas
@@ -45,7 +45,7 @@ varias líneas
 
 Gracias a las triples comillas, no es necesario escapar las comillas dentro de la cadena:
 
-```bash
+```text
 Aquí no es necesario escapar las comillas 'simples' o "dobles"
 ```
 
@@ -61,7 +61,7 @@ se sentaron en un tubo
 '''
 ```
 
-```bash
+```text
 A y B
 se sentaron en un tubo
 

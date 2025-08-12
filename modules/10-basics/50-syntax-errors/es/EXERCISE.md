@@ -3,4 +3,6 @@ Esta tarea no está directamente relacionada con la lección. Pero será útil p
 
 Imprime en la pantalla:
 
-<pre class='hexlet-basics-output'>What Is Dead May Never Die</pre>
+```text
+What Is Dead May Never Die
+```

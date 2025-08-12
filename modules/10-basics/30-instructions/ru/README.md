@@ -17,10 +17,10 @@ print('Dracarys!') # Вторая инструкция
 
 Результат выполнения:
 
-<pre class='hexlet-basics-output'>
-  Mother of Dragons.
-  Dracarys!
-</pre>
+```text
+Mother of Dragons.
+Dracarys!
+```
 
 ## Порядок имеет значение
 
@@ -34,10 +34,10 @@ print('Mother of Dragons.')
 
 то и на экране они поменяются:
 
-<pre class='hexlet-basics-output'>
-  Dracarys!
-  Mother of Dragons.
-</pre>
+```text
+Dracarys!
+Mother of Dragons.
+```
 
 ## Альтернативная форма записи
 

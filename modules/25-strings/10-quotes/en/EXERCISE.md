@@ -1,7 +1,7 @@
 
 Write a program that prints:
 
-```
+```text
 "Khal Drogo's favorite word is "athjahakar""
 ```
 

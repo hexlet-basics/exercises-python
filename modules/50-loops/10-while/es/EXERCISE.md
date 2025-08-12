@@ -7,4 +7,10 @@ Ejemplo de llamada y salida:
 print_numbers(4)
 ```
 
-<pre class='hexlet-basics-output'>4<br>3<br>2<br>1<br>¡finished!</pre>
+```text
+4
+3
+2
+1
+¡finished!
+```

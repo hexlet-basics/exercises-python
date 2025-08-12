@@ -1,7 +1,7 @@
 
 Queremos mostrar el siguiente diálogo:
 
-```
+```text
 - Are you hungry?
 - Aaaarrrgh!
 ```
@@ -25,7 +25,7 @@ print("- Are you hungry?\n- Aaaarrrgh!")
 
 Cuando escribes algún texto en Word, presionas Enter al final de la línea. El editor agrega un carácter especial invisible al final de la línea, que se llama LINE FEED (LF, salto de línea). En algunos editores incluso puedes habilitar la visualización de caracteres invisibles. Entonces el texto se verá más o menos así:
 
-```
+```text
 - ¡Hola!¶
 - ¡Oh, hola!¶
 - ¿Cómo estás?
@@ -46,7 +46,7 @@ print("Gregor Clegane\nDunsen\nPolliver\nChiswyck")
 
 Entonces se mostrará en pantalla:
 
-```
+```text
 Gregor Clegane
 Dunsen
 Polliver
@@ -67,7 +67,7 @@ Al trabajar con el carácter de salto de línea, ten en cuenta los siguientes pu
 
   El programa mostrará en pantalla:
 
-  ```
+  ```text
   Gregor Clegane
 
 
@@ -78,7 +78,7 @@ Al trabajar con el carácter de salto de línea, ten en cuenta los siguientes pu
 
 4. Si deseas mostrar `\n` como texto (dos caracteres separados), puedes usar la técnica de escape: agregar otro `\` al principio. La secuencia `\\n` se mostrará como los caracteres `\` y `n`, que van uno tras otro:
 
- ```python
+```python
 print("Joffrey loves using \\n")
 # => Joffrey loves using \n
 ```

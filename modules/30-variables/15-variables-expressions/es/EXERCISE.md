@@ -4,7 +4,7 @@ Escribe un programa que tome una cantidad inicial de euros, almacenada en la var
 Ejemplo de salida para 100 euros:
 
 
-```
+```text
 125.0
 863.75
 ```

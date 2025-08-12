@@ -61,7 +61,7 @@ sitting on a pipe
 '''
 ```
 
-```bash
+```text
 А and B
 sitting on a pipe
 

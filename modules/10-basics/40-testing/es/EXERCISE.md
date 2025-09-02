@@ -1,1 +1,1 @@
-Muestra en la pantalla `9780262531962`.
+Muestra en la pantalla `10`.

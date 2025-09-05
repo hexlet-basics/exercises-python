@@ -4,4 +4,4 @@ tips:
   - |
     [PEP8](https://peps.python.org/pep-0008/)
   - |
-    [flake8](https://flake8.pycqa.org/en/latest/)
+    [Ruff](https://docs.astral.sh/ruff/)

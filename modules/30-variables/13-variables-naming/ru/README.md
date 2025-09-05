@@ -23,7 +23,6 @@ ddr = "New York"
 user_name = "Arya Stark"
 unpaid_orders_count = 3
 max_attempts = 5
-email_verified = False
 ```
 
 Хорошее имя переменной помогает понять, что делает программа, не вчитываясь в каждую строчку.

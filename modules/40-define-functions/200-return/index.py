@@ -1,7 +1,5 @@
-# BEGIN
-def say_hurray_three_times():
-    word = "hurray!"
-    return f"{word} {word} {word}"
-
-
-# END
+def truncate(text, length):
+    # BEGIN
+    result = f"{text[0:length]}..."
+    return result
+    # END

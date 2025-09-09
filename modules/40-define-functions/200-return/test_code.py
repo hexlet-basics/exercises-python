@@ -1,6 +1,5 @@
 import index
 
-
 def test():
-    expected = "hurray! hurray! hurray!"
-    assert index.say_hurray_three_times() == expected
+    assert index.truncate("hexlet", 2) == "he..."
+    assert index.truncate("it works!", 4) == "it w..."

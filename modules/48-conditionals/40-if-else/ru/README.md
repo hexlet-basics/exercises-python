@@ -1,8 +1,7 @@
-
 Теперь изменим функцию из предыдущего урока так, чтобы она возвращала не просто тип предложения, а целую строку `Sentence is normal` или `Sentence is question`:
 
 ```python
-def get_type_of_sentence(sentence):
+def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
     if last_char == '?':

@@ -1,8 +1,7 @@
-
 Функция `get_type_of_sentence()` различает только вопросительные и обычные предложения. Добавим в нее поддержку восклицательных предложений:
 
 ```python
-def get_type_of_sentence(sentence):
+def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
     if last_char == '?':

@@ -1,4 +1,3 @@
-
 Мы уже умеем писать функции, которые проверяют одиночные условия. А в этом уроке научимся строить составные условия.
 
 Предположим, что сайт при регистрации требует, чтобы пароль был длиннее восьми символов и содержал хотя бы одну заглавную букву. Попробуем написать два отдельных логических выражения и соединим их специальным оператором «И»:
@@ -8,10 +7,10 @@
 Вот функция, которая принимает пароль и говорит, соответствует ли он условиям (`True`) или не соответствует (`False`):
 
 ```python
-def has_capital_letter(string):
+def has_capital_letter(text: string) -> bool:
     # Проверяет наличие хотя бы одной заглавной буквы в строке
 
-def is_correct_password(password):
+def is_correct_password(password: string) -> bool:
    length = len(password)
    return length > 8 and has_capital_letter(password)
 
@@ -27,12 +26,12 @@ print(is_correct_password('qwerty1234'))               # => False
 Операторы можно комбинировать в любом количестве и любой последовательности. Если в коде одновременно встречаются `and` и `or`, то приоритет лучше задавать скобками. Ниже пример расширенной функции, которая определяет корректность пароля:
 
 ```python
-def has_capital_letter(string):
+def has_capital_letter(text: str) -> bool:
     # Проверяет наличие хотя бы одной заглавной буквы в строке
-def has_special_chars(string):
+def has_special_chars(text: str) -> bool:
     # Проверяет содержание специальных символов в строке
 
-def is_strong_password(password):
+def is_strong_password(password) -> bool:
     length = len(password)
     # Скобки задают приоритет. Понятно, что к чему относится.
     return (length > 8 and has_capital_letter(password)) and has_special_chars(password)
@@ -43,7 +42,7 @@ def is_strong_password(password):
 Напишем функцию, которая проверит квартиру. Она принимает два аргумента: площадь — число и название улицы — строку:
 
 ```python
-def is_good_apartment(area, street):
+def is_good_apartment(area: int, street: str) -> bool:
     return area >= 100 or (area >= 80 and street == 'Main Street')
 
 print(is_good_apartment(91, 'Queens Street'))  # => False
@@ -54,7 +53,6 @@ print(is_good_apartment(120, 'Queens Street'))  # => True
 print(is_good_apartment(120, 'Main Street'))    # => True
 print(is_good_apartment(80, 'Main Street'))     # => True
 ```
-
 
 Область математики, в которой изучаются логические операторы, называется булевой алгеброй. Ниже увидите **таблицы истинности** — по ним можно определить, каким будет результат, если применить оператора:
 

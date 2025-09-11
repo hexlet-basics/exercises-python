@@ -1,7 +1,7 @@
 from index import filter_string
 
 
-def test1():
+def test():
     text = "If I look forward I am win"
     assert filter_string(text, "z") == "If I look forward I am win"
     assert filter_string(text, "I") == "f  look forward  am wn"

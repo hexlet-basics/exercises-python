@@ -1,8 +1,7 @@
 import index
-from hexlet.test import expect_output
 
 
-def test(capsys):
-    index.print_reversed_word_by_symbol("Hexlet")
-    expected = "t\ne\nl\nx\ne\nH"
-    expect_output(capsys, expected)
+def test():
+    assert index.add_spaces("hex") == "h e x"
+    assert index.add_spaces("Arya") == "A r y a"
+    assert index.add_spaces("a") == "a"

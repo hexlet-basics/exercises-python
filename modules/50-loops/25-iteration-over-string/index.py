@@ -1,5 +1,9 @@
-def print_reversed_word_by_symbol(word):
-    i = len(word) - 1
-    while i >= 0:
-        print(word[i])
-        i = i - 1
+def add_spaces(text):
+    result = ""
+    i = 0
+    while i < len(text):
+        if i > 0:
+            result = result + " "
+        result = result + text[i]
+        i = i + 1
+    return result

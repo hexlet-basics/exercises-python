@@ -8,7 +8,7 @@ not False  # True
 Например, если есть функция, которая проверяет четность числа, то с помощью отрицания можно выполнить проверку нечетности:
 
 ```python
-def is_even(number):
+def is_even(number: int) -> bool:
     return number % 2 == 0
 
 print(is_even(10))      # => True

@@ -20,7 +20,7 @@
 Скомбинируем в одном выражении логический оператор «проверка равенства» `==` и арифметический оператор `%` и напишем функцию проверки четности:
 
 ```python
-def is_even(number):
+def is_even(number: int) -> bool:
     return number % 2 == 0
 
 print(is_even(10))  # => True
@@ -38,8 +38,8 @@ print(is_even(3))   # => False
 3. Вернем результат
 
 ```python
-def is_first_letter_an_a(string):
-    first_letter = string[0]
+def is_first_letter_an_a(text: string) -> bool:
+    first_letter = text[0]
     return first_letter == 'a'
 
 print(is_first_letter_an_a('orange'))  # => False

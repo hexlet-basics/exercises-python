@@ -1,7 +1,7 @@
 Посмотрите на определение функции, которая возвращает модуль переданного числа:
 
 ```python
-def abs(number):
+def abs(number: int) -> int:
     if number >= 0:
         return number
     return -number
@@ -10,18 +10,20 @@ def abs(number):
 Но можно записать более лаконично. Для этого справа от `return` должно быть выражение, но `if` — это инструкция, а не выражение. В Python есть конструкция, которая работает как `if-else`, но считается выражением. Она называется **тернарный оператор** — единственный оператор в Python, который требует три операнда:
 
 ```python
-def abs(number):
+def abs(number: int) -> int:
     return number if number >= 0 else -number
 ```
 
 Общий паттерн выглядит так: `<expression on true> if <predicate> else <expression on false>`.
+
+![Тернарный оператор](./assets/ternary.png)
 
 Давайте перепишем начальный вариант `get_type_of_sentence()` аналогично.
 
 Было:
 
 ```python
-def get_type_of_sentence(sentence):
+def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
     if last_char == '?':
         return 'question'
@@ -31,7 +33,7 @@ def get_type_of_sentence(sentence):
 Стало:
 
 ```python
-def get_type_of_sentence(sentence):
+def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
     return 'question' if last_char == '?' else 'normal'
 

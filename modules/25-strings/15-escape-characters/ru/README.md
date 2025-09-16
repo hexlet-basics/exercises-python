@@ -49,7 +49,7 @@ print("Hello\nWorld")
 # World
 
 print("Hello \nWorld")
-# Hello 
+# Hello
 # World  (в конце первой строки есть пробел)
 
 print("Hello\n World")

@@ -33,7 +33,7 @@ print(new_text)  # => HEXLET
 text = '   hi   '
 cleaned = text.strip()
 print(cleaned)  # => hi
-print(text)     # =>    hi   
+print(text)     # => hi
 ```
 
 Метод `strip()` вернул новую строку без пробелов, но сам `text` не изменился.

@@ -34,7 +34,7 @@ else:
 Оформить конструкцию `if-else` можно двумя способами. С помощью отрицания можно изменить порядок блоков:
 
 ```python
-def get_type_of_sentence(sentence):
+def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
     if last_char != '?':
@@ -68,7 +68,7 @@ check_number(3)
 
 ```python
 # Правильно
-def check_number(number):
+def check_number(number: int) -> None:
     if number > 0:
         print("Число положительное")
         if number > 10:

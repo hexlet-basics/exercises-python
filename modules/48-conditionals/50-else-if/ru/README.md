@@ -27,7 +27,7 @@ print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
 Чтобы исправить ситуацию, воспользуемся еще одной возможностью условной конструкции:
 
 ```python
-def get_type_of_sentence(sentence):
+def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
     if last_char == '?':

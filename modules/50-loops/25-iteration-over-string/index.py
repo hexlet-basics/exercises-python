@@ -1,4 +1,4 @@
-def add_spaces(text):
+def add_spaces(text: str) -> str:
     result = ""
     i = 0
     while i < len(text):

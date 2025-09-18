@@ -1,4 +1,4 @@
-def count_chars(string, char):
+def count_chars(string: str, char: str) -> int:
     index = 0
     count = 0
     while index < len(string):

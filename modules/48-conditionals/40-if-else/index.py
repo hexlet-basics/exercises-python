@@ -1,4 +1,4 @@
-def normalize_url(url):
+def normalize_url(url: str) -> str:
     prefix = "https://"
     if url[:8] == prefix:
         return url

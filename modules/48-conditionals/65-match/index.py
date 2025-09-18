@@ -1,4 +1,4 @@
-def get_number_explanation(number):
+def get_number_explanation(number: int) -> str:
     match number:
         case 666:
             return "devil number"

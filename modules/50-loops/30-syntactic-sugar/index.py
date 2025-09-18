@@ -1,4 +1,4 @@
-def filter_string(text, char):
+def filter_string(text: str, char: str) -> str:
     index = 0
     result = ""
     while index < len(text):

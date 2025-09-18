@@ -1,2 +1,6 @@
+С помощью среза строк получите часть предложения, записанного в переменную `text`, с 5 по 15 символы включительно. Полученную подстроку обработайте методом `.strip()` и выведите на экран длину итоговой подстроки. Выполните эти операции подряд в цепочке без создания промежуточных переменных.
 
-Use the string cutter to get part of the sentence written in the `text` variable, from `5` to `15` characters inclusive. Process the resulting substring using the `.strip()` method and display the length of the resulting substring. Perform these operations in a chain without creating intermediate variables.
+### Подсказки
+
+* Индексы в срезе начинаются с 0. То есть например 4 символ будет идти под индексом `3`.
+* Первый индекс среза не включается. Например, `text[4:6]` вернет, 5 и 6 символы.

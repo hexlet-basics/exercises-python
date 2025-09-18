@@ -1,10 +1,10 @@
 
-Modify the function `print_numbers()` so that it prints the numbers in reverse order. To do this, go from the upper bound to the lower bound. In other words, you should initialize the counter with the maximum value, and in the loop body, you should iterate it backwards down to the lower limit.
+Modify the function `print_reversed_numbers()` so that it prints the numbers in reverse order. To do this, go from the upper bound to the lower bound. In other words, you should initialize the counter with the maximum value, and in the loop body, you should iterate it backwards down to the lower limit.
 
 Example call and output:
 
 ```python
-print_numbers(4)
+print_reversed_numbers(4)
 ```
 
 ```text

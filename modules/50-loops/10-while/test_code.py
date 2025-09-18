@@ -3,7 +3,7 @@ from hexlet.test import expect_output
 
 
 def test1(capsys):
-    index.print_numbers(2)
+    index.print_reversed_numbers(2)
     expect_output(capsys, "2\n1\nfinished!")
 
 

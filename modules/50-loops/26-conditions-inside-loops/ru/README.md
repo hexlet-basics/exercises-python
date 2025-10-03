@@ -16,7 +16,7 @@ count_chars('Sansa', 'y')  # 0
 * Какой будет проверка на вхождение символа?
 
 ```python
-def count_chars(string: str, char: int) -> int:
+def count_chars(string: str, char: str) -> int:
     index = 0
     count = 0
     while index < len(string):

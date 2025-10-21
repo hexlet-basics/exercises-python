@@ -5,3 +5,8 @@ join_numbers_from_range(1, 1)   # '1'
 join_numbers_from_range(2, 3)   # '23'
 join_numbers_from_range(5, 10)  # '5678910'
 ```
+
+### Подсказки
+
+* Итоговый результат - строка.
+* С помощью функции [str()](https://docs.python.org/3/library/stdtypes.html#str) преобразуйте число в строку.

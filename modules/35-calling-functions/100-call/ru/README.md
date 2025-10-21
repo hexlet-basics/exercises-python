@@ -90,7 +90,7 @@ message2 = 'World!'
 length2 = len(message2)
 
 combined_length = length1 + length2 # используем результат в выражении
-print(combined_length)
+print(combined_length) # 12
 ```
 
 Если бы `len()` сразу печатала результат на экран (как делает `print()`), то мы бы увидели число, но не смогли бы его использовать:

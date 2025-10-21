@@ -32,8 +32,8 @@ print(new_text)  # => HEXLET
 ```python
 text = '   hi   '
 cleaned = text.strip()
-print(cleaned)  # => hi
-print(text)     # => hi
+print(cleaned)  # => 'hi', результат не содержит пробелов
+print(text)     # => '   hi   ', строка не изменилась, она содержит пробелы
 ```
 
 Метод `strip()` вернул новую строку без пробелов, но сам `text` не изменился.

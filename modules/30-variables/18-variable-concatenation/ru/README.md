@@ -59,7 +59,7 @@ print('Age: ' + str(age))  # ✅ Age: 42
 
 ```python
 price = 50 * 1.25 * 6.91  # => 431.875
-print('Price in yuans: ' + str(price))  # ✅
+print('Price in yuans: ' + str(price))  # ✅ Price in yuans: 431.875
 ```
 
 Функция `str()` превращает любое значение (число, результат вычисления, булево и т.д.) в строку. Подробнее про функции мы поговорим в будущих уроках.

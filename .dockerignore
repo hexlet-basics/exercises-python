@@ -1,0 +1,27 @@
+# VCS
+.git
+
+# Python caches
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual envs
+.venv
+venv/
+ENV/
+
+# Tool caches
+.ruff_cache
+.pytest_cache
+.mypy_cache
+
+# Editors/IDE
+.vscode
+.idea
+
+# OS junk
+.DS_Store
+Thumbs.db

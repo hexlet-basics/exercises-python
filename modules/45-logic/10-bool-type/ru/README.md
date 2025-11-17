@@ -54,7 +54,7 @@ print(is_infant(0))  # => True
 
 ```python
 def is_negative(number: int) -> bool:
-    # Проверяем остаток от деления
+    # Проверяем, меньше ли число нуля
     return number < 0
 
 print(is_negative(-5))  # => True

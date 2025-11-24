@@ -32,7 +32,7 @@ print(year)  # => 2034
 value = 'code-basics'
 
 print(value[5:11])  # => basics (с 5 по 10 индекс)
-print(value[0:7])   # => code-ba (с 0 по 7 индекс)
+print(value[0:7])   # => code-ba (с 0 по 6 индекс)
 print(value[2:6])   # => de-b
 print(value[:4])    # => code
 print(value[5:])    # => basics

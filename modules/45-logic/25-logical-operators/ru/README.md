@@ -9,10 +9,10 @@
 Вот функция, которая принимает пароль и говорит, соответствует ли он условиям (`True`) или не соответствует (`False`):
 
 ```python
-def has_capital_letter(text: string) -> bool:
+def has_capital_letter(text: str) -> bool:
     # Проверяет наличие хотя бы одной заглавной буквы в строке
 
-def is_correct_password(password: string) -> bool:
+def is_correct_password(password: str) -> bool:
    length = len(password)
    return length > 8 and has_capital_letter(password)
 

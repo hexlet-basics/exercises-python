@@ -38,7 +38,7 @@ print(is_even(3))   # => False
 3. Вернем результат
 
 ```python
-def is_first_letter_an_a(text: string) -> bool:
+def is_first_letter_an_a(text: str) -> bool:
     first_letter = text[0]
     return first_letter == 'a'
 

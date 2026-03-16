@@ -20,7 +20,7 @@ print(text.upper())  # => HEXLET
 
 ```python
 # Перевод первой буквы в верхний регистр
-'hexlet'.capitalize()  # => Hexlet
+print('hexlet'.capitalize())  # => Hexlet
 
 # Перевод всех букв в нижний регистр
 print('HeXleT'.lower())  # => hexlet

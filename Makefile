@@ -29,3 +29,7 @@ compose-code-lint:
 
 code-lint:
 	ruff check
+
+code-deps-update:
+	uv lock --upgrade
+

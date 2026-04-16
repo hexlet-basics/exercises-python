@@ -39,6 +39,17 @@ full = first + " " + last
 print(full)  # => Kings road
 ```
 
+```text
+  what = 'Kings'
+  who  = 'road'
+
+  what    +  ' '  +  who
+  └─┬──┘           └──┬─┘
+  'Kings' + ' '  + 'road'
+  └────────┬─────────┘
+      'Kings road'
+```
+
 ## А что если переменная — число?
 
 Попробуем так:

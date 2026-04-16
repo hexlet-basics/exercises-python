@@ -16,6 +16,12 @@ def abs(number: int) -> int:
 
 Общий паттерн выглядит так: `<expression on true> if <predicate> else <expression on false>`.
 
+```text
+  результат = значение_1 if условие else значение_2
+              └────┬───┘    └──┬──┘      └────┬───┘
+              если True     проверка     если False
+```
+
 ![Тернарный оператор](./assets/ternary.png)
 
 Давайте перепишем начальный вариант `get_type_of_sentence()` аналогично.

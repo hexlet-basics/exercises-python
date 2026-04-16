@@ -41,6 +41,15 @@ print("- Are you hungry?\n- Aaaarrrgh!")
 
 ## Примеры использования `\n`
 
+Вот как Python обрабатывает escape-последовательность `\n`:
+
+```text
+  В коде:      'Hello\nWorld'
+                     ↓
+  На экране:   Hello
+               World
+```
+
 Местоположение `\n` меняет итоговый вывод:
 
 ```python

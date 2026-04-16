@@ -2,4 +2,4 @@
 name: Кавычки
 tips:
   - >
-    [f-строки](https://docs.python.org/3/tutorial/inputoutput.html#fancier-output-formatting)
+    [Строки в Python](https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str)

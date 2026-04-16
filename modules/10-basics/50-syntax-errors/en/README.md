@@ -1,15 +1,24 @@
+If a Python program is written with a syntax violation, the interpreter stops and displays an error message. The message tells you the type of error, the file and line where it occurred, and often marks the exact spot where the interpreter got stuck.
 
-If a Python program is written syntactically incorrectly, the interpreter displays a message. It also points to the file and line where the error occurred.
+## What is a syntax error?
 
-**A syntactic error occurs when code is written in violation of grammatical rules. In natural languages, grammar is important, but text with errors can usually be understood and read. In programming everything is strict. The slightest violation and the program will not even run. An example would be the forgotten `;`, incorrectly placed brackets and other details.
+A syntax error (SyntaxError) happens when code breaks the grammatical rules of the language: an unclosed string, a missing parenthesis, characters in the wrong order, and so on.
 
-Here is a sample code with a syntax error:
+```text
+  Code with error        Interpreter           Result
+  ┌──────────────┐      ┌─────────────┐      ┌──────────────────┐
+  │ print('Hi'   │  ──→ │   Python    │  ──→ │ SyntaxError:     │
+  └──────────────┘      └─────────────┘      │ unexpected EOF   │
+                                             └──────────────────┘
+```
+
+In natural languages, text with errors can usually be understood from context. In programming, the rules are strict: even a tiny violation makes the code impossible to run. Here is a simple example:
 
 ```python
 print('Hodor)
 ```
 
-If we run the code above, we see the following message:
+The closing quote is missing. Running this produces:
 
 ```bash
 $ python index.py
@@ -19,4 +28,17 @@ File "index.py", line 1
 SyntaxError: EOL while scanning string literal
 ```
 
-On the one hand, syntax errors are the easiest, because they are related to the grammatical rules of writing code, not to the meaning of the code. They are easy to fix: you just need to find a violation in the writing. On the other hand, the interpreter is not always able to clearly indicate this violation. Therefore it happens that a forgotten parenthesis must be placed in the wrong place, where the error message indicates.
+The error message may look unfamiliar at first, but that's fine — the more you encounter these messages, the faster you'll understand them at a glance.
+
+## Why syntax errors are considered easy
+
+Syntax errors are tied to the rules of writing code rather than to its meaning, so they're straightforward to fix: find the violation and correct it. Many editors highlight syntax errors in real time, making them even easier to spot.
+
+There is one nuance though: the interpreter doesn't always point to the exact location of the error. Sometimes the problem is a few lines above where the message appears. For example, an unclosed parenthesis on one line can "break" everything that follows.
+
+## What to do when you see a syntax error
+
+- Read the error message — it almost always contains useful information.
+- Check the line the message points to.
+- Check the line above it — the error is sometimes hidden there.
+- Use an editor with syntax highlighting, like [VS Code](https://code.visualstudio.com/) — it helps catch unclosed quotes and brackets immediately.

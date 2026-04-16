@@ -54,7 +54,7 @@ print("Hello \nWorld")
 
 print("Hello\n World")
 # Hello
-#  World  (во второй строке в начале пробел)
+# World  (во второй строке в начале пробел)
 
 print("Hello\n\nWorld")
 # Hello

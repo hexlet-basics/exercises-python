@@ -81,5 +81,5 @@ print(get_text_or_default(""))        # => "empty"
 
 Здесь выражение `text or default` работает так:
 
-* если `text` непустой (truthy), функция вернёт его,
-* если `text` пустой (falsy), функция вернёт `default`.
+* если `text` непустой (truthy), функция вернет его,
+* если `text` пустой (falsy), функция вернет `default`.

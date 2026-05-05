@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = "What Is Dead May Never Die"
+    expected = "Программа успешно запущена"
     expect_output(capsys, expected)

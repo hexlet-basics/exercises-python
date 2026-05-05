@@ -1,5 +1,5 @@
-name = "Na\nharis"
+text = "Python programming"
 
 # BEGIN
-print(name[7])
+print(text[10] + text[8] + text[15] + text[7])
 # END

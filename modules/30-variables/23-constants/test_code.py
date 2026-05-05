@@ -2,4 +2,4 @@ import index
 
 
 def test1():
-    assert index.DRAGONS_BORN_COUNT == 3
+    assert index.MAX_LOGIN_ATTEMPTS == 3

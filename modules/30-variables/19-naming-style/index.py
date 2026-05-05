@@ -1,4 +1,4 @@
-first_number = 20
-second_number = -100
+item_count = 20
+item_price = 100
 
-print(first_number * second_number)
+print(item_count * item_price)

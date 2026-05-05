@@ -1,5 +1,5 @@
 def test():
     with open("index.py") as file:
         comment = file.read().rstrip()
-        assert comment == "# You know nothing, Jon Snow!"
+        assert comment == "# TODO: добавить функцию приветствия"
         print(comment)

@@ -1,1 +1,1 @@
-print("Winter " + "came " + "for " + "the " + "House " + "of " + "Frey.")
+print("https://" + "github.com" + "/" + "hexlet" + "/" + "exercises-python")

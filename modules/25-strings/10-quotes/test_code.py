@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = '"Khal Drogo\'s favorite word is "athjahakar""'
+    expected = 'The file "user\'s_config.json" was not found.'
     expect_output(capsys, expected)

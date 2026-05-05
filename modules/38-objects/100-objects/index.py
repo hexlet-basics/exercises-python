@@ -1,4 +1,4 @@
-text = "a MIND needs Books as a Sword needS a WHETSTONE."
+text = "the QUICK brown FOX jumps OVER the lazy DOG"
 
 # BEGIN
 lower_text = text.lower()

@@ -1,8 +1,8 @@
-Запишите в переменную `text` текст, который приведен ниже. В результате должны сохраниться все переносы строк.
+Запишите в переменную `text` текст, приведенный ниже. Все переносы строк должны сохраниться.
 
 ```text
-Lannister, Targaryen, Baratheon, Stark, Tyrell...
-they're all just spokes on a wheel.
-This one's on top, then that one's on top, and on and on it spins,
-crushing those on the ground.
+Уважаемый пользователь!
+Ваш заказ успешно оформлен.
+Ожидаемая дата доставки: 3-5 рабочих дней.
+Спасибо, что выбрали нас!
 ```

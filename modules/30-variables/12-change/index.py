@@ -1,7 +1,7 @@
-name = "Brienna"
+delivery_status = "в пути"
 
 # BEGIN
-name = "anneirB"
+delivery_status = "доставлен"
 # END
 
-print(name)
+print(delivery_status)

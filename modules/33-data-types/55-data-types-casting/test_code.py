@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = "2 times"
+    expected = "36 °C"
     expect_output(capsys, expected)

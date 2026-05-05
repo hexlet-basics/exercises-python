@@ -1,2 +1,3 @@
-motto = "What Is Dead May Never Die!"
-print(motto)
+url = "https://hexlet.io"
+print(url)
+print(url)

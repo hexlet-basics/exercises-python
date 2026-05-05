@@ -2,7 +2,7 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = """Hello, Joffrey!
-Here is important information about your account security.
-We couldn't verify your mother's maiden name."""
+    expected = """Здравствуйте, Анна!
+Спасибо за ваш заказ.
+Ожидаемая дата доставки — 3 рабочих дня."""
     expect_output(capsys, expected)

@@ -1,3 +1,3 @@
-print("Robert")
-print("Stannis")
-print("Renly")
+print("Заказ №1337")
+print("Статус: доставляется")
+print("Примерный срок: 2 дня")

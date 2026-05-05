@@ -13,7 +13,7 @@ consisting of
 several lines
 ```
 
-For such situations Python has another way of creating strings called **multi-line strings**. To describe such a «multi-line string», you need to put it in triple quotes — `"""` or `'''`. Inside the multi-line you can transfer the text and not use a line break `\n`:
+For such situations Python has another way of creating strings called **multi-line strings**. To describe such a "multi-line string", you need to put it in triple quotes — `"""` or `'''`. Inside the multi-line you can transfer the text and not use a line break `\n`:
 
 ```python
 text = '''  Example text,

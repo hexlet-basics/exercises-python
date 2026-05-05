@@ -7,7 +7,7 @@ En la nomenclatura de variables, se pueden identificar tres enfoques principales
 * **snake\_case** - se utiliza un guión bajo para separar (`my_super_var`)
 * **CamelCase** - cada palabra en la variable se escribe con mayúscula (`MySuperVar`)
 
-En Python, las variables se nombran en estilo `snake_case`: las palabras se escriben en minúsculas y se separan con el carácter de guión bajo `_`. Para obtener más información, puedes consultar la sección [«Cómo nombrar variables»](https://peps.python.org/pep-0008/#naming-conventions) en el estándar PEP8.
+En Python, las variables se nombran en estilo `snake_case`: las palabras se escriben en minúsculas y se separan con el carácter de guión bajo `_`. Para obtener más información, puedes consultar la sección ["Cómo nombrar variables"](https://peps.python.org/pep-0008/#naming-conventions) en el estándar PEP8.
 
 En [Hexlet](https://ru.hexlet.io/?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson), comenzamos a trabajar con linters casi desde el principio.
 

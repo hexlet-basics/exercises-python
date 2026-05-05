@@ -1,8 +1,8 @@
-king = "Rooms in King Balon's Castles:"
+label = "Ящиков на складе:"
 
 # BEGIN
-number_of_castles = 6
-rooms_per_castle = 17
-print(king)
-print(number_of_castles * rooms_per_castle)
+pallets_count = 6
+boxes_per_pallet = 17
+print(label)
+print(pallets_count * boxes_per_pallet)
 # END

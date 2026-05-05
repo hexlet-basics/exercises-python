@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = "Do you want to eat, Arya?"
+    expected = "Здравствуйте, Анна! Ваш заказ #1337 принят."
     expect_output(capsys, expected)

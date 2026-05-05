@@ -1,15 +1,15 @@
+Реализуйте функцию `get_currency_symbol()`, которая принимает код валюты и возвращает ее символ. Если символ для валюты неизвестен, возвращается `'?'`.
 
-Реализуйте функцию `get_number_explanation()`, которая принимает на вход число и возвращает объяснение этого числа. Если для числа нет объяснения, то возвращается `just a number`. Объяснения есть только для следующих чисел:
+Поддерживаемые валюты:
 
-* 666 - devil number
-* 42 - answer for everything
-* 7 - prime number
+* `'USD'` → `'$'`
+* `'EUR'` → `'€'`
+* `'RUB'` → `'₽'`
 
 Примеры вызова функции:
 
 ```python
-get_number_explanation(8)  # just a number
-get_number_explanation(666)  # devil number
-get_number_explanation(42)  # answer for everything
-get_number_explanation(7)  # prime number
+get_currency_symbol('USD')  # '$'
+get_currency_symbol('EUR')  # '€'
+get_currency_symbol('GBP')  # '?'
 ```

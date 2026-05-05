@@ -1,1 +1,1 @@
-print("What Is Dead May Never Die")
+print("Программа успешно запущена")

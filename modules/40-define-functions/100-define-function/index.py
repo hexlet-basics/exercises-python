@@ -1,2 +1,2 @@
-def print_motto():
-    print("Winter is coming")
+def say_hello():
+    print("Hello, World!")

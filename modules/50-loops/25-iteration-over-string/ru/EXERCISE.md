@@ -4,5 +4,5 @@
 
 ```python
 print(add_spaces("hex"))   # => h e x
-print(add_spaces("Arya"))  # => A r y a
+print(add_spaces("Anna"))  # => A n n a
 ```

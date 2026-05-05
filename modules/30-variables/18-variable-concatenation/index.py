@@ -1,8 +1,7 @@
-info = "We couldn't verify your mother's maiden name."
-intro = "Here is important information about your account security."
-
-first_name = "Joffrey"
-greeting = "Hello"
+first_name = "Анна"
+greeting = "Здравствуйте"
+intro = "Спасибо за ваш заказ."
+info = "Ожидаемая дата доставки — 3 рабочих дня."
 
 # BEGIN
 print(greeting + ", " + first_name + "!")

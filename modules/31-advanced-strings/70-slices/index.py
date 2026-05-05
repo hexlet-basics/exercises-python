@@ -1,5 +1,5 @@
-value = "Hexlet"
+url = "https://hexlet.io"
 
 # BEGIN
-print(value[2:5])
+print(url[8:])
 # END

@@ -4,11 +4,11 @@ tips:
   - |
     [Булева алгебра](https://ru.wikipedia.org/wiki/Булева_алгебра)
   - |
-    [Логическое «И»](https://ru.wikipedia.org/wiki/Конъюнкция)
+    [Логическое "И"](https://ru.wikipedia.org/wiki/Конъюнкция)
   - |
-    [Логическое «ИЛИ»](https://ru.wikipedia.org/wiki/Дизъюнкция)
+    [Логическое "ИЛИ"](https://ru.wikipedia.org/wiki/Дизъюнкция)
 definitions:
   - name: Логические операторы
     description: >-
-      операторы «И» (`and`), ИЛИ (`or`), позволяющие создавать составные
+      операторы "И" (`and`), ИЛИ (`or`), позволяющие создавать составные
       логические условия.

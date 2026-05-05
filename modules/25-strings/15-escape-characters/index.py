@@ -1,1 +1,1 @@
-print('- Did Joffrey agree?\n- He did. He also said "I love using \\n".')
+print('Для разделения строк используйте "\\n"\nПример: print("строка1\\nстрока2")')

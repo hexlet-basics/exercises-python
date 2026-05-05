@@ -2,5 +2,5 @@ from hexlet.test import expect_output
 
 
 def test(capsys):
-    expected = "a mind needs books as a sword needs a whetstone."
+    expected = "the quick brown fox jumps over the lazy dog"
     expect_output(capsys, expected)

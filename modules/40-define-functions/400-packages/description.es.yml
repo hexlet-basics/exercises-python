@@ -1,0 +1,45 @@
+---
+
+name: Paquetes
+theory: |
+
+  Los programas Python casi siempre usan código escrito por otros. Reinventar funciones matemáticas, manejo de fechas o peticiones de red no tiene sentido — todo esto ya está disponible. Python usa paquetes para compartir y reutilizar código.
+
+  Un paquete es un directorio de archivos Python organizados por tema. La biblioteca estándar de Python contiene decenas de estos paquetes.
+
+  Para usar código de un paquete, hay que importarlo:
+
+  ```python
+  import math
+
+  print(math.sqrt(16))  # => 4.0
+  print(math.pi)        # => 3.141592653589793
+  ```
+
+  Una sintaxis alternativa permite importar solo lo que se necesita:
+
+  ```python
+  from math import sqrt, pi
+
+  print(sqrt(25))  # => 5.0
+  print(pi)        # => 3.141592653589793
+  ```
+
+  Los paquetes de terceros se instalan con `pip`:
+
+  ```bash
+  pip install requests
+  ```
+
+instructions: |
+
+  Implementa la función `generate_pin()`. Devuelve un código PIN de cuatro dígitos aleatorio como cadena de texto.
+
+  Cada dígito es un entero aleatorio independiente del 0 al 9, generado con `random.randint(0, 9)`.
+
+  ```python
+  print(generate_pin())  # => por ejemplo, "4823" o "0571"
+  print(generate_pin())  # => por ejemplo, "1942" o "0037"
+  ```
+
+  Añade la anotación de tipo del valor de retorno.

@@ -1,11 +1,9 @@
-Реализуйте функцию `is_contains_char()`, которая проверяет с учетом регистра, содержит ли переданная строка указанную букву. Функция принимает два параметра:
+Реализуйте функцию `has_at_symbol()`, которая проверяет, есть ли в email символ `@`.
 
-* Строка
-* Буква для поиска
+Функция должна вернуть `True`, как только найдет `@`. Если цикл дошел до конца строки и символ не найден, функция должна вернуть `False`.
 
 ```python
-print(is_contains_char('Hexlet', 'H'))  # => True
-print(is_contains_char('Hexlet', 'h'))  # => False
-print(is_contains_char('Awesomeness', 'm'))  # => True
-print(is_contains_char('Awesomeness', 'd'))  # => False
+has_at_symbol('support@example.com')  # True
+has_at_symbol('wrong-email')          # False
+has_at_symbol('@admin')               # True
 ```

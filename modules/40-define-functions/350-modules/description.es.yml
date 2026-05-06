@@ -1,0 +1,36 @@
+---
+
+name: Módulos
+theory: |
+
+  Un archivo Python con funciones y constantes se llama **módulo**. Se puede conectar a un programa usando la palabra clave `import` y usar código listo en lugar de escribirlo uno mismo.
+
+  Python incluye una biblioteca estándar con módulos que vienen con el lenguaje. Uno de los más utilizados es `math`, que proporciona funciones y constantes matemáticas.
+
+  Para importar un módulo se usa `import`:
+
+  ```python
+  import math
+
+  print(math.ceil(2.3))   # => 3
+  print(math.floor(2.7))  # => 2
+  ```
+
+  También se pueden importar nombres específicos con `from ... import`:
+
+  ```python
+  from math import ceil
+
+  print(ceil(2.3))  # => 3
+  ```
+
+instructions: |
+
+  Implementa la función `amount_per_person()`. Recibe el total de la cuenta del restaurante, el número de personas y el porcentaje de propina, y devuelve la cantidad que paga cada persona redondeada hacia arriba.
+
+  Usa la función `math.ceil()` del módulo `math` para el redondeo.
+
+  ```python
+  print(amount_per_person(300, 4, 20))  # => 90
+  print(amount_per_person(350, 3, 10))  # => 129
+  ```

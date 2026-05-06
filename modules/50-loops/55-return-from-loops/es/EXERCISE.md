@@ -1,12 +1,10 @@
 
-Implementa la función `is_contains_char()`, que verifica, considerando mayúsculas y minúsculas, si una cadena contiene una letra específica. La función recibe dos parámetros:
+Implementa la función `has_at_symbol()`, que comprueba si un email contiene el símbolo `@`.
 
-* La cadena
-* La letra a buscar
+La función debe devolver `True` en cuanto encuentre `@`. Si el ciclo llega al final de la cadena y no encuentra el símbolo, la función debe devolver `False`.
 
 ```python
-print(is_contains_char('Hexlet', 'H'))  # => True
-print(is_contains_char('Hexlet', 'h'))  # => False
-print(is_contains_char('Awesomeness', 'm'))  # => True
-print(is_contains_char('Awesomeness', 'd'))  # => False
+has_at_symbol('support@example.com')  # True
+has_at_symbol('wrong-email')          # False
+has_at_symbol('@admin')               # True
 ```

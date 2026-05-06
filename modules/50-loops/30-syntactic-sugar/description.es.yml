@@ -18,12 +18,14 @@ theory: |
 
 instructions: |
 
-  Implementa la función `filter_string()`, que recibe una cadena y un carácter, y devuelve una nueva cadena en la que se elimina el carácter pasado en todas sus posiciones. Intenta no utilizar métodos incorporados para trabajar con cadenas en tu solución.
+  Implementa la función `build_progress_bar()`, que recibe la cantidad de pasos completados y la cantidad total de pasos, y devuelve una cadena que representa una barra de progreso.
+
+  Los pasos completados se muestran con `#`, y los pasos restantes se muestran con `-`. Intenta no utilizar métodos incorporados para trabajar con cadenas en tu solución.
 
   ```python
-  text = 'If I look back I am lost'
-  filter_string(text, 'I')  # 'f  look back  am lost'
-  filter_string(text, 'o')  # 'If I lk back I am lst'
+  build_progress_bar(0, 5)  # '-----'
+  build_progress_bar(3, 5)  # '###--'
+  build_progress_bar(5, 5)  # '#####'
   ```
 
 tips:

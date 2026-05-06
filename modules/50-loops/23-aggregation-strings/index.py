@@ -1,7 +1,9 @@
-def join_numbers_from_range(start: int, end: int) -> str:
-    i = start
+def sanitize_phone_number(phone: str) -> str:
+    i = 0
     result = ""
-    while i <= end:
-        result = result + str(i)
-        i = i + 1
+    while i < len(phone):
+        char = phone[i]
+        if char not in " ()-":
+            result += char
+        i += 1
     return result

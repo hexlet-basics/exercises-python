@@ -22,7 +22,6 @@ def repeat(text: str, times: int) -> str:
     return result
 ```
 
-
 Распишем выполнение этого кода по шагам.
 
 ```python

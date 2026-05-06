@@ -2,7 +2,8 @@ import index
 
 
 def test1():
-    assert index.multiply_numbers_from_range(2, 2) == 2
-    assert index.multiply_numbers_from_range(1, 3) == 6
-    assert index.multiply_numbers_from_range(1, 5) == 120
-    assert index.multiply_numbers_from_range(6, 6) == 6
+    assert index.calculate_electricity_bill(0) == 0
+    assert index.calculate_electricity_bill(80) == 400
+    assert index.calculate_electricity_bill(100) == 500
+    assert index.calculate_electricity_bill(150) == 850
+    assert index.calculate_electricity_bill(250) == 1700

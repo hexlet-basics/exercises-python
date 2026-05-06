@@ -2,6 +2,6 @@ import index
 
 
 def test():
-    assert index.add_spaces("hex") == "h e x"
-    assert index.add_spaces("Anna") == "A n n a"
-    assert index.add_spaces("a") == "a"
+    assert index.mask_card_number("1234567812345678") == "************5678"
+    assert index.mask_card_number("12345678") == "****5678"
+    assert index.mask_card_number("0000111122223333") == "************3333"

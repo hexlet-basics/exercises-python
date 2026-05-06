@@ -1,4 +1,4 @@
-Теперь изменим функцию из предыдущего урока так, чтобы она возвращала целую строку `Sentence is normal` или `Sentence is question`:
+Посмотрите на функцию ниже. Она определяет тип предложения по последнему символу: если предложение заканчивается вопросительным знаком, функция вернет `Sentence is question`, иначе — `Sentence is normal`:
 
 ```python
 def get_type_of_sentence(sentence: str) -> str:
@@ -11,21 +11,21 @@ def get_type_of_sentence(sentence: str) -> str:
 
     return "Sentence is " + sentence_type
 
-print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
-print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
+print(get_type_of_sentence('Hodor'))  # => Sentence is normal
+print(get_type_of_sentence('Hodor?')) # => Sentence is question
 ```
 
 Мы добавили `else` и новый блок. Он выполнится, если условие в `if` окажется ложным. Еще в блок `else` можно вкладывать другие условия `if`. Else переводится "иначе", "в ином случае".
 
 ```text
-              ┌───────────┐
-              │ условие?  │
-              └─────┬─────┘
-         True │           │ False
-              ↓           ↓
-        ┌──────────┐ ┌──────────┐
-        │ тело if  │ │ тело else│
-        └──────────┘ └──────────┘
+      ┌───────────┐
+      │ условие?  │
+      └─────┬─────┘
+  True │           │ False
+      ↓           ↓
+┌──────────┐ ┌──────────┐
+│ тело if  │ │ тело else│
+└──────────┘ └──────────┘
 ```
 
 Пример вложенных блоков:

@@ -1,0 +1,15 @@
+---
+name: Tuplas
+tips:
+  - |
+    [Tuplas y Secuencias](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
+definitions:
+  - name: Tupla (tuple)
+    description: >-
+      una secuencia ordenada e inmutable de valores. Se crea con paréntesis: `(1, 2, 3)`.
+  - name: Desempaquetado (unpacking)
+    description: >-
+      asignación de los elementos de una tupla a varias variables a la vez, por ejemplo `x, y = (10, 20)`.
+  - name: Indexación
+    description: >-
+      acceso a un elemento por su posición, comenzando desde cero: `t[0]` es el primer elemento de la tupla `t`.

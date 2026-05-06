@@ -1,7 +1,12 @@
-def multiply_numbers_from_range(start: int, finish: int) -> int:
-    i = start
-    result = 1
-    while i <= finish:
-        result = result * i
-        i = i + 1
-    return result
+def calculate_electricity_bill(kwh: int) -> int:
+    total = 0
+    current = 1
+    while current <= kwh:
+        if current <= 100:
+            total += 5
+        elif current <= 200:
+            total += 7
+        else:
+            total += 10
+        current += 1
+    return total

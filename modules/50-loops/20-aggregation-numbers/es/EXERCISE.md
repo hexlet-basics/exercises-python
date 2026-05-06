@@ -1,8 +1,12 @@
 
-Implementa la función `multiply_numbers_from_range()`, que multiplica los números en el rango especificado, incluyendo los límites del rango. Ejemplo de llamada:
+Implementa la función `calculate_electricity_bill()`, que recibe la cantidad de kilovatios-hora consumidos y devuelve el importe de la factura de electricidad.
+
+En este ejercicio se usa una tarifa por tramos. Los primeros `100` kWh cuestan `5` cada uno, los siguientes `100` kWh cuestan `7` cada uno y cada kWh por encima de `200` cuesta `10`.
+
+Recorre el consumo con un ciclo y acumula poco a poco el importe total.
 
 ```python
-multiply_numbers_from_range(1, 5)  # 1 * 2 * 3 * 4 * 5 = 120
-multiply_numbers_from_range(2, 3)  # 2 * 3 = 6
-multiply_numbers_from_range(6, 6)  # 6
+calculate_electricity_bill(80)   # 400
+calculate_electricity_bill(150)  # 850
+calculate_electricity_bill(250)  # 1700
 ```

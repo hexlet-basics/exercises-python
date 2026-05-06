@@ -1,5 +1,5 @@
 
-Now let's modify the function from the previous lesson so that it returns the whole string `Normal sentence` or `Question` instead of just the sentence type:
+Look at the function below. It detects the sentence type by its last character: if a sentence ends with a question mark, the function returns `Sentence is question`; otherwise, it returns `Sentence is normal`:
 
 ```python
 def get_type_of_sentence(sentence):

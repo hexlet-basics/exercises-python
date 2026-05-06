@@ -3,7 +3,7 @@
 name: Estructura condicional else
 theory: |
 
-    Ahora vamos a modificar la función del tema anterior para que no solo devuelva el tipo de oración, sino toda la cadena "La oración es normal" o "La oración es una pregunta":
+    Observa la función siguiente. Determina el tipo de oración por su último carácter: si la oración termina con un signo de interrogación, la función devuelve `Sentence is question`; de lo contrario, devuelve `Sentence is normal`:
 
     ```python
     def get_type_of_sentence(sentence):

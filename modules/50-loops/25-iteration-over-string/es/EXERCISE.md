@@ -1,14 +1,7 @@
 
-Implementa la función `print_reversed_word_by_symbol()`, que imprime la palabra pasada como argumento carácter por carácter, como se muestra en el ejemplo de la teoría, pero en orden inverso.
+Escribe la función `mask_card_number()`, que oculta el número de una tarjeta bancaria. La función debe reemplazar todos los caracteres de la cadena por `*`, excepto los últimos cuatro.
 
 ```python
-word = 'Hexlet'
-
-print_reversed_word_by_symbol(word)
-# => 't'
-# => 'e'
-# => 'l'
-# => 'x'
-# => 'e'
-# => 'H'
+mask_card_number("1234567812345678")  # "************5678"
+mask_card_number("12345678")          # "****5678"
 ```

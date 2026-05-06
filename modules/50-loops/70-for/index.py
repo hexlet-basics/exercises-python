@@ -1,6 +1,8 @@
-def filter_string(text: str, char: str) -> str:
+def normalize_filename(filename: str) -> str:
     result = ""
-    for current_char in text:
-        if current_char.upper() != char.upper():
+    for current_char in filename:
+        if current_char == " ":
+            result += "_"
+        else:
             result += current_char
     return result

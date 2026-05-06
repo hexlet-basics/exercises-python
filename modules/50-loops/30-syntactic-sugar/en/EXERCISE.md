@@ -1,8 +1,10 @@
 
-Implement a function called `filter_string()` that takes a string and a character as input, and returns a new string with the character removed from every point in the string. Try not to use the built-in methods for working with the string in your solution.
+Implement the function `build_progress_bar()`, which takes the number of completed steps and the total number of steps, then returns a progress indicator string.
+
+Completed steps are shown with `#`, and remaining steps are shown with `-`. Try not to use built-in string methods in your solution.
 
 ```python
-text = 'If I look back I am lost'
-filter_string(text, 'I')  # 'f  look back  am lost'
-filter_string(text, 'o')  # 'If I lk back I am lst'
+build_progress_bar(0, 5)  # '-----'
+build_progress_bar(3, 5)  # '###--'
+build_progress_bar(5, 5)  # '#####'
 ```

@@ -1,0 +1,15 @@
+---
+name: Tuples
+tips:
+  - |
+    [Tuples and Sequences](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
+definitions:
+  - name: Tuple
+    description: >-
+      an ordered immutable sequence of values. Created with parentheses: `(1, 2, 3)`.
+  - name: Unpacking
+    description: >-
+      assigning the elements of a tuple to multiple variables at once, e.g. `x, y = (10, 20)`.
+  - name: Indexing
+    description: >-
+      accessing an element by its position, starting from zero: `t[0]` is the first element of tuple `t`.

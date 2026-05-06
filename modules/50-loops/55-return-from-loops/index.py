@@ -1,7 +1,7 @@
-def is_contains_char(string: str, char: str) -> bool:
+def has_at_symbol(email: str) -> bool:
     index = 0
-    while index < len(string):
-        if string[index] == char:
+    while index < len(email):
+        if email[index] == "@":
             return True
         index += 1
     return False

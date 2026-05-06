@@ -1,6 +1,6 @@
-def print_reversed_numbers(last_number: int) -> None:
-    i = last_number
+def print_countdown(seconds: int) -> None:
+    i = seconds
     while i > 0:
         print(i)
         i = i - 1
-    print("finished!")
+    print("Go!")

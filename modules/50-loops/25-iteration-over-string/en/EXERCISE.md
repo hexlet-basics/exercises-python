@@ -1,14 +1,7 @@
 
-Implement a function called `print_reversed_word_by_symbol()` that prints a word passed to it character by character, as in the example from the theory, but in reverse order.
+Write the function `mask_card_number()`, which hides a bank card number. The function should replace every character in the string with `*`, except for the last four.
 
 ```python
-word = 'Hexlet'
-
-print_reversed_word_by_symbol(word)
-# => 't'
-# => 'e'
-# => 'l'
-# => 'x'
-# => 'e'
-# => 'H'
+mask_card_number("1234567812345678")  # "************5678"
+mask_card_number("12345678")          # "****5678"
 ```

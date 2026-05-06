@@ -1,12 +1,10 @@
 
-Implement a function `is_contains_char()` that checks case-sensitively if a string contains a specified letter. The function takes two parameters:
+Implement the function `has_at_symbol()`, which checks whether an email contains the `@` symbol.
 
-* The line
-* Search letter
+The function should return `True` as soon as it finds `@`. If the loop reaches the end of the string and the symbol is not found, the function should return `False`.
 
 ```python
-print(is_contains_char('Hexlet', 'H'))  # => True
-print(is_contains_char('Hexlet', 'h'))  # => False
-print(is_contains_char('Awesomeness', 'm'))  # => True
-print(is_contains_char('Awesomeness', 'd'))  # => False
+has_at_symbol('support@example.com')  # True
+has_at_symbol('wrong-email')          # False
+has_at_symbol('@admin')               # True
 ```

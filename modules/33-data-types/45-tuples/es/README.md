@@ -1,0 +1,69 @@
+Además de los tipos primitivos, Python tiene tipos de datos compuestos que almacenan varios valores a la vez. Un estudiante universitario se describe con nombre, edad y promedio. Una película tiene título, año de estreno y calificación. Estos grupos de valores es natural almacenarlos juntos.
+
+Una tupla es más simple que cualquier otro tipo compuesto. Almacena varios valores en un orden estrictamente definido. Una vez creada, no se puede modificar.
+
+Una tupla es adecuada para datos que siempre van juntos.
+
+```python
+student = ('Alice', 20, 4.8)       # nombre, edad, promedio
+film = ('Inception', 2010, 8.8)    # título, año, calificación
+```
+
+## Cómo crear una tupla
+
+Una tupla se escribe entre paréntesis con los valores separados por comas.
+
+```python
+point = (10, 20)
+colors = ('red', 'green', 'blue')
+mixed = (42, 'hello', 3.14)
+```
+
+Una tupla de un solo elemento requiere una coma al final. Sin ella, Python interpreta los paréntesis como agrupación de una expresión.
+
+```python
+single = (42,)    # una tupla con un elemento
+not_tuple = (42)  # simplemente el número 42
+```
+
+Los paréntesis son opcionales. Python reconoce una tupla por las comas.
+
+```python
+point = 10, 20
+print(type(point))  # => <class 'tuple'>
+```
+
+## Acceso a los elementos
+
+Los elementos de una tupla se numeran desde cero. Se accede a ellos por índice.
+
+```python
+point = (10, 20)
+print(point[0])  # => 10
+print(point[1])  # => 20
+```
+
+## Las tuplas son inmutables
+
+Una tupla no se puede modificar después de su creación. Intentar reemplazar un elemento produce un error.
+
+```python
+point = (10, 20)
+point[0] = 5  # TypeError: 'tuple' object does not support item assignment
+```
+
+La inmutabilidad está incorporada en las tuplas de forma deliberada. Sin importar dónde se pase una tupla, sus datos permanecen iguales.
+
+## Desempaquetado
+
+Los elementos de una tupla se pueden asignar a varias variables a la vez.
+
+```python
+point = (10, 20)
+x, y = point
+
+print(x)  # => 10
+print(y)  # => 20
+```
+
+Python asigna los valores a las variables en orden. El número de variables debe coincidir con el número de elementos.

@@ -1,8 +1,8 @@
-from index import filter_string
+from index import normalize_filename
 
 
 def test():
-    text = "If I look forward I am win"
-    assert filter_string(text, "z") == "If I look forward I am win"
-    assert filter_string(text, "I") == "f  look forward  am wn"
-    assert filter_string("zz zorro", "z") == " orro"
+    assert normalize_filename("my photo.png") == "my_photo.png"
+    assert normalize_filename("final report.pdf") == "final_report.pdf"
+    assert normalize_filename("already_ready.txt") == "already_ready.txt"
+    assert normalize_filename("two  spaces.txt") == "two__spaces.txt"

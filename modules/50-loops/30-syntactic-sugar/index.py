@@ -1,11 +1,12 @@
-def filter_string(text, char):
+def build_progress_bar(completed: int, total: int) -> str:
     index = 0
     result = ""
 
-    while index < len(text):
-        current_char = text[index]
-        if current_char != char:
-            result += current_char
+    while index < total:
+        if index < completed:
+            result += "#"
+        else:
+            result += "-"
         index += 1
 
     return result

@@ -1,15 +1,19 @@
 
-Implement the function `get_number_explanation()`, which takes a number as input and returns an explanation for that number. If there is no explanation for the number, return `just a number`. Explanations are available only for the following numbers:
+Implement the function `calculate_delivery_cost()`, which takes a delivery country and package weight in kilograms. The function should return the delivery cost.
 
-  * 666 - devil number
-  * 42 - answer for everything
-  * 7 - prime number
+Each country has two rates: one for packages up to and including 1 kg, and one for heavier packages:
+
+* `'canada'`: 600 for packages up to 1 kg, 900 for the rest
+* `'usa'`: 800 for packages up to 1 kg, 1200 for the rest
+* `'germany'`: 700 for packages up to 1 kg, 1000 for the rest
+
+If the country is unknown, the function should return `None`.
 
 Function call examples:
 
 ```python
-get_number_explanation(8)  # just a number
-get_number_explanation(666)  # devil number
-get_number_explanation(42)  # answer for everything
-get_number_explanation(7)  # prime number
+calculate_delivery_cost('canada', 0.5)  # 600
+calculate_delivery_cost('canada', 2)    # 900
+calculate_delivery_cost('usa', 1)       # 800
+calculate_delivery_cost('france', 1)    # None
 ```

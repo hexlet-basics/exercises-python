@@ -1,9 +1,8 @@
-from index import is_contains_char
+from index import has_at_symbol
 
 
-def test_is_contains_char():
-    assert is_contains_char("Hexlet", "H") is True
-    assert is_contains_char("Hexlet", "h") is False
-    assert is_contains_char("Awesomeness", "m") is True
-    assert is_contains_char("Awesomeness", "d") is False
-    assert is_contains_char("Awesomeness", "o") is True
+def test_has_at_symbol():
+    assert has_at_symbol("support@example.com") is True
+    assert has_at_symbol("wrong-email") is False
+    assert has_at_symbol("@admin") is True
+    assert has_at_symbol("admin@") is True

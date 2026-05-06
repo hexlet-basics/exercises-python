@@ -1,10 +1,10 @@
 
-En una de las lecciones anteriores, ya escribimos la función `filter_string()`. Recordemos que esta función recibe una cadena y un carácter, y devuelve una nueva cadena en la que se ha eliminado el carácter en todas sus posiciones. Esta vez, implementa esta función utilizando el ciclo `for`. Un requisito adicional es que el carácter a excluir no distingue entre mayúsculas y minúsculas.
+Implementa la función `normalize_filename()`, que prepara un nombre de archivo para guardarlo. La función recibe una cadena y devuelve una nueva cadena en la que todos los espacios se reemplazan por `_`.
 
 Ejemplo de llamada:
 
 ```python
-text = 'If I look forward I win'
-filter_string(text, 'i')  # 'f  look forward  wn'
-filter_string(text, 'O')  # 'If I lk frward I win'
+normalize_filename('my photo.png')        # 'my_photo.png'
+normalize_filename('final report.pdf')    # 'final_report.pdf'
+normalize_filename('already_ready.txt')   # 'already_ready.txt'
 ```

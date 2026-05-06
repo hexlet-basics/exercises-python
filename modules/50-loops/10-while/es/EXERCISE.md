@@ -1,10 +1,12 @@
 
-Modifica la función `print_reversed_numbers()` para que imprima los números en orden inverso. Para ello, debes ir desde el límite superior hasta el límite inferior. Es decir, el contador debe inicializarse con el valor máximo y, en el cuerpo del ciclo, debe disminuir hasta el límite inferior.
+Implementa la función `print_countdown()`, que imita una cuenta regresiva antes de un lanzamiento. La función recibe la cantidad de segundos e imprime los números desde ese valor hasta `1`.
+
+Después de terminar la cuenta regresiva, la función debe imprimir `Go!`.
 
 Ejemplo de llamada y salida:
 
 ```python
-print_reversed_numbers(4)
+print_countdown(4)
 ```
 
 ```text
@@ -12,5 +14,5 @@ print_reversed_numbers(4)
 3
 2
 1
-¡finished!
+Go!
 ```

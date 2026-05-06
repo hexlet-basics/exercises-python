@@ -1,10 +1,12 @@
 
-Modify the function `print_reversed_numbers()` so that it prints the numbers in reverse order. To do this, go from the upper bound to the lower bound. In other words, you should initialize the counter with the maximum value, and in the loop body, you should iterate it backwards down to the lower limit.
+Implement the function `print_countdown()`, which imitates a countdown before launch. The function takes the number of seconds and prints the numbers from that value down to `1`.
+
+After the countdown finishes, the function should print `Go!`.
 
 Example call and output:
 
 ```python
-print_reversed_numbers(4)
+print_countdown(4)
 ```
 
 ```text
@@ -12,5 +14,5 @@ print_reversed_numbers(4)
 3
 2
 1
-finished!
+Go!
 ```

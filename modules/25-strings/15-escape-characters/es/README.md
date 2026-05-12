@@ -59,20 +59,20 @@ Al trabajar con el carácter de salto de línea, ten en cuenta los siguientes pu
 
 2. Una cadena puede contener solo `\n`:
 
-  ```python
-  print('Gregor Clegane') # Cadena de texto
-  print("\n") # Cadena con un carácter de salto de línea invisible
-  print('Dunsen') # Cadena de texto
-  ```
+   ```python
+   print('Gregor Clegane') # Cadena de texto
+   print("\n") # Cadena con un carácter de salto de línea invisible
+   print('Dunsen') # Cadena de texto
+   ```
 
-  El programa mostrará en pantalla:
+   El programa mostrará en pantalla:
 
-  ```text
-  Gregor Clegane
+   ```text
+   Gregor Clegane
 
 
-  Dunsen
-  ```
+   Dunsen
+   ```
 
 3. En el código, la secuencia `\n` se ve como dos caracteres, pero para el intérprete es un solo carácter especial.
 

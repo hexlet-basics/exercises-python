@@ -7,7 +7,7 @@ city_b = ('Saint Petersburg', 644)
 
 Calculate the distance between the cities and print the result in this format:
 
-```
+```text
 From: Moscow
 To: Saint Petersburg
 Distance: 634 km

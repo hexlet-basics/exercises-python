@@ -2,7 +2,6 @@
 
 ![Условная конструкция if](./assets/if-statement.png)
 
-
 ```python
 if 5 > 3:
     print("Yes, it is true")

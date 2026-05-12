@@ -40,5 +40,4 @@ print(get_type_of_sentence('Hodor'))   # => normal
 print(get_type_of_sentence('Hodor?'))  # => question
 ```
 
-
 Se puede anidar un operador ternario dentro de otro operador ternario. Pero no se recomienda hacerlo, ya que ese código es difícil de leer y depurar.

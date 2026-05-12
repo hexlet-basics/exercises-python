@@ -5,9 +5,9 @@ Write a function `who_is_this_house_to_starks()` for Sam that takes the family n
 
 Rules of Determination:
 
-  * Friends (`'friend'`): `'Karstark'`, `'Tully'`
-  * Enemies (`'enemy'`): `'Lannister'`, `'Frey'`
-  * Any other families are considered `neutral'`.
+* Friends (`'friend'`): `'Karstark'`, `'Tully'`
+* Enemies (`'enemy'`): `'Lannister'`, `'Frey'`
+* Any other families are considered `neutral'`.
 
 Examples of calls:
 

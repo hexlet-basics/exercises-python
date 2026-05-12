@@ -7,9 +7,9 @@ In many languages, the symbol `=` is used to assign values to variables. That's 
 
 List of comparison operations:
 
-* `<`  — less than
+* `<` — less than
 * `<=` — less than or equal to
-* `>`  — more than
+* `>` — more than
 * `>=` — greater than or equal to
 * `==` — equal to
 * `!=` — not equal to

@@ -37,9 +37,9 @@ add("2", 3)  # Argument of type "str" is not assignable to parameter of type "in
 
 На этом этапе достаточно знать аннотации для простых, примитивных типов данных:
 
-* `int` для целых чисел, `float` для чисел с плавающей точкой
-* `str` для строк
-* `bool` для логических значений (True или False)
+- `int` для целых чисел, `float` для чисел с плавающей точкой
+- `str` для строк
+- `bool` для логических значений (True или False)
 
 ```python
 def describe(name: str, age: int, height: float) -> str:

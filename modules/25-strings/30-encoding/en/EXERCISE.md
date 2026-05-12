@@ -7,7 +7,7 @@ print(chr(63))
 
 Symbol no. 63 - the question mark `?`. You can print any character this way.
 
-Use the [ASCII code table](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html).  In this table, want to know about the decimal code (*dec* or *decimal*) with which the characters are encoded.
+Use the [ASCII code table](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html). In this table, want to know about the decimal code (*dec* or *decimal*) with which the characters are encoded.
 
 Using the example above and the table, display the following (each on its own line): `~`, `^` and `%`.
 

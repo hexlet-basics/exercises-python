@@ -3,7 +3,7 @@ Addition, concatenation, finding the remainder of a division, and the other oper
 
 And at higher levels, there's application-specific logic. Programs withdraw money, calculate taxes, and generate reports. The number of these operations is endless and different for each program. And you have to be able to express them in code.
 
-For expressing other operations, we have a feature in programming called **functions**. Functions can be built-in or added by the programmer. We're already familiar with one built-in function ⎯  `print()`.
+For expressing other operations, we have a feature in programming called **functions**. Functions can be built-in or added by the programmer. We're already familiar with one built-in function ⎯ `print()`.
 
 Functions are one of the key constructs in programming. Without them, it's impossible to do almost anything. It's important to get to know them as early as possible, since everything after this is going to be very function-heavy. First we'll learn how to use the functions we've already created, and then we'll learn how to create our own.
 

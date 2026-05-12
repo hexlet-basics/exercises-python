@@ -23,7 +23,6 @@ def repeat(text, times):
     return result
 ```
 
-
 Veamos cómo se ejecuta este código paso a paso:
 
 ```python

@@ -16,7 +16,7 @@ print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
 print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
 ```
 
-We added `else` and a new block. It'll execute if the condition in `if` is false. You can also put other `if` conditions in the `else` block. 
+We added `else` and a new block. It'll execute if the condition in `if` is false. You can also put other `if` conditions in the `else` block.
 
 `if-else' constructions can be arranged in two ways. Negation allows you to change the order of the blocks:
 

@@ -5,9 +5,9 @@ Escribe una función para Sam llamada `who_is_this_house_to_starks()` que reciba
 
 Reglas de determinación:
 
-  * Amigos (`'friend'`): `'Karstark'`, `'Tully'`
-  * Enemigos (`'enemy'`): `'Lannister'`, `'Frey'`
-  * Todas las demás familias se consideran neutrales (`'neutral'`)
+* Amigos (`'friend'`): `'Karstark'`, `'Tully'`
+* Enemigos (`'enemy'`): `'Lannister'`, `'Frey'`
+* Todas las demás familias se consideran neutrales (`'neutral'`)
 
 Ejemplos de llamadas:
 

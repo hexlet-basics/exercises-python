@@ -8,4 +8,5 @@ round(2.320000789855705) # 2
 Intenta resolver este ejercicio en una sola línea.
 
 ## Algoritmo
+
 Dado que la función `random()` devuelve números en el rango de 0 a 1, para obtener números en el rango de 0 a 10, debemos multiplicar por 10. Luego, se redondea el número resultante y así obtenemos lo que necesitamos.

@@ -1,5 +1,5 @@
 
-The `while' loop can be used to solve any item search problem, but it is notable for being verbose. For `while` it is necessary to set a stopping condition and enter a counter. When there are few loops, this is fine, but in real code loops occur at every step. It is therefore tedious to manage the conditions manually, especially when the stopping condition is obvious.
+The `while' loop can be used to solve any item search problem, but it is notable for being verbose. For`while` it is necessary to set a stopping condition and enter a counter. When there are few loops, this is fine, but in real code loops occur at every step. It is therefore tedious to manage the conditions manually, especially when the stopping condition is obvious.
 
 For example, if we want to go through the characters in a string, the computer can figure out by itself when the string ends. For such situations, Python introduced the `for` loop. It knows itself when to stop, because it only works with collections - sets of elements that need to be searched.
 

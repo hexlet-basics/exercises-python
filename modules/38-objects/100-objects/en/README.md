@@ -14,7 +14,7 @@ len(name)  # 6
 
 In the example above, there is a clear division: the data and functions are separated from each other. But this is not the only way to organize code. In Python, there's another approached used alongside this separation, the **Object Oriented (OO)** approach.
 
-Object-oriented code is based on combining data and functions into one entity, an  **object**. Data in this case are called attributes, and functions are called methods.
+Object-oriented code is based on combining data and functions into one entity, an **object**. Data in this case are called attributes, and functions are called methods.
 
 This is what it looks like:
 

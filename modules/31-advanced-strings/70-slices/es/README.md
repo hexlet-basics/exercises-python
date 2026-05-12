@@ -99,7 +99,6 @@ end = 5
 value[start:end]  # 'exle'
 ```
 
-
 Resumiendo todo:
 
 ```python

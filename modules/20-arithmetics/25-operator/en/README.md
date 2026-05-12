@@ -9,7 +9,7 @@ In this example `+` — s the operator, and the numbers `8` and `2` — are **op
 
 When we add up, we have two operands: one to the left of the `+` sign, and one to the right. Operations that require two operands are called **binary**. operations. If at least one operand is omitted, e.g., `3 +`, the program will end with a syntax error.
 
-Operations can be more than just binary, they can also be unary (one operand), and ternary (three operands). Moreover, operators may look the same but denote different operations.  The symbols `+` and `-` are not only used as operators. When it comes to negative numbers, the minus sign becomes part of the number:
+Operations can be more than just binary, they can also be unary (one operand), and ternary (three operands). Moreover, operators may look the same but denote different operations. The symbols `+` and `-` are not only used as operators. When it comes to negative numbers, the minus sign becomes part of the number:
 
 ```python
 print(-3)  # => -3

@@ -47,7 +47,6 @@ print(is_first_letter_an_a('orange'))  # => False
 print(is_first_letter_an_a('apple'))   # => True
 ```
 
-
 Para comprender lo que está sucediendo aquí, intente explicar el proceso de manera similar a cómo desglosamos el ejemplo de `is_even()`.
 
 Ahora sabes que las operaciones de comparación se utilizan en programación junto con las operaciones aritméticas. Pero recuerda que la igualdad se representa con `==`. De esta manera, no confundirás esta operación con la asignación de un valor a una variable.

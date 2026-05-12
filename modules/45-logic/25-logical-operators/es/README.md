@@ -56,7 +56,6 @@ print(is_good_apartment(120, 'Main Street'))    # => True
 print(is_good_apartment(80, 'Main Street'))     # => True
 ```
 
-
 El área de las matemáticas que estudia los operadores lógicos se llama álgebra booleana. A continuación, verás las **tablas de verdad** - con ellas puedes determinar el resultado al aplicar los operadores:
 
 #### Y `and`

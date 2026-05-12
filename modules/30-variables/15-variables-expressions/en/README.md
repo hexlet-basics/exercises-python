@@ -10,7 +10,7 @@ dollars_count = 50 * 1.25
 print(dollars_count)  # => 62.5
 ```
 
-Here we write **expression** into the variable `dollars_count = 50 * 1.25` to the right of the equals sign. The interpreter will calculate the result (`62.5`) and write it to a variable.  The interpreter doesn't care what form the data is written in: `62.5` or `50 * 1.25`. From its perspective, both are expressions to be calculated. It does the calculations and comes up with the same value, `62.5`.
+Here we write **expression** into the variable `dollars_count = 50 * 1.25` to the right of the equals sign. The interpreter will calculate the result (`62.5`) and write it to a variable. The interpreter doesn't care what form the data is written in: `62.5` or `50 * 1.25`. From its perspective, both are expressions to be calculated. It does the calculations and comes up with the same value, `62.5`.
 
 Any string is an expression. String concatenation (concatenation of variable values) is also an expression. When the interpreter sees an expression, it processes it and generates a result, the **value of the expression**.
 

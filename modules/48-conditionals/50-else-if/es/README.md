@@ -20,7 +20,6 @@ print(get_type_of_sentence('No'))    # => 'La oración es normal'
 print(get_type_of_sentence('¡No!'))   # => 'La oración es exclamación'
 ```
 
-
 Hemos agregado la verificación de oraciones exclamativas: 'exclamación'. Técnicamente, esta función funciona, pero interpreta incorrectamente las oraciones interrogativas. También tiene problemas desde el punto de vista semántico:
 
 * Se verifica la presencia del signo de exclamación de todos modos, incluso si ya se ha detectado el signo de interrogación.

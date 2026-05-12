@@ -42,7 +42,6 @@ print(8 / 2)   # => 4.0 (Al dividir dos números, el tipo de dato resultante es 
 print(3 ** 2)  # => 9
 ```
 
-
 A veces, para mayor comodidad, mostraremos el resultado de ejecutar líneas de código de esta manera en los comentarios: `=> RESULTADO`. Por ejemplo, `# => 4`.
 
 La primera instrucción mostrará `4` en la pantalla (porque 8 / 2 es igual a 4), y la segunda instrucción mostrará 9 en la pantalla (porque 3<sup>2</sup> es igual a 9).

@@ -8,7 +8,7 @@ print(x)
 
 We've worked with a similar program before, but now it's changed the variable name to `x`.
 
-The computer doesn't care what we call a variable. Names are only important to people.  Programmers usually read other people's code much more often than they write their own. To make it easy for your colleagues to read and analyze your code, you need to name your variables clearly.
+The computer doesn't care what we call a variable. Names are only important to people. Programmers usually read other people's code much more often than they write their own. To make it easy for your colleagues to read and analyze your code, you need to name your variables clearly.
 
 It's important to come up with a clear name that reflects the idea of the variable. It's important to give names that can be understood without context and without examining the surrounding code.
 

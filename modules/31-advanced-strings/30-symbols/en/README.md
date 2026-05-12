@@ -38,7 +38,7 @@ first_name = 'Alexander'
 print(first_name[-1])  # => r
 ```
 
-You can use variables as well as numbers as an index. Look at the example below. Here we have an index inside the square brackets, but it's not a number, it's a variable. This code will cause the same result it'll output  *A*:
+You can use variables as well as numbers as an index. Look at the example below. Here we have an index inside the square brackets, but it's not a number, it's a variable. This code will cause the same result it'll output *A*:
 
 ```python
 first_name = 'Alexander'

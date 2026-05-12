@@ -5,7 +5,6 @@ En Python, puedes "solicitar" y mostrar en pantalla cualquier carácter de la co
 print(chr(63))
 ```
 
-
 Se mostrará en pantalla el carácter con el número 63, que es el signo de interrogación `?`. De esta manera, puedes mostrar cualquier carácter.
 
 Utiliza la [tabla de códigos ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html). En esta tabla, nos interesa el código decimal (*dec* o *decimal*) con el que se codifican los caracteres.

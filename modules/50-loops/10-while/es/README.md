@@ -52,7 +52,6 @@ print_numbers(3)
 # => finished!
 ```
 
-
 El ciclo `while` consta de tres elementos:
 
 * La palabra clave `while`

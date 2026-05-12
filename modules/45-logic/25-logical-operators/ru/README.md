@@ -68,7 +68,6 @@ print(is_good_apartment(80, 'Main Street'))     # => True
 
 #### И `and`
 
-
 | A     | B     | A and B  |
 | ----- | ----- | -------  |
 | True  | True  | **True** |
@@ -76,9 +75,7 @@ print(is_good_apartment(80, 'Main Street'))     # => True
 | False | True  | False    |
 | False | False | False    |
 
-
 #### ИЛИ `or`
-
 
 | A     | B     | A or B   |
 | ----- | ----- | -------- |

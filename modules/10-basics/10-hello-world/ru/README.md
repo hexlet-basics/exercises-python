@@ -6,7 +6,6 @@ Hello, World!
 
 ![Hello World](./assets/hello-world.png)
 
-
 Этой традиции уже больше сорока лет, и мы тоже начнем с нее. В первом уроке мы напишем программу `Hello, World!`. На Python это программа выглядит так:
 
 ```python
@@ -57,4 +56,3 @@ prInt("it's a Python")
   │ print(…) │ ──→ │   Python    │ ──→ │ Hello, World!│
   └──────────┘     └─────────────┘     └──────────────┘
 ```
-

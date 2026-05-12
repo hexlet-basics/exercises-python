@@ -29,7 +29,6 @@ print(is_prime(3))  # => True
 print(is_prime(4))  # => False
 ```
 
-
 *Siendo completamente honestos, para resolver el problema es suficiente verificar los números hasta la raíz cuadrada de `numero`, pero en nuestro caso es importante concentrarse en comprender las condiciones dentro del bucle.*
 
 Imaginemos que en el algoritmo de división secuencial de números hasta `x / 2` encontramos uno que divide sin residuo. Entonces, el argumento proporcionado no es un número primo y no tiene sentido continuar con los cálculos. En este punto, deberíamos retornar `False`.

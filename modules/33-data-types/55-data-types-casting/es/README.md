@@ -31,7 +31,6 @@ converted_value5 = int(3.5)
 print(converted_value5)  # => 3
 ```
 
-
 De la misma manera, se pueden convertir datos a cadenas de texto con `str()` y a números de punto flotante con `float()`:
 
 ```python

@@ -37,7 +37,6 @@ def sum_numbers_from_range(start, finish):
     return sum
 ```
 
-
 La estructura del bucle es estándar: hay un contador que se inicializa con el valor inicial del rango, un bucle con una condición de finalización cuando se alcanza el final del rango y una modificación del contador al final del cuerpo del bucle. El número de iteraciones en este tipo de bucle es igual a `fin - inicio + 1`. Para el rango [5, 7], esto es 7 - 5 + 1, es decir, tres iteraciones.
 
 Las principales diferencias con el procesamiento normal son la lógica de cálculo del resultado. En los problemas de agregación, siempre hay una variable que almacena el resultado del bucle. En el código anterior, esta variable es `suma`. Se modifica en cada iteración del bucle, sumando el siguiente número del rango: `suma = suma + i`.

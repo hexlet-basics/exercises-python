@@ -9,7 +9,6 @@ Aquí hay un ejemplo de código con un error de sintaxis:
 print('Hodor)
 ```
 
-
 Si ejecutamos el código anterior, veremos el siguiente mensaje:
 
 ```bash

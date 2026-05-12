@@ -32,7 +32,7 @@ print('Dragon's mother')
 # SyntaxError: invalid syntax
 ```
 
-This program won't work.  From Python's point of view, the line started with a single quote and then ended after the word **dragon**. Next were the characters `s mother` without quotation marks, so it's not a string. And then there was a one line-opening quotation mark that was never closed: ``)`. This code contains a syntax error – you can even tell by the way the code is highlighted.
+This program won't work. From Python's point of view, the line started with a single quote and then ended after the word **dragon**. Next were the characters `s mother` without quotation marks, so it's not a string. And then there was a one line-opening quotation mark that was never closed: ``)`. This code contains a syntax error – you can even tell by the way the code is highlighted.
 
 To avoid this error, we use double quotes. This version of the program will work correctly:
 

@@ -41,6 +41,7 @@ El operador **AND** funciona de tal manera que se interrumpe la ejecución de iz
 ```python
 print(42 and "Hello" and [] and 0)  ## []
 ```
+
 En este caso:
 
 - El número `42` es equivalente a `True`
@@ -52,8 +53,8 @@ El operador **AND** verifica los valores de izquierda a derecha y devuelve el pr
 
 En Python hay dos reglas de transformación:
 
-* `0`, `0.0`, `''` y `None` se convierten en `False`. Estos valores se llaman **falsy**. También hay otros tipos de datos que aprenderemos en Hexlet.
-* Todo lo demás se convierte en `True`
+- `0`, `0.0`, `''` y `None` se convierten en `False`. Estos valores se llaman **falsy**. También hay otros tipos de datos que aprenderemos en Hexlet.
+- Todo lo demás se convierte en `True`
 
 Estas reglas se utilizan en el desarrollo, por ejemplo, para definir un valor por defecto:
 
@@ -83,8 +84,8 @@ Si se combinan expresiones lógicas entre sí, se pueden obtener formas interesa
 
 Supongamos que queremos implementar un código en el que una variable se asigna:
 
-* La cadena `yes` si el número es par
-* La cadena `no` si el número es impar
+- La cadena `yes` si el número es par
+- La cadena `no` si el número es impar
 
 Esto se puede hacer utilizando los conocimientos que hemos adquirido anteriormente:
 

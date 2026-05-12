@@ -4,7 +4,6 @@ Veamos un ejemplo:
 print(2 * 4 * 5 * 10)
 ```
 
-
 Las operaciones se pueden combinar entre sí y calcular expresiones compuestas más complejas. Para comprender cómo se realizan los cálculos dentro del intérprete, analicemos el ejemplo: `2 * 4 * 5 * 10`.
 
 1. Primero se calcula `2 * 4` y se obtiene la expresión `8 * 5 * 10`

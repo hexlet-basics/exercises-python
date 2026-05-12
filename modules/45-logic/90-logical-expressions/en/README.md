@@ -131,7 +131,7 @@ Imagine that we need to check whether a value is equal to one or the other. For 
 value == ('first' or 'second')
 ```
 
-However, such a code will lead to the wrong result. It is necessary to remember the priority of operations. The first thing is to calculate everything specified in brackets - `'first' or ` second'`. If you execute this code in Replit, the output will be as follows:
+However, such a code will lead to the wrong result. It is necessary to remember the priority of operations. The first thing is to calculate everything specified in brackets - `'first' or` second'`. If you execute this code in Replit, the output will be as follows:
 
 ```text
 python

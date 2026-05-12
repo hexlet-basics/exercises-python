@@ -37,7 +37,6 @@ def show_greeting():
 show_greeting()  # => '¡Hola, Hexlet!'
 ```
 
-
 A diferencia de los datos normales, las funciones realizan acciones. Por lo tanto, sus nombres deben indicarse con verbos: "construir algo", "dibujar algo", "abrir algo".
 
 La descripción que se encuentra debajo del nombre de la función con sangría se llama **cuerpo de la función**. Dentro del cuerpo se puede describir cualquier código. Es como un pequeño programa independiente, un conjunto de instrucciones arbitrarias.

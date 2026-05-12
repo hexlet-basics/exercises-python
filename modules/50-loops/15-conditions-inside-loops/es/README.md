@@ -27,7 +27,6 @@ def count_chars(string, char):
     return count
 ```
 
-
 Esta es una tarea de agregación. Aunque no cuenta todos los caracteres para calcular la suma, es necesario analizar cada carácter. La diferencia clave de este bucle con los que se han visto anteriormente es que contiene una condición en su cuerpo.
 
 La variable `count` solo se incrementa cuando el carácter actual coincide con el carácter esperado. De lo contrario, esta función es típicamente una función agregada que devuelve la cantidad de caracteres necesarios.

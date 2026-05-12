@@ -16,7 +16,6 @@ print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
 print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
 ```
 
-
 Hemos añadido un `else` y un nuevo bloque. Se ejecutará si la condición en el `if` es falsa. También se pueden anidar otras condiciones `if` dentro del bloque `else`. "Else" se traduce como "en otro caso" o "de lo contrario".
 
 Ejemplo de bloques anidados:

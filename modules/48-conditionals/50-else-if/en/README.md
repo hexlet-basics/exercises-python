@@ -47,8 +47,8 @@ print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
 
 Now all the conditions are lined up in a single construction. The `elif` means "if the previous condition is not satisfied, but the current condition is satisfied". This is the scheme:
 
-* If the last letter is `? then `'question'`
+* If the last letter is `? then`'question'`
 * if the last letter is `!`, then `'exclamation'`
-* other options are `` normal'``.
+* other options are ``normal'``.
 
 Only one of the code blocks that refers to the whole `if` construct will be executed.

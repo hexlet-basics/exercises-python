@@ -15,7 +15,6 @@ pow(3)  # 3 * 3 = 9
 pow(3, 3)  # 3 * 3 * 3 = 27
 ```
 
-
 El valor predeterminado se ve como una asignación normal en la definición. Solo se activa si no se pasa el parámetro.
 
 Imagina que no llevaste las piezas de repuesto para tu automóvil al taller. Entonces el mecánico te ofrecerá poner las que él tiene, por defecto.

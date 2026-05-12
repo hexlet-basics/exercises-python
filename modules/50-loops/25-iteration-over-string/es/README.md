@@ -21,5 +21,4 @@ print_name_by_symbol(name)
 # => 'a'
 ```
 
-
 Lo más importante en este código es establecer la condición correcta en `while`. Esto se puede hacer de dos formas: `i < len(name)` o `i <= len(name) - 1` - ambas conducirán al mismo resultado.

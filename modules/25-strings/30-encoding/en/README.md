@@ -34,4 +34,4 @@ Different encodings contain different numbers of characters. At first, small tab
 
 As computers spread further and further, countries needed their own comprehensive tables. This included Cyrillic letters, Chinese and Japanese characters, Arabic script, additional mathematical and typographic symbols, and later on emojis.
 
-Today, it's usually [Unicode] variants  that are used most often [Unicode](https://en.wikipedia.org/wiki/Unicode). It includes characters from almost all the written languages of the world.
+Today, it's usually [Unicode] variants that are used most often [Unicode](https://en.wikipedia.org/wiki/Unicode). It includes characters from almost all the written languages of the world.

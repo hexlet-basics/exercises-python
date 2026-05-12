@@ -8,4 +8,5 @@ round(2.320000789855705) # 2
 Try to solve this task using only 1 line
 
 ## Algorithm
+
 Since `random()` returns numbers between 0 and 1, we need to multiply by 10 to get numbers between 0 and 10. Then we round the result to get what we need.

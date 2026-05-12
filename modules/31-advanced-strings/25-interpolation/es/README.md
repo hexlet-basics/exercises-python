@@ -32,7 +32,6 @@ what_is_it = f'{school} - online courses'
 print(what_is_it)  # => Hexlet - online courses
 ```
 
-
 En casi todos los lenguajes de programación, la interpolación es preferible a la concatenación para unir cadenas. La cadena resultante se muestra como una sola unidad, y los espacios y otros caracteres son fácilmente distinguibles dentro de ella.
 
 La interpolación ayuda a que el código sea más comprensible para los desarrolladores. Pero esta no es la única alternativa útil que queríamos mencionar. En el próximo tema, aprenderemos cómo declarar cadenas de varias líneas sin usar `\n`.

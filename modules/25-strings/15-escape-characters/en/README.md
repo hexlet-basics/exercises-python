@@ -58,20 +58,21 @@ When working with the line feed symbol, consider the following points:
 1. It doesn't matter what comes before or after `\n`: a character or an empty string. The line feed will be detected and executed in any case
 
 2. A string can contain only `\n` and nothing else:
-  ```python
-  print('Gregor Clegane') # String with text
-  print("\n") # String with an invisible line feed character
-  print('Dunsen') # String with text
-  ```
 
-  The program will display this on the screen:
+   ```python
+   print('Gregor Clegane') # String with text
+   print("\n") # String with an invisible line feed character
+   print('Dunsen') # String with text
+   ```
 
-  ```text
-  Gregor Ctextlegane
+   The program will display this on the screen:
+
+   ```text
+   Gregor Ctextlegane
 
 
-  Dunsen
-  ```
+   Dunsen
+   ```
 
 3. In the code, the escape sequence `\n` looks like two characters, but from the interpreter's perspective, it's just one special character
 

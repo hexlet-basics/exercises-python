@@ -7,9 +7,9 @@ En muchos lenguajes, el símbolo `=` se utiliza para asignar valores a variables
 
 Lista de operaciones de comparación:
 
-* `<`  — menor que
+* `<` — menor que
 * `<=` — menor o igual que
-* `>`  — mayor que
+* `>` — mayor que
 * `>=` — mayor o igual que
 * `==` — igual que
 * `!=` — no igual que
@@ -34,7 +34,6 @@ def is_infant(age):
 
 print(is_infant(3))  # => False
 ```
-
 
 Cualquier operación es una expresión, por lo que en una sola línea de la función escribimos "devolver el valor que resulte de la comparación `age < 1`". Dependiendo del argumento que se pase, la comparación será verdadera (`True`) o falsa (`False`), y `return` devolverá ese resultado.
 

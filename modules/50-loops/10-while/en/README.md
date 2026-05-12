@@ -23,7 +23,7 @@ print_hello(2)
 # => Hello!
 ```
 
-Now let's analyze an example function with a loop that displays numbers from one to `n`, where `n` is passed to the funciton as an argument:
+Now let's analyze an example function with a loop that displays numbers from one to `n`, where `n` is passed to the function as an argument:
 
 ```python
 print_numbers(3)

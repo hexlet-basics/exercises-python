@@ -3,8 +3,8 @@
 language:
   docker_image: "ghcr.io/hexlet-basics/exercises-python"
   extension: python
-  exercise_filename: index.py
-  exercise_test_filename: test_code.py
+  exercise_filename: solution.py
+  exercise_test_filename: test_solution.py
   learn_as: first_language
   progress: completed
   name: Python

@@ -33,8 +33,8 @@ code-lint:
 code-deps-update:
 	uv lock --upgrade
 
-markdown-lint:
-	rumdl check modules
+compose-markdown-lint:
+	docker compose run --rm exercises make markdown-lint
 
-markdown-lint-fix:
-	rumdl fmt modules
+compose-markdown-lint-fix:
+	docker compose run --rm exercises make markdown-lint-fix

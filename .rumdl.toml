@@ -1,3 +1,0 @@
-# TODO: move to base image
-[global]
-disable = ["MD013", "MD041", "MD033"]

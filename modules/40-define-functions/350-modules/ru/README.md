@@ -53,7 +53,7 @@ print(floor(3.7))  # => 3
 ```python
 import math
 
-л Вычисляет количество поездок, необходимых для перевозки всех предметов
+# Вычисляет количество поездок, необходимых для перевозки всех предметов
 def trips_needed(items: int, capacity: int) -> int:
     return math.ceil(items / capacity)
 

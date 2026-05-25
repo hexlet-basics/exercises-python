@@ -37,7 +37,7 @@ print_name_by_symbol(name)
 Вместо печати можно собирать новую строку. Например, напишем функцию, которая переворачивает строку:
 
 ```python
-def reverse_string(text: str) -> None:
+def reverse_string(text: str) -> str:
     result = ''
     i = len(text) - 1
     while i >= 0:

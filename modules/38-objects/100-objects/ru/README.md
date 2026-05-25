@@ -72,8 +72,8 @@ print(name.upper() + '!') # => HEXLET!
 
 ```python
 name = 'hexlet'
-print(hexlet.upper()) # => HEXLET
-print(hexlet)         # => hexlet
+print(name.upper()) # => HEXLET
+print(name)         # => hexlet
 ```
 
 ## Зачем нужны методы в Python

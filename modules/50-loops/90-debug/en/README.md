@@ -13,8 +13,8 @@ Step 1. Study the **traceback** — a list of all function calls from when the p
 Imagine you wrote code in a file `users.py` and called the function `main()` on line 4. The traceback entry would look like this:
 
 ```bash
-  File "users.py", line 4, in <module>
-    main()
+File "users.py", line 4, in <module>
+  main()
 ```
 
 As you can see, it shows not just the file and line number, but also the module name. This makes it easy to determine where the problem occurred: in your code or in a library you're using but didn't write.

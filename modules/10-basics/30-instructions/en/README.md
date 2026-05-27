@@ -5,11 +5,11 @@ If you want to see the expected result on screen, the computer needs clear, step
 Python code is run by an **interpreter**, a program that executes instructions strictly, line by line. Like the steps in a recipe, the instructions for the interpreter are written in order and separated from each other by a line break.
 
 ```text
-  Instruction 1: print('Hello')   →  executed
-          ↓
-  Instruction 2: print('World')   →  executed
-          ↓
-  Instruction 3: print('!')       →  executed
+Instruction 1: print('Hello')   →  executed
+        ↓
+Instruction 2: print('World')   →  executed
+        ↓
+Instruction 3: print('!')       →  executed
 ```
 
 Here is an example of code with two instructions. When it runs, two lines appear on the screen one after another:

@@ -23,14 +23,14 @@ print(f'{greeting}, {first_name}!')
 Буква f перед кавычками указывает, что внутри строки можно использовать переменные. Их имена записываются в фигурных скобках, и Python автоматически подставляет нужные значения.
 
 ```text
-  first_name = 'Joff'
-  greeting   = 'Hello'
+first_name = 'Joff'
+greeting   = 'Hello'
 
-  f'{greeting}, {first_name}!'
-     └───┬───┘  └────┬─────┘
-     'Hello'    'Joff'
-      └──────┬───────┘
-      'Hello, Joff!'
+f'{greeting}, {first_name}!'
+   └───┬───┘  └────┬─────┘
+   'Hello'    'Joff'
+    └──────┬───────┘
+    'Hello, Joff!'
 ```
 
 Сравните эти два примера рядом:

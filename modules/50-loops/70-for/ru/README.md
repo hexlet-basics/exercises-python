@@ -20,11 +20,11 @@ for symbol in text:
 Сравним `for` и `while` для одной и той же задачи:
 
 ```text
-  for char in 'Hi!':     while i < len('Hi!'):
-      print(char)            print(text[i])
-                             i = i + 1
-  │                      │
-  └── проще              └── нужен счетчик
+for char in 'Hi!':     while i < len('Hi!'):
+    print(char)            print(text[i])
+                           i = i + 1
+│                      │
+└── проще              └── нужен счетчик
 ```
 
 Посмотрим, как реализовать функцию переворота строки через цикл `for`. Такое задание встречается на собеседованиях.

@@ -44,10 +44,10 @@ print("- Are you hungry?\n- Aaaarrrgh!")
 Вот как Python обрабатывает управляющую последовательность `\n`.
 
 ```text
-  В коде       'Hello\nWorld'
-                     ↓
-  На экране    Hello
-               World
+В коде       'Hello\nWorld'
+                   ↓
+На экране    Hello
+             World
 ```
 
 Местоположение `\n` меняет итоговый вывод.

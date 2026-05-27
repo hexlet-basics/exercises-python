@@ -44,14 +44,14 @@ while counter < 5:
 Та же последовательность на схеме.
 
 ```text
-  counter = 0
-  ┌──→ counter < 5?
-  │     True │
-  │          ↓
-  │    print("Hello!")
-  │    counter = counter + 1
-  └──────────┘
-        False → выход из цикла
+counter = 0
+┌──→ counter < 5?
+│     True │
+│          ↓
+│    print("Hello!")
+│    counter = counter + 1
+└──────────┘
+      False → выход из цикла
 ```
 
 После завершения цикла `counter` равен `5`, а строка `Hello!` напечатана пять раз.

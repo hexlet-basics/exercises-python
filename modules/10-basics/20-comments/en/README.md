@@ -8,9 +8,9 @@ print(10)
 Comments in Python start with the `#` sign and can appear anywhere in the program. Everything after `#` is ignored by the interpreter:
 
 ```text
-  # comment      ──→  [ skipped by interpreter ]
-  print('hello') ──→  [ executed → hello ]
-  # another one  ──→  [ skipped by interpreter ]
+# comment      ──→  [ skipped by interpreter ]
+print('hello') ──→  [ executed → hello ]
+# another one  ──→  [ skipped by interpreter ]
 ```
 
 A comment can take up an entire line. When one line isn't enough, use several:

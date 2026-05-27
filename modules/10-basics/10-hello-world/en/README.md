@@ -20,10 +20,10 @@ print("Hello, World!")
 According to the Python style guide (PEP 8), single quotes are preferred for strings when there's no apostrophe inside.
 
 ```text
-  Code             Interpreter          Screen
-  ┌──────────┐     ┌─────────────┐     ┌──────────────┐
-  │ print(…) │ ──→ │   Python    │ ──→ │ Hello, World!│
-  └──────────┘     └─────────────┘     └──────────────┘
+Code             Interpreter          Screen
+┌──────────┐     ┌─────────────┐     ┌──────────────┐
+│ print(…) │ ──→ │   Python    │ ──→ │ Hello, World!│
+└──────────┘     └─────────────┘     └──────────────┘
 ```
 
 ## Every character matters

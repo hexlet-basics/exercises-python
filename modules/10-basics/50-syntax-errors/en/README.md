@@ -5,11 +5,11 @@ If a Python program is written with a syntax violation, the interpreter stops an
 A syntax error (SyntaxError) happens when code breaks the grammatical rules of the language: an unclosed string, a missing parenthesis, characters in the wrong order, and so on.
 
 ```text
-  Code with error        Interpreter           Result
-  ┌──────────────┐      ┌─────────────┐      ┌──────────────────┐
-  │ print('Hi'   │  ──→ │   Python    │  ──→ │ SyntaxError:     │
-  └──────────────┘      └─────────────┘      │ unexpected EOF   │
-                                             └──────────────────┘
+Code with error        Interpreter           Result
+┌──────────────┐      ┌─────────────┐      ┌──────────────────┐
+│ print('Hi'   │  ──→ │   Python    │  ──→ │ SyntaxError:     │
+└──────────────┘      └─────────────┘      │ unexpected EOF   │
+                                           └──────────────────┘
 ```
 
 In natural languages, text with errors can usually be understood from context. In programming, the rules are strict: even a tiny violation makes the code impossible to run. Here is a simple example:

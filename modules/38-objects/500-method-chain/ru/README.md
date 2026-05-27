@@ -31,12 +31,12 @@ print(step3)
 Каждый метод возвращает новую строку, и следующий метод применяется уже к этой строке.
 
 ```text
-  ' Hello, World! '.strip().lower().replace('world', 'python')
-                    │        │           │
-                    ↓        ↓           ↓
-             'Hello, World!' │           │
-                    'hello, world!'      │
-                             'hello, python!'
+' Hello, World! '.strip().lower().replace('world', 'python')
+                  │        │           │
+                  ↓        ↓           ↓
+           'Hello, World!' │           │
+                  'hello, world!'      │
+                           'hello, python!'
 ```
 
 ## Порядок вычисления

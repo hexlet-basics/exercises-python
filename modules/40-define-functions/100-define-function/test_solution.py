@@ -2,7 +2,12 @@ import solution
 
 
 def test(capsys):
-    solution.say_hello()
     expected = "Hello, World!"
+    solution.say_hello()
     out, _ = capsys.readouterr()
-    assert out.strip() == expected
+
+    with capsys.disabled():
+        print('\n')
+        print(out)
+
+    assert out.strip('\n') == expected

@@ -1,4 +1,4 @@
-import runpy
+import importlib
 
 
 def check(output):
@@ -9,6 +9,11 @@ def check(output):
 
 
 def test(capsys):
-    runpy.run_module('solution')
+    importlib.import_module('solution')
     out, _ = capsys.readouterr()
-    check(out.strip())
+
+    with capsys.disabled():
+        print('\n')
+        print(out)
+
+    check(out.strip('\n'))

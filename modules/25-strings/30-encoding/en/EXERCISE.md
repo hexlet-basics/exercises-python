@@ -1,14 +1,26 @@
+The program receives the numeric codes of characters and prints them to the screen — this is convenient when a character is hard to type on the keyboard. Find the characters with codes 126, 94, and 37 in the ASCII table below and print each on a separate line using the `chr()` function.
 
-In Python, you can query and display any ASCII character. The function `chr()` is used for this. For example:
+| Character | Code |
+|-----------|------|
+| !         | 33   |
+| #         | 35   |
+| %         | 37   |
+| &         | 38   |
+| *         | 42   |
+| ?         | 63   |
+| @         | 64   |
+| ^         | 94   |
+| _         | 95   |
+| ~         | 126  |
 
 ```python
-print(chr(63))
+print(chr(...))
+print(chr(...))
+print(chr(...))
 ```
 
-Symbol no. 63 - the question mark `?`. You can print any character this way.
+For example, the `?` character has code 63:
 
-Use the [ASCII code table](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html). In this table, want to know about the decimal code (*dec* or *decimal*) with which the characters are encoded.
-
-Using the example above and the table, display the following (each on its own line): `~`, `^` and `%`.
-
-(Of course, you could be sneaky and cheat the tests by just doing `print('~')` etc., but that would be no fun at all :)
+```python
+print(chr(63))  # output: ?
+```

@@ -1,1 +1,1 @@
-print('Для разделения строк используйте "\\n"\nПример: print("строка1\\nстрока2")')
+print('Use "\\n" to separate lines\nExample: print("line1\\nline2")')

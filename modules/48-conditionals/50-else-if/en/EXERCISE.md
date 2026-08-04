@@ -1,19 +1,16 @@
+Implement the function `get_traffic_light_action()`, which takes a traffic light colour and returns what the driver has to do.
 
-The electronic map of Westeros that Sam implemented shows Stark allies in green circles, enemies in red, and neutral families in gray.
+The rules:
 
-Write a function `who_is_this_house_to_starks()` for Sam that takes the family name as input and returns one of three values: `'friend'`, `'enemy'`, `'neutral'`.
+* `'green'` → `'go'`
+* `'yellow'` → `'slow down'`
+* `'red'` → `'stop'`
+* Any other colour → `'unknown'`
 
-Rules of Determination:
-
-* Friends (`'friend'`): `'Karstark'`, `'Tully'`
-* Enemies (`'enemy'`): `'Lannister'`, `'Frey'`
-* Any other families are considered `neutral'`.
-
-Examples of calls:
+Example calls:
 
 ```python
-print(who_is_this_house_to_starks('Karstark'))  # => 'friend'
-print(who_is_this_house_to_starks('Frey'))      # => 'enemy'
-print(who_is_this_house_to_starks('Joar'))      # => 'neutral'
-print(who_is_this_house_to_starks('Ivanov'))    # => 'neutral'
+print(get_traffic_light_action('green'))   # => 'go'
+print(get_traffic_light_action('red'))     # => 'stop'
+print(get_traffic_light_action('purple'))  # => 'unknown'
 ```

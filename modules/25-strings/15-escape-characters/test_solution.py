@@ -2,7 +2,7 @@ import importlib
 
 
 def test(capsys):
-    expected = 'Для разделения строк используйте "\\n"\nПример: print("строка1\\nстрока2")'
+    expected = 'Use "\\n" to separate lines\nExample: print("line1\\nline2")'
     expect_output(capsys, expected)
 
 

@@ -1,9 +1,8 @@
-
-Escribe un programa que muestre en pantalla:
+Estás escribiendo un programa que le muestra al usuario una pista sobre cómo dividir el texto en líneas. Muestra la pista con una sola llamada a `print()`:
 
 ```text
-- Did Joffrey agree?
-- He did. He also said "I love using \n".
+Use "\n" to separate lines
+Example: print("line1\nline2")
 ```
 
-El programa debe utilizar solo una llamada a `print()`, pero el resultado en pantalla debe ser exactamente como se muestra arriba.
+Ten en cuenta: el `\n` de la primera línea es texto literal, no un salto de línea.

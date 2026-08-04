@@ -1,2 +1,7 @@
+You received code from a colleague — it works correctly, but it violates the PEP8 formatting standard. Fix the spaces around the operators without changing the logic:
 
-Print the result of the following calculation: "the difference between five squared and the product of three and seven". Write the code so that each operator is separated from the operands by spaces.
+```python
+print(    (5  **2)-(3*  7))
+```
+
+The result must stay `4`.

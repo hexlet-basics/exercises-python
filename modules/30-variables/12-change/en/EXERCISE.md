@@ -1,4 +1,11 @@
+The status of an order is updated as it moves along. At first the order is `"in transit"`, then it changes to `"delivered"`.
 
-In the exercise, a variable is defined with a string inside it. Override the value of this variable and assign it a string in which the characters of the original string are arranged in reverse order.
+The exercise defines a variable `delivery_status` with the value `"in transit"`. Reassign its value to `"delivered"` and print it to the screen.
 
-Note: in this assignment, you'll have to write code between lines with comments `# BEGIN` and `# END` (we mentioned it before, but this is the first time you've come across this format).
+An example of reassigning a variable:
+
+```python
+some_var = 'old value'
+some_var = 'new value'
+print(some_var)  # => new value
+```

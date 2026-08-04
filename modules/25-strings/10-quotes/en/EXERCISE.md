@@ -1,12 +1,7 @@
-
-Write a program that prints:
-
-```text
-"Khal Drogo's favorite word is "athjahakar""
-```
-
-The program should display this exact phrase on the screen. Note the quotes at the beginning and the end of the phrase:
+The program did not find the required file and printed a message with its name. Write a program that prints the same message:
 
 ```text
-"Khal Drogo's favorite word is "athjahakar""
+The file "user's_config.json" was not found.
 ```
+
+The string contains both an apostrophe and double quotes — choose a suitable way to write it.

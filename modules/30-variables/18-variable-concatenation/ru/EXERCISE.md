@@ -7,9 +7,9 @@
 Результат на экране:
 
 ```text
-Здравствуйте, Анна!
-Спасибо за ваш заказ.
-Ожидаемая дата доставки — 3 рабочих дня.
+Hello, Anna!
+Thank you for your order.
+Estimated delivery date — 3 business days.
 ```
 
 Выполните задание, используя только два `print()`.

@@ -1,9 +1,7 @@
-Imprime en la pantalla uno tras otro tres nombres: *Robert*, *Stannis*, *Renly*. Como resultado, se debe mostrar en la pantalla:
+Muestra en pantalla el estado de entrega de un paquete: tres líneas, cada una con su propia llamada a `print()`:
 
 ```text
-Robert
-Stannis
-Renly
+Order #1337
+Status: in delivery
+Estimated time: 2 days
 ```
-
-Por cada nombre o designación, usa nuevamente la orden de `print()`.

@@ -1,8 +1,8 @@
-Write a program that displays on this the screen:
+You are writing a program that shows the user a tip about how to split text into lines. Print the tip with a single `print()` call:
 
 ```text
-- Did Joffrey agree?
-- He did. He also said "I love using \n".
+Use "\n" to separate lines
+Example: print("line1\nline2")
 ```
 
-This program should have only one `print()`, but the result on the screen should look exactly like the one shown above.
+Note: the `\n` in the first line is literal text, not a line break.

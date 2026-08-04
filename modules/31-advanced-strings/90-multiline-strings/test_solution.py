@@ -2,10 +2,10 @@ import importlib
 
 
 def test(capsys):
-    expected = """Уважаемый пользователь!
-Ваш заказ успешно оформлен.
-Ожидаемая дата доставки: 3-5 рабочих дней.
-Спасибо, что выбрали нас!"""
+    expected = """Dear customer!
+Your order has been placed successfully.
+Estimated delivery date: 3-5 business days.
+Thank you for choosing us!"""
     expect_output(capsys, expected)
 
 

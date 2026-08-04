@@ -1,2 +1,1 @@
-
-The variable `value` contains the value `Hexlet`. Extract from it and display the slice that gets the substring `xle`. This task can be done in different ways.
+The program receives a full site address and has to pick out only the domain name — without the `https://` protocol. The variable `url` holds the address `https://hexlet.io`. Use a slice to extract the domain name `hexlet.io` and print it to the screen. The task can be done in different ways.

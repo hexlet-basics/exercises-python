@@ -1,8 +1,7 @@
-
-Implement a function named `print_motto()` that displays the phrase *Winter is coming*.
+A site prints a greeting for every visitor. Implement the function `say_hello()`, which prints the phrase `Hello, World!` to the screen.
 
 ```python
-print_motto() # => Winter is coming
+say_hello() # => Hello, World!
 ```
 
-In tasks where you have to implement a function, you don't need to call it. Automated tests will call this function to check if it works. The example call above is shown just to give you an idea of how your function will be used.
+In tasks where you need to implement a function, you do not need to call that function. It will be called by the automated tests that check it works. The example call above is shown only so that you understand how your function will be used.

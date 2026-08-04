@@ -1,18 +1,15 @@
+Una tienda en línea le envía al comprador un correo electrónico después de realizar el pedido. El correo se genera automáticamente a partir de los datos del cliente.
 
-Los sitios web envían constantemente correos electrónicos a sus usuarios. Una tarea típica es enviar automáticamente un correo electrónico personalizado, donde el nombre del usuario estará en el encabezado. Si el nombre de la persona se almacena en algún lugar de la base de datos del sitio como una cadena, la tarea de generar el encabezado se reduce a la concatenación: por ejemplo, es necesario unir la cadena `Hola` con la cadena que contiene el nombre.
+Escribe un programa que genere el saludo y el cuerpo del correo utilizando las variables ya proporcionadas, y muestre las cadenas en la pantalla.
 
-Escriba un programa que genere el encabezado y el cuerpo del correo electrónico, utilizando variables ya definidas, y muestre las cadenas resultantes en la pantalla.
+Para el saludo, utiliza las variables `first_name` y `greeting`, una coma y un signo de exclamación. Para el cuerpo del correo, utiliza las variables `intro` e `info`: la segunda oración debe estar en una nueva línea.
 
-Para el encabezado, use las variables `first_name` y `greeting`, seguidas de una coma y un signo de exclamación. Muestre esto en la pantalla en el orden correcto.
-
-Para el cuerpo del correo electrónico, use las variables `info` e `intro`, y asegúrese de que la segunda oración esté en una nueva línea.
-
-El resultado en la pantalla se verá así:
+El resultado en la pantalla:
 
 ```text
-Hello, Joffrey!
-Here is important information about your account security.
-We couldn't verify your mother's maiden name.
+Hello, Anna!
+Thank you for your order.
+Estimated delivery date — 3 business days.
 ```
 
-Complete la tarea utilizando solo dos `print()`.
+Completa la tarea utilizando solamente dos llamadas a `print()`.

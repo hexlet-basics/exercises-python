@@ -2,7 +2,7 @@ import importlib
 
 
 def test(capsys):
-    expected = "доставлен"
+    expected = "delivered"
     expect_output(capsys, expected)
 
 

@@ -1,9 +1,8 @@
-
-Imprime en pantalla la primera y la última letra de la oración almacenada en la variable `texto`, en el siguiente formato:
+La aplicación muestra un resumen breve de un texto: su primer y su último carácter. Muestra en pantalla el primer y el último carácter de la cadena de la variable `text` con el siguiente formato:
 
 ```text
-First: N
-Last: t
+First: H
+Last: !
 ```
 
-Intenta crear solo una variable en la que se almacene el texto necesario antes de imprimirlo en pantalla. En esta lección, estamos practicando cómo construir una expresión compuesta.
+Intenta crear una sola variable en la que se escriba de inmediato el texto necesario antes de mostrarlo en pantalla. En esta lección practicamos armar una expresión compuesta.

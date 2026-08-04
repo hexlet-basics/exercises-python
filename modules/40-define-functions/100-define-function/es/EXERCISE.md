@@ -1,8 +1,7 @@
-
-Implementa una función llamada `print_motto()` que mostrará en la pantalla la frase *Winter is coming*.
+Un sitio muestra un saludo para cada visitante. Implementa la función `say_hello()`, que muestre en pantalla la frase `Hello, World!`.
 
 ```python
-print_motto() # => Winter is coming
+say_hello() # => Hello, World!
 ```
 
-En los ejercicios en los que se requiere implementar una función, no es necesario llamar a esa función. Las pruebas automatizadas se encargarán de llamarla y verificar su funcionalidad. El ejemplo de llamada anterior se muestra solo para que comprendas cómo se utilizará tu función.
+En las tareas en las que hay que implementar una función, no es necesario llamarla. La llamarán las pruebas automatizadas que comprueban su funcionamiento. El ejemplo de llamada de arriba se muestra solo para que entiendas cómo se usará tu función.

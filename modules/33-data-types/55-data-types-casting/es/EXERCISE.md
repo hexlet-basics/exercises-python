@@ -1,6 +1,15 @@
+Un termómetro muestra la temperatura con punto decimal. El programa debe mostrar solo el valor entero con una etiqueta.
 
-Imprime en la pantalla la cadena de texto `2 times`, obtenida a partir del número 2.9 (almacenado en la variable `value`) y la cadena de texto `times`, utilizando conversiones de tipos y concatenación. Para lograrlo, debes realizar dos conversiones: primero a un número entero y luego a una cadena de texto.
+Tienes una variable:
 
-```text
-2 times
+```python
+temperature = 36.6
 ```
+
+Escribe un programa que:
+
+1. Convierta la temperatura en un número entero.
+2. Transforme el número obtenido en una cadena.
+3. Muestre esa cadena en pantalla, añadiendo la etiqueta `°C` después de un espacio.
+
+Usa las funciones `int()` y `str()`.

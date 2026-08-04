@@ -2,7 +2,7 @@ import importlib
 
 
 def test(capsys):
-    expected = "Заказ №1337\nСтатус: доставляется\nПримерный срок: 2 дня"
+    expected = "Order #1337\nStatus: in delivery\nEstimated time: 2 days"
     expect_output(capsys, expected)
 
 

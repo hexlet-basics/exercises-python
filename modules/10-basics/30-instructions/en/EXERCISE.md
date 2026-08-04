@@ -1,9 +1,7 @@
-Display three names, one after another: _Robert_, _Stannis_, _Renly_. The result should be that the following is shown on the screen:
+Print the delivery status of a parcel to the screen — three lines, each with a separate `print()` call:
 
 ```text
-Robert
-Stannis
-Renly
+Order #1337
+Status: in delivery
+Estimated time: 2 days
 ```
-
-For each name, use Python's own `print()` call.

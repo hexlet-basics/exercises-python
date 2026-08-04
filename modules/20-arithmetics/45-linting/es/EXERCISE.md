@@ -1,2 +1,7 @@
+Recibiste código de un colega: funciona correctamente, pero infringe el estándar de formato PEP8. Corrige los espacios alrededor de los operadores sin cambiar la lógica:
 
-Imprime en pantalla el resultado de la siguiente operación: "la diferencia entre cinco al cuadrado y el producto de tres por siete". Escribe el código de manera que cada operador esté separado de los operandos por espacios.
+```python
+print(    (5  **2)-(3*  7))
+```
+
+El resultado debe seguir siendo `4`.

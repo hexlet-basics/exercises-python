@@ -1,8 +1,7 @@
-
-Write a program that calculates and prints the value of this expression:
+You are going to a store to buy gifts: 3 books at 200 each and 2 pens at 30 each. Calculate and print the total cost of the purchase.
 
 ```text
-8 / 2 + 5 - -3 / 2
+3 * 200  +  2 * 30
+    ↓           ↓
+   600    +    60    =  660
 ```
-
-Don't calculate anything manually, your program should do all the calculations on its own.

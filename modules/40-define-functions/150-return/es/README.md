@@ -86,7 +86,7 @@ Aquí no estamos devolviendo la variable en sí, sino el valor que se encuentra 
 
 ```python
 def double_five():
-    # или return 5 + 5
+    # o return 5 + 5
     result = 5 + 5
     return result
 ```

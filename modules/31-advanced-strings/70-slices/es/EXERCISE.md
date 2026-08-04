@@ -1,2 +1,1 @@
-
-La variable `value` contiene el valor `Hexlet`. Extrae y muestra en pantalla un recorte que obtenga la subcadena `xle` de ella. Puedes hacer esto de diferentes maneras.
+El programa recibe la dirección completa de un sitio y debe extraer de ella solo el nombre del dominio, sin el protocolo `https://`. La variable `url` contiene la dirección `https://hexlet.io`. Extrae con un corte (slice) el nombre de dominio `hexlet.io` y muéstralo en pantalla. La tarea se puede resolver de distintas maneras.

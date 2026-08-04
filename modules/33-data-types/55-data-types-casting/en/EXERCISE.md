@@ -1,6 +1,15 @@
+A thermometer shows the temperature with a decimal point. The program has to print only the whole value with a label.
 
-Output the string `2 times` obtained from the number 2.9 (stored in the variable `value`) and the string `times` using type conversions and concatenation. To do this, perform two conversions: first to an integer and then to a string
+You have a variable:
 
-```text
-2 times
+```python
+temperature = 36.6
 ```
+
+Write a program that:
+
+1. Converts the temperature to an integer.
+2. Turns the resulting number into a string.
+3. Prints that string to the screen, adding the label `°C` after a space.
+
+Use the `int()` and `str()` functions.

@@ -1,4 +1,4 @@
-label = "Ящиков на складе:"
+label = "Boxes in stock:"
 
 # BEGIN
 pallets_count = 6

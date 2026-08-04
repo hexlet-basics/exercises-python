@@ -1,1 +1,1 @@
-print("Программа успешно запущена")
+print("Program started successfully")

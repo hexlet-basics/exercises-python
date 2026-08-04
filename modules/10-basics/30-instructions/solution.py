@@ -1,3 +1,3 @@
-print("Заказ №1337")
-print("Статус: доставляется")
-print("Примерный срок: 2 дня")
+print("Order #1337")
+print("Status: in delivery")
+print("Estimated time: 2 days")

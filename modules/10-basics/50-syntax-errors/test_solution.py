@@ -2,7 +2,7 @@ import importlib
 
 
 def test(capsys):
-    expected = "Программа успешно запущена"
+    expected = "Program started successfully"
     expect_output(capsys, expected)
 
 

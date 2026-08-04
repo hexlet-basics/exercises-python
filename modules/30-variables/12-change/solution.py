@@ -1,7 +1,7 @@
-delivery_status = "в пути"
+delivery_status = "in transit"
 
 # BEGIN
-delivery_status = "доставлен"
+delivery_status = "delivered"
 # END
 
 print(delivery_status)

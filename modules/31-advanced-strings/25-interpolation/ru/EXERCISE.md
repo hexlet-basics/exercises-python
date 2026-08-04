@@ -3,5 +3,5 @@
 Используйте переменные `username` и `order_number`, чтобы вывести на экран:
 
 ```text
-Здравствуйте, Анна! Ваш заказ #1337 принят.
+Hello, Anna! Your order #1337 has been accepted.
 ```

@@ -1,18 +1,15 @@
+An online store sends the customer an email after the order is placed. The email is generated automatically from the customer's data.
 
-Websites are constantly sending emails to their users. A common task is to automatically send a personalized email with the user's name in the header. If a database stores people's names, the task of generating the header boils down to concatenation: for example, you want to glue the string `Hello` with a string containing a user's name.
+Write a program that builds the greeting and the body of the email using the variables that are already provided, and prints the lines to the screen.
 
-Write a program that will create the header and body of an email using ready-made variables and print the resulting strings.
+For the greeting, use the variables `first_name` and `greeting`, a comma and an exclamation mark. For the body, use the variables `intro` and `info` — the second sentence must be on a new line.
 
-Use the `first_name` and `greeting`, variables, a comma, and an exclamation point for the header. Print it in the correct order.
-
-Use the variables `info` and `intro` for the body of the message, with the second sentence on a new line.
-
-The result should look like this:
+The result on the screen:
 
 ```text
-Hello, Joffrey!
-Here is important information about your account security.
-We couldn't verify your mother's maiden name.
+Hello, Anna!
+Thank you for your order.
+Estimated delivery date — 3 business days.
 ```
 
-Perform the task using only two `print()` statements.
+Complete the task using only two `print()` calls.

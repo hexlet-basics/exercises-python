@@ -1,2 +1,9 @@
+You are writing a program and realize that one part needs to be finished later. To avoid forgetting, programmers leave themselves notes right in the code — TODO comments.
 
-Create a one-line comment with the text: `You know nothing, Jon Snow!`
+Add the following comment to the file:
+
+```python
+# TODO: add a greeting function
+```
+
+When you come back to this place later, the comment will remind you that there is still unfinished work here.

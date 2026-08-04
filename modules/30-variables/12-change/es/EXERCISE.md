@@ -1,4 +1,11 @@
+El estado de un pedido se actualiza a medida que avanza. Al principio el pedido está `"in transit"`, luego pasa al estado `"delivered"`.
 
-En este ejercicio se define una variable que contiene una cadena de texto. Reasigne el valor de esta variable y asígnele una cadena de texto en la que los caracteres de la cadena original estén en orden inverso.
+En el ejercicio se define una variable `delivery_status` con el valor `"in transit"`. Reasigna su valor a `"delivered"` y muéstralo en pantalla.
 
-Tenga en cuenta: en este ejercicio, deberá escribir código entre las líneas de comentarios `# BEGIN` y `# END` (esto se mencionó anteriormente, pero esta es la primera vez que se encuentra con este formato).
+Ejemplo de reasignación de una variable:
+
+```python
+some_var = 'valor antiguo'
+some_var = 'valor nuevo'
+print(some_var)  # => valor nuevo
+```

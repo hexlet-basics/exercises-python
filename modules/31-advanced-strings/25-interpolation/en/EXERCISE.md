@@ -1,6 +1,7 @@
+An online store sends the customer an order confirmation. The customer name and the order number are already stored in variables — you need to substitute them into the message template with an f-string.
 
-Print the string, `Do you want to eat, <name>? Where the variable`stark` should be used instead of `<name>`. The output should look like this:
+Use the variables `username` and `order_number` to print to the screen:
 
 ```text
-Do you want to eat, Arya?
+Hello, Anna! Your order #1337 has been accepted.
 ```

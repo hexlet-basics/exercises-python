@@ -2,7 +2,7 @@ import importlib
 
 
 def test(capsys):
-    expected = "Ящиков на складе:\n102"
+    expected = "Boxes in stock:\n102"
     expect_output(capsys, expected)
 
 

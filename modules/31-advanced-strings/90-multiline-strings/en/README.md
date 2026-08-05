@@ -56,13 +56,13 @@ a = 'A'
 b = 'B'
 
 # On the left was added f
-text = f'''{a} и {b}
+text = f'''{a} and {b}
 sitting on a pipe
 '''
 ```
 
 ```text
-А and B
+A and B
 sitting on a pipe
 
 ```

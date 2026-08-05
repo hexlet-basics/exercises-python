@@ -7,7 +7,7 @@ Some functions are a little different in that they take a variable number of par
 max(1, 10, 3)  # 10
 ```
 
-In the above example, the `max()` function finds the maximum value among the passed parameters. To find out how many parameters can be passed to the input, you need to look at the [documentation](https://docs.python.org/3/library/functions.html?highlight=pow#max) этой функции. Там мы увидим такую конструкцию:
+In the above example, the `max()` function finds the maximum value among the passed parameters. To find out how many parameters can be passed to the input, you need to look at the [documentation](https://docs.python.org/3/library/functions.html?highlight=pow#max) of this function. There we'll see the following signature:
 
 ```python
 max(arg1, arg2, *args[, key])

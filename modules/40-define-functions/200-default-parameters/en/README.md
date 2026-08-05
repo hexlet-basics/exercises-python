@@ -38,9 +38,9 @@ def f(a=5, b=10, c=100):
 The default values have one limitation. They must go at the very end of the parameter list. From the syntax point of view, it is impossible to create a function with an optional parameter followed by a mandatory one:
 
 ```python
-# Такой код завершится с ошибкой
+# This code will fail with an error
 def f(a=5, b=10, c=100, x):
-# And such a
+# And this one too
 def f(a=5, b=10, x, c=100):
 
 # This code will work

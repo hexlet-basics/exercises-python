@@ -62,7 +62,7 @@ Slices have a third optional parameter - **extraction step**. By default it is o
 ```python
 value = 'Hexlet'
 value[1:5:2]  # el
-# 1:5 это 'exle'
+# 1:5 is 'exle'
 # step 2 is every second, that is, 'e' and 'l'
 ```
 

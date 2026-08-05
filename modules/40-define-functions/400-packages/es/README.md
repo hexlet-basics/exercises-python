@@ -1,66 +1,112 @@
-Los programas Python casi siempre usan código escrito por otros. Reinventar funciones matemáticas, manejo de fechas o peticiones de red no tiene sentido — todo esto ya está disponible. Python usa paquetes para compartir y reutilizar código.
+A medida que el programa crece aumenta no solo la cantidad de líneas de código, sino también la cantidad de módulos. En proyectos pequeños, decenas de archivos todavía se pueden mantener en un solo directorio, pero en aplicaciones reales los archivos pueden ser cientos y miles.
 
-Un paquete es un directorio de archivos Python organizados por tema. La biblioteca estándar de Python contiene decenas de estos paquetes, que cubren desde matemáticas hasta el acceso al sistema de archivos.
+Para organizar los módulos en grupos lógicos más grandes, en Python se usan los paquetes. Un paquete es un directorio con archivos de Python.
 
-## Importar un paquete
+Por ejemplo, la estructura de un proyecto puede verse así:
 
-Para usar código de un paquete, hay que importarlo con la palabra clave `import`. Veamos el paquete `math`:
+```text
+project/
+├── main.py
+├── payments/
+│   ├── stripe.py
+│   └── paypal.py
+└── users/
+    ├── auth.py
+    └── profile.py
+```
+
+En este ejemplo, `payments` y `users` son paquetes, y `stripe.py`, `paypal.py`, `auth.py` y `profile.py` son módulos.
+
+Los paquetes ayudan a agrupar el código por tareas y simplifican la navegación por el proyecto. En lugar de cientos de archivos en un solo directorio, el código se divide en áreas de responsabilidad separadas.
+
+## Importación desde un paquete
+
+A los módulos que están dentro de un paquete se accede a través del punto:
 
 ```python
-import math
-
-print(math.sqrt(16))  # => 4.0
-print(math.pi)        # => 3.141592653589793
+import payments.stripe
 ```
 
-Después de `import math`, todo el contenido del paquete está disponible con notación de punto: `math.sqrt`, `math.floor`, `math.pi`.
-
-## Importar nombres específicos
-
-Una sintaxis alternativa permite importar solo lo que se necesita:
+Después de la importación se puede usar el contenido del módulo:
 
 ```python
-from math import sqrt, pi
+import payments.stripe
 
-print(sqrt(25))  # => 5.0
-print(pi)        # => 3.141592653589793
+payments.stripe.create_payment()
 ```
 
-Ahora `sqrt` y `pi` están disponibles directamente, sin el prefijo `math.`. La forma `import math` hace explícito el origen de la función, lo que ayuda al leer código desconocido. La forma `from math import` es cómoda cuando se necesitan pocas funciones concretas y escribir el prefijo cada vez resulta tedioso.
+El punto muestra el camino dentro del paquete. Python pasa secuencialmente del paquete al módulo.
 
-## Alias
+## Importación de un módulo concreto
 
-La palabra clave `as` permite dar un alias a un nombre importado:
+A menudo no se importa todo el camino, sino un módulo concreto:
 
 ```python
-from math import sqrt as sq
+from payments import stripe
 
-print(sq(9))  # => 3.0
+stripe.create_payment()
 ```
 
-Un alias es útil cuando un nombre entra en conflicto con una variable existente o es demasiado largo.
+Esa forma acorta la escritura y hace el código más compacto.
 
-## Biblioteca estándar
+## Paquetes anidados
 
-Python viene con un conjunto amplio de paquetes integrados. Algunos de uso frecuente:
+Los paquetes pueden contener otros paquetes:
 
-- `math` — funciones matemáticas: `sqrt`, `hypot`, `floor`, `ceil`, `pi`
-- `random` — números aleatorios: `randint`, `choice`, `shuffle`
-- `datetime` — trabajo con fechas y horas
+```text
+project/
+└── app/
+    └── payments/
+        ├── stripe/
+        │   ├── client.py
+        │   └── api.py
+        └── paypal.py
+```
+
+En ese caso el camino hasta el módulo se vuelve más largo:
 
 ```python
-import random
-
-print(random.randint(1, 6))                          # => número aleatorio entre 1 y 6
-print(random.choice(['rock', 'paper', 'scissors']))  # => elemento aleatorio
+from app.payments.stripe import client
 ```
 
-## Paquetes de terceros
+Esa estructura se encuentra a menudo en proyectos grandes. Ayuda a dividir el código en partes independientes.
 
-Más allá de la biblioteca estándar, existen miles de paquetes creados por desarrolladores de todo el mundo. Se instalan con `pip`, el gestor de paquetes de Python:
+## Paquetes y espacios de nombres
 
-```bash
-pip install requests
+Los paquetes crean un nivel adicional de espacio de nombres. Gracias a eso, distintas partes del programa pueden contener módulos con los mismos nombres.
+
+Por ejemplo:
+
+```text
+project/
+├── admin/
+│   └── config.py
+└── user/
+    └── config.py
 ```
 
-Después de la instalación, las importaciones funcionan igual que con los paquetes integrados.
+Aquí existen dos módulos `config.py` distintos.
+
+Python los distingue por el camino completo:
+
+```python
+import admin.config
+import user.config
+```
+
+Sin los paquetes, esos nombres entrarían en conflicto entre sí.
+
+## El archivo __init__.py
+
+Antes, para crear un paquete, dentro del directorio se colocaba obligatoriamente el archivo `__init__.py`:
+
+```text
+payments/
+├── __init__.py
+├── stripe.py
+└── paypal.py
+```
+
+Ese archivo informaba a Python de que el directorio había que tratarlo como un paquete.
+
+En las versiones modernas de Python los paquetes pueden funcionar también sin `__init__.py`. No obstante, ese archivo se sigue usando a menudo. Normalmente en él se coloca código común y la configuración del paquete.

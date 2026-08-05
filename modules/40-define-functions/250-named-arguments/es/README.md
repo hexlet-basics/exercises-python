@@ -1,51 +1,53 @@
-
-En esta lección, vamos a analizar qué parámetros existen, cómo se diferencian y en qué casos se aplican.
-
-**Argumentos** son los datos que se pasan a una función cuando se la llama. Hay dos tipos de argumentos:
-
-El primer tipo son los **argumentos posicionales**. Se pasan en el mismo orden en el que se definen los parámetros de la función:
+Al llamar a una función, los argumentos se pueden pasar de dos formas. En la **llamada posicional** los valores van estrictamente por orden. El primero cae en el primer parámetro y el segundo en el segundo. Los **argumentos con nombre** permiten indicar explícitamente en la llamada el nombre del parámetro. Eso resulta cómodo cuando la función tiene muchos parámetros y hay que redefinir solo algunos. Los demás se quedan con sus valores por defecto.
 
 ```python
-# (text, length)
-truncate('My Text', 3)
+def repeat(text, times=1):
+    return text * times
+
+repeat("Hi", 3)             # llamada posicional
+repeat(text="Hi", times=3)  # llamada con nombres
 ```
 
-El segundo tipo son los **argumentos nombrados**. Se pasan no sólo como valores, sino como pares "nombre=valor". Por lo tanto, se pueden pasar en cualquier orden:
+Las dos variantes hacen lo mismo. En el segundo caso escribimos explícitamente que "Hi" es el valor de text y que 3 es el valor de times. Desde el punto de vista de la definición de la función nada cambió. Los argumentos con nombre funcionan para cualquier función, y la función misma no sabe nada de ello. Recibe los valores tal como están descritos en la definición.
+
+```text
+def truncate(text, length):
+    ...
+
+Posicionales:  truncate('hello', 3)
+                        └──┬──┘  └┬┘
+                        text    length
+
+Con nombre:    truncate(length=3, text='hello')
+                        └──┬───┘  └─────┬─────┘
+                        length         text
+```
+
+Los argumentos con nombre se pueden indicar en cualquier orden. Eso no cambia el resultado del trabajo de la función, porque los valores se enlazan precisamente por el nombre del parámetro.
 
 ```python
-# Los argumentos se pasan en un orden diferente
-truncate(length=3, text='My Text')
+repeat(times=3, text="Hi")  # => HiHiHi
 ```
 
-Si observamos cuidadosamente los dos ejemplos anteriores, podemos entender que son dos funciones idénticas.
-
-Ahora vamos a entender en qué casos se deben utilizar estos tipos de argumentos.
-
-La elección del tipo de parámetro depende de quién llama a la función.
-
-Hay dos razones para usar argumentos nombrados:
-
-* Mejoran la legibilidad, ya que los nombres son visibles de inmediato.
-
-* No es necesario especificar todos los parámetros intermedios que no necesitamos en este momento.
-
-Esto último es útil cuando una función tiene muchos parámetros opcionales. Veamos un ejemplo:
+Los argumentos con nombre se pueden combinar con los posicionales; en ese caso los posicionales van primero. Esa llamada permite indicar solo los parámetros que hay que redefinir.
 
 ```python
-def print_params(a=1, b=2, c=3, d=4):
-    print(a, b, c, d)
-
-# Solo necesitamos pasar d, pero tenemos que pasar todos los demás
-f(1, 2, 3, 8)
-
-# Los argumentos nombrados nos permiten pasar solo d
-# Los valores predeterminados se utilizan para los demás argumentos
-f(d=8)
+repeat("Hi", times=3)  # posicionales + con nombre => HiHiHi
 ```
 
-Los argumentos nombrados se pueden pasar junto con los posicionales. En ese caso, los posicionales deben ir al principio:
+## Cuándo usar los argumentos con nombre
+
+Los argumentos con nombre son útiles cuando la función tiene varios parámetros y no hay que cambiarlos todos. En esos casos se pueden indicar solo los parámetros que importan en la llamada concreta y dejar los demás con sus valores por defecto.
 
 ```python
-# Pasamos solo a (posicional) y d (nombrado)
-f(3, d=3)
+def make_line(symbol="-", length=10):
+    return symbol * length
+
+make_line()          # todos los parámetros por defecto
+
+make_line(length=5)  # cambiamos solo la longitud
+# Sin esto habría que escribirlo así
+make_line("-", 5)
 ```
+
+No hubo que indicar el carácter, incluso a pesar de que va antes que la longitud en la lista de parámetros. Los argumentos con nombre hacen las llamadas más claras. Al leer el código se ve de inmediato qué valor corresponde a qué parámetro.

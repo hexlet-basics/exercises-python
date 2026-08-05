@@ -1,56 +1,87 @@
+Hasta este momento usábamos solo funciones ya listas: `print()`, `len()`, `max()` y otras. Pero en Python se pueden crear funciones propias, y llegó la hora de aprender a hacerlo.
 
-Es más fácil escribir y mantener programas utilizando funciones propias. Permiten combinar operaciones compuestas en una sola. Por lo tanto, en esta lección hablaremos sobre cómo crear funciones propias.
+## Para qué definir funciones
 
-Supongamos que queremos enviar correos electrónicos en un sitio web, esto es un proceso bastante complejo que implica interactuar con sistemas externos. Pero si definimos una función, toda la complejidad se ocultará detrás de una función simple:
+Supongamos que tenemos varios fragmentos de código parecidos:
 
 ```python
-# Ejemplo hipotético
-# Lugar donde se encuentra la función
-from emails import send
-
-email = 'support@hexlet.io'
-title = 'Ayuda'
-body = 'Escribí una historia de éxito, ¿cómo puedo obtener un descuento?'
-
-# Una pequeña ejecución - mucha lógica interna
-send(email, title, body)
+print('Hello, Hexlet!')
+print('Hello, world!')
+print('Hello, Python!')
 ```
 
-Esta ejecución realiza acciones de gran lógica interna: se conecta al servidor de correo, forma una solicitud correcta basada en el título y el cuerpo del mensaje, y luego lo envía todo, sin olvidar cerrar la conexión.
+Para no repetir la misma plantilla, podemos encapsularla en forma de función propia, que recibe un parámetro de entrada e imprime en pantalla la línea necesaria:
 
-Creemos nuestra primera función. Su tarea es mostrar un saludo en la pantalla:
+```python
+def say_hello(name):
+    print(f'Hello, {name}!')
+```
+
+Ahora podemos llamarla con distintos argumentos:
+
+```python
+say_hello('Hexlet')   # => Hello, Hexlet!
+say_hello('world')    # => Hello, world!
+say_hello('Python')   # => Hello, Python!
+```
+
+Al parecer la cantidad de código no disminuyó, pero apareció otra cosa. Si esa función se usa en distintos lugares, cuando haga falta cambiar el texto nos bastará con corregir solo la definición de la función. Y cuanto más compleja sea la tarea y más a menudo se use en distintos lugares, más importante es extraer la lógica a funciones propias.
+
+## Sintaxis de la definición
+
+```python
+def nombre_de_la_función(parámetros):
+    cuerpo
+```
 
 ```text
-Hello, Hexlet!
+def greet(name):              ← nombre de la función y parámetro
+    return 'Hello, ' + name   ← cuerpo de la función
+│         │
+palabra   devolución
+clave     del valor
 ```
+
+La palabra clave `def` empieza la definición. En `nombre_de_la_función` se admite cualquier nombre, igual que en una variable; entre paréntesis se indica la lista de parámetros separados por comas. Después de los dos puntos se sitúa el cuerpo de la función con una sangría de 4 espacios, en el que se escribe código Python normal.
+
+En Python las sangrías tienen valor sintáctico. Muestran qué código pertenece al cuerpo de la función. Mira el ejemplo:
 
 ```python
-# Definición de la función
-# La definición no llama ni ejecuta la función
-# Solo decimos que ahora existe esta función
-def show_greeting():
-    # Dentro del cuerpo, hay una sangría de cuatro espacios
-    text = 'Hello, Hexlet!'
-    print(text)
+def say_hi():
+    print('Hi!')
 
-# Llamada a la función
-show_greeting()  # => '¡Hola, Hexlet!'
+print('El programa continúa…')
 ```
 
-A diferencia de los datos normales, las funciones realizan acciones. Por lo tanto, sus nombres deben indicarse con verbos: "construir algo", "dibujar algo", "abrir algo".
+Aquí la función `say_hi()` está definida, pero **`print('El programa continúa…')`** no pertenece a la función, porque no tiene sangría. Se ejecutará de inmediato al arrancar el programa, independientemente de la llamada a `say_hi()`.
 
-La descripción que se encuentra debajo del nombre de la función con sangría se llama **cuerpo de la función**. Dentro del cuerpo se puede describir cualquier código. Es como un pequeño programa independiente, un conjunto de instrucciones arbitrarias.
-
-El cuerpo se ejecuta cuando se ejecuta la función. Cada llamada a la función ejecuta el cuerpo de forma independiente de otras llamadas.
-
-El cuerpo de la función puede estar vacío, en ese caso se utiliza la palabra clave `pass`:
+Para que `say_hi()` actúe, hay que llamarla explícitamente:
 
 ```python
-# Definición mínima de una función
-def noop():
-    pass
+def say_hi():
+    print('Hi!')
 
-noop()
+say_hi()  # => Hi!
+print('El programa continúa…')
 ```
 
-El concepto de "crear una función" tiene muchos sinónimos: "implementar", "definir" e incluso "declarar". Se encuentran con frecuencia en la práctica. Al crear su propia función, facilitará las operaciones complejas y hará que el desarrollo sea más sencillo.
+## Ejemplo: función para imprimir la media aritmética
+
+Ahora implementaremos una función simple que **calcula e imprime la media aritmética** de dos números. La media aritmética es la suma de los números dividida entre su cantidad. Por ejemplo, la media de 6 y 4 se calcula así: `(6 + 4) / 2 = 5`.
+
+```python
+def print_average(a, b):
+    total = a + b
+    average = total / 2
+    print(average)
+
+print_average(6, 4)  # => 5.0
+```
+
+Aquí `a` y `b` son los parámetros de entrada, `total` contiene su suma, `average` se obtiene dividiendo la suma entre 2 y `print()` muestra el resultado.
+
+Al llamar a `print_average(6, 4)`, en la pantalla se mostrará `5.0`.
+
+## Reutilización y legibilidad
+
+Las funciones ayudan a evitar la duplicación y hacen que los programas sean más comprensibles. El nombre de la función por sí solo dice qué hace. Eso es especialmente importante en proyectos grandes, donde el código lo leen otros programadores (o tú mismo un mes después).

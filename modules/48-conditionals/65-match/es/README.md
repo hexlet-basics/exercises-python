@@ -1,60 +1,63 @@
-
-Muchos lenguajes, además de la estructura condicional `if`, incluyen `switch`. Con la versión 3.10 de Python, se agregó el operador `match` con funcionalidad similar. En esta lección, aprenderemos sobre este operador.
-
-El operador `match` es una versión especializada de `if` creada para situaciones específicas. Por ejemplo, se debe utilizar cuando hay una cadena de `if else` con comprobaciones de igualdad:
+El operador `match` es una versión especializada de `if`, creada para situaciones particulares. Por ejemplo, hay que usarla allí donde hay una cadena de `if else` con comprobaciones de igualdad:
 
 ```python
 if status == 'processing':
-    # Hacer algo
+    # Hacemos una cosa
 elif status == 'paid':
-    # Hacer algo más
+    # Hacemos otra
 elif status == 'new':
-    # Hacer algo diferente
+    # Hacemos una tercera
 else:
-    # Hacer algo más
+    # Hacemos una cuarta
 ```
 
-Esta comprobación compuesta tiene una característica distintiva: cada rama es una comprobación del valor de la variable `status`. El operador `match` permite escribir este código de forma más corta y expresiva:
+Esa comprobación compuesta tiene un rasgo distintivo. Cada rama aquí es una comprobación del valor de la variable `status`. El operador `match` permite escribir ese código de forma más corta y expresiva.
 
 ```python
 match status:
     case 'processing':  # status == 'processing'
-        # Hacer algo
+        # Hacemos una cosa
     case 'paid':  # status == 'paid'
-        # Hacer algo más
+        # Hacemos otra
     case 'new':  # status == 'new'
-        # Hacer algo diferente
+        # Hacemos una tercera
     case _:  # else
-        # Hacer algo más
+        # Hacemos una cuarta
 ```
 
-En términos de cantidad de elementos, `match` es una construcción compleja. Está compuesta por los siguientes elementos:
+```text
+match valor:
+  │
+  ├── case 'a' → bloque 1
+  ├── case 'b' → bloque 2
+  ├── case 'c' → bloque 3
+  └── case _   → bloque por defecto
+```
 
-* Una descripción externa que incluye la palabra clave `match`. Esta es la variable cuyos valores determinarán el comportamiento del `match`.
-* Las construcciones `case`, dentro de las cuales se describe el comportamiento para diferentes valores de la variable considerada. Cada `case` corresponde a un `if` en el ejemplo anterior. Además, `case _` es una situación especial que corresponde a la rama `else` en las estructuras condicionales. Al igual que `else`, no es obligatorio especificar `case _`.
+Desde el punto de vista de la cantidad de elementos, `match` es una construcción compleja. La descripción externa incluye la palabra clave `match` y la variable según cuyos valores `match` elegirá el comportamiento. Dentro se sitúan las construcciones `case`, cada una de las cuales describe el comportamiento para uno de los valores de la variable. Cada `case` corresponde a un `if` del ejemplo de arriba. Además, `case _` es una situación especial que corresponde a la rama `else` de las construcciones condicionales. Igual que `else`, indicar `case _` no es obligatorio.
 
-Dentro de `match`, solo se permite la sintaxis mostrada anteriormente. En otras palabras, se pueden utilizar `case`. Sin embargo, dentro de cada `case`, la situación es diferente. Aquí se puede ejecutar cualquier código arbitrario:
+Dentro de `match` solo se admite la sintaxis mostrada arriba. En otras palabras, allí se puede usar `case`. Pero dentro de cada `case` la situación es distinta. Aquí se puede ejecutar cualquier código arbitrario.
 
 ```python
 match count:
     case 1:
-        # Hacer algo útil
+        # Hacemos algo útil
     case 2:
-        # Hacer algo útil
+        # Hacemos algo útil
     case _:
-        # Hacer algo
+        # Hacemos algo
 ```
 
-A veces, el resultado obtenido dentro de `case` es el final de la ejecución de la función que contiene el `match`. En ese caso, es necesario devolverlo de alguna manera. Hay dos formas de resolver este problema:
+A veces el resultado obtenido dentro de un `case` termina la ejecución de la función que contiene el `match`. En ese caso hay que devolverlo de alguna manera hacia fuera. Para resolver esa tarea hay dos formas.
 
-Primera forma: crear una variable antes del `match`, asignarle un valor dentro de `case` y luego devolver el valor de esa variable al final:
+La primera. Crear una variable antes del `match`, rellenarla en el `case` y luego, al final, devolver el valor de esa variable hacia fuera.
 
 ```python
 def count_items(count):
-    # Declarar una variable
+    # Declaramos la variable
     result = ''
 
-    # Llenar el espacio
+    # La rellenamos
     match count:
         case 1:
             result = 'one'
@@ -63,11 +66,11 @@ def count_items(count):
         case _:
             result = None
 
-    # Devolver el valor
+    # La devolvemos
     return result
 ```
 
-La segunda forma es más simple y corta. En lugar de crear una variable al trabajar con `case`, se puede hacer un retorno normal de la función:
+La segunda forma es más simple y más corta. En lugar de crear una variable, al trabajar con `case` se puede hacer un retorno normal desde la función.
 
 ```python
 def count_items(count):
@@ -80,4 +83,4 @@ def count_items(count):
             return None
 ```
 
-Aunque el operador `match` se encuentra en el código, técnicamente siempre se puede prescindir de él. La ventaja clave de su uso es que expresa mejor la intención del programador cuando se necesitan comprobar valores específicos de una variable. Aunque el código es un poco más largo físicamente, es más fácil de leer en comparación con los bloques `elif`.
+El operador `match`, aunque aparece en el código, técnicamente siempre se puede evitar. La utilidad clave de usarlo está en que expresa mejor la intención del programador cuando hay que comprobar valores concretos de una variable. Aunque el código haya crecido físicamente un poco, es más fácil de leer, a diferencia de los bloques `elif`.

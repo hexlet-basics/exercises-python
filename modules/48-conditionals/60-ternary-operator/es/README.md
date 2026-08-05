@@ -1,28 +1,30 @@
-
-Eche un vistazo a la definición de una función que devuelve el módulo de un número dado:
+Mira la definición de la función que devuelve el valor absoluto del número recibido:
 
 ```python
-def abs(number):
+# El valor absoluto es el número mismo sin el signo
+def abs(number: int) -> int:
     if number >= 0:
         return number
     return -number
 ```
 
-Pero se puede escribir de manera más concisa. Para ello, a la derecha de `return` debe haber una expresión, pero `if` es una instrucción y no una expresión. En Python existe una construcción que funciona como un `if-else`, pero se considera una expresión. Se llama **operador ternario** y es el único operador en Python que requiere tres operandos:
+Pero se puede escribir de forma más concisa. En Python hay una construcción que funciona como `if-else`. Se llama **operador ternario** y es el único operador de Python que exige tres operandos:
 
 ```python
-def abs(number):
+def abs(number: int) -> int:
     return number if number >= 0 else -number
 ```
 
 El patrón general se ve así: `<expression on true> if <predicate> else <expression on false>`.
 
-Vamos a reescribir la versión inicial de `get_type_of_sentence()` de manera similar.
+![Operador ternario](./assets/ternary.png)
+
+Reescribamos la variante inicial de `get_type_of_sentence()` de forma análoga.
 
 Antes:
 
 ```python
-def get_type_of_sentence(sentence):
+def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
     if last_char == '?':
         return 'question'
@@ -32,7 +34,7 @@ def get_type_of_sentence(sentence):
 Después:
 
 ```python
-def get_type_of_sentence(sentence):
+def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
     return 'question' if last_char == '?' else 'normal'
 
@@ -40,4 +42,4 @@ print(get_type_of_sentence('Hodor'))   # => normal
 print(get_type_of_sentence('Hodor?'))  # => question
 ```
 
-Se puede anidar un operador ternario dentro de otro operador ternario. Pero no se recomienda hacerlo, ya que ese código es difícil de leer y depurar.
+Un operador ternario se puede anidar dentro de otro operador ternario. Pero eso se considera una mala práctica: ese código es muy difícil de entender.

@@ -1,7 +1,5 @@
 Dentro de un bucle se pueden usar condiciones. Así el programa repite una acción varias veces, pero en cada repetición toma una decisión.
 
-![Condiciones dentro del bucle](./assets/conditions-inside-loops.png)
-
 Supongamos que hay que recorrer los números del `1` al `10` e imprimir solo los pares. El bucle recorre todos los números uno tras otro, y la condición dentro del bucle decide cuáles de ellos aparecerán en la pantalla.
 
 Para el recorrido hace falta un contador. Guarda el número actual y aumenta después de cada repetición. Hay que imprimir el número solo cuando pasa la comprobación.

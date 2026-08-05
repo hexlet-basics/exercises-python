@@ -1,7 +1,5 @@
 Las funciones, en cualquier lenguaje de programación, tienen propiedades fundamentales. Esas propiedades ayudan a entender cómo se comportará la función en distintas situaciones, cómo probarla y dónde aplicarla. Una de esas propiedades es el **determinismo**.
 
-![Dos personas sentadas hablando de una función determinista](./assets/deterministic.png)
-
 Una **función determinista** devuelve siempre el mismo resultado con los mismos datos de entrada. Por ejemplo, determinista se puede llamar a la función que cuenta la cantidad de caracteres:
 
 ```python

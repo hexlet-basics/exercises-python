@@ -27,8 +27,6 @@ Father!
 Father!
 ```
 
-![Definición de una variable](./assets/variable-definition.png)
-
 Una **variable** es un nombre detrás del cual se guarda un valor. En nuestro ejemplo creamos una variable con el nombre `greeting` y escribimos en ella la cadena `'Father!'`.
 
 ```text

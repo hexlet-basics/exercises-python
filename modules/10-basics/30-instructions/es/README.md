@@ -1,26 +1,69 @@
-Cuando preparamos una comida, seguimos la receta al pie de la letra. De lo contrario, la comida no saldrá como esperábamos. Esta regla también se aplica a la programación.
+Al comando `print('Hexlet')` podemos llamarlo instrucción: le dice al intérprete de Python qué hay que hacer. Esas instrucciones pueden ser tantas como se quiera. Cada una se ejecuta después de que ha terminado la anterior, y así, a partir de elementos simples, obtenemos un programa tan grande y complejo como queramos.
 
-Para ver el resultado esperado en la pantalla, es necesario darle al ordenador instrucciones claras, paso a paso. Una instrucción es un comando para el ordenador; una unidad de ejecución. En este caso, el código en Python es un conjunto de instrucciones. Se puede representar como una receta de cocina paso a paso.
+```text
+Instrucción 1: print('Hello')   →  ejecutada
+        ↓
+Instrucción 2: print('World')   →  ejecutada
+        ↓
+Instrucción 3: print('!')       →  ejecutada
+```
 
-El código en Python es ejecutado por un **intérprete** - es decir, un programa que ejecuta las instrucciones recibidas en orden. Al igual que los pasos en una receta, el conjunto de instrucciones para el intérprete se escriben en orden y se separan por saltos de línea.
-
-Los desarrolladores deben entender el orden de las acciones en el código y ser capaces de dividir mentalmente el programa en partes independientes, fáciles de analizar.
-
-Veamos un ejemplo de código con dos instrucciones. Al ejecutarlo, se mostrarán en la pantalla dos frases en secuencia:
+Aquí tienes un ejemplo de código con dos instrucciones. Estas líneas le dicen al ordenador que muestre las frases en la pantalla.
 
 ```python
-print('Mother of Dragons.')
+print('Mother of Dragons.') # Primera instrucción
+print('Dracarys!') # Segunda instrucción
+```
+
+El resultado de la ejecución:
+
+```text
+Mother of Dragons.
+Dracarys!
+```
+
+## El orden importa
+
+El intérprete de Python ejecuta el código estrictamente en el orden en que lo escribiste. Si se intercambian las líneas:
+
+```python
 print('Dracarys!')
-# => Mother of Dragons.
-# => Dracarys!
+print('Mother of Dragons.')
 ```
 
-Anteriormente hemos señalado que las instrucciones se separan por saltos de línea. Pero también hay otra forma: se pueden separar por punto y coma (`;`):
+en la pantalla también se intercambiarán:
+
+```text
+Dracarys!
+Mother of Dragons.
+```
+
+## Forma alternativa de escritura
+
+Normalmente las instrucciones se escriben en líneas separadas, pero Python permite unir varias instrucciones en una línea mediante `;`:
 
 ```python
-print('Mother of Dragons.'); print('Drakarys!')
+print('Mother of Dragons.'); print('Dracarys!');
 ```
 
-No hay diferencia técnica alguna entre la primera y la segunda opción: el intérprete entenderá las instrucciones de la misma manera. La única diferencia es que la segunda opción puede ser incómoda de leer para los humanos.
+Las dos versiones funcionan igual, pero la segunda variante es más difícil de leer. Por eso las instrucciones casi siempre se escriben una por línea.
 
-Es mejor colocar las instrucciones una debajo de la otra. De esta manera, será más fácil para tus colegas leer tu código, mantenerlo y realizar cambios en él.
+## Para qué hace falta esto
+
+Ahora escribimos programas muy simples, pero con el tiempo empezarán a complicarse, y una de las habilidades más importantes que ayudará a entenderlos es la capacidad de dividir (mentalmente) el programa en instrucciones independientes. Solo así se puede entender qué ocurre en el código. Abajo hay un ejemplo para llamar la atención; entenderlo por ahora no hace falta:
+
+```python
+def is_prime(number: int) -> bool:
+    if number < 2:
+        return False
+
+    divider = 2
+
+    while divider <= number / 2:
+        if number % divider == 0:
+            return False
+
+        divider += 1
+
+    return True
+```

@@ -1,180 +1,94 @@
-
-En esta lección aprenderemos las reglas de transformación de argumentos y cómo trabajar con expresiones compuestas y doble negación.
-
-## Reglas de transformación
-
-El operador **OR** funciona de tal manera que se interrumpe la ejecución de izquierda a derecha y se devuelve el resultado del primer argumento que se pueda transformar en `True`. Si no hay ningún argumento que cumpla esta condición, se devuelve el último argumento, el de la derecha.
-
-Veamos un ejemplo:
+En Python, los valores de distintos tipos se pueden usar directamente en expresiones lógicas. Al hacerlo se comportan como `True` o `False`, según pertenezcan a la categoría **truthy** o **falsy**.
 
 ```python
-print(0 or 1)  ## 1
+if "hello":
+    print("cadena no vacía — truthy")  # se ejecutará
+
+if not 0:
+    print("cero — falsy")              # se ejecutará
 ```
 
-En este caso, el número `0` es equivalente a `False`, y el número `1` es equivalente a `True`. Por lo tanto, el operador **OR** devuelve `1`, ya que es el primer argumento que se puede transformar en `True`.
+## Valores falsy y truthy
 
-Veamos un ejemplo más complejo:
+En Python hay un conjunto fijo de valores que se consideran **falsos** (`falsy`). A ellos pertenecen `0` y cualquier número nulo (`0.0`), la cadena vacía `""`, las colecciones vacías `[]`, `{}`, `set()`, `()` (todavía no las hemos visto) y también el valor especial `None`.
+
+Todos los demás valores se consideran **verdaderos** (`truthy`). Son, por ejemplo, cualquier número distinto de cero (`1`, `-3.5`), una cadena no vacía (`"hi"`, `"0"`) y las colecciones no vacías (`[1]`, `{"a": 1}`, `(0,)`) (las estudiaremos en otros cursos de Hexlet).
+
+## Cómo funcionan las expresiones lógicas
+
+En Python las expresiones lógicas no devuelven solo `True` o `False`. Devuelven uno de sus operandos. El operador `and` devuelve el primer operando falsy o el último truthy. El operador `or` devuelve el primer operando truthy o el último falsy. Por eso el resultado puede ser una cadena, un número o cualquier otro objeto que participe en la expresión.
 
 ```python
-print(0 or False or '' or [] or 42 or "Hello")  ## 42
+# and devuelve el primer falsy o el último operando
+print("hello" and "world")  # => "world"  (los dos truthy — el último)
+print("" and "world")       # => ""       (el primer falsy)
+print(0 and "world")        # => 0        (el primer falsy)
+
+# or devuelve el primer truthy o el último operando
+print("hello" or "world")   # => "hello"  (el primer truthy)
+print("" or "world")        # => "world"  (el primer truthy)
+print("" or 0)              # => 0        (los dos falsy — el último)
 ```
 
-En este caso:
+El orden de evaluación depende de la prioridad de los operadores.
 
-- El número `0` es equivalente a `False`
-- El valor `False` ya es `False`
-- La cadena vacía (`''`) es equivalente a `False`
-- La lista vacía (`[]`) es equivalente a `False`
-- El número `42` es equivalente a `True`
-- La cadena `"Hello"` también es equivalente a `True`
+```text
+Prioridad (de la más alta a la más baja):
 
-El operador **OR** verifica los valores de izquierda a derecha y devuelve el primer argumento que se pueda transformar en `True`. En este ejemplo, ese valor es el número `42`.
+  ()          paréntesis
+   ↓
+  not         negación
+   ↓
+  and         Y lógico
+   ↓
+  or          O lógico
+```
 
-Ejemplo con el operador **AND**:
+## Ejemplo con el resto de la división
 
 ```python
-print(0 and 1)  ## 0
+result = 10 % 2 == 0 and "yes" or "no"
+print(result)   # => "yes"
 ```
 
-El operador **AND** funciona de tal manera que se interrumpe la ejecución de izquierda a derecha y se devuelve el resultado del primer argumento que se pueda transformar en `False`. Si no hay ningún argumento que cumpla esta condición, se devuelve el último argumento, el de la derecha.
+Analicemos esa expresión paso a paso. Primero se ejecuta la aritmética `10 % 2 == 0` → `True`. Después actúa `and`: como a la izquierda hay verdad, el resultado pasa a ser `"yes"`. Como `"yes"` es truthy, el operador `or` devuelve precisamente ese valor.
+
+El mismo principio dentro de una función:
 
 ```python
-print(42 and "Hello" and [] and 0)  ## []
+def parity(number: int) -> str:
+    return number % 2 == 0 and "even" or "odd"
+
+print(parity(10))  # => "even"
+print(parity(7))   # => "odd"
 ```
 
-En este caso:
-
-- El número `42` es equivalente a `True`
-- La cadena `"Hello"` es equivalente a `True`
-- La lista vacía (`[]`) es equivalente a `False`
-- El número `0` es equivalente a `False`
-
-El operador **AND** verifica los valores de izquierda a derecha y devuelve el primer argumento que se pueda transformar en `False`. En este ejemplo, ese valor es la lista vacía (`[]`).
-
-En Python hay dos reglas de transformación:
-
-- `0`, `0.0`, `''` y `None` se convierten en `False`. Estos valores se llaman **falsy**. También hay otros tipos de datos que aprenderemos en Hexlet.
-- Todo lo demás se convierte en `True`
-
-Estas reglas se utilizan en el desarrollo, por ejemplo, para definir un valor por defecto:
+## Ejemplos
 
 ```python
-value = name or ''
-# Ejemplos
-234 or '' # 234
-'hexlet' or '' # 'hexlet'
-None or '' # ''
+print(7 % 2 == 0 and "even" or "odd")
+# => "odd"
+
+print(("" and "not empty") or "empty")
+# => "empty"
+
+print(("hello" and "not empty") or "empty")
+# => "not empty"
+
+print((-5 > 0 and "positive") or "non-positive")
+# => "non-positive"
 ```
 
-Si `nombre` tiene uno de los valores falsy, se asignará una cadena vacía a la variable `valor`. En este caso, en el código posterior podremos trabajar con `valor` como si fuera una cadena.
+## Uso en funciones
 
-Pero aquí hay un posible error. Si `nombre` contiene un valor falsy y se puede asignar a la variable `valor` un valor como `0`, `False`, `None`, entonces el código anterior no funcionará correctamente:
+La particularidad de los valores truthy y falsy resulta cómoda de aplicar en las funciones. Por ejemplo, se puede escribir una función que devuelve un texto si no está vacío, o un valor por defecto si la cadena está vacía.
 
 ```python
-# El valor realmente existe,
-# pero es Falsy, por lo que no se selecciona en la condición OR
-False or '' # ''
-0 or '' # ''
-None or '' # ''
+def get_text_or_default(text: str, default: str = "empty") -> str:
+    return text or default
+
+print(get_text_or_default("hello"))   # => "hello"
+print(get_text_or_default(""))        # => "empty"
 ```
 
-## Expresiones compuestas
-
-Si se combinan expresiones lógicas entre sí, se pueden obtener formas interesantes de resolver problemas con código.
-
-Supongamos que queremos implementar un código en el que una variable se asigna:
-
-- La cadena `yes` si el número es par
-- La cadena `no` si el número es impar
-
-Esto se puede hacer utilizando los conocimientos que hemos adquirido anteriormente:
-
-```python
-# el número es par
-resultado = 10 % 2 == 0 and 'yes' or 'no' # 'yes'
-# o imprimir directamente en la pantalla
-print(10 % 2 == 0 and 'yes' or 'no') # => 'yes'
-# el número es impar
-print(11 % 2 == 0 and 'yes' or 'no') # => 'no'
-```
-
-Estas expresiones funcionan según el orden y la prioridad. La asignación tiene la prioridad más baja, por lo que ocurre al final. La comparación `==` tiene una prioridad más alta que los operadores lógicos `and` y `or`, por lo que se realiza antes. Luego, el código se ejecuta de izquierda a derecha, ya que la prioridad de `and` es mayor que la de `or`. Veamos los pasos:
-
-```python
-# Para un número par
-# 1 paso
-10 % 2 == 0 # True
-# 2 paso
-True and 'yes' # Resultado: verdadero
-# La comprobación de or se realiza, pero la parte derecha no se ejecuta, ya que se devuelve inmediatamente 'yes'
-
-# Para un número impar
-# 1 paso
-11 % 2 == 0 # False
-# 2 paso
-False and 'yes' # Resultado: falso, se sigue comprobando
-# 3 paso
-False or 'no' # Se selecciona y devuelve 'no'
-```
-
-Se puede utilizar el mismo esquema con cualquier expresión al principio:
-
-```python
-print(somefunc() and 'yes' or 'no')
-```
-
-## Doble Negación
-
-Recordemos cómo se ve una operación de negación:
-
-```python
-answer = True
-print(not answer)  # => False
-```
-
-Con una doble negación, el valor final es igual al valor inicial:
-
-```python
-answer = True
-print(not not answer)  # => True
-```
-
-El operador `not` siempre devuelve un valor booleano, independientemente del tipo de argumento proporcionado, y no cambia el valor al opuesto. Por lo tanto, la doble negación también devolverá un Verdadero/Falso booleano.
-
-```python
-answer = 'python'
-print(not answer) # => False
-print(not not answer) # => True
-```
-
-## Error de Elección
-
-Imagina que necesitamos comprobar si el valor es igual a uno u otro. Por ejemplo, la variable `value` debe contener uno de dos valores: `first` o `second`. Los desarrolladores novatos a veces escriben esta expresión de esta manera:
-
-```python
-value == ('first' or 'second')
-```
-
-Sin embargo, este código dará un resultado incorrecto. Debes recordar la prioridad de las operaciones. Primero, se evalúa todo lo que está dentro de los paréntesis: `'first' or 'second'`. Si ejecutas este código en Replit, la salida será la siguiente:
-
-```bash
-python
-Python 3.8.2 (default, Apr 12 2020, 15:53:37)
->>> 'first' or 'second'
-'first'
->>>
-```
-
-Ahora reemplacemos la expresión original con la expresión parcialmente evaluada:
-
-```python
-value == 'first'
-```
-
-No es en absoluto lo que esperábamos. Y ahora volvamos al inicio y escribamos la verificación correctamente:
-
-```python
-# No es necesario colocar paréntesis,
-# porque la prioridad de == es mayor que la de or
-value == 'first' or value == 'second'
-```
+Aquí la expresión `text or default` funciona así: si `text` no está vacío (truthy), la función lo devolverá. Si `text` está vacío (falsy), la función devolverá `default`.

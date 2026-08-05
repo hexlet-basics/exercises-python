@@ -1,53 +1,53 @@
+Las funciones pueden recibir parámetros. A veces resulta cómodo fijar el valor directamente en la definición de la función, para no indicarlo en cada llamada. Ese valor se llama **valor por defecto**.
 
-En programación, muchas funciones y métodos tienen parámetros que rara vez cambian. En estos casos, se les asignan valores predeterminados que se pueden cambiar según sea necesario. Esto reduce la cantidad de código repetitivo. Veamos cómo se ve esto en la práctica.
+Si el argumento no se pasa, se usa ese valor. Si el argumento se indica, reemplaza el valor por defecto.
 
-Veamos un ejemplo:
+## Ejemplo: repetición de texto
 
-```python
-# Función de potencia
-# El segundo parámetro tiene un valor predeterminado de dos
-def pow(x, base=2):
-    return x ** base
-
-# Tres al cuadrado (dos es el valor predeterminado)
-pow(3)  # 3 * 3 = 9
-# Tres al cubo
-pow(3, 3)  # 3 * 3 * 3 = 27
-```
-
-El valor predeterminado se ve como una asignación normal en la definición. Solo se activa si no se pasa el parámetro.
-
-Imagina que no llevaste las piezas de repuesto para tu automóvil al taller. Entonces el mecánico te ofrecerá poner las que él tiene, por defecto.
-
-Incluso puede haber un valor predeterminado cuando solo hay un parámetro:
+Hagamos una función que repite una cadena varias veces. Por defecto, que sea una vez, pero si se quiere se puede indicar otra cantidad.
 
 ```python
-def my_print(text='nothing'):
-    print(text)
+def repeat(text, times=1):
+    return text * times
 
-my_print()  # => "nothing"
-my_print("Hexlet")  # => "Hexlet"
+print(repeat("Hi"))        # => Hi
+print(repeat("Hi", 3))     # => HiHiHi
 ```
 
-Puede haber cualquier cantidad de parámetros con valores predeterminados:
+En este ejemplo se usa la operación de multiplicar una cadena por un número. Funciona así: se toma la cadena de partida y se repite la cantidad indicada de veces. Por ejemplo, `"A" * 5` se convertirá en `"AAAAA"`. Es una posibilidad incorporada de Python que se aplica a menudo al generar plantillas, separadores y fragmentos de texto repetidos.
+
+```text
+def repeat(text, times=2):    ← times tiene un valor por defecto
+    ...
+
+repeat('go')        →  times = 2  (por defecto)
+repeat('go', 5)     →  times = 5  (indicado explícitamente)
+```
+
+Los parámetros opcionales se indican siempre al final de la lista de parámetros. Por eso en el ejemplo va primero el parámetro obligatorio `text` y solo después de él se sitúa el parámetro `times` con su valor por defecto.
+
+## Ejemplo: unión de palabras con un separador
+
+Por defecto las palabras se unen con un espacio, pero se puede indicar otro carácter.
 
 ```python
-def f(a=5, b=10, c=100):
+def join_words(word1, word2, sep=" "):
+    return word1 + sep + word2
+
+print(join_words("King", "Road"))          # => King Road
+print(join_words("Dragon", "stone", "-"))  # => Dragon-stone
 ```
 
-Los valores predeterminados tienen una restricción. Deben ir al final de la lista de parámetros. Desde el punto de vista de la sintaxis, no es posible crear una función en la que haya un parámetro opcional seguido de uno obligatorio:
+## Ejemplo: varios parámetros por defecto
+
+Una función puede contener más de un parámetro con valores por defecto. Por ejemplo, hagamos una función que construye una cadena separadora. Por defecto el carácter es un guion y la longitud es 10.
 
 ```python
-# Este código dará un error
-def f(a=5, b=10, c=100, x):
-# Y este también
-def f(a=5, b=10, x, c=100):
+def make_line(symbol="-", length=10):
+    return symbol * length
 
-# Este código funcionará
-def f(x, a=5, b=10, c=100):
-
-# Este también funcionará
-def f(x, y, a=5, b=10, c=100):
+print(make_line())             # => ----------
+print(make_line("*"))          # => **********
+print(make_line("*", 5))       # => *****
+print(make_line("#", 3))       # => ###
 ```
-
-Ahora sabes cómo trabajar con valores predeterminados de los parámetros. Pueden estar presentes en varios parámetros o en uno solo. Y recuerda que los valores predeterminados deben estar al final de la lista de parámetros. Este conocimiento te ayudará a reducir la cantidad de código repetitivo.

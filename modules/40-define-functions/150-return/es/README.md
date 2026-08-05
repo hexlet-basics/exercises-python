@@ -1,105 +1,77 @@
+En esta lección aprenderemos a escribir funciones que **devuelven valores**. Esas funciones responden a una pregunta y entregan el resultado de su trabajo, como si dijeran: "Toma, aquí lo tienes, ya lo he calculado".
 
-En esta lección vamos a profundizar en cómo trabajar con las funciones creadas para que sean útiles.
+Por ejemplo, una función puede devolver una cadena con el texto procesado o un número calculado con una fórmula. El valor devuelto se puede usar más adelante. Se guarda en una variable, se pasa a otra función o se muestra en pantalla.
 
-Cuando definimos una función, esta imprime algunos datos en la pantalla:
+![Sum-python](./assets/sum-python.jpg)
 
-```python
-def greeting():
-    print('Hello, Hexlet!')
-```
+Para que la función entregue el resultado, en ella se usa la palabra clave especial `return`. Termina la ejecución de la función e indica qué es exactamente lo que hay que devolver.
 
-Estas funciones tienen poca utilidad, ya que no se puede utilizar su resultado dentro del programa. Veámoslo en un ejemplo.
-
-Tomemos el caso de procesar un correo electrónico. Cuando un usuario se registra en un sitio web, puede ingresar su correo electrónico de diferentes maneras:
-
-* Agregar espacios en blanco al principio o al final: `_support@hexlet.io__`
-* Usar letras en diferentes casos: `SUPPORT@hexlet.io`
-
-Si lo guardamos en la base de datos en ese formato, el usuario no podrá iniciar sesión en el sitio web. Para evitar esto, es necesario preparar el correo electrónico antes de guardarlo en la base de datos: convertirlo a minúsculas y eliminar los espacios en blanco alrededor del texto. Esta tarea se puede resolver en un par de líneas:
+Este es un ejemplo de una función que pone el texto en mayúsculas:
 
 ```python
-def save_email():
-    # El correo electrónico viene del formulario
-    correo = '  SoPoRtE@hexlet.IO'
-    # Eliminamos los espacios en blanco
-    trimmed_email = email.strip()
-    prepared_email = trimmed_email.lower()
-    print(prepared_email)
-    # Aquí se realizaría el guardado en la base de datos
+def shout(name):
+    return name.upper()
 ```
 
-Este código es posible gracias a que se devuelve un valor. Los métodos `strip()` y `lower()` no imprimen nada en la pantalla, sino que **devuelven** el resultado de su trabajo. Por eso podemos asignar ese resultado a variables. Si imprimieran en la pantalla, no podríamos asignar el resultado a una variable. Por ejemplo, no podemos hacer esto con la función `greeting()`:
+Llamamos a `shout()`, le pasamos un nombre y obtenemos una cadena en mayúsculas. Esa cadena es el resultado de la función.
 
 ```python
-message = greeting()
-# en realidad, la función print() devuelve None
-# None es un objeto especial que se utiliza para representar la ausencia de valor
-print(message) # => None
+result = shout('hexlet')
+print(result)  # => HEXLET
+
+result2 = shout('code-basics')
+print(result2)  # => CODE-BASICS
 ```
 
-Ahora vamos a modificar la función `saludo()` para que devuelva datos. Para ello, en lugar de imprimir en la pantalla, utilizaremos la instrucción `return`:
+A diferencia de `print()`, `return` no imprime nada. Simplemente devuelve el valor. La decisión de qué hacer con él la toma el código que llama.
+
+Al llamar a la función `shout('hexlet')` se ejecuta primero la expresión `name.upper()`. Devuelve la cadena `'HEXLET'`. Después `return` entrega ese valor hacia fuera, allí desde donde se llamó a la función. En nuestro caso, ese valor se guarda en la variable `result` y luego se muestra en pantalla con `print()`.
+
+## Devolución de una expresión evaluada
+
+Las funciones no están obligadas a devolver simplemente un parámetro. Normalmente en `return` se indica una **expresión**, que primero se evalúa y luego su resultado se pasa hacia fuera.
 
 ```python
-def greeting():
-    return 'Hello, Hexlet!'
+def full_name(first, last):
+    return first.capitalize() + ' ' + last.capitalize()
 ```
 
-`return` es una instrucción que toma la expresión que se encuentra a su derecha y la devuelve al código que llamó al método. Aquí finaliza la ejecución de la función.
+En este ejemplo armamos el nombre completo a partir del nombre y el apellido. Primero se llama a los métodos `capitalize()`, luego las cadenas se unen con `+`, y la cadena ya lista se devuelve.
 
 ```python
-# Ahora podemos utilizar el resultado de la función
-message = greeting()
-print(message) # => Hello, Hexlet!
-# Incluso podemos realizar acciones con el resultado
-print(mesagge.upper()) # => HELLO, HEXLET!
+name = full_name('Aria', 'Stark')
+print(name)  # => Aria Stark
 ```
 
-Cualquier código después de `return` no se ejecuta:
+Aquí, en la línea `return first.capitalize() + ' ' + last.capitalize()`, se ejecutan primero las dos llamadas a los métodos, luego se añade el espacio y solo entonces el resultado se pasa como valor de retorno.
+
+## Funciones de varias líneas
+
+A veces en el cuerpo de la función hay que dar varios pasos antes de obtener el resultado. En esos casos se escriben varias líneas de código y al final se usa `return` para devolver el valor final.
+
+Por ejemplo, escribamos una función que formatea un nombre: elimina los espacios de los extremos y convierte todas las letras a mayúsculas.
 
 ```python
-def greeting_with_code_after_return():
-    return 'Hello, Hexlet!'
-    print('Nunca me ejecutaré')
+def format_name(name):
+    clean = name.strip()
+    uppercased = clean.upper()
+    return uppercased
 ```
 
-Incluso si una función devuelve datos, eso no limita la posibilidad de imprimir en la pantalla. Además de devolver datos, también podemos imprimir:
+Primero quitamos los espacios con el método `strip()`, después pasamos a mayúsculas con `upper()` y devolvemos el valor final.
 
 ```python
-def greeting_with_return_and_printing():
-    print('Apareceré en la consola')
-    return 'Hello, Hexlet!'
-
-
-# Esto imprimirá el texto en la pantalla y devolverá un valor
-message = greeting_with_return_and_printing()
+print(format_name('  hexlet  '))  # => HEXLET
 ```
 
-No solo se puede devolver un valor específico. Dado que `return` funciona con expresiones, puede haber cualquier cosa a la derecha de él. En este caso, debemos seguir los principios de legibilidad del código:
+### Código después de `return`
+
+Cuando Python llega al operador `return`, la ejecución de la función se detiene. Todo lo que esté escrito después de él dentro de la función **no se ejecutará**:
 
 ```python
-def greeting():
-    message = 'Hello, Hexlet!'
-    return message
+def example():
+    return 'listo'
+    print('este código nunca se ejecutará')
 ```
 
-Aquí no estamos devolviendo la variable en sí, sino el valor que se encuentra en esa variable. A continuación, un ejemplo con cálculos:
-
-```python
-def double_five():
-    # o return 5 + 5
-    result = 5 + 5
-    return result
-```
-
-No es suficiente con definir una función. También es importante que sea útil y que se pueda utilizar su resultado. Ahora, piensa qué devolverá la llamada a la función `run()` que se define a continuación.
-
-```python
-# Definición
-def run():
-    return 5
-    return 10
-
-
-# ¿Qué se imprimirá en la pantalla?
-print(run())
-```
+Por eso `return` se escribe siempre al final de la lógica. Sin embargo, esos finales dentro de una función pueden ser muchos. Lo veremos con más detalle cuando lleguemos a las expresiones condicionales.

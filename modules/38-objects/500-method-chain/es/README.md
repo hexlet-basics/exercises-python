@@ -1,50 +1,98 @@
-
-En esta lección veremos cómo combinar diferentes enfoques al escribir código, así como también analizaremos los errores típicos de los principiantes.
-
-Tenemos el siguiente código:
+Un método es una operación que se aplica a un valor y devuelve un resultado nuevo. Si el resultado permite de nuevo llamar a métodos, se le puede aplicar otro método más. Esa técnica se llama **cadena de métodos (method chaining)**.
 
 ```python
-name = 'Tirion'
-print(name.upper().lower())  # => `tirion`
+text = '  hExLeT  '
+result = text.strip().lower()
+print(result)  # => 'hexlet'
 ```
 
-Imprime en la pantalla `tirion`.
+1. El método `strip()` elimina los espacios al principio y al final de la cadena y devuelve `'hExLeT'`.
+2. El método `lower()` pone todas las letras en minúscula y devuelve `'hexlet'`.
 
-Es la primera vez que vemos la sintaxis de varios puntos seguidos, pero todas las operaciones que aparecen aquí nos son familiares. En este código se combinan las capacidades conocidas hasta el momento del lenguaje estudiado.
+![Cadena de métodos](./assets/methods-chain.png)
 
-Esto ocurre a menudo en la programación. Si no conoces la sintaxis, aún puedes intentar combinar diferentes enfoques y existe la posibilidad de que funcionen.
-
-Para entender cómo funciona este código, debemos descomponer la cadena de llamadas en operaciones individuales:
+Los métodos se llaman uno tras otro, como eslabones de una cadena. Eso permite escribir código compacto y legible.
 
 ```python
-name = 'Tirion'
-upper_name = name.upper()  # 'TIRION'
-print(upper_name.lower())  # 'tirion'
+print('  hExLeT  '.strip().lower().replace('h', 'x'))  # => xexlet
+
+# Lo mismo, pero sin cadena
+text = '  hExLeT  '
+step1 = text.strip()             # 'hExLeT'
+step2 = step1.lower()            # 'hexlet'
+step3 = step2.replace('h', 'x')  # 'xexlet'
+print(step3)
 ```
 
-Los primeros dos ejemplos son equivalentes. Podemos realizar operaciones secuencialmente con la creación intermedia de variables, o podemos construir una cadena continua de atributos y métodos. En las cadenas de llamadas, los cálculos siempre se realizan de izquierda a derecha.
+- `strip()` elimina los espacios.
+- `lower()` pone las letras en minúscula.
+- `replace('h', 'x')` cambia `h` por `x`.
 
-Otro ejemplo para reforzar el concepto:
+Cada método devuelve una cadena nueva, y el método siguiente se aplica ya a esa cadena.
+
+```text
+' Hello, World! '.strip().lower().replace('world', 'python')
+                  │        │           │
+                  ↓        ↓           ↓
+           'Hello, World!' │           │
+                  'hello, world!'      │
+                           'hello, python!'
+```
+
+## Orden de evaluación
+
+En una cadena de métodos el orden de ejecución va de izquierda a derecha. Cada método siguiente se llama sobre el resultado del anterior.
 
 ```python
-name = 'Tirion'
-print(name.replace('Ti', 'Ki').lower())  # => ?
+print('  hExLeT  '.strip().lower().replace('h', 'x'))  # => xexlet
 ```
 
-Necesitamos pensar bien en este código. `.lower()` se aplica al resultado de la llamada al método que está a la izquierda. Y el método `replace()` devuelve una cadena. Los principiantes a menudo cometen errores en las cadenas de llamadas y olvidan hacer la ejecución:
+1. `'  hExLeT  '` es la cadena de partida.
+2. `.strip()` elimina los espacios y devuelve `'hExLeT'`.
+3. `.lower()` pasa a minúsculas y devuelve `'hexlet'`.
+4. `.replace('h', 'x')` reemplaza `'h'` por `'x'` y devuelve `'xexlet'`.
+
+Al usar funciones, la parte interna se ejecuta primero y su resultado se pasa a la función siguiente.
 
 ```python
-name = 'Tirion'
-# ¡Este código no funcionará correctamente!
-print(name.upper.lower())
+ # Ejemplo hipotético, si strip y lower fueran funciones
+print(lower(strip('  hExLeT  ')))
 ```
 
-También es posible construir cadenas infinitamente largas e inútiles que incluyen listas o slices:
+Con los métodos simplemente te "mueves" de izquierda a derecha, leyendo la cadena como una frase normal. Eso hace que trabajar con métodos resulte especialmente cómodo.
+
+Si se confunde el orden, el resultado puede diferir:
 
 ```python
-name = 'Tirion'
-# ¿Cuál es el resultado de esta ejecución?
-print(name[1:5].upper().find('I'))
+print('  hExLeT  '.replace('h', 'x').strip().lower())  # => xexlet
 ```
 
-Esto no funciona con las funciones, ya que generalmente se anidan unas dentro de otras: `f(f(f()))`. Esto dificulta mucho el análisis. Pero esto no significa que no se pueda hacer de manera elegante. En otros lenguajes, esto se logra a través de la composición de funciones o el operador de canalización.
+En este caso `replace()` actuará sobre la cadena con espacios. El resultado final salió igual, pero eso es más bien una coincidencia. En otras situaciones el orden sí importa.
+
+## Cadena después de un corte
+
+Los métodos se pueden llamar también después de otras operaciones, por ejemplo después de un corte de la cadena:
+
+```python
+text = '  Hello, Hexlet!  '
+# Eliminamos los espacios, tomamos la subcadena y pasamos a minúsculas
+print(text.strip()[7:].lower())  # => hexlet!
+```
+
+Aquí se llama primero a `strip()`, que elimina los espacios. Después tomamos el corte de la cadena `[7:]`, empezando por el octavo carácter. Y ya después de eso se llama a `lower()`, para pasar el resultado a minúsculas.
+
+Esa forma de escribir se lee de izquierda a derecha y muestra todo el recorrido de transformación de los datos en una sola línea.
+
+## Dónde termina la cadena
+
+La cadena se puede continuar mientras el resultado siga siendo una cadena de texto (u otro tipo que tenga métodos). Si un método devuelve un número u otro tipo simple, ya no se pueden llamar métodos más adelante:
+
+```python
+text = 'hexlet'
+length = text.upper().count('E')
+print(length)  # => 2
+```
+
+El método `count()` devuelve el número `2`, y ese número ya no tiene métodos de cadena, por eso la cadena de métodos termina ahí.
+
+Las cadenas de métodos son una forma cómoda de unir varias operaciones sobre un valor sin variables intermedias.

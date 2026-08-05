@@ -1,5 +1,4 @@
-
-Tomemos como ejemplo un programa que calcula el tipo de cambio de divisas:
+Veamos un ejemplo de programa que realiza una conversión de divisas:
 
 ```python
 euros_count = 1000
@@ -9,33 +8,31 @@ rubles_count = dollars_count * 60   # 75000.0
 print(rubles_count)
 ```
 
-Desde el punto de vista del desarrollo profesional, este código no cumple con las "mejores prácticas".
+Técnicamente el código funciona. Pero desde el punto de vista del desarrollo profesional, ese código se considera una mala práctica.
 
-En este ejemplo, es difícil entender qué significan los números `60` y `1.25`. Imagina que tienes que trabajar con este código después de un mes o un año, será complicado. También será difícil para otros programadores que no hayan visto el código antes.
+## ¿Cuál es el problema?
 
-En nuestro ejemplo, es fácil deducir el contexto porque las variables están nombradas correctamente. Pero en proyectos reales, el código es mucho más complejo, por lo que a menudo es imposible adivinar el significado de los números.
+En las expresiones se han usado números incomprensibles: __1.25__ y __60__. ¿Qué valores son esos? ¿El tipo de cambio? ¿De dónde salieron? Dentro de un mes o de un año, lo más probable es que no recuerdes qué significan exactamente esos números. Y si el código lo abre otro desarrollador, simplemente no entenderá de dónde sale todo. Esos números se llaman mágicos.
 
-El problema radica en los "números mágicos" — magic numbers. Estos son números cuyo origen no se puede entender a simple vista, es necesario profundizar en lo que sucede en el código.
+Los números mágicos (magic numbers) son valores numéricos cuyo sentido no queda claro a partir del código. Normalmente se usan directamente en expresiones matemáticas, sin variables con nombres comprensibles. Para entender su propósito hay que meterse en el contexto o leer documentación adicional. Los números mágicos dificultan la lectura, la comprensión y el mantenimiento del código.
 
-Para evitar este problema, es necesario crear variables con nombres adecuados. Así todo encajará en su lugar:
+## Cómo evitar la magia
 
- ```python
+La forma más simple consiste en llevar esos valores a variables con nombres comprensibles. Entonces el sentido se volverá evidente:
+
+```python
 dollars_per_euro = 1.25
 rubles_per_dollar = 60
 
 euros_count = 1000
-dollars_count = euros_count * dollars_per_euro     # 1250.0
-rubles_count = dollars_count * rubles_per_dollar  # 75000.0
+dollars_count = euros_count * dollars_per_euro   # 1250.0
+rubles_count = dollars_count * rubles_per_dollar # 75000.0
 
 print(rubles_count)
 ```
 
-En este programa:
+Los números en sí no han desaparecido, pero ahora están escritos en variables cuyos nombres dicen sin ambigüedad qué son.
 
-* Se utiliza la convención de nombres snake_case
-* Las dos nuevas variables se separan de los cálculos posteriores con una línea en blanco. Estas variables tienen sentido incluso sin los cálculos, por lo que esta separación es apropiada ya que mejora la legibilidad.
-* El código resultante está bien nombrado y estructurado, pero es más largo que la versión anterior. Esto ocurre a menudo y es normal, ya que el código debe ser legible.
+## Conclusión
 
-Los números mágicos y los nombres de variables confusos no rompen el código, pero lo hacen menos legible.
-
-Es importante entender que la computadora ejecutará el cálculo especificado de todas formas. Sin embargo, otro programador que lea el código no entenderá nada, lo que dificultará el trabajo. Nombrar adecuadamente las variables es la mitad del éxito en el análisis del código.
+Los números mágicos hacen el código incomprensible y difícil de mantener. Para evitar ese problema hay que reemplazar esos números por variables con nombres significativos. Eso hace el código más legible, especialmente a largo plazo. Un código claro es siempre más importante que la compacidad, aunque el programa se alargue un poco.

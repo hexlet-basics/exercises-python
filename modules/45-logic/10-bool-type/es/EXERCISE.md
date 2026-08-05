@@ -1,5 +1,4 @@
-
-Escriba una función `is_pensioner()` que tome la edad como único argumento y verifique si esa edad corresponde a la jubilación. Se considera jubilación a partir de los 60 años.
+Escribe la función `is_pensioner()`, que recibe la edad como único argumento y comprueba si esa edad es de jubilación. Se considera edad de jubilación los 60 años o más.
 
 Ejemplos de llamadas:
 

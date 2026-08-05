@@ -1,14 +1,39 @@
+`greeting` sirve de ejemplo de un nombre de variable simple y claro. Pero a menudo nombres como `name`, `email` o `price` resultan insuficientes. Por ejemplo, hay que describir el nombre del usuario, la cantidad total de pedidos, la longitud máxima de un mensaje. Esos nombres ya constan de varias palabras. ¿Cómo se verá en ese caso el nombre de la variable?
 
-`greeting` - es un ejemplo de nombre simple, pero no todos los nombres son tan simples como ese. A menudo, incluyen varias palabras, como "nombre de usuario". En los distintos lenguajes de programación se utilizan diferentes convenciones de codificación, por lo que el nombre de la variable será diferente.
+En los distintos lenguajes de programación se usan estilos de nomenclatura distintos. De eso depende cómo se verá un nombre de variable de varias palabras. Por ejemplo, así se puede escribir una variable que guarda la longitud máxima de un mensaje:
 
-En la nomenclatura de variables, se pueden identificar tres enfoques principales que a veces se combinan entre sí. Todos estos enfoques se aplican cuando el nombre de la variable consta de varias palabras:
+1. `maxmessagelength`
+1. `maxMessageLength`
+1. `max-message-length`
+1. `max_message_length`
 
-* **kebab-case** - las partes de la variable se separan con guiones (`my-super-var`)
-* **snake\_case** - se utiliza un guión bajo para separar (`my_super_var`)
-* **CamelCase** - cada palabra en la variable se escribe con mayúscula (`MySuperVar`)
+## Los estilos principales
 
-En Python, las variables se nombran en estilo `snake_case`: las palabras se escriben en minúsculas y se separan con el carácter de guión bajo `_`. Para obtener más información, puedes consultar la sección ["Cómo nombrar variables"](https://peps.python.org/pep-0008/#naming-conventions) en el estándar PEP8.
+Estos son tres enfoques populares para escribir nombres compuestos:
 
-En [Hexlet](https://ru.hexlet.io/?utm_source=code-basics&utm_medium=referral&utm_campaign=programs&utm_content=lesson), comenzamos a trabajar con linters casi desde el principio.
+- kebab-case: las palabras se separan con guion: `max-message-length`.
 
-A continuación, veremos ejemplos de malas prácticas y analizaremos por qué se deben evitar.
+  En Python no funciona, ya que el guion (-) se percibe como el operador de resta.
+
+- snake_case: las palabras se separan con subrayado: `max_message_length`.
+
+  Es el estándar para Python.
+
+- CamelCase (o UpperCamelCase): cada palabra con letra mayúscula, sin separadores: `maxMessageLength`.
+
+## Cómo se hace correctamente en Python
+
+```python
+user_name = "Daenerys"
+max_length = 280
+total_orders_count = 17
+```
+
+- Todas las letras en minúscula
+- Las palabras se separan con el carácter de subrayado
+
+## Cómo no hay que hacerlo
+
+No conviene incluir el tipo de dato en el nombre de la variable. Esos nombres se leen peor y quedan obsoletos rápido. Por ejemplo, `user_name_string` o `messages_number` describen no el sentido de la variable, sino su implementación técnica.
+
+El nombre debe responder a la pregunta «¿qué se guarda?», no «¿de qué tipo es?». Por eso es mejor escribir `user_name` en lugar de `user_name_string`, y `messages_count` en lugar de `messages_number`.

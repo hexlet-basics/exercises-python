@@ -1,9 +1,8 @@
+Implementa la función `normalize_url()`, que realiza la normalización de los datos. Recibe la dirección de un sitio y la devuelve con `https://` al principio.
 
-Implementa la función `normalize_url()`, que realiza la normalización de los datos. Recibe una dirección web y devuelve la misma con `https://` al principio.
+La función recibe direcciones en forma de `DIRECCIÓN` o `http://DIRECCIÓN`, pero siempre devuelve la dirección en forma de `https://DIRECCIÓN`. A la entrada de la función también puede llegar una dirección ya normalizada, `https://DIRECCIÓN`; en ese caso no hay que cambiar nada.
 
-La función acepta direcciones en forma de `DIRECCIÓN` o `http://DIRECCIÓN`, pero siempre devuelve la dirección en forma de `https://DIRECCIÓN`. También puede recibir una dirección ya normalizada `https://DIRECCIÓN`, en cuyo caso no se debe hacer ningún cambio.
-
-Ejemplos de uso:
+Ejemplos de llamadas:
 
 ```python
 print(normalize_url('https://ya.ru'))  # => 'https://ya.ru'
@@ -11,18 +10,18 @@ print(normalize_url('google.com'))     # => 'https://google.com'
 print(normalize_url('http://ai.fi'))   # => 'https://ai.fi'
 ```
 
-Hay varias formas de resolver este problema. Una de ellas es comparar los primeros 7 caracteres de la cadena de argumento con la cadena `http://` y luego agregar o no agregar `https://` en base a eso.
+Hay varias formas de resolver la tarea. Una de ellas es comparar los primeros 7 caracteres de la cadena-argumento con la cadena `http://` y luego, a partir de eso, añadirle o no `https://`.
 
-También es probable que necesites descartar la parte innecesaria al principio de la cadena. Recuerda que vimos cómo obtener una parte de una cadena usando el slicing. Si no lo recuerdas, aquí tienes un recordatorio:
+También es probable que necesites descartar la parte innecesaria del principio de la cadena. ¿Recuerdas que vimos la forma de obtener un trozo de una cadena con un corte? Si no, te lo recuerdo:
 
 ```python
-# Tomamos los primeros 6 caracteres
-print('Invernalia'[:6])  # => 'Inver'
+# Tomamos 2 caracteres desde el principio
+print('python'[:2])  # => 'py'
 ```
 
-Así es, con el slicing también puedes descartar un número determinado de caracteres:
+Pues bien, con los cortes también se puede descartar una cantidad determinada de caracteres:
 
 ```python
-# Descartamos los primeros 6 caracteres
-print('Winterfell'[6:])  # => 'Winter'
+# Descartamos los 2 primeros caracteres
+print('python'[2:])  # => 'thon'
 ```

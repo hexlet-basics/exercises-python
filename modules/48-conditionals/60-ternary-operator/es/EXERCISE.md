@@ -1,11 +1,10 @@
-
-Implemente la función `flip_flop()`, que recibe una cadena como entrada y, si esa cadena es igual a `'flip'`, devuelve la cadena `'flop'`. De lo contrario, la función debe devolver `'flip'`.
+Un botón de la aplicación funciona como un interruptor: cada pulsación cambia el estado al contrario. Implementa la función `flip_flop()`, que recibe de entrada una cadena y, si esa cadena es igual a `'flip'`, devuelve la cadena `'flop'`. En caso contrario, la función debe devolver `'flip'`.
 
 Ejemplos de llamadas:
 
 ```python
-print(flip_flop('flip'))  # => 'flop'
-print(flip_flop('flop'))  # => 'flip'
+print(flip_flop('flip')) # => flop
+print(flip_flop('flop')) # => flip
 ```
 
-Intente escribir dos versiones de la función: una con un if-else normal y otra con un operador ternario.
+Intenta escribir dos versiones de la función: con un if-else normal y con el operador ternario.

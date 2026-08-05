@@ -1,17 +1,60 @@
-Ya hemos aprendido a escribir programas simples, por lo que ahora podemos hablar un poco sobre cómo escribirlos correctamente.
+Cuando distintos desarrolladores escriben código con estilos distintos, el código se vuelve difícil de leer: en un sitio hay un espacio de más, en otro las sangrías son diferentes. Para evitar discrepancias, los programadores acordaron respetar un estilo de codificación único. Ese conjunto de reglas describe cómo debe verse el código: la colocación de los espacios, el formato de las funciones y los nombres de las variables.
 
-El código debe ser formateado de una manera específica para que sea comprensible y fácil de mantener en el tiempo. Existen conjuntos de reglas especiales que describen varios aspectos de la escritura de código, llamadas **convenciones de codificación**. En Python, hay una convención estándar: [PEP8](https://peps.python.org/pep-0008/). Este documento estándar responde prácticamente todas las preguntas sobre cómo formatear una parte específica del código. Este documento contiene todas las reglas que se deben seguir. Recomendamos a los principiantes que se acostumbren a consultar el estándar PEP8 y escribir cualquier código siguiendo sus pautas.
+Un estilo único significa código igualmente claro para todos los miembros del equipo, independientemente de quién lo haya escrito. Eso ahorra tiempo, reduce la cantidad de errores y simplifica el trabajo conjunto.
 
-Hoy en día no es necesario recordar todas las reglas de la convención estándar, ya que existen programas especiales que verifican automáticamente el código y señalan las violaciones. Estos programas se llaman **linters**. Verifican el código para asegurarse del cumplimiento de los estándares. En Python, hay muchos linters, y el más popular de ellos es [flake8](https://flake8.pycqa.org/en/latest/).
+## Estándares de codificación
 
-Echemos un vistazo a un ejemplo:
+En el lenguaje Python hay un estilo de codificación oficial: el documento PEP8. Describe en detalle cómo dar formato al código: qué sangrías usar, cómo colocar los espacios, de qué longitud deben ser las líneas, cómo nombrar las variables y mucho más.
+
+Ese estándar lo conocen y lo usan todos los desarrolladores de Python. A los principiantes les resulta útil consultarlo de vez en cuando y adquirir los hábitos correctos desde el principio. Sin embargo, no hace falta memorizarlo todo de golpe.
+
+## Linters: comprobación automática del código
+
+No hace falta memorizar todas las reglas a mano. Existen programas especiales que lo hacen por ti. Se llaman linters.
+
+Un linter es una herramienta que analiza tu código e informa de las violaciones de los estándares.
+Ayuda a:
+
+- Deshacerse de los espacios de más
+- Respetar las sangrías
+- Escribir expresiones legibles y elegantes
+
+## Un linter moderno: Ruff
+
+A día de hoy, el linter más rápido y popular del mundo Python se considera Ruff. Reúne en sí las reglas de muchas otras herramientas: flake8, isort, pylint, black y otras. Ruff funciona rápido, admite la sintaxis moderna y se desarrolla activamente.
+
+Veamos un ejemplo:
 
 ```python
 result = 1+ 3
 ```
 
-El linter mostrará un error por violar la regla: *E225 missing whitespace around operator*. Según el estándar, el operador `+` siempre debe estar separado por espacios de los operandos.
+Ese código se ve descuidado, y el linter señalará el error con razón. Así se ve el proceso de comprobación:
 
-En el ejemplo anterior, vimos la regla [E225](https://pep8.readthedocs.io/en/release-1.7.x/intro.html#error-codes), que es apenas una sola de la larga lista de reglas. Otras reglas describen la indentación, los nombres, los paréntesis, las operaciones matemáticas, la longitud de las líneas y muchos otros aspectos. Cada regla individual puede parecer insignificante y pequeña, pero juntas forman la base de un buen código. La lista completa de reglas de flake8 está disponible en [esta documentación](https://flake8.pycqa.org/en/latest/user/error-codes.html).
+```text
+Código          Linter            Resultado
+┌──────────┐    ┌──────────┐    ┌─────────────────┐
+│ result=  │ →  │   Ruff   │ →  │ E225: missing   │
+│  1+ 3    │    │          │    │ whitespace       │
+└──────────┘    └──────────┘    └─────────────────┘
+```
 
-Ya estás familiarizado con el linter, ya que la plataforma de Hexlet verifica tu código utilizando uno. Pronto comenzarás a usarlo fuera de Hexlet, cuando implementes proyectos educativos. Configurarás el linter y verificará el código en tiempo real, informándote sobre las violaciones.
+```text
+E225: missing whitespace around operator
+```
+
+Eso significa que antes y después del + faltan espacios. Según el estándar, debería ser así:
+
+```python
+result = 1 + 3
+```
+
+## Las reglas y su sentido
+
+Cada mensaje del linter está ligado a una regla concreta. Por ejemplo, E225 se refiere a los espacios, E302 se refiere a las líneas vacías antes de las funciones, y E501 se refiere a la longitud de las líneas. Cuando acabas de empezar, esos detalles pueden parecer poco importantes. Pero con el tiempo queda claro que son precisamente ellos los que forman un estilo único y legible.
+
+La lista completa de reglas de Ruff se puede consultar en la [documentación oficial](https://docs.astral.sh/ruff/rules/).
+
+## Usar el linter en tus propios proyectos
+
+Cuando empieces a escribir tus propios proyectos fuera de la plataforma educativa, el linter será un ayudante imprescindible. Se puede configurar en cualquier editor de código, ejecutar en la terminal o conectar a la construcción del proyecto. El linter muestra los errores y sabe corregirlos automáticamente.

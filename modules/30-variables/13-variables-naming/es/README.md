@@ -15,8 +15,6 @@ ddr = "New York"
 
 ¿Qué variables son estas? ¿Qué guardan? Para entenderlo hay que leer todo el resto del código y adivinar por el contexto.
 
-![Nomenclatura](./assets/naming.png)
-
 Al ordenador le da igual cómo se llame una variable. Para él, `x`, `abc`, `message` o `elephant_in_the_room` son simplemente etiquetas para guardar datos. A las personas les importa otra cosa. Los programadores leen código bastante más a menudo de lo que lo escriben. Por eso los nombres de las variables son una parte importante de la comunicación a través del código.
 
 ## Buenos ejemplos

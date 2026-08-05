@@ -1,7 +1,5 @@
 Las **operaciones lógicas** son expresiones, por eso se pueden combinar con otras expresiones. Por ejemplo, queremos comprobar la paridad de un número, es decir, si es múltiplo de dos. En programación, para eso se comprueba el resto de la división entre dos. Si el resto es igual a `0`, el número es par. Si el resto no es igual a `0`, el número es impar.
 
-![even-or-odd](./assets/even-or-odd.jpg)
-
 El resto de la división es un concepto simple pero importante en aritmética, álgebra, teoría de números y criptografía. Hay que dividir un número en varios grupos iguales, y si al final queda algo, eso es precisamente el resto de la división.
 
 Repartimos caramelos a partes iguales entre personas:

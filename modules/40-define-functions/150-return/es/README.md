@@ -2,8 +2,6 @@ En esta lección aprenderemos a escribir funciones que **devuelven valores**. Es
 
 Por ejemplo, una función puede devolver una cadena con el texto procesado o un número calculado con una fórmula. El valor devuelto se puede usar más adelante. Se guarda en una variable, se pasa a otra función o se muestra en pantalla.
 
-![Sum-python](./assets/sum-python.jpg)
-
 Para que la función entregue el resultado, en ella se usa la palabra clave especial `return`. Termina la ejecución de la función e indica qué es exactamente lo que hay que devolver.
 
 Este es un ejemplo de una función que pone el texto en mayúsculas:

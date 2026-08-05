@@ -1,7 +1,5 @@
 Algunas funciones en Python tienen **parámetros opcionales**. Eso significa que para ellos hay fijado de antemano un valor por defecto, y al llamar a la función se puede no indicar ese parámetro.
 
-![Taller mecánico](./assets/default-parameters.png)
-
 Veamos la función incorporada `round()`, que redondea un número:
 
 ```python

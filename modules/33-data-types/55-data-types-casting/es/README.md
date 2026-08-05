@@ -1,7 +1,5 @@
 En los programas reales surge a menudo la situación en la que hay que convertir datos de un tipo en otro. Es especialmente habitual, por ejemplo, al procesar la entrada del usuario o los datos de los formularios web. Ahí todo llega en forma de cadenas, incluso si introdujiste un número.
 
-![Conversión de tipos en Python](./assets/number-as-string.png)
-
 Para trabajar con esos valores hay que convertirlos explícitamente al tipo necesario, y para eso Python tiene su propio conjunto de funciones.
 
 ## Conversión de cadena a número

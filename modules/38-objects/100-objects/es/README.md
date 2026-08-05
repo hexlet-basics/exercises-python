@@ -1,83 +1,83 @@
+Python admite la programación orientada a objetos (POO): de forma muy simplificada, es un enfoque en el que operamos no con datos y funciones, sino con objetos y métodos. No pensamos detenernos en detalle en este tema en este curso, porque es amplio y su comprensión requiere cierto nivel de preparación. Ignorarlo por completo es imposible, porque los objetos aparecen literalmente de inmediato, en cuanto empezamos a escribir código en Python. Por eso tocaremos este tema, pero solo en la medida necesaria para las tareas actuales.
 
-Los datos con los que operamos en los programas tienen atributos importantes. En Python, estos atributos están incorporados en el lenguaje. Además, los datos tienen métodos, que son funciones dentro de las propiedades. Las propiedades y los métodos son expresiones similares a las variables o ejecuciones de funciones. Todo esto se puede combinar de diferentes maneras. En esta lección, aprenderemos los fundamentos.
+![Upper](./assets/upper.png)
 
-En programación, operamos con datos, creamos números y cadenas, realizamos diversas operaciones sobre ellos y utilizamos el resultado obtenido. Para realizar una operación, aplicamos operadores o funciones:
-
-```python
-# Suma utilizando el operador +
-1 + 3 # 4
-
-# Contar la longitud utilizando la función len()
-name = 'Hexlet'
-len(name)  # 6
-```
-
-En el ejemplo anterior, hay una clara separación entre los datos y las funciones. Pero esta no es la única forma de organizar el código. En Python, además de esta separación, se utiliza otro enfoque: **orientado a objetos (OO)**.
-
-El código orientado a objetos se basa en combinar datos y funciones en una sola entidad: un **objeto**. En este caso, los datos se llaman atributos y las funciones se llaman métodos.
-
-Así es como se ve:
+Hasta este momento trabajábamos en el código con datos y les aplicábamos funciones. En la POO, en lugar de datos tenemos objetos sobre los que se llaman métodos. Por ejemplo, las cadenas en Python son objetos y tienen un método `upper()`, que convierte todas las letras a mayúsculas.
 
 ```python
-name = 'Hexlet'
-# Método upper()
-upper_name = name.upper()
-print(upper_name)  # => 'HEXLET'
+text = 'hexlet'
+print(text.upper())  # => HEXLET
 ```
 
-Las cadenas en Python son objetos. En el ejemplo anterior, ejecutamos un método, es decir, a una función que está asociada con la cadena. La llamada se realiza utilizando un punto que va inmediatamente después del nombre de la variable. En todo lo demás, los métodos funcionan como funciones normales.
+A diferencia de las funciones, los métodos se llaman *sobre un objeto*. Primero se escribe el objeto y luego, después de un punto, la llamada al método. A pesar de que el método `upper()` no recibe argumentos, por dentro sabe sobre qué objeto se lo llama y tiene acceso al objeto mismo.
 
-También se puede hacer la llamada directamente:
+Surge entonces la pregunta lógica: ¿por qué `len()` está implementada como una función normal y no como un método `str.len()`? Ocurre que `len()` no trabaja solo con cadenas: es una función universal que se puede aplicar a multitud de objetos distintos. A usar objetos y a crear tipos de objetos propios aprendemos en los cursos avanzados de Hexlet.
+
+Las cadenas tienen bastantes métodos incorporados; estos son algunos de ellos.
 
 ```python
-'Hexlet'.upper()  # 'HEXLET'
+# Convertir la primera letra a mayúscula
+print('hexlet'.capitalize())  # => Hexlet
+
+# Convertir todas las letras a minúsculas
+print('HeXleT'.lower())  # => hexlet
+
+# Eliminar los espacios al principio y al final de la cadena
+print('   hi   '.strip())  # => hi
 ```
 
-Las cadenas tienen muchos métodos incorporados que son constantemente útiles para los desarrolladores. Puede ver una lista de ellos en la [documentación](https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods). Aquí hay algunos ejemplos útiles:
+Algunos métodos reciben parámetros. Por ejemplo, en el método `replace()` el primer parámetro contiene la subcadena que hay que reemplazar y el segundo contiene la cadena de reemplazo.
 
 ```python
-name = 'Python'
+text = 'abracadabra'
 
-# Devuelve el índice de la primera aparición de una letra en una cadena
-name.find('t')  # 2
-
-# Convierte a minúsculas
-name.lower()  # 'python'
-
-# Reemplaza una subcadena por otra
-name.replace('on', 'off')  # 'Pythoff'
+print(text.replace('a', 'o'))   # => obrocodobro
+print(text.replace('abra', '!'))  # => !cad!
 ```
 
-Lo mismo se aplica a los números y otros tipos de datos que aún no hemos estudiado. Se puede decir que en Python casi todo es un objeto:
+En Python hay realmente muchos métodos, y no se aprenden de memoria. Normalmente los programadores, en el transcurso del trabajo, recuerdan qué operaciones necesitan en general y cómo se llaman aproximadamente esos métodos. Cuando surge una tarea, o recuerdan el método adecuado, o lo encuentran rápido en la documentación.
+
+## Método y función: comparación
+
+Desde el punto de vista del código, los métodos y las funciones se comportan de forma parecida. Reciben valores y devuelven un resultado. Se diferencian solo en la **sintaxis** de la llamada.
 
 ```python
-x = -5
-# Devuelve el valor absoluto del número
-# El nombre parece extraño, pero es el nombre real del método
-x.__abs__()
+# Llamada a una función
+len('hexlet')
+
+# Llamada a un método
+'hexlet'.upper()
 ```
 
-En el ejemplo anterior, hay un nombre de método con dos guiones bajos al principio y al final. En Python, se llaman métodos que no están destinados a ser ejecutados directamente. Para ellos, se crearon funciones que, dentro de sí mismas, ejecutan los métodos:
+La función se llama desde fuera y recibe el argumento entre paréntesis. El método es una operación incorporada en el valor mismo. Por debajo el valor se pasa hacia dentro como parámetro cero, pero eso queda oculto para nosotros.
+
+```text
+Función:   len('hexlet')         →  6
+                └── argumento
+
+Método:    'hexlet'.upper()      →  'HEXLET'
+            └── objeto  └── método
+```
+
+## Los métodos devuelven valores
+
+Igual que las funciones, los métodos **devuelven un resultado**. Se pueden usar como parte de expresiones.
 
 ```python
-x = -5
-abs(x)  # ejecuta a x.__abs__()
-# -5 elevado a la potencia 3
-pow(x, 3)  # ejecuta a x.__pow__(3)
+name = 'hexlet'
+print(name.upper() + '!') # => HEXLET!
 ```
 
-El creador de Python [decidió](https://stackoverflow.com/questions/83983/why-isnt-the-len-function-inherited-by-dictionaries-and-lists-in-python) que sería más claro expresar las operaciones matemáticas o similares a las matemáticas mediante funciones. Quería que estas funciones se percibieran como operaciones, como la suma o la resta. Esto es más familiar para aquellos que han estudiado matemáticas.
-
-Lo mismo ocurre con la función `len()`:
+Los métodos de las cadenas siempre devuelven una cadena nueva y dejan la original sin cambios. Ese comportamiento se llama inmutabilidad. Todavía hablaremos de ello más adelante, pero por ahora es importante entender que la cadena queda igual y que el resultado del método es un valor nuevo.
 
 ```python
-len('Hexlet')  # Llama a 'Hexlet'.__len__()
+name = 'hexlet'
+print(name.upper()) # => HEXLET
+print(name)         # => hexlet
 ```
 
-Además de los métodos, los objetos también tienen atributos, pero los objetos incorporados en Python tienen pocos atributos. Por ejemplo, el atributo `__doc__` devuelve la documentación de una función. Por lo tanto, las funciones también se consideran objetos:
+## Para qué hacen falta los métodos en Python
 
-```python
-len.__doc__ # 'Return the number of items in a container.'
-```
+En Python, parte de las posibilidades está implementada precisamente como métodos. Eso permite agrupar las operaciones junto a los tipos de datos a los que se refieren. Las cadenas tienen un conjunto de métodos, los números otro y las listas un tercero. Así, en el lenguaje coexisten dos formas de trabajo. Las funciones de propósito general se aplican a cualesquiera datos, y los métodos están "adheridos" a tipos concretos.
 
-Los atributos funcionan y se ven como variables, pero se especifican con un punto después del objeto.
+Si miramos la POO en su conjunto, aporta algo llamado polimorfismo de subtipos (subtyping), que en este curso no se analiza.

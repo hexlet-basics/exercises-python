@@ -1,2 +1,1 @@
-
-Convierte la cadena `text` a minúsculas e imprímela en la pantalla. En la teoría se muestra un ejemplo de un método que realiza esta tarea.
+El usuario escribió el texto con el bloqueo de mayúsculas activado: las letras quedaron en distintos casos. Antes de guardarlo, el programa pasa el texto a minúsculas. Convierte la cadena de la variable `text` a minúsculas y muéstrala en pantalla. En la teoría se muestra un ejemplo del método que resuelve esta tarea.

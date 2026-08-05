@@ -1,33 +1,104 @@
-
-Imagina que necesitamos imprimir en pantalla la frase *¡Father!* dos veces. Podemos resolver esta tarea de la siguiente manera:
-
-  ```python
-print('Father!')
-print('Father!')
-```
-
-En el caso más simple, esto funciona bien. Pero si la frase *Father!* se utiliza más de dos veces, y además en diferentes partes del programa, tendríamos que repetirla en todos los lugares, lo cual es incómodo. Los problemas con este enfoque comienzan cuando necesitamos cambiar la frase, lo cual ocurre con bastante frecuencia. Tendríamos que encontrar todos los lugares en donde se usa esta frase y realizar el reemplazo necesario.
-
-Pero hay otra forma de hacerlo. Para evitar copiar la expresión, simplemente creamos una variable con ella:
+Imagina que hay que imprimir la frase Father! dos veces:
 
 ```python
-# greeting - se traduce como saludo
- greeting = 'Father!'
-print(greeting)
-print(greeting)
-# => Father!
-# => Father!
+print('Father!')
+print('Father!')
 ```
 
-En la línea `greeting = 'Father!'` tomamos una variable con el nombre `greeting` y le asignamos el valor `'Father!'`. La variable apunta a los datos que hemos almacenado en ella. Gracias a esto, los datos se pueden utilizar múltiples veces sin duplicarlos constantemente.
+Ese modo sirve perfectamente si la frase aparece solo un par de veces. Pero ¿qué pasa si se va a usar a menudo, en distintas partes del programa? Entonces habrá que copiar la misma expresión una y otra vez.
 
-Una vez que se ha creado la variable, se puede utilizar. Se inserta en los lugares donde solía estar nuestra frase. Cuando se ejecuta el código, el intérprete llega a la línea `print(greeting)` y reemplaza el contenido de la variable, y luego ejecuta el código.
+¿Y qué ocurrirá si hay que cambiar la frase, por ejemplo reemplazar _Father!_ por _Mother!_? Habrá que buscar y corregir todas las apariciones a mano. Eso es incómodo y lleva a errores.
 
-Para el nombre de la variable se puede utilizar cualquier conjunto de caracteres válidos, que incluyen letras del alfabeto inglés, números y el guión bajo `_`. Sin embargo, no se puede colocar un número al principio. Los nombres de las variables son sensibles a mayúsculas y minúsculas, es decir, `hola` y `HOLA` son dos nombres diferentes para dos variables diferentes. En Python, la capitulación de letras es importante, nunca lo olvides.
+## Variables
 
-El número de variables que se pueden crear es ilimitado. Los programas grandes contienen decenas y cientos de miles de nombres de variables. Así es como se ven dos variables dentro de un mismo programa:
+Para no duplicar la misma cadena, se la puede guardar en una variable e imprimir su contenido:
 
-  ```python
+```python
+greeting = 'Father!'
+
+print(greeting)
+print(greeting)
+```
+
+El resultado:
+
+```text
+Father!
+Father!
+```
+
+![Definición de una variable](./assets/variable-definition.png)
+
+Una **variable** es un nombre detrás del cual se guarda un valor. En nuestro ejemplo creamos una variable con el nombre `greeting` y escribimos en ella la cadena `'Father!'`.
+
+```text
+greeting = 'Father!'
+
+Variable         Valor
+┌──────────┐     ┌──────────┐
+│ greeting │ ──→ │ 'Father!'│
+└──────────┘     └──────────┘
+```
+
+La línea `greeting = 'Father!'` se lee así: «toma el valor `'Father!'` y asígnalo a la variable con el nombre `greeting`». El signo `=` aquí es el operador de asignación, no una indicación de igualdad como en matemáticas. Pone el valor dentro de la variable.
+
+Cuando escribimos `print(greeting)`, el intérprete sustituye el nombre `greeting` por el valor que está guardado en ella. Como resultado, en la pantalla se muestra la cadena `'Father!'`.
+
+```text
+print(greeting)
+      |
+      v
+print('Father!')
+```
+
+## Nombres de las variables
+
+Los nombres de las variables los inventa el propio programador. En Python se pueden usar:
+
+- Letras latinas (a-z, A-Z),
+- cifras (pero no al principio),
+- el guion bajo _.
+
+Ejemplos de nombres admitidos: `greeting`, `name1`, `hello_world`. Python distingue entre minúsculas y mayúsculas. Las variables `greeting`, `Greeting` y `GREETING` son tres variables diferentes.
+
+## Variables y literales
+
+En el código es importante distinguir dónde usamos una variable y dónde escribimos un valor directamente. Eso se nota especialmente en el ejemplo con `print()`:
+
+```python
+greeting = 'Mother!'
+print(greeting)   # => Mother!
+print('greeting') # => greeting
+```
+
+En el primer caso se usa la **variable** `greeting`, y el programa sustituye su valor. En el segundo caso `'greeting'` está entre comillas, por eso es un **literal de cadena**, es decir, un valor listo escrito directamente en el código. A pesar de que vemos la palabra `greeting` en los dos casos, desde el punto de vista del intérprete son cosas absolutamente distintas.
+
+Los literales son datos escritos de forma explícita (por ejemplo, `'Hello'`, `42`, `3.14`). Los identificadores son nombres de variables y funciones (por ejemplo, `greeting`, `print`), que apuntan a valores o comandos ya existentes.
+
+## El orden de uso
+
+Una variable hay que crearla primero (asignarle un valor) y solo después usarla. Si se intenta acceder a una variable antes de crearla, el programa dará un error:
+
+```python
+print(name) # Error: la variable todavía no está definida
+# NameError: name 'name' is not defined
+name = 'Alice'
+```
+
+Ese error se llama «acceso a una variable no declarada». Es bastante fácil de corregir, porque el texto del error dice sin ambigüedad qué variable se usa antes de declararla.
+
+Y en el orden correcto todo funciona:
+
+```python
+name = 'Alice'
+print(name) # => Alice
+```
+
+## Varias variables en un programa
+
+En un mismo programa se pueden crear tantas variables como se quiera. Cada una guarda sus datos y no molesta a las demás:
+
+```python
 greeting1 = 'Father!'
 print(greeting1)
 print(greeting1)
@@ -37,4 +108,8 @@ print(greeting2)
 print(greeting2)
 ```
 
-Para que el programa sea fácil de leer, los programadores suelen crear variables lo más cerca posible del lugar donde se utilizan. Ahora necesitamos entender cómo modificarlas.
+¿Cómo saber cuándo hacen falta varias variables? La cantidad de variables depende de la lógica del programa. Ese tema se desarrolla en detalle más adelante, cuando nos encontremos con las funciones y las construcciones condicionales.
+
+## Dónde crear las variables
+
+Los programadores procuran crear las variables cerca del lugar donde se usan. Eso hace el código más legible. Es especialmente importante en programas grandes, donde las variables pueden ser decenas y cientos de miles.

@@ -1,23 +1,41 @@
-
-Imagina que hemos creado el siguiente programa:
+Imagina que tenemos este programa:
 
 ```python
 x = 'Father!'
 print(x)
 ```
 
-Ya hemos trabajado previamente con un programa similar, pero ahora hemos cambiado el nombre de la variable a `x`.
+Desde el punto de vista técnico todo funciona. Ya hemos visto ejemplos parecidos, pero aquí se usa una variable con el nombre `x`. Los nombres malos dificultan leer y entender el código. Aquí tienes algunos ejemplos de variables mal elegidas:
 
-Al ordenador no le importa cómo llamemos a una variable u otra. Los nombres solamente son importantes para las personas. Por lo general, los programadores leen el código de otros con mucha más frecuencia que las veces que escriben el suyo propio. Para que tus colegas puedan leer y analizar tu código fácilmente, es importante dar nombres claros a las variables.
+```python
+a = "John"
+n = 42
+ddr = "New York"
+```
 
-Es importante pensar en un nombre comprensible que refleje el significado de la variable. Al mismo tiempo, es importante dar nombres que se puedan entender sin contexto; sin tener que estudiar el código circundante.
+¿Qué variables son estas? ¿Qué guardan? Para entenderlo hay que leer todo el resto del código y adivinar por el contexto.
 
-Existe una regla generalmente aceptada: no uses transliteraciones para los nombres; solamente usa el idioma inglés. Si tienes dificultades con el inglés, utiliza un traductor. Con el tiempo, al investigar el código de otros, aprenderás a nombrar correctamente las variables.
+![Nomenclatura](./assets/naming.png)
 
-Entre los desarrolladores hay un chiste: "Los nombres de las variables son una de las cosas más difíciles en la programación". Es cierto que es difícil inventarse nombres. Por ejemplo, es difícil nombrar una variable que almacena "la cantidad de pedidos impagados de clientes con deudas del trimestre anterior".
+Al ordenador le da igual cómo se llame una variable. Para él, `x`, `abc`, `message` o `elephant_in_the_room` son simplemente etiquetas para guardar datos. A las personas les importa otra cosa. Los programadores leen código bastante más a menudo de lo que lo escriben. Por eso los nombres de las variables son una parte importante de la comunicación a través del código.
 
-Para poner a prueba tus habilidades, intenta hacer esta tarea:
+## Buenos ejemplos
 
-> Piensa en un nombre para una variable que almacene "la cantidad de hermanos y hermanas del rey".
->
-> Escribe el nombre en un bloc de notas o envíatelo por correo electrónico. No incluyas nada más que el nombre de la variable. Volveremos a este tema en unas lecciones.
+```python
+user_name = "Arya Stark"
+unpaid_orders_count = 3
+max_attempts = 5
+```
+
+Un buen nombre de variable ayuda a entender qué hace el programa sin leer con detalle cada línea.
+Es especialmente importante dar nombres cuyo sentido se entienda sin contexto, sin necesidad de leer todo el código de alrededor.
+
+Aquí tienes algunos consejos:
+
+- Usa el inglés. Es el estándar internacional. Es mejor escribir `orders_count` que `cantidad_pedidos`. Si con el inglés todavía cuesta, usa un traductor: es normal. Con el tiempo se volverá más fácil.
+- Procura que el nombre refleje el sentido de la variable. Que sea un poco más largo, pero comprensible.
+- No temas gastar tiempo en elegir un buen nombre. Es una inversión en la legibilidad y el mantenimiento del código.
+
+Entre los programadores hay incluso una broma: «Algunas de las tareas más difíciles en programación son la caché y inventar nombres para las variables». A veces inventar un nombre adecuado cuesta de verdad. Aquí tienes un ejemplo: ¿cómo llamarías a una variable que guarda la cantidad de pedidos sin pagar de clientes con deuda del trimestre anterior?
+
+Y ahora un pequeño ejercicio: inventa un nombre para una variable que vaya a guardar «la cantidad de hermanos y hermanas del rey». Escríbelo en una nota o mándatelo por correo. Solo el nombre, sin explicaciones. Volveremos a esta tarea dentro de unas lecciones.

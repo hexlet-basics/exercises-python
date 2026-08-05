@@ -1,24 +1,39 @@
+En programación aparecen a menudo construcciones repetidas. En Python, como en muchos otros lenguajes, existe la posibilidad de acortar su escritura. Esas simplificaciones se llaman **azúcar sintáctico**. Hacen el proceso de escribir código más corto y más cómodo, conservando el mismo resultado.
 
-Construcciones como `index = index + 1` se utilizan frecuentemente en Python, por lo que los creadores del lenguaje agregaron una forma abreviada: `index += 1`.
+## Formas abreviadas de asignación
 
-Solamente difieren en la forma de escribirlos. El intérprete convertirá la construcción abreviada en la expandida.
+A menudo hace falta modificar el valor de una variable, sumándole o restándole algo, multiplicándolo o dividiéndolo por un número. La variante básica se ve así:
 
-Estas abreviaturas se llaman **azúcar sintáctico**, porque hacen que el proceso de escribir código sea un poco más fácil y agradable.
+```python
+index = index + 1
+count = count * 2
+total = total - 5
+price = price / 3
+```
 
-Esta forma aparece especialmente a menudo en los ciclos, donde normalmente cambiamos un contador y acumulamos un resultado:
+Python permite escribirlo de forma más corta, con los operadores combinados:
+
+```python
+index += 1     # lo mismo que index = index + 1
+count *= 2     # lo mismo que count = count * 2
+total -= 5     # lo mismo que total = total - 5
+price /= 3     # lo mismo que price = price / 3
+```
+
+En los bucles esas abreviaturas aparecen con especial frecuencia. En ellos normalmente cambiamos el contador y acumulamos el resultado:
 
 ```python
 sum = 0
 index = 1
 
 while index <= 5:
-    sum += index      # Lo mismo que sum = sum + index
-    index += 1        # Lo mismo que index = index + 1
+    sum += index      # lo mismo que sum = sum + index
+    index += 1        # lo mismo que index = index + 1
 
 print(sum)  # => 15
 ```
 
-Sin la forma abreviada, el cuerpo del ciclo sería más largo:
+Sin las abreviaturas, el cuerpo del bucle sería más largo:
 
 ```python
 while index <= 5:
@@ -26,9 +41,17 @@ while index <= 5:
     index = index + 1
 ```
 
-Existen formas abreviadas para todas las operaciones aritméticas y para la concatenación de cadenas:
+## Otras operaciones
 
-* `a = a + 1` → `a += 1`
-* `a = a - 1` → `a -= 1`
-* `a = a * 2` → `a *= 2`
-* `a = a / 1` → `a /= 1`
+Esa forma de escribir funciona con números y con otros tipos de datos.
+
+Para las cadenas se usa el operador de concatenación:
+
+```python
+text = "Hello"
+text += " World"   # lo mismo que text = text + " World"
+```
+
+## Abreviaturas admitidas
+
+Existe una forma abreviada para casi todos los operadores: `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=`. Todas funcionan según el mismo principio: toman el valor actual de la variable, aplican la operación y guardan el resultado en la misma variable.

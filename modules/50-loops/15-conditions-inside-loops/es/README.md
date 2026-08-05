@@ -1,32 +1,51 @@
+Dentro de un bucle se pueden usar condiciones. Así el programa repite una acción varias veces, pero en cada repetición toma una decisión.
 
-Dentro de un bucle, al igual que dentro de una función, se pueden ejecutar instrucciones. Por lo tanto, dentro de un bucle se puede utilizar todo lo aprendido anteriormente, como por ejemplo, estructuras condicionales.
+![Condiciones dentro del bucle](./assets/conditions-inside-loops.png)
 
-Imagina una función que cuenta cuántas veces aparece una letra en una oración. Aquí tienes un ejemplo de cómo funcion un bucle de esta forma:
+Supongamos que hay que recorrer los números del `1` al `10` e imprimir solo los pares. El bucle recorre todos los números uno tras otro, y la condición dentro del bucle decide cuáles de ellos aparecerán en la pantalla.
 
-```python
-count_chars('El miedo corta más profundo que las espadas.', 'e')  # 4
-# Si no se encuentra ninguna coincidencia, el resultado es 0
-count_chars('Sansa', 'y')  # 0
-```
-
-Antes de ver el contenido de la función, piensa en lo siguiente:
-
-* ¿Es esta operación una agregación?
-* ¿Cuál será la condición para verificar la aparición de un carácter?
+Para el recorrido hace falta un contador. Guarda el número actual y aumenta después de cada repetición. Hay que imprimir el número solo cuando pasa la comprobación.
 
 ```python
-def count_chars(string, char):
-    index = 0
-    count = 0
-    while index < len(string):
-        if string[index] == char:
-            # Solamente contamos los caracteres que coinciden
-            count = count + 1
-        # El contador se incrementa en cualquier caso
-        index = index + 1
-    return count
+number = 1
+while number <= 10:
+    if number % 2 == 0:
+        print(number)
+    number = number + 1
+
+# => 2
+# => 4
+# => 6
+# => 8
+# => 10
 ```
 
-Esta es una tarea de agregación. Aunque no cuenta todos los caracteres para calcular la suma, es necesario analizar cada carácter. La diferencia clave de este bucle con los que se han visto anteriormente es que contiene una condición en su cuerpo.
+El bucle `while` recorre los números del `1` al `10`. La condición dentro del bucle comprueba el número actual. Si `number % 2 == 0`, el número se divide entre `2` sin resto y el programa lo muestra en la pantalla.
 
-La variable `count` solo se incrementa cuando el carácter actual coincide con el carácter esperado. De lo contrario, esta función es típicamente una función agregada que devuelve la cantidad de caracteres necesarios.
+El contador aumenta después de la comprobación en cualquier caso. Eso es importante. Si se aumentara `number` solo dentro del `if`, el bucle se detendría en el primer número impar y funcionaría infinitamente.
+
+## El funcionamiento paso a paso
+
+Antes de la primera repetición, `number` es igual a `1`.
+
+**Paso 1.** La condición del bucle `number <= 10` es verdadera, por eso el programa entra en el cuerpo del bucle. El número `1` es impar, el bloque `if` no se ejecuta. Después `number` aumenta hasta `2`.
+
+**Paso 2.** La condición del bucle es verdadera de nuevo. El número `2` es par, por eso el programa imprime `2`. Después `number` aumenta hasta `3`.
+
+Más adelante el bucle sigue comprobando cada número. Los números impares los omite y los pares los muestra en la pantalla. Cuando `number` sea igual a `11`, la condición `number <= 10` será falsa y el bucle terminará.
+
+## Las condiciones cambian la acción, no el movimiento
+
+En esos bucles resulta cómodo separar dos partes. El contador lleva el programa al valor siguiente, y el `if` decide qué hacer con el valor actual.
+
+```python
+number = 1
+while number <= 10:
+    if number > 5:
+        print(number)
+    number = number + 1
+```
+
+Aquí el bucle recorre el mismo rango del `1` al `10`, pero la condición de dentro es otra. Por eso el programa imprime solo los números mayores que `5`.
+
+La condición dentro del bucle puede comprobar cualquier cosa. Por ejemplo, la paridad del número, la coincidencia de un carácter, la longitud de una cadena o el valor de una variable. Lo principal es que el contador siga cambiando y que el bucle pueda terminar.

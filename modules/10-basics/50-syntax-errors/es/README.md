@@ -1,15 +1,33 @@
+Si un programa en Python está escrito violando las reglas, el intérprete detendrá la ejecución y mostrará un mensaje de error. En ese mensaje se indica:
 
-Si un programa escrito en Python tiene errores de sintaxis, el intérprete mostrará un mensaje correspondiente en la pantalla. También indicará el archivo y la línea donde se produjo el error.
+- El tipo de error,
+- la línea en la que ocurrió,
+- y (a menudo) el punto donde el intérprete «se tropezó».
 
-Un **error de sintaxis** ocurre cuando el código se ha escrito con violación de las reglas gramaticales. En los lenguajes naturales, la gramática es importante, pero generalmente se puede entender y leer el texto con errores. En la programación, todo es estricto. El más mínimo error y el programa ni siquiera se ejecutará. Un ejemplo puede ser un punto y coma olvidado, paréntesis mal colocados y otros detalles.
+## ¿Qué es un error de sintaxis?
 
-Aquí hay un ejemplo de código con un error de sintaxis:
+Un error de sintaxis (SyntaxError) es una violación de las reglas de escritura del código (las reglas gramaticales) en un lenguaje de programación concreto. Esos errores aparecen si el código está escrito desviándose del formato esperado, por ejemplo si no se cerró una cadena, se omitió un paréntesis, se alteró el orden de los símbolos, etc.
+
+![Errores](./assets/errors-python.png)
+
+A diferencia de las lenguas naturales, donde un texto con errores se puede entender por el contexto, en programación incluso la mínima desviación deja el código inservible.
+
+```text
+Código con error       Intérprete              Resultado
+┌──────────────┐      ┌─────────────┐      ┌──────────────────┐
+│ print('Hi'   │  ──> │   Python    │  ──> │ SyntaxError:     │
+└──────────────┘      └─────────────┘      │ unexpected EOF   │
+                                           └──────────────────┘
+```
+
+Veamos un ejemplo simple con un error de sintaxis:
 
 ```python
+# La variante correcta es esta: print('Hodor')
 print('Hodor)
 ```
 
-Si ejecutamos el código anterior, veremos el siguiente mensaje:
+En este código no se cerró la comilla, lo que hace que el programa sea incorrecto desde el punto de vista de la sintaxis. Intentemos ejecutar el programa y el intérprete dará un error:
 
 ```bash
 python index.py
@@ -19,4 +37,19 @@ File "index.py", line 1
 SyntaxError: EOL while scanning string literal
 ```
 
-Por un lado, los errores de sintaxis son los más simples, porque están relacionados con las reglas gramaticales de escribir código, no con el significado del código. Son fáciles de corregir: solo necesitas encontrar la violación en la escritura. Por otro lado, el intérprete no siempre puede señalar claramente esta violación. Por lo tanto, a veces es necesario colocar el paréntesis olvidado no donde indica el mensaje de error.
+El texto, por falta de costumbre, puede resultar incomprensible, pero eso es normal: cuanto más te encuentres con esos errores, más entenderás a primera vista qué ocurrió.
+
+## ¿Por qué esos errores se consideran simples?
+
+Los errores de sintaxis:
+
+- son fáciles de notar: el código a menudo se resalta en el editor;
+- son fáciles de corregir: basta con devolver el símbolo omitido o arreglar la estructura.
+
+Pero hay un pero. El intérprete no siempre señala exactamente el lugar donde se cometió el error. A veces el problema está unas líneas más arriba. Por ejemplo, un paréntesis abierto pero no cerrado en una línea puede «romper» todo el código siguiente.
+
+## ¿Qué hacer ante un error de sintaxis?
+
+- Lee el mensaje de error. Casi siempre contiene información útil.
+- Comprueba la línea indicada en el mensaje y la línea anterior: a veces el error está «escondido» un poco antes.
+- Usa un [editor con resaltado de sintaxis](https://code.visualstudio.com/): te ayudará a notar los problemas de inmediato (por ejemplo, comillas o paréntesis sin cerrar).

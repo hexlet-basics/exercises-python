@@ -1,90 +1,120 @@
-
-Queremos mostrar el siguiente diálogo:
+Supongamos que queremos mostrar el texto de abajo en dos líneas.
 
 ```text
 - Are you hungry?
 - Aaaarrrgh!
 ```
 
-Intentemos imprimir en pantalla una cadena de texto con este contenido:
+Si simplemente pasamos ese texto a `print()`, Python lo imprimirá todo en una sola línea. Técnicamente se pueden escribir dos `print()` seguidos, pero imaginemos que queremos hacerlo con uno solo.
 
- ```python
+```python
 print("- Are you hungry?- Aaaarrrgh!")
 # => - Are you hungry?- Aaaarrrgh!
 ```
 
-Como puedes ver, el resultado no es el que esperábamos. Las cadenas de texto se han colocado una al lado de la otra en lugar de una debajo de la otra. Necesitamos decirle al intérprete "presiona Enter" - y que haga un salto de línea después del signo de interrogación. Esto se puede hacer utilizando el carácter `\n`:
+Para que cada una empiece en una línea nueva, hay que añadir un salto de línea, es decir, «pulsar Enter». En programación eso se implementa añadiendo caracteres especiales, en este caso `\n`. Sí, no es un error tipográfico. A pesar de que aquí vemos dos caracteres, desde el punto de vista de Python es un solo carácter.
 
 ```python
 print("- Are you hungry?\n- Aaaarrrgh!")
-# => - Are you hungry?
-# => - Aaaarrrgh!
 ```
 
-`\n` es un ejemplo de una **secuencia de escape**. Estas secuencias también se conocen como construcciones de control. No se pueden ver en la forma en que se escriben.
+El resultado será este.
 
-Cuando escribes algún texto en Word, presionas Enter al final de la línea. El editor agrega un carácter especial invisible al final de la línea, que se llama LINE FEED (LF, salto de línea). En algunos editores incluso puedes habilitar la visualización de caracteres invisibles. Entonces el texto se verá más o menos así:
+```text
+- Are you hungry?
+- Aaaarrrgh!
+```
+
+## ¿Qué es `\n`?
+
+`\n` es una secuencia de control (en inglés escape sequence, a veces se dice «secuencia escapada»). Denota un salto de línea, pero no se muestra directamente. No verás `\n` en la salida del programa, ya que solo influye en la disposición del texto.
+
+En los editores de texto, al pulsar Enter se añade el carácter invisible LF (Line Feed). Eso es justamente lo que significa `\n`. A veces se pueden ver esos caracteres si se activa la visualización de caracteres especiales.
 
 ```text
 - ¡Hola!¶
-- ¡Oh, hola!¶
+- ¡Ah, hola!¶
 - ¿Cómo estás?
 ```
 
-El dispositivo que muestra el texto correspondiente tiene en cuenta este carácter. Por ejemplo, una impresora, al encontrar un LF, avanza el papel hacia arriba una línea, y un editor de texto mueve todo el texto siguiente hacia abajo, también una línea.
+Las impresoras, los editores y los intérpretes de Python entienden `\n` como la orden de empezar el texto en una línea nueva.
 
-Hay varias docenas de estos caracteres invisibles, pero en programación sólo se encuentran algunos. Además del salto de línea, estos caracteres incluyen:
+## Ejemplos de uso de `\n`
 
-* tabulación `\t` - la ruptura que se produce al presionar la tecla Tab
-* retorno de carro `\r` - solo funciona en Windows
-
-Puedes reconocer estas construcciones de control en el texto por el carácter `\`. Los programadores a menudo usan el salto de línea `\n` para formatear correctamente el texto. Por ejemplo, escribamos este código:
-
-```python
-print("Gregor Clegane\nDunsen\nPolliver\nChiswyck")
-```
-
-Entonces se mostrará en pantalla:
+Así procesa Python la secuencia de control `\n`.
 
 ```text
-Gregor Clegane
-Dunsen
-Polliver
-Chiswyck
+En el código  'Hello\nWorld'
+                    ↓
+En pantalla   Hello
+              World
 ```
 
-Al trabajar con el carácter de salto de línea, ten en cuenta los siguientes puntos:
-
-1. No importa lo que haya antes o después de `\n`: un carácter o una cadena vacía. El salto se detectará y se realizará de todos modos.
-
-2. Una cadena puede contener solo `\n`:
-
-   ```python
-print('Gregor Clegane') # Cadena de texto
-print("\n") # Cadena con un carácter de salto de línea invisible
-print('Dunsen') # Cadena de texto
-   ```
-
-   El programa mostrará en pantalla:
-
-   ```text
-Gregor Clegane
-
-
-Dunsen
-   ```
-
-3. En el código, la secuencia `\n` se ve como dos caracteres, pero para el intérprete es un solo carácter especial.
-
-4. Si deseas mostrar `\n` como texto (dos caracteres separados), puedes usar la técnica de escape: agregar otro `\` al principio. La secuencia `\\n` se mostrará como los caracteres `\` y `n`, que van uno tras otro:
+La posición de `\n` cambia la salida final.
 
 ```python
-print("Joffrey loves using \\n")
-# => Joffrey loves using \n
+print("Hello\nWorld")
+# Hello
+# World
+
+print("Hello \nWorld")
+# Hello 
+# World  (al final de la primera línea hay un espacio)
+
+print("Hello\n World")
+# Hello
+#  World  (en la segunda línea hay un espacio al principio)
+
+print("Hello\n\nWorld")
+# Hello
+#
+# World  (una línea vacía entre ellas)
 ```
 
-En Windows, por defecto se utiliza `\r\n` para los saltos de línea. Esta combinación funciona bien solo en Windows, pero causa problemas al transferir a otros sistemas. Por ejemplo, cuando en un equipo de desarrollo hay usuarios de Linux.
+Los espacios antes o después de `\n` también se cuentan. Python los percibe como caracteres normales y los muestra en la salida.
 
-El problema es que la secuencia `\r\n` se interpreta de manera diferente según la codificación seleccionada, de lo cual hablaremos más adelante. Por esta razón, en entornos de desarrollo se recomienda siempre usar `\n` sin `\r`.
+También puedes insertar `\n` en cualquier parte de la cadena: antes, después o incluso usarlo por separado.
 
-En este caso, el salto de línea siempre se interpreta de la misma manera y funciona perfectamente en cualquier sistema. No olvides configurar tu editor para usar `\n`.
+```python
+print("First line")
+print("\n")         # Simplemente una línea vacía
+print("Second line")
+```
+
+El resultado será este.
+
+```text
+First line
+
+Second line
+```
+
+## Cómo mostrar el propio carácter `\n`
+
+`\n` en Python es una secuencia de control. Controla la disposición del texto y no se muestra en la pantalla como los caracteres normales. Si necesitas mostrar precisamente los caracteres `\` y `n`, y no un salto de línea, hay que escaparlos. Para eso, antes de la barra invertida se añade otra barra.
+
+```python
+print("Hello\\nWorld")
+# Hello\nWorld
+
+# Si se olvida indicar la segunda barra
+print("Hello\nWorld")
+# Hello
+# World
+
+```
+
+En ese caso Python entiende `\\` como una barra invertida normal y muestra la cadena sin salto de línea.
+
+## Otras secuencias de control
+
+Además de `\n`, en Python hay otras secuencias de control.
+
+- `\t` denota la tabulación (el equivalente de la tecla Tab).
+- `\r` denota el retorno de carro (se usa en Windows, pero se aplica raramente en código Python).
+- En programación se usa con más frecuencia precisamente `\n`, y basta para la mayoría de las tareas.
+
+## Detalles importantes
+
+- `\n` es un solo carácter, a pesar de que en el código se escribe como dos (\ y n).
+- En Windows se usa por defecto la combinación `\r\n`, pero en Python (y en general en el desarrollo multiplataforma) se acostumbra a usar solo `\n`, para evitar problemas al llevar el código entre sistemas.

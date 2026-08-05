@@ -1,30 +1,75 @@
+A menudo hay que construir cadenas a partir de varias partes, por ejemplo unir el nombre y el apellido, añadir una unidad de medida o componer un texto a partir de una plantilla. Para eso se usa la operación de concatenación, es decir, el pegado de cadenas.
 
-En el desarrollo web, los programas operan constantemente con cadenas de texto. Todo lo que vemos en los sitios web está representado de alguna manera como texto. Este texto, en su mayoría, es dinámico, es decir, se obtiene a partir de diferentes partes que se unen.
+## Cómo unir cadenas
 
-Para unir cadenas de texto, es necesario realizar una **concatenación**:
+En Python las cadenas se unen mediante el operador +. A pesar de que ese operador se usa también para sumar números, en el caso de las cadenas significa unión, es decir, pegar el contenido.
 
 ```python
-# El operador es el mismo que se utiliza para sumar números,
-# pero aquí tiene un significado diferente (semántica)
-print('Dragon' + 'stone')  # => Dragonstone
+print('Dragon' + 'stone')
+# => Dragonstone
 ```
 
-La concatenación de cadenas siempre se realiza en el mismo orden en el que se escriben los operandos. El operando izquierdo se convierte en la parte izquierda de la cadena, y el operando derecho en la parte derecha. Aquí hay algunos ejemplos adicionales:
+El orden importa. Primero va la parte izquierda ('Dragon'), después la derecha ('stone'). El resultado sale en el orden en que están indicados los operandos.
+
+Así funciona la unión de varias cadenas. El código:
 
 ```python
-print('Kings' + 'wood')      # => Kingswood
-print('Kings' + 'road')      # => Kingsroad
-print("King's" + 'Landing')  # => King'sLanding
+print('Hello' + ', ' + 'World!')
 ```
 
-Como puedes ver, puedes concatenar cadenas incluso si se escriben con diferentes tipos de comillas.
+La ejecución:
 
-Un espacio en blanco es un carácter igual que los demás, por lo que la cantidad de espacios en blanco que coloques en una cadena será la misma en la cadena resultante:
+```text
+'Hello' + ', ' + 'World!'
+└──┬──┘   └┬┘   └──┬───┘
+   └────┬───┘       │
+  'Hello, '    +  'World!'
+     └──────┬───────┘
+      'Hello, World!'
+```
+
+Ejemplos.
 
 ```python
-# Colocamos un espacio en blanco en la parte izquierda
+print('Kings' + 'wood')       # => Kingswood
+print('Kings' + 'road')       # => Kingsroad
+# Aquí por fuera hay comillas dobles, porque dentro hay una simple
+print("King's" + 'Landing')   # => King'sLanding
+```
+
+Python permite unir cadenas incluso si están escritas con comillas distintas. Lo importante es que las dos partes sean cadenas.
+
+## El espacio también es un carácter
+
+Al unir, Python no inserta espacios automáticamente. Si entre las partes debe haber un espacio, hay que indicarlo a mano.
+
+```python
+# Espacio al final de la primera cadena
 print("King's " + 'Landing')  # => King's Landing
 
-# Colocamos un espacio en blanco en la parte derecha
+# Espacio al principio de la segunda cadena
 print("King's" + ' Landing')  # => King's Landing
 ```
+
+El resultado será el mismo. Pero si no se añade el espacio, las palabras se pegarán.
+
+## Secuencias de control
+
+En las cadenas se pueden usar secuencias de control, por ejemplo `\n` para el salto de línea o `\t` para la tabulación. En la concatenación funcionan igual que cualquier otro carácter.
+
+```python
+print('Hello,' + '\n' + 'World!')
+# =>
+# Hello,
+# World!
+
+print('A' + '\t' + 'B')
+# => A	B
+```
+
+## Conclusión
+
+La concatenación es la unión de cadenas mediante `+`, y las cadenas se pueden unir independientemente del tipo de comillas.
+
+- El pegado ocurre estrictamente en orden de izquierda a derecha.
+- Los espacios no se añaden automáticamente, hay que incluirlos en las cadenas a mano.

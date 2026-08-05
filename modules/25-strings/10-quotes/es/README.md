@@ -1,7 +1,8 @@
+Las cadenas en la programación en Python se usan con mucha frecuencia y en las situaciones más diversas. Con ellas trabajamos con texto, mostramos mensajes en la pantalla, procesamos la entrada del usuario e interactuamos con sistemas externos.
 
-En esta lección vamos a entender qué es una cadena de texto y qué papel juegan las comillas en el código.
+![Cadenas de texto](./assets/strings.png)
 
-Definir una cadena de texto es bastante fácil: es un conjunto de caracteres. Imaginemos que tenemos las siguientes instrucciones:
+Desde el punto de vista de Python, una cadena es simplemente un conjunto de caracteres encerrado entre comillas. Veamos unos ejemplos.
 
 ```python
 'Hello'
@@ -11,59 +12,103 @@ Definir una cadena de texto es bastante fácil: es un conjunto de caracteres. Im
 ''
 ```
 
-¿Cuáles de estas opciones son cadenas de texto? En realidad, todas las cinco opciones previas son válidas:
+Todas esas variantes son cadenas.
 
-* Con `'Hello'` y `'Goodbye'` es bastante obvio el asunto, ya que previamente hemos trabajado con construcciones similares y las hemos llamado cadenas de texto.
-* `'G'` y `' '` también son cadenas de texto; simplemente contienen un solo carácter.
-* `''` es una cadena de texto vacía, ya que no contiene ningún carácter.
+- `'Hello'`, `'Goodbye'` y `'G'` son cadenas de varios caracteres o de uno solo.
+- `' '` es una cadena formada por un solo espacio.
+- `''` es una cadena vacía, en ella no hay ni un carácter. Cumple el mismo papel que el 0 en matemáticas.
 
-Consideramos como cadena de texto todo lo que está dentro de comillas, ya sea si se trata de un espacio, un solo carácter, o incluso, la ausencia de caracteres.
+Es decir, todo lo que está dentro de las comillas se considera una cadena, aunque solo haya un espacio o no haya absolutamente nada.
 
-Hasta ahora hemos estado escribiendo cadenas de texto entre comillas simples, pero esa no es la única forma. También podemos usar comillas dobles:
+Si se muestran las cadenas en la pantalla, `'Hello'` y `'Goodbye'` se verán con claridad. Pero `' '` y `''` pueden despistar, porque la salida de una cadena vacía parece una ausencia total, mientras que una cadena con un espacio muestra un «espacio vacío» que visualmente es difícil de distinguir. Sin embargo, Python las diferencia con claridad. Una cadena vacía significa la ausencia de caracteres, mientras que una cadena con un espacio contiene un carácter de espacio concreto.
+
+Pregunta de control. ¿Son estas cadenas iguales o no?
 
 ```python
-print("Dracarys!")
+'hexlet'
+' hexlet'
 ```
 
-Ahora, imaginemos que queremos imprimir la frase *La madre de los dragones*. El apóstrofe antes de la letra **s** es un carácter igual que una comilla simple. Intentemos esto:
+## Terminología. ¿Cadena o línea?
 
- ```python
+En programación hay una trampa terminológica.
+
+- Una cadena (string) es un tipo de dato (el que analizamos arriba), por ejemplo 'hello'.
+- Una línea (line) es una fila de texto en un archivo o en el código.
+
+Por ejemplo, en el código de abajo hay una línea, pero no una cadena.
+
+```python
+print(5)
+```
+
+Para evitar la confusión, en este curso usaremos estas formulaciones.
+
+- Cadena, cuando hablamos del tipo de dato.
+- Línea, cuando se trata de las filas del código.
+
+## Comillas simples y dobles
+
+En Python las cadenas se pueden escribir tanto entre comillas simples como entre dobles.
+
+```python
+print('Hello')
+print("Hello")
+```
+
+Por defecto se acostumbra a usar comillas simples `'`, si dentro de la cadena no se necesitan dobles. Ese estilo lo sigue el estándar oficial de formato de código *PEP8*.
+
+## El problema de las comillas dentro de la cadena
+
+Imagina que quieres imprimir la cadena *Dragon's mother*. En ella hay un apóstrofo (*'s*) que coincide con el carácter de comilla simple. Probemos así.
+
+```python
 print('Dragon's mother')
 # SyntaxError: invalid syntax
 ```
 
-Este programa no funcionará. Desde el punto de vista de Python, la cadena de texto comenzó con una comilla simple y terminó después de la palabra **dragon**. Luego hubo caracteres `s madre` sin comillas, lo que significa que no es una cadena de texto. Y luego hubo una comilla de apertura de cadena que nunca se cerró: `')`. Este código contiene un error de sintaxis, incluso se puede ver por cómo se resalta el código.
-
-Para evitar este error, usamos comillas dobles. Este programa funcionará correctamente:
+Python decidirá que la cadena termina después de la palabra 'Dragon', y el resto no lo reconocerá como código válido, lo que provocará un error de sintaxis. Para evitarlo, envolvemos la cadena en comillas dobles.
 
 ```python
 print("Dragon's mother")
 ```
 
-Ahora el intérprete sabe que la cadena de texto comenzó con una comilla doble y también debe terminar con una comilla doble. Y la comilla simple dentro se convirtió en parte de la cadena de texto.
+Ahora Python entiende que la comilla simple dentro de la cadena es un carácter normal, y que la cadena en sí empieza y termina con comillas dobles.
 
-Lo contrario también es cierto. Si queremos usar comillas dobles dentro de una cadena de texto, debemos hacer la cadena de texto con comillas simples. Y la cantidad de comillas dentro de la cadena de texto no importa.
+Si dentro de la cadena hacen falta comillas dobles y por fuera simples, tampoco habrá problemas.
 
-Ahora imaginemos que queremos crear la siguiente cadena de texto:
+```python
+print('He said "No"')
+```
+
+A veces en la cadena aparecen los dos tipos de comillas.
 
 ```python
 Dragon's mother said "No"
 ```
 
-En ella hay comillas simples y comillas dobles. Necesitamos indicarle al intérprete de alguna manera que las comillas son uno de los caracteres dentro de la cadena de texto, no el comienzo o el final de la cadena de texto.
-
-Para esto se utiliza el **carácter de escape**: `\` - barra invertida. Si colocamos `\` antes de una comilla (simple o doble), el intérprete reconocerá la comilla como un carácter normal dentro de la cadena de texto, no como el comienzo o el final de la cadena de texto:
+En ese caso, para que Python no confunda las comillas de dentro de la cadena con las exteriores, se usa el carácter de escape, la barra invertida `\`. Le dice al intérprete que el carácter que la sigue es parte de la cadena y no un carácter de control.
 
 ```python
-# Escapamos las comillas alrededor de No para que el intérprete
-# las reconozca como parte de la cadena de texto
 print("Dragon's mother said \"No\"")
 # => Dragon's mother said "No"
 ```
 
-Observa que en el ejemplo anterior no tuvimos que escapar la comilla simple (apóstrofe 's), porque la cadena de texto en sí se creó con comillas dobles. Si la cadena de texto se hubiera creado con comillas simples, entonces el carácter de escape sería necesario antes del apóstrofe, pero no antes de las comillas dobles.
+Aquí escapamos las comillas dobles dentro de la cadena encerrada en comillas dobles.
 
-Si queremos imprimir la barra invertida en sí, se aplica la misma regla. Como cualquier otro carácter especial, debe ser escapado, en el sentido de programación:
+Fíjate: Python percibe `\"` como un solo carácter de comilla, no como dos caracteres.
+Lo mismo ocurre con `\'`, `\\`, `\n` y otras secuencias de control. Se ven como dos caracteres en el código, pero en la cadena cuentan como uno.
+
+Lo mismo funciona en el caso contrario.
+
+```python
+print('Dragon\'s mother said "No"')
+# => Dragon's mother said "No"
+```
+
+## Cómo mostrar la barra invertida
+
+Para mostrar la barra invertida en sí, también hay que escaparla.
 
 ```python
 print("\\")

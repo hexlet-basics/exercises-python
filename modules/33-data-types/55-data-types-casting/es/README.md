@@ -1,53 +1,60 @@
+En los programas reales surge a menudo la situación en la que hay que convertir datos de un tipo en otro. Es especialmente habitual, por ejemplo, al procesar la entrada del usuario o los datos de los formularios web. Ahí todo llega en forma de cadenas, incluso si introdujiste un número.
 
-En programación, a menudo nos encontramos con situaciones en las que es necesario convertir un tipo de dato en otro, por ejemplo, al trabajar con formularios en sitios web. Los datos de los formularios siempre llegan en formato de texto, incluso si el valor es un número. Así como vemos a continuación, se puede realizar la conversión:
+![Conversión de tipos en Python](./assets/number-as-string.png)
+
+Para trabajar con esos valores hay que convertirlos explícitamente al tipo necesario, y para eso Python tiene su propio conjunto de funciones.
+
+## Conversión de cadena a número
+
+Imaginemos que recibimos del formulario la cadena '345' y necesitamos sumar ese número con otro:
 
 ```python
-# str se convierte en int
 number = int('345')
-print(number)  # => 345
+print(number + 5)  # => 350
 ```
 
-`int()` es una función a la que se le pasa un valor para convertirlo. La función se comporta de manera similar a las operaciones aritméticas, pero realiza acciones especiales. Aquí hay algunos ejemplos más:
+La función `int()` recibe una cadena y la convierte en un número entero.
+Esa función se llama función de conversión de tipo (casting function).
 
 ```python
 value = '0'
-# Dentro de los paréntesis se puede especificar una variable
 converted_value = int(value)
 print(converted_value)  # => 0
 
-# O un valor específico
-converted_value2 = int('10')
-print(converted_value2)  # => 10
-
-converted_value3 = int(False)
-print(converted_value3)  # => 0
-
-converted_value4 = int(True)
-print(converted_value4)  # => 1
-
-# Si se convierte un número de punto flotante
-# se descarta la parte decimal
-converted_value5 = int(3.5)
-print(converted_value5)  # => 3
+print(int('10'))        # => 10
+print(int(3.5))         # => 3  (la parte decimal se descarta)
 ```
 
-De la misma manera, se pueden convertir datos a cadenas de texto con `str()` y a números de punto flotante con `float()`:
-
-```python
-value = str(10)
-print(value)  # '10'
-
-value2 = str(True)
-print(value2)  # 'True'
-
-value3 = float(5)
-print(value3)  # 5.0
+```text
+'123'  ──int()──→  123  ──float()──→  123.0
+                    │
+                 str()
+                    ↓
+                  '123'
 ```
 
-Python realiza algunas conversiones automáticamente. Por ejemplo, en operaciones donde se encuentran simultáneamente un número entero y un número de punto flotante, Python los convierte automáticamente a **float**:
+## Conversión a cadena con str()
+
+Si hace falta convertir un número o un valor lógico en cadena, usa la función `str()`:
 
 ```python
-# El código float(3) + 1.2 se ejecuta implícitamente
-value = 3 + 1.2
-print(value)  # => 4.2
+print(str(10))      # => '10'
+print(str(True))    # => 'True'
+print(str(3.5))     # => '3.5'
+```
+
+Esto es útil, por ejemplo, al formar textos, mensajes y salidas:
+
+```python
+age = 42
+print("Age: " + str(age))  # => Age: 42
+```
+
+## Conversión a número de coma flotante con float()
+
+Si hace falta un número con punto decimal, usa `float()`:
+
+```python
+print(float(5))     # => 5.0
+print(float('2.7')) # => 2.7
 ```

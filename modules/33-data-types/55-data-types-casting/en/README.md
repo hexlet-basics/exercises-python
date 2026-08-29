@@ -3,20 +3,20 @@ In programming, there are regularly tasks where one type of data needs to be con
 
 ```python
 # str becomes int
-number = int('345')
+number = int("345")
 print(number)  # => 345
 ```
 
 `int()` is a function into which a value is passed in order to convert it. The function behaves similarly to arithmetic operations, but does special actions. Here are a few more examples:
 
 ```python
-value = '0'
+value = "0"
 # Inside the brackets you can specify a variable
 converted_value = int(value)
 print(converted_value)  # => 0
 
 # Or a specific value
-converted_value2 = int('10')
+converted_value2 = int("10")
 print(converted_value2)  # => 10
 
 converted_value3 = int(False)

@@ -43,8 +43,8 @@ El resultado de la ejecución:
 Si se escribe esa misma expresión como cadena, obtendremos un resultado completamente distinto: se mostrará la cadena «tal cual»:
 
 ```python
-print('3 + 4') # muestra: 3 + 4
-print(3 + 4)    # muestra: 7
+print("3 + 4")  # muestra: 3 + 4
+print(3 + 4)  # muestra: 7
 ```
 
 ## Otras operaciones aritméticas
@@ -64,8 +64,8 @@ Python admite todas las operaciones habituales más algunas específicas, relaci
 Así se puede mostrar el resultado de una división y de una potenciación:
 
 ```python
-print(8 / 2)    # => 4.0
-print(3 ** 2)   # => 9
+print(8 / 2)  # => 4.0
+print(3**2)  # => 9
 ```
 
 ## Números de punto flotante
@@ -73,15 +73,15 @@ print(3 ** 2)   # => 9
 Además de los números enteros, en Python hay números de punto flotante, que se usan para trabajar con fracciones. Esos números se escriben con punto:
 
 ```python
-print(3.5 + 1.2)   # => 4.7
-print(10 / 4)      # => 2.5
+print(3.5 + 1.2)  # => 4.7
+print(10 / 4)  # => 2.5
 ```
 
 A veces los usamos nosotros mismos, cuando hay que trabajar precisamente con valores fraccionarios, por ejemplo al calcular una media o al trabajar con dinero y medidas. Pero los números de punto flotante pueden aparecer también por sí solos, por ejemplo como resultado de la operación de división `/`:
 
 ```python
-print(8 / 2)   # => 4.0
-print(7 / 2)   # => 3.5
+print(8 / 2)  # => 4.0
+print(7 / 2)  # => 3.5
 ```
 
 Aquí Python siempre devuelve un resultado fraccionario, incluso si matemáticamente la respuesta salió entera.
@@ -130,9 +130,9 @@ Desde el punto de vista de Python, entre `3+4` y `3 + 4` no hay diferencia. El i
 La variante sin espacios también funciona:
 
 ```python
-3+4
-8/2
-7%3
+3 + 4
+8 / 2
+7 % 3
 ```
 
 Pero ese código se ve menos cuidado y cuesta más percibirlo rápido. Por eso conviene acostumbrarse desde el principio a escribir con espacios alrededor de los operadores.

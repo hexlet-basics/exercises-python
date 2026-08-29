@@ -19,7 +19,7 @@ You can also concatenate two variables with strings in them:
 
 ```python
 first = "Kings"
-last = 'road'
+last = "road"
 
 what = first + last
 print(what)  # => Kingsroad

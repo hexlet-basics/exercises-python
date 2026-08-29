@@ -23,7 +23,7 @@ print('hello')  ──→  [ выполнено → hello ]
 Или стоять в конце строки с кодом:
 
 ```python
-print('I am the King') # For Lannisters!
+print("I am the King")  # For Lannisters!
 ```
 
 Если нужно оставить длинное пояснение, используют несколько строк с #:
@@ -31,7 +31,7 @@ print('I am the King') # For Lannisters!
 ```python
 # The night is dark and
 # full of terrors.
-print('I am the King')
+print("I am the King")
 ```
 
 Интерпретатор игнорирует комментарии. Разработчики благодаря им быстрее разбираются в чужом коде и не забывают важные детали в собственном.

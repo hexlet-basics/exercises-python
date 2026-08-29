@@ -5,7 +5,7 @@ The exercise defines a variable `delivery_status` with the value `"in transit"`.
 An example of reassigning a variable:
 
 ```python
-some_var = 'old value'
-some_var = 'new value'
+some_var = "old value"
+some_var = "new value"
 print(some_var)  # => new value
 ```

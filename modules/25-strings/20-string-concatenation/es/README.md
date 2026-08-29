@@ -5,7 +5,7 @@ A menudo hay que construir cadenas a partir de varias partes, por ejemplo unir e
 En Python las cadenas se unen mediante el operador +. A pesar de que ese operador se usa también para sumar números, en el caso de las cadenas significa unión, es decir, pegar el contenido.
 
 ```python
-print('Dragon' + 'stone')
+print("Dragon" + "stone")
 # => Dragonstone
 ```
 
@@ -14,7 +14,7 @@ El orden importa. Primero va la parte izquierda ('Dragon'), después la derecha 
 Así funciona la unión de varias cadenas. El código:
 
 ```python
-print('Hello' + ', ' + 'World!')
+print("Hello" + ", " + "World!")
 ```
 
 La ejecución:
@@ -31,10 +31,10 @@ La ejecución:
 Ejemplos.
 
 ```python
-print('Kings' + 'wood')       # => Kingswood
-print('Kings' + 'road')       # => Kingsroad
+print("Kings" + "wood")  # => Kingswood
+print("Kings" + "road")  # => Kingsroad
 # Aquí por fuera hay comillas dobles, porque dentro hay una simple
-print("King's" + 'Landing')   # => King'sLanding
+print("King's" + "Landing")  # => King'sLanding
 ```
 
 Python permite unir cadenas incluso si están escritas con comillas distintas. Lo importante es que las dos partes sean cadenas.
@@ -45,10 +45,10 @@ Al unir, Python no inserta espacios automáticamente. Si entre las partes debe h
 
 ```python
 # Espacio al final de la primera cadena
-print("King's " + 'Landing')  # => King's Landing
+print("King's " + "Landing")  # => King's Landing
 
 # Espacio al principio de la segunda cadena
-print("King's" + ' Landing')  # => King's Landing
+print("King's" + " Landing")  # => King's Landing
 ```
 
 El resultado será el mismo. Pero si no se añade el espacio, las palabras se pegarán.
@@ -58,12 +58,12 @@ El resultado será el mismo. Pero si no se añade el espacio, las palabras se pe
 En las cadenas se pueden usar secuencias de control, por ejemplo `\n` para el salto de línea o `\t` para la tabulación. En la concatenación funcionan igual que cualquier otro carácter.
 
 ```python
-print('Hello,' + '\n' + 'World!')
+print("Hello," + "\n" + "World!")
 # =>
 # Hello,
 # World!
 
-print('A' + '\t' + 'B')
+print("A" + "\t" + "B")
 # => A	B
 ```
 

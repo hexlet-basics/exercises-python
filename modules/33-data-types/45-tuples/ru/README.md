@@ -5,7 +5,7 @@
 Представьте, что мы хотим работать в коде с понятием студента, у которого есть имя, возраст и средний балл. Можно попробовать описывать студента тремя переменными:
 
 ```python
-student_name = 'Alice'
+student_name = "Alice"
 student_age = 20
 student_score = 4.8
 ```
@@ -15,17 +15,22 @@ student_score = 4.8
 Кортеж записывается в круглых скобках через запятую:
 
 ```python
-student = ('Alice', 20, 4.8)       # имя, возраст, средний балл
+student = ("Alice", 20, 4.8)  # имя, возраст, средний балл
 
 point = (10, 20)
-film = ('Inception', 2010)    # название, год
-user = ('Andrey Petrov', 'email@example.com', 'hexletcommunity', 100)    # фио, email, telegram, age
+film = ("Inception", 2010)  # название, год
+user = (
+    "Andrey Petrov",
+    "email@example.com",
+    "hexletcommunity",
+    100,
+)  # фио, email, telegram, age
 ```
 
 Скобки можно опустить. Python определяет кортеж по запятым.
 
 ```python
-student = 'Alice', 20, 4.8       # имя, возраст, средний балл
+student = "Alice", 20, 4.8  # имя, возраст, средний балл
 
 point = 10, 20
 ```
@@ -35,7 +40,7 @@ point = 10, 20
 Элементы кортежа нумеруются с нуля. К ним обращаются по индексу как в строках.
 
 ```python
-student = ('Alice', 20, 4.8)
+student = ("Alice", 20, 4.8)
 print(student[0])  # => Alice
 print(student[1])  # => 20
 print(student[2])  # => 4.8
@@ -46,8 +51,8 @@ print(student[2])  # => 4.8
 После создания кортеж нельзя изменить. Попытка заменить элемент вызывает ошибку.
 
 ```python
-student = ('Alice', 20, 4.8)
-student[0] = 'Bob'  # TypeError: 'tuple' object does not support item assignment
+student = ("Alice", 20, 4.8)
+student[0] = "Bob"  # TypeError: 'tuple' object does not support item assignment
 ```
 
 Это сделано намеренно. Кортеж применяют там, где случайное изменение данных нежелательно: конфигурация подключения к базе данных, запись о пользователе, справочник с днями недели.
@@ -55,7 +60,7 @@ student[0] = 'Bob'  # TypeError: 'tuple' object does not support item assignment
 Если данные нужно обновить, создают новый кортеж и переприсваивают переменную.
 
 ```python
-student = ('Alice', 20, 4.8)
+student = ("Alice", 20, 4.8)
 # используя данные предыдущего кортежа
 student = (student[0], student[1] + 1, 4.9)  # прошел год, балл вырос
 
@@ -69,12 +74,12 @@ print(student)  # => ('Alice', 21, 4.9)
 Элементы кортежа можно присвоить нескольким переменным сразу.
 
 ```python
-student = ('Alice', 20, 4.8)
+student = ("Alice", 20, 4.8)
 name, age, gpa = student
 
 print(name)  # => Alice
-print(age)   # => 20
-print(gpa)   # => 4.8
+print(age)  # => 20
+print(gpa)  # => 4.8
 ```
 
 Python сопоставляет значения с переменными по порядку. Количество переменных должно совпадать с количеством элементов.

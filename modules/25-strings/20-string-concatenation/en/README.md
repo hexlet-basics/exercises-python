@@ -6,15 +6,15 @@ To combine strings, you have to perform **concatenation**:
 ```python
 # The operator is the same as for adding numbers,
 # but here it has a different meaning (semantics)
-print('Dragon' + 'stone')  # => Dragonstone
+print("Dragon" + "stone")  # => Dragonstone
 ```
 
 Strings are always concatenated in the order in which the operands are written. The left operand becomes the left part of the string, and the right one becomes the right part. Here are a few more examples:
 
 ```python
-print('Kings' + 'wood')      # => Kingswood
-print('Kings' + 'road')      # => Kingsroad
-print("King's" + 'Landing')  # => King'sLanding
+print("Kings" + "wood")  # => Kingswood
+print("Kings" + "road")  # => Kingsroad
+print("King's" + "Landing")  # => King'sLanding
 ```
 
 As you can see, strings can be concatenated even if they're written with different quotes.
@@ -23,8 +23,8 @@ Spaces are a character like any other, so how many spaces you put in a string is
 
 ```python
 # Put a space in the left part
-print("King's " + 'Landing')  # => King's Landing
+print("King's " + "Landing")  # => King's Landing
 
 # Put a space in the right part
-print("King's" + ' Landing')  # => King's Landing
+print("King's" + " Landing")  # => King's Landing
 ```

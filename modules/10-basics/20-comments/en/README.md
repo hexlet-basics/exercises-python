@@ -18,13 +18,13 @@ A comment can take up an entire line. When one line isn't enough, use several:
 ```python
 # The night is dark and
 # full of terrors.
-print('I am the King')
+print("I am the King")
 ```
 
 Or place it at the end of a line with code:
 
 ```python
-print('I am the King') # For Lannisters!
+print("I am the King")  # For Lannisters!
 ```
 
 Comments don't affect how the program runs, but they make code easier to understand — both for your future self and for teammates reading your code.

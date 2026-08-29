@@ -2,8 +2,8 @@
 Imagine that we need to print the phrase _Father!_ on the screen twice. This can be done like so
 
 ```python
-print('Father!')
-print('Father!')
+print("Father!")
+print("Father!")
 ```
 
 In the simplest case, that's what you should do. But if the phrase _Father!_ is used more than twice, or even in different parts of the program, you have to repeat it everywhere; it's a little inconvenient. The problems with this approach will begin when you need to change the phrase, and this happens quite often. We'll have to find all the places this phrase is located and make the required changes lots of times.
@@ -12,7 +12,7 @@ There is one other way to do it. In order not to copy the expression, you just n
 
 ```python
 # greeting - translates as greeting
-greeting = 'Father!'
+greeting = "Father!"
 print(greeting)
 print(greeting)
 # => Father!
@@ -28,11 +28,11 @@ Any set of valid characters can be used for the variable name, which includes le
 The number of variables you can create is unlimited. Large programs contain tens or hundreds of thousands of variable names. This is what two variables look like inside one program:
 
 ```python
-greeting1 = 'Father!'
+greeting1 = "Father!"
 print(greeting1)
 print(greeting1)
 
-greeting2 = 'Mother!'
+greeting2 = "Mother!"
 print(greeting2)
 print(greeting2)
 ```

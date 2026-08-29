@@ -60,9 +60,9 @@ When working with the line feed symbol, consider the following points:
 2. A string can contain only `\n` and nothing else:
 
    ```python
-   print('Gregor Clegane')  # String with text
+   print("Gregor Clegane")  # String with text
    print("\n")  # String with an invisible line feed character
-   print('Dunsen')  # String with text
+   print("Dunsen")  # String with text
    ```
 
    The program will display this on the screen:

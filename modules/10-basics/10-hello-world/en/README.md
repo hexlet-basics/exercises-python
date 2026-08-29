@@ -7,13 +7,13 @@ Hello, World!
 This tradition is over forty years old, so we're keeping it. In the first lesson, we'll write a program called `Hello, World!`. In Python, the command for displaying text is `print()`:
 
 ```python
-print('Hello, World!')
+print("Hello, World!")
 ```
 
 The way `print()` works: you put the text you want to display inside the parentheses. To let Python know it's text and not something else, wrap it in quotes. Both single and double quotes work — just make sure the opening and closing quote match:
 
 ```python
-print('Hello, World!')
+print("Hello, World!")
 print("Hello, World!")
 ```
 

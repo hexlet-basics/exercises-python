@@ -5,8 +5,8 @@ La frase «el orden de los sumandos no altera la suma» le resulta familiar a cu
 Una operación se llama conmutativa si el orden de los operandos no influye en el resultado: intercambiando los valores obtendrás la misma respuesta. Un ejemplo de operación conmutativa: la suma.
 
 ```python
-print(3 + 2) # => 5
-print(2 + 3) # => 5
+print(3 + 2)  # => 5
+print(2 + 3)  # => 5
 ```
 
 El resultado idéntico confirma que la operación es conmutativa.
@@ -26,8 +26,8 @@ El resultado idéntico confirma que la operación es conmutativa.
 Pero no todas las operaciones tienen esa propiedad. Por ejemplo, la resta es una operación no conmutativa:
 
 ```python
-print(2 - 3) # => -1
-print(3 - 2) # => 1
+print(2 - 3)  # => -1
+print(3 - 2)  # => 1
 ```
 
 Intercambiar los operandos da otro resultado.
@@ -45,10 +45,10 @@ Ejemplos en código:
 
 ```python
 # División
-print(8 / 2)   # 8 dividido entre 2 = 4.0
+print(8 / 2)  # 8 dividido entre 2 = 4.0
 
 # Potenciación
-print(3 ** 2)  # 3 al cuadrado = 9
+print(3**2)  # 3 al cuadrado = 9
 ```
 
 Por eso:

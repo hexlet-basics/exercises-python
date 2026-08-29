@@ -1,8 +1,8 @@
 Представим, что у нас есть строка, и мы хотим заменить в ней один символ, например первую букву имени:
 
 ```python
-first_name = 'Alexander'
-first_name[0] = 'B'  # 
+first_name = "Alexander"
+first_name[0] = "B"  #
 ```
 
 Python сразу выдаст ошибку:
@@ -26,8 +26,8 @@ Python устроен так, что примитивные типы (строк
 Если нужно "изменить" строку, создается новая строка и сохраняется в ту же переменную:
 
 ```python
-first_name = 'Alexander'
-first_name = 'Blexander'
+first_name = "Alexander"
+first_name = "Blexander"
 
 print(first_name)  # => Blexander
 ```
@@ -50,12 +50,12 @@ name = 'B' + name[1:]
 
 ```python
 # Одна и та же строка, просто обновляем
-name = 'Alexander'
-name = 'Blexander'
+name = "Alexander"
+name = "Blexander"
 
 # Разные сущности, лучше разные переменные
-first_name = 'Alexander'
-corrected_first_name = 'Blexander'
+first_name = "Alexander"
+corrected_first_name = "Blexander"
 ```
 
 Попытка "запихать" все строки в одну переменную запутывает код. Переменная перестает говорить, что в ней хранится.

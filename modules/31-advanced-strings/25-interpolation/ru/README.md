@@ -1,8 +1,8 @@
 Вспомним как работает конкатенация. Для этого мы соединяем нужные строки (или переменные со строками внутри) с помощью знака `+`.
 
 ```python
-first_name = 'Joffrey'
-greeting = 'Hello'
+first_name = "Joffrey"
+greeting = "Hello"
 
 print(greeting + ", " + first_name + "!")
 # => Hello, Joffrey!
@@ -13,10 +13,10 @@ print(greeting + ", " + first_name + "!")
 По этой причине во многих языках существует операция, которая называется интерполяция. Интерполяция представляет собой способ встраивать значения переменных прямо внутрь строки. В Python для этого используются f-строки (или format-строки). Вот так:
 
 ```python
-first_name = 'Joffrey'
-greeting = 'Hello'
+first_name = "Joffrey"
+greeting = "Hello"
 
-print(f'{greeting}, {first_name}!')
+print(f"{greeting}, {first_name}!")
 # => Hello, Joffrey!
 ```
 
@@ -37,7 +37,7 @@ f'{greeting}, {first_name}!'
 
 ```python
 print(greeting + ", " + first_name + "!")
-print(f'{greeting}, {first_name}!')
+print(f"{greeting}, {first_name}!")
 ```
 
 Второй вариант проще и понятнее.
@@ -45,9 +45,9 @@ print(f'{greeting}, {first_name}!')
 ## Пример
 
 ```python
-school = 'Hexlet'
+school = "Hexlet"
 
-what_is_it = f'{school} - online courses'
+what_is_it = f"{school} - online courses"
 print(what_is_it)  # => Hexlet - online courses
 ```
 

@@ -3,11 +3,12 @@ Las cadenas en la programación en Python se usan con mucha frecuencia y en las 
 Desde el punto de vista de Python, una cadena es simplemente un conjunto de caracteres encerrado entre comillas. Veamos unos ejemplos.
 
 ```python
-'Hello'
-'Goodbye'
-'G'
-' '
-''
+"Hello"
+
+"Goodbye"
+"G"
+" "
+""
 ```
 
 Todas esas variantes son cadenas.
@@ -23,8 +24,9 @@ Si se muestran las cadenas en la pantalla, `'Hello'` y `'Goodbye'` se verán con
 Pregunta de control. ¿Son estas cadenas iguales o no?
 
 ```python
-'hexlet'
-' hexlet'
+"hexlet"
+
+" hexlet"
 ```
 
 ## Terminología. ¿Cadena o línea?
@@ -50,7 +52,7 @@ Para evitar la confusión, en este curso usaremos estas formulaciones.
 En Python las cadenas se pueden escribir tanto entre comillas simples como entre dobles.
 
 ```python
-print('Hello')
+print("Hello")
 print("Hello")
 ```
 
@@ -88,7 +90,7 @@ Dragon's mother said "No"
 En ese caso, para que Python no confunda las comillas de dentro de la cadena con las exteriores, se usa el carácter de escape, la barra invertida `\`. Le dice al intérprete que el carácter que la sigue es parte de la cadena y no un carácter de control.
 
 ```python
-print("Dragon's mother said \"No\"")
+print('Dragon\'s mother said "No"')
 # => Dragon's mother said "No"
 ```
 

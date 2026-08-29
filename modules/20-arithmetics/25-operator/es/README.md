@@ -35,7 +35,7 @@ En este caso `-` es un operador unario y `3` es el operando. El intérprete reci
 El operador `-` se puede usar de distintas maneras. Cuando está **entre dos números**, es la operación de resta:
 
 ```python
-print(5 - 2)   # => 3
+print(5 - 2)  # => 3
 print(10 - 7)  # => 3
 ```
 
@@ -45,7 +45,7 @@ Esa diferencia se nota especialmente al trabajar con números negativos. Por eje
 
 ```python
 # menos por menos da más
-print(5 - -2) # => 7
+print(5 - -2)  # => 7
 ```
 
 Primero vemos la operación de resta: `5 - (...)`. Pero a la derecha está el menos unario `-2`, que convierte el `2` en un número negativo. Al final resulta: `5 - (-2) = 7`.
@@ -59,7 +59,7 @@ Lo principal que hay que recordar aquí es que el comportamiento e incluso la pr
 Si se percibe `-3` como un número único, se puede no notar que `-` es un operador aparte con su propia prioridad. Por ejemplo:
 
 ```python
-print(-3**2)
+print(-(3**2))
 ```
 
 A primera vista puede parecer que se eleva al cuadrado `-3` y que el resultado debería ser `9` (cualquier número al cuadrado se vuelve positivo). Pero el resultado será `-9`.

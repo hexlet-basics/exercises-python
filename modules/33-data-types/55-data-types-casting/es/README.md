@@ -7,7 +7,7 @@ Para trabajar con esos valores hay que convertirlos explícitamente al tipo nece
 Imaginemos que recibimos del formulario la cadena '345' y necesitamos sumar ese número con otro:
 
 ```python
-number = int('345')
+number = int("345")
 print(number + 5)  # => 350
 ```
 
@@ -15,12 +15,12 @@ La función `int()` recibe una cadena y la convierte en un número entero.
 Esa función se llama función de conversión de tipo (casting function).
 
 ```python
-value = '0'
+value = "0"
 converted_value = int(value)
 print(converted_value)  # => 0
 
-print(int('10'))        # => 10
-print(int(3.5))         # => 3  (la parte decimal se descarta)
+print(int("10"))  # => 10
+print(int(3.5))  # => 3  (la parte decimal se descarta)
 ```
 
 ```text
@@ -36,9 +36,9 @@ print(int(3.5))         # => 3  (la parte decimal se descarta)
 Si hace falta convertir un número o un valor lógico en cadena, usa la función `str()`:
 
 ```python
-print(str(10))      # => '10'
-print(str(True))    # => 'True'
-print(str(3.5))     # => '3.5'
+print(str(10))  # => '10'
+print(str(True))  # => 'True'
+print(str(3.5))  # => '3.5'
 ```
 
 Esto es útil, por ejemplo, al formar textos, mensajes y salidas:
@@ -53,6 +53,6 @@ print("Age: " + str(age))  # => Age: 42
 Si hace falta un número con punto decimal, usa `float()`:
 
 ```python
-print(float(5))     # => 5.0
-print(float('2.7')) # => 2.7
+print(float(5))  # => 5.0
+print(float("2.7"))  # => 2.7
 ```

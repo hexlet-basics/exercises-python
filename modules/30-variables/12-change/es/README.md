@@ -4,10 +4,10 @@ Aquí tienes un ejemplo simple:
 
 ```python
 # greeting se traduce como saludo
-greeting = 'Father!'
+greeting = "Father!"
 print(greeting)  # => Father!
 
-greeting = 'Mother!'
+greeting = "Mother!"
 print(greeting)  # => Mother!
 ```
 
@@ -32,7 +32,7 @@ En los programas reales las variables cambian constantemente. Estas son algunas 
 En Python una variable no hay que «declararla de antemano»: aparece en el momento en que escribes por primera vez un valor en ella:
 
 ```python
-name = 'Arya'  # la variable se crea aquí
+name = "Arya"  # la variable se crea aquí
 ```
 
 Si después escribes de nuevo name = ..., eso sobrescribirá el valor anterior. Así funciona la mayoría de los lenguajes de programación modernos.

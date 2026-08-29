@@ -4,11 +4,12 @@ In this lesson, we'll learn what a string is and what role quotation marks play 
 The definition of a string is quite simple; it's a set of characters. Let us imagine that we have these entries:
 
 ```python
-'Hello'
-'Goodbye'
-'G'
-' '
-''
+"Hello"
+
+"Goodbye"
+"G"
+" "
+""
 ```
 
 Which of these are strings? In fact, all five of them are:
@@ -57,7 +58,7 @@ The **escape character** is used for this: `\` — a backslash. If we put `\` in
 ```python
 # We escape the quotation marks around No so that the interpreter
 # can recognize them as part of the string
-print("Dragon's mother said \"No\"")
+print('Dragon\'s mother said "No"')
 # => Dragon's mother said "No"
 ```
 

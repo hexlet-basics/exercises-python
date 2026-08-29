@@ -4,7 +4,7 @@ Python is one of the languages that is strict about data types. So it will respo
 We know about two different types of data: numbers and strings. For example, we could add numbers, because the addition operation is an operation for the "numbers" type. But what if we applied this operation not to two numbers, but to a number and a string?
 
 ```python
-print(1 + '7')  # TypeError: unsupported operand type(s)...
+print(1 + "7")  # TypeError: unsupported operand type(s)...
 ```
 
 Python will not allow adding the number `1` and the string `'7'`, because they are of different types. You have to first either make the string a number or the number a string. We'll talk about how to do that later.

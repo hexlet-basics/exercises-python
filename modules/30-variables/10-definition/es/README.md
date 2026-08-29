@@ -1,8 +1,8 @@
 Imagina que hay que imprimir la frase Father! dos veces:
 
 ```python
-print('Father!')
-print('Father!')
+print("Father!")
+print("Father!")
 ```
 
 Ese modo sirve perfectamente si la frase aparece solo un par de veces. Pero ¿qué pasa si se va a usar a menudo, en distintas partes del programa? Entonces habrá que copiar la misma expresión una y otra vez.
@@ -14,7 +14,7 @@ Ese modo sirve perfectamente si la frase aparece solo un par de veces. Pero ¿qu
 Para no duplicar la misma cadena, se la puede guardar en una variable e imprimir su contenido:
 
 ```python
-greeting = 'Father!'
+greeting = "Father!"
 
 print(greeting)
 print(greeting)
@@ -64,9 +64,9 @@ Ejemplos de nombres admitidos: `greeting`, `name1`, `hello_world`. Python distin
 En el código es importante distinguir dónde usamos una variable y dónde escribimos un valor directamente. Eso se nota especialmente en el ejemplo con `print()`:
 
 ```python
-greeting = 'Mother!'
-print(greeting)   # => Mother!
-print('greeting') # => greeting
+greeting = "Mother!"
+print(greeting)  # => Mother!
+print("greeting")  # => greeting
 ```
 
 En el primer caso se usa la **variable** `greeting`, y el programa sustituye su valor. En el segundo caso `'greeting'` está entre comillas, por eso es un **literal de cadena**, es decir, un valor listo escrito directamente en el código. A pesar de que vemos la palabra `greeting` en los dos casos, desde el punto de vista del intérprete son cosas absolutamente distintas.
@@ -78,9 +78,9 @@ Los literales son datos escritos de forma explícita (por ejemplo, `'Hello'`, `4
 Una variable hay que crearla primero (asignarle un valor) y solo después usarla. Si se intenta acceder a una variable antes de crearla, el programa dará un error:
 
 ```python
-print(name) # Error: la variable todavía no está definida
+print(name)  # Error: la variable todavía no está definida
 # NameError: name 'name' is not defined
-name = 'Alice'
+name = "Alice"
 ```
 
 Ese error se llama «acceso a una variable no declarada». Es bastante fácil de corregir, porque el texto del error dice sin ambigüedad qué variable se usa antes de declararla.
@@ -88,8 +88,8 @@ Ese error se llama «acceso a una variable no declarada». Es bastante fácil de
 Y en el orden correcto todo funciona:
 
 ```python
-name = 'Alice'
-print(name) # => Alice
+name = "Alice"
+print(name)  # => Alice
 ```
 
 ## Varias variables en un programa
@@ -97,11 +97,11 @@ print(name) # => Alice
 En un mismo programa se pueden crear tantas variables como se quiera. Cada una guarda sus datos y no molesta a las demás:
 
 ```python
-greeting1 = 'Father!'
+greeting1 = "Father!"
 print(greeting1)
 print(greeting1)
 
-greeting2 = 'Mother!'
+greeting2 = "Mother!"
 print(greeting2)
 print(greeting2)
 ```

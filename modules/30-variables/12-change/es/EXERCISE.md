@@ -5,7 +5,7 @@ En el ejercicio se define una variable `delivery_status` con el valor `"in trans
 Ejemplo de reasignación de una variable:
 
 ```python
-some_var = 'valor antiguo'
-some_var = 'valor nuevo'
+some_var = "valor antiguo"
+some_var = "valor nuevo"
 print(some_var)  # => valor nuevo
 ```

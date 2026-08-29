@@ -1,8 +1,8 @@
 Imaginemos que tenemos una cadena y queremos reemplazar en ella un carácter, por ejemplo la primera letra del nombre:
 
 ```python
-first_name = 'Alexander'
-first_name[0] = 'B'  # 
+first_name = "Alexander"
+first_name[0] = "B"  #
 ```
 
 Python lanzará un error de inmediato:
@@ -26,8 +26,8 @@ Python está hecho de tal manera que los tipos primitivos (cadenas, números, va
 Si hace falta "modificar" una cadena, se crea una cadena nueva y se guarda en la misma variable:
 
 ```python
-first_name = 'Alexander'
-first_name = 'Blexander'
+first_name = "Alexander"
+first_name = "Blexander"
 
 print(first_name)  # => Blexander
 ```
@@ -50,12 +50,12 @@ Reutilizar una variable solo vale la pena cuando se trata de una misma entidad. 
 
 ```python
 # Una misma cadena, simplemente la actualizamos
-name = 'Alexander'
-name = 'Blexander'
+name = "Alexander"
+name = "Blexander"
 
 # Entidades distintas, mejor variables distintas
-first_name = 'Alexander'
-corrected_first_name = 'Blexander'
+first_name = "Alexander"
+corrected_first_name = "Blexander"
 ```
 
 Intentar "meter" todas las cadenas en una sola variable enreda el código. La variable deja de decir qué se guarda en ella.

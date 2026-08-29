@@ -4,11 +4,11 @@ The word “variable” itself suggests that it can be changed. And indeed, the 
 For example:
 
 ```python
-# greeting 
-greeting = 'Father!'
+# greeting
+greeting = "Father!"
 print(greeting)  # => Father!
 
-greeting = 'Mother!'
+greeting = "Mother!"
 print(greeting)  # => Mother!
 ```
 

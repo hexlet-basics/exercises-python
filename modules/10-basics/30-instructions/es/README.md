@@ -11,8 +11,8 @@ Instrucción 3: print('!')       →  ejecutada
 Aquí tienes un ejemplo de código con dos instrucciones. Estas líneas le dicen al ordenador que muestre las frases en la pantalla.
 
 ```python
-print('Mother of Dragons.') # Primera instrucción
-print('Dracarys!') # Segunda instrucción
+print("Mother of Dragons.")  # Primera instrucción
+print("Dracarys!")  # Segunda instrucción
 ```
 
 El resultado de la ejecución:
@@ -27,8 +27,8 @@ Dracarys!
 El intérprete de Python ejecuta el código estrictamente en el orden en que lo escribiste. Si se intercambian las líneas:
 
 ```python
-print('Dracarys!')
-print('Mother of Dragons.')
+print("Dracarys!")
+print("Mother of Dragons.")
 ```
 
 en la pantalla también se intercambiarán:
@@ -43,7 +43,8 @@ Mother of Dragons.
 Normalmente las instrucciones se escriben en líneas separadas, pero Python permite unir varias instrucciones en una línea mediante `;`:
 
 ```python
-print('Mother of Dragons.'); print('Dracarys!');
+print("Mother of Dragons.")
+print("Dracarys!")
 ```
 
 Las dos versiones funcionan igual, pero la segunda variante es más difícil de leer. Por eso las instrucciones casi siempre se escriben una por línea.

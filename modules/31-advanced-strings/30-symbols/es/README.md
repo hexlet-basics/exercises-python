@@ -5,7 +5,7 @@ A veces hace falta obtener un solo carácter de una cadena. Por ejemplo, si el s
 En Python, para acceder a los caracteres de una cadena se usa la indexación. La indexación significa que cada carácter de la cadena tiene su propio número, es decir, su índice. La indexación empieza en cero: el primer carácter tiene el índice `0`, el segundo el `1` y así sucesivamente. Imaginemos que tenemos una cadena:
 
 ```python
-first_name = 'Alexander'
+first_name = "Alexander"
 ```
 
 Para obtener la primera letra, indicamos su posición (el índice) entre corchetes:
@@ -81,7 +81,7 @@ Por ejemplo, en la cadena `\nyou` el primer carácter es `\n` (el salto de líne
 ## Piensa: ¿qué mostrará este código?
 
 ```python
-magic = '\nyou'
+magic = "\nyou"
 print(magic[1])  # => ?
 ```
 

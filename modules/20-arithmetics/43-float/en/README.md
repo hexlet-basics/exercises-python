@@ -2,7 +2,7 @@
 In mathematics there are different kinds of numbers, for example, natural numbers are integers from one and up, or rational numbers are numbers with a point, such as 0.5. From the point of view of computers, there is a chasm between these types of numbers. Try answering the simple question of how much would *0.2 + 0.1*? Now let's see what Python has to say about it:
 
 ```python
-0.2 + 0.1 # 0.30000000000000004
+0.2 + 0.1  # 0.30000000000000004
 ```
 
 The operation of adding two rational numbers suddenly results in an inaccurate calculation. The same result will be given by other programming languages. Such behavior is due to limitations of computing power. The memory capacity, unlike numbers, is finite (an infinite number of numbers requires an infinite amount of memory to store them).

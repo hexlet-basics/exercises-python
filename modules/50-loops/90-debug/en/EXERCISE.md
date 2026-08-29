@@ -6,9 +6,9 @@ Examples:
 
 ```python
 compress("aaabcccc")  # "a3bc4"
-compress("abcd")      # "abcd"
-compress("aabbaa")    # "a2b2a2"
-compress("")          # ""
+compress("abcd")  # "abcd"
+compress("aabbaa")  # "a2b2a2"
+compress("")  # ""
 ```
 
 This algorithm is used in real compression formats — for example, in old fax protocols and BMP files.

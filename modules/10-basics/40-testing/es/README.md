@@ -9,10 +9,10 @@ print(10)
 La comprobación ejecutará ese código y verificará que en la pantalla apareció realmente `10`. Si la salida coincide con la esperada, la solución se acepta. Si no, verás un error:
 
 ```bash
-E   AssertionError: assert '9' == '10'
+E AssertionError: assert '9' == '10'
 E
-E     - 10
-E     + 9
+E - 10
+E + 9
 ```
 
 La línea con `+` muestra el resultado real que devolvió tu código, y la línea con `-` el valor esperado.

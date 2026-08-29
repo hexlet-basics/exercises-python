@@ -10,7 +10,7 @@ To use code from a package, import it with the `import` keyword. Let's look at t
 import math
 
 print(math.sqrt(16))  # => 4.0
-print(math.pi)        # => 3.141592653589793
+print(math.pi)  # => 3.141592653589793
 ```
 
 After `import math`, everything in the package is available through dot notation: `math.sqrt`, `math.floor`, `math.pi`.
@@ -23,7 +23,7 @@ An alternative syntax lets you import only what you need:
 from math import sqrt, pi
 
 print(sqrt(25))  # => 5.0
-print(pi)        # => 3.141592653589793
+print(pi)  # => 3.141592653589793
 ```
 
 Now `sqrt` and `pi` are available directly, without the `math.` prefix. The `import math` form makes the origin of the function explicit — that helps when reading unfamiliar code. The `from math import` form is convenient when you need a few specific functions and writing the prefix every time is tedious.
@@ -51,8 +51,8 @@ Python ships with a rich set of built-in packages. A few commonly used ones:
 ```python
 import random
 
-print(random.randint(1, 6))                          # => random number from 1 to 6
-print(random.choice(['rock', 'paper', 'scissors']))  # => random element
+print(random.randint(1, 6))  # => random number from 1 to 6
+print(random.choice(["rock", "paper", "scissors"]))  # => random element
 ```
 
 ## Third-Party Packages

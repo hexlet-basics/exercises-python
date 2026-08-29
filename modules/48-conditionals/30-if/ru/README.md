@@ -41,12 +41,13 @@ print("Goodbye!")
 ```python
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
-    if last_char == '?':
-        return 'question'
-    return 'normal'
+    if last_char == "?":
+        return "question"
+    return "normal"
 
-print(get_type_of_sentence('Hodor'))   # => normal
-print(get_type_of_sentence('Hodor?'))  # => question
+
+print(get_type_of_sentence("Hodor"))  # => normal
+print(get_type_of_sentence("Hodor?"))  # => question
 ```
 
 Здесь используется сразу два `return`. Если условие внутри `if` выполняется, срабатывает `return 'question'` и функция завершается. Если условие не выполняется, управление переходит на следующую строку с `return 'normal'`.
@@ -61,8 +62,9 @@ def has_enough_money(balance: int, price: int) -> bool:
         return True
     return False
 
-print(has_enough_money(100, 50))   # => True
-print(has_enough_money(30, 50))    # => False
+
+print(has_enough_money(100, 50))  # => True
+print(has_enough_money(30, 50))  # => False
 ```
 
 ## if и логические выражения

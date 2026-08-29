@@ -35,11 +35,11 @@ There are two conversion rules in Python:
 These rules are used in development, for example, to define a default value:
 
 ```python
-value = name or ''
+value = name or ""
 # Examples
-234 or '' # 234
-'hexlet' or '' # 'hexlet'
-None or '' # ''
+234 or ""  # 234
+"hexlet" or ""  # 'hexlet'
+None or ""  # ''
 ```
 
 If `name` takes one of the falsy values, the variable `value` will be assigned an empty string. In this case, in the following code we will be able to handle `value` as a string.
@@ -49,9 +49,9 @@ But there is a potential bug here. If `name` contains a falsy value, and the var
 ```python
 # The significance is actually there,
 # but it is Falsy, so it is not selected on the OR condition
-False or '' # ''
-0 or '' # ''
-None or '' # ''
+False or ""  # ''
+0 or ""  # ''
+None or ""  # ''
 ```
 
 ## Compound expressions
@@ -67,11 +67,11 @@ This can be done by using the knowledge gained above:
 
 ```python
 # even number
-result = 10 % 2 == 0 and 'yes' or 'no' # 'yes'
+result = 10 % 2 == 0 and "yes" or "no"  # 'yes'
 # or print directly to the screen
-print(10 % 2 == 0 and 'yes' or 'no') # => 'yes'
+print(10 % 2 == 0 and "yes" or "no")  # => 'yes'
 # odd number
-print(11 % 2 == 0 and 'yes' or 'no') # => 'no'
+print(11 % 2 == 0 and "yes" or "no")  # => 'no'
 ```
 
 These expressions work according to order and priority. The priority of assignment is the lowest, so it happens at the end. The priority of comparison `==` is higher than the priority of the logical operators `and` and `or`, so the comparison occurs earlier. Further the code is executed from left to right, because the priority of `and` is higher than the priority of `or`. Let's look at it step by step:
@@ -79,24 +79,24 @@ These expressions work according to order and priority. The priority of assignme
 ```python
 # For an even
 # 1 step
-10 % 2 == 0 # True
+10 % 2 == 0  # True
 # 2 step
-True and 'yes' # The result is true
+True and "yes"  # The result is true
 # The or check is done, but the right part is not executed, because it immediately returns 'yes'.
 
 # For an odd
 # 1 step
-11 % 2 == 0 # False
+11 % 2 == 0  # False
 # 2 step
-False and 'yes' # The result is false.
+False and "yes"  # The result is false.
 # 3 step
-False or 'no' # Selects and returns 'no'
+False or "no"  # Selects and returns 'no'
 ```
 
 The same scheme can be used with any expression at the beginning:
 
 ```python
-print(somefunc() and 'yes' or 'no')
+print(somefunc() and "yes" or "no")
 ```
 
 ## Double Negation
@@ -118,9 +118,9 @@ print(not not answer)  # => True
 The `not` operator always returns a Boolean value, regardless of the type of the passed argument, rather than replacing the value with the opposite. Therefore, a double negation will also return a boolean True/False.
 
 ```python
-answer = 'python'
-print(not answer) # => False
-print(not not answer) # => True
+answer = "python"
+print(not answer)  # => False
+print(not not answer)  # => True
 ```
 
 ## Selection error
@@ -128,7 +128,7 @@ print(not not answer) # => True
 Imagine that we need to check whether a value is equal to one or the other. For example, the variable `value` must contain one of two values: `first` or ``second`. Beginner developers sometimes write this expression this way:
 
 ```python
-value == ('first' or 'second')
+value == ("first" or "second")
 ```
 
 However, such a code will lead to the wrong result. It is necessary to remember the priority of operations. The first thing is to calculate everything specified in brackets - `'first' or` second'`. If you execute this code in Replit, the output will be as follows:
@@ -144,7 +144,7 @@ Python 3.8.2 (default, Apr 12 2020, 15:53:37)
 Now replace the original expression with a partially calculated one:
 
 ```python
-value == 'first'
+value == "first"
 ```
 
 Not at all what we expected. Now let's go back to the beginning and write the test correctly:
@@ -152,5 +152,5 @@ Not at all what we expected. Now let's go back to the beginning and write the te
 ```python
 # It is not necessary to put parentheses,
 # because the priority == is higher than the priority of or
-value == 'first' or value == 'second'
+value == "first" or value == "second"
 ```

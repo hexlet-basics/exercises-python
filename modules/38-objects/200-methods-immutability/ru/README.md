@@ -7,7 +7,7 @@
 Когда мы вызываем метод у строки, кажется, что мы меняем ее. Например, переводим в верхний регистр.
 
 ```python
-text = 'hexlet'
+text = "hexlet"
 text.upper()
 print(text)  # => hexlet
 ```
@@ -24,7 +24,7 @@ text          →  'Python'  (не изменилась)
 Чтобы не потерять результат, сохраним его в переменную.
 
 ```python
-text = 'hexlet'
+text = "hexlet"
 new_text = text.upper()
 print(new_text)  # => HEXLET
 ```
@@ -34,10 +34,10 @@ print(new_text)  # => HEXLET
 Другие методы работают так же.
 
 ```python
-text = '   hi   '
+text = "   hi   "
 cleaned = text.strip()
 print(cleaned)  # => 'hi', результат не содержит пробелов
-print(text)     # => '   hi   ', строка не изменилась, она содержит пробелы
+print(text)  # => '   hi   ', строка не изменилась, она содержит пробелы
 ```
 
 Метод `strip()` вернул новую строку без пробелов, но сам `text` не изменился.
@@ -51,7 +51,7 @@ print(text)     # => '   hi   ', строка не изменилась, она 
 Результат метода можно записать обратно в ту же переменную.
 
 ```python
-text = '   hexlet   '
+text = "   hexlet   "
 text = text.strip()
 print(text)  # => 'hexlet'
 ```
@@ -59,7 +59,7 @@ print(text)  # => 'hexlet'
 Это уместно, когда суть данных не меняется. После `strip()` это тот же текст, просто чище. Если результат метода представляет другую сущность, стоит дать ей отдельное имя.
 
 ```python
-full_name = 'John Doe'
+full_name = "John Doe"
 header_name = full_name.upper()
 ```
 

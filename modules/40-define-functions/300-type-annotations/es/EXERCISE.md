@@ -6,9 +6,9 @@ La aplicación crea separadores de texto a partir de caracteres repetidos, por e
 Y devuelve la cadena repetida n veces. Si se pasa cero, se devuelve una cadena vacía.
 
 ```python
-text = 'python'
-print(word_multiply(text, 2)) # => pythonpython
-print(word_multiply(text, 0)) # =>
+text = "python"
+print(word_multiply(text, 2))  # => pythonpython
+print(word_multiply(text, 0))  # =>
 ```
 
 Especifica las anotaciones de tipos al declarar la función.

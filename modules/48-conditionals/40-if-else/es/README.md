@@ -4,15 +4,16 @@ Mira la función de abajo. Determina el tipo de la oración por su último cará
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
-    if last_char == '?':
-        sentence_type = 'question'
+    if last_char == "?":
+        sentence_type = "question"
     else:
-        sentence_type = 'normal'
+        sentence_type = "normal"
 
     return "Sentence is " + sentence_type
 
-print(get_type_of_sentence('Hodor'))  # => Sentence is normal
-print(get_type_of_sentence('Hodor?')) # => Sentence is question
+
+print(get_type_of_sentence("Hodor"))  # => Sentence is normal
+print(get_type_of_sentence("Hodor?"))  # => Sentence is question
 ```
 
 Añadimos `else` y un bloque nuevo. Se ejecutará si la condición del `if` resulta falsa. Además, dentro del bloque `else` se pueden anidar otras condiciones `if`. Else se traduce como "si no", "en otro caso".
@@ -48,10 +49,10 @@ La construcción `if-else` se puede escribir de dos formas. Con la negación se 
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
-    if last_char != '?':
-        sentence_type = 'normal'
+    if last_char != "?":
+        sentence_type = "normal"
     else:
-        sentence_type = 'question'
+        sentence_type = "question"
 
     return "Sentence is " + sentence_type
 ```
@@ -70,6 +71,7 @@ def check_number(number):
     else:
         print("El número no es positivo")
 
+
 check_number(3)
 # => El número es positivo
 # => El número no es positivo
@@ -86,6 +88,7 @@ def check_number(number: int) -> None:
             print("El número es mayor que 10")
     else:
         print("El número no es positivo")
+
 
 check_number(3)
 # => El número es positivo

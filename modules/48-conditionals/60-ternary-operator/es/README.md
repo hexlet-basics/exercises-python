@@ -26,9 +26,9 @@ Antes:
 ```python
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
-    if last_char == '?':
-        return 'question'
-    return 'normal'
+    if last_char == "?":
+        return "question"
+    return "normal"
 ```
 
 Después:
@@ -36,10 +36,11 @@ Después:
 ```python
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
-    return 'question' if last_char == '?' else 'normal'
+    return "question" if last_char == "?" else "normal"
 
-print(get_type_of_sentence('Hodor'))   # => normal
-print(get_type_of_sentence('Hodor?'))  # => question
+
+print(get_type_of_sentence("Hodor"))  # => normal
+print(get_type_of_sentence("Hodor?"))  # => question
 ```
 
 Un operador ternario se puede anidar dentro de otro operador ternario. Pero eso se considera una mala práctica: ese código es muy difícil de entender.

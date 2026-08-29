@@ -12,8 +12,8 @@ Si el país es desconocido, la función debe devolver `None`.
 Ejemplos de llamadas a la función:
 
 ```python
-calculate_delivery_cost('canada', 0.5)  # 600
-calculate_delivery_cost('canada', 2)    # 900
-calculate_delivery_cost('usa', 1)       # 800
-calculate_delivery_cost('france', 1)    # None
+calculate_delivery_cost("canada", 0.5)  # 600
+calculate_delivery_cost("canada", 2)  # 900
+calculate_delivery_cost("usa", 1)  # 800
+calculate_delivery_cost("france", 1)  # None
 ```

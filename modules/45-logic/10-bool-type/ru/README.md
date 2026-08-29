@@ -28,8 +28,8 @@ print(False)
 
 ```python
 print(5 >= 3)  # => True
-print(7 < 0)   # => False
-print(5 > 5)   # => False
+print(7 < 0)  # => False
+print(5 > 5)  # => False
 print(5 >= 5)  # => True
 print(2 == 5)  # => False
 print(2 != 5)  # => True
@@ -40,6 +40,7 @@ print(2 != 5)  # => True
 ```python
 def is_infant(age: int) -> bool:
     return age < 2
+
 
 print(is_infant(3))  # => False
 print(is_infant(2))  # => False
@@ -53,6 +54,7 @@ print(is_infant(0))  # => True
 def is_negative(number: int) -> bool:
     # Проверяем, меньше ли число нуля
     return number < 0
+
 
 print(is_negative(-5))  # => True
 print(is_negative(7))  # => False

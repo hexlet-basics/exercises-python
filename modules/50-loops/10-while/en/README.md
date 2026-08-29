@@ -13,10 +13,11 @@ Let's write a function with a simple loop that will display the string `'Hello!'
 
 ```python
 def print_hello(n):
-  counter = 0
-  while counter < n:
-      print('Hello!')
-      counter = counter + 1
+    counter = 0
+    while counter < n:
+        print("Hello!")
+        counter = counter + 1
+
 
 print_hello(2)
 # => Hello!
@@ -36,14 +37,15 @@ You can't implement this function with the tools you've already learned, because
 
 ```python
 def print_numbers(last_number):
-  # i is short for index (ordinal number)
-  # this is a generally agreed way of expressing the iteration number
-  # as a loop counter
-  i = 1
-  while i <= last_number:
-      print(i)
-      i = i + 1
-  print('finished!')
+    # i is short for index (ordinal number)
+    # this is a generally agreed way of expressing the iteration number
+    # as a loop counter
+    i = 1
+    while i <= last_number:
+        print(i)
+        i = i + 1
+    print("finished!")
+
 
 print_numbers(3)
 # => 1
@@ -101,12 +103,12 @@ At this point, beginners make a lot of mistakes. For example, you may forget to 
 
 ```python
 def print_numbers(last_number):
-  i = 1
-  # This loop will never stop
-  # and will always print the same value
-  while i <= last_number:
-      print(i)
-  print('finished!')
+    i = 1
+    # This loop will never stop
+    # and will always print the same value
+    while i <= last_number:
+        print(i)
+    print("finished!")
 ```
 
 In some cases, infinite loops are useful. We won't look at these situations right now, but we can show you what this code looks like:

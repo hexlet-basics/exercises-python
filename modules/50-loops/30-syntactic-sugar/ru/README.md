@@ -14,10 +14,10 @@ price = price / 3
 Python позволяет записывать это короче, с помощью комбинированных операторов:
 
 ```python
-index += 1     # то же самое, что index = index + 1
-count *= 2     # то же самое, что count = count * 2
-total -= 5     # то же самое, что total = total - 5
-price /= 3     # то же самое, что price = price / 3
+index += 1  # то же самое, что index = index + 1
+count *= 2  # то же самое, что count = count * 2
+total -= 5  # то же самое, что total = total - 5
+price /= 3  # то же самое, что price = price / 3
 ```
 
 В циклах такие сокращения встречаются особенно часто. В них мы обычно меняем счетчик и накапливаем результат:
@@ -27,8 +27,8 @@ sum = 0
 index = 1
 
 while index <= 5:
-    sum += index      # то же самое, что sum = sum + index
-    index += 1        # то же самое, что index = index + 1
+    sum += index  # то же самое, что sum = sum + index
+    index += 1  # то же самое, что index = index + 1
 
 print(sum)  # => 15
 ```
@@ -49,7 +49,7 @@ while index <= 5:
 
 ```python
 text = "Hello"
-text += " World"   # то же самое, что text = text + " World"
+text += " World"  # то же самое, что text = text + " World"
 ```
 
 ## Поддерживаемые сокращения

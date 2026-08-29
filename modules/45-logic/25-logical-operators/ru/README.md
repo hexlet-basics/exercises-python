@@ -27,9 +27,10 @@ print(is_correct_password('qwerty1234'))               # => False
 def has_discount(age: int, is_student: bool) -> bool:
     return age < 18 or is_student
 
+
 print(has_discount(15, False))  # => True  (младше 18)
-print(has_discount(25, True))   # => True  (студент)
-print(has_discount(15, True))   # => True  (оба условия)
+print(has_discount(25, True))  # => True  (студент)
+print(has_discount(15, True))  # => True  (оба условия)
 print(has_discount(25, False))  # => False
 ```
 
@@ -53,15 +54,16 @@ def is_strong_password(password) -> bool:
 
 ```python
 def is_good_apartment(area: int, street: str) -> bool:
-    return area >= 100 or (area >= 80 and street == 'Main Street')
+    return area >= 100 or (area >= 80 and street == "Main Street")
 
-print(is_good_apartment(91, 'Queens Street'))  # => False
-print(is_good_apartment(78, 'Queens Street'))  # => False
-print(is_good_apartment(70, 'Main Street'))    # => False
 
-print(is_good_apartment(120, 'Queens Street'))  # => True
-print(is_good_apartment(120, 'Main Street'))    # => True
-print(is_good_apartment(80, 'Main Street'))     # => True
+print(is_good_apartment(91, "Queens Street"))  # => False
+print(is_good_apartment(78, "Queens Street"))  # => False
+print(is_good_apartment(70, "Main Street"))  # => False
+
+print(is_good_apartment(120, "Queens Street"))  # => True
+print(is_good_apartment(120, "Main Street"))  # => True
+print(is_good_apartment(80, "Main Street"))  # => True
 ```
 
 Область математики, в которой изучаются логические операторы, называется булевой алгеброй. **Таблицы истинности** показывают, каким будет результат при применении каждого оператора.

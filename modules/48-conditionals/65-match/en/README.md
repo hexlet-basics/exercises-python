@@ -52,14 +52,14 @@ The first approach involves creating a variable before the `match`, filling it i
 ```python
 def count_items(count):
     # Declare a variable
-    result = ''
+    result = ""
 
     # Fill it
     match count:
         case 1:
-            result = 'one'
+            result = "one"
         case 2:
-            result = 'two'
+            result = "two"
         case _:
             result = None
 
@@ -73,9 +73,9 @@ The second and simpler approach is to directly return from the function while wo
 def count_items(count):
     match count:
         case 1:
-            return 'one'
+            return "one"
         case 2:
-            return 'two'
+            return "two"
         case _:
             return None
 ```

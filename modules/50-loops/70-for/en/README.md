@@ -8,7 +8,7 @@ A string is a collection because it consists of a set of characters. The other t
 Example:
 
 ```python
-text = 'code'
+text = "code"
 for symbol in text:
     print(symbol)
 
@@ -25,7 +25,7 @@ Let's see how to implement the string flip function through the `for` loop:
 ```python
 def reverse_string(text):
     # Initial value
-    result = ''
+    result = ""
     # char - a variable in which the current character is written
     for char in text:
         # Connect in reverse order
@@ -34,7 +34,7 @@ def reverse_string(text):
     return result
 
 
-reverse_string('go!')  # => '!og'
+reverse_string("go!")  # => '!og'
 ```
 
 Now let's calculate the number of mentions of a character in the string, not case-sensitive:
@@ -53,9 +53,9 @@ def chars_count(text, char):
     return result
 
 
-chars_count('hexlet!', 'e')  # 2
-chars_count('hExlet!', 'e')  # 2
-chars_count('hExlet!', 'E')  # 2
+chars_count("hexlet!", "e")  # 2
+chars_count("hExlet!", "e")  # 2
+chars_count("hExlet!", "E")  # 2
 
-chars_count('hexlet!', 'a')  # 0
+chars_count("hexlet!", "a")  # 0
 ```

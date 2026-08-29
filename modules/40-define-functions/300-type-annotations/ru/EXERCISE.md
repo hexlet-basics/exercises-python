@@ -6,9 +6,9 @@
 И возвращает строку, которая повторяется n-раз. Если передается ноль, то возвращается пустая строка.
 
 ```python
-text = 'python'
-print(word_multiply(text, 2)) # => pythonpython
-print(word_multiply(text, 0)) # =>
+text = "python"
+print(word_multiply(text, 2))  # => pythonpython
+print(word_multiply(text, 0))  # =>
 ```
 
 Укажите аннотации типов при объявлении функции.

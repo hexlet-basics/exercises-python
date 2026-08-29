@@ -4,19 +4,20 @@
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
-    if last_char == '?':
-        sentence_type = 'question'
+    if last_char == "?":
+        sentence_type = "question"
 
-    if last_char == '!':
-        sentence_type = 'exclamation'
+    if last_char == "!":
+        sentence_type = "exclamation"
     else:
-        sentence_type = 'normal'
+        sentence_type = "normal"
 
-    return 'Sentence is ' + sentence_type
+    return "Sentence is " + sentence_type
 
-print(get_type_of_sentence('Who?'))  # => 'Sentence is normal'
-print(get_type_of_sentence('No'))    # => 'Sentence is normal'
-print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
+
+print(get_type_of_sentence("Who?"))  # => 'Sentence is normal'
+print(get_type_of_sentence("No"))  # => 'Sentence is normal'
+print(get_type_of_sentence("No!"))  # => 'Sentence is exclamation'
 ```
 
 Мы добавили проверку восклицательных предложений. Технически эта функция работает, но вопросительные предложения трактует неверно. Еще в ней есть проблемы с точки зрения семантики. Наличие восклицательного знака проверяется в любом случае, даже если уже обнаружился вопросительный знак. Ветка `else` описана для второго условия, но не для первого. Поэтому вопросительное предложение становится `"normal"`.
@@ -27,18 +28,19 @@ print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
-    if last_char == '?':
-        sentence_type = 'question'
-    elif last_char == '!':
-        sentence_type = 'exclamation'
+    if last_char == "?":
+        sentence_type = "question"
+    elif last_char == "!":
+        sentence_type = "exclamation"
     else:
-        sentence_type = 'normal'
+        sentence_type = "normal"
 
-    return 'Sentence is ' + sentence_type
+    return "Sentence is " + sentence_type
 
-print(get_type_of_sentence('Who?'))  # => 'Sentence is question'
-print(get_type_of_sentence('No'))    # => 'Sentence is normal'
-print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
+
+print(get_type_of_sentence("Who?"))  # => 'Sentence is question'
+print(get_type_of_sentence("No"))  # => 'Sentence is normal'
+print(get_type_of_sentence("No!"))  # => 'Sentence is exclamation'
 ```
 
 Теперь все условия выстроились в единую конструкцию. Ключевое слово `elif` означает "если не выполнено предыдущее условие, но выполнено текущее".

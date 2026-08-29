@@ -28,8 +28,8 @@ Los lenguajes de programación adaptaron todas las operaciones matemáticas de c
 
 ```python
 print(5 >= 3)  # => True
-print(7 < 0)   # => False
-print(5 > 5)   # => False
+print(7 < 0)  # => False
+print(5 > 5)  # => False
 print(5 >= 5)  # => True
 print(2 == 5)  # => False
 print(2 != 5)  # => True
@@ -40,6 +40,7 @@ Cuando en una comparación se usan valores concretos, esa operación parece care
 ```python
 def is_infant(age: int) -> bool:
     return age < 2
+
 
 print(is_infant(3))  # => False
 print(is_infant(2))  # => False
@@ -53,6 +54,7 @@ Cuando las funciones devuelven el resultado de una comparación, normalmente res
 def is_negative(number: int) -> bool:
     # Comprobamos si el número es menor que cero
     return number < 0
+
 
 print(is_negative(-5))  # => True
 print(is_negative(7))  # => False

@@ -4,7 +4,8 @@ Al llamar a una función, los argumentos se pueden pasar de dos formas. En la **
 def repeat(text, times=1):
     return text * times
 
-repeat("Hi", 3)             # llamada posicional
+
+repeat("Hi", 3)  # llamada posicional
 repeat(text="Hi", times=3)  # llamada con nombres
 ```
 
@@ -43,7 +44,8 @@ Los argumentos con nombre son útiles cuando la función tiene varios parámetro
 def make_line(symbol="-", length=10):
     return symbol * length
 
-make_line()          # todos los parámetros por defecto
+
+make_line()  # todos los parámetros por defecto
 
 make_line(length=5)  # cambiamos solo la longitud
 # Sin esto habría que escribirlo así

@@ -16,7 +16,8 @@
 def add(a: int, b: int) -> int:
     return a + b
 
-print(add(2, 3))   # => 5
+
+print(add(2, 3))  # => 5
 ```
 
 ```text
@@ -45,6 +46,7 @@ add("2", 3)  # Argument of type "str" is not assignable to parameter of type "in
 def describe(name: str, age: int, height: float) -> str:
     return f"{name}, {age} лет, рост {height}"
 
+
 print(describe("Anna", 25, 1.70))
 # => Anna, 25 лет, рост 1.7
 ```
@@ -54,6 +56,7 @@ print(describe("Anna", 25, 1.70))
 ```python
 def print_greeting(name: str) -> None:
     print(f"Hello, {name}!")
+
 
 print_greeting("Anna")
 # => Hello, Anna!
@@ -67,7 +70,8 @@ print_greeting("Anna")
 def greet(name: str, greeting: str = "Hello") -> str:
     return f"{greeting}, {name}"
 
-print(greet("Anna"))          # => Hello, Anna
+
+print(greet("Anna"))  # => Hello, Anna
 print(greet("Kirill", "Hi"))  # => Hi, Kirill
 ```
 

@@ -3,8 +3,8 @@ Un botón de la aplicación funciona como un interruptor: cada pulsación cambia
 Ejemplos de llamadas:
 
 ```python
-print(flip_flop('flip')) # => flop
-print(flip_flop('flop')) # => flip
+print(flip_flop("flip"))  # => flop
+print(flip_flop("flop"))  # => flip
 ```
 
 Intenta escribir dos versiones de la función: con un if-else normal y con el operador ternario.

@@ -3,6 +3,6 @@ Al registrarse en un sitio, el programa comprueba que la contraseña sea suficie
 Un ejemplo de funcionamiento:
 
 ```python
-print(is_long_word("apple"))   # => False
+print(is_long_word("apple"))  # => False
 print(is_long_word("banana"))  # => True
 ```

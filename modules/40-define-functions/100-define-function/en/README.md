@@ -8,9 +8,9 @@ Let's say we want to send emails on a website. This is quite a complicated proce
 # Where the function comes from
 from emails import send
 
-email = 'support@hexlet.io'
-title = 'Help'
-body = 'I wrote a success story, how can I get a discount?'
+email = "support@hexlet.io"
+title = "Help"
+body = "I wrote a success story, how can I get a discount?"
 
 # There's just one call, but it's got a lot of logic inside
 send(email, title, body)
@@ -29,9 +29,10 @@ Hello, Hexlet!
 # Defining a function does not invoke or execute it
 # We're only saying that this function now exists
 def show_greeting():
-  # Indent four spaces inside the body
-  text = 'Hello, Hexlet!'
-  print(text)
+    # Indent four spaces inside the body
+    text = "Hello, Hexlet!"
+    print(text)
+
 
 # Function call
 show_greeting()  # => 'Hello, Hexlet!'
@@ -48,7 +49,8 @@ The body of the function can be empty. In that case, the keyword `pass` is used 
 ```python
 # Minimum function definition
 def noop():
-  pass
+    pass
+
 
 noop()
 ```

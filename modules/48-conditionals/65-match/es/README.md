@@ -55,14 +55,14 @@ La primera. Crear una variable antes del `match`, rellenarla en el `case` y lueg
 ```python
 def count_items(count):
     # Declaramos la variable
-    result = ''
+    result = ""
 
     # La rellenamos
     match count:
         case 1:
-            result = 'one'
+            result = "one"
         case 2:
-            result = 'two'
+            result = "two"
         case _:
             result = None
 
@@ -76,9 +76,9 @@ La segunda forma es más simple y más corta. En lugar de crear una variable, al
 def count_items(count):
     match count:
         case 1:
-            return 'one'
+            return "one"
         case 2:
-            return 'two'
+            return "two"
         case _:
             return None
 ```

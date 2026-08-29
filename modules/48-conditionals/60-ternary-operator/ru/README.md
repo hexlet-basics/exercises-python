@@ -26,9 +26,9 @@ def abs(number: int) -> int:
 ```python
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
-    if last_char == '?':
-        return 'question'
-    return 'normal'
+    if last_char == "?":
+        return "question"
+    return "normal"
 ```
 
 Стало:
@@ -36,10 +36,11 @@ def get_type_of_sentence(sentence: str) -> str:
 ```python
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
-    return 'question' if last_char == '?' else 'normal'
+    return "question" if last_char == "?" else "normal"
 
-print(get_type_of_sentence('Hodor'))   # => normal
-print(get_type_of_sentence('Hodor?'))  # => question
+
+print(get_type_of_sentence("Hodor"))  # => normal
+print(get_type_of_sentence("Hodor?"))  # => question
 ```
 
 Тернарный оператор можно вкладывать в тернарный оператор. Но это считается плохой практикой, такой код очень сложно понимать.

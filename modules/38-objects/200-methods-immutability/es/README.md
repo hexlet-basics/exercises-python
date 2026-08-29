@@ -7,7 +7,7 @@ Veámoslo con el ejemplo de las cadenas.
 Cuando llamamos a un método de una cadena, parece que la estamos modificando. Por ejemplo, la pasamos a mayúsculas.
 
 ```python
-text = 'hexlet'
+text = "hexlet"
 text.upper()
 print(text)  # => hexlet
 ```
@@ -24,7 +24,7 @@ text          →  'Python'  (no cambió)
 Para no perder el resultado, guardémoslo en una variable.
 
 ```python
-text = 'hexlet'
+text = "hexlet"
 new_text = text.upper()
 print(new_text)  # => HEXLET
 ```
@@ -34,10 +34,10 @@ Si no guardas el resultado del método en una variable nueva, simplemente lo per
 Los otros métodos funcionan igual.
 
 ```python
-text = '   hi   '
+text = "   hi   "
 cleaned = text.strip()
 print(cleaned)  # => 'hi', el resultado no contiene espacios
-print(text)     # => '   hi   ', la cadena no cambió, contiene espacios
+print(text)  # => '   hi   ', la cadena no cambió, contiene espacios
 ```
 
 El método `strip()` devolvió una cadena nueva sin espacios, pero el propio `text` no cambió.
@@ -51,7 +51,7 @@ Más adelante verás que la mutabilidad y la inmutabilidad son propiedades impor
 El resultado del método se puede escribir de vuelta en la misma variable.
 
 ```python
-text = '   hexlet   '
+text = "   hexlet   "
 text = text.strip()
 print(text)  # => 'hexlet'
 ```
@@ -59,7 +59,7 @@ print(text)  # => 'hexlet'
 Eso es apropiado cuando la esencia de los datos no cambia. Después de `strip()` es el mismo texto, solo más limpio. Si el resultado del método representa otra entidad, vale la pena darle un nombre aparte.
 
 ```python
-full_name = 'John Doe'
+full_name = "John Doe"
 header_name = full_name.upper()
 ```
 

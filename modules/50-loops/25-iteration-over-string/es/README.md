@@ -12,7 +12,8 @@ def print_name_by_symbol(name: str) -> None:
         print(name[i])
         i = i + 1
 
-name = 'Arya'
+
+name = "Arya"
 print_name_by_symbol(name)
 # => 'A'
 # => 'r'
@@ -38,15 +39,16 @@ En lugar de imprimir se puede construir una cadena nueva. Por ejemplo, escribamo
 
 ```python
 def reverse_string(text: str) -> str:
-    result = ''
+    result = ""
     i = len(text) - 1
     while i >= 0:
         result = result + text[i]
         i = i - 1
     return result
 
-print(reverse_string('Arya'))    # => ayrA
-print(reverse_string('hexlet'))  # => telxeh
+
+print(reverse_string("Arya"))  # => ayrA
+print(reverse_string("hexlet"))  # => telxeh
 ```
 
 La variable `result` se inicializa con la cadena vacía como elemento neutro de la concatenación. El bucle empieza en el último índice (`len(text) - 1`), avanza hacia cero y termina cuando el índice se vuelve menor que cero. En cada paso se añade al resultado el carácter actual. Al final la cadena se construye en orden inverso.

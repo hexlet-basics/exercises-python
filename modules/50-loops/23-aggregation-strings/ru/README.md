@@ -3,7 +3,7 @@
 Представим функцию, которая повторяет строку указанное количество раз. Да, в Python для повтора встроен оператор умножения строки на число, но здесь мы посмотрим как он примерно реализован внутри:
 
 ```python
-repeat('hexlet', 3)  # 'hexlethexlethexlet'
+repeat("hexlet", 3)  # 'hexlethexlethexlet'
 ```
 
 Функция наращивает строку в цикле указанное количество раз:
@@ -11,7 +11,7 @@ repeat('hexlet', 3)  # 'hexlethexlethexlet'
 ```python
 def repeat(text: str, times: int) -> str:
     # Нейтральный элемент для строк — пустая строка
-    result = ''
+    result = ""
     i = 1
 
     while i <= times:
@@ -26,10 +26,10 @@ def repeat(text: str, times: int) -> str:
 
 ```python
 # Для вызова repeat('hexlet', 3)
-result = ''
-result = result + 'hexlet'  # hexlet
-result = result + 'hexlet'  # hexlethexlet
-result = result + 'hexlet'  # hexlethexlethexlet
+result = ""
+result = result + "hexlet"  # hexlet
+result = result + "hexlet"  # hexlethexlet
+result = result + "hexlet"  # hexlethexlethexlet
 ```
 
 Наглядно процесс наращивания строки выглядит так.
@@ -50,8 +50,8 @@ i=3: result = 'hexlethexlet' + 'hexlet' = 'hexlethexlethexlet'
 Она называется нейтральным элементом, потому что при конкатенации ничего не меняет:
 
 ```python
-print('' + 'abc')   # => abc
-print('abc' + '')   # => abc
+print("" + "abc")  # => abc
+print("abc" + "")  # => abc
 ```
 
 Поэтому именно пустая строка всегда используется как начальное значение при агрегации строк.

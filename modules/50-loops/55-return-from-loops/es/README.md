@@ -28,6 +28,7 @@ def is_prime(number: int) -> bool:
 
     return True
 
+
 print(is_prime(1))  # => False
 print(is_prime(2))  # => True
 print(is_prime(3))  # => True

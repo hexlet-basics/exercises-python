@@ -16,7 +16,8 @@ Analicémoslo con el ejemplo de una función que calcula la suma de dos valores 
 def add(a: int, b: int) -> int:
     return a + b
 
-print(add(2, 3))   # => 5
+
+print(add(2, 3))  # => 5
 ```
 
 ```text
@@ -45,6 +46,7 @@ En esta etapa basta con conocer las anotaciones de los tipos de datos simples, p
 def describe(name: str, age: int, height: float) -> str:
     return f"{name}, {age} años, altura {height}"
 
+
 print(describe("Anna", 25, 1.70))
 # => Anna, 25 años, altura 1.7
 ```
@@ -54,6 +56,7 @@ Si la función no devuelve nada, como tipo de retorno se indica `None`. Por ejem
 ```python
 def print_greeting(name: str) -> None:
     print(f"Hello, {name}!")
+
 
 print_greeting("Anna")
 # => Hello, Anna!
@@ -67,7 +70,8 @@ Las anotaciones funcionan igual tanto para los parámetros obligatorios como par
 def greet(name: str, greeting: str = "Hello") -> str:
     return f"{greeting}, {name}"
 
-print(greet("Anna"))          # => Hello, Anna
+
+print(greet("Anna"))  # => Hello, Anna
 print(greet("Kirill", "Hi"))  # => Hi, Kirill
 ```
 

@@ -5,13 +5,14 @@ As an example, consider a function that determines the type of sentence passed t
 
 ```python
 def get_type_of_sentence(sentence):
-  last_char = sentence[-1]
-  if last_char == '?':
-      return 'question'
-  return 'normal'
+    last_char = sentence[-1]
+    if last_char == "?":
+        return "question"
+    return "normal"
 
-print(get_type_of_sentence('Hodor'))   # => normal
-print(get_type_of_sentence('Hodor?'))  # => question
+
+print(get_type_of_sentence("Hodor"))  # => normal
+print(get_type_of_sentence("Hodor?"))  # => question
 ```
 
 `if` is a language construct that controls the procedure of how instructions are executed. After the word `if` it passes a predicate expression, followed by a colon at the end. Next, we pass a block of code. It will execute if the predicate is true.

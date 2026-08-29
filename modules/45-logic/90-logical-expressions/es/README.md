@@ -5,7 +5,7 @@ if "hello":
     print("cadena no vacía — truthy")  # se ejecutará
 
 if not 0:
-    print("cero — falsy")              # se ejecutará
+    print("cero — falsy")  # se ejecutará
 ```
 
 ## Valores falsy y truthy
@@ -21,13 +21,13 @@ En Python las expresiones lógicas no devuelven solo `True` o `False`. Devuelven
 ```python
 # and devuelve el primer falsy o el último operando
 print("hello" and "world")  # => "world"  (los dos truthy — el último)
-print("" and "world")       # => ""       (el primer falsy)
-print(0 and "world")        # => 0        (el primer falsy)
+print("" and "world")  # => ""       (el primer falsy)
+print(0 and "world")  # => 0        (el primer falsy)
 
 # or devuelve el primer truthy o el último operando
-print("hello" or "world")   # => "hello"  (el primer truthy)
-print("" or "world")        # => "world"  (el primer truthy)
-print("" or 0)              # => 0        (los dos falsy — el último)
+print("hello" or "world")  # => "hello"  (el primer truthy)
+print("" or "world")  # => "world"  (el primer truthy)
+print("" or 0)  # => 0        (los dos falsy — el último)
 ```
 
 El orden de evaluación depende de la prioridad de los operadores.
@@ -48,7 +48,7 @@ Prioridad (de la más alta a la más baja):
 
 ```python
 result = 10 % 2 == 0 and "yes" or "no"
-print(result)   # => "yes"
+print(result)  # => "yes"
 ```
 
 Analicemos esa expresión paso a paso. Primero se ejecuta la aritmética `10 % 2 == 0` → `True`. Después actúa `and`: como a la izquierda hay verdad, el resultado pasa a ser `"yes"`. Como `"yes"` es truthy, el operador `or` devuelve precisamente ese valor.
@@ -59,8 +59,9 @@ El mismo principio dentro de una función:
 def parity(number: int) -> str:
     return number % 2 == 0 and "even" or "odd"
 
+
 print(parity(10))  # => "even"
-print(parity(7))   # => "odd"
+print(parity(7))  # => "odd"
 ```
 
 ## Ejemplos
@@ -87,8 +88,9 @@ La particularidad de los valores truthy y falsy resulta cómoda de aplicar en la
 def get_text_or_default(text: str, default: str = "empty") -> str:
     return text or default
 
-print(get_text_or_default("hello"))   # => "hello"
-print(get_text_or_default(""))        # => "empty"
+
+print(get_text_or_default("hello"))  # => "hello"
+print(get_text_or_default(""))  # => "empty"
 ```
 
 Aquí la expresión `text or default` funciona así: si `text` no está vacío (truthy), la función lo devolverá. Si `text` está vacío (falsy), la función devolverá `default`.

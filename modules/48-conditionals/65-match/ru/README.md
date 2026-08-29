@@ -55,14 +55,14 @@ match count:
 ```python
 def count_items(count):
     # Объявляем переменную
-    result = ''
+    result = ""
 
     # Заполняем
     match count:
         case 1:
-            result = 'one'
+            result = "one"
         case 2:
-            result = 'two'
+            result = "two"
         case _:
             result = None
 
@@ -76,9 +76,9 @@ def count_items(count):
 def count_items(count):
     match count:
         case 1:
-            return 'one'
+            return "one"
         case 2:
-            return 'two'
+            return "two"
         case _:
             return None
 ```

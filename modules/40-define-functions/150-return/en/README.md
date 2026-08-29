@@ -5,7 +5,7 @@ When we define a function, it prints data on the screen:
 
 ```python
 def greeting():
-    print('Hello, Hexlet!')
+    print("Hello, Hexlet!")
 ```
 
 These functions are of little use, because the result can't be used within the program. Let's look at an example.
@@ -20,7 +20,7 @@ If we save it that way in the database, the user won't be able to log in. To avo
 ```python
 def save_email():
     # Email comes from the form
-    email = '  SuppORT@hexlet.IO'
+    email = "  SuppORT@hexlet.IO"
     # Trim whitespace characters
     trimmed_email = email.strip()
     prepared_email = trimmed_email.lower()
@@ -34,14 +34,14 @@ This code was made possible because the value was returned. The `strip()` and `l
 message = greeting()
 # in actual fact, print() returns None
 # None is a special object used to represent no value
-print(message) # => None
+print(message)  # => None
 ```
 
 Now change the `greeting()` function so that it returns data. To do this, let's perform a return instead of printing to the screen:
 
 ```python
 def greeting():
-    return 'Hello, Hexlet!'
+    return "Hello, Hexlet!"
 ```
 
 `return' is an instruction. It takes the expression written to the right and gives it to the code that called the method. This is where the function ends.
@@ -49,25 +49,25 @@ def greeting():
 ```python
 # Now we can use the result of the function
 message = greeting()
-print(message) # => Hello, Hexlet!
+print(message)  # => Hello, Hexlet!
 # And even perform some actions on the result
-print(message.upper()) # => HELLO, HEXLET!
+print(message.upper())  # => HELLO, HEXLET!
 ```
 
 Any code after `return` is not executed:
 
 ```python
 def greeting_with_code_after_return():
-    return 'Hello, Hexlet!'
-    print('I will never be executed')
+    return "Hello, Hexlet!"
+    print("I will never be executed")
 ```
 
 Even if the function returns data, this doesn't limit what it prints. In addition to returning data, we can also print:
 
 ```python
 def greeting_with_return_and_printing():
-    print('I will appear in the console')
-    return 'Hello, Hexlet!'
+    print("I will appear in the console")
+    return "Hello, Hexlet!"
 
 
 # And it'll print the text on the screen and return the value
@@ -78,7 +78,7 @@ You can print more than just a specific value. Since `return` works with express
 
 ```python
 def greeting():
-    message = 'Hello, Hexlet!'
+    message = "Hello, Hexlet!"
     return message
 ```
 

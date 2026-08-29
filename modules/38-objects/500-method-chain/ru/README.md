@@ -1,7 +1,7 @@
 Метод представляет собой операцию, которая применяется к значению и возвращает новый результат. Если результат снова позволяет вызывать методы, то к нему можно применить еще один метод. Такой прием называется **цепочка методов (method chaining)**.
 
 ```python
-text = '  hExLeT  '
+text = "  hExLeT  "
 result = text.strip().lower()
 print(result)  # => 'hexlet'
 ```
@@ -14,13 +14,13 @@ print(result)  # => 'hexlet'
 Методы вызываются один за другим, как звенья в цепочке. Это позволяет писать компактный и читаемый код.
 
 ```python
-print('  hExLeT  '.strip().lower().replace('h', 'x'))  # => xexlet
+print("  hExLeT  ".strip().lower().replace("h", "x"))  # => xexlet
 
 # То же самое, но без цепочки
-text = '  hExLeT  '
-step1 = text.strip()             # 'hExLeT'
-step2 = step1.lower()            # 'hexlet'
-step3 = step2.replace('h', 'x')  # 'xexlet'
+text = "  hExLeT  "
+step1 = text.strip()  # 'hExLeT'
+step2 = step1.lower()  # 'hexlet'
+step3 = step2.replace("h", "x")  # 'xexlet'
 print(step3)
 ```
 
@@ -44,7 +44,7 @@ print(step3)
 В цепочке методов порядок выполнения идет слева направо. Каждый следующий метод вызывается на результате предыдущего.
 
 ```python
-print('  hExLeT  '.strip().lower().replace('h', 'x'))  # => xexlet
+print("  hExLeT  ".strip().lower().replace("h", "x"))  # => xexlet
 ```
 
 1. `'  hExLeT  '` является исходной строкой.
@@ -55,8 +55,8 @@ print('  hExLeT  '.strip().lower().replace('h', 'x'))  # => xexlet
 При использовании функций внутренняя часть выполняется первой, и ее результат передается в следующую функцию.
 
 ```python
- # Условный пример, если бы strip и lower были функциями
-print(lower(strip('  hExLeT  ')))
+# Условный пример, если бы strip и lower были функциями
+print(lower(strip("  hExLeT  ")))
 ```
 
 В методах вы просто "двигаетесь" слева направо, читая цепочку как обычное предложение. Это делает работу с методами особенно удобной.
@@ -64,7 +64,7 @@ print(lower(strip('  hExLeT  ')))
 Если перепутать порядок, результат может отличаться:
 
 ```python
-print('  hExLeT  '.replace('h', 'x').strip().lower())  # => xexlet
+print("  hExLeT  ".replace("h", "x").strip().lower())  # => xexlet
 ```
 
 В этом случае `replace()` сработает на строку с пробелами. Итог оказался тем же, но это скорее совпадение. В других ситуациях порядок действительно имеет значение.
@@ -74,7 +74,7 @@ print('  hExLeT  '.replace('h', 'x').strip().lower())  # => xexlet
 Методы можно вызывать и после других операций, например, после среза строки:
 
 ```python
-text = '  Hello, Hexlet!  '
+text = "  Hello, Hexlet!  "
 # Удаляем пробелы, берем подстроку и переводим в нижний регистр
 print(text.strip()[7:].lower())  # => hexlet!
 ```
@@ -88,8 +88,8 @@ print(text.strip()[7:].lower())  # => hexlet!
 Цепочку можно продолжать, пока результат остается строкой (или другим типом, у которого есть методы). Если метод возвращает число или другой простой тип, то дальнейшие методы вызывать уже нельзя:
 
 ```python
-text = 'hexlet'
-length = text.upper().count('E')
+text = "hexlet"
+length = text.upper().count("E")
 print(length)  # => 2
 ```
 

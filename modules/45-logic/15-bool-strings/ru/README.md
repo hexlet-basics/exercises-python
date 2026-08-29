@@ -1,25 +1,25 @@
 Операции сравнения работают с числами и со строками. В Python строки сравниваются лексикографически: посимвольно слева направо по числовым кодам символов (Unicode).
 
 ```python
-print("apple" < "banana")   # => True
-print("cat" > "dog")        # => False
-print("abc" == "abc")       # => True
-print("hello" != "world")   # => True
+print("apple" < "banana")  # => True
+print("cat" > "dog")  # => False
+print("abc" == "abc")  # => True
+print("hello" != "world")  # => True
 ```
 
 Здесь `"apple" < "banana"`, потому что код `a` (97) меньше кода `b` (98), и именно первый символ решает исход сравнения. Код символа можно посмотреть так: `ord('a')` → `97`.
 
 ```python
-print(ord("a")) # => 97
-print(ord("b")) # => 98
+print(ord("a"))  # => 97
+print(ord("b"))  # => 98
 ```
 
 Сравнение чувствительно к регистру: `'Z'` (90) < `'a'` (97). Пример сравнения, где первые буквы разного регистра:
 
 ```python
-print("Zebra" < "apple")    # True — 'Z'(90) < 'a'(97)
-print("apple" < "Banana")   # False — 'a'(97) > 'B'(66)
-print("Apple" < "apple") # True  —  'A'(65) < 'a'(97)
+print("Zebra" < "apple")  # True — 'Z'(90) < 'a'(97)
+print("apple" < "Banana")  # False — 'a'(97) > 'B'(66)
+print("Apple" < "apple")  # True  —  'A'(65) < 'a'(97)
 ```
 
 Напишем функцию, которая проверяет, начинается ли слово с заданной буквы. Для этого возьмем первый символ строки и сравним его с нужной буквой.
@@ -28,15 +28,16 @@ print("Apple" < "apple") # True  —  'A'(65) < 'a'(97)
 def starts_with(word: str, letter: str) -> bool:
     return word[0] == letter
 
-print(starts_with("apple", "a"))   # => True
+
+print(starts_with("apple", "a"))  # => True
 print(starts_with("banana", "a"))  # => False
 ```
 
 Операции сравнения представляют собой такие же выражения, как и арифметические. В них можно подставлять готовые значения и другие выражения, как в примере выше: `word[0]`. Например, вместо числа можно использовать результат работы функции `len`, которая возвращает длину строки:
 
 ```python
-print(len("apple") > 3)   # => True, потому что len("apple") = 5
-print(len("hi") > 3)      # => False, потому что len("hi") = 2
+print(len("apple") > 3)  # => True, потому что len("apple") = 5
+print(len("hi") > 3)  # => False, потому что len("hi") = 2
 ```
 
 В примере выше, сначала выполняется функция `len("apple")`, результатом будет число `5`. Потом это число сравнивается с `3`. Другими словами, сначала считаются аргументы выражения (например, длина строки), а потом выполняется операция сравнения.
@@ -48,17 +49,17 @@ print(len("hi") > 3)      # => False, потому что len("hi") = 2
 У строк в Python есть много встроенных методов-предикатов. Они возвращают `True` или `False` и помогают проверять разные свойства строки. Ниже приведены самые часто используемые:
 
 ```python
-print("hello".startswith("he"))   # True — строка начинается с "he"
-print("hello".endswith("lo"))     # True — строка заканчивается на "lo"
+print("hello".startswith("he"))  # True — строка начинается с "he"
+print("hello".endswith("lo"))  # True — строка заканчивается на "lo"
 
-print("123".isdigit())            # True — все символы являются цифрами
-print("abc".isalpha())            # True — все символы являются буквами
-print("abc123".isalnum())         # True — строка состоит только из букв и цифр
+print("123".isdigit())  # True — все символы являются цифрами
+print("abc".isalpha())  # True — все символы являются буквами
+print("abc123".isalnum())  # True — строка состоит только из букв и цифр
 
-print("   ".isspace())            # True — строка содержит только пробелы
-print("Hello".islower())          # False — не все символы в нижнем регистре
-print("HELLO".isupper())          # True — все символы в верхнем регистре
-print("Title Case".istitle())     # True — каждое слово начинается с заглавной буквы
+print("   ".isspace())  # True — строка содержит только пробелы
+print("Hello".islower())  # False — не все символы в нижнем регистре
+print("HELLO".isupper())  # True — все символы в верхнем регистре
+print("Title Case".istitle())  # True — каждое слово начинается с заглавной буквы
 ```
 
 Такие методы позволяют проверять строки на нужные условия прямо в коде, без написания дополнительных функций.

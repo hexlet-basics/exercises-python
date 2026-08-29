@@ -5,7 +5,7 @@
 Строка состоит из символов, и цикл `for` позволяет проходить по строке символ за символом. Пример:
 
 ```python
-text = 'code'
+text = "code"
 for symbol in text:
     print(symbol)
 
@@ -32,7 +32,7 @@ for char in 'Hi!':     while i < len('Hi!'):
 ```python
 def reverse_string(text: str) -> str:
     # Начальное значение
-    result = ''
+    result = ""
     # char - переменная, в которую записывается текущий символ
     for char in text:
         # Соединяем в обратном порядке
@@ -41,7 +41,7 @@ def reverse_string(text: str) -> str:
     return result
 
 
-reverse_string('go!')  # => '!og'
+reverse_string("go!")  # => '!og'
 ```
 
 Разберем подробно как отрабатывает цикл в примере выше на каждом шаге итераций.
@@ -83,8 +83,8 @@ def chars_count(text: str, char: str) -> int:
     return result
 
 
-chars_count('hexlet!', 'e')  # 2
-chars_count('hExlet!', 'e')  # 2
-chars_count('hExlet!', 'E')  # 2
-chars_count('hexlet!', 'a')  # 0
+chars_count("hexlet!", "e")  # 2
+chars_count("hExlet!", "e")  # 2
+chars_count("hExlet!", "E")  # 2
+chars_count("hexlet!", "a")  # 0
 ```

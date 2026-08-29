@@ -22,8 +22,9 @@
 def is_even(number: int) -> bool:
     return number % 2 == 0
 
+
 print(is_even(10))  # => True
-print(is_even(3))   # => False
+print(is_even(3))  # => False
 ```
 
 Приоритет арифметических операций выше логических. Значит, сначала вычисляется арифметическое выражение `number % 2`, а затем результат сравнивается с нулем и возвращается результат проверки равенства.
@@ -39,10 +40,11 @@ print(is_even(3))   # => False
 ```python
 def is_first_letter_an_a(text: str) -> bool:
     first_letter = text[0]
-    return first_letter == 'a'
+    return first_letter == "a"
 
-print(is_first_letter_an_a('orange'))  # => False
-print(is_first_letter_an_a('apple'))   # => True
+
+print(is_first_letter_an_a("orange"))  # => False
+print(is_first_letter_an_a("apple"))  # => True
 ```
 
 Чтобы было понятно, что тут происходит, попробуйте проговорить происходящее аналогично тому, как мы расшифровывали процесс в примере с `is_even()`.

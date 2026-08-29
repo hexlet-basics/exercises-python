@@ -24,8 +24,9 @@ Let's combine the equality check `==` and the arithmetic operator `%` into one e
 def is_even(number):
     return number % 2 == 0
 
+
 print(is_even(10))  # => True
-print(is_even(3))   # => False
+print(is_even(3))  # => False
 ```
 
 Arithmetic operators have higher priority than logical ones. So, first the arithmetic expression `number % 2` is calculated and the result is compared to zero, then the result of the equality check is returned.
@@ -41,10 +42,11 @@ Algorithm:
 ```python
 def is_first_letter_an_a(string):
     first_letter = string[0]
-    return first_letter == 'a'
+    return first_letter == "a"
 
-print(is_first_letter_an_a('orange'))  # => False
-print(is_first_letter_an_a('apple'))   # => True
+
+print(is_first_letter_an_a("orange"))  # => False
+print(is_first_letter_an_a("apple"))  # => True
 ```
 
 To make it clear what's going on here, try saying what's going on in the same way as we decoded the process in the `is_even()` example.

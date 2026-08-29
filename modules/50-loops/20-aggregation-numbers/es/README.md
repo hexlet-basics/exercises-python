@@ -12,7 +12,7 @@ sum_numbers_from_range(1, 2)  # 1 + 2 = 3
 
 # [1, 1] un rango con el mismo principio y final también es un rango
 # Incluye un solo número: el límite mismo del rango
-sum_numbers_from_range(1, 1)      # 1
+sum_numbers_from_range(1, 1)  # 1
 sum_numbers_from_range(100, 100)  # 100
 ```
 
@@ -26,8 +26,8 @@ def sum_numbers_from_range(start: int, finish: int) -> int:
     i = start
     sum = 0  # Inicialización de la suma
     while i <= finish:  # Avanzamos hasta el final del rango
-        sum = sum + i   # Calculamos la suma para cada número
-        i = i + 1       # Pasamos al número siguiente del rango
+        sum = sum + i  # Calculamos la suma para cada número
+        i = i + 1  # Pasamos al número siguiente del rango
     # Devolvemos el resultado obtenido
     return sum
 ```

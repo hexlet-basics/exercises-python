@@ -3,6 +3,6 @@ Escribe la función `is_pensioner()`, que recibe la edad como único argumento y
 Ejemplos de llamadas:
 
 ```python
-is_pensioner(75) # True
-is_pensioner(18) # False
+is_pensioner(75)  # True
+is_pensioner(18)  # False
 ```

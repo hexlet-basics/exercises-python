@@ -13,7 +13,7 @@ The `len()` function counts the number of characters in a string. Below is an ex
 
 ```python
 # Calling the function len with the parameter 'Hello!
-result = len('Hello!')
+result = len("Hello!")
 print(result)  # => 6
 ```
 

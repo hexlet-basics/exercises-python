@@ -9,7 +9,7 @@ La cantidad de caracteres del corte por defecto es 0, y la cantidad de repeticio
 La función debe devolver la cadena obtenida.
 
   ```python
-  text = 'python'
+  text = "python"
 
   trim_and_repeat(text, offset=3, repetitions=2)  # honhon
   trim_and_repeat(text, repetitions=3)  # pythonpythonpython

@@ -4,7 +4,7 @@ In this lesson, we'll look at how to combine different approaches when writing c
 We have the following code:
 
 ```python
-name = 'Tirion'
+name = "Tirion"
 print(name.upper().lower())  # => `tirion`
 ```
 
@@ -17,7 +17,7 @@ This happens a lot in programming. If you don't know the syntax, you can still t
 To understand how this code works, you need to break down the chain into separate operations:
 
 ```python
-name = 'Tirion'
+name = "Tirion"
 upper_name = name.upper()  # 'TIRION'
 print(upper_name.lower())  # 'tirion'
 ```
@@ -27,14 +27,14 @@ The first and second examples are equivalent. We can perform operations sequenti
 One more example to reinforce:
 
 ```python
-name = 'Tirion'
-print(name.replace('Ti', 'Ki').lower())  # => ?
+name = "Tirion"
+print(name.replace("Ti", "Ki").lower())  # => ?
 ```
 
 This code needs a lot of thought. `.lower()` applies to the result of the method call, which is on the left. And the `replace()` method returns a string. Newbies often make mistakes in method chains and forget to place a call:
 
 ```python
-name = 'Tirion'
+name = "Tirion"
 # This code will not work correctly!
 print(name.upper.lower())
 ```
@@ -43,7 +43,7 @@ It is also possible to build infinitely long and useless chains that include sli
 
 ```python
 # What is the result of such a call?
-print(name[1:5].upper().find('I'))
+print(name[1:5].upper().find("I"))
 ```
 
 This will not work with functions, since they are usually nested inside each other - `f(f(f())))`. This makes the analysis much worse. But that doesn't mean it can't be done nicely. In other languages, this is implemented through a composition of functions or a pipelining operator.

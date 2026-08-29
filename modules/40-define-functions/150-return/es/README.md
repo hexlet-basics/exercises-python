@@ -14,10 +14,10 @@ def shout(name):
 Llamamos a `shout()`, le pasamos un nombre y obtenemos una cadena en mayúsculas. Esa cadena es el resultado de la función.
 
 ```python
-result = shout('hexlet')
+result = shout("hexlet")
 print(result)  # => HEXLET
 
-result2 = shout('code-basics')
+result2 = shout("code-basics")
 print(result2)  # => CODE-BASICS
 ```
 
@@ -31,13 +31,13 @@ Las funciones no están obligadas a devolver simplemente un parámetro. Normalme
 
 ```python
 def full_name(first, last):
-    return first.capitalize() + ' ' + last.capitalize()
+    return first.capitalize() + " " + last.capitalize()
 ```
 
 En este ejemplo armamos el nombre completo a partir del nombre y el apellido. Primero se llama a los métodos `capitalize()`, luego las cadenas se unen con `+`, y la cadena ya lista se devuelve.
 
 ```python
-name = full_name('Aria', 'Stark')
+name = full_name("Aria", "Stark")
 print(name)  # => Aria Stark
 ```
 
@@ -59,7 +59,7 @@ def format_name(name):
 Primero quitamos los espacios con el método `strip()`, después pasamos a mayúsculas con `upper()` y devolvemos el valor final.
 
 ```python
-print(format_name('  hexlet  '))  # => HEXLET
+print(format_name("  hexlet  "))  # => HEXLET
 ```
 
 ### Código después de `return`
@@ -68,8 +68,8 @@ Cuando Python llega al operador `return`, la ejecución de la función se detien
 
 ```python
 def example():
-    return 'listo'
-    print('este código nunca se ejecutará')
+    return "listo"
+    print("este código nunca se ejecutará")
 ```
 
 Por eso `return` se escribe siempre al final de la lógica. Sin embargo, esos finales dentro de una función pueden ser muchos. Lo veremos con más detalle cuando lleguemos a las expresiones condicionales.

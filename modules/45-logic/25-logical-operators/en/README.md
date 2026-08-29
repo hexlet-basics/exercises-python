@@ -11,13 +11,14 @@ Here is a function that takes the password and tells you whether it meets the co
 def has_capital_letter(str):
     # Checks the content of a capital letter in the string
 
- def is_correct_password(password):
-    length = len(password)
-    return length > 8 and has_capital_letter(password)
+    def is_correct_password(password):
+        length = len(password)
+        return length > 8 and has_capital_letter(password)
 
-print(is_correct_password('Qwerty'))                   # => False
-print(is_correct_password('Qwerty1234'))               # => True
-print(is_correct_password('qwerty1234'))               # => False
+
+print(is_correct_password("Qwerty"))  # => False
+print(is_correct_password("Qwerty1234"))  # => True
+print(is_correct_password("qwerty1234"))  # => False
 ```
 
 `and` means "AND". In mathematical logic this is called a conjunction. The whole expression is true if every **operand** - each of the compound expressions - is true. In other words, `and` means both. The priority of this operator is lower than that of comparison operators. Therefore, the expression `has_capital_letter(password) and length > 8` works correctly without brackets.
@@ -45,15 +46,16 @@ Let's write a function that will check the apartment. It takes two arguments: th
 
 ```python
 def is_good_apartment(area, street):
-    return area >= 100 or (area >= 80 and street == 'Main Street')
+    return area >= 100 or (area >= 80 and street == "Main Street")
 
-print(is_good_apartment(91, 'Queens Street'))  # => False
-print(is_good_apartment(78, 'Queens Street'))  # => False
-print(is_good_apartment(70, 'Main Street'))    # => False
 
-print(is_good_apartment(120, 'Queens Street'))  # => True
-print(is_good_apartment(120, 'Main Street'))    # => True
-print(is_good_apartment(80, 'Main Street'))     # => True
+print(is_good_apartment(91, "Queens Street"))  # => False
+print(is_good_apartment(78, "Queens Street"))  # => False
+print(is_good_apartment(70, "Main Street"))  # => False
+
+print(is_good_apartment(120, "Queens Street"))  # => True
+print(is_good_apartment(120, "Main Street"))  # => True
+print(is_good_apartment(80, "Main Street"))  # => True
 ```
 
 The area of mathematics in which logical operators are studied is called Boolean algebra. Below you will see **true tables** - you can use them to determine what the result will be if you apply the operator:

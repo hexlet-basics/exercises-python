@@ -3,6 +3,6 @@ When a user registers on a site, the program checks that the password is long en
 An example of how it works:
 
 ```python
-print(is_long_word("apple"))   # => False
+print(is_long_word("apple"))  # => False
 print(is_long_word("banana"))  # => True
 ```

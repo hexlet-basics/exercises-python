@@ -20,8 +20,9 @@ Combinemos en una misma expresión el operador lógico de "comprobación de igua
 def is_even(number: int) -> bool:
     return number % 2 == 0
 
+
 print(is_even(10))  # => True
-print(is_even(3))   # => False
+print(is_even(3))  # => False
 ```
 
 La prioridad de las operaciones aritméticas es mayor que la de las lógicas. Eso significa que primero se evalúa la expresión aritmética `number % 2` y luego el resultado se compara con cero y se devuelve el resultado de la comprobación de igualdad.
@@ -37,10 +38,11 @@ El algoritmo:
 ```python
 def is_first_letter_an_a(text: str) -> bool:
     first_letter = text[0]
-    return first_letter == 'a'
+    return first_letter == "a"
 
-print(is_first_letter_an_a('orange'))  # => False
-print(is_first_letter_an_a('apple'))   # => True
+
+print(is_first_letter_an_a("orange"))  # => False
+print(is_first_letter_an_a("apple"))  # => True
 ```
 
 Para que quede claro qué ocurre aquí, intenta decir en voz alta lo que pasa, igual que descifrábamos el proceso en el ejemplo con `is_even()`.

@@ -16,10 +16,10 @@ def shout(name):
 Мы вызываем `shout()`, передаем туда имя и получаем строку в верхнем регистре. Эта строка является результатом функции.
 
 ```python
-result = shout('hexlet')
+result = shout("hexlet")
 print(result)  # => HEXLET
 
-result2 = shout('code-basics')
+result2 = shout("code-basics")
 print(result2)  # => CODE-BASICS
 ```
 
@@ -33,13 +33,13 @@ print(result2)  # => CODE-BASICS
 
 ```python
 def full_name(first, last):
-    return first.capitalize() + ' ' + last.capitalize()
+    return first.capitalize() + " " + last.capitalize()
 ```
 
 В этом примере мы собираем полное имя из имени и фамилии. Сначала вызываются методы `capitalize()`, затем строки объединяются через `+`, и уже готовая строка возвращается.
 
 ```python
-name = full_name('Aria', 'Stark')
+name = full_name("Aria", "Stark")
 print(name)  # => Aria Stark
 ```
 
@@ -61,7 +61,7 @@ def format_name(name):
 Сначала убираем пробелы с помощью метода `strip()`, затем переводим в верхний регистр с помощью `upper()` и возвращаем итоговое значение.
 
 ```python
-print(format_name('  hexlet  '))  # => HEXLET
+print(format_name("  hexlet  "))  # => HEXLET
 ```
 
 ### Код после `return`
@@ -70,8 +70,8 @@ print(format_name('  hexlet  '))  # => HEXLET
 
 ```python
 def example():
-    return 'готово'
-    print('этот код никогда не выполнится')
+    return "готово"
+    print("этот код никогда не выполнится")
 ```
 
 Поэтому `return` всегда пишут в конце логики. Однако таких концов внутри функции может быть много. Подробнее мы этого коснемся, когда доберемся до условных выражений.

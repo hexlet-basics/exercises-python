@@ -17,4 +17,4 @@ En un juego de palabras los participantes comprueban si una palabra es un palín
     is_not_palindrome("hexlet")  # true
     ```
 
-    Para eso, llama a la función `is_palindrome()` dentro de `is_not_palindrome()` y aplica la negación.
+   Para eso, llama a la función `is_palindrome()` dentro de `is_not_palindrome()` y aplica la negación.

@@ -1,5 +1,5 @@
 
-Implementa la función `get_hidden_card()`, que recibe como entrada el número de una tarjeta de crédito (compuesto por 16 dígitos) como una cadena y devuelve su versión oculta, que se puede utilizar en el sitio web para su visualización. Si la tarjeta original tenía el número *2034399002125581*, entonces la versión oculta se verá así *\*\*\*\*5581*. En otras palabras, la función reemplaza los primeros 12 caracteres por asteriscos. El número de asteriscos se controla mediante el segundo parámetro, que es opcional. El valor predeterminado es 4.
+Implementa la función `get_hidden_card()`, que recibe como entrada el número de una tarjeta de crédito (compuesto por 16 dígitos) como una cadena y devuelve su versión oculta, que se puede utilizar en el sitio web para su visualización. Si la tarjeta original tenía el número _2034399002125581_, entonces la versión oculta se verá así *\*\*\*\*5581*. En otras palabras, la función reemplaza los primeros 12 caracteres por asteriscos. El número de asteriscos se controla mediante el segundo parámetro, que es opcional. El valor predeterminado es 4.
 
 ```python
 # La tarjeta de crédito se pasa como una cadena

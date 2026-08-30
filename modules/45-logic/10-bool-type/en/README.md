@@ -7,12 +7,12 @@ In many languages, the symbol `=` is used to assign values to variables. That's 
 
 List of comparison operations:
 
-* `<` — less than
-* `<=` — less than or equal to
-* `>` — more than
-* `>=` — greater than or equal to
-* `==` — equal to
-* `!=` — not equal to
+- `<` — less than
+- `<=` — less than or equal to
+- `>` — more than
+- `>=` — greater than or equal to
+- `==` — equal to
+- `!=` — not equal to
 
 These operations apply not only to numbers. For example, you can use the equality operator to compare strings: `password == text` is a comparison of the value of strings that are written in different variables.
 

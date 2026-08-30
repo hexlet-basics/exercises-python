@@ -3,7 +3,7 @@ When we work with strings in programming, we regularly have to extract some part
 
 **Substring** is some part of the string to be found and extracted.
 
-Suppose we have a date in this format: *12-08-2034*. We need to extract from it a substring, which includes only the year.
+Suppose we have a date in this format: _12-08-2034_. We need to extract from it a substring, which includes only the year.
 
 If you think logically, you need to count the index of the character with which the year begins, and then extract the four characters. The indexes in the string start from zero, so the first character of the year is available by index 6, and the last character by index 9. Check:
 

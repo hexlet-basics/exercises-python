@@ -12,8 +12,8 @@ These functions are of little use, because the result can't be used within the p
 
 Let's say we're processing an email address. When a user registers on the site, they can enter their email address in any way they wants:
 
-* Add random spaces at the beginning or at the end: `_support@hexlet.io__`
-* Use letters in different cases: `SUPPORT@hexlet.io`
+- Add random spaces at the beginning or at the end: `_support@hexlet.io__`
+- Use letters in different cases: `SUPPORT@hexlet.io`
 
 If we save it that way in the database, the user won't be able to log in. To avoid this, the email must be prepared to be written to the database, we need to convert it to lower case and trim the spaces around the edges of the string. This problem can be solved in a couple of lines:
 

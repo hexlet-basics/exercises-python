@@ -51,15 +51,15 @@ print(3 + 4)  # muestra: 7
 
 Python admite todas las operaciones habituales más algunas específicas, relacionadas con cómo se guardan y procesan los números en el ordenador:
 
-| Operación               | Símbolo | Ejemplo      | Resultado |
-|-------------------------|---------|--------------|-----------|
-| Suma                    | `+`     | `2 + 3`      | `5`       |
-| Resta                   | `-`     | `7 - 2`      | `5`       |
-| Multiplicación          | `*`     | `4 * 3`      | `12`      |
-| División                | `/`     | `8 / 2`      | `4.0`     |
-| Potenciación            | `**`    | `3 ** 2`     | `9`       |
-| División entera         | `//`    | `7 // 3`     | `2`       |
-| Resto de la división    | `%`     | `7 % 3`      | `1`       |
+| Operación            | Símbolo | Ejemplo  | Resultado |
+| -------------------- | ------- | -------- | --------- |
+| Suma                 | `+`     | `2 + 3`  | `5`       |
+| Resta                | `-`     | `7 - 2`  | `5`       |
+| Multiplicación       | `*`     | `4 * 3`  | `12`      |
+| División             | `/`     | `8 / 2`  | `4.0`     |
+| Potenciación         | `**`    | `3 ** 2` | `9`       |
+| División entera      | `//`    | `7 // 3` | `2`       |
+| Resto de la división | `%`     | `7 % 3`  | `1`       |
 
 Así se puede mostrar el resultado de una división y de una potenciación:
 
@@ -92,7 +92,7 @@ En el nivel básico basta con recordar: los números enteros hacen falta cuando 
 
 ## Qué es el resto de la división (`%`)
 
-Esta operación se llama **tomar el resto de la división**. Muestra **qué "queda"** cuando un número se divide por otro *no del todo*. Un ejemplo:
+Esta operación se llama **tomar el resto de la división**. Muestra **qué "queda"** cuando un número se divide por otro _no del todo_. Un ejemplo:
 
 ```python
 print(7 % 3)  # => 1

@@ -9,7 +9,7 @@ text = "hexlet"
 print(text.upper())  # => HEXLET
 ```
 
-A diferencia de las funciones, los métodos se llaman *sobre un objeto*. Primero se escribe el objeto y luego, después de un punto, la llamada al método. A pesar de que el método `upper()` no recibe argumentos, por dentro sabe sobre qué objeto se lo llama y tiene acceso al objeto mismo.
+A diferencia de las funciones, los métodos se llaman _sobre un objeto_. Primero se escribe el objeto y luego, después de un punto, la llamada al método. A pesar de que el método `upper()` no recibe argumentos, por dentro sabe sobre qué objeto se lo llama y tiene acceso al objeto mismo.
 
 Surge entonces la pregunta lógica: ¿por qué `len()` está implementada como una función normal y no como un método `str.len()`? Ocurre que `len()` no trabaja solo con cadenas: es una función universal que se puede aplicar a multitud de objetos distintos. A usar objetos y a crear tipos de objetos propios aprendemos en los cursos avanzados de Hexlet.
 

@@ -35,7 +35,7 @@ print(is_prime(3))  # => True
 print(is_prime(4))  # => False
 ```
 
-*Si somos honestos hasta el final, para resolver la tarea basta con comprobar los números hasta el valor de la raíz cuadrada de `number`, pero en nuestro caso es importante centrarse en entender el trabajo con condiciones dentro de un bucle*
+_Si somos honestos hasta el final, para resolver la tarea basta con comprobar los números hasta el valor de la raíz cuadrada de `number`, pero en nuestro caso es importante centrarse en entender el trabajo con condiciones dentro de un bucle_
 
 ```text
 while ...:

@@ -4,15 +4,15 @@ El resto de la división es un concepto simple pero importante en aritmética, �
 
 Repartimos caramelos a partes iguales entre personas:
 
-* 7 caramelos, 2 personas: 2 x 3 + resto 1 (7 no es múltiplo de 2)
-* 21 caramelos, 3 personas: 3 x 7 + resto 0 (21 es múltiplo de 3)
-* 19 caramelos, 5 personas: 5 x 3 + resto 4 (19 no es múltiplo de 5)
+- 7 caramelos, 2 personas: 2 x 3 + resto 1 (7 no es múltiplo de 2)
+- 21 caramelos, 3 personas: 3 x 7 + resto 0 (21 es múltiplo de 3)
+- 19 caramelos, 5 personas: 5 x 3 + resto 4 (19 no es múltiplo de 5)
 
 El operador `%` calcula el resto de la división:
 
-* `7 % 2` → `1`
-* `21 % 3` → `0`
-* `19 % 5` → `4`
+- `7 % 2` → `1`
+- `21 % 3` → `0`
+- `19 % 5` → `4`
 
 Combinemos en una misma expresión el operador lógico de "comprobación de igualdad" `==` y el operador aritmético `%`, y escribamos una función de comprobación de la paridad:
 

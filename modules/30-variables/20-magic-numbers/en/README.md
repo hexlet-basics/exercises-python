@@ -32,9 +32,9 @@ print(rubles_count)
 
 In this program:
 
-* Snake_case naming is used
-* The two new variables are separated from the subsequent calculations by a blank line. These variables make sense without calculations, so this separation is appropriate because it increases readability
-* The resulting code is well named and structured, but it's longer than the previous version. This is often the case, but this is fine because the code must be readable
+- Snake_case naming is used
+- The two new variables are separated from the subsequent calculations by a blank line. These variables make sense without calculations, so this separation is appropriate because it increases readability
+- The resulting code is well named and structured, but it's longer than the previous version. This is often the case, but this is fine because the code must be readable
 
 Magic numbers and obscure variable names don't break the code, but make it less readable.
 

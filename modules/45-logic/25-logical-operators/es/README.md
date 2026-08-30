@@ -71,7 +71,7 @@ El área de las matemáticas en la que se estudian los operadores lógicos se ll
 #### Y `and`
 
 | A     | B     | A and B  |
-| ----- | ----- | -------  |
+| ----- | ----- | -------- |
 | True  | True  | **True** |
 | True  | False | False    |
 | False | True  | False    |

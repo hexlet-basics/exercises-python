@@ -29,8 +29,8 @@ The way the **AND** operator works is that its execution from left to right is i
 
 There are two conversion rules in Python:
 
-* `0`, `0.0`, ``'` and `None` are cast to `False`. These values are called **falsy**. This includes other data types that we will study in Hexslet
-* Everything else is reduced to `True`.
+- `0`, `0.0`, ``'` and `None` are cast to `False`. These values are called **falsy**. This includes other data types that we will study in Hexslet
+- Everything else is reduced to `True`.
 
 These rules are used in development, for example, to define a default value:
 
@@ -60,8 +60,8 @@ If you combine logical expressions with each other, you can get some pretty inte
 
 Suppose we need to implement code in which a variable is written:
 
-* String `yes` if the number is even
-* String `no` if odd
+- String `yes` if the number is even
+- String `no` if odd
 
 This can be done by using the knowledge gained above:
 

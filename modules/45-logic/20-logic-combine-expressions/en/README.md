@@ -1,22 +1,22 @@
 
 **Logical operations** are expressions, which means they can be combined with other expressions. For example, if we want to check if a number is odd or even. The approach used in programming is to check the remainder of a division by two:
 
-* if the remainder is `0`, it's an even number
-* if the remainder isn't `0`, it's an odd number
+- if the remainder is `0`, it's an even number
+- if the remainder isn't `0`, it's an odd number
 
 The remainder of division is a simple but important concept in arithmetic, algebra, number theory, and cryptography. You need to divide the number into several equal groups, and if there's something left over at the end, it's the remainder of the division.
 
 Split some candies equally among individuals:
 
-* 7 candies, 2 people: 2 x 3 + a remainder of 1 - 7 is not a multiple of 2
-* 21 candy, 3 people: 3 x 7 + a remainder of 0 - 21 is a multiple of 3
-* 19 candies, 5 people: 5 x 3 + a remainder of 4 - 19 is not a multiple of 5
+- 7 candies, 2 people: 2 x 3 + a remainder of 1 - 7 is not a multiple of 2
+- 21 candy, 3 people: 3 x 7 + a remainder of 0 - 21 is a multiple of 3
+- 19 candies, 5 people: 5 x 3 + a remainder of 4 - 19 is not a multiple of 5
 
 The `%` operator calculates the remainder of the division:
 
-* `7 % 2` → `1`
-* `21 % 3` → `0`
-* `19 % 5` → `4`
+- `7 % 2` → `1`
+- `21 % 3` → `0`
+- `19 % 5` → `4`
 
 Let's combine the equality check `==` and the arithmetic operator `%` into one expression and write a function that checks if a number is odd or even:
 

@@ -28,7 +28,7 @@ while index <= 5:
 
 There are abbreviated forms for all arithmetic operations and for string concatenation:
 
-* `a = a + 1` → `a += 1`
-* `a = a - 1` → `a -= 1`
-* `a = a * 2` → `a *= 2`
-* `a = a / 1` → `a /= 1`
+- `a = a + 1` → `a += 1`
+- `a = a - 1` → `a -= 1`
+- `a = a * 2` → `a *= 2`
+- `a = a / 1` → `a /= 1`

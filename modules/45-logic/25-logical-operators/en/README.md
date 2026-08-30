@@ -63,7 +63,7 @@ The area of mathematics in which logical operators are studied is called Boolean
 #### `and`
 
 | A     | B     | A and B  |
-| ----- | ----- | -------  |
+| ----- | ----- | -------- |
 | True  | True  | **True** |
 | True  | False | False    |
 | False | True  | False    |

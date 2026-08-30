@@ -37,10 +37,10 @@ print("-5")  # => -5
 
 En la pantalla el resultado se ve igual, pero dentro del programa son cosas completamente distintas:
 
-| Valor    | Tipo de dato          |
-|----------|-----------------------|
-| `5`      | `int` (número entero) |
-| `'5'`    | `str` (cadena)        |
+| Valor | Tipo de dato          |
+| ----- | --------------------- |
+| `5`   | `int` (número entero) |
+| `'5'` | `str` (cadena)        |
 
 La cadena '5' no se puede sumar con el número 5, igual que '10' / 2 no dará el número 5.0. Python protestará si intentas mezclar tipos incompatibles sin una conversión explícita.
 

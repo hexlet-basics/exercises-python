@@ -25,9 +25,9 @@ The type of parameter you choose depends on who is calling the function.
 
 There are two reasons to use named arguments:
 
-* They increase readability because you can see the names at a glance
+- They increase readability because you can see the names at a glance
 
-* You can leave out all the intermediate parameters that we don't need right now
+- You can leave out all the intermediate parameters that we don't need right now
 
 The latter is useful if the function has many optional parameters. Let's look at an example:
 

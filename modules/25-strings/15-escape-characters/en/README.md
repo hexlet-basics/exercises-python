@@ -35,8 +35,8 @@ The device that outputs the corresponding text takes this character into account
 
 There are several dozen such invisible characters, but in programming there are usually only a few. In addition to the line feed, there can also be:
 
-* tab `\t` — the gap that you get when you press Tab
-* carriage return `\r` — only works in Windows
+- tab `\t` — the gap that you get when you press Tab
+- carriage return `\r` — only works in Windows
 
 You can recognize these control constructions in the text by the `\`. symbol. Programmers often use the line feed `\n` to properly format text. For example, if we write this code:
 

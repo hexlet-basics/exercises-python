@@ -1,8 +1,8 @@
 
 Implement a function, `word_multiply()`. It should accept two parameters:
 
-* A word
-* A number representing how many times to repeat the word
+- A word
+- A number representing how many times to repeat the word
 
 ```python
 text = "python"

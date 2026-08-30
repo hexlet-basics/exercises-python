@@ -56,11 +56,11 @@ print("Hello")
 print("Hello")
 ```
 
-Por defecto se acostumbra a usar comillas simples `'`, si dentro de la cadena no se necesitan dobles. Ese estilo lo sigue el estándar oficial de formato de código *PEP8*.
+Por defecto se acostumbra a usar comillas simples `'`, si dentro de la cadena no se necesitan dobles. Ese estilo lo sigue el estándar oficial de formato de código _PEP8_.
 
 ## El problema de las comillas dentro de la cadena
 
-Imagina que quieres imprimir la cadena *Dragon's mother*. En ella hay un apóstrofo (*'s*) que coincide con el carácter de comilla simple. Probemos así.
+Imagina que quieres imprimir la cadena _Dragon's mother_. En ella hay un apóstrofo (_'s_) que coincide con el carácter de comilla simple. Probemos así.
 
 ```python
 print('Dragon's mother')

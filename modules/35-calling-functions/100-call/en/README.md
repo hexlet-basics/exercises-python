@@ -19,7 +19,7 @@ print(result)  # => 6
 
 **Parameters or arguments** are the information the function receives when it is called. Based on this information, the function usually calculates and outputs a result.
 
-We created a variable called `result` and gave the interpreter a specific action: we have to write into it the result returned by the `len()` function when it's called. In this sense, functions are like operations - they always return the result of their work. The entry `len('Hello!')` means that a function named *len* is called, to which the parameter `'Hello!'` is passed. The `len()` function counts the length of the string that was passed to it.
+We created a variable called `result` and gave the interpreter a specific action: we have to write into it the result returned by the `len()` function when it's called. In this sense, functions are like operations - they always return the result of their work. The entry `len('Hello!')` means that a function named _len_ is called, to which the parameter `'Hello!'` is passed. The `len()` function counts the length of the string that was passed to it.
 
 A function call is always indicated by parentheses `()`, which come immediately after the function name. There can be any number of parameters in brackets, and sometimes none at all. The number of parameters depends on the function used.
 

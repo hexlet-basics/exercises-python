@@ -10,5 +10,5 @@ sanitize_phone_number("(123) 456-7890")  # '1234567890'
 
 ### Pistas
 
-* El resultado final es una cadena.
-* Usa la cadena vacía como valor inicial.
+- El resultado final es una cadena.
+- Usa la cadena vacía como valor inicial.

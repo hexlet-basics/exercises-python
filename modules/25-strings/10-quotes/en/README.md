@@ -14,9 +14,9 @@ The definition of a string is quite simple; it's a set of characters. Let us ima
 
 Which of these are strings? In fact, all five of them are:
 
-* With `'Hello'` and `'Goodbye'` everything is obvious, we've already worked with similar constructions and called them strings
-* `'G'` and `' '` — are also strings, but they only have one character each
-* `''` — is an empty string, so it has zero characters
+- With `'Hello'` and `'Goodbye'` everything is obvious, we've already worked with similar constructions and called them strings
+- `'G'` and `' '` — are also strings, but they only have one character each
+- `''` — is an empty string, so it has zero characters
 
 We consider anything inside quotation marks a string; even if it's just a space, a single character, or no characters at all.
 

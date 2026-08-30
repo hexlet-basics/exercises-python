@@ -2,10 +2,10 @@ Implementa la función `get_traffic_light_action()`, que recibe el color de un s
 
 Las reglas:
 
-* `'green'` → `'go'`
-* `'yellow'` → `'slow down'`
-* `'red'` → `'stop'`
-* Cualquier otro color → `'unknown'`
+- `'green'` → `'go'`
+- `'yellow'` → `'slow down'`
+- `'red'` → `'stop'`
+- Cualquier otro color → `'unknown'`
 
 Ejemplos de llamadas:
 

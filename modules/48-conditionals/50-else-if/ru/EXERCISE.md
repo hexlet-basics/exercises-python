@@ -2,10 +2,10 @@
 
 Правила:
 
-* `'green'` → `'go'`
-* `'yellow'` → `'slow down'`
-* `'red'` → `'stop'`
-* Любой другой цвет → `'unknown'`
+- `'green'` → `'go'`
+- `'yellow'` → `'slow down'`
+- `'red'` → `'stop'`
+- Любой другой цвет → `'unknown'`
 
 Примеры вызова:
 

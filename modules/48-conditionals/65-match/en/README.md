@@ -30,8 +30,8 @@ match status:
 
 In terms of elements, the `match` operator is a complex construct. It consists of the following:
 
-* The outer description, which includes the keyword `match`. This represents the variable whose values will determine the behavior chosen by `match`.
-* `case` constructs inside, where we describe the behavior for different values of the considered variable. Each `case` corresponds to an `if` in the example above. The `case _` is a special situation that corresponds to the `else` branch in conditional statements. Specifying `case _` is optional, similar to using `else`.
+- The outer description, which includes the keyword `match`. This represents the variable whose values will determine the behavior chosen by `match`.
+- `case` constructs inside, where we describe the behavior for different values of the considered variable. Each `case` corresponds to an `if` in the example above. The `case _` is a special situation that corresponds to the `else` branch in conditional statements. Specifying `case _` is optional, similar to using `else`.
 
 Inside `match`, only the syntax shown above is permitted. In other words, we can use `case`. However, inside each `case`, the situation is different. Here, we can execute any arbitrary code:
 

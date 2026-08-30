@@ -2,10 +2,10 @@ Implement the function `get_traffic_light_action()`, which takes a traffic light
 
 The rules:
 
-* `'green'` → `'go'`
-* `'yellow'` → `'slow down'`
-* `'red'` → `'stop'`
-* Any other colour → `'unknown'`
+- `'green'` → `'go'`
+- `'yellow'` → `'slow down'`
+- `'red'` → `'stop'`
+- Any other colour → `'unknown'`
 
 Example calls:
 

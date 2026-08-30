@@ -17,4 +17,4 @@ first_name = "Blexander"
 print(first_name)  # => Blexander
 ```
 
-There is a big difference between *changing the value of a variable* and *changing the value itself*. You can't change primitive types in Python, but you can change composite types. You can also change the value of a variable without any problem.
+There is a big difference between _changing the value of a variable_ and _changing the value itself_. You can't change primitive types in Python, but you can change composite types. You can also change the value of a variable without any problem.

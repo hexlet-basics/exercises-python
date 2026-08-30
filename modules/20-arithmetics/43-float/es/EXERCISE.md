@@ -1,2 +1,2 @@
 
-Calcula y muestra en pantalla el producto (multiplicación) de dos números: *0.39* y *0.22*
+Calcula y muestra en pantalla el producto (multiplicación) de dos números: _0.39_ y _0.22_

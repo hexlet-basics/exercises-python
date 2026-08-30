@@ -11,8 +11,8 @@ count_chars("Sansa", "y")  # 0
 
 Before you look at the contents of a function, think about this:
 
-* Is this an aggregation operation?
-* How will it check if a character occurs in a sentence?
+- Is this an aggregation operation?
+- How will it check if a character occurs in a sentence?
 
 ```python
 def count_chars(string, char):

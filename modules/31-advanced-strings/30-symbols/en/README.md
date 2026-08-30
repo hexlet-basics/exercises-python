@@ -1,5 +1,5 @@
 
-Sometimes, you have to get a single character from a string. For example, if a site knows users' first and last names, and at some point you want it to output this information in a format like *J. Smith*. To do this, the computer will need to take the first character from the name. Python has a suitable operation, which is what we'll study today.
+Sometimes, you have to get a single character from a string. For example, if a site knows users' first and last names, and at some point you want it to output this information in a format like _J. Smith_. To do this, the computer will need to take the first character from the name. Python has a suitable operation, which is what we'll study today.
 
 Suppose you want to display only the first letter of the name Alexander. It looks like this:
 
@@ -38,7 +38,7 @@ first_name = "Alexander"
 print(first_name[-1])  # => r
 ```
 
-You can use variables as well as numbers as an index. Look at the example below. Here we have an index inside the square brackets, but it's not a number, it's a variable. This code will cause the same result it'll output *A*:
+You can use variables as well as numbers as an index. Look at the example below. Here we have an index inside the square brackets, but it's not a number, it's a variable. This code will cause the same result it'll output _A_:
 
 ```python
 first_name = "Alexander"

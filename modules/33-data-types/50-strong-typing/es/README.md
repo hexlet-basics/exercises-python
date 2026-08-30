@@ -8,7 +8,7 @@ Supongamos que sumas dos números:
 print(1 + 7)  # => 8
 ```
 
-Todo perfecto. La operación de suma está permitida para los números, así que el programa funcionará y mostrará en pantalla *8*. ¿Y qué pasará si intentamos sumar un número y una cadena?
+Todo perfecto. La operación de suma está permitida para los números, así que el programa funcionará y mostrará en pantalla _8_. ¿Y qué pasará si intentamos sumar un número y una cadena?
 
 ```python
 print(1 + "7")

@@ -56,9 +56,9 @@ print_numbers(3)
 
 A `while' loop consists of three elements:
 
-* The keyword `while'
-* Predicate - a condition that comes after `while` and is calculated at each iteration
-* Code block - loop body
+- The keyword `while'
+- Predicate - a condition that comes after `while` and is calculated at each iteration
+- Code block - loop body
 
 Each execution of the body is called an **iteration**. In the example above, `print_numbers(3)` called three iterations, each one displaying the variable `i`. What we're basically saying is this: “do what's specified in the body of the loop as long as the condition `i <= last_number` is true”.
 

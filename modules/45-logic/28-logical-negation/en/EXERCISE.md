@@ -16,4 +16,4 @@
     is_not_palindrome("hexlet")  # true
     ```
 
-    To do this, call `is_palindrome()` inside `is_not_palindrome()` and apply negation.
+   To do this, call `is_palindrome()` inside `is_not_palindrome()` and apply negation.

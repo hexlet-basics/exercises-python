@@ -71,7 +71,7 @@ print(is_good_apartment(80, "Main Street"))  # => True
 #### И `and`
 
 | A     | B     | A and B  |
-| ----- | ----- | -------  |
+| ----- | ----- | -------- |
 | True  | True  | **True** |
 | True  | False | False    |
 | False | True  | False    |

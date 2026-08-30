@@ -17,4 +17,4 @@
     is_not_palindrome("хекслет")  # true
     ```
 
-    Для этого, вызовите функцию `is_palindrome()` внутри `is_not_palindrome()` и примените отрицание.
+   Для этого, вызовите функцию `is_palindrome()` внутри `is_not_palindrome()` и примените отрицание.

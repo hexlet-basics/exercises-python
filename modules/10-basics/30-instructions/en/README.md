@@ -38,9 +38,10 @@ Developers need to keep the order of operations in mind and be able to mentally 
 
 Instructions are usually written on separate lines, but Python also allows multiple instructions on one line, separated by a semicolon `;`:
 
-```python
-print("Mother of Dragons.")
-print("Dracarys!")
+<!-- NOTE: форма записи и есть предмет урока. text чтобы форматтер не разбил строку -->
+
+```text
+print("Mother of Dragons."); print("Dracarys!")
 ```
 
 There is no technical difference between the two versions — the interpreter handles them the same way. But the second version is harder to read, so in real projects instructions are always written one per line.

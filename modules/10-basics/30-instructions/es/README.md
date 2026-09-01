@@ -42,9 +42,10 @@ Mother of Dragons.
 
 Normalmente las instrucciones se escriben en líneas separadas, pero Python permite unir varias instrucciones en una línea mediante `;`:
 
-```python
-print("Mother of Dragons.")
-print("Dracarys!")
+<!-- NOTE: форма записи и есть предмет урока. text чтобы форматтер не разбил строку -->
+
+```text
+print("Mother of Dragons."); print("Dracarys!")
 ```
 
 Las dos versiones funcionan igual, pero la segunda variante es más difícil de leer. Por eso las instrucciones casi siempre se escriben una por línea.

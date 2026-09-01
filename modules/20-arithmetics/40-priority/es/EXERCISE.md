@@ -3,6 +3,7 @@ Tú y 4 amigos (5 personas en total) pidieron 2 pizzas a 300 cada una y 4 bebida
 Escribe un programa de una sola línea con `print()`, colocando los paréntesis de modo que primero se calcule el total y solo después se divida entre todos:
 
 ```text
-sin paréntesis:  2 * 300 + 4 * 50 / 5  =  640.0  ← incorrecto
-con paréntesis:  (2 * 300 + 4 * 50) / 5  =  160.0  ← correcto
+2 * 300 + 4 * 50 / 5  =  640.0  ← sin paréntesis la división se aplica solo a las bebidas
 ```
+
+Salida esperada: `160.0`.

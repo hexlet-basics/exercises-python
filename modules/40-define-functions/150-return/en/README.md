@@ -1,105 +1,75 @@
+In this lesson, we'll learn to write functions that **return values**. Such functions answer a question and hand back the result of their work, as if to say: "Here you go, I've done the counting".
 
-In this lesson, we'll take a closer look at how to work with functions we've created to make them useful.
+For example, a function can return a string with processed text, or a number calculated from a formula. The returned value can be used further on. It gets saved in a variable, passed to another function, or printed on the screen.
 
-When we define a function, it prints data on the screen:
+To make a function hand back a result, it uses the special keyword `return`. It ends the function and specifies exactly what has to be returned.
 
-```python
-def greeting():
-    print("Hello, Hexlet!")
-```
-
-These functions are of little use, because the result can't be used within the program. Let's look at an example.
-
-Let's say we're processing an email address. When a user registers on the site, they can enter their email address in any way they wants:
-
-- Add random spaces at the beginning or at the end: `_support@hexlet.io__`
-- Use letters in different cases: `SUPPORT@hexlet.io`
-
-If we save it that way in the database, the user won't be able to log in. To avoid this, the email must be prepared to be written to the database, we need to convert it to lower case and trim the spaces around the edges of the string. This problem can be solved in a couple of lines:
+Here is an example of a function that turns text into uppercase:
 
 ```python
-def save_email():
-    # Email comes from the form
-    email = "  SuppORT@hexlet.IO"
-    # Trim whitespace characters
-    trimmed_email = email.strip()
-    prepared_email = trimmed_email.lower()
-    print(prepared_email)
-    # Here will be the entry in the database
+def shout(name):
+    return name.upper()
 ```
 
-This code was made possible because the value was returned. The `strip()` and `lower()` methods do not print anything on the screen, they **return** the result of their work. This means we can write it to variables. If they were printed to the screen, we wouldn't be able to assign the result to a variable. For example, we can't do that with the `greeting()` function:
+We call `shout()`, pass a name into it, and get back a string in uppercase. That string is the result of the function.
 
 ```python
-message = greeting()
-# in actual fact, print() returns None
-# None is a special object used to represent no value
-print(message)  # => None
+result = shout("hexlet")
+print(result)  # => HEXLET
+
+result2 = shout("code-basics")
+print(result2)  # => CODE-BASICS
 ```
 
-Now change the `greeting()` function so that it returns data. To do this, let's perform a return instead of printing to the screen:
+Unlike `print()`, `return` doesn't print anything. It just returns a value. The decision about what to do with it is made by the calling code.
+
+When the function `shout("hexlet")` is called, the expression `name.upper()` is evaluated first. It returns the string `"HEXLET"`. Then `return` hands that value outward, to the place the function was called from. In our case, the value is saved in the variable `result` and then printed on the screen with `print()`.
+
+## Returning a calculated expression
+
+Functions don't have to return a parameter as is. Usually `return` is given an **expression**, which is evaluated first, and only then is the result handed outward.
 
 ```python
-def greeting():
-    return "Hello, Hexlet!"
+def full_name(first, last):
+    return first.capitalize() + " " + last.capitalize()
 ```
 
-`return' is an instruction. It takes the expression written to the right and gives it to the code that called the method. This is where the function ends.
+In this example we assemble a full name from a first name and a last name. First the `capitalize()` methods are called, then the strings are joined with `+`, and the finished string is returned.
 
 ```python
-# Now we can use the result of the function
-message = greeting()
-print(message)  # => Hello, Hexlet!
-# And even perform some actions on the result
-print(message.upper())  # => HELLO, HEXLET!
+name = full_name("aria", "stark")
+print(name)  # => Aria Stark
 ```
 
-Any code after `return` is not executed:
+Here, in the line `return first.capitalize() + " " + last.capitalize()`, both method calls are executed first, then the space is added, and only then the result is passed as the return value.
+
+## Multi-line functions
+
+Sometimes the body of a function needs several steps before the result is ready. In such cases we write several lines of code and use `return` at the end to give back the final value.
+
+For example, let's write a function that formats a name: it trims the spaces around the edges and turns all the letters into uppercase.
 
 ```python
-def greeting_with_code_after_return():
-    return "Hello, Hexlet!"
-    print("I will never be executed")
+def format_name(name):
+    clean = name.strip()
+    uppercased = clean.upper()
+    return uppercased
 ```
 
-Even if the function returns data, this doesn't limit what it prints. In addition to returning data, we can also print:
+First we remove the spaces with the `strip()` method, then convert to uppercase with `upper()`, and return the final value.
 
 ```python
-def greeting_with_return_and_printing():
-    print("I will appear in the console")
-    return "Hello, Hexlet!"
-
-
-# And it'll print the text on the screen and return the value
-message = greeting_with_return_and_printing()
+print(format_name("  hexlet  "))  # => HEXLET
 ```
 
-You can print more than just a specific value. Since `return` works with expressions, it can have anything to the right of it. Here we should keep to the principles of code readability:
+### Code after `return`
+
+When Python reaches the `return` statement, the function stops executing. Everything written after it inside the function **will not be executed**:
 
 ```python
-def greeting():
-    message = "Hello, Hexlet!"
-    return message
+def example():
+    return "done"
+    print("this code will never run")
 ```
 
-Here we don't return a variable. The value in this variable is always returned. Below is an example with calculations:
-
-```python
-def double_five():
-    # or return 5 + 5
-    result = 5 + 5
-    return result
-```
-
-It's not enough to just define a function. It's also important for it to be useful, and that the result is used. Now think about what the call to the `run()` function defined below will return?
-
-```python
-# Definition
-def run():
-    return 5
-    return 10
-
-
-# What will be displayed?
-print(run())
-```
+That's why `return` is always written at the end of the logic. There can be many such endings inside one function, though. We'll look at that in more detail when we get to conditional expressions.

@@ -37,11 +37,11 @@ def full_name(first, last):
 En este ejemplo armamos el nombre completo a partir del nombre y el apellido. Primero se llama a los métodos `capitalize()`, luego las cadenas se unen con `+`, y la cadena ya lista se devuelve.
 
 ```python
-name = full_name("Aria", "Stark")
+name = full_name("aria", "stark")
 print(name)  # => Aria Stark
 ```
 
-Aquí, en la línea `return first.capitalize() + ' ' + last.capitalize()`, se ejecutan primero las dos llamadas a los métodos, luego se añade el espacio y solo entonces el resultado se pasa como valor de retorno.
+Aquí, en la línea `return first.capitalize() + " " + last.capitalize()`, se ejecutan primero las dos llamadas a los métodos, luego se añade el espacio y solo entonces el resultado se pasa como valor de retorno.
 
 ## Funciones de varias líneas
 

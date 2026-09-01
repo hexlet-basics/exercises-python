@@ -3,6 +3,7 @@ You and 4 friends (5 people in total) ordered 2 pizzas at 300 each and 4 drinks 
 Write a one-line program with `print()`, placing the parentheses so that the total is calculated first and only then divided among everyone:
 
 ```text
-without parentheses:  2 * 300 + 4 * 50 / 5  =  640.0  ← wrong
-with parentheses:     (2 * 300 + 4 * 50) / 5  =  160.0  ← correct
+2 * 300 + 4 * 50 / 5  =  640.0  ← without parentheses the division applies only to the drinks
 ```
+
+Expected output: `160.0`.

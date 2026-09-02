@@ -20,21 +20,23 @@ print("Hello" + ", " + "World!")
 La ejecución:
 
 ```text
-'Hello' + ', ' + 'World!'
+"Hello" + ", " + "World!"
 └──┬──┘   └┬┘   └──┬───┘
    └────┬───┘       │
-  'Hello, '    +  'World!'
+  "Hello, "    +  "World!"
      └──────┬───────┘
-      'Hello, World!'
+      "Hello, World!"
 ```
 
 Ejemplos.
 
-```python
+<!-- NOTE: разные кавычки в одном выражении и есть предмет урока. text чтобы форматтер не свёл их к одной форме -->
+
+```text
 print("Kings" + "wood")  # => Kingswood
 print("Kings" + "road")  # => Kingsroad
 # Aquí por fuera hay comillas dobles, porque dentro hay una simple
-print("King's" + "Landing")  # => King'sLanding
+print("King's" + 'Landing')  # => King'sLanding
 ```
 
 Python permite unir cadenas incluso si están escritas con comillas distintas. Lo importante es que las dos partes sean cadenas.

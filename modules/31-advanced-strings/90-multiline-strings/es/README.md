@@ -84,7 +84,9 @@ varias líneas
 - Comodidad al editar: es fácil añadir, borrar y cambiar líneas.
 - No hace falta escapar las comillas:
 
-```python
+<!-- NOTE: тройные одинарные кавычки и есть предмет примера: внутри строки стоят кавычки обоих видов. text чтобы форматтер не переписал их в двойные -->
+
+```text
 quote = '''Aquí no hay que escapar ni las comillas 'simples' ni las "dobles"'''
 ```
 

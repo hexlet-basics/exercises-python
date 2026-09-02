@@ -11,10 +11,12 @@ print("Dragon" + "stone")  # => Dragonstone
 
 Strings are always concatenated in the order in which the operands are written. The left operand becomes the left part of the string, and the right one becomes the right part. Here are a few more examples:
 
-```python
+<!-- NOTE: разные кавычки в одном выражении и есть предмет урока. text чтобы форматтер не свёл их к одной форме -->
+
+```text
 print("Kings" + "wood")  # => Kingswood
 print("Kings" + "road")  # => Kingsroad
-print("King's" + "Landing")  # => King'sLanding
+print("King's" + 'Landing')  # => King'sLanding
 ```
 
 As you can see, strings can be concatenated even if they're written with different quotes.

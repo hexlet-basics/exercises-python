@@ -20,21 +20,23 @@ print("Hello" + ", " + "World!")
 Выполнение:
 
 ```text
-'Hello' + ', ' + 'World!'
+"Hello" + ", " + "World!"
 └──┬──┘   └┬┘   └──┬───┘
    └────┬───┘       │
-  'Hello, '    +  'World!'
+  "Hello, "    +  "World!"
      └──────┬───────┘
-      'Hello, World!'
+      "Hello, World!"
 ```
 
 Примеры.
 
-```python
+<!-- NOTE: разные кавычки в одном выражении и есть предмет урока. text чтобы форматтер не свёл их к одной форме -->
+
+```text
 print("Kings" + "wood")  # => Kingswood
 print("Kings" + "road")  # => Kingsroad
 # Здесь снаружи двойные кавычки, потому что внутри есть одиночная
-print("King's" + "Landing")  # => King'sLanding
+print("King's" + 'Landing')  # => King'sLanding
 ```
 
 Python позволяет объединять строки, даже если они записаны в разных кавычках. Главное, чтобы обе части были строками.

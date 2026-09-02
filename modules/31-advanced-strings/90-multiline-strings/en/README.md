@@ -45,7 +45,7 @@ several lines
 Because of the triple quotes, multi-line strings allow you not to escape quotes within a string:
 
 ```bash
-There is no need to escape the 'single' and 'double' quotes
+There is no need to escape the 'single' and "double" quotes
 ```
 
 Even multi-line strings can become f-string for interpolation:

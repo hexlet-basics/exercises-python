@@ -129,10 +129,12 @@ Desde el punto de vista de Python, entre `3+4` y `3 + 4` no hay diferencia. El i
 
 La variante sin espacios también funciona:
 
-```python
-3 + 4
-8 / 2
-7 % 3
+<!-- NOTE: запись без пробелов и есть предмет примера. text чтобы форматтер не расставил пробелы -->
+
+```text
+3+4
+8/2
+7%3
 ```
 
 Pero ese código se ve menos cuidado y cuesta más percibirlo rápido. Por eso conviene acostumbrarse desde el principio a escribir con espacios alrededor de los operadores.

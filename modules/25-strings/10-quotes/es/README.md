@@ -13,13 +13,13 @@ Desde el punto de vista de Python, una cadena es simplemente un conjunto de cara
 
 Todas esas variantes son cadenas.
 
-- `'Hello'`, `'Goodbye'` y `'G'` son cadenas de varios caracteres o de uno solo.
-- `' '` es una cadena formada por un solo espacio.
-- `''` es una cadena vacía, en ella no hay ni un carácter. Cumple el mismo papel que el 0 en matemáticas.
+- `"Hello"`, `"Goodbye"` y `"G"` son cadenas de varios caracteres o de uno solo.
+- `" "` es una cadena formada por un solo espacio.
+- `""` es una cadena vacía, en ella no hay ni un carácter. Cumple el mismo papel que el 0 en matemáticas.
 
 Es decir, todo lo que está dentro de las comillas se considera una cadena, aunque solo haya un espacio o no haya absolutamente nada.
 
-Si se muestran las cadenas en la pantalla, `'Hello'` y `'Goodbye'` se verán con claridad. Pero `' '` y `''` pueden despistar, porque la salida de una cadena vacía parece una ausencia total, mientras que una cadena con un espacio muestra un «espacio vacío» que visualmente es difícil de distinguir. Sin embargo, Python las diferencia con claridad. Una cadena vacía significa la ausencia de caracteres, mientras que una cadena con un espacio contiene un carácter de espacio concreto.
+Si se muestran las cadenas en la pantalla, `"Hello"` y `"Goodbye"` se verán con claridad. Pero `" "` y `""` pueden despistar, porque la salida de una cadena vacía parece una ausencia total, mientras que una cadena con un espacio muestra un «espacio vacío» que visualmente es difícil de distinguir. Sin embargo, Python las diferencia con claridad. Una cadena vacía significa la ausencia de caracteres, mientras que una cadena con un espacio contiene un carácter de espacio concreto.
 
 Pregunta de control. ¿Son estas cadenas iguales o no?
 
@@ -33,7 +33,7 @@ Pregunta de control. ¿Son estas cadenas iguales o no?
 
 En programación hay una trampa terminológica.
 
-- Una cadena (string) es un tipo de dato (el que analizamos arriba), por ejemplo 'hello'.
+- Una cadena (string) es un tipo de dato (el que analizamos arriba), por ejemplo `"hello"`.
 - Una línea (line) es una fila de texto en un archivo o en el código.
 
 Por ejemplo, en el código de abajo hay una línea, pero no una cadena.
@@ -51,12 +51,14 @@ Para evitar la confusión, en este curso usaremos estas formulaciones.
 
 En Python las cadenas se pueden escribir tanto entre comillas simples como entre dobles.
 
-```python
-print("Hello")
+<!-- NOTE: две формы записи кавычек и есть предмет урока. text чтобы форматтер не свёл их к одной форме -->
+
+```text
+print('Hello')
 print("Hello")
 ```
 
-Por defecto se acostumbra a usar comillas simples `'`, si dentro de la cadena no se necesitan dobles. Ese estilo lo sigue el estándar oficial de formato de código _PEP8_.
+El estándar oficial de formato de código _PEP8_ no prefiere las comillas simples ni las dobles: lo importante es elegir un estilo y mantenerlo. En este curso usamos las dobles, y las simples cuando dentro de la cadena hay comillas dobles.
 
 ## El problema de las comillas dentro de la cadena
 
@@ -64,7 +66,7 @@ Imagina que quieres imprimir la cadena _Dragon's mother_. En ella hay un apóstr
 
 ```python
 print('Dragon's mother')
-# SyntaxError: invalid syntax
+# SyntaxError: unterminated string literal (detected at line 1)
 ```
 
 Python decidirá que la cadena termina después de la palabra 'Dragon', y el resto no lo reconocerá como código válido, lo que provocará un error de sintaxis. Para evitarlo, envolvemos la cadena en comillas dobles.
@@ -83,14 +85,16 @@ print('He said "No"')
 
 A veces en la cadena aparecen los dos tipos de comillas.
 
-```python
+```text
 Dragon's mother said "No"
 ```
 
 En ese caso, para que Python no confunda las comillas de dentro de la cadena con las exteriores, se usa el carácter de escape, la barra invertida `\`. Le dice al intérprete que el carácter que la sigue es parte de la cadena y no un carácter de control.
 
-```python
-print('Dragon\'s mother said "No"')
+<!-- NOTE: экранирование двойной кавычки и есть предмет урока. text чтобы форматтер не переписал его в экранирование апострофа -->
+
+```text
+print("Dragon's mother said \"No\"")
 # => Dragon's mother said "No"
 ```
 

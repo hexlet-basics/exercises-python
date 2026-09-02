@@ -19,7 +19,7 @@ print(greeting)
 # => Father!
 ```
 
-In the line `greeting = 'Father!'` we take a variable named `greeting` and assign it the value `'Father!'` The variable points to the data that was written to it. In this way, the data can be used repeatedly and not be duplicated constantly.
+In the line `greeting = "Father!"` we take a variable named `greeting` and assign it the value `"Father!"` The variable points to the data that was written to it. In this way, the data can be used repeatedly and not be duplicated constantly.
 
 Once you've created the variable, you can use it. You put it in the places where we originally had our phrase written out in full. When the code runs, the interpreter reaches the line `print(greeting)`, substitutes the contents of the variable, and then executes the code.
 

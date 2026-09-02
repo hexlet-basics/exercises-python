@@ -14,9 +14,9 @@ print(greeting)  # => Mother!
 Aquí primero escribimos en la variable una cadena (_Father!_), después otra (_Mother!_). El nombre de la variable no cambió, pero el valor de dentro pasó a ser otro.
 
 ```text
-Antes:   greeting ──→ 'Father!'
+Antes:   greeting ──→ "Father!"
                        ╳
-Después: greeting ──→ 'Mother!'
+Después: greeting ──→ "Mother!"
 ```
 
 ## ¿Para qué cambiar el valor?

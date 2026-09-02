@@ -27,26 +27,26 @@ Father!
 Father!
 ```
 
-Una **variable** es un nombre detrás del cual se guarda un valor. En nuestro ejemplo creamos una variable con el nombre `greeting` y escribimos en ella la cadena `'Father!'`.
+Una **variable** es un nombre detrás del cual se guarda un valor. En nuestro ejemplo creamos una variable con el nombre `greeting` y escribimos en ella la cadena `"Father!"`.
 
 ```text
-greeting = 'Father!'
+greeting = "Father!"
 
 Variable         Valor
 ┌──────────┐     ┌──────────┐
-│ greeting │ ──→ │ 'Father!'│
+│ greeting │ ──→ │ "Father!"│
 └──────────┘     └──────────┘
 ```
 
-La línea `greeting = 'Father!'` se lee así: «toma el valor `'Father!'` y asígnalo a la variable con el nombre `greeting`». El signo `=` aquí es el operador de asignación, no una indicación de igualdad como en matemáticas. Pone el valor dentro de la variable.
+La línea `greeting = "Father!"` se lee así: «toma el valor `"Father!"` y asígnalo a la variable con el nombre `greeting`». El signo `=` aquí es el operador de asignación, no una indicación de igualdad como en matemáticas. Pone el valor dentro de la variable.
 
-Cuando escribimos `print(greeting)`, el intérprete sustituye el nombre `greeting` por el valor que está guardado en ella. Como resultado, en la pantalla se muestra la cadena `'Father!'`.
+Cuando escribimos `print(greeting)`, el intérprete sustituye el nombre `greeting` por el valor que está guardado en ella. Como resultado, en la pantalla se muestra la cadena `"Father!"`.
 
 ```text
 print(greeting)
       |
       v
-print('Father!')
+print("Father!")
 ```
 
 ## Nombres de las variables
@@ -69,9 +69,9 @@ print(greeting)  # => Mother!
 print("greeting")  # => greeting
 ```
 
-En el primer caso se usa la **variable** `greeting`, y el programa sustituye su valor. En el segundo caso `'greeting'` está entre comillas, por eso es un **literal de cadena**, es decir, un valor listo escrito directamente en el código. A pesar de que vemos la palabra `greeting` en los dos casos, desde el punto de vista del intérprete son cosas absolutamente distintas.
+En el primer caso se usa la **variable** `greeting`, y el programa sustituye su valor. En el segundo caso `"greeting"` está entre comillas, por eso es un **literal de cadena**, es decir, un valor listo escrito directamente en el código. A pesar de que vemos la palabra `greeting` en los dos casos, desde el punto de vista del intérprete son cosas absolutamente distintas.
 
-Los literales son datos escritos de forma explícita (por ejemplo, `'Hello'`, `42`, `3.14`). Los identificadores son nombres de variables y funciones (por ejemplo, `greeting`, `print`), que apuntan a valores o comandos ya existentes.
+Los literales son datos escritos de forma explícita (por ejemplo, `"Hello"`, `42`, `3.14`). Los identificadores son nombres de variables y funciones (por ejemplo, `greeting`, `print`), que apuntan a valores o comandos ya existentes.
 
 ## El orden de uso
 

@@ -12,7 +12,7 @@ Step 1. Study the **traceback** — a list of all function calls from when the p
 
 Imagine you wrote code in a file `users.py` and called the function `main()` on line 4. The traceback entry would look like this:
 
-```bash
+```text
 File "users.py", line 4, in <module>
   main()
 ```
@@ -21,7 +21,7 @@ As you can see, it shows not just the file and line number, but also the module 
 
 Step 2. When the traceback reaches the problematic location, it will show an **error message**. For example:
 
-```bash
+```text
 NameError: name 'create' is not defined
 ```
 
@@ -29,7 +29,7 @@ The message says: "The name `create` is not defined." This error usually happens
 
 Now let's look at how the traceback and error message appear together:
 
-```bash
+```text
 Traceback (most recent call last):
   File "users.py", line 4, in <module>
     main()
@@ -48,12 +48,11 @@ The simplest errors are **syntax errors**. They are purely about incorrectly for
 
 The output of such errors always contains `SyntaxError:`. To debug code in this case, you need to carefully look at the location of the error. Here a syntax error occurred because `'` was used instead of `"`:
 
-```bash
-Traceback (most recent call last):
+```text
   File "users.py", line 2
     print("Hello" + "world')
-                           ^
-SyntaxError: EOL while scanning string literal
+                    ^
+SyntaxError: unterminated string literal (detected at line 2)
 ```
 
 The second major group is **programming errors**. For example:

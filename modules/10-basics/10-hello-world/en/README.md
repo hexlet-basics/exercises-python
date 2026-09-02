@@ -12,12 +12,14 @@ print("Hello, World!")
 
 The way `print()` works: you put the text you want to display inside the parentheses. To let Python know it's text and not something else, wrap it in quotes. Both single and double quotes work — just make sure the opening and closing quote match:
 
-```python
-print("Hello, World!")
+<!-- NOTE: две формы записи кавычек и есть предмет урока. text чтобы форматтер не свёл их к одной форме -->
+
+```text
+print('Hello, World!')
 print("Hello, World!")
 ```
 
-According to the Python style guide (PEP 8), single quotes are preferred for strings when there's no apostrophe inside.
+The Python style guide (PEP 8) prefers neither single nor double quotes: pick one style and stick to it. This course uses double quotes. PEP 8 does advise picking the other kind when the string itself contains a quote — the apostrophe in `it's` breaks a single-quoted string, so that one needs double quotes.
 
 ```text
 Code             Interpreter          Screen

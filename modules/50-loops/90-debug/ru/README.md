@@ -10,7 +10,7 @@
 
 Представим, что вы написали код в файле `users.py` и вызвали функцию `main()` на четвертой строчке. Запись в трейсбеке будет выглядеть так:
 
-```bash
+```text
 File "users.py", line 4, in <module>
   main()
 ```
@@ -19,7 +19,7 @@ File "users.py", line 4, in <module>
 
 Когда трейсбек доходит до проблемного места, он выдает **сообщение об ошибке**. Например:
 
-```bash
+```text
 NameError: name 'create' is not defined
 ```
 
@@ -27,7 +27,7 @@ NameError: name 'create' is not defined
 
 Вместе трейсбек и сообщение об ошибке выглядят так:
 
-```bash
+```text
 Traceback (most recent call last):
   File "users.py", line 4, in <module>
     main()
@@ -44,12 +44,11 @@ NameError: name 'create' is not defined
 
 Посмотрим на пример. Здесь синтаксическая ошибка из-за того, что открывающая кавычка `"` не совпадает с закрывающей `'`:
 
-```bash
-Traceback (most recent call last):
+```text
   File "users.py", line 2
     print("Hello" + "world')
-                           ^
-SyntaxError: EOL while scanning string literal
+                    ^
+SyntaxError: unterminated string literal (detected at line 2)
 ```
 
 Труднее всего исправлять **ошибки программирования**. Сюда входят вызов несуществующей функции, использование необъявленной переменной, передача аргументов неверного типа. Обычно они возникают не в том месте, где настоящая причина, что и усложняет диагностику.

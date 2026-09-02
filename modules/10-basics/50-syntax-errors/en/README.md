@@ -20,12 +20,12 @@ print('Hodor)
 
 The closing quote is missing. Running this produces:
 
-```bash
+```console
 $ python index.py
-File "index.py", line 1
-  print('Hodor)
-              ^
-SyntaxError: EOL while scanning string literal
+  File "index.py", line 2
+    print('Hodor)
+          ^
+SyntaxError: unterminated string literal (detected at line 2)
 ```
 
 The error message may look unfamiliar at first, but that's fine — the more you encounter these messages, the faster you'll understand them at a glance.

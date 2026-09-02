@@ -56,7 +56,7 @@ part = value[3:7]  # => 12-9
 print(part[0:2])  # => 12
 ```
 
-Primero obtuvimos la subcadena `'12-9'`, y después hicimos de ella un nuevo corte, `'12'`.
+Primero obtuvimos la subcadena `"12-9"`, y después hicimos de ella un nuevo corte, `"12"`.
 
 ## Corte hasta el final o desde el principio
 

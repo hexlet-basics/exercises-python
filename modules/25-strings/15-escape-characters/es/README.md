@@ -59,7 +59,7 @@ print("Hello\nWorld")
 
 print("Hello \nWorld")
 # Hello
-# World  (al final de la primera línea hay un espacio)
+# World  (el espacio anterior a \n queda al final de la primera línea)
 
 print("Hello\n World")
 # Hello

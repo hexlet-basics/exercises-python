@@ -40,14 +40,14 @@ print(full)  # => Kings road
 ```
 
 ```text
-what = 'Kings'
+what = "Kings"
 who  = 'road'
 
 what    +  ' '  +  who
 └─┬──┘           └──┬─┘
-'Kings' + ' '  + 'road'
+"Kings" + " "  + "road"
 └────────┬─────────┘
-    'Kings road'
+    "Kings road"
 ```
 
 ## ¿Y qué pasa si la variable contiene un número?

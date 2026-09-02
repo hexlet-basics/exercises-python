@@ -29,12 +29,12 @@ print('Hodor)
 
 En este código no se cerró la comilla, lo que hace que el programa sea incorrecto desde el punto de vista de la sintaxis. Intentemos ejecutar el programa y el intérprete dará un error:
 
-```bash
-python index.py
-File "index.py", line 1
-  print('Hodor)
-              ^
-SyntaxError: EOL while scanning string literal
+```console
+$ python index.py
+  File "index.py", line 2
+    print('Hodor)
+          ^
+SyntaxError: unterminated string literal (detected at line 2)
 ```
 
 El texto, por falta de costumbre, puede resultar incomprensible, pero eso es normal: cuanto más te encuentres con esos errores, más entenderás a primera vista qué ocurrió.

@@ -10,7 +10,7 @@ Lo primero es estudiar el **traceback**. El traceback contiene la lista de todas
 
 Imaginemos que escribiste código en el archivo `users.py` y llamaste a la función `main()` en la cuarta línea. El registro en el traceback se verá así:
 
-```bash
+```text
 File "users.py", line 4, in <module>
   main()
 ```
@@ -19,7 +19,7 @@ Aquí se ve no solo el archivo y la línea, sino también el nombre del módulo.
 
 Cuando el traceback llega al lugar problemático, muestra un **mensaje de error**. Por ejemplo:
 
-```bash
+```text
 NameError: name 'create' is not defined
 ```
 
@@ -27,7 +27,7 @@ El mensaje dice que el nombre `create` no está definido. Ese error significa, l
 
 Juntos, el traceback y el mensaje de error se ven así:
 
-```bash
+```text
 Traceback (most recent call last):
   File "users.py", line 4, in <module>
     main()
@@ -44,12 +44,11 @@ Los errores más comprensibles en Python se llaman **sintácticos**. Surgen cuan
 
 Miremos un ejemplo. Aquí hay un error sintáctico debido a que la comilla de apertura `"` no coincide con la de cierre `'`:
 
-```bash
-Traceback (most recent call last):
+```text
   File "users.py", line 2
     print("Hello" + "world')
-                           ^
-SyntaxError: EOL while scanning string literal
+                    ^
+SyntaxError: unterminated string literal (detected at line 2)
 ```
 
 Lo más difícil de corregir son los **errores de programación**. Aquí entran la llamada a una función que no existe, el uso de una variable no declarada y el paso de argumentos de tipo incorrecto. Normalmente surgen no en el lugar donde está la causa real, lo que complica el diagnóstico.

@@ -29,12 +29,12 @@ print('Hodor)
 
 В этом коде не закрыта кавычка, что делает программу некорректной с точки зрения синтаксиса. Попробуем запустить программу, и интерпретатор выдаст ошибку:
 
-```bash
-python index.py
-File "index.py", line 1
-  print('Hodor)
-              ^
-SyntaxError: EOL while scanning string literal
+```console
+$ python index.py
+  File "index.py", line 2
+    print('Hodor)
+          ^
+SyntaxError: unterminated string literal (detected at line 2)
 ```
 
 Текст с непривычки может быть непонятен, но это нормально, чем больше вы будете сталкиваться с такими ошибками, тем больше вы с первого взгляда будете понимать, что произошло.

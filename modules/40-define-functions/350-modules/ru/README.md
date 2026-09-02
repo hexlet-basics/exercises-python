@@ -12,7 +12,7 @@
 import math
 
 print(math.floor(3.7))  # => 3
-print(math.ceil(3.2))   # => 4
+print(math.ceil(3.2))  # => 4
 ```
 
 После импорта к функциям обращаются через имя модуля и точку. Имя модуля совпадает с именем файла без расширения. `math.ceil(3.2)` вызывает функцию `ceil` из модуля `math`.
@@ -26,7 +26,7 @@ print(math.ceil(3.2))   # => 4
 ```python
 import math
 
-print(math.floor(7.9)) # => 7
+print(math.floor(7.9))  # => 7
 print(math.ceil(7.1))  # => 8
 print(math.ceil(7.0))  # => 7
 ```
@@ -40,7 +40,7 @@ print(math.ceil(7.0))  # => 7
 ```python
 from math import ceil, floor
 
-print(ceil(3.2))   # => 4
+print(ceil(3.2))  # => 4
 print(floor(3.7))  # => 3
 ```
 
@@ -53,11 +53,13 @@ print(floor(3.7))  # => 3
 ```python
 import math
 
+
 # Вычисляет количество поездок, необходимых для перевозки всех предметов
 def trips_needed(items: int, capacity: int) -> int:
     return math.ceil(items / capacity)
 
-print(trips_needed(10, 3)) # => 4
+
+print(trips_needed(10, 3))  # => 4
 ```
 
 ## Конфликты имен
@@ -67,10 +69,12 @@ print(trips_needed(10, 3)) # => 4
 ```python
 import math
 
+
 def floor(number):
     return "custom floor"
 
-print(floor(3.7))       # => custom floor
+
+print(floor(3.7))  # => custom floor
 print(math.floor(3.7))  # => 3
 ```
 
@@ -81,8 +85,10 @@ print(math.floor(3.7))  # => 3
 ```python
 from math import floor
 
+
 def floor(number):
     return "custom floor"
+
 
 print(floor(3.7))  # => custom floor
 ```

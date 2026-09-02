@@ -58,8 +58,8 @@ print("Hello\nWorld")
 # World
 
 print("Hello \nWorld")
-# Hello 
-# World  (в конце первой строки есть пробел)
+# Hello
+# World  (пробел перед \n остался в конце первой строки)
 
 print("Hello\n World")
 # Hello
@@ -77,7 +77,7 @@ print("Hello\n\nWorld")
 
 ```python
 print("First line")
-print("\n")         # Просто пустая строка
+print("\n")  # Просто пустая строка
 print("Second line")
 ```
 
@@ -101,7 +101,6 @@ print("Hello\\nWorld")
 print("Hello\nWorld")
 # Hello
 # World
-
 ```
 
 В этом случае Python понимает `\\` как обычный обратный слеш и показывает строку без перевода строки.

@@ -4,15 +4,15 @@ You can execute instructions in the bodies of loops like you can in functions. T
 Imagine a function that counts how many times a letter occurs in a sentence. Example of how it works:
 
 ```python
-count_chars('Fear cuts deeper than swords.', 'e')  # 4
+count_chars("Fear cuts deeper than swords.", "e")  # 4
 # If nothing is found, the result is 0 matches
-count_chars('Sansa', 'y')  # 0
+count_chars("Sansa", "y")  # 0
 ```
 
 Before you look at the contents of a function, think about this:
 
-* Is this an aggregation operation?
-* How will it check if a character occurs in a sentence?
+- Is this an aggregation operation?
+- How will it check if a character occurs in a sentence?
 
 ```python
 def count_chars(string, char):

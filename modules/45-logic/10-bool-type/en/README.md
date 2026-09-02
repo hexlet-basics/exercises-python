@@ -7,12 +7,12 @@ In many languages, the symbol `=` is used to assign values to variables. That's 
 
 List of comparison operations:
 
-* `<` — less than
-* `<=` — less than or equal to
-* `>` — more than
-* `>=` — greater than or equal to
-* `==` — equal to
-* `!=` — not equal to
+- `<` — less than
+- `<=` — less than or equal to
+- `>` — more than
+- `>=` — greater than or equal to
+- `==` — equal to
+- `!=` — not equal to
 
 These operations apply not only to numbers. For example, you can use the equality operator to compare strings: `password == text` is a comparison of the value of strings that are written in different variables.
 
@@ -21,7 +21,7 @@ A logical operation like `5 > 4` or `password == text` is an expression. Its res
 ```python
 result = 5 > 4
 print(result)  # => True
-print('one' != 'one')  # => False
+print("one" != "one")  # => False
 ```
 
 Along with strings (`str`) and integers and rational numbers, the **`bool` type** is one of Python's primitive data types.
@@ -31,6 +31,7 @@ Let's try to write a simple function that takes the age of a child as input and 
 ```python
 def is_infant(age):
     return age < 1
+
 
 print(is_infant(3))  # => False
 ```

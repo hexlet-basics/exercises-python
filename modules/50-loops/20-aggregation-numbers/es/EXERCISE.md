@@ -6,7 +6,7 @@ En este ejercicio se usa una tarifa por tramos. Los primeros `100` kWh cuestan `
 Recorre el consumo con un ciclo y acumula poco a poco el importe total.
 
 ```python
-calculate_electricity_bill(80)   # 400
+calculate_electricity_bill(80)  # 400
 calculate_electricity_bill(150)  # 850
 calculate_electricity_bill(250)  # 1700
 ```

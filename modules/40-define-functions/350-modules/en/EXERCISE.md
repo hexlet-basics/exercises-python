@@ -12,5 +12,5 @@ print(amount_per_person(350, 3, 10))  # => 129
 
 ## Hint
 
-* First calculate the total with tip, then divide by the number of people and round up
-* Don't forget to import the `math` module at the top of the file
+- First calculate the total with tip, then divide by the number of people and round up
+- Don't forget to import the `math` module at the top of the file

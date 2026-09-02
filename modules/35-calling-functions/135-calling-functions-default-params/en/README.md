@@ -7,8 +7,8 @@ result = round(10.25, 0)  # 10.0
 
 We passed two parameters to it:
 
-* Number to be rounded
-* Rounding accuracy
+- Number to be rounded
+- Rounding accuracy
 
 `0` means that the rounding will be to an integer value. More often than not, you need to round to a whole number, not to two, three, four etc. decimal places. So the creators of the `round` function made the second parameter **unnecessary** and gave it a **default value of `0`** inside the function. So, you can choose to not specify the second parameter and the result will be the same:
 

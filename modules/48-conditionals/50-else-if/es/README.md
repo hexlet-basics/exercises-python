@@ -4,19 +4,20 @@ La función `get_type_of_sentence()` distingue solo las oraciones interrogativas
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
-    if last_char == '?':
-        sentence_type = 'question'
+    if last_char == "?":
+        sentence_type = "question"
 
-    if last_char == '!':
-        sentence_type = 'exclamation'
+    if last_char == "!":
+        sentence_type = "exclamation"
     else:
-        sentence_type = 'normal'
+        sentence_type = "normal"
 
-    return 'Sentence is ' + sentence_type
+    return "Sentence is " + sentence_type
 
-print(get_type_of_sentence('Who?'))  # => 'Sentence is normal'
-print(get_type_of_sentence('No'))    # => 'Sentence is normal'
-print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
+
+print(get_type_of_sentence("Who?"))  # => 'Sentence is normal'
+print(get_type_of_sentence("No"))  # => 'Sentence is normal'
+print(get_type_of_sentence("No!"))  # => 'Sentence is exclamation'
 ```
 
 Añadimos la comprobación de las oraciones exclamativas. Técnicamente esa función funciona, pero interpreta mal las oraciones interrogativas. Además tiene problemas desde el punto de vista de la semántica. La presencia del signo de exclamación se comprueba en cualquier caso, incluso si ya se detectó un signo de interrogación. La rama `else` está descrita para la segunda condición, pero no para la primera. Por eso una oración interrogativa acaba siendo `"normal"`.
@@ -27,18 +28,19 @@ Para arreglar la situación, aprovechemos otra posibilidad de la construcción c
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
-    if last_char == '?':
-        sentence_type = 'question'
-    elif last_char == '!':
-        sentence_type = 'exclamation'
+    if last_char == "?":
+        sentence_type = "question"
+    elif last_char == "!":
+        sentence_type = "exclamation"
     else:
-        sentence_type = 'normal'
+        sentence_type = "normal"
 
-    return 'Sentence is ' + sentence_type
+    return "Sentence is " + sentence_type
 
-print(get_type_of_sentence('Who?'))  # => 'Sentence is question'
-print(get_type_of_sentence('No'))    # => 'Sentence is normal'
-print(get_type_of_sentence('No!'))   # => 'Sentence is exclamation'
+
+print(get_type_of_sentence("Who?"))  # => 'Sentence is question'
+print(get_type_of_sentence("No"))  # => 'Sentence is normal'
+print(get_type_of_sentence("No!"))  # => 'Sentence is exclamation'
 ```
 
 Ahora todas las condiciones se alinearon en una construcción única. La palabra clave `elif` significa "si no se cumplió la condición anterior, pero se cumple la actual".

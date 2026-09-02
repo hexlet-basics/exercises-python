@@ -14,10 +14,10 @@ price = price / 3
 Python permite escribirlo de forma más corta, con los operadores combinados:
 
 ```python
-index += 1     # lo mismo que index = index + 1
-count *= 2     # lo mismo que count = count * 2
-total -= 5     # lo mismo que total = total - 5
-price /= 3     # lo mismo que price = price / 3
+index += 1  # lo mismo que index = index + 1
+count *= 2  # lo mismo que count = count * 2
+total -= 5  # lo mismo que total = total - 5
+price /= 3  # lo mismo que price = price / 3
 ```
 
 En los bucles esas abreviaturas aparecen con especial frecuencia. En ellos normalmente cambiamos el contador y acumulamos el resultado:
@@ -27,8 +27,8 @@ sum = 0
 index = 1
 
 while index <= 5:
-    sum += index      # lo mismo que sum = sum + index
-    index += 1        # lo mismo que index = index + 1
+    sum += index  # lo mismo que sum = sum + index
+    index += 1  # lo mismo que index = index + 1
 
 print(sum)  # => 15
 ```
@@ -49,7 +49,7 @@ Para las cadenas se usa el operador de concatenación:
 
 ```python
 text = "Hello"
-text += " World"   # lo mismo que text = text + " World"
+text += " World"  # lo mismo que text = text + " World"
 ```
 
 ## Abreviaturas admitidas

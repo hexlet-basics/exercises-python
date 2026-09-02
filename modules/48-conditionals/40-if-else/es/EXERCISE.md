@@ -5,9 +5,9 @@ La función recibe direcciones en forma de `DIRECCIÓN` o `http://DIRECCIÓN`, p
 Ejemplos de llamadas:
 
 ```python
-print(normalize_url('https://ya.ru'))  # => 'https://ya.ru'
-print(normalize_url('google.com'))     # => 'https://google.com'
-print(normalize_url('http://ai.fi'))   # => 'https://ai.fi'
+print(normalize_url("https://ya.ru"))  # => 'https://ya.ru'
+print(normalize_url("google.com"))  # => 'https://google.com'
+print(normalize_url("http://ai.fi"))  # => 'https://ai.fi'
 ```
 
 Hay varias formas de resolver la tarea. Una de ellas es comparar los primeros 7 caracteres de la cadena-argumento con la cadena `http://` y luego, a partir de eso, añadirle o no `https://`.
@@ -16,12 +16,12 @@ También es probable que necesites descartar la parte innecesaria del principio 
 
 ```python
 # Tomamos 2 caracteres desde el principio
-print('python'[:2])  # => 'py'
+print("python"[:2])  # => 'py'
 ```
 
 Pues bien, con los cortes también se puede descartar una cantidad determinada de caracteres:
 
 ```python
 # Descartamos los 2 primeros caracteres
-print('python'[2:])  # => 'thon'
+print("python"[2:])  # => 'thon'
 ```

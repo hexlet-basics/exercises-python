@@ -5,7 +5,7 @@ An expression in programming returns a result that can be used. You probably alr
 
 ```python
 1 + 5 * 3
-'He' + 'Let'
+"He" + "Let"
 # Variables can be part of an expression
 rate * 5
 ```
@@ -30,7 +30,7 @@ Now let's see if a function call can be taken as an expression.
 We know that functions return results, therefore they're expressions. This leads to a lot of interesting possibilities. For example, we can use a function call directly in mathematical operations. This is how we can get the last character index in a word:
 
 ```python
-name = 'python'
+name = "python"
 # Indexes start with zero
 # Function call and subtraction together!
 last_index = len(name) - 1
@@ -46,9 +46,9 @@ print(len(name) - 1)  # => 5
 All of this applies for any function, e.g., string functions:
 
 ```python
-name = 'python'
+name = "python"
 # Interpolation is used
-print(f'Last character: {name[len(name) - 1]}')
+print(f"Last character: {name[len(name) - 1]}")
 # 'Last character: n'
 ```
 

@@ -30,8 +30,8 @@ match status:
 
 In terms of elements, the `match` operator is a complex construct. It consists of the following:
 
-* The outer description, which includes the keyword `match`. This represents the variable whose values will determine the behavior chosen by `match`.
-* `case` constructs inside, where we describe the behavior for different values of the considered variable. Each `case` corresponds to an `if` in the example above. The `case _` is a special situation that corresponds to the `else` branch in conditional statements. Specifying `case _` is optional, similar to using `else`.
+- The outer description, which includes the keyword `match`. This represents the variable whose values will determine the behavior chosen by `match`.
+- `case` constructs inside, where we describe the behavior for different values of the considered variable. Each `case` corresponds to an `if` in the example above. The `case _` is a special situation that corresponds to the `else` branch in conditional statements. Specifying `case _` is optional, similar to using `else`.
 
 Inside `match`, only the syntax shown above is permitted. In other words, we can use `case`. However, inside each `case`, the situation is different. Here, we can execute any arbitrary code:
 
@@ -52,14 +52,14 @@ The first approach involves creating a variable before the `match`, filling it i
 ```python
 def count_items(count):
     # Declare a variable
-    result = ''
+    result = ""
 
     # Fill it
     match count:
         case 1:
-            result = 'one'
+            result = "one"
         case 2:
-            result = 'two'
+            result = "two"
         case _:
             result = None
 
@@ -73,9 +73,9 @@ The second and simpler approach is to directly return from the function while wo
 def count_items(count):
     match count:
         case 1:
-            return 'one'
+            return "one"
         case 2:
-            return 'two'
+            return "two"
         case _:
             return None
 ```

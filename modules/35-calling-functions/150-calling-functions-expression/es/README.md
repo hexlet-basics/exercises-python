@@ -45,7 +45,7 @@ La función `print()` simplemente recibe un valor ya listo y lo muestra en panta
 Como la llamada a una función es en sí misma una expresión, su resultado se puede pasar de inmediato a otra función. Eso permite construir construcciones aún más complejas.
 
 ```python
-name = 'python'
+name = "python"
 
 # La llamada len(name) devuelve 6
 # Ese resultado se usa de inmediato como argumento de print()
@@ -80,7 +80,7 @@ Ese principio funciona siempre. Primero se evalúan las llamadas anidadas y lueg
 Las funciones devuelven valores, y eso significa que sus llamadas se pueden usar como argumentos de otras funciones y como parte de cualquier otra expresión.
 
 ```python
-name = 'python'
+name = "python"
 
 # La llamada len(name) devuelve 6
 # Restamos 1 para obtener el índice del último carácter
@@ -88,7 +88,7 @@ last_index = len(name) - 1
 print(last_index)  # => 5
 
 # Se puede usar el resultado de la función en la aritmética
-text = 'hexlet'
+text = "hexlet"
 double = len(text) * 2
 print(double)  # => 12
 ```

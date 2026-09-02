@@ -9,10 +9,10 @@ print(10)
 The system runs it and checks that `10` actually appears on the screen. If it matches — the solution is accepted. If not, you'll see an error:
 
 ```bash
-E   AssertionError: assert '9' == '10'
+E AssertionError: assert '9' == '10'
 E
-E     - 10
-E     + 9
+E - 10
+E + 9
 ```
 
 The line with `-` shows the value the test expected. The line with `+` shows what your code actually produced.

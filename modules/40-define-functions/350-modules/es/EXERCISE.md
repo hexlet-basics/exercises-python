@@ -12,5 +12,5 @@ print(amount_per_person(350, 3, 10))  # => 129
 
 ## Pista
 
-* Primero calcula el total con propina, luego divide entre el número de personas y redondea hacia arriba
-* No olvides importar el módulo `math` al inicio del archivo
+- Primero calcula el total con propina, luego divide entre el número de personas y redondea hacia arriba
+- No olvides importar el módulo `math` al inicio del archivo

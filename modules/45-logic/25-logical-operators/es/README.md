@@ -27,9 +27,10 @@ Además de `and` se usa a menudo el operador `or`, que significa "O" (disyunció
 def has_discount(age: int, is_student: bool) -> bool:
     return age < 18 or is_student
 
+
 print(has_discount(15, False))  # => True  (menor de 18)
-print(has_discount(25, True))   # => True  (estudiante)
-print(has_discount(15, True))   # => True  (las dos condiciones)
+print(has_discount(25, True))  # => True  (estudiante)
+print(has_discount(15, True))  # => True  (las dos condiciones)
 print(has_discount(25, False))  # => False
 ```
 
@@ -53,15 +54,16 @@ Escribamos una función que compruebe el piso. Recibe dos argumentos: la superfi
 
 ```python
 def is_good_apartment(area: int, street: str) -> bool:
-    return area >= 100 or (area >= 80 and street == 'Main Street')
+    return area >= 100 or (area >= 80 and street == "Main Street")
 
-print(is_good_apartment(91, 'Queens Street'))  # => False
-print(is_good_apartment(78, 'Queens Street'))  # => False
-print(is_good_apartment(70, 'Main Street'))    # => False
 
-print(is_good_apartment(120, 'Queens Street'))  # => True
-print(is_good_apartment(120, 'Main Street'))    # => True
-print(is_good_apartment(80, 'Main Street'))     # => True
+print(is_good_apartment(91, "Queens Street"))  # => False
+print(is_good_apartment(78, "Queens Street"))  # => False
+print(is_good_apartment(70, "Main Street"))  # => False
+
+print(is_good_apartment(120, "Queens Street"))  # => True
+print(is_good_apartment(120, "Main Street"))  # => True
+print(is_good_apartment(80, "Main Street"))  # => True
 ```
 
 El área de las matemáticas en la que se estudian los operadores lógicos se llama álgebra booleana. Las **tablas de verdad** muestran cuál será el resultado al aplicar cada operador.
@@ -69,7 +71,7 @@ El área de las matemáticas en la que se estudian los operadores lógicos se ll
 #### Y `and`
 
 | A     | B     | A and B  |
-| ----- | ----- | -------  |
+| ----- | ----- | -------- |
 | True  | True  | **True** |
 | True  | False | False    |
 | False | True  | False    |

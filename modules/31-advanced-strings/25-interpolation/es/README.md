@@ -1,8 +1,8 @@
 Recordemos cómo funciona la concatenación. Para ello unimos las cadenas necesarias (o las variables con cadenas dentro) mediante el signo `+`.
 
 ```python
-first_name = 'Joffrey'
-greeting = 'Hello'
+first_name = "Joffrey"
+greeting = "Hello"
 
 print(greeting + ", " + first_name + "!")
 # => Hello, Joffrey!
@@ -13,10 +13,10 @@ Pero, al mismo tiempo, en expresiones complejas cuesta ver de inmediato qué tex
 Por esa razón, en muchos lenguajes existe una operación llamada interpolación. La interpolación es una forma de insertar los valores de las variables directamente dentro de una cadena. En Python para eso se usan las f-strings (o cadenas de formato). Así:
 
 ```python
-first_name = 'Joffrey'
-greeting = 'Hello'
+first_name = "Joffrey"
+greeting = "Hello"
 
-print(f'{greeting}, {first_name}!')
+print(f"{greeting}, {first_name}!")
 # => Hello, Joffrey!
 ```
 
@@ -37,7 +37,7 @@ Compara estos dos ejemplos uno al lado del otro:
 
 ```python
 print(greeting + ", " + first_name + "!")
-print(f'{greeting}, {first_name}!')
+print(f"{greeting}, {first_name}!")
 ```
 
 La segunda variante es más simple y más clara.
@@ -45,9 +45,9 @@ La segunda variante es más simple y más clara.
 ## Ejemplo
 
 ```python
-school = 'Hexlet'
+school = "Hexlet"
 
-what_is_it = f'{school} - online courses'
+what_is_it = f"{school} - online courses"
 print(what_is_it)  # => Hexlet - online courses
 ```
 

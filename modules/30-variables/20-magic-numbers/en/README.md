@@ -4,7 +4,7 @@ Let's look at our example of the program that calculates exchange rates:
 ```python
 euros_count = 1000
 dollars_count = euros_count * 1.25  # 1250.0
-rubles_count = dollars_count * 60   # 75000.0
+rubles_count = dollars_count * 60  # 75000.0
 
 print(rubles_count)
 ```
@@ -24,7 +24,7 @@ dollars_per_euro = 1.25
 rubles_per_dollar = 60
 
 euros_count = 1000
-dollars_count = euros_count * dollars_per_euro     # 1250.0
+dollars_count = euros_count * dollars_per_euro  # 1250.0
 rubles_count = dollars_count * rubles_per_dollar  # 75000.0
 
 print(rubles_count)
@@ -32,9 +32,9 @@ print(rubles_count)
 
 In this program:
 
-* Snake_case naming is used
-* The two new variables are separated from the subsequent calculations by a blank line. These variables make sense without calculations, so this separation is appropriate because it increases readability
-* The resulting code is well named and structured, but it's longer than the previous version. This is often the case, but this is fine because the code must be readable
+- Snake_case naming is used
+- The two new variables are separated from the subsequent calculations by a blank line. These variables make sense without calculations, so this separation is appropriate because it increases readability
+- The resulting code is well named and structured, but it's longer than the previous version. This is often the case, but this is fine because the code must be readable
 
 Magic numbers and obscure variable names don't break the code, but make it less readable.
 

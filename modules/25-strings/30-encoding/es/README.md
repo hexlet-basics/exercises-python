@@ -24,7 +24,7 @@ h e l l o
 8 5 12 12 15
 ```
 
-Y *good* se convierte en esta secuencia.
+Y _good_ se convierte en esta secuencia.
 
 ```text
 g o o d

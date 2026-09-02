@@ -5,15 +5,16 @@ Look at the function below. It detects the sentence type by its last character: 
 def get_type_of_sentence(sentence):
     last_char = sentence[-1]
 
-    if last_char == '?':
-        sentence_type = 'question'
+    if last_char == "?":
+        sentence_type = "question"
     else:
-        sentence_type = 'normal'
+        sentence_type = "normal"
 
     return "Sentence is " + sentence_type
 
-print(get_type_of_sentence('Hodor'))   # => 'Sentence is normal'
-print(get_type_of_sentence('Hodor?'))  # => 'Sentence is question'
+
+print(get_type_of_sentence("Hodor"))  # => 'Sentence is normal'
+print(get_type_of_sentence("Hodor?"))  # => 'Sentence is question'
 ```
 
 We added `else` and a new block. It'll execute if the condition in `if` is false. You can also put other `if` conditions in the `else` block.
@@ -24,10 +25,10 @@ We added `else` and a new block. It'll execute if the condition in `if` is false
 def get_type_of_sentence(sentence):
     last_char = sentence[-1]
 
-    if last_char != '?':
-        sentence_type = 'normal'
+    if last_char != "?":
+        sentence_type = "normal"
     else:
-        sentence_type = 'question'
+        sentence_type = "question"
 
     return "Sentence is " + sentence_type
 ```

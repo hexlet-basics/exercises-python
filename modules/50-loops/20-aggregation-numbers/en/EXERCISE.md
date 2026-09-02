@@ -6,7 +6,7 @@ This exercise uses a tiered tariff. The first `100` kWh cost `5` each, the next 
 Go through the consumption with a loop and gradually accumulate the total amount.
 
 ```python
-calculate_electricity_bill(80)   # 400
+calculate_electricity_bill(80)  # 400
 calculate_electricity_bill(150)  # 850
 calculate_electricity_bill(250)  # 1700
 ```

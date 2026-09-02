@@ -7,7 +7,8 @@ Let's look at an example:
 # The function of degree increase
 # The second parameter has a default value of two
 def pow(x, base=2):
-    return x ** base
+    return x**base
+
 
 # Three to the second power (two is the default setting)
 pow(3)  # 3 * 3 = 9
@@ -22,8 +23,9 @@ Imagine that you didn't bring the parts for your car with you to the car service
 The default value can be even when there is only one parameter:
 
 ```python
-def my_print(text='nothing'):
-  print(text)
+def my_print(text="nothing"):
+    print(text)
+
 
 my_print()  # => "nothing"
 my_print("Hexlet")  # => "Hexlet"

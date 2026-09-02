@@ -2,7 +2,7 @@
 Along with the logical operators **AND** and **OR**, there is also an operation called “**negation**” It changes the logical meaning to the opposite. In programming, negation corresponds to the unary operator `not`:
 
 ```python
-not True   # False
+not True  # False
 not False  # True
 ```
 
@@ -12,7 +12,8 @@ For example, if there's a function that checks if a number is even, then you can
 def is_even(number):
     return number % 2 == 0
 
-print(is_even(10))      # => True
+
+print(is_even(10))  # => True
 print(not is_even(10))  # => False
 ```
 
@@ -29,7 +30,7 @@ print(not not is_even(10))  # => True
 In logic, double negation means positive:
 
 ```python
-not not True   # True
+not not True  # True
 not not False  # False
 
 print(not not is_even(10))  # => True

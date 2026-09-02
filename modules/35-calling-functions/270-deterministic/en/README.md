@@ -4,11 +4,11 @@ Functions in every programming language have fundamental properties. These prope
 A deterministic function returns the same result every time if the input parameters are the same. For example, a function that counts the number of characters can be called deterministic:
 
 ```python
-len('hexlet')  # 6
-len('hexlet')  # 6
+len("hexlet")  # 6
+len("hexlet")  # 6
 
-len('wow')  # 3
-len('wow')  # 3
+len("wow")  # 3
+len("wow")  # 3
 ```
 
 You can call this function and pass the value `'hexlet'` as many times as you want, and it will always return `6`.

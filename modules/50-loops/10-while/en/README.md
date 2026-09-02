@@ -13,10 +13,11 @@ Let's write a function with a simple loop that will display the string `'Hello!'
 
 ```python
 def print_hello(n):
-  counter = 0
-  while counter < n:
-      print('Hello!')
-      counter = counter + 1
+    counter = 0
+    while counter < n:
+        print("Hello!")
+        counter = counter + 1
+
 
 print_hello(2)
 # => Hello!
@@ -36,14 +37,15 @@ You can't implement this function with the tools you've already learned, because
 
 ```python
 def print_numbers(last_number):
-  # i is short for index (ordinal number)
-  # this is a generally agreed way of expressing the iteration number
-  # as a loop counter
-  i = 1
-  while i <= last_number:
-      print(i)
-      i = i + 1
-  print('finished!')
+    # i is short for index (ordinal number)
+    # this is a generally agreed way of expressing the iteration number
+    # as a loop counter
+    i = 1
+    while i <= last_number:
+        print(i)
+        i = i + 1
+    print("finished!")
+
 
 print_numbers(3)
 # => 1
@@ -54,9 +56,9 @@ print_numbers(3)
 
 A `while' loop consists of three elements:
 
-* The keyword `while'
-* Predicate - a condition that comes after `while` and is calculated at each iteration
-* Code block - loop body
+- The keyword `while'
+- Predicate - a condition that comes after `while` and is calculated at each iteration
+- Code block - loop body
 
 Each execution of the body is called an **iteration**. In the example above, `print_numbers(3)` called three iterations, each one displaying the variable `i`. What we're basically saying is this: “do what's specified in the body of the loop as long as the condition `i <= last_number` is true”.
 
@@ -101,12 +103,12 @@ At this point, beginners make a lot of mistakes. For example, you may forget to 
 
 ```python
 def print_numbers(last_number):
-  i = 1
-  # This loop will never stop
-  # and will always print the same value
-  while i <= last_number:
-      print(i)
-  print('finished!')
+    i = 1
+    # This loop will never stop
+    # and will always print the same value
+    while i <= last_number:
+        print(i)
+    print("finished!")
 ```
 
 In some cases, infinite loops are useful. We won't look at these situations right now, but we can show you what this code looks like:

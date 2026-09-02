@@ -12,7 +12,7 @@ La instrucción `import` al principio del archivo hace accesible el contenido de
 import math
 
 print(math.floor(3.7))  # => 3
-print(math.ceil(3.2))   # => 4
+print(math.ceil(3.2))  # => 4
 ```
 
 Después de la importación, a las funciones se accede a través del nombre del módulo y un punto. El nombre del módulo coincide con el nombre del archivo sin la extensión. `math.ceil(3.2)` llama a la función `ceil` del módulo `math`.
@@ -26,7 +26,7 @@ Analicemos algunas funciones de ese módulo. `floor()` redondea el número hacia
 ```python
 import math
 
-print(math.floor(7.9)) # => 7
+print(math.floor(7.9))  # => 7
 print(math.ceil(7.1))  # => 8
 print(math.ceil(7.0))  # => 7
 ```
@@ -40,7 +40,7 @@ Cuando solo hace falta una parte del módulo, se pueden importar nombres concret
 ```python
 from math import ceil, floor
 
-print(ceil(3.2))   # => 4
+print(ceil(3.2))  # => 4
 print(floor(3.7))  # => 3
 ```
 
@@ -53,11 +53,13 @@ El módulo importado está disponible en todo el archivo, incluido el cuerpo de 
 ```python
 import math
 
+
 # Calcula la cantidad de viajes necesarios para transportar todos los objetos
 def trips_needed(items: int, capacity: int) -> int:
     return math.ceil(items / capacity)
 
-print(trips_needed(10, 3)) # => 4
+
+print(trips_needed(10, 3))  # => 4
 ```
 
 ## Conflictos de nombres
@@ -67,10 +69,12 @@ Los módulos ayudan a evitar los conflictos de nombres. En programas grandes, di
 ```python
 import math
 
+
 def floor(number):
     return "custom floor"
 
-print(floor(3.7))       # => custom floor
+
+print(floor(3.7))  # => custom floor
 print(math.floor(3.7))  # => 3
 ```
 
@@ -81,8 +85,10 @@ Los problemas surgen más a menudo al importar nombres concretos. Por ejemplo, s
 ```python
 from math import floor
 
+
 def floor(number):
     return "custom floor"
+
 
 print(floor(3.7))  # => custom floor
 ```

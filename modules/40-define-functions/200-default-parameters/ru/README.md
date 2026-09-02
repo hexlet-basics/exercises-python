@@ -10,8 +10,9 @@
 def repeat(text, times=1):
     return text * times
 
-print(repeat("Hi"))        # => Hi
-print(repeat("Hi", 3))     # => HiHiHi
+
+print(repeat("Hi"))  # => Hi
+print(repeat("Hi", 3))  # => HiHiHi
 ```
 
 В этом примере используется операция умножения строки на число. Она работает так: берется исходная строка и повторяется указанное количество раз. Например, `"A" * 5` превратится в `"AAAAA"`. Это встроенная возможность Python, которая часто применяется при генерации шаблонов, разделителей и повторяющихся фрагментов текста.
@@ -34,7 +35,8 @@ repeat('go', 5)     →  times = 5  (явно указано)
 def join_words(word1, word2, sep=" "):
     return word1 + sep + word2
 
-print(join_words("King", "Road"))          # => King Road
+
+print(join_words("King", "Road"))  # => King Road
 print(join_words("Dragon", "stone", "-"))  # => Dragon-stone
 ```
 
@@ -46,8 +48,9 @@ print(join_words("Dragon", "stone", "-"))  # => Dragon-stone
 def make_line(symbol="-", length=10):
     return symbol * length
 
-print(make_line())             # => ----------
-print(make_line("*"))          # => **********
-print(make_line("*", 5))       # => *****
-print(make_line("#", 3))       # => ###
+
+print(make_line())  # => ----------
+print(make_line("*"))  # => **********
+print(make_line("*", 5))  # => *****
+print(make_line("#", 3))  # => ###
 ```

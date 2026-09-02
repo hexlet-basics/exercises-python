@@ -28,18 +28,18 @@ After launching, the result will appear on the screen:
 
 In addition to addition, the following operations are available:
 
-* `-` — subtraction
-* `*` — multiplication
-* `**` — exponentiation (e.g. 2 to the power of 4, 2^4)
-* `/` — division
-* `//` — [integer division](https://en.wikipedia.org/wiki/Euclidean_division)
-* `%` — [modulus operation](https://en.wikipedia.org/wiki/Euclidean_division)
+- `-` — subtraction
+- `*` — multiplication
+- `**` — exponentiation (e.g. 2 to the power of 4, 2^4)
+- `/` — division
+- `//` — [integer division](https://en.wikipedia.org/wiki/Euclidean_division)
+- `%` — [modulus operation](https://en.wikipedia.org/wiki/Euclidean_division)
 
 Now let's print the result of division and then the result of exponentiation:
 
 ```python
-print(8 / 2)   # => 4.0 (Dividing two numbers produces the float data type)
-print(3 ** 2)  # => 9
+print(8 / 2)  # => 4.0 (Dividing two numbers produces the float data type)
+print(3**2)  # => 9
 ```
 
 Sometimes, for convenience, we'll show in the result of running lines of code in the comments like this: `=> RESULT`. For example, `# => 4`.

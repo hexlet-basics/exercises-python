@@ -8,7 +8,7 @@ while i < 10:
     sum += i
     i += 1
 
-print(sum) # => 45
+print(sum)  # => 45
 ```
 
 Ese código lo podemos reescribir con el bucle `for` + `range()`
@@ -19,7 +19,7 @@ sum = 0
 for i in range(10):
     sum += i
 
-print(sum) # => 45
+print(sum)  # => 45
 ```
 
 La función range en Python crea una secuencia de números dentro de un rango determinado. Se puede usar en el bucle for para controlar la cantidad de iteraciones.
@@ -38,7 +38,6 @@ range(5)     →  0, 1, 2, 3, 4
 El ejemplo con un solo valor final lo vimos arriba. Veamos otro: imprimamos en pantalla los números del 1 al 3:
 
 ```python
-
 for i in range(1, 4):
     print(i)
 

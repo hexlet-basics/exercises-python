@@ -5,7 +5,7 @@ Por ejemplo, si queremos recorrer los caracteres de una cadena, el ordenador pue
 Una cadena consta de caracteres, y el bucle `for` permite recorrer la cadena carácter a carácter. Un ejemplo:
 
 ```python
-text = 'code'
+text = "code"
 for symbol in text:
     print(symbol)
 
@@ -32,7 +32,7 @@ Veamos cómo implementar la función de invertir una cadena con el bucle `for`. 
 ```python
 def reverse_string(text: str) -> str:
     # Valor inicial
-    result = ''
+    result = ""
     # char - variable en la que se escribe el carácter actual
     for char in text:
         # Unimos en orden inverso
@@ -41,7 +41,7 @@ def reverse_string(text: str) -> str:
     return result
 
 
-reverse_string('go!')  # => '!og'
+reverse_string("go!")  # => '!og'
 ```
 
 Analicemos en detalle cómo se ejecuta el bucle del ejemplo de arriba en cada paso de las iteraciones.
@@ -83,8 +83,8 @@ def chars_count(text: str, char: str) -> int:
     return result
 
 
-chars_count('hexlet!', 'e')  # 2
-chars_count('hExlet!', 'e')  # 2
-chars_count('hExlet!', 'E')  # 2
-chars_count('hexlet!', 'a')  # 0
+chars_count("hexlet!", "e")  # 2
+chars_count("hExlet!", "e")  # 2
+chars_count("hExlet!", "E")  # 2
+chars_count("hexlet!", "a")  # 0
 ```

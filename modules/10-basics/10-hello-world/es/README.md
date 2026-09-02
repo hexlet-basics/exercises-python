@@ -9,22 +9,24 @@ Hello, World!
 Esta tradición tiene ya más de cuarenta años, y nosotros también empezaremos por ella. En la primera lección escribiremos el programa `Hello, World!`. En Python ese programa se ve así:
 
 ```python
-print('Hello, World!')
+print("Hello, World!")
 ```
 
 El comando `print()` muestra en la pantalla el texto indicado entre paréntesis. En lugar del ejemplo se puede escribir cualquier otro texto.
 
 ```python
-print('Hexlet - escuela de programación')
+print("Hexlet - escuela de programación")
 ```
 
 El comando sigue siendo el mismo, solo cambia el contenido de los paréntesis. Para que el programa entienda que se trata precisamente de texto, este se encierra entre comillas. Se pueden usar comillas simples `'...'` o dobles `"..."`, pero la comilla de apertura y la de cierre deben coincidir.
 
-```python
-print("Hexlet - escuela de programación")
+<!-- NOTE: две формы записи кавычек и есть предмет урока. text чтобы форматтер не свёл их к одной форме -->
+
+```text
+print('Hexlet - escuela de programación')
 ```
 
-Según el estándar de estilo de código aceptado en Python (PEP 8), se recomienda usar comillas simples para las cadenas. Si dentro de la cadena hay un apóstrofo, las comillas simples romperán la sintaxis, por lo que en esos casos se usan las dobles.
+El estándar de estilo de código PEP 8 no prefiere las comillas simples ni las dobles: lo importante es elegir un estilo y mantenerlo. En este curso usamos las dobles. PEP 8 aconseja que, si dentro de la cadena hay un apóstrofo o una comilla, se usen las del otro tipo para no escapar nada. Por ejemplo, el apóstrofo de `it's` rompe una cadena entre comillas simples, así que aquí hacen falta las dobles.
 
 ```python
 print("it's a Python")  # apóstrofo dentro, por eso comillas dobles

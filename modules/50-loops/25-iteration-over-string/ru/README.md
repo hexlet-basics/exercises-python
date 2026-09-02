@@ -12,7 +12,8 @@ def print_name_by_symbol(name: str) -> None:
         print(name[i])
         i = i + 1
 
-name = 'Arya'
+
+name = "Arya"
 print_name_by_symbol(name)
 # => 'A'
 # => 'r'
@@ -38,15 +39,16 @@ print_name_by_symbol(name)
 
 ```python
 def reverse_string(text: str) -> str:
-    result = ''
+    result = ""
     i = len(text) - 1
     while i >= 0:
         result = result + text[i]
         i = i - 1
     return result
 
-print(reverse_string('Arya'))    # => ayrA
-print(reverse_string('hexlet'))  # => telxeh
+
+print(reverse_string("Arya"))  # => ayrA
+print(reverse_string("hexlet"))  # => telxeh
 ```
 
 Переменная `result` инициализируется пустой строкой как нейтральным элементом для конкатенации. Цикл начинается с последнего индекса (`len(text) - 1`), двигается к нулю и завершается, когда индекс становится меньше нуля. На каждом шаге к результату добавляется текущий символ. В итоге строка строится в обратном порядке.

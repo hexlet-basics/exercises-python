@@ -5,24 +5,24 @@ Hasta este momento usábamos solo funciones ya listas: `print()`, `len()`, `max(
 Supongamos que tenemos varios fragmentos de código parecidos:
 
 ```python
-print('Hello, Hexlet!')
-print('Hello, world!')
-print('Hello, Python!')
+print("Hello, Hexlet!")
+print("Hello, world!")
+print("Hello, Python!")
 ```
 
 Para no repetir la misma plantilla, podemos encapsularla en forma de función propia, que recibe un parámetro de entrada e imprime en pantalla la línea necesaria:
 
 ```python
 def say_hello(name):
-    print(f'Hello, {name}!')
+    print(f"Hello, {name}!")
 ```
 
 Ahora podemos llamarla con distintos argumentos:
 
 ```python
-say_hello('Hexlet')   # => Hello, Hexlet!
-say_hello('world')    # => Hello, world!
-say_hello('Python')   # => Hello, Python!
+say_hello("Hexlet")  # => Hello, Hexlet!
+say_hello("world")  # => Hello, world!
+say_hello("Python")  # => Hello, Python!
 ```
 
 Al parecer la cantidad de código no disminuyó, pero apareció otra cosa. Si esa función se usa en distintos lugares, cuando haga falta cambiar el texto nos bastará con corregir solo la definición de la función. Y cuanto más compleja sea la tarea y más a menudo se use en distintos lugares, más importante es extraer la lógica a funciones propias.
@@ -48,9 +48,10 @@ En Python las sangrías tienen valor sintáctico. Muestran qué código pertenec
 
 ```python
 def say_hi():
-    print('Hi!')
+    print("Hi!")
 
-print('El programa continúa…')
+
+print("El programa continúa…")
 ```
 
 Aquí la función `say_hi()` está definida, pero **`print('El programa continúa…')`** no pertenece a la función, porque no tiene sangría. Se ejecutará de inmediato al arrancar el programa, independientemente de la llamada a `say_hi()`.
@@ -59,10 +60,11 @@ Para que `say_hi()` actúe, hay que llamarla explícitamente:
 
 ```python
 def say_hi():
-    print('Hi!')
+    print("Hi!")
+
 
 say_hi()  # => Hi!
-print('El programa continúa…')
+print("El programa continúa…")
 ```
 
 ## Ejemplo: función para imprimir la media aritmética
@@ -74,6 +76,7 @@ def print_average(a, b):
     total = a + b
     average = total / 2
     print(average)
+
 
 print_average(6, 4)  # => 5.0
 ```

@@ -85,6 +85,7 @@ def print_numbers(n: int) -> None:
         i = i + 1
     print("Finished!")
 
+
 print_numbers(3)
 # => 1
 # => 2

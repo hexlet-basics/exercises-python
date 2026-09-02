@@ -2,17 +2,17 @@
 
 Для каждой страны есть два тарифа: для посылок весом до 1 кг включительно и для более тяжелых посылок:
 
-* `'canada'`: 600 для посылок до 1 кг, 900 для остальных
-* `'usa'`: 800 для посылок до 1 кг, 1200 для остальных
-* `'germany'`: 700 для посылок до 1 кг, 1000 для остальных
+- `'canada'`: 600 для посылок до 1 кг, 900 для остальных
+- `'usa'`: 800 для посылок до 1 кг, 1200 для остальных
+- `'germany'`: 700 для посылок до 1 кг, 1000 для остальных
 
 Если страна неизвестна, функция должна вернуть `None`.
 
 Примеры вызова функции:
 
 ```python
-calculate_delivery_cost('canada', 0.5)  # 600
-calculate_delivery_cost('canada', 2)    # 900
-calculate_delivery_cost('usa', 1)       # 800
-calculate_delivery_cost('france', 1)    # None
+calculate_delivery_cost("canada", 0.5)  # 600
+calculate_delivery_cost("canada", 2)  # 900
+calculate_delivery_cost("usa", 1)  # 800
+calculate_delivery_cost("france", 1)  # None
 ```

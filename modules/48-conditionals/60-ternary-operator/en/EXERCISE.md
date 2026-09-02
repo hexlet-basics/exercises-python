@@ -4,8 +4,8 @@ Implement a function `flip_flop()` that takes a string as input and, if that str
 Examples of calls:
 
 ```python
-print(flip_flop('flip'))  # => 'flop'
-print(flip_flop('flop'))  # => 'flip'
+print(flip_flop("flip"))  # => 'flop'
+print(flip_flop("flop"))  # => 'flip'
 ```
 
 Try writing two versions of the function: with the usual if-else, and with the ternary operator.

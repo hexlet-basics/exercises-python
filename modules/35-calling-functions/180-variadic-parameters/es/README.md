@@ -3,8 +3,8 @@ Algunas funciones tienen una particularidad: reciben un número variable de argu
 Veamos la función `max()`. Encuentra el mayor valor entre los datos que se le pasan.
 
 ```python
-print(max(1, 10, 3))       # => 10
-print(max(1, -3, 2, 3, 2)) # => 3
+print(max(1, 10, 3))  # => 10
+print(max(1, -3, 2, 3, 2))  # => 3
 ```
 
 En la documentación se pueden encontrar varias variantes de descripción de `max()`. Para simplificar la comprensión, nos centraremos en una, la que necesitamos ahora:
@@ -28,6 +28,6 @@ print(max(5, 5, 2))  # => 5
 De forma análoga funciona la función `min()`, solo que busca el menor valor:
 
 ```python
-print(min(1, 10, 3))       # => 1
-print(min(1, -3, 2, 3, 2)) # => -3
+print(min(1, 10, 3))  # => 1
+print(min(1, -3, 2, 3, 2))  # => -3
 ```

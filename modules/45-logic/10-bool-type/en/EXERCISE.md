@@ -4,6 +4,6 @@ Write a function `is_pensioner()` that takes someone's age as a single argument 
 Call examples:
 
 ```python
-is_pensioner(75) # True
-is_pensioner(18) # False
+is_pensioner(75)  # True
+is_pensioner(18)  # False
 ```

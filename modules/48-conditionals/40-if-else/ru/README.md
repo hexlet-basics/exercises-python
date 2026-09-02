@@ -4,15 +4,16 @@
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
-    if last_char == '?':
-        sentence_type = 'question'
+    if last_char == "?":
+        sentence_type = "question"
     else:
-        sentence_type = 'normal'
+        sentence_type = "normal"
 
     return "Sentence is " + sentence_type
 
-print(get_type_of_sentence('Hodor'))  # => Sentence is normal
-print(get_type_of_sentence('Hodor?')) # => Sentence is question
+
+print(get_type_of_sentence("Hodor"))  # => Sentence is normal
+print(get_type_of_sentence("Hodor?"))  # => Sentence is question
 ```
 
 Мы добавили `else` и новый блок. Он выполнится, если условие в `if` окажется ложным. Еще в блок `else` можно вкладывать другие условия `if`. Else переводится "иначе", "в ином случае".
@@ -49,10 +50,10 @@ else:
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
 
-    if last_char != '?':
-        sentence_type = 'normal'
+    if last_char != "?":
+        sentence_type = "normal"
     else:
-        sentence_type = 'question'
+        sentence_type = "question"
 
     return "Sentence is " + sentence_type
 ```
@@ -71,6 +72,7 @@ def check_number(number):
     else:
         print("Число не положительное")
 
+
 check_number(3)
 # => Число положительное
 # => Число не положительное
@@ -87,6 +89,7 @@ def check_number(number: int) -> None:
             print("Число больше 10")
     else:
         print("Число не положительное")
+
 
 check_number(3)
 # => Число положительное

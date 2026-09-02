@@ -3,7 +3,7 @@
 Пример вызова:
 
 ```python
-normalize_filename('my photo.png')        # 'my_photo.png'
-normalize_filename('final report.pdf')    # 'final_report.pdf'
-normalize_filename('already_ready.txt')   # 'already_ready.txt'
+normalize_filename("my photo.png")  # 'my_photo.png'
+normalize_filename("final report.pdf")  # 'final_report.pdf'
+normalize_filename("already_ready.txt")  # 'already_ready.txt'
 ```

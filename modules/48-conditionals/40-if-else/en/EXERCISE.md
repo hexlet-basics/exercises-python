@@ -6,9 +6,9 @@ The function accepts addresses as `ADDRESS` or `http://ADDRESS`, but always retu
 Call examples:
 
 ```python
-print(normalize_url('https://yahoo.com/'))  # => 'https://yahoo.com/'
-print(normalize_url('google.com'))     # => 'https://google.com'
-print(normalize_url('http://ai.fi'))   # => 'https://ai.fi'
+print(normalize_url("https://yahoo.com/"))  # => 'https://yahoo.com/'
+print(normalize_url("google.com"))  # => 'https://google.com'
+print(normalize_url("http://ai.fi"))  # => 'https://ai.fi'
 ```
 
 There are several ways to do this task. One of them is to compare the first 7 characters of the argument string with the string `http://` and then decide whether to `http://` or not based on that.
@@ -17,12 +17,12 @@ You'll also most likely need to discard the unnecessary part at the beginning of
 
 ```python
 # Take 6 characters from the beginning
-print('Winterfell'[:6])  # => 'Winter'
+print("Winterfell"[:6])  # => 'Winter'
 ```
 
 So, with slicing, you can also discard a certain number of characters:
 
 ```python
 # Discard the first 6 characters
-print('Winterfell'[6:])  # => 'fell'
+print("Winterfell"[6:])  # => 'fell'
 ```

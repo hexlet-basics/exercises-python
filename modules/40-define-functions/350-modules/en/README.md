@@ -10,7 +10,7 @@ The `import` command at the top of a file makes the module's contents available:
 import math
 
 print(math.floor(3.7))  # => 3
-print(math.ceil(3.2))   # => 4
+print(math.ceil(3.2))  # => 4
 ```
 
 After importing, you access functions through the module name and a dot. `math.ceil(3.2)` calls the `ceil` function from the `math` module.
@@ -23,8 +23,8 @@ After importing, you access functions through the module name and a dot. `math.c
 import math
 
 print(math.floor(7.9))  # => 7
-print(math.ceil(7.1))   # => 8
-print(math.ceil(7.0))   # => 7
+print(math.ceil(7.1))  # => 8
+print(math.ceil(7.0))  # => 7
 ```
 
 The difference matters when the number is not whole. `floor(7.9)` gives 7, not 8, because 7 is the nearest integer below.
@@ -36,7 +36,7 @@ When you only need part of a module, you can import specific names:
 ```python
 from math import ceil, floor
 
-print(ceil(3.2))   # => 4
+print(ceil(3.2))  # => 4
 print(floor(3.7))  # => 3
 ```
 
@@ -49,8 +49,10 @@ An imported module is available throughout the file, including inside function b
 ```python
 import math
 
+
 def trips_needed(items: int, capacity: int) -> int:
     return math.ceil(items / capacity)
+
 
 print(trips_needed(10, 3))  # => 4
 ```

@@ -4,5 +4,5 @@ Realiza todas las acciones **en una sola cadena de métodos**, sin crear variabl
 
 ### Pistas
 
-* Los índices en las cadenas empiezan en cero. Por ejemplo, el 4.º carácter tiene el índice `3`.
-* Al trabajar con cortes, el primer índice **se incluye** y el segundo **no**. Por ejemplo, `text[4:6]` devolverá el 5.º y el 6.º carácter de la cadena.
+- Los índices en las cadenas empiezan en cero. Por ejemplo, el 4.º carácter tiene el índice `3`.
+- Al trabajar con cortes, el primer índice **se incluye** y el segundo **no**. Por ejemplo, `text[4:6]` devolverá el 5.º y el 6.º carácter de la cadena.

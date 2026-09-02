@@ -5,10 +5,10 @@ In programming, we operate with data, create numbers and strings, perform variou
 
 ```python
 # Adding with the + operator
-1 + 3 # 4
+1 + 3  # 4
 
 # Counting the length with the len() function
-name = 'Hexlet'
+name = "Hexlet"
 len(name)  # 6
 ```
 
@@ -19,7 +19,7 @@ Object-oriented code is based on combining data and functions into one entity, a
 This is what it looks like:
 
 ```python
-name = 'Hexlet'
+name = "Hexlet"
 # upper() method
 upper_name = name.upper()
 print(upper_name)  # => 'HEXLET'
@@ -30,22 +30,22 @@ Strings in Python are objects. In the example above, we call a method, which is,
 The call can also be made directly:
 
 ```python
-'Hexlet'.upper()  # 'HEXLET'
+"Hexlet".upper()  # 'HEXLET'
 ```
 
 There are many methods built into strings which developers need all the time. You can see a list of them in the [documentation](https://python.readthedocs.io/en/latest/library/stdtypes.html#string-methods). Here are some useful examples:
 
 ```python
-name = 'Python'
+name = "Python"
 
 # Returns the index of the first occurrence of a letter in a string
-name.find('t')  # 2
+name.find("t")  # 2
 
 # Changes to lower case
 name.lower()  # 'python'
 
 # Replaces one substring with another
-name.replace('on', 'off')  # 'Pythoff'
+name.replace("on", "off")  # 'Pythoff'
 ```
 
 The same goes for numbers and other data types that we've not looked at. You could say that in Python almost everything is an object:
@@ -71,13 +71,13 @@ The creator of Python [decided](https://stackoverflow.com/questions/83983/why-is
 This is also how the `len()` function works:
 
 ```python
-len('Hexlet')  # Calls 'Hexlet'.__len__()
+len("Hexlet")  # Calls 'Hexlet'.__len__()
 ```
 
 In addition to methods, objects have attributes, but Python's built-in objects don't have many of them. For example, the attribute `__doc__`, which returns the documentation of the function. Therefore, functions are also considered objects:
 
 ```python
-len.__doc__ # 'Return the number of items in a container.'
+len.__doc__  # 'Return the number of items in a container.'
 ```
 
 Attributes work and look like variables, only they need to be entered like this: `[object].[attribute]`.

@@ -3,7 +3,7 @@
 ## Склеиваем две строки напрямую
 
 ```python
-what = 'Kings' + 'road'
+what = "Kings" + "road"
 print(what)  # => Kingsroad
 ```
 
@@ -14,8 +14,8 @@ print(what)  # => Kingsroad
 Если в переменной first лежит строка "Kings", мы можем спокойно склеить ее с другой строкой:
 
 ```python
-first = 'Kings'
-what = first + 'road'
+first = "Kings"
+what = first + "road"
 print(what)  # => Kingsroad
 ```
 
@@ -26,8 +26,8 @@ Python подставит значение переменной, выполни�
 Точно так же можно объединить значения двух переменных, если обе содержат строки:
 
 ```python
-first = 'Kings'
-last = 'road'
+first = "Kings"
+last = "road"
 what = first + last
 print(what)  # => Kingsroad
 ```
@@ -40,14 +40,14 @@ print(full)  # => Kings road
 ```
 
 ```text
-what = 'Kings'
+what = "Kings"
 who  = 'road'
 
 what    +  ' '  +  who
 └─┬──┘           └──┬─┘
-'Kings' + ' '  + 'road'
+"Kings" + " "  + "road"
 └────────┬─────────┘
-    'Kings road'
+    "Kings road"
 ```
 
 ## А что если переменная содержит число?
@@ -63,14 +63,14 @@ age = 42
 
 ```python
 age = 42
-print('Age: ' + str(age))  #  Age: 42
+print("Age: " + str(age))  #  Age: 42
 ```
 
 То же самое касается переменных с результатами вычислений:
 
 ```python
 price = 50 * 1.25 * 6.91  # => 431.875
-print('Price in yuans: ' + str(price))  #  Price in yuans: 431.875
+print("Price in yuans: " + str(price))  #  Price in yuans: 431.875
 ```
 
 Функция `str()` превращает любое значение (число, результат вычисления, булево и т.д.) в строку. Подробнее про функции мы поговорим в будущих уроках.

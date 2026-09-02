@@ -7,14 +7,14 @@ The first type is **positional arguments**. They are passed in the same order as
 
 ```python
 # (text, length)
-truncate('My Text', 3)
+truncate("My Text", 3)
 ```
 
 The second type is **named arguments**. They are passed not just as values, but as a pair "name=value". So you can pass them in any order:
 
 ```python
 # Arguments are passed in a different order
-truncate(length=3, text='My Text')
+truncate(length=3, text="My Text")
 ```
 
 If you look carefully at the two examples above, you can see that they are two identical functions.
@@ -25,15 +25,16 @@ The type of parameter you choose depends on who is calling the function.
 
 There are two reasons to use named arguments:
 
-* They increase readability because you can see the names at a glance
+- They increase readability because you can see the names at a glance
 
-* You can leave out all the intermediate parameters that we don't need right now
+- You can leave out all the intermediate parameters that we don't need right now
 
 The latter is useful if the function has many optional parameters. Let's look at an example:
 
 ```python
 def print_params(a=1, b=2, c=3, d=4):
     print(a, b, c, d)
+
 
 # You only need to pass d, but you have to pass all
 f(1, 2, 3, 8)

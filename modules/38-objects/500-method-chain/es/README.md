@@ -1,7 +1,7 @@
 Un método es una operación que se aplica a un valor y devuelve un resultado nuevo. Si el resultado permite de nuevo llamar a métodos, se le puede aplicar otro método más. Esa técnica se llama **cadena de métodos (method chaining)**.
 
 ```python
-text = '  hExLeT  '
+text = "  hExLeT  "
 result = text.strip().lower()
 print(result)  # => 'hexlet'
 ```
@@ -14,13 +14,13 @@ print(result)  # => 'hexlet'
 Los métodos se llaman uno tras otro, como eslabones de una cadena. Eso permite escribir código compacto y legible.
 
 ```python
-print('  hExLeT  '.strip().lower().replace('h', 'x'))  # => xexlet
+print("  hExLeT  ".strip().lower().replace("h", "x"))  # => xexlet
 
 # Lo mismo, pero sin cadena
-text = '  hExLeT  '
-step1 = text.strip()             # 'hExLeT'
-step2 = step1.lower()            # 'hexlet'
-step3 = step2.replace('h', 'x')  # 'xexlet'
+text = "  hExLeT  "
+step1 = text.strip()  # 'hExLeT'
+step2 = step1.lower()  # 'hexlet'
+step3 = step2.replace("h", "x")  # 'xexlet'
 print(step3)
 ```
 
@@ -44,7 +44,7 @@ Cada método devuelve una cadena nueva, y el método siguiente se aplica ya a es
 En una cadena de métodos el orden de ejecución va de izquierda a derecha. Cada método siguiente se llama sobre el resultado del anterior.
 
 ```python
-print('  hExLeT  '.strip().lower().replace('h', 'x'))  # => xexlet
+print("  hExLeT  ".strip().lower().replace("h", "x"))  # => xexlet
 ```
 
 1. `'  hExLeT  '` es la cadena de partida.
@@ -55,8 +55,8 @@ print('  hExLeT  '.strip().lower().replace('h', 'x'))  # => xexlet
 Al usar funciones, la parte interna se ejecuta primero y su resultado se pasa a la función siguiente.
 
 ```python
- # Ejemplo hipotético, si strip y lower fueran funciones
-print(lower(strip('  hExLeT  ')))
+# Ejemplo hipotético, si strip y lower fueran funciones
+print(lower(strip("  hExLeT  ")))
 ```
 
 Con los métodos simplemente te "mueves" de izquierda a derecha, leyendo la cadena como una frase normal. Eso hace que trabajar con métodos resulte especialmente cómodo.
@@ -64,7 +64,7 @@ Con los métodos simplemente te "mueves" de izquierda a derecha, leyendo la cade
 Si se confunde el orden, el resultado puede diferir:
 
 ```python
-print('  hExLeT  '.replace('h', 'x').strip().lower())  # => xexlet
+print("  hExLeT  ".replace("h", "x").strip().lower())  # => xexlet
 ```
 
 En este caso `replace()` actuará sobre la cadena con espacios. El resultado final salió igual, pero eso es más bien una coincidencia. En otras situaciones el orden sí importa.
@@ -74,7 +74,7 @@ En este caso `replace()` actuará sobre la cadena con espacios. El resultado fin
 Los métodos se pueden llamar también después de otras operaciones, por ejemplo después de un corte de la cadena:
 
 ```python
-text = '  Hello, Hexlet!  '
+text = "  Hello, Hexlet!  "
 # Eliminamos los espacios, tomamos la subcadena y pasamos a minúsculas
 print(text.strip()[7:].lower())  # => hexlet!
 ```
@@ -88,8 +88,8 @@ Esa forma de escribir se lee de izquierda a derecha y muestra todo el recorrido 
 La cadena se puede continuar mientras el resultado siga siendo una cadena de texto (u otro tipo que tenga métodos). Si un método devuelve un número u otro tipo simple, ya no se pueden llamar métodos más adelante:
 
 ```python
-text = 'hexlet'
-length = text.upper().count('E')
+text = "hexlet"
+length = text.upper().count("E")
 print(length)  # => 2
 ```
 

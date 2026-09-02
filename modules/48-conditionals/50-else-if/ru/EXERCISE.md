@@ -2,15 +2,15 @@
 
 Правила:
 
-* `'green'` → `'go'`
-* `'yellow'` → `'slow down'`
-* `'red'` → `'stop'`
-* Любой другой цвет → `'unknown'`
+- `'green'` → `'go'`
+- `'yellow'` → `'slow down'`
+- `'red'` → `'stop'`
+- Любой другой цвет → `'unknown'`
 
 Примеры вызова:
 
 ```python
-print(get_traffic_light_action('green'))   # => 'go'
-print(get_traffic_light_action('red'))     # => 'stop'
-print(get_traffic_light_action('purple'))  # => 'unknown'
+print(get_traffic_light_action("green"))  # => 'go'
+print(get_traffic_light_action("red"))  # => 'stop'
+print(get_traffic_light_action("purple"))  # => 'unknown'
 ```

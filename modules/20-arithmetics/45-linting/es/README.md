@@ -26,7 +26,7 @@ A día de hoy, el linter más rápido y popular del mundo Python se considera Ru
 Veamos un ejemplo:
 
 ```python
-result = 1+ 3
+result = 1 + 3
 ```
 
 Ese código se ve descuidado, y el linter señalará el error con razón. Así se ve el proceso de comprobación:

@@ -8,10 +8,10 @@ Supongamos que sumas dos números:
 print(1 + 7)  # => 8
 ```
 
-Todo perfecto. La operación de suma está permitida para los números, así que el programa funcionará y mostrará en pantalla *8*. ¿Y qué pasará si intentamos sumar un número y una cadena?
+Todo perfecto. La operación de suma está permitida para los números, así que el programa funcionará y mostrará en pantalla _8_. ¿Y qué pasará si intentamos sumar un número y una cadena?
 
 ```python
-print(1 + '7')
+print(1 + "7")
 # TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
@@ -51,7 +51,7 @@ El entero `1` se convierte en `1.0` y el resultado sale `2.5`. Funciona porque c
 No todos los lenguajes son así. Por ejemplo, PHP y JavaScript usan tipado débil. Convierten los tipos automáticamente cuando lo consideran "razonable".
 
 ```javascript
-1 + '7';  // => '17'
+1 + "7"; // => '17'
 ```
 
 En este ejemplo, el número 1 se convierte implícitamente en la cadena '1' y el resultado pasa a ser '17'.

@@ -3,7 +3,7 @@ A veces el texto de un programa tiene que estar formado por varias líneas. Por 
 Por supuesto, se puede usar el carácter de salto de línea `\n`, como hacíamos antes:
 
 ```python
-text = 'Un ejemplo de texto,\nformado por\nvarias líneas'
+text = "Un ejemplo de texto,\nformado por\nvarias líneas"
 ```
 
 Al imprimirla, la cadena se verá así:
@@ -21,9 +21,9 @@ Pero esa forma resulta incómoda, sobre todo si la cadena es larga o si hay que 
 En Python existe una forma más cómoda de escribir texto en varias líneas: las cadenas multilínea (multi-line strings). Para crear una cadena así hay que encerrar el texto entre comillas triples (técnicamente es una comilla repetida tres veces): `'''` o `"""`:
 
 ```python
-text = '''Un ejemplo de texto,
+text = """Un ejemplo de texto,
 formado por
-varias líneas'''
+varias líneas"""
 ```
 
 Ahora en el código todo se ve igual que en la salida:
@@ -39,10 +39,10 @@ varias líneas
 Si cierras las comillas triples en una línea nueva, Python incluye también esa línea en el resultado:
 
 ```python
-text = '''Un ejemplo de texto,
+text = """Un ejemplo de texto,
 formado por
 varias líneas
-'''
+"""
 
 print("====")
 print(text)
@@ -63,9 +63,9 @@ varias líneas
 Fíjate: aparece una línea vacía al final. Para evitarla, no pases las comillas de cierre a una línea nueva:
 
 ```python
-text = '''Un ejemplo de texto,
+text = """Un ejemplo de texto,
 formado por
-varias líneas'''
+varias líneas"""
 ```
 
 La salida:
@@ -84,7 +84,9 @@ varias líneas
 - Comodidad al editar: es fácil añadir, borrar y cambiar líneas.
 - No hace falta escapar las comillas:
 
-```python
+<!-- NOTE: тройные одинарные кавычки и есть предмет примера: внутри строки стоят кавычки обоих видов. text чтобы форматтер не переписал их в двойные -->
+
+```text
 quote = '''Aquí no hay que escapar ni las comillas 'simples' ni las "dobles"'''
 ```
 
@@ -93,11 +95,11 @@ quote = '''Aquí no hay que escapar ni las comillas 'simples' ni las "dobles"'''
 Las cadenas multilínea se pueden combinar con las f-strings para sustituir valores de variables:
 
 ```python
-a = 'A'
-b = 'B'
+a = "A"
+b = "B"
 
-text = f'''{a} y {b}
-en líneas distintas'''
+text = f"""{a} y {b}
+en líneas distintas"""
 ```
 
 La salida:

@@ -58,8 +58,8 @@ print("Hello\nWorld")
 # World
 
 print("Hello \nWorld")
-# Hello 
-# World  (al final de la primera línea hay un espacio)
+# Hello
+# World  (el espacio anterior a \n queda al final de la primera línea)
 
 print("Hello\n World")
 # Hello
@@ -77,7 +77,7 @@ También puedes insertar `\n` en cualquier parte de la cadena: antes, después o
 
 ```python
 print("First line")
-print("\n")         # Simplemente una línea vacía
+print("\n")  # Simplemente una línea vacía
 print("Second line")
 ```
 
@@ -101,7 +101,6 @@ print("Hello\\nWorld")
 print("Hello\nWorld")
 # Hello
 # World
-
 ```
 
 En ese caso Python entiende `\\` como una barra invertida normal y muestra la cadena sin salto de línea.

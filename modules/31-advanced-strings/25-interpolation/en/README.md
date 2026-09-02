@@ -4,8 +4,8 @@ You already know how to move a string or glue several strings together to get a 
 The basic way to join strings is **concatenation**. Using concatenation, the strings are added to each other, as in the example below:
 
 ```python
-first_name = 'Joffrey'
-greeting = 'Hello'
+first_name = "Joffrey"
+greeting = "Hello"
 
 print(greeting + ", " + first_name + "!")
 # => Hello, Joffrey!
@@ -14,10 +14,10 @@ print(greeting + ", " + first_name + "!")
 Concatenation works simply, but doesn't always look so visually clear. The quotation marks make it difficult to see what the end result will be. And the more complex the string is, the more confusing it will start to look. Concatenation has an alternative: **interpolation**. This is what it looks like:
 
 ```python
-first_name = 'Joffrey'
-greeting = 'Hello'
+first_name = "Joffrey"
+greeting = "Hello"
 
-print(f'{greeting}, {first_name}!')
+print(f"{greeting}, {first_name}!")
 # => Hello, Joffrey!
 ```
 
@@ -26,9 +26,9 @@ The letter `f` indicates that we are creating an **f-string**, a pattern into wh
 Consider this example:
 
 ```python
-school = 'Hexlet'
+school = "Hexlet"
 
-what_is_it = f'{school} - online courses'
+what_is_it = f"{school} - online courses"
 print(what_is_it)  # => Hexlet - online courses
 ```
 

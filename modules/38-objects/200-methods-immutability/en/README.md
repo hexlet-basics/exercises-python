@@ -2,7 +2,7 @@
 Imagine we have this call:
 
 ```python
-name = 'Tirion'
+name = "Tirion"
 print(name.upper())  # => TIRION
 # What will this call print on the screen?
 print(name)  # => ?
@@ -13,7 +13,7 @@ Calling the `.upper()` method returns a new value with all letters converted to 
 Instead of changing the value, you can **replace** it. This requires variables:
 
 ```python
-name = 'Tirion'
+name = "Tirion"
 name = name.upper()
 print(name)  # => TIRION
 ```

@@ -47,7 +47,7 @@ Primero se realiza la multiplicación: `10 - 6 = 4`.
 Y si en la expresión hay números negativos, el menos unario se aplica después de la potenciación:
 
 ```python
-print(-2 ** 2) # => -4, dos elevado a dos, después se aplica el menos
+print(-(2**2))  # => -4, dos elevado a dos, después se aplica el menos
 print(-2 * 5)  # => -10, menos dos multiplicado por cinco
 print(4 + -2)  # => 2
 print(6 - -2)  # => 8
@@ -58,13 +58,13 @@ En todos los ejemplos, salvo el primero, primero se calcula el menos unario (`-2
 Veamos con más detalle el último ejemplo:
 
 ```python
-print(6 - -2)   # => 8
+print(6 - -2)  # => 8
 ```
 
 Primero se calcula el menos unario (`-2`), y entonces la operación se convierte en `6 - (-2)`, lo que da `8`. Es lo mismo que:
 
 ```python
-print(6 + 2) # => 8
+print(6 + 2)  # => 8
 ```
 
 ## Qué hay que recordar

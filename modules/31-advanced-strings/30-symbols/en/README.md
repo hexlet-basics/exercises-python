@@ -1,10 +1,10 @@
 
-Sometimes, you have to get a single character from a string. For example, if a site knows users' first and last names, and at some point you want it to output this information in a format like *J. Smith*. To do this, the computer will need to take the first character from the name. Python has a suitable operation, which is what we'll study today.
+Sometimes, you have to get a single character from a string. For example, if a site knows users' first and last names, and at some point you want it to output this information in a format like _J. Smith_. To do this, the computer will need to take the first character from the name. Python has a suitable operation, which is what we'll study today.
 
 Suppose you want to display only the first letter of the name Alexander. It looks like this:
 
 ```python
-first_name = 'Alexander'
+first_name = "Alexander"
 
 print(first_name[0])  # => A
 ```
@@ -24,7 +24,7 @@ IndexError: string index out of range
 To better consolidate your new knowledge, look at the code below and think about what it produces:
 
 ```python
-magic = '\nyou'
+magic = "\nyou"
 print(magic[1])  # => ?
 ```
 
@@ -33,15 +33,15 @@ There are, of course, non-standard situations. For example, you need to output a
 You're allowed to use negative indices. In this case, we access characters starting from the end of the string. `-1` is the index of the last character, `-2` is the penultimate, and so on. Unlike direct indexing, the countdown is from `-1`:
 
 ```python
-first_name = 'Alexander'
+first_name = "Alexander"
 
 print(first_name[-1])  # => r
 ```
 
-You can use variables as well as numbers as an index. Look at the example below. Here we have an index inside the square brackets, but it's not a number, it's a variable. This code will cause the same result it'll output *A*:
+You can use variables as well as numbers as an index. Look at the example below. Here we have an index inside the square brackets, but it's not a number, it's a variable. This code will cause the same result it'll output _A_:
 
 ```python
-first_name = 'Alexander'
+first_name = "Alexander"
 index = 0
 
 print(first_name[index])  # => A

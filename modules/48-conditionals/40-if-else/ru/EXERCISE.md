@@ -5,9 +5,9 @@
 Примеры вызова:
 
 ```python
-print(normalize_url('https://ya.ru'))  # => 'https://ya.ru'
-print(normalize_url('google.com'))     # => 'https://google.com'
-print(normalize_url('http://ai.fi'))   # => 'https://ai.fi'
+print(normalize_url("https://ya.ru"))  # => 'https://ya.ru'
+print(normalize_url("google.com"))  # => 'https://google.com'
+print(normalize_url("http://ai.fi"))  # => 'https://ai.fi'
 ```
 
 Есть несколько способов решить задачу. Один из них — сравнивать первые 7 символов строки-аргумента со строкой `http://`, а потом на основе этого добавлять или не добавлять к ней `https://`.
@@ -16,12 +16,12 @@ print(normalize_url('http://ai.fi'))   # => 'https://ai.fi'
 
 ```python
 # Берем 2 символа от начала
-print('python'[:2])  # => 'py'
+print("python"[:2])  # => 'py'
 ```
 
 Так вот, с помощью срезов можно также отбросить определенное количество символов:
 
 ```python
 # Отбрасываем первые 2 символа
-print('python'[2:])  # => 'thon'
+print("python"[2:])  # => 'thon'
 ```

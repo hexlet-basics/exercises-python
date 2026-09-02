@@ -15,8 +15,8 @@ Instruction 3: print('!')       →  executed
 Here is an example of code with two instructions. When it runs, two lines appear on the screen one after another:
 
 ```python
-print('Mother of Dragons.') # first instruction
-print('Dracarys!') # second instruction
+print("Mother of Dragons.")  # first instruction
+print("Dracarys!")  # second instruction
 # => Mother of Dragons.
 # => Dracarys!
 ```
@@ -26,8 +26,8 @@ print('Dracarys!') # second instruction
 The interpreter executes code in exactly the order you write it. Swap the lines, and the output changes too:
 
 ```python
-print('Dracarys!')
-print('Mother of Dragons.')
+print("Dracarys!")
+print("Mother of Dragons.")
 # => Dracarys!
 # => Mother of Dragons.
 ```
@@ -38,8 +38,10 @@ Developers need to keep the order of operations in mind and be able to mentally 
 
 Instructions are usually written on separate lines, but Python also allows multiple instructions on one line, separated by a semicolon `;`:
 
-```python
-print('Mother of Dragons.'); print('Dracarys!')
+<!-- NOTE: форма записи и есть предмет урока. text чтобы форматтер не разбил строку -->
+
+```text
+print("Mother of Dragons."); print("Dracarys!")
 ```
 
 There is no technical difference between the two versions — the interpreter handles them the same way. But the second version is harder to read, so in real projects instructions are always written one per line.

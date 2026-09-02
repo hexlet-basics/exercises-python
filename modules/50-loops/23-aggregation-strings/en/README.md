@@ -4,7 +4,7 @@ Like with number aggregation, string aggregation involves not knowing what the s
 Imagine a function that knows how to multiply a string; it repeats it a specified number of times:
 
 ```python
-repeat('hexlet', 3)  # 'hexlethexlethexlet'
+repeat("hexlet", 3)  # 'hexlethexlethexlet'
 ```
 
 The principle of how this function works is that in the loop, the string is “incremented” a specified number of times:
@@ -12,7 +12,7 @@ The principle of how this function works is that in the loop, the string is “i
 ```python
 def repeat(text, times):
     # The neutral element for strings is an empty string
-    result = ''
+    result = ""
     i = 1
 
     while i <= times:
@@ -27,8 +27,8 @@ Let's break down the code's execution into steps:
 
 ```python
 # To call repeat('hexlet', 3)
-result = ''
-result = result + 'hexlet'  # hexlet
-result = result + 'hexlet'  # hexlethexlet
-result = result + 'hexlet'  # hexlethexlethexlet
+result = ""
+result = result + "hexlet"  # hexlet
+result = result + "hexlet"  # hexlethexlet
+result = result + "hexlet"  # hexlethexlethexlet
 ```

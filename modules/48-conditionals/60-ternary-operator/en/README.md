@@ -24,9 +24,9 @@ It was :
 ```python
 def get_type_of_sentence(sentence):
     last_char = sentence[-1]
-    if last_char == '?':
-        return 'question'
-    return 'normal'
+    if last_char == "?":
+        return "question"
+    return "normal"
 ```
 
 Became:
@@ -34,10 +34,11 @@ Became:
 ```python
 def get_type_of_sentence(sentence):
     last_char = sentence[-1]
-    return 'question' if last_char == '?' else 'normal'
+    return "question" if last_char == "?" else "normal"
 
-print(get_type_of_sentence('Hodor'))   # => normal
-print(get_type_of_sentence('Hodor?'))  # => question
+
+print(get_type_of_sentence("Hodor"))  # => normal
+print(get_type_of_sentence("Hodor?"))  # => question
 ```
 
 You can put a ternary operator into a ternary operator. But you shouldn't do it that way because such code is hard to read and debug.

@@ -8,7 +8,7 @@ while i < 10:
     sum += i
     i += 1
 
-print(sum) # => 45
+print(sum)  # => 45
 ```
 
 First, we set the initial sum to 0. Then we run a loop in which the variable `i` starts taking values starting from 0 and going up to 10. At each step we add the value of `i` to our sum and increase `i` by 1. As soon as `i` becomes equal to 10, the loop ends and the program gives us the sum of all numbers from 0 to 9 equal to 45.
@@ -21,7 +21,7 @@ sum = 0
 for i in range(10):
     sum += i
 
-print(sum) # => 45
+print(sum)  # => 45
 ```
 
 The first example uses `while`, which keeps running until `i < 10`. The second uses `for` and iterates from 0 to 9 using `range()`. Both do the same thing: add the numbers from 0 to 9 to the `sum` variable, but they use different ways to iterate.
@@ -32,14 +32,13 @@ The range function in Python is a built-in function that creates a sequence of n
 
 `range()` has several uses:
 
-* `range(stop)` creates a sequence from 0 to `stop - 1`.
-* `range(start, stop)` creates a sequence from start to `stop - 1`.
-* `range(start, stop, step)` creates a sequence of numbers from start to `stop - 1`, with step `step`.
+- `range(stop)` creates a sequence from 0 to `stop - 1`.
+- `range(start, stop)` creates a sequence from start to `stop - 1`.
+- `range(start, stop, step)` creates a sequence of numbers from start to `stop - 1`, with step `step`.
 
 We saw the example with one final value above. Let's consider another one - print the numbers from 1 to 3 to the screen:
 
 ```python
-
 for i in range(1, 4):
     print(i)
 

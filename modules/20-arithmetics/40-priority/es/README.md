@@ -22,7 +22,7 @@ Prioridad de las operaciones (de alta a baja):
 Por ejemplo:
 
 ```python
-print(2 * 2 ** 3)  # => 16, porque primero 2 ** 3 = 8, después 8 * 2 = 16
+print(2 * 2**3)  # => 16, porque primero 2 ** 3 = 8, después 8 * 2 = 16
 ```
 
 Si van seguidas operaciones con la misma prioridad, se realizan de izquierda a derecha:

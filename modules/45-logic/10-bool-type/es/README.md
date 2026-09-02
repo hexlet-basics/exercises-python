@@ -16,20 +16,20 @@ print(True)
 print(False)
 ```
 
-En la práctica rara vez se usan así, pero sobre ellos se construye la lógica del comportamiento del programa. Nos encontramos con eso literalmente todos los días, cuando introducimos códigos PIN y contraseñas, cuando ejecutamos acciones cuyo resultado puede tener distintas variantes. Todas esas variantes están escritas dentro del programa en forma de expresiones condicionales. El programa razona más o menos así: *si es de esta manera haz una cosa, si es de otra manera haz la otra*.
+En la práctica rara vez se usan así, pero sobre ellos se construye la lógica del comportamiento del programa. Nos encontramos con eso literalmente todos los días, cuando introducimos códigos PIN y contraseñas, cuando ejecutamos acciones cuyo resultado puede tener distintas variantes. Todas esas variantes están escritas dentro del programa en forma de expresiones condicionales. El programa razona más o menos así: _si es de esta manera haz una cosa, si es de otra manera haz la otra_.
 
 En Python están disponibles las siguientes operaciones de comparación:
 
-* `<` y `<=` significan "menor" y "menor o igual"
-* `>` y `>=` significan "mayor" y "mayor o igual"
-* `==` y `!=` significan "igual" y "distinto"
+- `<` y `<=` significan "menor" y "menor o igual"
+- `>` y `>=` significan "mayor" y "mayor o igual"
+- `==` y `!=` significan "igual" y "distinto"
 
 Los lenguajes de programación adaptaron todas las operaciones matemáticas de comparación sin cambios, excepto los operadores de igualdad y desigualdad. En matemáticas para eso se usa el igual normal `=`, pero en programación el símbolo `=` se usa, la mayoría de las veces, para asignar valores a las variables. Por eso en Python se compara con `==`. Algunos ejemplos:
 
 ```python
 print(5 >= 3)  # => True
-print(7 < 0)   # => False
-print(5 > 5)   # => False
+print(7 < 0)  # => False
+print(5 > 5)  # => False
 print(5 >= 5)  # => True
 print(2 == 5)  # => False
 print(2 != 5)  # => True
@@ -40,6 +40,7 @@ Cuando en una comparación se usan valores concretos, esa operación parece care
 ```python
 def is_infant(age: int) -> bool:
     return age < 2
+
 
 print(is_infant(3))  # => False
 print(is_infant(2))  # => False
@@ -53,6 +54,7 @@ Cuando las funciones devuelven el resultado de una comparación, normalmente res
 def is_negative(number: int) -> bool:
     # Comprobamos si el número es menor que cero
     return number < 0
+
 
 print(is_negative(-5))  # => True
 print(is_negative(7))  # => False

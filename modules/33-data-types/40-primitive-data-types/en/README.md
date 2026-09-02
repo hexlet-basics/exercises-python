@@ -19,6 +19,6 @@ Here's another example, but with a rational number:
 print(10.234)  # => 10.234
 ```
 
-The data types “string”, “integer” and “rational number” are *primitive types*, i.e., they're built into the Python language itself. Some composite types are also built into the language, but for now, we'll only be working with the primitive ones. Programmers can also create their own data types.
+The data types “string”, “integer” and “rational number” are _primitive types_, i.e., they're built into the Python language itself. Some composite types are also built into the language, but for now, we'll only be working with the primitive ones. Programmers can also create their own data types.
 
 In English, strings in programming are called strings, and lines in text files are called lines. For example, in the code above there is a line, but no strings. In Russian there can sometimes be confusion, so in all the lessons we will say **string** to indicate the data type "string", and **string** to indicate lines in the code (lines) in the files.

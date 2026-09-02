@@ -15,7 +15,7 @@ sum_numbers_from_range(1, 2)  # 1 + 2 = 3
 
 # [1, 1] - a range with the same beginning and end is also a range
 # It includes one number, which is the range boundary itself
-sum_numbers_from_range(1, 1)      # 1
+sum_numbers_from_range(1, 1)  # 1
 sum_numbers_from_range(100, 100)  # 100
 ```
 
@@ -31,8 +31,8 @@ def sum_numbers_from_range(start, finish):
     i = start
     sum = 0  # Initializing the amount
     while i <= finish:  # Moving to the end of the range
-        sum = sum + i   # Calculate the sum for each number
-        i = i + 1       # Move to the next number in the range
+        sum = sum + i  # Calculate the sum for each number
+        i = i + 1  # Move to the next number in the range
     # Return the result
     return sum
 ```

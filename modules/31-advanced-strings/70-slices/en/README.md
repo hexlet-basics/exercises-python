@@ -3,12 +3,12 @@ When we work with strings in programming, we regularly have to extract some part
 
 **Substring** is some part of the string to be found and extracted.
 
-Suppose we have a date in this format: *12-08-2034*. We need to extract from it a substring, which includes only the year.
+Suppose we have a date in this format: _12-08-2034_. We need to extract from it a substring, which includes only the year.
 
 If you think logically, you need to count the index of the character with which the year begins, and then extract the four characters. The indexes in the string start from zero, so the first character of the year is available by index 6, and the last character by index 9. Check:
 
 ```python
-value = '12-08-2034'
+value = "12-08-2034"
 
 print(value[6])  # => 2
 print(value[9])  # => 4
@@ -17,7 +17,7 @@ print(value[9])  # => 4
 Knowing these indices, we can use slices and get the desired substring:
 
 ```python
-value = '12-08-2034'
+value = "12-08-2034"
 
 year = value[6:10]
 print(year)  # => 2034
@@ -40,7 +40,7 @@ value[3:5]  # '12'
 Cuts are a mechanism with many variations. For example, if you do not specify the second boundary, the extraction will happen before the end of the string. It is the same with the first boundary - the beginning of the string:
 
 ```python
-value = 'Hexlet'
+value = "Hexlet"
 value[3:]  # 'let'
 value[:3]  # 'Hex'
 ```
@@ -48,7 +48,7 @@ value[:3]  # 'Hex'
 You can even specify negative indices. In this case the counting goes from the reverse side:
 
 ```python
-value = 'Hexlet'
+value = "Hexlet"
 # The right boundary is negative. Count -1 from the end of the line
 value[3:-1]  # 'le'
 # The left boundary is negative. We count -5 from the end of the line
@@ -60,7 +60,7 @@ Slices have two mandatory parameters, but sometimes a third is used.
 Slices have a third optional parameter - **extraction step**. By default it is one, but we can change it:
 
 ```python
-value = 'Hexlet'
+value = "Hexlet"
 value[1:5:2]  # el
 # 1:5 is 'exle'
 # step 2 is every second, that is, 'e' and 'l'
@@ -69,7 +69,7 @@ value[1:5:2]  # el
 All of these can be combined with open boundaries, that is, without specifying the beginning or end:
 
 ```python
-value = 'Hexlet'
+value = "Hexlet"
 value[:5:2]  # 'Hxe'
 value[1::2]  # 'elt'
 ```
@@ -77,7 +77,7 @@ value[1::2]  # 'elt'
 The step can be negative, in which case it is taken from the end. From this follows the most popular way to use the step - **reverse the string**:
 
 ```python
-value = 'Hexlet'
+value = "Hexlet"
 # Skipping both borders
 value[::-1]  # 'telxeH'
 ```
@@ -85,7 +85,7 @@ value[::-1]  # 'telxeH'
 If a negative step is used, and the slice elements are extracted in reverse order, then the slice boundaries should also be specified in reverse order. The right slice boundary is specified first, and the left one is specified second:
 
 ```python
-value = 'Hexlet'
+value = "Hexlet"
 # The character with index 1 will not be included in the substring
 value[4:1:-1]  # 'elx'
 ```
@@ -93,7 +93,7 @@ value[4:1:-1]  # 'elx'
 The cuts can be specified not only through numbers, but also using variables:
 
 ```python
-value = 'Hexlet'
+value = "Hexlet"
 start = 1
 end = 5
 value[start:end]  # 'exle'

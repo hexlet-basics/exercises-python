@@ -5,7 +5,7 @@ if "hello":
     print("непустая строка — truthy")  # выполнится
 
 if not 0:
-    print("ноль — falsy")              # выполнится
+    print("ноль — falsy")  # выполнится
 ```
 
 ## Falsy и Truthy значения
@@ -21,13 +21,13 @@ if not 0:
 ```python
 # and возвращает первый falsy или последний операнд
 print("hello" and "world")  # => "world"  (оба truthy — последний)
-print("" and "world")       # => ""       (первый falsy)
-print(0 and "world")        # => 0        (первый falsy)
+print("" and "world")  # => ""       (первый falsy)
+print(0 and "world")  # => 0        (первый falsy)
 
 # or возвращает первый truthy или последний операнд
-print("hello" or "world")   # => "hello"  (первый truthy)
-print("" or "world")        # => "world"  (первый truthy)
-print("" or 0)              # => 0        (оба falsy — последний)
+print("hello" or "world")  # => "hello"  (первый truthy)
+print("" or "world")  # => "world"  (первый truthy)
+print("" or 0)  # => 0        (оба falsy — последний)
 ```
 
 Порядок вычисления зависит от приоритета операторов.
@@ -48,7 +48,7 @@ print("" or 0)              # => 0        (оба falsy — последний)
 
 ```python
 result = 10 % 2 == 0 and "yes" or "no"
-print(result)   # => "yes"
+print(result)  # => "yes"
 ```
 
 Разберем это выражение по шагам. Сначала выполняется арифметика `10 % 2 == 0` → `True`. Потом работает `and`: так как слева истина, результатом становится `"yes"`. Так как `"yes"` является truthy, оператор `or` возвращает именно его.
@@ -59,8 +59,9 @@ print(result)   # => "yes"
 def parity(number: int) -> str:
     return number % 2 == 0 and "even" or "odd"
 
+
 print(parity(10))  # => "even"
-print(parity(7))   # => "odd"
+print(parity(7))  # => "odd"
 ```
 
 ## Примеры
@@ -87,8 +88,9 @@ print((-5 > 0 and "positive") or "non-positive")
 def get_text_or_default(text: str, default: str = "empty") -> str:
     return text or default
 
-print(get_text_or_default("hello"))   # => "hello"
-print(get_text_or_default(""))        # => "empty"
+
+print(get_text_or_default("hello"))  # => "hello"
+print(get_text_or_default(""))  # => "empty"
 ```
 
 Здесь выражение `text or default` работает так: если `text` непустой (truthy), функция вернет его. Если `text` пустой (falsy), функция вернет `default`.

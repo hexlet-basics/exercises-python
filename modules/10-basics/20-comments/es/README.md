@@ -23,7 +23,7 @@ Un comentario puede ocupar toda la línea:
 O estar al final de una línea con código:
 
 ```python
-print('I am the King') # For Lannisters!
+print("I am the King")  # For Lannisters!
 ```
 
 Si hace falta dejar una explicación larga, se usan varias líneas con #:
@@ -31,7 +31,7 @@ Si hace falta dejar una explicación larga, se usan varias líneas con #:
 ```python
 # The night is dark and
 # full of terrors.
-print('I am the King')
+print("I am the King")
 ```
 
 El intérprete ignora los comentarios. Los desarrolladores, gracias a ellos, entienden más rápido el código ajeno y no olvidan detalles importantes en el propio.
@@ -46,7 +46,7 @@ Durante el trabajo te encontrarás con este código en nuestro editor:
 # END
 ```
 
-*BEGIN* y *END* aquí son comentarios normales que no influyen de ninguna manera en el funcionamiento del programa. Muestran dónde escribir el código de la tarea.
+_BEGIN_ y _END_ aquí son comentarios normales que no influyen de ninguna manera en el funcionamiento del programa. Muestran dónde escribir el código de la tarea.
 
 ```python
 # BEGIN
@@ -54,4 +54,4 @@ Durante el trabajo te encontrarás con este código en nuestro editor:
 # END
 ```
 
-Cuando veas *BEGIN* y *END*, escribe tu código entre ellos y deja el resto sin cambios.
+Cuando veas _BEGIN_ y _END_, escribe tu código entre ellos y deja el resto sin cambios.

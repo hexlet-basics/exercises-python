@@ -5,7 +5,7 @@
 Пройдите расход с помощью цикла и постепенно накопите итоговую сумму.
 
 ```python
-calculate_electricity_bill(80)   # 400
+calculate_electricity_bill(80)  # 400
 calculate_electricity_bill(150)  # 850
 calculate_electricity_bill(250)  # 1700
 ```

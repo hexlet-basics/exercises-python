@@ -4,7 +4,8 @@
 def repeat(text, times=1):
     return text * times
 
-repeat("Hi", 3)             # позиционный вызов
+
+repeat("Hi", 3)  # позиционный вызов
 repeat(text="Hi", times=3)  # именованный вызов
 ```
 
@@ -43,7 +44,8 @@ repeat("Hi", times=3)  # позиционные + именованные => HiHi
 def make_line(symbol="-", length=10):
     return symbol * length
 
-make_line()          # все параметры по умолчанию
+
+make_line()  # все параметры по умолчанию
 
 make_line(length=5)  # меняем только длину
 # Без этого пришлось бы писать так

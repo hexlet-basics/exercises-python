@@ -13,7 +13,8 @@ def print_name_by_symbol(name):
         print(name[i])
         i += 1
 
-name = 'Arya'
+
+name = "Arya"
 print_name_by_symbol(name)
 # => 'A'
 # => 'r'

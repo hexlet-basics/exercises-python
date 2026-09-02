@@ -5,7 +5,7 @@
 В Python строки объединяются с помощью оператора +. Несмотря на то, что этот оператор используется и для сложения чисел, в случае строк он означает объединение, то есть склеивание содержимого.
 
 ```python
-print('Dragon' + 'stone')
+print("Dragon" + "stone")
 # => Dragonstone
 ```
 
@@ -14,7 +14,7 @@ print('Dragon' + 'stone')
 Вот как работает объединение нескольких строк. Код:
 
 ```python
-print('Hello' + ', ' + 'World!')
+print("Hello" + ", " + "World!")
 ```
 
 Выполнение:
@@ -30,11 +30,13 @@ print('Hello' + ', ' + 'World!')
 
 Примеры.
 
-```python
-print('Kings' + 'wood')       # => Kingswood
-print('Kings' + 'road')       # => Kingsroad
+<!-- NOTE: разные кавычки в одном выражении и есть предмет урока. text чтобы форматтер не свёл их к одной форме -->
+
+```text
+print("Kings" + "wood")  # => Kingswood
+print("Kings" + "road")  # => Kingsroad
 # Здесь снаружи двойные кавычки, потому что внутри есть одиночная
-print("King's" + 'Landing')   # => King'sLanding
+print("King's" + 'Landing')  # => King'sLanding
 ```
 
 Python позволяет объединять строки, даже если они записаны в разных кавычках. Главное, чтобы обе части были строками.
@@ -45,10 +47,10 @@ Python позволяет объединять строки, даже если �
 
 ```python
 # Пробел в конце первой строки
-print("King's " + 'Landing')  # => King's Landing
+print("King's " + "Landing")  # => King's Landing
 
 # Пробел в начале второй строки
-print("King's" + ' Landing')  # => King's Landing
+print("King's" + " Landing")  # => King's Landing
 ```
 
 Результат будет одинаковый. Но если пробел не добавить, то слова склеятся.
@@ -58,12 +60,12 @@ print("King's" + ' Landing')  # => King's Landing
 В строках можно использовать управляющие последовательности, например `\n` для переноса строки или `\t` для табуляции. При конкатенации они работают так же, как и любые другие символы.
 
 ```python
-print('Hello,' + '\n' + 'World!')
+print("Hello," + "\n" + "World!")
 # =>
 # Hello,
 # World!
 
-print('A' + '\t' + 'B')
+print("A" + "\t" + "B")
 # => A	B
 ```
 

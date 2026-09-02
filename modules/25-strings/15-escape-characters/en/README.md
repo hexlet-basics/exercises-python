@@ -35,8 +35,8 @@ The device that outputs the corresponding text takes this character into account
 
 There are several dozen such invisible characters, but in programming there are usually only a few. In addition to the line feed, there can also be:
 
-* tab `\t` — the gap that you get when you press Tab
-* carriage return `\r` — only works in Windows
+- tab `\t` — the gap that you get when you press Tab
+- carriage return `\r` — only works in Windows
 
 You can recognize these control constructions in the text by the `\`. symbol. Programmers often use the line feed `\n` to properly format text. For example, if we write this code:
 
@@ -60,18 +60,18 @@ When working with the line feed symbol, consider the following points:
 2. A string can contain only `\n` and nothing else:
 
    ```python
-print('Gregor Clegane') # String with text
-print("\n") # String with an invisible line feed character
-print('Dunsen') # String with text
+   print("Gregor Clegane")  # String with text
+   print("\n")  # String with an invisible line feed character
+   print("Dunsen")  # String with text
    ```
 
    The program will display this on the screen:
 
    ```text
-Gregor Ctextlegane
+   Gregor Clegane
 
 
-Dunsen
+   Dunsen
    ```
 
 3. In the code, the escape sequence `\n` looks like two characters, but from the interpreter's perspective, it's just one special character

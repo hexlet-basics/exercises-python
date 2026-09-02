@@ -5,7 +5,7 @@ En Python hay incorporadas varias formas de trabajar con datos compuestos; la m�
 Imagina que queremos trabajar en el código con el concepto de estudiante, que tiene nombre, edad y nota media. Se puede intentar describir al estudiante con tres variables:
 
 ```python
-student_name = 'Alice'
+student_name = "Alice"
 student_age = 20
 student_score = 4.8
 ```
@@ -15,17 +15,22 @@ student_score = 4.8
 Una tupla se escribe entre paréntesis, separando los valores con comas:
 
 ```python
-student = ('Alice', 20, 4.8)       # nombre, edad, nota media
+student = ("Alice", 20, 4.8)  # nombre, edad, nota media
 
 point = (10, 20)
-film = ('Inception', 2010)    # título, año
-user = ('Andrey Petrov', 'email@example.com', 'hexletcommunity', 100)    # nombre, email, telegram, edad
+film = ("Inception", 2010)  # título, año
+user = (
+    "Andrey Petrov",
+    "email@example.com",
+    "hexletcommunity",
+    100,
+)  # nombre, email, telegram, edad
 ```
 
 Los paréntesis se pueden omitir. Python determina la tupla por las comas.
 
 ```python
-student = 'Alice', 20, 4.8       # nombre, edad, nota media
+student = "Alice", 20, 4.8  # nombre, edad, nota media
 
 point = 10, 20
 ```
@@ -35,7 +40,7 @@ point = 10, 20
 Los elementos de una tupla se numeran desde cero. Se accede a ellos por índice, como en las cadenas.
 
 ```python
-student = ('Alice', 20, 4.8)
+student = ("Alice", 20, 4.8)
 print(student[0])  # => Alice
 print(student[1])  # => 20
 print(student[2])  # => 4.8
@@ -46,8 +51,8 @@ print(student[2])  # => 4.8
 Una vez creada, una tupla no se puede modificar. El intento de reemplazar un elemento provoca un error.
 
 ```python
-student = ('Alice', 20, 4.8)
-student[0] = 'Bob'  # TypeError: 'tuple' object does not support item assignment
+student = ("Alice", 20, 4.8)
+student[0] = "Bob"  # TypeError: 'tuple' object does not support item assignment
 ```
 
 Está hecho a propósito. La tupla se emplea donde un cambio accidental de los datos no es deseable: la configuración de conexión a una base de datos, el registro de un usuario, un catálogo con los días de la semana.
@@ -55,7 +60,7 @@ Está hecho a propósito. La tupla se emplea donde un cambio accidental de los d
 Si los datos hay que actualizarlos, se crea una tupla nueva y se reasigna la variable.
 
 ```python
-student = ('Alice', 20, 4.8)
+student = ("Alice", 20, 4.8)
 # usando los datos de la tupla anterior
 student = (student[0], student[1] + 1, 4.9)  # pasó un año, la nota subió
 
@@ -69,12 +74,12 @@ La tupla antigua queda intacta (pero ya no se puede acceder a ella). La variable
 Los elementos de una tupla se pueden asignar a varias variables a la vez.
 
 ```python
-student = ('Alice', 20, 4.8)
+student = ("Alice", 20, 4.8)
 name, age, gpa = student
 
 print(name)  # => Alice
-print(age)   # => 20
-print(gpa)   # => 4.8
+print(age)  # => 20
+print(gpa)  # => 4.8
 ```
 
 Python empareja los valores con las variables por orden. La cantidad de variables debe coincidir con la cantidad de elementos.

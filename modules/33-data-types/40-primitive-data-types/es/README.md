@@ -16,7 +16,7 @@ Un tipo de dato determina:
 Por ejemplo, los números se pueden sumar, dividir y multiplicar. Las cadenas, en cambio, se suman de otra manera: mediante la concatenación. Multiplicar una cadena por otra cadena no tiene sentido y no está permitido:
 
 ```python
-# No se puede: 'mamá' * 'cuaderno'  
+# No se puede: 'mamá' * 'cuaderno'
 ```
 
 ## Los números y las cadenas son de tipos distintos
@@ -31,16 +31,16 @@ print(-5)  # => -5
 Un ejemplo de salida de una cadena:
 
 ```python
-print('5')  # => 5
-print('-5')  # => -5
+print("5")  # => 5
+print("-5")  # => -5
 ```
 
 En la pantalla el resultado se ve igual, pero dentro del programa son cosas completamente distintas:
 
-| Valor    | Tipo de dato          |
-|----------|-----------------------|
-| `5`      | `int` (número entero) |
-| `'5'`    | `str` (cadena)        |
+| Valor | Tipo de dato          |
+| ----- | --------------------- |
+| `5`   | `int` (número entero) |
+| `'5'` | `str` (cadena)        |
 
 La cadena '5' no se puede sumar con el número 5, igual que '10' / 2 no dará el número 5.0. Python protestará si intentas mezclar tipos incompatibles sin una conversión explícita.
 
@@ -61,8 +61,8 @@ print(-0.4)  # => -0.4
 En ellos se pueden escribir valores fraccionarios y usarlos en cálculos:
 
 ```python
-print(3.5 + 1.2)   # => 4.7
-print(5.0 / 2.0)   # => 2.5
+print(3.5 + 1.2)  # => 4.7
+print(5.0 / 2.0)  # => 2.5
 print(2.75 - 0.5)  # => 2.25
 ```
 

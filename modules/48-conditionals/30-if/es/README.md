@@ -41,12 +41,13 @@ Veamos una función que determina el tipo de la oración recibida. Si termina en
 ```python
 def get_type_of_sentence(sentence: str) -> str:
     last_char = sentence[-1]
-    if last_char == '?':
-        return 'question'
-    return 'normal'
+    if last_char == "?":
+        return "question"
+    return "normal"
 
-print(get_type_of_sentence('Hodor'))   # => normal
-print(get_type_of_sentence('Hodor?'))  # => question
+
+print(get_type_of_sentence("Hodor"))  # => normal
+print(get_type_of_sentence("Hodor?"))  # => question
 ```
 
 Aquí se usan a la vez dos `return`. Si la condición dentro del `if` se cumple, actúa `return 'question'` y la función termina. Si la condición no se cumple, el control pasa a la línea siguiente con `return 'normal'`.
@@ -61,8 +62,9 @@ def has_enough_money(balance: int, price: int) -> bool:
         return True
     return False
 
-print(has_enough_money(100, 50))   # => True
-print(has_enough_money(30, 50))    # => False
+
+print(has_enough_money(100, 50))  # => True
+print(has_enough_money(30, 50))  # => False
 ```
 
 ## if y las expresiones lógicas

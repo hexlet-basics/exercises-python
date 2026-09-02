@@ -4,32 +4,35 @@ In this lesson, we'll learn what a string is and what role quotation marks play 
 The definition of a string is quite simple; it's a set of characters. Let us imagine that we have these entries:
 
 ```python
-'Hello'
-'Goodbye'
-'G'
-' '
-''
+"Hello"
+
+"Goodbye"
+"G"
+" "
+""
 ```
 
 Which of these are strings? In fact, all five of them are:
 
-* With `'Hello'` and `'Goodbye'` everything is obvious, we've already worked with similar constructions and called them strings
-* `'G'` and `' '` — are also strings, but they only have one character each
-* `''` — is an empty string, so it has zero characters
+- With `"Hello"` and `"Goodbye"` everything is obvious, we've already worked with similar constructions and called them strings
+- `"G"` and `" "` — are also strings, but they only have one character each
+- `""` — is an empty string, so it has zero characters
 
 We consider anything inside quotation marks a string; even if it's just a space, a single character, or no characters at all.
 
-Above we wrote the strings in single quotes, but this is not the only way. You can also use double quotes:
+Above we wrote the strings in double quotes, but this is not the only way. You can also use single quotes:
 
-```python
-print("Dracarys!")
+<!-- NOTE: две формы записи кавычек и есть предмет урока. text чтобы форматтер не свёл их к одной форме -->
+
+```text
+print('Dracarys!')
 ```
 
 Now imagine you want to type the string _Dragon's mother_. The apostrophe before the letter **s** — is the same symbol as the single quote. Let's print it:
 
 ```python
 print('Dragon's mother')
-# SyntaxError: invalid syntax
+# SyntaxError: unterminated string literal (detected at line 1)
 ```
 
 This program won't work. From Python's point of view, the line started with a single quote and then ended after the word **dragon**. Next were the characters `s mother` without quotation marks, so it's not a string. And then there was a one line-opening quotation mark that was never closed: ``)`. This code contains a syntax error – you can even tell by the way the code is highlighted.
@@ -46,7 +49,7 @@ It works the other way too. If you want to use double quotes inside a string, yo
 
 Now imagine we want to create this string:
 
-```python
+```text
 Dragon's mother said "No"
 ```
 
@@ -54,7 +57,9 @@ It has both single and double quotes. We need to somehow tell the interpreter th
 
 The **escape character** is used for this: `\` — a backslash. If we put `\` in front of a quotation mark (single or double), the interpreter will recognize the quotation mark as an ordinary character inside the string, not the beginning or the end of the string:
 
-```python
+<!-- NOTE: экранирование двойной кавычки и есть предмет урока. text чтобы форматтер не переписал его в экранирование апострофа -->
+
+```text
 # We escape the quotation marks around No so that the interpreter
 # can recognize them as part of the string
 print("Dragon's mother said \"No\"")

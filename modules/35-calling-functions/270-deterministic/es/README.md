@@ -3,11 +3,11 @@ Las funciones, en cualquier lenguaje de programación, tienen propiedades fundam
 Una **función determinista** devuelve siempre el mismo resultado con los mismos datos de entrada. Por ejemplo, determinista se puede llamar a la función que cuenta la cantidad de caracteres:
 
 ```python
-len('hexlet')  # 6
-len('hexlet')  # 6
+len("hexlet")  # 6
+len("hexlet")  # 6
 
-len('wow')  # 3
-len('wow')  # 3
+len("wow")  # 3
+len("wow")  # 3
 ```
 
 A la función `len()` se la puede llamar infinitamente con el mismo argumento, y siempre devolverá el mismo resultado.

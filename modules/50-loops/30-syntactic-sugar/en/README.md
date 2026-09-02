@@ -12,8 +12,8 @@ sum = 0
 index = 1
 
 while index <= 5:
-    sum += index      # Same as sum = sum + index
-    index += 1        # Same as index = index + 1
+    sum += index  # Same as sum = sum + index
+    index += 1  # Same as index = index + 1
 
 print(sum)  # => 15
 ```
@@ -28,7 +28,7 @@ while index <= 5:
 
 There are abbreviated forms for all arithmetic operations and for string concatenation:
 
-* `a = a + 1` → `a += 1`
-* `a = a - 1` → `a -= 1`
-* `a = a * 2` → `a *= 2`
-* `a = a / 1` → `a /= 1`
+- `a = a + 1` → `a += 1`
+- `a = a - 1` → `a -= 1`
+- `a = a * 2` → `a *= 2`
+- `a = a / 1` → `a /= 1`

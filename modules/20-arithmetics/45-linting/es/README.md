@@ -12,8 +12,7 @@ Ese estándar lo conocen y lo usan todos los desarrolladores de Python. A los pr
 
 No hace falta memorizar todas las reglas a mano. Existen programas especiales que lo hacen por ti. Se llaman linters.
 
-Un linter es una herramienta que analiza tu código e informa de las violaciones de los estándares.
-Ayuda a:
+Un linter es una herramienta que analiza tu código e informa de las violaciones de los estándares. Ayuda a:
 
 - Deshacerse de los espacios de más
 - Respetar las sangrías

@@ -11,8 +11,7 @@ number = int("345")
 print(number + 5)  # => 350
 ```
 
-La función `int()` recibe una cadena y la convierte en un número entero.
-Esa función se llama función de conversión de tipo (casting function).
+La función `int()` recibe una cadena y la convierte en un número entero. Esa función se llama función de conversión de tipo (casting function).
 
 ```python
 value = "0"

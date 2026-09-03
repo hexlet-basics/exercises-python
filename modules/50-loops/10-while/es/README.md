@@ -33,11 +33,9 @@ Sin modificar el contador, la condición nunca se volverá falsa y el bucle se c
 
 Antes de la primera repetición, `counter` es igual a `0`.
 
-**Paso 1.** El intérprete comprueba `counter < 5`. El valor `0` es menor que `5`, por eso se ejecuta el cuerpo del bucle.
-En la pantalla se muestra `Hello!` y `counter` aumenta hasta `1`.
+**Paso 1.** El intérprete comprueba `counter < 5`. El valor `0` es menor que `5`, por eso se ejecuta el cuerpo del bucle. En la pantalla se muestra `Hello!` y `counter` aumenta hasta `1`.
 
-**Paso 2.** El intérprete comprueba de nuevo la condición. El valor `1` sigue siendo menor que `5`, por eso el cuerpo del bucle se ejecuta una vez más.
-En la pantalla se muestra otra vez `Hello!` y `counter` aumenta hasta `2`.
+**Paso 2.** El intérprete comprueba de nuevo la condición. El valor `1` sigue siendo menor que `5`, por eso el cuerpo del bucle se ejecuta una vez más. En la pantalla se muestra otra vez `Hello!` y `counter` aumenta hasta `2`.
 
 Así continúa hasta que `counter` sea igual a `5`. En la comprobación siguiente, la condición `counter < 5` será falsa, por eso el bucle terminará. Después el programa ejecutará el código que está tras el bucle.
 

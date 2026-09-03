@@ -100,8 +100,7 @@ print("Dragon's mother said \"No\"")
 
 Aquí escapamos las comillas dobles dentro de la cadena encerrada en comillas dobles.
 
-Fíjate: Python percibe `\"` como un solo carácter de comilla, no como dos caracteres.
-Lo mismo ocurre con `\'`, `\\`, `\n` y otras secuencias de control. Se ven como dos caracteres en el código, pero en la cadena cuentan como uno.
+Fíjate: Python percibe `\"` como un solo carácter de comilla, no como dos caracteres. Lo mismo ocurre con `\'`, `\\`, `\n` y otras secuencias de control. Se ven como dos caracteres en el código, pero en la cadena cuentan como uno.
 
 Lo mismo funciona en el caso contrario.
 

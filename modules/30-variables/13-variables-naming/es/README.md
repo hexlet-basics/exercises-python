@@ -25,8 +25,7 @@ unpaid_orders_count = 3
 max_attempts = 5
 ```
 
-Un buen nombre de variable ayuda a entender qué hace el programa sin leer con detalle cada línea.
-Es especialmente importante dar nombres cuyo sentido se entienda sin contexto, sin necesidad de leer todo el código de alrededor.
+Un buen nombre de variable ayuda a entender qué hace el programa sin leer con detalle cada línea. Es especialmente importante dar nombres cuyo sentido se entienda sin contexto, sin necesidad de leer todo el código de alrededor.
 
 Aquí tienes algunos consejos:
 

@@ -6,8 +6,10 @@ Today you don't need to remember all the rules from the standard because there a
 
 Take a look at an example:
 
-```python
-result = 1 + 3
+<!-- lint-code-blocks: skip — неаккуратный код это предмет урока, форматтер привёл бы его к стилю -->
+
+```text
+result = 1+ 3
 ```
 
 Linter will swear for breaking the rule: _E225 missing whitespace around operator_. By standard, the `+` operator must always be separated by spaces from the operands.

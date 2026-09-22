@@ -26,7 +26,7 @@ print(sum)  # => 45
 
 The first example uses `while`, which keeps running until `i < 10`. The second uses `for` and iterates from 0 to 9 using `range()`. Both do the same thing: add the numbers from 0 to 9 to the `sum` variable, but they use different ways to iterate.
 
-## The `range()` function
+## The range() function
 
 The range function in Python is a built-in function that creates a sequence of numbers within a specific range. It can be used in a for loop to control the number of iterations.
 

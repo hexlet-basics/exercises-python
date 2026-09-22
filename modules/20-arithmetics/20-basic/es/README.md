@@ -90,7 +90,7 @@ La razón de separar esto en un tipo aparte: el ordenador necesita guardar los v
 
 En el nivel básico basta con recordar: los números enteros hacen falta cuando no hay fracciones, y los de punto flotante cuando sí las hay. Más adelante en el curso los veremos en detalle.
 
-## Qué es el resto de la división (`%`)
+## Qué es el resto de la división (%)
 
 Esta operación se llama **tomar el resto de la división**. Muestra **qué "queda"** cuando un número se divide por otro _no del todo_. Un ejemplo:
 

@@ -60,7 +60,7 @@ print(is_good_apartment(80, "Main Street"))  # => True
 
 The area of mathematics in which logical operators are studied is called Boolean algebra. Below you will see **true tables** - you can use them to determine what the result will be if you apply the operator:
 
-#### `and`
+#### and
 
 | A     | B     | A and B  |
 | ----- | ----- | -------- |
@@ -69,7 +69,7 @@ The area of mathematics in which logical operators are studied is called Boolean
 | False | True  | False    |
 | False | False | False    |
 
-#### `or`
+#### or
 
 | A     | B     | A or B   |
 | ----- | ----- | -------- |

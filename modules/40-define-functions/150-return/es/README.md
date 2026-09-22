@@ -62,7 +62,7 @@ Primero quitamos los espacios con el método `strip()`, después pasamos a mayú
 print(format_name("  hexlet  "))  # => HEXLET
 ```
 
-### Código después de `return`
+### Código después de return
 
 Cuando Python llega al operador `return`, la ejecución de la función se detiene. Todo lo que esté escrito después de él dentro de la función **no se ejecutará**:
 

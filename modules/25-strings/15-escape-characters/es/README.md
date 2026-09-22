@@ -25,7 +25,7 @@ El resultado será este.
 - Aaaarrrgh!
 ```
 
-## ¿Qué es `\n`?
+## ¿Qué es \n?
 
 `\n` es una secuencia de control (en inglés escape sequence, a veces se dice «secuencia escapada»). Denota un salto de línea, pero no se muestra directamente. No verás `\n` en la salida del programa, ya que solo influye en la disposición del texto.
 
@@ -39,7 +39,7 @@ En los editores de texto, al pulsar Enter se añade el carácter invisible LF (L
 
 Las impresoras, los editores y los intérpretes de Python entienden `\n` como la orden de empezar el texto en una línea nueva.
 
-## Ejemplos de uso de `\n`
+## Ejemplos de uso de \n
 
 Así procesa Python la secuencia de control `\n`.
 
@@ -89,7 +89,7 @@ First line
 Second line
 ```
 
-## Cómo mostrar el propio carácter `\n`
+## Cómo mostrar el propio carácter \n
 
 `\n` en Python es una secuencia de control. Controla la disposición del texto y no se muestra en la pantalla como los caracteres normales. Si necesitas mostrar precisamente los caracteres `\` y `n`, y no un salto de línea, hay que escaparlos. Para eso, antes de la barra invertida se añade otra barra.
 

@@ -68,7 +68,7 @@ print(is_good_apartment(80, "Main Street"))  # => True
 
 El área de las matemáticas en la que se estudian los operadores lógicos se llama álgebra booleana. Las **tablas de verdad** muestran cuál será el resultado al aplicar cada operador.
 
-#### Y `and`
+#### Y and
 
 | A     | B     | A and B  |
 | ----- | ----- | -------- |
@@ -77,7 +77,7 @@ El área de las matemáticas en la que se estudian los operadores lógicos se ll
 | False | True  | False    |
 | False | False | False    |
 
-#### O `or`
+#### O or
 
 | A     | B     | A or B   |
 | ----- | ----- | -------- |

@@ -62,7 +62,7 @@ First we remove the spaces with the `strip()` method, then convert to uppercase 
 print(format_name("  hexlet  "))  # => HEXLET
 ```
 
-### Code after `return`
+### Code after return
 
 When Python reaches the `return` statement, the function stops executing. Everything written after it inside the function **will not be executed**:
 

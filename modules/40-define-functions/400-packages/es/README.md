@@ -96,7 +96,7 @@ import user.config
 
 Sin los paquetes, esos nombres entrarían en conflicto entre sí.
 
-## El archivo __init__.py
+## El archivo \_\_init\_\_.py
 
 Antes, para crear un paquete, dentro del directorio se colocaba obligatoriamente el archivo `__init__.py`:
 

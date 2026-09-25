@@ -22,8 +22,12 @@ theory: |
   En el ejemplo anterior, se aplica una operación unaria al número `3`. El operador menos antes del tres le indica al intérprete que tome el número `3` y encuentre su opuesto, es decir, `-3`. Esto puede resultar confuso, ya que `-3` es tanto un número en sí mismo como un operador con un operando. Sin embargo, esta es la estructura que tienen los lenguajes de programación.
 
 instructions: |
+  Una carga se encuentra bajo el agua en la marca de −81 m respecto al nivel del agua. Una grúa la eleva hasta la cubierta de un barco, que está en la marca de +6 m. La carga se mueve verticalmente a una velocidad de 3 m/min.
 
-  Escribe un programa que calcule la diferencia entre los números `6` y `-81` y muestre la respuesta en pantalla.
+  Calcula y muestra en pantalla dos valores, cada uno en una línea aparte.
+
+  1. La distancia que recorre la carga desde la marca inicial hasta la cubierta, en metros.
+  2. El tiempo de elevación en minutos.
 
 tips:
   - Siempre deja espacios entre los operadores aritméticos y sus operandos, esto es una buena práctica de programación.

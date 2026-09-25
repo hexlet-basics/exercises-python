@@ -1,2 +1,5 @@
+Create a variable that describes the maximum number of login attempts and assign it the value `2`. Print its value.
 
-Create a variable that describes the number of your brothers and assign it the value _2_. Print its contents. Then compare your name with the name used in the teacher's solution.
+## Extra
+
+Once the exercise is passed, compare your variable name with the name used in the teacher's solution.

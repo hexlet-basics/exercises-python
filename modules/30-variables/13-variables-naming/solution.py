@@ -1,3 +1,3 @@
-my_brothers_count = 2
+max_login_attempts = 2
 
-print(my_brothers_count)
+print(max_login_attempts)

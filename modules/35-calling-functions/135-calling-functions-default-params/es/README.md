@@ -11,10 +11,10 @@ Le pasamos dos valores:
 - El número que hay que redondear.
 - La precisión del redondeo; `0` significa que el redondeo será hasta el número entero.
 
-Como lo que se necesita con más frecuencia es precisamente el redondeo al entero, los creadores de la función `round()` hicieron el segundo parámetro opcional y le pusieron el valor por defecto `0`. Por eso el resultado será el mismo incluso si no se indica el segundo parámetro:
+Como lo que se necesita con más frecuencia es precisamente el redondeo al entero, los creadores de la función `round()` hicieron el segundo parámetro opcional: si no se indica (el valor por defecto es `None`), el redondeo también se hace hasta el entero. Solo cambia la forma del resultado: con `0` es `10.0` y sin el segundo argumento es `10`:
 
 ```python
-result = round(10.25)  # 10.0
+result = round(10.25)  # 10
 ```
 
 Si hace falta otra precisión, se puede indicar explícitamente:
@@ -25,9 +25,9 @@ result = round(10.25, 1)  # 10.2
 ```
 
 ```text
-round(10.25, 1)  →  argumentos: 10.25, 1   →  10.3
-round(10.25)     →  argumentos: 10.25, (0)  →  10
-                                       └── valor por defecto
+round(10.25, 1)  →  argumentos: 10.25, 1       →  10.2
+round(10.25)     →  argumentos: 10.25, (None)  →  10
+                                        └── valor por defecto
 ```
 
 La cantidad de parámetros opcionales depende de la función concreta, pero los obligatorios van siempre antes de los opcionales.

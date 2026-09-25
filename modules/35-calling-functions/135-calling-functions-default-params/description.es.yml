@@ -14,10 +14,10 @@ theory: |
   * El número que queremos redondear
   * La precisión de redondeo
 
-  El valor `0` significa que se redondeará al número entero más cercano. En la mayoría de los casos, queremos redondear al número entero y no a los decimales. Por eso, los creadores de la función `round` hicieron el segundo parámetro **opcional** y le dieron un **valor por defecto de `0`**. Esto significa que podemos no especificar el segundo parámetro y el resultado será el mismo:
+  El valor `0` significa que se redondeará al número entero más cercano. En la mayoría de los casos, queremos redondear al número entero y no a los decimales. Por eso, los creadores de la función `round` hicieron el segundo parámetro **opcional**: si no se indica (el valor por defecto es `None`), el redondeo también se hace hasta el entero. Solo cambia la forma del resultado: con `0` es `10.0` y sin el segundo argumento es `10`:
 
   ```python
-  result = round(10.25)  # 10.0
+  result = round(10.25)  # 10
   ```
 
   Y si queremos una precisión diferente, podemos pasar el parámetro:

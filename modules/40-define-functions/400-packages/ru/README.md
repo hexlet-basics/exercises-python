@@ -110,3 +110,25 @@ payments/
 Этот файл сообщал Python, что директорию нужно воспринимать как пакет.
 
 В современных версиях Python пакеты могут работать и без `__init__.py`. Тем не менее этот файл до сих пор часто используется. Обычно в нем размещают общий код и настройки пакета.
+
+## Имена пакета в \_\_init\_\_.py
+
+Через `__init__.py` пакет собирает функции своих модулей в одном месте. Код снаружи обращается к ним через имя пакета и знать, в каком модуле лежит каждая функция, ему не нужно. Внутри `__init__.py` модули пакета импортируются по полному пути от имени пакета, так же как из любого другого файла проекта. Короткая запись `import stripe` здесь не сработает, и Python ответит ошибкой `ModuleNotFoundError: No module named 'stripe'`.
+
+Пусть функция `create_payment()` в модуле `stripe` возвращает строку `"stripe payment"`, а функция с тем же именем в модуле `paypal` возвращает `"paypal payment"`. Если импортировать обе под именем `create_payment`, второй импорт перекроет первый. Поэтому в `__init__.py` каждой функции дают свое имя с помощью `as`.
+
+```python
+# payments/__init__.py
+from payments.paypal import create_payment as create_paypal_payment
+from payments.stripe import create_payment as create_stripe_payment
+```
+
+В этом коде `as` задает имя, под которым импортированная функция доступна в модуле. Функция `create_payment()` из `payments.stripe` становится `create_stripe_payment()`, а функция из `payments.paypal` становится `create_paypal_payment()`. Теперь файлу _main.py_ достаточно импортировать сам пакет.
+
+```python
+# main.py
+import payments
+
+print(payments.create_stripe_payment())  # => stripe payment
+print(payments.create_paypal_payment())  # => paypal payment
+```

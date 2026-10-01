@@ -16,3 +16,5 @@ calculate_delivery_cost("canada", 2)  # 900
 calculate_delivery_cost("usa", 1)  # 800
 calculate_delivery_cost("france", 1)  # None
 ```
+
+Конструкция `match` выбирает ветку по стране, а вес посылки внутри ветки `case` проверяет обычное условие `if`.

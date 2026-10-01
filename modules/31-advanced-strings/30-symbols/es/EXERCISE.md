@@ -1,1 +1,1 @@
-En los nombres de los participantes del quiz se esconde una palabra secreta. Extrae los caracteres necesarios de la variable `text` por sus índices, únelos y muestra en pantalla la palabra `grip`.
+En la cadena de la variable `text` se esconde la palabra `grip`: todas sus letras están en esa cadena. Encuentra sus índices, extrae los caracteres, únelos y muestra en pantalla la palabra resultante.

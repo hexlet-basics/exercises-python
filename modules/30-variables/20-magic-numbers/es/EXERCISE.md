@@ -17,4 +17,4 @@ Boxes in stock:
 
 Los nombres de las variables deben transmitir el significado de los números, pero al mismo tiempo deben ser cortos y concisos.
 
-Recuerda: el código funcionará con cualquier nombre, y el sistema solo verifica el resultado en pantalla, por lo que completar bien esta tarea es tu responsabilidad.
+Las pruebas comprueban el cálculo con distintos valores de las variables creadas. Tú eliges los nombres. Después de resolver el ejercicio, revisa si explican qué representan los números.

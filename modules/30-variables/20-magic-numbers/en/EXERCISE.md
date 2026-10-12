@@ -17,4 +17,4 @@ Boxes in stock:
 
 Variable names should convey the meaning of the numbers while staying short and concise.
 
-Remember: the code will work with any names, and the system only checks the result on the screen — completing the task properly is your responsibility.
+The tests check the calculation with different values of the created variables. You choose the names. After completing the exercise, check whether those names explain what the numbers represent.

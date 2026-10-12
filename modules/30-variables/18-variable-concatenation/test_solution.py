@@ -1,20 +1,76 @@
-import importlib
+import ast
+from pathlib import Path
+
+import pytest
 
 
-def test(capsys):
-    expected = """Hello, Anna!
-Thank you for your order.
-Estimated delivery date — 3 business days."""
-    expect_output(capsys, expected)
-
-
-def expect_output(capsys, expected):
-    importlib.import_module('solution')
+@pytest.mark.parametrize(
+    "inputs,expected",
+    [
+        (
+            {
+                "first_name": "Anna",
+                "greeting": "Hello",
+                "intro": "Thank you for your order.",
+                "info": "Estimated delivery date — 3 business days.",
+            },
+            "Hello, Anna!\nThank you for your order.\nEstimated delivery date — 3 business days.",
+        ),
+        (
+            {
+                "first_name": "Luis",
+                "greeting": "Hello",
+                "intro": "Thank you for your order.",
+                "info": "Estimated delivery date — 3 business days.",
+            },
+            "Hello, Luis!\nThank you for your order.\nEstimated delivery date — 3 business days.",
+        ),
+        (
+            {
+                "first_name": "Anna",
+                "greeting": "Hi",
+                "intro": "Thank you for your order.",
+                "info": "Estimated delivery date — 3 business days.",
+            },
+            "Hi, Anna!\nThank you for your order.\nEstimated delivery date — 3 business days.",
+        ),
+        (
+            {
+                "first_name": "Anna",
+                "greeting": "Hello",
+                "intro": "Order confirmed.",
+                "info": "Estimated delivery date — 3 business days.",
+            },
+            "Hello, Anna!\nOrder confirmed.\nEstimated delivery date — 3 business days.",
+        ),
+        (
+            {
+                "first_name": "Anna",
+                "greeting": "Hello",
+                "intro": "Thank you for your order.",
+                "info": "Delivery tomorrow.",
+            },
+            "Hello, Anna!\nThank you for your order.\nDelivery tomorrow.",
+        ),
+    ],
+)
+def test(capsys, inputs, expected):
+    path = Path(__file__).with_name("solution.py")
+    tree = ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
+    remaining = set(inputs)
+    for statement in tree.body:
+        if isinstance(statement, ast.Assign) and len(statement.targets) == 1:
+            target = statement.targets[0]
+            if isinstance(target, ast.Name) and target.id in remaining:
+                statement.value = ast.copy_location(
+                    ast.Constant(value=inputs[target.id]),
+                    statement.value,
+                )
+                remaining.remove(target.id)
+        if not remaining:
+            break
+    assert not remaining, "Keep the input variables from the scaffold"
+    namespace = {"__name__": "solution", "__file__": str(path)}
+    exec(compile(tree, str(path), "exec"), namespace)
     out, _err = capsys.readouterr()
-    actual = out.strip('\n')
-
-    with capsys.disabled():
-        print('\n')
-        print(out)
-
-    assert actual == expected
+    assert out.strip("\n") == expected, "Output must match the input data"

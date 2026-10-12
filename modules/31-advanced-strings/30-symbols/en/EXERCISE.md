@@ -1,1 +1,1 @@
-A secret word is hidden in the quiz participants' names. Extract the needed characters from the variable `text` by their indexes, join them and print the word `grip` to the screen.
+The word `grip` is hidden in the string stored in the variable `text`: all of its letters are in that string. Find their indexes, extract the characters, join them and print the resulting word to the screen.

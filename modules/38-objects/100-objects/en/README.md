@@ -1,5 +1,4 @@
-
-The data we work with in programs have important attributes. In Python, they're built right into the language. Data also have methods - functions within properties. Properties and methods are expressions, just like variables or function calls. All of these can be combined in different ways. We'll look at the basics of them in this lesson.
+Python supports object-oriented programming (OOP). Objects combine data with operations that work with that data. The strings and numbers we have already used are objects too. In this lesson, we will learn how to call their methods to solve the tasks at hand.
 
 In programming, we operate with data, create numbers and strings, perform various operations on them and use their results. To perform an operation, we apply either operators or functions:
 
@@ -25,7 +24,7 @@ upper_name = name.upper()
 print(upper_name)  # => 'HEXLET'
 ```
 
-Strings in Python are objects. In the example above, we call a method, which is, a function associated with a string. The call is made using a period that comes right after the variable name. Otherwise, the methods work like normal functions.
+Strings in Python were objects when we passed them to functions too. Calling a method is another way to work with the same value. In the example above, we call a method, which is, a function associated with a string. The call is made using a period that comes right after the variable name. Otherwise, the methods work like normal functions.
 
 The call can also be made directly:
 

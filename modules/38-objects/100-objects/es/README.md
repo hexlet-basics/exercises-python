@@ -1,8 +1,8 @@
-Python admite la programación orientada a objetos (POO): de forma muy simplificada, es un enfoque en el que operamos no con datos y funciones, sino con objetos y métodos. No pensamos detenernos en detalle en este tema en este curso, porque es amplio y su comprensión requiere cierto nivel de preparación. Ignorarlo por completo es imposible, porque los objetos aparecen literalmente de inmediato, en cuanto empezamos a escribir código en Python. Por eso tocaremos este tema, pero solo en la medida necesaria para las tareas actuales.
+Python admite la programación orientada a objetos (POO). En este enfoque los objetos reúnen datos y operaciones que trabajan con esos datos. Los valores que ya hemos utilizado, como cadenas y números, también son objetos. En esta lección veremos cómo llamar a sus métodos para resolver las tareas actuales.
 
 ![Upper](./assets/upper.png)
 
-Hasta este momento trabajábamos en el código con datos y les aplicábamos funciones. En la POO, en lugar de datos tenemos objetos sobre los que se llaman métodos. Por ejemplo, las cadenas en Python son objetos y tienen un método `upper()`, que convierte todas las letras a mayúsculas.
+Hasta este momento aplicábamos funciones a valores. Esos valores ya eran objetos. Una cadena, por ejemplo, tiene métodos como `upper()`, que devuelve una nueva cadena con las letras convertidas a mayúsculas.
 
 ```python
 text = "hexlet"
@@ -39,7 +39,7 @@ En Python hay realmente muchos métodos, y no se aprenden de memoria. Normalment
 
 ## Método y función: comparación
 
-Desde el punto de vista del código, los métodos y las funciones se comportan de forma parecida. Reciben valores y devuelven un resultado. Se diferencian solo en la **sintaxis** de la llamada.
+Desde el punto de vista del código, los métodos y las funciones se comportan de forma parecida. Reciben valores y devuelven un resultado. Una función recibe el valor como argumento, mientras que un método se llama a través del objeto al que pertenece la operación.
 
 ```python
 # Llamada a una función

@@ -46,8 +46,10 @@ Primero se realiza la multiplicación: `10 - 6 = 4`.
 
 Y si en la expresión hay números negativos, el menos unario se aplica después de la potenciación:
 
-```python
-print(-(2**2))  # => -4, dos elevado a dos, después se aplica el menos
+<!-- lint-code-blocks: skip — ruff format ставит скобки в -2 ** 2, а пример показывает запись без них -->
+
+```text
+print(-2 ** 2)  # => -4, dos elevado a dos, después se aplica el menos
 print(-2 * 5)  # => -10, menos dos multiplicado por cinco
 print(4 + -2)  # => 2
 print(6 - -2)  # => 8

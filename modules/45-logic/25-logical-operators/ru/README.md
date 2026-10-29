@@ -36,6 +36,7 @@ print(has_discount(25, False))  # => False
 
 В других языках вместо `and` и `or` часто пишут `&&` и `||`. В Python таких операторов нет. Перепишем проверку скидки через `||` и сохраним код в файл _main.py_.
 
+<!-- lint-code-blocks: skip — сознательно неверный код с ||, форматтер на нём падает -->
 ```text
 def has_discount(age: int, is_student: bool) -> bool:
     return age < 18 || is_student

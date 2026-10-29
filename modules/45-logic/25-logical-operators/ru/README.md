@@ -34,9 +34,21 @@ print(has_discount(15, True))  # => True  (оба условия)
 print(has_discount(25, False))  # => False
 ```
 
-В других языках вместо `and` и `or` часто пишут `&&` и `||`. В Python таких операторов нет. Если записать проверку скидки через `||`, Python откажется запускать файл и выведет такую ошибку.
+В других языках вместо `and` и `or` часто пишут `&&` и `||`. В Python таких операторов нет. Перепишем проверку скидки через `||` и сохраним код в файл _main.py_.
 
 ```text
+def has_discount(age: int, is_student: bool) -> bool:
+    return age < 18 || is_student
+
+
+print(has_discount(15, False))
+```
+
+Python откажется запускать такой файл. Ошибку синтаксиса он находит до запуска программы, поэтому `print()` тоже не выполнится.
+
+```console
+$ python main.py
+  File "/app/main.py", line 2
     return age < 18 || is_student
                      ^
 SyntaxError: invalid syntax

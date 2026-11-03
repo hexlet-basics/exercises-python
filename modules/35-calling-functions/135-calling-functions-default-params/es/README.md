@@ -1,4 +1,6 @@
-Algunas funciones en Python tienen **parámetros opcionales**. Eso significa que para ellos hay fijado de antemano un valor por defecto, y al llamar a la función se puede no indicar ese parámetro.
+En esta lección estudiaremos los parámetros opcionales de las funciones. Aprenderemos a leer una firma y la descripción del resultado en la documentación. Practicaremos las llamadas con argumentos obligatorios y opcionales.
+
+Cuando una función tiene un valor por defecto para un parámetro, podemos omitir su argumento al llamarla. Si lo omitimos, la función utiliza ese valor. La firma indica qué parámetros tienen valores por defecto.
 
 Veamos la función incorporada `round()`, que redondea un número:
 
@@ -30,26 +32,53 @@ round(10.25)     →  argumentos: 10.25, (None)  →  10
                                         └── valor por defecto
 ```
 
-La cantidad de parámetros opcionales depende de la función concreta, pero los obligatorios van siempre antes de los opcionales.
+En la firma de `round()`, el parámetro obligatorio `number` aparece antes del opcional `ndigits`. Otra función puede tener una cantidad distinta de parámetros y otros valores por defecto.
 
-## La firma de la función
+## Cómo leer la documentación de una función
 
-Cada función tiene una **firma**, que contiene la descripción de su nombre, sus parámetros y el orden en que se usan. La firma ayuda a entender qué datos espera la función y qué ocurrirá si no se indican los parámetros.
+La documentación explica qué datos acepta una función y qué resultado devuelve. La firma que aparece al principio de la referencia muestra el nombre de la función, sus parámetros y su orden. El texto que viene después explica el propósito de los parámetros y el comportamiento de la función. Para preparar una llamada, necesitamos ambas partes.
 
-Miremos la [documentación](https://docs.python.org/3/library/functions.html#round) de la función `round()`.
+Veamos la [referencia de `round()`](https://docs.python.org/3/library/functions.html#round). Empieza con la firma `round(number, ndigits=None)`. Los nombres `number` y `ndigits` representan parámetros. En una llamada los sustituimos por valores concretos, por ejemplo `round(10.25, 1)`.
 
-```python
-round(number, ndigits=None)
+La tabla relaciona las partes de la firma con los argumentos de esa llamada.
+
+| Parte de la firma | Significado | En la llamada `round(10.25, 1)` |
+| --- | --- | --- |
+| `round` | Nombre de la función | Llamamos a `round()` |
+| `number` | Parámetro obligatorio, el número que se redondea | Pasamos `10.25` |
+| `ndigits=None` | Parámetro opcional cuyo valor por defecto es `None` | Pasamos `1` en lugar del valor por defecto |
+
+El signo `=` en `ndigits=None` indica un valor por defecto. Esta notación muestra que podemos omitir el segundo argumento. El texto bajo la firma explica cómo usa la función ese valor `None`. En `round()`, omitir el segundo argumento significa redondear al entero.
+
+La descripción del resultado empieza bajo la firma. La palabra inglesa `return` significa «devolver». La referencia de `round()` explica que la función devuelve un número redondeado a la cantidad indicada de posiciones después del separador decimal. También aclara que, sin `ndigits`, el resultado será un entero. La firma muestra una llamada válida y la descripción permite entender el resultado.
+
+Probemos ambos casos en el intérprete interactivo de Python (REPL). Los signos `>>>` indican el indicador del intérprete; las líneas que siguen a las llamadas muestran el resultado.
+
+```console
+>>> round(10.25, 1)
+10.2
+>>> round(10.25)
+10
 ```
 
-Esa es precisamente la firma. La función se llama `round`. El parámetro `number` es obligatorio: recibe el número a redondear. El parámetro `ndigits` tiene el valor por defecto `None`, es decir, es opcional; si no se indica, el redondeo se hará hasta el número entero.
+Aquí, la primera llamada pasa la precisión `1` y obtiene `10.2`. La segunda conserva el valor por defecto de `ndigits` y obtiene el entero `10`. Así relacionamos la firma, la explicación de la documentación y el resultado de la ejecución.
 
-## Cómo trabajar con funciones nuevas
+## Notación en la referencia
 
-Cuando te encuentras con una función nueva, puedes usar un patrón simple:
+Una referencia puede incluir símbolos especiales. Ayudan a leer la firma y no se pasan a la función en una llamada.
 
-1. Abrir la documentación y encontrar la firma de la función.
-2. Mirar los ejemplos de uso.
-3. Pasar al intérprete interactivo de Python (REPL) e intentar llamar a la función con distintos argumentos.
+| Notación en la referencia | Cómo interpretarla |
+| --- | --- |
+| `round(number, ndigits=None)` | `ndigits` tiene un valor por defecto, por lo que podemos omitir el argumento |
+| `round(number[, ndigits])` | Otra forma de indicar un argumento opcional en una referencia. Los corchetes no forman parte de la llamada |
+| `abs(number, /)` | El parámetro anterior a `/` recibe su argumento por posición. El signo `/` no es otro parámetro |
 
-Ese enfoque ayuda a entender rápido cómo funciona exactamente la función, cuáles son sus parámetros obligatorios y opcionales y qué resultados devuelve.
+Por ejemplo, `abs(number, /)` describe una función con un parámetro. La llamada `abs(-5)` le pasa el número `-5` y devuelve `5`. Ni el nombre `number` ni el signo `/` se copian en esa llamada.
+
+Si el navegador traduce la página, hay que comparar los nombres de las funciones, los parámetros y los símbolos de la firma con el original. El código utiliza los nombres originales de la documentación. Por ejemplo, traducir `number` como «número» ayuda a entender la descripción, pero en la llamada seguimos pasando el valor `10.25`.
+
+## Trabajar con una función desconocida
+
+Leemos una referencia para resolver una tarea. Por ejemplo, para redondear un precio a una posición decimal, buscamos el número y la precisión en la firma de `round()`, comprobamos el significado de la precisión en la descripción y probamos `round(10.25, 1)`. Si el resultado corresponde a la descripción, podemos usar esa llamada en el programa.
+
+Otra función tendrá sus propios parámetros y reglas. Su firma nos indica qué argumentos pasar, la descripción explica el resultado y las restricciones, y un ejemplo pequeño nos permite comprobar lo que entendimos.

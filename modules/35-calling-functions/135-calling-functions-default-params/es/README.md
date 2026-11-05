@@ -38,7 +38,29 @@ En la firma de `round()`, el parámetro obligatorio `number` aparece antes del o
 
 La documentación explica qué datos acepta una función y qué resultado devuelve. La firma que aparece al principio de la referencia muestra el nombre de la función, sus parámetros y su orden. El texto que viene después explica el propósito de los parámetros y el comportamiento de la función. Para preparar una llamada, necesitamos ambas partes.
 
-Veamos la [referencia de `round()`](https://docs.python.org/3/library/functions.html#round). Empieza con la firma `round(number, ndigits=None)`. Los nombres `number` y `ndigits` representan parámetros. En una llamada los sustituimos por valores concretos, por ejemplo `round(10.25, 1)`.
+Veamos la [referencia de `round()`](https://docs.python.org/3/library/functions.html#round). Abajo está su comienzo, con una parte del texto omitida.
+
+```text
+round(number, ndigits=None)
+
+Return number rounded to ndigits precision after the decimal
+point. If ndigits is omitted or is None, it returns the
+nearest integer to its input.
+
+For the built-in types supporting round(), values are rounded to the
+closest multiple of 10 to the power minus ndigits; ...
+
+Note
+The behavior of round() for floats can be surprising: ...
+```
+
+Las funciones integradas de Python no tienen secciones separadas para los parámetros y el resultado, todo se describe en texto corrido. La descripción se lee de arriba abajo, paso a paso.
+
+1. La primera línea contiene la firma `round(number, ndigits=None)` con el nombre de la función y sus parámetros.
+2. El primer párrafo resume qué devuelve la función y qué pasa si se omite el argumento.
+3. Luego vienen los detalles sobre las reglas de redondeo y una nota (Note) sobre los números decimales. En la primera lectura se pueden saltar.
+
+Los nombres `number` y `ndigits` representan parámetros. En una llamada los sustituimos por valores concretos, por ejemplo `round(10.25, 1)`.
 
 La tabla relaciona las partes de la firma con los argumentos de esa llamada.
 
@@ -50,7 +72,7 @@ La tabla relaciona las partes de la firma con los argumentos de esa llamada.
 
 El signo `=` en `ndigits=None` indica un valor por defecto. Esta notación muestra que podemos omitir el segundo argumento. El texto bajo la firma explica cómo usa la función ese valor `None`. En `round()`, omitir el segundo argumento significa redondear al entero.
 
-La descripción del resultado empieza bajo la firma. La palabra inglesa `return` significa «devolver». La referencia de `round()` explica que la función devuelve un número redondeado a la cantidad indicada de posiciones después del separador decimal. También aclara que, sin `ndigits`, el resultado será un entero. La firma muestra una llamada válida y la descripción permite entender el resultado.
+La descripción empieza con la palabra Return. La palabra inglesa `return` significa «devolver», así que la primera oración describe el resultado. La función devuelve un número redondeado a `ndigits` posiciones después del separador decimal. La segunda oración aclara que, sin `ndigits`, el resultado será el entero más cercano. La firma muestra una llamada válida y la descripción permite entender el resultado.
 
 Probemos ambos casos en el intérprete interactivo de Python (REPL). Los signos `>>>` indican el indicador del intérprete; las líneas que siguen a las llamadas muestran el resultado.
 

@@ -1,14 +1,18 @@
-Implement the function `generate_pin()`. It returns a random four-digit PIN code as a string.
+A message can contain the characters `<`, `>` and `&`. When displayed on an HTML page, a browser can interpret them as markup. The standard-library package `html` replaces these characters with special sequences to preserve the message text.
 
-Each digit of the PIN is an independent random integer from 0 to 9.
+## Task
+
+Implement the function `escape_html(text)`. It takes a string and returns the result of the `escape()` function from the `html` package with its default arguments. Single and double quotes are also replaced.
 
 ```python
-print(generate_pin())  # => e.g. "4823" or "0571"
-print(generate_pin())  # => e.g. "1942" or "0037"
+print(escape_html("<b>A & B</b>"))  # => &lt;b&gt;A &amp; B&lt;/b&gt;
+print(escape_html('"Hello"'))  # => &quot;Hello&quot;
+print(escape_html("It's ok"))  # => It&#x27;s ok
+print(escape_html("Hello"))  # => Hello
 ```
 
-Add a return type annotation.
+## Hints
 
-## Hint
-
-Generate each of the four digits with `random.randint(0, 9)` and combine them into a string using an f-string.
+- `html` is a regular package in the standard library. Its _\_\_init\_\_.py_ file provides the `escape()` function
+- Import the package with `import html` or the function with `from html import escape`
+- [html.escape documentation](https://docs.python.org/3/library/html.html#html.escape)

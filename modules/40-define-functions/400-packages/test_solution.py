@@ -1,18 +1,36 @@
-import random
+import importlib
+from unittest.mock import patch
+
 import solution
 
 
 def test():
-    annotations = solution.generate_pin.__annotations__
-    assert 'return' in annotations, "You should add a return type annotation"
+    assert callable(getattr(solution, "escape_html", None)), (
+        "Define the escape_html(text) function"
+    )
+    cases = [
+        ("", ""),
+        ("Hello", "Hello"),
+        ("<b>A & B</b>", "&lt;b&gt;A &amp; B&lt;/b&gt;"),
+        ('"Hello"', "&quot;Hello&quot;"),
+        ("It's ok", "It&#x27;s ok"),
+        ("&lt;", "&amp;lt;"),
+        ("Привет, мир!", "Привет, мир!"),
+    ]
+    for text, expected in cases:
+        assert solution.escape_html(text) == expected, (
+            "escape_html must return the escaped string",
+            text,
+        )
 
-    for seed in [1, 7, 42]:
-        random.seed(seed)
-        result = solution.generate_pin()
-        random.seed(seed)
-        d1 = random.randint(0, 9)
-        d2 = random.randint(0, 9)
-        d3 = random.randint(0, 9)
-        d4 = random.randint(0, 9)
-        assert result == f"{d1}{d2}{d3}{d4}"
-        assert len(result) == 4
+    with patch("html.escape", return_value="escaped-by-html") as escape:
+        importlib.reload(solution)
+        assert solution.escape_html("source") == "escaped-by-html", (
+            "Use the escape function from the html package"
+        )
+        assert escape.call_count == 1, "Use the escape function from the html package"
+        args, kwargs = escape.call_args
+        assert (args[0] if args else kwargs.get("s")) == "source", (
+            "Use the escape function from the html package"
+        )
+    importlib.reload(solution)

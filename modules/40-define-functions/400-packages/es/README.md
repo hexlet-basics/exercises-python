@@ -1,6 +1,6 @@
 A medida que el programa crece aumenta no solo la cantidad de líneas de código, sino también la cantidad de módulos. En proyectos pequeños, decenas de archivos todavía se pueden mantener en un solo directorio, pero en aplicaciones reales los archivos pueden ser cientos y miles.
 
-Para organizar los módulos en grupos lógicos más grandes, en Python se usan los paquetes. Un paquete es un directorio con archivos de Python.
+Para organizar los módulos en grupos lógicos más grandes, en Python se usan los paquetes. En esta lección trabajamos con paquetes regulares. Un paquete regular es un directorio con un archivo _\_\_init\_\_.py_ y módulos de Python. El archivo _\_\_init\_\_.py_ puede estar vacío.
 
 Por ejemplo, la estructura de un proyecto puede verse así:
 
@@ -8,9 +8,11 @@ Por ejemplo, la estructura de un proyecto puede verse así:
 project/
 ├── main.py
 ├── payments/
+│   ├── __init__.py
 │   ├── stripe.py
 │   └── paypal.py
 └── users/
+    ├── __init__.py
     ├── auth.py
     └── profile.py
 ```
@@ -39,7 +41,7 @@ El punto muestra el camino dentro del paquete. Python pasa secuencialmente del p
 
 ## Importación de un módulo concreto
 
-A menudo no se importa todo el camino, sino un módulo concreto:
+Las dos formas importan el módulo `payments.stripe`. La forma `from payments import stripe` lo asocia al nombre corto `stripe` en el archivo actual.
 
 ```python
 from payments import stripe
@@ -47,7 +49,7 @@ from payments import stripe
 stripe.create_payment()
 ```
 
-Esa forma acorta la escritura y hace el código más compacto.
+Lo que se acorta es la llamada, `stripe.create_payment()` en lugar de `payments.stripe.create_payment()`. La instrucción de importación puede ser más larga.
 
 ## Paquetes anidados
 
@@ -56,8 +58,11 @@ Los paquetes pueden contener otros paquetes:
 ```text
 project/
 └── app/
+    ├── __init__.py
     └── payments/
+        ├── __init__.py
         ├── stripe/
+        │   ├── __init__.py
         │   ├── client.py
         │   └── api.py
         └── paypal.py
@@ -80,8 +85,10 @@ Por ejemplo:
 ```text
 project/
 ├── admin/
+│   ├── __init__.py
 │   └── config.py
 └── user/
+    ├── __init__.py
     └── config.py
 ```
 
@@ -96,9 +103,9 @@ import user.config
 
 Sin los paquetes, esos nombres entrarían en conflicto entre sí.
 
-## El archivo \_\_init\_\_.py
+## El archivo de inicialización del paquete
 
-Antes, para crear un paquete, dentro del directorio se colocaba obligatoriamente el archivo `__init__.py`:
+El archivo _\_\_init\_\_.py_ identifica un paquete regular. También se crea cuando el paquete no necesita código común. En ese caso se deja vacío.
 
 ```text
 payments/
@@ -107,6 +114,6 @@ payments/
 └── paypal.py
 ```
 
-Ese archivo informaba a Python de que el directorio había que tratarlo como un paquete.
+Un directorio puede contener cualquier tipo de archivo. Con _\_\_init\_\_.py_, `payments` es un paquete regular cuyos módulos se importan como `payments.stripe` y `payments.paypal`. Al importar `payments`, Python ejecuta el código de _\_\_init\_\_.py_. Allí se pueden definir los nombres accesibles mediante el paquete.
 
-En las versiones modernas de Python los paquetes pueden funcionar también sin `__init__.py`. No obstante, ese archivo se sigue usando a menudo. Normalmente en él se coloca código común y la configuración del paquete.
+Python también tiene paquetes de espacio de nombres. Permiten reunir partes de un paquete desde varios directorios y no llevan _\_\_init\_\_.py_. Son otra forma de organizar paquetes. Los ejemplos de esta lección usan paquetes regulares y cada directorio de paquete, incluidos los anidados, contiene ese archivo.

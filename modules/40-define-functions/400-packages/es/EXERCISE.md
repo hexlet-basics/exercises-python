@@ -1,14 +1,18 @@
-Implementa la función `generate_pin()`. Devuelve un código PIN de cuatro dígitos aleatorio como cadena de texto.
+Un mensaje puede contener los caracteres `<`, `>` y `&`. Al mostrarlo en una página HTML, el navegador puede interpretarlos como parte del marcado. El paquete `html` de la biblioteca estándar los sustituye por secuencias especiales para conservar el texto del mensaje.
 
-Cada dígito del PIN es un entero aleatorio independiente del 0 al 9.
+## Tarea
+
+Implementa la función `escape_html(text)`. Recibe una cadena y devuelve el resultado de `escape()` del paquete `html` con sus parámetros por defecto. También se sustituyen las comillas simples y dobles.
 
 ```python
-print(generate_pin())  # => por ejemplo, "4823" o "0571"
-print(generate_pin())  # => por ejemplo, "1942" o "0037"
+print(escape_html("<b>A & B</b>"))  # => &lt;b&gt;A &amp; B&lt;/b&gt;
+print(escape_html('"Hello"'))  # => &quot;Hello&quot;
+print(escape_html("It's ok"))  # => It&#x27;s ok
+print(escape_html("Hello"))  # => Hello
 ```
 
-Añade la anotación de tipo del valor de retorno.
+## Pistas
 
-## Pista
-
-Genera cada uno de los cuatro dígitos con `random.randint(0, 9)` y combínalos en una cadena usando un f-string.
+- `html` es un paquete regular de la biblioteca estándar. Su archivo _\_\_init\_\_.py_ proporciona la función `escape()`
+- Puedes importar el paquete mediante `import html` o la función mediante `from html import escape`
+- [Documentación de html.escape](https://docs.python.org/3/library/html.html#html.escape)

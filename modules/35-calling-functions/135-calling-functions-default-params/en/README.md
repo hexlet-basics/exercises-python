@@ -29,7 +29,29 @@ In the signature of `round()`, the required parameter `number` comes before the 
 
 Documentation explains what data a function accepts and what result it returns. The signature at the start of a reference entry shows the function's name, parameters, and their order. The text below it explains the parameters and the function's behavior. We need both parts to prepare a call.
 
-Consider the [reference entry for `round()`](https://docs.python.org/3/library/functions.html#round). It starts with the signature `round(number, ndigits=None)`. The names `number` and `ndigits` represent parameters. In a call, we supply concrete values in their places, such as `round(10.25, 1)`.
+Consider the [reference entry for `round()`](https://docs.python.org/3/library/functions.html#round). Here is its beginning, with part of the text omitted.
+
+```text
+round(number, ndigits=None)
+
+Return number rounded to ndigits precision after the decimal
+point. If ndigits is omitted or is None, it returns the
+nearest integer to its input.
+
+For the built-in types supporting round(), values are rounded to the
+closest multiple of 10 to the power minus ndigits; ...
+
+Note
+The behavior of round() for floats can be surprising: ...
+```
+
+Python's built-in functions have no separate sections for parameters and the result, everything is described in plain text. Read the description from top to bottom.
+
+1. The first line is the signature `round(number, ndigits=None)` with the function name and parameters.
+2. The first paragraph briefly says what the function returns and what happens if the argument is omitted.
+3. Details on rounding rules and a note about floats follow. You can skip them on a first read.
+
+The names `number` and `ndigits` represent parameters. In a call, we supply concrete values in their places, such as `round(10.25, 1)`.
 
 The table connects the parts of the signature to the arguments in that call.
 
@@ -41,7 +63,7 @@ The table connects the parts of the signature to the arguments in that call.
 
 The `=` in `ndigits=None` indicates a default value. This notation tells us that we can omit the second argument. The text below the signature explains how the function uses `None`. For `round()`, omitting the second argument means rounding to an integer.
 
-The description of the result starts below the signature. The reference entry for `round()` says that the function returns a number rounded to the specified number of places after the decimal point. It also explains that the result is an integer when `ndigits` is omitted. The signature shows a valid call, and the description explains its result.
+The description starts with the word Return, so the first sentence describes the result. The function returns a number rounded to `ndigits` places after the decimal point. The second sentence explains that the result is the nearest integer when `ndigits` is omitted. The signature shows a valid call, and the description explains its result.
 
 We can check both cases in Python's interactive shell (REPL). The `>>>` symbols are the shell prompt; the lines below the calls show the results.
 

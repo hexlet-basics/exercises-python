@@ -1,4 +1,4 @@
-Escribe en el editor el código del ejercicio, carácter por carácter, y luego haz clic en "Verificar".
+Escribe en el editor el código del ejercicio, carácter por carácter, y luego haz clic en "Verificar". Las mayúsculas, el espacio y los signos de puntuación importan, porque la comprobación compara la salida con el texto esperado de forma exacta.
 
 ```python
 print("Hello, World!")

@@ -1,4 +1,4 @@
-Copy the exact code from the instructions into the editor and run it by clicking “Run”.
+Copy the exact code from the instructions into the editor and run it by clicking “Run”. Letter case, the space and the punctuation matter, because the check compares the output with the expected text exactly.
 
 ```python
 print("Hello, World!")

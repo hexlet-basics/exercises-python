@@ -36,4 +36,4 @@ Case matters too. If regular text treats `Hello` and `hello` as the same word, P
 
 ## Practice
 
-Learning to code works best when you try things out as you read. You can run Python code line by line in an interactive environment (REPL) — [open it here](https://pyodide.org/en/stable/console.html) and experiment as you go through the lesson.
+Learning to code works best when you try things out as you read. You can run Python code line by line in an interactive environment (REPL) — [open it here](https://pyodide.org/en/stable/console.html) and experiment as you go through the lesson. The console is for your own experiments. The exercise for this lesson is solved in the editor, and the console does not check it.

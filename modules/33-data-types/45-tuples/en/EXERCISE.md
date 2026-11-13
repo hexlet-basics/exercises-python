@@ -12,3 +12,5 @@ From: Moscow
 To: Saint Petersburg
 Distance: 634 km
 ```
+
+The check compares the output character by character, so after `From:`, `To:` and `Distance:` there must be exactly one space, and before `km` one more.

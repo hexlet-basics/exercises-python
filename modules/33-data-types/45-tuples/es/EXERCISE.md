@@ -12,3 +12,5 @@ From: Moscow
 To: Saint Petersburg
 Distance: 634 km
 ```
+
+La comprobación compara la salida carácter por carácter, así que después de `From:`, `To:` y `Distance:` hace falta exactamente un espacio, y antes de `km` también uno.

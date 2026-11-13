@@ -26,7 +26,7 @@ El comando sigue siendo el mismo, solo cambia el contenido de los paréntesis. P
 print('Hexlet - escuela de programación')
 ```
 
-El estándar de estilo de código PEP 8 no prefiere las comillas simples ni las dobles: lo importante es elegir un estilo y mantenerlo. En este curso usamos las dobles. PEP 8 aconseja que, si dentro de la cadena hay un apóstrofo o una comilla, se usen las del otro tipo para no escapar nada. Por ejemplo, el apóstrofo de `it's` rompe una cadena entre comillas simples, así que aquí hacen falta las dobles.
+El estándar de estilo de código PEP 8 no prefiere las comillas simples ni las dobles: lo importante es elegir un estilo y mantenerlo. En este curso usamos las dobles. PEP 8 aconseja usar el otro tipo de comillas si dentro de la cadena hay un apóstrofo o una comilla. Por ejemplo, el apóstrofo de `it's` rompe una cadena entre comillas simples, así que aquí hacen falta las dobles.
 
 ```python
 print("it's a Python")  # apóstrofo dentro, por eso comillas dobles
@@ -48,7 +48,7 @@ Incluso una pequeña diferencia, por ejemplo una letra de más o un signo distin
 
 ## Dónde practicar
 
-La teoría se asimila mejor cuando en paralelo ejecutas código y ves el resultado. Para eso sirve la consola interactiva de Python (REPL), donde los comandos se ejecutan línea por línea. Todo lo que aparece en la lección conviene probarlo [en la consola interactiva de Python](https://pyodide.org/en/stable/console.html).
+La teoría se asimila mejor cuando en paralelo ejecutas código y ves el resultado. Para eso sirve la consola interactiva de Python (REPL), donde los comandos se ejecutan línea por línea. Todo lo que aparece en la lección conviene probarlo [en la consola interactiva de Python](https://pyodide.org/en/stable/console.html). La consola sirve para tus propios experimentos. El ejercicio de esta lección se resuelve en el editor, y la consola no lo verifica.
 
 ¿Cómo funciona esto técnicamente? Cualquier código escrito se pasa al intérprete de Python, que lo ejecuta y muestra en la pantalla el resultado de su trabajo.
 

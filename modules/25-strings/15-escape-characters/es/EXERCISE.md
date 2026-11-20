@@ -5,4 +5,4 @@ Use "\n" to separate lines
 Example: print("line1\nline2")
 ```
 
-Ten en cuenta: el `\n` de la primera línea es texto literal, no un salto de línea.
+La segunda línea de la pista, con la palabra `print` y los paréntesis, también se imprime como texto. Los dos `\n` de la pista se imprimen literalmente, como los dos caracteres `\` y `n`. La salida tiene un solo salto de línea, entre las dos líneas de la pista.

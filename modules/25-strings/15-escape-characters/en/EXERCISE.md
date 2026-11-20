@@ -5,4 +5,4 @@ Use "\n" to separate lines
 Example: print("line1\nline2")
 ```
 
-Note: the `\n` in the first line is literal text, not a line break.
+The second line of the tip, including the word `print` and the parentheses, is printed as text too. Both `\n` in the tip are printed literally, as the two characters `\` and `n`. The output has exactly one line break, between the two lines of the tip.

@@ -1,6 +1,4 @@
 
-Many programming languages, in addition to the `if` conditional statement, include a `switch` construct. With the release of Python 3.10, a similar functionality was introduced called the `match` operator. In this lesson, we will explore this operator.
-
 The `match` operator is a specialized version of `if`, designed for specific situations. For instance, it is useful when dealing with a chain of `if else` statements that check for equality:
 
 ```python
